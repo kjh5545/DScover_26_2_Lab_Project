@@ -1,14 +1,18 @@
 # 에이전트 코드
 
+담당: 주희 = 판정(4·6·7번) · 해준 = 연결·화면(1·2번, 파이프라인, 데모) · 서현 = 5번 질문 프롬프트 · 인선 = 상세 환자 레이블·발표 기획
+
 | 파일 | 에이전트 | 상태 | LLM 사용 |
 |---|---|---|---|
 | `schemas.py` | 에이전트 간 데이터 형식 (공통 약속) | 완료 | - |
 | `llm.py` | Claude API 호출 공통 함수 (기본 모델 Sonnet 5.5) | 완료 | - |
 | `patient_agent.py` | 1. 환자 정보 이해: 줄글 → `PatientProfile` | 완료 | O |
 | `search_agent.py` | 2. 후보 검색: `PatientProfile` → `TrialCandidate` 목록 (ClinicalTrials.gov API, 나이·성별 코드 필터) | 완료 | X |
-| (예정) `parse_agent.py` | 3. 기준 파싱: 기준 원문 → `ParsedTrial` (하위 조건, 유형 태그) | 형식만 정함 | O |
-| `../eval/rules_prompt_v3.md` | 4. 매칭·판정 프롬프트 (검증 완료) | 코드화 예정 | O |
-| (예정) | 5. 질문 생성 · 6. 재평가 · 7. 추천·설명 | - | O |
+| `parse_rules.py` | 3. 기준 파싱 (규칙 기반): 기준 원문 → `ParsedTrial` (I1·E1 나누기). 레이블 시트와 같은 결과 | 완료 | X |
+| (예정) `parse_agent.py` | 3. 기준 파싱 (LLM): 하위 조건, 유형 태그, 한국어 요약 추가 | 필요해지면 | O |
+| `match_agent.py` | 4. 매칭·판정: `judge()` (임시 v0 = `eval/rules_prompt_v3.md`, 담당 주희) | 임시 버전 | O |
+| (해준) `pipeline.py` | 1→2→3→4 연결, 출력 `PatientResult` | 작업 중 → `TODO_해준.md` | O |
+| (예정) | 5. 질문 생성 (서현 프롬프트) · 6. 재평가 · 7. 추천·설명 (주희) | - | O |
 
 ## 실행
 ```bash

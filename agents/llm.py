@@ -26,15 +26,16 @@ def client() -> anthropic.Anthropic:
     return _client
 
 
-def structured(output_type: type[T], system: str, user: str, effort: str = "medium", model: str = MODEL) -> tuple[T, dict]:
-    """지정한 Pydantic 형식으로 답을 받는다. (결과, 토큰 사용량) 반환."""
+def structured(output_type: type[T], system: str | None, user: str, effort: str = "medium", model: str = MODEL) -> tuple[T, dict]:
+    """지정한 Pydantic 형식으로 답을 받는다. (결과, 토큰 사용량) 반환. system이 None이면 시스템 프롬프트 없이 보낸다."""
+    extra = {"system": system} if system else {}
     resp = client().messages.parse(
         model=model,
-        max_tokens=16000,
-        system=system,
+        max_tokens=16000,  # 스트리밍 없이 안전한 한도. 잘림 오류가 나면 스트리밍으로 바꿀 것
         messages=[{"role": "user", "content": user}],
         output_format=output_type,
         output_config={"effort": effort},
+        **extra,
     )
     if resp.stop_reason == "refusal":
         raise RuntimeError(f"모델이 응답을 거절함: {resp.stop_details}")

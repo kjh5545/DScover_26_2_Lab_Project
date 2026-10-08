@@ -58,7 +58,9 @@ class TrialCandidate(BaseModel):
     filter_notes: list[str] = Field(default=[], description="코드 필터 결과 메모 (예: 나이 범위 밖)")
 
 
-# ---------- 3번 기준 파싱 (아직 미구현, 형식만 약속) ----------
+# ---------- 3번 기준 파싱 ----------
+# 지금은 규칙 기반 파서(parse_rules.py)가 id·kind·original만 채운다.
+# summary_ko, category, sub_conditions는 LLM 파서(parse_agent.py, 예정)가 채울 자리다.
 
 
 class SubCondition(BaseModel):
@@ -70,12 +72,57 @@ class ParsedCriterion(BaseModel):
     id: str = Field(description="I1, E1처럼 원문 순서대로. 팀원 레이블 시트의 ID와 같은 규칙")
     kind: Literal["inclusion", "exclusion"]
     original: str = Field(description="기준 원문 그대로")
-    summary_ko: str
-    category: Literal["medical", "time_or_number", "administrative", "post_enrollment"] = Field(
-        description="의학 정보 / 시간·수치 계산 / 행정·법적 / 등록 후에야 알 수 있는 정보")
+    summary_ko: str = ""
+    category: Optional[Literal["medical", "time_or_number", "administrative", "post_enrollment"]] = Field(
+        default=None, description="의학 정보 / 시간·수치 계산 / 행정·법적 / 등록 후에야 알 수 있는 정보")
     sub_conditions: list[SubCondition] = Field(default=[], description="한 줄에 조건이 여러 개면 쪼갬. 하나면 빈 배열")
 
 
 class ParsedTrial(BaseModel):
     nct_id: str
     criteria: list[ParsedCriterion]
+    parser: str = Field(default="rules", description="어떤 파서가 만들었는지: rules / llm")
+
+
+# ---------- 4번 매칭·판정 ----------
+# 평가 도구(eval/run_eval.py)의 출력 형식과 같다. 판정 단어는 팀 합의(goldset/평가세트_v1.md)를 따른다.
+
+Verdict = Literal["통과", "탈락", "모름", "등록 후 확인"]
+FinalVerdict = Literal["적격", "부적격", "정보 부족"]  # "적격 가능(등록 후 확인 필요)" 추가 여부는 실험 후 결정
+
+
+class CriterionJudgment(BaseModel):
+    id: str = Field(description="ParsedCriterion.id와 같은 ID")
+    verdict: Verdict
+    evidence: str = Field(description="판정 근거. 환자 설명 원문 표현을 따옴표로 인용")
+
+
+class Question(BaseModel):
+    text: str = Field(description="환자가 이해할 수 있는 쉬운 한국어 질문")
+    resolves: list[str] = Field(description="이 질문으로 해결되는 기준 ID들")
+
+
+class TrialJudgment(BaseModel):
+    judgments: list[CriterionJudgment]
+    final: FinalVerdict
+    final_reason: str
+    questions: list[Question] = Field(default=[], description="4번이 함께 내는 확인 질문. 5번 질문 생성 에이전트가 생기면 그쪽 결과로 대체")
+
+
+# ---------- 파이프라인 결과 (해준 담당 pipeline.py의 출력) ----------
+
+
+class TrialResult(BaseModel):
+    candidate: TrialCandidate
+    parsed: ParsedTrial
+    judgment: Optional[TrialJudgment] = None
+    error: Optional[str] = Field(default=None, description="이 시험 처리 중 실패했으면 이유")
+
+
+class PatientResult(BaseModel):
+    patient_id: str
+    patient_text: str
+    profile: PatientProfile
+    trials: list[TrialResult]
+    skipped: list[TrialCandidate] = Field(default=[], description="나이·성별 등 하드 필터로 걸러진 시험")
+    usage: dict = Field(default={}, description="토큰 사용량 합계 {'input': .., 'output': ..}")
