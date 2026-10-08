@@ -218,3 +218,19 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ===== DScover 프로젝트 전용 =====
+# API 키 (절대 올리지 않음)
+.env
+**/.env
+
+# 실행 결과·로그 (각자 실행하면 다시 생김)
+eval/runs/
+outputs/
+*.log
+
+# 레이블 작업 중간 파일 (원본은 스크리닝1·2, 최종본은 goldset/)
+screening/labeling/*.zip
+screening/labeling/팀원1/
+screening/labeling/팀원2/
+screening/labeling/labels_raw.json

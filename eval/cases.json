@@ -1,0 +1,181 @@
+{
+  "patient": "A 34-year-old woman presents with recurrent episodes of severe unilateral throbbing headache preceded by visual scotomata, accompanied by photophobia, nausea, and phonophobia.",
+  "cases": [
+    {
+      "id": "A_basic",
+      "trial": "NCT07018700",
+      "note": "실험 1 기본 케이스 (정답: 수작업)",
+      "criteria": "[임상시험 NCT07018700 기준]\nInclusion Criteria:\nI1. Participant has a diagnosis of EM with or without aura according to current International Classification of Headache Disorders (Edition 3 and Edition 4 alpha) criteria for ≥ 12 months and is able to distinguish migraine headaches from all other types of headaches;\nI2. Participant age < 50 years at the time of migraine onset;\nI3. Participant meeting the following headache and migraine day criteria in each of the 3 months prior to screening: history of ≤ 14 headache days per month and history of 6 to 14 migraine days per month; and\nI4. During the last 28 days of the screening period, participant experiencing: ≤ 14 headache days and 6 to 14 migraine days that qualify as such per the headache diary.\n\nExclusion Criteria:\nE1. Diagnosis of chronic migraine;\nE2. Diagnosis of other primary headache types, except tension-type headache, which is permitted;\nE3. Diagnosis of aura without headache, migraine with brainstem aura, hemicrania continua, hypnic headache, hemiplegic migraine, retinal migraine, persistent aura without infarction, migraine aura-triggered seizure, or previous migrainous infarction;\nE4. Diagnosis of secondary headache types, except medication overuse headache, which is permitted;\nE5. Currently taking > 1 prescribed drug for the preventive treatment of migraine;\nE6. Discontinuation of anti-calcitonin gene-related peptide (CGRP) / anti-CGRP receptor monoclonal antibody treatment less than 5 months prior to screening.",
+      "expected": {
+        "I1": "모름",
+        "I2": "통과",
+        "I3": "모름",
+        "I4": "등록 후 확인",
+        "E1": "모름",
+        "E2": "모름",
+        "E3": "모름",
+        "E4": "모름",
+        "E5": "모름",
+        "E6": "모름"
+      },
+      "expected_final": [
+        "정보 부족"
+      ],
+      "expect_no_questions": false
+    },
+    {
+      "id": "B_general",
+      "trial": "NCT04063540",
+      "note": "실험 2 일반화 (정답: 수작업, E3는 LLM 판정도 허용)",
+      "criteria": "[임상시험 NCT04063540 기준]\nStudy locations: France only. Age 18-80 years.\n\nInclusion Criteria:\nI1. Diagnosis of migraine with aura code\nI2. At least 1 aura with aura per month in the 3 months prior to inclusion\nI3. No prophylactic antimigraine treatment for at least 1 month prior to inclusion\nI4. For women of childbearing age, use of a reliable contraceptive method at least 3 months before and 1 month after the study\nI5. Signature of written informed consent\nI6. Patient affiliated with Social Security\n\nExclusion Criteria:\nE1. Existence of contraindication to taking amiloride:\n  - Known hypersensitivity to the molecule\n  - Hyperkalemia (potassium level (> 5.5 mmol / l))\n  - Use of another hyperkalemic diuretic or potassium salts\n  - Renal insufficiency (clearance <60 ml / min)\n  - Severe hepatocellular insufficiency\n  - In combination with lithium, converting enzyme inhibitors, angiotensin II inhibitors (except if there is hypokalemia), ciclosporin, tacrolimus, non-antiarrhythmic drugs giving torsades de pointes\nE2. Cardiovascular and renal history, for subjects over 75 years old\nE3. Patient, who from an investigator's point of view would not be compliant to the procedure of the study\nE4. Pregnant or lactating patient\nE5. Patient under trusteeship, under guardianship, protected by law",
+      "expected": {
+        "I1": "모름",
+        "I2": "모름",
+        "I3": "모름",
+        "I4": "모름",
+        "I5": "등록 후 확인",
+        "I6": "모름",
+        "E1": "모름",
+        "E2": "통과",
+        "E3": [
+          "모름",
+          "등록 후 확인"
+        ],
+        "E4": "모름",
+        "E5": "모름"
+      },
+      "expected_final": [
+        "정보 부족"
+      ],
+      "expect_no_questions": false
+    },
+    {
+      "id": "C_reject_age",
+      "trial": "NCT04748601",
+      "note": "실험 3 나이 탈락 (정답: Claude 예상)",
+      "criteria": "[임상시험 NCT04748601 기준]\nStudy locations: United States only. Age 6-11 years.\n\nInclusion Criteria:\nI1. Subject is a female or male 6 to 11 years of age, inclusive, at Visit 1 (Screening)\nI2. Subject weighs at least 17.0 kg and less than 50.0 kg at Visit 1 (Screening) based on 95 percentile weight for the age range.\nI3. Subject has at least a 6-month history of headaches consistent with a diagnosis of migraine with or without aura (International Classification of Headache Disorders, 3rd Edition [ICHD 3]).\nI4. Subject had ≥8 self-reported headache days in the 28 days prior to Screening.\nI5. Subject has a PedMIDAS score >10, indicating at least mild disruption in daily activities, and <140, indicating extreme disability that may require more comprehensive, multi component therapy.\n\nExclusion Criteria:\nE1. Subject has continuous migraines, defined as an unrelenting headache for a 28-day period.\nE2. Subject is currently receiving treatment or has used Botulinum toxin (Botox®) within 3 months prior to Visit 1 (Screening).\nE3. Subject is currently receiving migraine prevention medication and has initiated or changed the dose within 28 days of Screening or is unwilling to avoid making a change during the duration of the study.\nE4. Subject has previously failed an adequate trial of topiramate (at least 3 months duration at a clinically appropriate dose) for prophylaxis of migraine headache due to lack of efficacy or AEs.\nE5. Subject has previously failed an adequate trial of >3 migraine preventative medications.\nE6. Subject has a known history of allergic reaction to topiramate or any excipient in Qudexy XR.\nE7. Subject has a diagnosis or history of disease that may interfere with safety or evaluation of the study drug.\nE8. Subject is currently using an investigational drug or device or has used such within 30 days prior to Visit 1.\nE9. Subject has begun menses and any of the following:\n  a. Subject has tested positive for pregnancy; OR\n  b. Subject is pregnant, planning pregnancy, or lactating; OR\n  c. Subject is taking an oral hormonal contraceptive (either combined [estrogen and progestogen containing] or progestogen-only) and is unable or unwilling to switch to an alternative highly effective contraceptive method.",
+      "expected": {
+        "I1": "탈락",
+        "I2": "모름",
+        "I3": "모름",
+        "I4": "모름",
+        "I5": [
+          "모름",
+          "등록 후 확인"
+        ],
+        "E1": [
+          "통과",
+          "모름"
+        ],
+        "E2": "모름",
+        "E3": "모름",
+        "E4": "모름",
+        "E5": "모름",
+        "E6": "모름",
+        "E7": [
+          "모름",
+          "등록 후 확인"
+        ],
+        "E8": "모름",
+        "E9": "모름"
+      },
+      "expected_final": [
+        "부적격"
+      ],
+      "expect_no_questions": true
+    },
+    {
+      "id": "D_reject_aura",
+      "trial": "NCT06959004",
+      "note": "실험 3 조짐 병력 탈락 (정답: Claude 예상)",
+      "criteria": "[임상시험 NCT06959004 기준]\nStudy locations: Denmark only. Age 18-65 years.\n\nInclusion Criteria:\nI1. Age 18 to 65 years of age upon entry into screening\nI2. A body weight of 50 to 100 kg\nI3. History of migraine without aura for ≥12 months and in accordance with ICHD-3\nI4. Between 1-5 monthly migraine days without aura on average across the 3 months prior to screening\n\nExclusion Criteria:\nE1. Any history of a primary or secondary headache disorder other than migraine without aura and infrequent episodic tension-type headache\nE2. Any history of moderate to severe traumatic brain injury\nE3. Any history of cardiovascular disease, including cerebrovascular diseases\nE4. Any history of pulmonary disease\nE5. Any other clinically significant disorders, conditions, or diseases that might impact the safety of the subject or interfere with the study's evaluation, procedures, or completion, aside from those mentioned above. This includes any relevant medical history or evidence that, in the opinion of the site investigator, might pose a risk to the subject or impact the validity of the study results\nE6. The subject is at risk of self-harm or harm to others as evidenced by past suicidal behavior\nE7. Female subjects of childbearing potential with a positive pregnancy test during any study visit\nE8. Cardiovascular disease of any kind, including cerebrovascular diseases\nE9. Hypertension (systolic blood pressure of ≥150 mmHg and/or diastolic blood pressure of ≥100 mmHg) prior to the start of infusion on the experimental day\nE10. Hypotension (systolic blood pressure of ≤90 mmHg and/or diastolic blood pressure of ≤50 mmHg)\nE11. Daily use of any medication other than contraceptives\nE12. Intake of any medication other than contraceptives within 48 hours of infusion start\nE13. Headache of any intensity within 48 hours of infusion start\nE14. Migraine attack within 5 days of infusion start\nE15. Aura within 48 hours of infusion start",
+      "expected": {
+        "I1": "통과",
+        "I2": "모름",
+        "I3": "모름",
+        "I4": "모름",
+        "E1": "탈락",
+        "E2": "모름",
+        "E3": "모름",
+        "E4": "모름",
+        "E5": [
+          "모름",
+          "등록 후 확인"
+        ],
+        "E6": "모름",
+        "E7": "등록 후 확인",
+        "E8": "모름",
+        "E9": [
+          "등록 후 확인",
+          "모름"
+        ],
+        "E10": [
+          "등록 후 확인",
+          "모름"
+        ],
+        "E11": "모름",
+        "E12": "등록 후 확인",
+        "E13": "등록 후 확인",
+        "E14": "등록 후 확인",
+        "E15": "등록 후 확인"
+      },
+      "expected_final": [
+        "부적격"
+      ],
+      "expect_no_questions": true
+    },
+    {
+      "id": "R1_reeval_pass",
+      "trial": "NCT07018700",
+      "note": "실험 4 재평가 세트 1 (2턴, 정답: Claude 예상 + E3 사후 수정) · E3가 모름이면 최종 정보 부족도 정답으로 인정",
+      "criteria": "[임상시험 NCT07018700 기준]\nInclusion Criteria:\nI1. Participant has a diagnosis of EM with or without aura according to current International Classification of Headache Disorders (Edition 3 and Edition 4 alpha) criteria for ≥ 12 months and is able to distinguish migraine headaches from all other types of headaches;\nI2. Participant age < 50 years at the time of migraine onset;\nI3. Participant meeting the following headache and migraine day criteria in each of the 3 months prior to screening: history of ≤ 14 headache days per month and history of 6 to 14 migraine days per month; and\nI4. During the last 28 days of the screening period, participant experiencing: ≤ 14 headache days and 6 to 14 migraine days that qualify as such per the headache diary.\n\nExclusion Criteria:\nE1. Diagnosis of chronic migraine;\nE2. Diagnosis of other primary headache types, except tension-type headache, which is permitted;\nE3. Diagnosis of aura without headache, migraine with brainstem aura, hemicrania continua, hypnic headache, hemiplegic migraine, retinal migraine, persistent aura without infarction, migraine aura-triggered seizure, or previous migrainous infarction;\nE4. Diagnosis of secondary headache types, except medication overuse headache, which is permitted;\nE5. Currently taking > 1 prescribed drug for the preventive treatment of migraine;\nE6. Discontinuation of anti-calcitonin gene-related peptide (CGRP) / anti-CGRP receptor monoclonal antibody treatment less than 5 months prior to screening.",
+      "followup": "아래는 위 확인 질문에 대한 환자의 답변입니다. 오늘 날짜는 2026년 10월 3일입니다.\n\n[환자 답변]\n- 3년 전에 신경과에서 \"조짐이 있는 편두통\"이라고 진단받았어요. 편두통은 다른 두통이랑 확실히 구분돼요.\n- 최근 석 달 동안 매달 머리 아픈 날이 8~10일 정도였고, 그중 심한 편두통은 6~8일이었어요.\n- 어깨가 뭉칠 때 가볍게 머리가 조이는 두통이 가끔 있는데, 따로 진단받은 두통은 없어요.\n- 시야 이상은 양쪽 눈에 다 생기고, 20분쯤 지나면 사라져요. 팔다리에 힘이 빠지거나 말이 어눌해진 적은 없어요.\n- 머리를 다친 적은 없고, 2년 전에 찍은 뇌 MRI는 정상이었어요.\n- 발작이 오면 수마트립탄을 먹어요. 매일 먹는 약은 없어요.\n- 작년 봄에 병원에서 편두통 예방 주사를 몇 번 맞았는데, 약 이름은 기억이 안 나요. 그 뒤로는 안 맞았어요.\n\n[재평가 지시]\n1. 같은 판정 규칙으로 모든 기준을 다시 판정하세요.\n2. 판정이 바뀐 기준은 \"이전 → 이후\"로 표시하고, 근거에 환자 답변을 인용하세요.\n3. 최종 판단과 확인 질문 목록도 같은 형식으로 다시 쓰세요. 질문은 아직 \"모름\"인 기준에 대해서만 만드세요.",
+      "expected": {
+        "I1": "통과",
+        "I2": "통과",
+        "I3": "통과",
+        "I4": "등록 후 확인",
+        "E1": "통과",
+        "E2": "통과",
+        "E3": [
+          "통과",
+          "모름"
+        ],
+        "E4": "통과",
+        "E5": "통과",
+        "E6": "통과"
+      },
+      "expected_final": [
+        "적격",
+        "정보 부족"
+      ],
+      "expect_no_questions": false
+    },
+    {
+      "id": "R2_reeval_flip",
+      "trial": "NCT07018700",
+      "note": "실험 4 재평가 세트 2 (2턴, 복용약으로 탈락)",
+      "criteria": "[임상시험 NCT07018700 기준]\nInclusion Criteria:\nI1. Participant has a diagnosis of EM with or without aura according to current International Classification of Headache Disorders (Edition 3 and Edition 4 alpha) criteria for ≥ 12 months and is able to distinguish migraine headaches from all other types of headaches;\nI2. Participant age < 50 years at the time of migraine onset;\nI3. Participant meeting the following headache and migraine day criteria in each of the 3 months prior to screening: history of ≤ 14 headache days per month and history of 6 to 14 migraine days per month; and\nI4. During the last 28 days of the screening period, participant experiencing: ≤ 14 headache days and 6 to 14 migraine days that qualify as such per the headache diary.\n\nExclusion Criteria:\nE1. Diagnosis of chronic migraine;\nE2. Diagnosis of other primary headache types, except tension-type headache, which is permitted;\nE3. Diagnosis of aura without headache, migraine with brainstem aura, hemicrania continua, hypnic headache, hemiplegic migraine, retinal migraine, persistent aura without infarction, migraine aura-triggered seizure, or previous migrainous infarction;\nE4. Diagnosis of secondary headache types, except medication overuse headache, which is permitted;\nE5. Currently taking > 1 prescribed drug for the preventive treatment of migraine;\nE6. Discontinuation of anti-calcitonin gene-related peptide (CGRP) / anti-CGRP receptor monoclonal antibody treatment less than 5 months prior to screening.",
+      "followup": "아래는 위 확인 질문에 대한 환자의 답변입니다. 오늘 날짜는 2026년 10월 3일입니다.\n\n[환자 답변]\n- 3년 전에 신경과에서 \"조짐이 있는 편두통\"이라고 진단받았어요. 편두통은 다른 두통이랑 확실히 구분돼요.\n- 최근 석 달 동안 매달 머리 아픈 날이 8~10일 정도였고, 그중 심한 편두통은 6~8일이었어요.\n- 어깨가 뭉칠 때 가볍게 머리가 조이는 두통이 가끔 있는데, 따로 진단받은 두통은 없어요.\n- 시야 이상은 양쪽 눈에 다 생기고, 20분쯤 지나면 사라져요. 팔다리에 힘이 빠지거나 말이 어눌해진 적은 없어요.\n- 머리를 다친 적은 없고, 2년 전에 찍은 뇌 MRI는 정상이었어요.\n- 편두통 예방하려고 매일 프로프라놀롤이랑 토피라메이트를 먹고 있어요. 발작이 오면 수마트립탄을 먹어요.\n- 작년 봄에 병원에서 편두통 예방 주사를 몇 번 맞았는데, 약 이름은 기억이 안 나요. 그 뒤로는 안 맞았어요.\n\n[재평가 지시]\n1. 같은 판정 규칙으로 모든 기준을 다시 판정하세요.\n2. 판정이 바뀐 기준은 \"이전 → 이후\"로 표시하고, 근거에 환자 답변을 인용하세요.\n3. 최종 판단과 확인 질문 목록도 같은 형식으로 다시 쓰세요. 질문은 아직 \"모름\"인 기준에 대해서만 만드세요.",
+      "expected": {
+        "I1": "통과",
+        "I2": "통과",
+        "I3": "통과",
+        "I4": "등록 후 확인",
+        "E1": "통과",
+        "E2": "통과",
+        "E3": [
+          "통과",
+          "모름"
+        ],
+        "E4": "통과",
+        "E5": "탈락",
+        "E6": "통과"
+      },
+      "expected_final": [
+        "부적격"
+      ],
+      "expect_no_questions": true
+    }
+  ]
+}
