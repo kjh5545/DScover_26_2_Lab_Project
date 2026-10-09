@@ -234,3 +234,7 @@ screening/labeling/*.zip
 screening/labeling/팀원1/
 screening/labeling/팀원2/
 screening/labeling/labels_raw.json
+
+# 참고 자료 (다른 팀 결과물 등, 저장소에 올리지 않음)
+reference/
+*.zip
