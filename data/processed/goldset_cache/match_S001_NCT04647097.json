@@ -1,0 +1,108 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "Profile lists only a 'suspected_diagnosis': 'Acute pancreatitis (alcohol-induced)' with 'severe epigastric pain radiating to the back' and 'markedly elevated serum lipase'/'amylase'; no confirmed diagnosis per revised Atlanta criteria and no mention of hospitalization.",
+    "sub_condition_notes": [
+      "Hospitalized: not stated in profile — unknown",
+      "AP diagnosis by revised Atlanta criteria: only 'suspected_diagnosis' on record, symptoms and enzymes supportive but formal diagnosis not documented — unknown",
+      "Alcohol etiology: 'chronic alcohol use' and suspected 'alcohol-induced' supports but does not confirm"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "No smoking information in the profile; history lists only 'chronic alcohol use'.",
+    "sub_condition_notes": [
+      "Smoked ≥100 cigarettes lifetime: not mentioned — unknown",
+      "Currently smokes daily: not mentioned — unknown",
+      "At least 1-year smoking history: not mentioned — unknown"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "'age': 54, 'age_unit': 'years' — within 18-80 years.",
+    "sub_condition_notes": [
+      "Age ≥18: 54 years — pass",
+      "Age ≤80: 54 years — pass"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "Provision of written informed consent occurs at/after enrollment and is not determinable from the profile.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness to participate in the three-monthly intervention is a participation/compliance commitment assessed at enrollment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "Profile notes 'suspected_diagnosis': 'Acute pancreatitis (alcohol-induced)' and 'chronic alcohol use', but there is no information on gallstones, triglyceride or calcium levels, or viral infection to exclude other/combined etiologies.",
+    "sub_condition_notes": [
+      "Gallstone-related etiology: not assessed in profile — unknown",
+      "Hypertriglyceridemia >11.5 mM: no triglyceride values in labs — unknown",
+      "Hypercalcemia: no calcium values in labs — unknown",
+      "Viral infection: not mentioned — unknown",
+      "Combined etiological factors: cannot be determined — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No psychiatric history recorded; history lists only 'chronic alcohol use'.",
+    "sub_condition_notes": [
+      "Schizophrenia: not mentioned — unknown",
+      "Bipolar disorder: not mentioned — unknown",
+      "Dementia: not mentioned — unknown",
+      "Untreated/decompensated/severe status: not mentioned — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "'medications': [] and no mention of smoking or any smoking cessation program participation.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No malignancy or oncologic treatment mentioned in history or medications ('medications': []); absence of mention is not proof of absence.",
+    "sub_condition_notes": [
+      "Active anticancer treatment: not mentioned — unknown",
+      "Palliative treatment for malignancy: not mentioned — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "'sex': 'M' — pregnancy and breastfeeding are not applicable.",
+    "sub_condition_notes": [
+      "Pregnancy: not applicable to a male patient — pass",
+      "Breastfeeding: not applicable to a male patient — pass"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No information on prognosis or life-limiting comorbidity in the profile.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "post_enrollment",
+    "evidence": "Agreement to participate is determined at the time of consent/enrollment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "post_enrollment",
+    "evidence": "Open-ended criterion ('Other') whose content is not disclosed; requires investigator's judgment.",
+    "sub_condition_notes": []
+  }
+]

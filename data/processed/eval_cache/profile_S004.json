@@ -1,0 +1,18 @@
+{
+  "age": 68,
+  "age_unit": "years",
+  "sex": "M",
+  "suspected_diagnosis": "Bladder cancer (urothelial/transitional cell carcinoma of the bladder)",
+  "findings": [
+    "painless gross hematuria",
+    "mass in the bladder wall"
+  ],
+  "history": [
+    "long smoking history"
+  ],
+  "medications": [],
+  "labs": [
+    "CT urography reveals a mass in the bladder wall"
+  ],
+  "id": "S004"
+}

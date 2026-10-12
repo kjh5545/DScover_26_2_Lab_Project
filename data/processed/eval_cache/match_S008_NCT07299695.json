@@ -1,0 +1,137 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"age\": 60, \"age_unit\": \"years\" — patient is ≥ 18 years of age.",
+    "sub_condition_notes": [
+      "Age ≥ 18: satisfied (60 years)"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Profile lists only a \"suspected_diagnosis\": \"Idiopathic pulmonary fibrosis (usual interstitial pneumonia pattern)\" with \"Chest CT reveals bilateral basal reticular opacities with honeycombing\"; no established IPF diagnosis fulfilling ATS/ERS consensus criteria is on record.",
+    "sub_condition_notes": [
+      "IPF diagnosis on record: not established, only suspected → unknown",
+      "Radiology consistent with UIP (basal reticulation + honeycombing) supports but does not prove a formal ATS/ERS diagnosis"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "fail",
+    "evidence": "Findings are \"progressive dyspnea\", \"dry cough\", \"clubbing of the fingers\" and CT shows only \"bilateral basal reticular opacities with honeycombing\" — no new bilateral ground-glass opacity or consolidation, and no indication of hospitalisation or acute worsening within <1 month.",
+    "sub_condition_notes": [
+      "Previous or concurrent IPF diagnosis: radiologic UIP pattern present, could satisfy this sub-condition",
+      "Acute worsening/development of dyspnoea typically <1 month: not supported — dyspnoea described as 'progressive', no acute onset stated",
+      "CT with new bilateral ground-glass opacity and/or consolidation on a UIP background: CT is available and shows only reticulation with honeycombing, no GGO/consolidation → not met (CT is not missing, so 'suspected AE' route does not apply)",
+      "Deterioration not explained by cardiac failure/fluid overload: no deterioration documented",
+      "Hospitalisation with definite/suspected AE-IPF: not documented"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "No information in the profile about the patient's capacity to understand or willingness to sign a written informed consent form; this could be ascertained by asking the patient.",
+    "sub_condition_notes": [
+      "Able to understand and sign consent: unknown",
+      "Legally authorized representative if incapacitated: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "\"history\": [] and no cardiac or thromboembolic data are provided; no information on heart failure or pulmonary embolism as a cause of worsening.",
+    "sub_condition_notes": [
+      "Uncontrolled heart failure: not mentioned → unknown",
+      "Pulmonary embolism: not mentioned → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No allergy/hypersensitivity information in the profile (\"history\": [], \"medications\": []); can be asked of the patient.",
+    "sub_condition_notes": [
+      "Hypersensitivity to corticosteroids: unknown",
+      "Hypersensitivity to IVIG or study treatment components: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "Labs listed contain only \"Chest CT reveals bilateral basal reticular opacities with honeycombing\"; no immunoglobulin A level is reported.",
+    "sub_condition_notes": [
+      "Known IgA deficiency (IgA <7 mg/dL): no IgA measurement available → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Only a \"suspected_diagnosis\": \"Idiopathic pulmonary fibrosis (usual interstitial pneumonia pattern)\" is recorded; whether a definite diagnosis will be established by multidisciplinary discussion is not documented.",
+    "sub_condition_notes": [
+      "Definite IPF diagnosis by clinical/radiological/lab evaluation and MDD: not yet established → unknown",
+      "Definite AE-IPF diagnosis: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "\"history\": [] and \"medications\": [] — no information on malignancy or cancer treatment is provided.",
+    "sub_condition_notes": [
+      "Active malignancy: not mentioned → unknown",
+      "Currently receiving cancer treatment: not mentioned → unknown",
+      "Exception categories (skin cancer, low-risk prostate cancer): not applicable/unknown"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "\"medications\": [] is empty, but no explicit statement about recent corticosteroid or immunosuppressant exposure in the preceding month is given.",
+    "sub_condition_notes": [
+      ">20 mg/day prednisone for >14 days in preceding month: unknown",
+      "Any immunosuppressant (cyclophosphamide, mycophenolate, etc.) in last month: unknown",
+      ">1 mg/kg/d for >7 days in last 15 days: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No information about participation in another interventional clinical trial is present in the profile.",
+    "sub_condition_notes": [
+      "Concurrent interventional trial participation: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Patient is \"sex\": \"F\", age 60; no pregnancy or lactation status documented, so documented pregnancy/lactation cannot be confirmed or excluded from the profile alone.",
+    "sub_condition_notes": [
+      "Documented pregnancy: not documented → unknown (unlikely at 60 years but not stated)",
+      "Lactation: not documented → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "No information on legal protection status (tutorship/curatorship) in the profile.",
+    "sub_condition_notes": [
+      "Under tutorship or curatorship: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "No information on deprivation of liberty or court protection in the profile.",
+    "sub_condition_notes": [
+      "Deprived of liberty: unknown",
+      "Under court protection: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "unknown",
+    "evidence": "The profile does not state whether the patient refuses participation or declines written informed consent; this can be asked directly.",
+    "sub_condition_notes": [
+      "Refusal to participate / decline consent: unknown"
+    ]
+  }
+]

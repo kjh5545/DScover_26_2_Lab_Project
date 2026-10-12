@@ -1,0 +1,116 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "Patient profile: \"age\": 68, \"age_unit\": \"years\" — within 18 to 90 years.",
+    "sub_condition_notes": [
+      "Age ≥18: pass (68)",
+      "Age ≤90: pass (68)"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "The profile contains no information about the patient's ability to understand or willingness to sign informed consent; this could be asked of the patient now.",
+    "sub_condition_notes": [
+      "Able to understand consent: unknown",
+      "Willing to sign written consent: unknown"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "Profile states only \"suspected_diagnosis\": \"Bladder cancer (urothelial/transitional cell carcinoma of the bladder)\" and \"CT urography reveals a mass in the bladder wall\". No cystoscopy finding of a papillary tumor, no TURBT scheduling, and no histologic proof of MIBC are on record.",
+    "sub_condition_notes": [
+      "Papillary tumor on cystoscopy scheduled for TURBT: unknown — no cystoscopy documented",
+      "Histologically proven MIBC, clinically localized, resectable with curative intent: unknown — diagnosis is only 'suspected', no histology reported"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "No performance status is recorded in the profile; ECOG status could be determined by clinical assessment/questioning at this stage.",
+    "sub_condition_notes": [
+      "ECOG 0 or 1: unknown — not documented"
+    ]
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "unknown",
+    "evidence": "Labs listed are only \"CT urography reveals a mass in the bladder wall\"; no serum creatinine or creatinine clearance value is available.",
+    "sub_condition_notes": [
+      "Creatinine < 1.5 x ULN: unknown — no creatinine value",
+      "CrCl ≥ 50 mL/min/1.73 m2 by Cockcroft-Gault if creatinine ≥ 1.5 x ULN: unknown — no creatinine value"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No allergy history is recorded; \"medications\": [] and \"history\": [\"long smoking history\"] contain no reference to gadobutrol or ferumoxytol reactions. This can be asked of the patient.",
+    "sub_condition_notes": [
+      "Severe hypersensitivity to gadobutrol: unknown",
+      "Severe hypersensitivity to ferumoxytol: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "The profile makes no mention of claustrophobia or prior MRI tolerance; this could be asked of the patient now.",
+    "sub_condition_notes": [
+      "Severe claustrophobia preventing MRI: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No implanted devices, prostheses, or pacemakers are mentioned in \"history\": [\"long smoking history\"]; absence of mention does not rule them out.",
+    "sub_condition_notes": [
+      "MRI-incompatible implanted device: unknown",
+      "Prosthetic: unknown",
+      "Pacemaker: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Findings are limited to \"painless gross hematuria\" and \"mass in the bladder wall\"; no staging information addressing metastatic disease is reported.",
+    "sub_condition_notes": [
+      "Known metastatic disease: unknown — no staging data",
+      "Suspected metastatic disease: unknown — imaging report only describes a bladder wall mass"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "Patient profile: \"sex\": \"M\" — this criterion applies only to women, so pregnancy, lactation, and plans to conceive are logically excluded.",
+    "sub_condition_notes": [
+      "Active pregnancy: not applicable (male)",
+      "Lactation: not applicable (male)",
+      "Plans to conceive (as a woman): not applicable (male)"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No urinalysis/culture or infection symptoms are documented; the only urinary finding is \"painless gross hematuria\". Presence of an untreated UTI cannot be determined from the profile.",
+    "sub_condition_notes": [
+      "Untreated urinary tract infection: unknown — no urine studies reported"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "The profile's history (\"long smoking history\") contains no mention of urethral stricture disease or catheterization difficulty; this can be asked of the patient.",
+    "sub_condition_notes": [
+      "Known urethral stricture prohibiting Foley placement: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "post_enrollment",
+    "evidence": "This criterion depends on the treating physician's judgment of unacceptable risk, which is determined at screening/evaluation rather than from the existing profile.",
+    "sub_condition_notes": [
+      "Other conditions deemed unacceptable risk by treating physician: post_enrollment (investigator judgment)"
+    ]
+  }
+]

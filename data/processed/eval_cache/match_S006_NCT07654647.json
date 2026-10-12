@@ -1,0 +1,103 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"age\": 45, \"age_unit\": \"years\" — patient is 45 years old, ≥18.",
+    "sub_condition_notes": [
+      "Age ≥18 years: satisfied (45 years)"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "The profile lists only \"fever\", \"facial pain\", \"black necrotic eschar on the nasal mucosa\", \"periorbital swelling\"; no imaging or description of cystic or tumoral osteolytic lesions or resulting bone defects is recorded.",
+    "sub_condition_notes": [
+      "Facial bone defect present: not documented",
+      "Defect due to cystic or tumoral osteolytic lesion: not documented (suspected diagnosis is infectious — \"Rhino-orbital mucormycosis\" — not cystic/tumoral)"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No acquired or congenital facial deformity, bony defect, or facial asymmetry is mentioned; only \"periorbital swelling\" and \"facial pain\" are recorded, which are inflammatory findings, not documented deformities.",
+    "sub_condition_notes": [
+      "Acquired facial deformity with bony defect: not documented",
+      "Congenital facial deformity/asymmetry: not documented"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "The profile contains no mention of any planned or required maxillofacial reconstruction or patient-specific 3D-printed titanium implant; \"medications\": [], \"labs\": [] and no surgical history are listed.",
+    "sub_condition_notes": [
+      "Requirement for patient-specific 3D-printed titanium implant: not stated in profile"
+    ]
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "unknown",
+    "evidence": "No aesthetic indication such as microgenia or chin retrusion is recorded in the findings or history.",
+    "sub_condition_notes": [
+      "Aesthetic indication for custom facial implant: not documented",
+      "Microgenia/chin retrusion: not documented"
+    ]
+  },
+  {
+    "criterion_id": "I6",
+    "verdict": "unknown",
+    "evidence": "No information on consent capacity or willingness is present in the profile; the patient is an adult (45 years) but no cognitive/consent status is documented.",
+    "sub_condition_notes": [
+      "Ability to provide written informed consent: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "fail",
+    "evidence": "Findings include \"fever\", \"facial pain\", \"black necrotic eschar on the nasal mucosa\", \"periorbital swelling\" with \"suspected_diagnosis\": \"Rhino-orbital mucormycosis (invasive fungal rhinosinusitis)\" — an active pathological lesion at this time.",
+    "sub_condition_notes": [
+      "Active pathological lesion present: yes — necrotic nasal mucosal eschar with periorbital involvement and fever"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "\"age\": 45 years — not below 18.",
+    "sub_condition_notes": [
+      "Age <18: no"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "History lists only \"poorly controlled type 2 diabetes\"; no radiotherapy history is mentioned, so this could be clarified by asking the patient.",
+    "sub_condition_notes": [
+      "Radiotherapy within past 12 months: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "\"labs\": [] — no vitamin D level or deficiency treatment status is recorded.",
+    "sub_condition_notes": [
+      "Vitamin D deficiency: not documented",
+      "Chronic and untreated: not documented (\"medications\": [] does not confirm a deficiency exists)"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "fail",
+    "evidence": "\"history\": [\"poorly controlled type 2 diabetes\"] and suspected diagnosis \"in the setting of poorly controlled diabetes\" — diabetes is uncontrolled.",
+    "sub_condition_notes": [
+      "Diabetes mellitus present: yes (type 2)",
+      "Uncontrolled: yes — explicitly described as poorly controlled"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No information in the profile about the patient's ability or willingness to comply with follow-up visits.",
+    "sub_condition_notes": [
+      "Compliance with follow-up: not documented"
+    ]
+  }
+]

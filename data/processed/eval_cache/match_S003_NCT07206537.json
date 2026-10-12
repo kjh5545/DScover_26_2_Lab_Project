@@ -1,0 +1,65 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "fail",
+    "evidence": "Patient is a 7-year-old male with a 3-week history of periorbital edema and frothy urine and \"medications\": [] — no glucocorticoid therapy has been started, and the diagnosis is only \"suspected_diagnosis\": \"Nephrotic syndrome, most likely minimal change disease\".",
+    "sub_condition_notes": [
+      "Nephrotic patient under 16 years of both genders: pass — \"age\": 7, \"sex\": \"M\", suspected nephrotic syndrome with \"heavy proteinuria\" and \"serum albumin is low\" (diagnosis is suspected, not formally on record)",
+      "Treated with GC for the first time: fail — medication list is empty, no steroid therapy recorded",
+      "GC initiated at 2 mg/kg/day prednisolone with gradual tapering: fail — no prednisolone in \"medications\": []"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "Patient has only a \"3-week history of periorbital edema and frothy urine\" and \"medications\": [] — therefore he cannot have been on glucocorticoid therapy for more than 6 months.",
+    "sub_condition_notes": [
+      "On glucocorticoid therapy >6 months: fail — no medications recorded and symptom onset only 3 weeks ago",
+      "Vitamin D level ≥30 ng/ml (75 nmol/L): unknown — labs list only \"heavy proteinuria without hematuria\" and \"serum albumin is low\"; no vitamin D level reported"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "Labs provided are only \"Urinalysis shows heavy proteinuria without hematuria\" and \"serum albumin is low\"; no creatinine, eGFR or other measure of kidney function is reported.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "Profile lists \"medications\": [] with no information on adherence to medications or vitamin supplements.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "History contains only \"3-week history of periorbital edema and frothy urine\"; no mention of gallbladder/biliary disease, cystic fibrosis, celiac disease or other malabsorption condition.",
+    "sub_condition_notes": [
+      "Gallbladder or biliary disease: unknown — not mentioned",
+      "Cystic fibrosis: unknown — not mentioned",
+      "Celiac disease: unknown — not mentioned",
+      "Other fat-soluble vitamin malabsorption disease: unknown — not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No bleeding disorder, osteomalacia or other vitamin K-related disorder is mentioned in the history, which records only \"3-week history of periorbital edema and frothy urine\".",
+    "sub_condition_notes": [
+      "Bleeding disorders: unknown — not mentioned",
+      "Osteomalacia: unknown — not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No fracture history is recorded; history lists only \"3-week history of periorbital edema and frothy urine\".",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "\"suspected_diagnosis\": \"Nephrotic syndrome, most likely minimal change disease\" — no genetic testing results are reported, so a genetic cause cannot be confirmed or ruled out.",
+    "sub_condition_notes": []
+  }
+]

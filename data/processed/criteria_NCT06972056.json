@@ -1,0 +1,415 @@
+[
+  {
+    "id": "I1",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Adults, 18-70 years of age at the time of enrollment",
+    "sub_conditions": [
+      "Age >= 18 years at enrollment",
+      "Age <= 70 years at enrollment"
+    ],
+    "needed_info": [
+      "age",
+      "date of enrollment"
+    ]
+  },
+  {
+    "id": "I2",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Migraine with aura, migraine without aura, and/or chronic migraine; according to ICHD-3 diagnostic criteria. (Those with daily or continuous headaches are not excluded.)",
+    "sub_conditions": [
+      "Diagnosis of migraine with aura per ICHD-3, OR",
+      "Diagnosis of migraine without aura per ICHD-3, OR",
+      "Diagnosis of chronic migraine per ICHD-3",
+      "Daily or continuous headaches do not disqualify"
+    ],
+    "needed_info": [
+      "diagnosis",
+      "headache classification (ICHD-3)",
+      "headache frequency/pattern"
+    ]
+  },
+  {
+    "id": "I3",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Migraine onset prior to 50 years of age",
+    "sub_conditions": [
+      "Age at first migraine onset < 50 years"
+    ],
+    "needed_info": [
+      "age at migraine onset",
+      "migraine history"
+    ]
+  },
+  {
+    "id": "I4",
+    "type": "inclusion",
+    "category": "temporal_numeric",
+    "text": "Migraine present for at least 12 months at the time of enrollment",
+    "sub_conditions": [
+      "Duration of migraine >= 12 months at enrollment"
+    ],
+    "needed_info": [
+      "date of migraine diagnosis/onset",
+      "duration of migraine"
+    ]
+  },
+  {
+    "id": "I5",
+    "type": "inclusion",
+    "category": "temporal_numeric",
+    "text": "At least four \"moderate to severe headache days\" per month by patient self-report (a moderate to severe headache day = a day with headache of moderate to severe intensity lasting at least four hours, or a day on which a migraine-specific acute medication is taken to treat headache)",
+    "sub_conditions": [
+      "Self-reported >= 4 moderate-to-severe headache days per month",
+      "Headache of moderate to severe intensity lasting >= 4 hours, or",
+      "Day on which migraine-specific acute medication is taken"
+    ],
+    "needed_info": [
+      "monthly headache day frequency",
+      "headache severity",
+      "headache duration",
+      "acute migraine medication use"
+    ]
+  },
+  {
+    "id": "I6",
+    "type": "inclusion",
+    "category": "post_enrollment",
+    "text": "At least four \"moderate to severe headache days\" per month confirmed during the four-week pre-randomization headache diary phase",
+    "sub_conditions": [
+      "Completion of 4-week pre-randomization headache diary",
+      "Diary confirms >= 4 moderate-to-severe headache days per month"
+    ],
+    "needed_info": [
+      "prospective 4-week headache diary data",
+      "headache severity and duration per day",
+      "acute medication use per day"
+    ]
+  },
+  {
+    "id": "I7",
+    "type": "inclusion",
+    "category": "administrative",
+    "text": "If already taking a migraine preventive treatment, willing to continue with that treatment without dose change during the first 16 weeks of the study, including the 4-week run-in phase and 12-week randomized phase",
+    "sub_conditions": [
+      "Current migraine preventive treatment (if any) identified",
+      "Willingness to continue the same preventive treatment for 16 weeks",
+      "Willingness to keep the dose unchanged for 16 weeks"
+    ],
+    "needed_info": [
+      "current migraine preventive medication",
+      "dose",
+      "patient willingness to maintain regimen"
+    ]
+  },
+  {
+    "id": "I8",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Not pregnant or breastfeeding",
+    "sub_conditions": [
+      "Not pregnant",
+      "Not breastfeeding"
+    ],
+    "needed_info": [
+      "pregnancy status",
+      "pregnancy test result",
+      "breastfeeding status"
+    ]
+  },
+  {
+    "id": "I9",
+    "type": "inclusion",
+    "category": "administrative",
+    "text": "Women of childbearing potential must agree to use effective methods of contraception to reduce the risk of pregnancy",
+    "sub_conditions": [
+      "Determination of childbearing potential",
+      "Agreement to use effective contraception"
+    ],
+    "needed_info": [
+      "sex",
+      "childbearing potential status",
+      "contraception method",
+      "patient agreement"
+    ]
+  },
+  {
+    "id": "I10",
+    "type": "inclusion",
+    "category": "administrative",
+    "text": "Willingness and ability to provide informed consent",
+    "sub_conditions": [
+      "Willing to provide informed consent",
+      "Able to provide informed consent"
+    ],
+    "needed_info": [
+      "consent capability",
+      "cognitive status"
+    ]
+  },
+  {
+    "id": "I11",
+    "type": "inclusion",
+    "category": "administrative",
+    "text": "Willingness and ability to complete all research visits",
+    "sub_conditions": [
+      "Willing to attend all research visits",
+      "Able to attend all research visits"
+    ],
+    "needed_info": [
+      "patient availability",
+      "ability to travel to study site"
+    ]
+  },
+  {
+    "id": "E1",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Contraindications to taking atogepant, propranolol, or topiramate",
+    "sub_conditions": [
+      "Contraindication to atogepant",
+      "Contraindication to propranolol",
+      "Contraindication to topiramate"
+    ],
+    "needed_info": [
+      "allergy/hypersensitivity history",
+      "comorbid conditions (e.g., asthma, bradycardia, glaucoma, kidney stones)",
+      "concomitant medications"
+    ]
+  },
+  {
+    "id": "E2",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Currently taking atogepant, propranolol, or topiramate (occasional as-needed use of propranolol is not an exclusion)",
+    "sub_conditions": [
+      "Current use of atogepant",
+      "Current use of propranolol (regular, not occasional as-needed)",
+      "Current use of topiramate"
+    ],
+    "needed_info": [
+      "current medication list",
+      "pattern of propranolol use (scheduled vs as needed)"
+    ]
+  },
+  {
+    "id": "E3",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Previously took atogepant, propranolol, or topiramate (occasional as-needed use of propranolol in the past is not an exclusion)",
+    "sub_conditions": [
+      "Prior use of atogepant",
+      "Prior use of propranolol (regular, not occasional as-needed)",
+      "Prior use of topiramate"
+    ],
+    "needed_info": [
+      "medication history",
+      "pattern of past propranolol use"
+    ]
+  },
+  {
+    "id": "E4",
+    "type": "exclusion",
+    "category": "administrative",
+    "text": "Unwillingness to take atogepant, topiramate, or propranolol",
+    "sub_conditions": [
+      "Unwilling to take atogepant",
+      "Unwilling to take topiramate",
+      "Unwilling to take propranolol"
+    ],
+    "needed_info": [
+      "patient willingness to take study medications"
+    ]
+  },
+  {
+    "id": "E5",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Current use of a CGRP-targeting preventive medication or beta-blocker",
+    "sub_conditions": [
+      "Current use of CGRP-targeting preventive medication (e.g., erenumab, fremanezumab, galcanezumab, eptinezumab, rimegepant, atogepant)",
+      "Current use of any beta-blocker"
+    ],
+    "needed_info": [
+      "current medication list",
+      "migraine preventive medication history"
+    ]
+  },
+  {
+    "id": "E6",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Migraine with brainstem aura",
+    "sub_conditions": [
+      "Diagnosis of migraine with brainstem aura"
+    ],
+    "needed_info": [
+      "migraine subtype diagnosis",
+      "aura characteristics"
+    ]
+  },
+  {
+    "id": "E7",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Hemiplegic migraine",
+    "sub_conditions": [
+      "Diagnosis of hemiplegic migraine"
+    ],
+    "needed_info": [
+      "migraine subtype diagnosis"
+    ]
+  },
+  {
+    "id": "E8",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Retinal migraine",
+    "sub_conditions": [
+      "Diagnosis of retinal migraine"
+    ],
+    "needed_info": [
+      "migraine subtype diagnosis"
+    ]
+  },
+  {
+    "id": "E9",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Migraine aura without headache (exclusively)",
+    "sub_conditions": [
+      "Exclusive diagnosis of typical aura without headache"
+    ],
+    "needed_info": [
+      "migraine subtype diagnosis",
+      "presence of headache with aura"
+    ]
+  },
+  {
+    "id": "E10",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Pure menstrual migraine",
+    "sub_conditions": [
+      "Diagnosis of pure menstrual migraine"
+    ],
+    "needed_info": [
+      "migraine subtype diagnosis",
+      "relationship of attacks to menstrual cycle"
+    ]
+  },
+  {
+    "id": "E11",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Trigeminal autonomic cephalalgias",
+    "sub_conditions": [
+      "Diagnosis of a trigeminal autonomic cephalalgia (e.g., cluster headache, paroxysmal hemicrania, SUNCT/SUNA, hemicrania continua)"
+    ],
+    "needed_info": [
+      "headache diagnosis"
+    ]
+  },
+  {
+    "id": "E12",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Facial neuralgias",
+    "sub_conditions": [
+      "Diagnosis of facial neuralgia (e.g., trigeminal neuralgia)"
+    ],
+    "needed_info": [
+      "diagnosis of neuralgia"
+    ]
+  },
+  {
+    "id": "E13",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Secondary headache disorders (medication overuse headache is not an exclusion)",
+    "sub_conditions": [
+      "Diagnosis of a secondary headache disorder",
+      "Medication overuse headache does not count as exclusionary"
+    ],
+    "needed_info": [
+      "headache diagnosis",
+      "imaging/workup for secondary causes"
+    ]
+  },
+  {
+    "id": "E14",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Migraine preventive treatment has been started or dose has been changed within 12 weeks prior to potential enrollment",
+    "sub_conditions": [
+      "New migraine preventive treatment started within 12 weeks before enrollment",
+      "Dose change of migraine preventive treatment within 12 weeks before enrollment"
+    ],
+    "needed_info": [
+      "migraine preventive medication start date",
+      "dose change dates",
+      "enrollment date"
+    ]
+  },
+  {
+    "id": "E15",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Used opioids or butalbital on five or more days per month on average for at least 3 months prior to enrollment",
+    "sub_conditions": [
+      "Opioid use >= 5 days/month on average",
+      "Butalbital use >= 5 days/month on average",
+      "Sustained for at least 3 months prior to enrollment"
+    ],
+    "needed_info": [
+      "opioid use frequency",
+      "butalbital use frequency",
+      "duration of use",
+      "medication history"
+    ]
+  },
+  {
+    "id": "E16",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Current or past epilepsy",
+    "sub_conditions": [
+      "Current diagnosis of epilepsy",
+      "Past diagnosis of epilepsy"
+    ],
+    "needed_info": [
+      "seizure history",
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "E17",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Severe hepatic impairment",
+    "sub_conditions": [
+      "Severe hepatic impairment (e.g., Child-Pugh C)"
+    ],
+    "needed_info": [
+      "liver function tests",
+      "hepatic disease history",
+      "Child-Pugh score"
+    ]
+  },
+  {
+    "id": "E18",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Moderate or more severe renal impairment",
+    "sub_conditions": [
+      "Renal impairment of moderate or greater severity (e.g., eGFR/CrCl below moderate threshold)"
+    ],
+    "needed_info": [
+      "lab: creatinine",
+      "eGFR or creatinine clearance",
+      "renal disease history"
+    ]
+  }
+]

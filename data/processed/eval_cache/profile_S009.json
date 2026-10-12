@@ -1,0 +1,19 @@
+{
+  "age": 19,
+  "age_unit": "years",
+  "sex": "M",
+  "suspected_diagnosis": "Infectious mononucleosis (Epstein-Barr virus infection)",
+  "findings": [
+    "fever",
+    "sore throat",
+    "fatigue",
+    "posterior cervical lymphadenopathy",
+    "splenomegaly"
+  ],
+  "history": [],
+  "medications": [],
+  "labs": [
+    "monospot test is positive"
+  ],
+  "id": "S009"
+}

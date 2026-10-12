@@ -1,0 +1,77 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "Patient is a 7-year-old male with 'Nephrotic syndrome, most likely minimal change disease' (so <16 years, both genders allowed), but the profile lists 'medications: []' and contains no information on whether glucocorticoid treatment was initiated for the first time at 2 mg/kg/day prednisolone with gradual tapering.",
+    "sub_condition_notes": [
+      "Nephrotic patient: suspected diagnosis 'Nephrotic syndrome, most likely minimal change disease' with 'heavy proteinuria', 'low serum albumin', 'periorbital edema' — supportive, though formally only suspected",
+      "Under 16 years of age: pass — 'age': 7 years",
+      "Both genders: pass — male is acceptable",
+      "Treated with GC for the first time: unknown — no GC recorded, no treatment history given",
+      "GC initiated at 2 mg/kg/day prednisolone with gradual dose reduction: unknown — no dosing information in profile"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Profile records '3-week history of periorbital edema and frothy urine' and 'medications: []', but gives no explicit statement about duration of glucocorticoid therapy, and no vitamin D level is reported in labs ('Urinalysis shows heavy proteinuria without hematuria', 'serum albumin is low').",
+    "sub_condition_notes": [
+      "On glucocorticoid therapy >6 months: unknown — no treatment duration documented; inferring from the 3-week symptom history alone is not sufficient",
+      "Vitamin D level ≥30 ng/ml (75 nmol/L): unknown — no vitamin D measurement in the labs listed"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "Labs only state 'Urinalysis shows heavy proteinuria without hematuria' and 'serum albumin is low'; no creatinine, eGFR, or renal function data are provided.",
+    "sub_condition_notes": [
+      "Impaired kidney function: unknown — no renal function measures in profile"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "post_enrollment",
+    "evidence": "Compliance with medications or vitamin supplements is assessed by the investigator during the study; the profile lists 'medications: []' and no adherence data.",
+    "sub_condition_notes": [
+      "Non-compliance with medications: post_enrollment — investigator/ongoing assessment",
+      "Non-compliance with vitamin supplements: post_enrollment — investigator/ongoing assessment"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "History only mentions '3-week history of periorbital edema and frothy urine'; no mention of gallbladder/biliary disease, cystic fibrosis, celiac disease or other malabsorption conditions.",
+    "sub_condition_notes": [
+      "Gallbladder or biliary disease: unknown — not mentioned",
+      "Cystic fibrosis: unknown — not mentioned",
+      "Celiac disease: unknown — not mentioned",
+      "Other fat-soluble vitamin malabsorption disorders: unknown — not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No bleeding disorder, osteomalacia, or other vitamin K-related disorder is listed in the history ('3-week history of periorbital edema and frothy urine').",
+    "sub_condition_notes": [
+      "Bleeding disorders: unknown — not mentioned",
+      "Osteomalacia: unknown — not mentioned",
+      "Other vitamin K-related disorders: unknown — not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "The history section contains only '3-week history of periorbital edema and frothy urine'; no information about prior bone fractures.",
+    "sub_condition_notes": [
+      "History of bone fracture: unknown — not documented"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Diagnosis is given only as 'Nephrotic syndrome, most likely minimal change disease'; no genetic testing or genetic etiology is reported, so a genetic cause can neither be confirmed nor excluded.",
+    "sub_condition_notes": [
+      "Identified genetic cause of nephrotic syndrome: unknown — no genetic workup reported"
+    ]
+  }
+]

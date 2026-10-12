@@ -1,0 +1,17 @@
+{
+  "age": 60,
+  "age_unit": "years",
+  "sex": "F",
+  "suspected_diagnosis": "Idiopathic pulmonary fibrosis (usual interstitial pneumonia pattern)",
+  "findings": [
+    "progressive dyspnea",
+    "dry cough",
+    "clubbing of the fingers"
+  ],
+  "history": [],
+  "medications": [],
+  "labs": [
+    "Chest CT reveals bilateral basal reticular opacities with honeycombing"
+  ],
+  "id": "S008"
+}

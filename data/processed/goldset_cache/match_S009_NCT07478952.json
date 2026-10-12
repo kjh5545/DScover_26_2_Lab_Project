@@ -1,0 +1,85 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "fail",
+    "evidence": "Patient presents with acute illness: \"fever\", \"sore throat\", \"fatigue\", \"posterior cervical lymphadenopathy\", \"splenomegaly\", with \"monospot test is positive\" and suspected \"Infectious mononucleosis (Epstein-Barr virus infection)\" — not healthy on medical history and physical examination.",
+    "sub_condition_notes": [
+      "Medical history: acute febrile illness with EBV infection suspected — not healthy",
+      "Physical examination: posterior cervical lymphadenopathy and splenomegaly — abnormal findings"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "\"sex\": \"M\" — patient is male, not assigned female at birth and cannot become pregnant or breast/chest feed.",
+    "sub_condition_notes": [
+      "Assigned female at birth / could become pregnant: no, patient is male — criterion not applicable, not excluded",
+      "Pregnancy/breastfeeding: not possible for this patient"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information about recent or scheduled surgical procedures; \"history\": [] is empty and no surgical plans are described.",
+    "sub_condition_notes": [
+      "Surgery within 7 days prior to Day 1/Day 57: not stated",
+      "Scheduled surgery within 28 days after study intervention: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "\"history\": [] contains no entries; no reported immunodeficiency, asplenia, or recurrent severe infections. The current findings show \"splenomegaly\" (an enlarged spleen, not asplenia), but absence of a reported history cannot be confirmed from the profile.",
+    "sub_condition_notes": [
+      "Congenital/acquired immunodeficiency: not reported — unknown",
+      "Immunosuppressive condition: not reported — unknown",
+      "Asplenia: patient has \"splenomegaly\", i.e., a spleen is present; asplenia not reported",
+      "Recurrent severe infectious disease: current acute EBV illness only; recurrence not reported — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "\"medications\": [] is empty; no information on corticosteroid use within 90 days or anticipated need.",
+    "sub_condition_notes": [
+      "Corticosteroids ≥10 mg/day prednisone equivalent >14 days within 90 days: not stated",
+      "Anticipated corticosteroid need during study: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "\"medications\": [] is empty; no information about systemic immunosuppressive or biological therapy in the prior 180 days or planned.",
+    "sub_condition_notes": [
+      "Systemic immunosuppressive treatment within 180 days: not stated",
+      "Planned immunosuppressive/biologic therapy during study: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No vaccination history or plans are recorded in the profile.",
+    "sub_condition_notes": [
+      "Nonstudy vaccine received within 28 days prior to Day 1: not stated",
+      "Planned nonstudy vaccine up to 28 days after second dose: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "\"history\": [] is empty; no mention of myocarditis, pericarditis, or myopericarditis.",
+    "sub_condition_notes": [
+      "History of myocarditis: not stated",
+      "History of pericarditis: not stated",
+      "History of myopericarditis: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No record of prior investigational EBV vaccine receipt in the profile (history and medications lists are empty, but prior trial participation is not addressed).",
+    "sub_condition_notes": [
+      "Prior investigational EBV vaccine: not stated"
+    ]
+  }
+]

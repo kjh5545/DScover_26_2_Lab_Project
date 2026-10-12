@@ -1,0 +1,70 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "The profile contains no information about consent; informed consent is obtained at/after enrollment screening.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "\"age\": 73, \"age_unit\": \"years\" — above the upper limit of 70 years.",
+    "sub_condition_notes": [
+      "≥18 years: satisfied (73 years)",
+      "≤70 years: not satisfied (73 years)"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "\"suspected_diagnosis\": \"Rhegmatogenous retinal detachment of the right eye\" is recorded, but no information on break location (4–8 o'clock), detached area involvement, PVR grade, or need for inferior retinotomy is given; these could be determined by examination/questioning.",
+    "sub_condition_notes": [
+      "RRD (primary or recurrent): suspected RRD on record, but diagnosis is only 'suspected' and primary vs recurrent is not stated — unknown",
+      "Inferior retinal breaks 4–8 o'clock within detached area: not documented — unknown",
+      "Requiring inferior retinotomy 4–8 o'clock (severe inferior PVR/retinal shortening): not documented — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information in the profile about break location (anterior retina only or dialysis) or indication for scleral buckling surgery; findings only list \"sudden onset of a painless, curtain-like loss of vision in the right eye\", \"preceded by flashes of light\", \"floaters\".",
+    "sub_condition_notes": [
+      "Only anterior retinal breaks or dialysis: unknown",
+      "Meets indications for scleral buckling: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "The profile does not describe the position of retinal breaks or whether they are involved in the detached area.",
+    "sub_condition_notes": [
+      "Breaks at 4–8 o'clock: unknown",
+      "Breaks not involved in detached area: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "\"history\": [] — no ocular history is recorded, so pre-existing serious eye disease (corneal ulcer, glaucoma, uveitis) cannot be ruled out; it could be asked of the patient.",
+    "sub_condition_notes": [
+      "Corneal ulcers: unknown",
+      "Glaucoma: unknown",
+      "Uveitis/other serious eye disease: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "\"history\": [] and \"medications\": [] — no mention of epilepsy or psychiatric disease; absence of mention is not proof of absence.",
+    "sub_condition_notes": [
+      "History of epilepsy: unknown",
+      "Serious psychiatric disease: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "post_enrollment",
+    "evidence": "Depends on the investigator's judgment, which occurs after application/screening.",
+    "sub_condition_notes": []
+  }
+]

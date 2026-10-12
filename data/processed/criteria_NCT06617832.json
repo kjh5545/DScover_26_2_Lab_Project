@@ -1,0 +1,255 @@
+[
+  {
+    "id": "I1",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Adults (18-65 years)",
+    "sub_conditions": [
+      "Age ≥ 18 years",
+      "Age ≤ 65 years"
+    ],
+    "needed_info": [
+      "age"
+    ]
+  },
+  {
+    "id": "I2",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "≥ 1-year history of migraine with or without aura according to the International Classification of Headache Disorders (ICHD-3) diagnostic criteria",
+    "sub_conditions": [
+      "Diagnosis of migraine with or without aura per ICHD-3 criteria",
+      "History of migraine of at least 1 year duration"
+    ],
+    "needed_info": [
+      "diagnosis: migraine (with/without aura)",
+      "date of migraine onset / duration of migraine history",
+      "diagnostic criteria used (ICHD-3)"
+    ]
+  },
+  {
+    "id": "I3",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Known episodic migraine (≥ 1 and < 15 headache days with features of migraine on at least 2-8 days per month for > 3 months) with and without aura and diagnosed before age 50",
+    "sub_conditions": [
+      "Diagnosis of episodic migraine",
+      "≥ 1 and < 15 headache days per month",
+      "Migraine features on at least 2-8 days per month",
+      "Pattern present for > 3 months",
+      "Migraine diagnosed before age 50"
+    ],
+    "needed_info": [
+      "diagnosis: episodic migraine",
+      "monthly headache day count",
+      "monthly migraine day count",
+      "duration of current headache pattern",
+      "age at migraine diagnosis"
+    ]
+  },
+  {
+    "id": "I4",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Previous or active use of triptans as acute treatment for migraine",
+    "sub_conditions": [
+      "Current or past use of triptans for acute migraine treatment"
+    ],
+    "needed_info": [
+      "medication history: triptans"
+    ]
+  },
+  {
+    "id": "I5",
+    "type": "inclusion",
+    "category": "administrative",
+    "text": "Ability to speak and read Danish",
+    "sub_conditions": [
+      "Able to speak Danish",
+      "Able to read Danish"
+    ],
+    "needed_info": [
+      "language proficiency: Danish (spoken and written)"
+    ]
+  },
+  {
+    "id": "E1",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Chronic migraine or history of chronic migraine in the last 12 months",
+    "sub_conditions": [
+      "Current chronic migraine",
+      "History of chronic migraine within the last 12 months"
+    ],
+    "needed_info": [
+      "diagnosis: chronic migraine",
+      "headache history over past 12 months"
+    ]
+  },
+  {
+    "id": "E2",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Other concomitant primary headache types except for infrequent tension-type headache",
+    "sub_conditions": [
+      "Presence of another primary headache disorder",
+      "Exception: infrequent tension-type headache is allowed"
+    ],
+    "needed_info": [
+      "diagnosis: other primary headache disorders",
+      "frequency of tension-type headache"
+    ]
+  },
+  {
+    "id": "E3",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Secondary headache disorders including medication overuse headache",
+    "sub_conditions": [
+      "Any secondary headache disorder",
+      "Medication overuse headache"
+    ],
+    "needed_info": [
+      "diagnosis: secondary headache disorder",
+      "diagnosis: medication overuse headache",
+      "acute medication usage frequency"
+    ]
+  },
+  {
+    "id": "E4",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Severe psychiatric, vascular or liver diseases",
+    "sub_conditions": [
+      "Severe psychiatric disease",
+      "Severe vascular disease",
+      "Severe liver disease"
+    ],
+    "needed_info": [
+      "psychiatric history",
+      "cardiovascular/vascular history",
+      "hepatic history",
+      "lab: liver function tests"
+    ]
+  },
+  {
+    "id": "E5",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Opioid or barbiturate use in the month preceding screening",
+    "sub_conditions": [
+      "Opioid use within 1 month before screening",
+      "Barbiturate use within 1 month before screening"
+    ],
+    "needed_info": [
+      "medication history: opioids",
+      "medication history: barbiturates",
+      "dates of last use"
+    ]
+  },
+  {
+    "id": "E6",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Current use of preventive migraine treatment (i.e., onabotulinum toxin A, and/or CGRP monoclonal antibodies); stable treatment with other prophylactic agents (antidepressants, calcium channel blockers, beta blockers, antiepileptic drugs) 4 weeks prior to inclusion and through study completion is permitted",
+    "sub_conditions": [
+      "Current use of onabotulinum toxin A",
+      "Current use of CGRP monoclonal antibodies",
+      "Other migraine prophylactics permitted only if stable for 4 weeks prior to inclusion and maintained through study participation"
+    ],
+    "needed_info": [
+      "medication history: onabotulinum toxin A",
+      "medication history: CGRP monoclonal antibodies",
+      "medication history: other migraine prophylactics (antidepressants, calcium channel blockers, beta blockers, antiepileptics)",
+      "duration/stability of prophylactic dosing"
+    ]
+  },
+  {
+    "id": "E7",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Contraindications or inability to tolerate triptans",
+    "sub_conditions": [
+      "Contraindication to triptans",
+      "Intolerance to triptans"
+    ],
+    "needed_info": [
+      "medical history: contraindications to triptans",
+      "history of triptan intolerance/adverse reactions"
+    ]
+  },
+  {
+    "id": "E8",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Current substance use disorder",
+    "sub_conditions": [
+      "Active substance use disorder"
+    ],
+    "needed_info": [
+      "diagnosis: substance use disorder",
+      "substance use history"
+    ]
+  },
+  {
+    "id": "E9",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Implanted metallic or electronic device in the head",
+    "sub_conditions": [
+      "Implanted metallic device in the head",
+      "Implanted electronic device in the head"
+    ],
+    "needed_info": [
+      "implant history/surgical history: head implants"
+    ]
+  },
+  {
+    "id": "E10",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Cardiac pacemaker or implanted or wearable defibrillator",
+    "sub_conditions": [
+      "Cardiac pacemaker",
+      "Implanted defibrillator",
+      "Wearable defibrillator"
+    ],
+    "needed_info": [
+      "cardiac device history"
+    ]
+  },
+  {
+    "id": "E11",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Use of illegal psychotropic drugs less than a week before participation in the study; regarding cannabis: less than four weeks before participation in the study",
+    "sub_conditions": [
+      "Use of illegal psychotropic drugs within 1 week before study participation",
+      "Cannabis use within 4 weeks before study participation"
+    ],
+    "needed_info": [
+      "recreational/illicit drug use history",
+      "date of last illicit drug use",
+      "date of last cannabis use"
+    ]
+  },
+  {
+    "id": "E12",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Current pregnancy or planned pregnancy (confirmed by pregnancy test and by use of safe contraception as defined by the Danish Medicines Agency) and lactation",
+    "sub_conditions": [
+      "Current pregnancy",
+      "Planned pregnancy",
+      "Lactation/breastfeeding",
+      "Not using safe contraception as defined by the Danish Medicines Agency (for women of childbearing potential)"
+    ],
+    "needed_info": [
+      "pregnancy status",
+      "lab: pregnancy test",
+      "pregnancy plans",
+      "breastfeeding status",
+      "contraception method"
+    ]
+  }
+]

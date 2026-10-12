@@ -1,0 +1,126 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"age\": 60, \"age_unit\": \"years\" — patient is ≥ 18 years of age.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Profile lists only a \"suspected_diagnosis\": \"Idiopathic pulmonary fibrosis (usual interstitial pneumonia pattern)\" with \"Chest CT reveals bilateral basal reticular opacities with honeycombing\"; no confirmed IPF diagnosis fulfilling ATS/ERS consensus criteria is documented.",
+    "sub_condition_notes": [
+      "IPF diagnosis on record: not established, only suspected",
+      "ATS/ERS consensus criteria fulfilment: not documented"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No mention of hospitalisation or of an acute exacerbation; findings are \"progressive dyspnea\", \"dry cough\", \"clubbing of the fingers\" and CT shows \"bilateral basal reticular opacities with honeycombing\" without stated ground-glass/consolidation. AE-IPF status is not documented.",
+    "sub_condition_notes": [
+      "Hospitalised with definite/suspected AE-IPF: not stated — unknown",
+      "Previous or concurrent IPF diagnosis: only suspected IPF with UIP-pattern CT — unknown",
+      "Acute worsening/development of dyspnoea <1 month: profile says \"progressive dyspnea\" without duration — unknown",
+      "CT with new bilateral ground-glass opacity and/or consolidation on UIP background: CT shows reticular opacities with honeycombing, no ground-glass/consolidation reported — not documented",
+      "Deterioration not explained by cardiac failure/fluid overload: no cardiac information in profile — unknown"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "Ability/willingness to understand and sign written informed consent can only be established at enrolment.",
+    "sub_condition_notes": [
+      "Patient or legally authorized representative signature: post_enrollment"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No history of heart failure or pulmonary embolism is recorded (\"history\": []), and no cardiac evaluation is reported; cause of worsening is not documented.",
+    "sub_condition_notes": [
+      "Uncontrolled heart failure: not mentioned",
+      "Pulmonary embolism: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No allergy/hypersensitivity information in the profile (\"history\": [], \"medications\": []).",
+    "sub_condition_notes": [
+      "Corticosteroid hypersensitivity: not mentioned",
+      "IVIG or component hypersensitivity: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "Labs list only \"Chest CT reveals bilateral basal reticular opacities with honeycombing\"; no IgA level reported.",
+    "sub_condition_notes": [
+      "Known IgA deficiency / IgA <7 mg/dL: no immunoglobulin data"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Only a \"suspected_diagnosis\": \"Idiopathic pulmonary fibrosis (usual interstitial pneumonia pattern)\" is recorded; no definite IPF or AE-IPF diagnosis confirmed by multidisciplinary discussion is documented.",
+    "sub_condition_notes": [
+      "Definite IPF diagnosis: not established (suspected only)",
+      "Definite AE-IPF diagnosis: not documented",
+      "Multidisciplinary discussion: not reported"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No oncologic history recorded (\"history\": []) and no cancer treatment listed (\"medications\": []), but malignancy status is not explicitly addressed.",
+    "sub_condition_notes": [
+      "Active malignancy: not mentioned",
+      "Current cancer treatment: not mentioned",
+      "Exempted skin/low-risk prostate cancer: not applicable/unknown"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "\"medications\": [] — no medications documented, but prior corticosteroid or immunosuppressant exposure in the preceding month is not explicitly addressed.",
+    "sub_condition_notes": [
+      ">20 mg daily prednisone for >14 days in preceding month: not documented",
+      "Any immunosuppressant in last month: not documented",
+      ">1 mg/kg/d for more than 7 days in last 15 days: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No information in the profile about participation in another interventional clinical trial.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Patient is female (\"sex\": \"F\"), age 60; no pregnancy or lactation status documented in the profile.",
+    "sub_condition_notes": [
+      "Documented pregnancy: not stated",
+      "Lactation: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "No information about tutorship or curatorship in the profile.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "No information about deprivation of liberty or court protection in the profile.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness to participate and provide written informed consent can only be determined at the time of enrolment.",
+    "sub_condition_notes": []
+  }
+]

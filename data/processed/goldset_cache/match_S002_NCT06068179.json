@@ -1,0 +1,122 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "Patient is \"age\": 29, \"age_unit\": \"years\", which is within 18 to 60 years.",
+    "sub_condition_notes": [
+      "Age 29 ≥ 18: pass",
+      "Age 29 ≤ 60: pass"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Profile states only a \"suspected_diagnosis\": \"Hyperthyroidism, most likely Graves' disease (diffuse toxic goiter)\" with no confirmed diagnosis on record (\"labs\": [], \"history\": []); a formal new diagnosis of Graves' disease is not documented.",
+    "sub_condition_notes": [
+      "Graves' disease diagnosis: suspected only, not confirmed → unknown",
+      "Newly diagnosed status: not documented → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "\"history\": [] and \"medications\": [] are empty lists, but no explicit statement about prior antithyroid treatment or relapse is given.",
+    "sub_condition_notes": [
+      "Prior treatment for Graves' disease: not documented → unknown",
+      "Relapse: not documented → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "\"suspected_diagnosis\": \"Hyperthyroidism, most likely Graves' disease\" and \"diffusely enlarged, non-tender thyroid gland\" — Graves' is only suspected and other etiologies have not been formally excluded (no labs/antibody or imaging results, \"labs\": []).",
+    "sub_condition_notes": [
+      "Toxic multinodular goiter: not excluded by testing → unknown",
+      "Toxic thyroid adenoma: not excluded → unknown",
+      "Hashimoto's thyroiditis: not excluded → unknown",
+      "Subacute thyroiditis: thyroid described as \"non-tender\" but diagnosis not formally excluded → unknown",
+      "Iodine-induced hyperthyroidism: no iodine exposure history documented → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No ocular findings or thyroid eye disease are mentioned in \"findings\" or \"history\": [].",
+    "sub_condition_notes": [
+      "Moderate-to-severe thyroid eye disease requiring intervention: no information → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Thyroid described as \"diffusely enlarged, non-tender thyroid gland\"; no mention of thyroid cancer or planned surgery.",
+    "sub_condition_notes": [
+      "Concurrent thyroid cancer: not documented → unknown",
+      "Need for surgery: not documented → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "\"labs\": [] — no ALT, AST, or creatinine values available.",
+    "sub_condition_notes": [
+      "ALT/AST > 3× ULN: no lab values → unknown",
+      "Creatinine > 110 µmol/L (female): no lab values → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "\"labs\": [] — no white blood cell count reported.",
+    "sub_condition_notes": [
+      "WBC < 3.0×10^9/L: no data → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Findings include \"intermittent palpitations\" and \"tachycardia\", but no heart failure diagnosis or NYHA class is recorded (\"history\": []).",
+    "sub_condition_notes": [
+      "NYHA class III/IV heart failure: no diagnosis on record → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "\"history\": [] — no information on tuberculosis, hepatitis B, or other chronic/severe infections.",
+    "sub_condition_notes": [
+      "Pulmonary tuberculosis: no data → unknown",
+      "Hepatitis B: no data → unknown",
+      "Other chronic/severe infection: no data → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "Patient is \"sex\": \"F\", age 29 (childbearing potential), but pregnancy status, breastfeeding, pregnancy plans, and contraception willingness are not reported.",
+    "sub_condition_notes": [
+      "Pregnant: no data → unknown",
+      "Breastfeeding: no data → unknown",
+      "Planning pregnancy: no data → unknown",
+      "Able to comply with contraception: no data → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "No information in the profile about current or prior participation in other clinical studies.",
+    "sub_condition_notes": [
+      "Current trial participation: no data → unknown",
+      "Previous trial participation: no data → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness/ability to participate and comply with follow-up can only be established at enrollment/screening, not from the profile.",
+    "sub_condition_notes": [
+      "Unwilling/unable to comply with follow-up: post_enrollment",
+      "Unwilling to participate: post_enrollment"
+    ]
+  }
+]

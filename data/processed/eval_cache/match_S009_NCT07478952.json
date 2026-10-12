@@ -1,0 +1,87 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "fail",
+    "evidence": "Patient has an acute illness: \"suspected_diagnosis\": \"Infectious mononucleosis (Epstein-Barr virus infection)\" with findings of \"fever\", \"sore throat\", \"fatigue\", \"posterior cervical lymphadenopathy\", \"splenomegaly\" and \"monospot test is positive\" — not healthy by medical history/physical examination.",
+    "sub_condition_notes": [
+      "Medical history: acute symptomatic EBV infection — not healthy",
+      "Physical examination: posterior cervical lymphadenopathy and splenomegaly — abnormal findings"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "\"sex\": \"M\" — patient is male, therefore not assigned female at birth and cannot be pregnant or breast/chest feeding; this criterion does not exclude him.",
+    "sub_condition_notes": [
+      "Assigned female at birth / could become pregnant: no, patient is male",
+      "Not pregnant: not applicable (male)",
+      "Not breast/chest feeding: not applicable (male)"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "The profile contains no information about recent or planned surgical procedures (\"history\": [] lists no surgeries); this could be asked of the patient.",
+    "sub_condition_notes": [
+      "Surgery within 7 days prior to Day 1/Day 57: unknown",
+      "Scheduled surgery within 28 days after study intervention: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "\"history\": [] — no reported immunodeficiency, immunosuppressive condition, asplenia or recurrent severe infection is recorded. The finding \"splenomegaly\" is an enlarged spleen, not asplenia, and the current \"Infectious mononucleosis (Epstein-Barr virus infection)\" is a single acute illness, not documented recurrent severe infectious disease. Confirmation would require asking the patient.",
+    "sub_condition_notes": [
+      "Congenital/acquired immunodeficiency: not reported — unknown",
+      "Immunosuppressive condition: not reported — unknown",
+      "Asplenia: not reported; patient has splenomegaly (spleen present) — does not meet asplenia",
+      "Recurrent severe infectious disease: only one current acute infection documented — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "\"medications\": [] — no corticosteroid use is recorded, but prior 90-day use and anticipated future need are not addressed in the profile.",
+    "sub_condition_notes": [
+      "Prednisone ≥10 mg/day equivalent for >14 days within 90 days: unknown",
+      "Anticipated need for corticosteroids during study: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "\"medications\": [] — no systemic immunosuppressive or biologic therapy is listed, but use within the prior 180 days or planned use is not documented.",
+    "sub_condition_notes": [
+      "Systemic immunosuppressive treatment within 180 days: unknown",
+      "Long-acting biologic therapy affecting immune response: unknown",
+      "Plans to receive during study: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "The profile gives no vaccination history or planned vaccinations; this could be obtained by asking the patient.",
+    "sub_condition_notes": [
+      "Nonstudy vaccine within 28 days prior to Day 1: unknown",
+      "Planned nonstudy vaccine up to 28 days after Day 57: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "\"history\": [] — no cardiac history recorded; presence or absence of prior myocarditis/pericarditis/myopericarditis is not stated.",
+    "sub_condition_notes": [
+      "Myocarditis: unknown",
+      "Pericarditis: unknown",
+      "Myopericarditis: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No information about prior participation in an investigational EBV vaccine study is present in the profile (\"history\": [], \"medications\": []).",
+    "sub_condition_notes": [
+      "Prior investigational EBV vaccine receipt: unknown"
+    ]
+  }
+]

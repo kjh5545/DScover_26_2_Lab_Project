@@ -1,0 +1,124 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"age\": 29, \"age_unit\": \"years\" — within 18 to 60 years.",
+    "sub_condition_notes": [
+      "Age ≥18: pass (29)",
+      "Age ≤60: pass (29)"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "\"suspected_diagnosis\": \"Hyperthyroidism, most likely Graves' disease (diffuse toxic goiter)\" — only a suspected diagnosis; \"labs\": [] so no TSH/FT4/TRAb confirmation of Graves' disease is on record.",
+    "sub_condition_notes": [
+      "Graves' disease diagnosis: not formally confirmed, only suspected on clinical findings (palpitations, heat intolerance, weight loss, tremor, tachycardia, diffusely enlarged non-tender thyroid)",
+      "Newly diagnosed: no prior thyroid history recorded (\"history\": []), but diagnosis itself not established"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "\"history\": [] and \"medications\": [] — no treatment or relapse documented, but the profile does not explicitly state the patient has never been treated for Graves' disease.",
+    "sub_condition_notes": [
+      "Prior treatment for Graves': not documented (no antithyroid drugs listed) — unknown",
+      "Relapse: no prior Graves' diagnosis on record — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "\"suspected_diagnosis\": \"Hyperthyroidism, most likely Graves' disease\" — other etiologies are considered less likely but not excluded; no labs, antibodies, or imaging available (\"labs\": []).",
+    "sub_condition_notes": [
+      "Toxic multinodular goiter: gland is \"diffusely enlarged, non-tender\" (not nodular) — argues against but not excluded by test",
+      "Toxic adenoma: no nodule described — unknown",
+      "Hashimoto's thyroiditis: no antibody data — unknown",
+      "Subacute thyroiditis: thyroid is \"non-tender\", argues against — still unconfirmed",
+      "Iodine-induced hyperthyroidism: no iodine exposure history recorded — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No ocular findings reported in \"findings\"; eye examination status is not described, so moderate-to-severe thyroid eye disease cannot be ruled out.",
+    "sub_condition_notes": [
+      "Presence of thyroid eye disease: not mentioned — unknown",
+      "Need for intervention at enrollment: not assessable — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "\"diffusely enlarged, non-tender thyroid gland\" with no nodule or malignancy mentioned; no cytology/imaging in profile.",
+    "sub_condition_notes": [
+      "Concurrent thyroid cancer: not documented — unknown",
+      "Requiring surgery: not documented — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "\"labs\": [] — no ALT, AST, or creatinine values available.",
+    "sub_condition_notes": [
+      "ALT/AST >3× ULN: no values — unknown",
+      "Creatinine >110 µmol/L (female): no values — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "\"labs\": [] — no WBC count available.",
+    "sub_condition_notes": [
+      "WBC <3.0×10^9/L: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "\"history\": [] contains no cardiac diagnosis; findings include \"intermittent palpitations\" and \"tachycardia\" but no NYHA class or heart failure assessment is documented.",
+    "sub_condition_notes": [
+      "Heart failure diagnosis: not on record — unknown",
+      "NYHA class III/IV: not assessed — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "\"history\": [] — no infectious disease history recorded; hepatitis/TB status not tested.",
+    "sub_condition_notes": [
+      "Pulmonary tuberculosis: unknown",
+      "Hepatitis B: unknown",
+      "Other chronic/severe infection: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "Patient is \"sex\": \"F\", age 29 (childbearing potential), but pregnancy, breastfeeding, pregnancy plans, and contraception willingness are not reported.",
+    "sub_condition_notes": [
+      "Pregnant: unknown (no pregnancy test or status)",
+      "Breastfeeding: unknown",
+      "Planning pregnancy: unknown",
+      "Able to comply with contraception: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "No mention of current or prior clinical study participation in the profile.",
+    "sub_condition_notes": [
+      "Current participation: unknown",
+      "Previous participation: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "unknown",
+    "evidence": "Willingness and ability to comply with follow-up are not stated in the profile; this can be asked of the patient directly.",
+    "sub_condition_notes": [
+      "Unwilling/unable to comply with follow-up: unknown",
+      "Unwilling to participate: unknown"
+    ]
+  }
+]

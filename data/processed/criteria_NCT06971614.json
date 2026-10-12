@@ -1,0 +1,609 @@
+[
+  {
+    "id": "I1",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Male or female, aged ≥18 years at the time of signing the ICF.",
+    "sub_conditions": [
+      "Male or female",
+      "Age ≥18 years at time of signing ICF"
+    ],
+    "needed_info": [
+      "age",
+      "sex"
+    ]
+  },
+  {
+    "id": "I2",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Participants with a histologically confirmed diagnosis of NMIBC (Ta, T1 and/or Cis).",
+    "sub_conditions": [
+      "Diagnosis of non-muscle-invasive bladder cancer (NMIBC)",
+      "Histological confirmation",
+      "Stage Ta, T1 and/or carcinoma in situ (Cis)"
+    ],
+    "needed_info": [
+      "diagnosis",
+      "histopathology report",
+      "tumor stage/grade"
+    ]
+  },
+  {
+    "id": "I3",
+    "type": "inclusion",
+    "category": "post_enrollment",
+    "text": "During the study, the participants must voluntarily comply with the study-specified cystoscopy, urine cytology and randomized biopsy.",
+    "sub_conditions": [
+      "Willingness to undergo study-specified cystoscopy",
+      "Willingness to undergo urine cytology",
+      "Willingness to undergo randomized biopsy"
+    ],
+    "needed_info": [
+      "willingness to undergo study procedures"
+    ]
+  },
+  {
+    "id": "I4",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "All toxicities caused by prior radiotherapy, chemotherapy or other treatments have recovered to Grade ≤1 (CTCAE 5.0) (except for alopecia), including but not limited to urinary tract infection, urinary tract irritation, and macroscopic hematuria; participants with Grade >1 anti-neoplastic treatment-related toxicities during the screening period may be enrolled after discussion of the investigators and the sponsor.",
+    "sub_conditions": [
+      "Prior treatment toxicities recovered to CTCAE Grade ≤1",
+      "Alopecia excluded from this requirement",
+      "Includes urinary tract infection, urinary tract irritation, macroscopic hematuria",
+      "Grade >1 toxicities may be allowed after investigator and sponsor discussion"
+    ],
+    "needed_info": [
+      "prior cancer treatment history",
+      "current adverse events/toxicity grades",
+      "urinary symptoms",
+      "hematuria status"
+    ]
+  },
+  {
+    "id": "I5",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Eastern Cooperative Oncology Group (ECOG) performance status score of 0-2.",
+    "sub_conditions": [
+      "ECOG performance status 0, 1 or 2"
+    ],
+    "needed_info": [
+      "ECOG performance status"
+    ]
+  },
+  {
+    "id": "I6",
+    "type": "inclusion",
+    "category": "temporal_numeric",
+    "text": "Expected survival ≥24 weeks.",
+    "sub_conditions": [
+      "Life expectancy at least 24 weeks"
+    ],
+    "needed_info": [
+      "life expectancy estimate"
+    ]
+  },
+  {
+    "id": "I7",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Hematology: ANC ≥1.5×10^9/L; PLT count ≥75×10^9/L; Hemoglobin (HGB) ≥90 g/L.",
+    "sub_conditions": [
+      "Absolute neutrophil count ≥1.5×10^9/L",
+      "Platelet count ≥75×10^9/L",
+      "Hemoglobin ≥90 g/L"
+    ],
+    "needed_info": [
+      "lab: ANC",
+      "lab: platelet count",
+      "lab: hemoglobin"
+    ]
+  },
+  {
+    "id": "I8",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Renal function: Creatinine clearance ≥60 mL/min (based on Cockcroft-Gault equation for calculation).",
+    "sub_conditions": [
+      "Creatinine clearance ≥60 mL/min by Cockcroft-Gault"
+    ],
+    "needed_info": [
+      "lab: serum creatinine",
+      "weight",
+      "age",
+      "sex",
+      "calculated creatinine clearance"
+    ]
+  },
+  {
+    "id": "I9",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Hepatic function: Serum total bilirubin (TBIL) ≤1.5×ULN; AST and ALT ≤2.5×ULN; Serum ALB ≥30 g/L.",
+    "sub_conditions": [
+      "Total bilirubin ≤1.5×ULN",
+      "AST ≤2.5×ULN",
+      "ALT ≤2.5×ULN",
+      "Serum albumin ≥30 g/L"
+    ],
+    "needed_info": [
+      "lab: total bilirubin",
+      "lab: AST",
+      "lab: ALT",
+      "lab: albumin"
+    ]
+  },
+  {
+    "id": "I10",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Coagulation function: INR or prothrombin time (PT) ≤1.5×ULN; Activated partial thromboplastin time (aPTT) ≤1.5×ULN.",
+    "sub_conditions": [
+      "INR or PT ≤1.5×ULN",
+      "aPTT ≤1.5×ULN"
+    ],
+    "needed_info": [
+      "lab: INR",
+      "lab: PT",
+      "lab: aPTT"
+    ]
+  },
+  {
+    "id": "I11",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "For women of childbearing potential (WOCBP), the serum pregnancy test prior to the first dose must be negative and the potential participant must promise to use medically acceptable and effective methods of contraception after signing the ICF until at least 6 months after the last dose.",
+    "sub_conditions": [
+      "Negative serum pregnancy test prior to first dose (WOCBP)",
+      "Agreement to use effective contraception from ICF signing until at least 6 months after last dose"
+    ],
+    "needed_info": [
+      "sex",
+      "childbearing potential status",
+      "lab: serum pregnancy test",
+      "contraception use/agreement"
+    ]
+  },
+  {
+    "id": "I12",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Male participants of child-bearing potential must agree to use medically acceptable and effective methods of contraception after signing the ICF until at least 6 months after the last dose; in addition, male potential participants must agree not to donate sperm during this period.",
+    "sub_conditions": [
+      "Male of childbearing potential agrees to effective contraception from ICF signing until at least 6 months after last dose",
+      "Agreement not to donate sperm during this period"
+    ],
+    "needed_info": [
+      "sex",
+      "fertility status",
+      "contraception agreement",
+      "sperm donation agreement"
+    ]
+  },
+  {
+    "id": "I13",
+    "type": "inclusion",
+    "category": "administrative",
+    "text": "Participants who understand and voluntarily sign the written ICF and are willing and able to comply with all trial requirements.",
+    "sub_conditions": [
+      "Understands and voluntarily signs written informed consent",
+      "Willing and able to comply with all trial requirements"
+    ],
+    "needed_info": [
+      "consent capability",
+      "willingness to comply with protocol"
+    ]
+  },
+  {
+    "id": "E1",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Concurrent or prior history of muscle-invasive (muscularis propria) or metastatic bladder cancer.",
+    "sub_conditions": [
+      "Current or prior muscle-invasive bladder cancer",
+      "Current or prior metastatic bladder cancer"
+    ],
+    "needed_info": [
+      "cancer staging history",
+      "diagnosis",
+      "metastasis status"
+    ]
+  },
+  {
+    "id": "E2",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Urothelial carcinoma of the upper genitourinary tract or prostatic urethra within 24 months prior to investigational product.",
+    "sub_conditions": [
+      "Upper genitourinary tract urothelial carcinoma within 24 months",
+      "Prostatic urethra urothelial carcinoma within 24 months"
+    ],
+    "needed_info": [
+      "diagnosis history with dates",
+      "tumor location"
+    ]
+  },
+  {
+    "id": "E3",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Having received chemotherapy, biotherapy, endocrine therapy, targeted therapy, immunotherapy, investigational product or other anti-neoplastic therapies within 4 weeks prior to investigational product.",
+    "sub_conditions": [
+      "Chemotherapy within 4 weeks",
+      "Biotherapy within 4 weeks",
+      "Endocrine therapy within 4 weeks",
+      "Targeted therapy within 4 weeks",
+      "Immunotherapy within 4 weeks",
+      "Investigational product within 4 weeks",
+      "Other anti-neoplastic therapy within 4 weeks"
+    ],
+    "needed_info": [
+      "prior anti-cancer treatment history with dates"
+    ]
+  },
+  {
+    "id": "E4",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Having received radiotherapy within 2 weeks prior to investigational product.",
+    "sub_conditions": [
+      "Radiotherapy within 2 weeks prior to investigational product"
+    ],
+    "needed_info": [
+      "radiotherapy history with dates"
+    ]
+  },
+  {
+    "id": "E5",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "Planning to receive any anti-neoplastic therapy other than the investigational products during this study.",
+    "sub_conditions": [
+      "Planned concurrent non-study anti-neoplastic therapy"
+    ],
+    "needed_info": [
+      "planned treatments during study"
+    ]
+  },
+  {
+    "id": "E6",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "A history of allergic reactions to HSV-1, IL-12, or anti-PD-1 antibodies or biological components similar to them, or known allergic reactions to any component of the T3011 formulation.",
+    "sub_conditions": [
+      "Allergy to HSV-1",
+      "Allergy to IL-12",
+      "Allergy to anti-PD-1 antibodies or similar biological components",
+      "Known allergy to any component of T3011 formulation"
+    ],
+    "needed_info": [
+      "allergy history",
+      "prior drug reactions"
+    ]
+  },
+  {
+    "id": "E7",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "A history of brain metastasis or imaging-confirmed brain metastasis, leptomeningeal disease, or spinal cord compression.",
+    "sub_conditions": [
+      "History of brain metastasis",
+      "Imaging-confirmed brain metastasis",
+      "Leptomeningeal disease",
+      "Spinal cord compression"
+    ],
+    "needed_info": [
+      "CNS metastasis history",
+      "brain imaging results",
+      "spinal imaging results"
+    ]
+  },
+  {
+    "id": "E8",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Concurrent or prior history of other malignancies than that treated in this study.",
+    "sub_conditions": [
+      "Current or prior other malignancy besides the study-treated cancer"
+    ],
+    "needed_info": [
+      "cancer history"
+    ]
+  },
+  {
+    "id": "E9",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Serious cardiac rhythm or conduction abnormalities.",
+    "sub_conditions": [
+      "Serious cardiac arrhythmia",
+      "Serious cardiac conduction abnormality"
+    ],
+    "needed_info": [
+      "cardiac history",
+      "ECG results"
+    ]
+  },
+  {
+    "id": "E10",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Acute myocardial infarction, unstable angina, or stroke, etc., developing within 6 months prior to the first dose of the investigational products.",
+    "sub_conditions": [
+      "Acute myocardial infarction within 6 months",
+      "Unstable angina within 6 months",
+      "Stroke within 6 months"
+    ],
+    "needed_info": [
+      "cardiovascular event history with dates",
+      "cerebrovascular event history with dates"
+    ]
+  },
+  {
+    "id": "E11",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Coronary angioplasty or stenting within 6 months prior to the first dose of the investigational products.",
+    "sub_conditions": [
+      "Coronary angioplasty within 6 months",
+      "Coronary stenting within 6 months"
+    ],
+    "needed_info": [
+      "cardiac procedure history with dates"
+    ]
+  },
+  {
+    "id": "E12",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "New York Heart Association (NYHA) criteria-defined cardiac function > Class II; echocardiogram-documented cardiac valve morphological abnormalities (Grade ≥2).",
+    "sub_conditions": [
+      "NYHA class greater than II",
+      "Echocardiogram-documented cardiac valve morphological abnormality Grade ≥2"
+    ],
+    "needed_info": [
+      "NYHA classification",
+      "echocardiogram results"
+    ]
+  },
+  {
+    "id": "E13",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Left ventricular ejection fraction (LVEF) < lower limit of normal (LLN) of the study site, or <50% if no LLN is set at the site.",
+    "sub_conditions": [
+      "LVEF below site lower limit of normal",
+      "LVEF <50% if no site LLN defined"
+    ],
+    "needed_info": [
+      "LVEF measurement",
+      "echocardiogram or MUGA results"
+    ]
+  },
+  {
+    "id": "E14",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Poorly controlled blood pressure.",
+    "sub_conditions": [
+      "Poorly controlled hypertension"
+    ],
+    "needed_info": [
+      "blood pressure readings",
+      "antihypertensive medication history"
+    ]
+  },
+  {
+    "id": "E15",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Immune-related pneumonia or other immune-related adverse reactions of Grade ≥3 developing with prior immunotherapy (including but not limited to PD-1/PD-L1).",
+    "sub_conditions": [
+      "Prior immune-related pneumonitis",
+      "Prior Grade ≥3 immune-related adverse reactions with immunotherapy (incl. PD-1/PD-L1)"
+    ],
+    "needed_info": [
+      "prior immunotherapy history",
+      "immune-related adverse event history and grade"
+    ]
+  },
+  {
+    "id": "E16",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Concurrent active immune diseases requiring treatment with systemic immunosuppressants (excluding autoimmune diseases not requiring intervention such as vitiligo and diseases treatable by other alternative drugs such as hypothyroidism that is treated with thyroid hormone replacement therapy originally), or concurrent immune diseases requiring treatment with systemic immunosuppressants that have the potential to recurrence (e.g., systemic lupus erythematosus).",
+    "sub_conditions": [
+      "Active autoimmune disease requiring systemic immunosuppressants",
+      "Immune disease with potential for recurrence requiring systemic immunosuppressants (e.g., SLE)",
+      "Exclusion does not apply to vitiligo or hypothyroidism on replacement therapy"
+    ],
+    "needed_info": [
+      "autoimmune disease history",
+      "current immunosuppressant medication"
+    ]
+  },
+  {
+    "id": "E17",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Other concurrent diseases require treatment with systemic immunosuppressants.",
+    "sub_conditions": [
+      "Any other concurrent disease requiring systemic immunosuppressive therapy"
+    ],
+    "needed_info": [
+      "current medications",
+      "comorbid conditions"
+    ]
+  },
+  {
+    "id": "E18",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "Unexplainable fever >38.5℃ during the screening or on the day of treatment (fever judged as tumor-induced by the investigator is eligible for enrollment) that in the investigator's opinion will affect the participation in this trial or interfere with the efficacy assessment.",
+    "sub_conditions": [
+      "Unexplained fever >38.5℃ during screening or on treatment day",
+      "Investigator judgment that fever affects trial participation or efficacy assessment",
+      "Tumor-induced fever is permitted"
+    ],
+    "needed_info": [
+      "body temperature during screening",
+      "fever etiology",
+      "investigator assessment"
+    ]
+  },
+  {
+    "id": "E19",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "The following persistent or active infections: HIV antibody-positive, HBsAg positive with HBV DNA level ≥2000 IU/mL, HCV antibody positive with detectable HCV RNA, and other active infections requiring systemic treatment.",
+    "sub_conditions": [
+      "HIV antibody positive",
+      "HBsAg positive with HBV DNA ≥2000 IU/mL",
+      "HCV antibody positive with detectable HCV RNA",
+      "Other active infection requiring systemic treatment"
+    ],
+    "needed_info": [
+      "lab: HIV antibody",
+      "lab: HBsAg",
+      "lab: HBV DNA",
+      "lab: HCV antibody",
+      "lab: HCV RNA",
+      "infection history/current infections"
+    ]
+  },
+  {
+    "id": "E20",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Prior history of splenectomy or organ transplantation.",
+    "sub_conditions": [
+      "History of splenectomy",
+      "History of organ transplantation"
+    ],
+    "needed_info": [
+      "surgical history",
+      "transplant history"
+    ]
+  },
+  {
+    "id": "E21",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Having previously received treatment with oncolytic virus (e.g., T-VEC, CG0070).",
+    "sub_conditions": [
+      "Prior oncolytic virus therapy (e.g., T-VEC, CG0070)"
+    ],
+    "needed_info": [
+      "prior treatment history"
+    ]
+  },
+  {
+    "id": "E22",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Requiring oral or intravenous use of anti-herpes virus drugs, including but not limited to acyclovir, valaciclovir, penciclovir, famciclovir, ganciclovir, foscarnet, and cidofovir (except for those to be used locally, such as topically), during the study.",
+    "sub_conditions": [
+      "Requires oral or IV acyclovir",
+      "Requires oral or IV valaciclovir",
+      "Requires oral or IV penciclovir",
+      "Requires oral or IV famciclovir",
+      "Requires oral or IV ganciclovir",
+      "Requires oral or IV foscarnet",
+      "Requires oral or IV cidofovir",
+      "Topical/local use is permitted"
+    ],
+    "needed_info": [
+      "current and planned antiviral medication",
+      "route of administration"
+    ]
+  },
+  {
+    "id": "E23",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Participants with known psychiatric disorders that may affect compliance in trial or with poor compliance.",
+    "sub_conditions": [
+      "Known psychiatric disorder affecting compliance",
+      "Poor compliance"
+    ],
+    "needed_info": [
+      "psychiatric history",
+      "compliance assessment"
+    ]
+  },
+  {
+    "id": "E24",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Participants with a history of drug abuse (including \"recreational use\") or substance abuse (including alcohol) within one year prior to signing ICF.",
+    "sub_conditions": [
+      "Drug abuse (including recreational use) within 1 year prior to ICF",
+      "Substance abuse including alcohol within 1 year prior to ICF"
+    ],
+    "needed_info": [
+      "substance abuse history with dates",
+      "alcohol use history"
+    ]
+  },
+  {
+    "id": "E25",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Being pregnant or breast feeding, or planning to become pregnant or give birth during this trial.",
+    "sub_conditions": [
+      "Currently pregnant",
+      "Currently breastfeeding",
+      "Planning pregnancy or childbirth during trial"
+    ],
+    "needed_info": [
+      "pregnancy status",
+      "lactation status",
+      "pregnancy plans"
+    ]
+  },
+  {
+    "id": "E26",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Having received any live attenuated vaccine within 4 weeks prior to investigational product or planning to receive such vaccines during the study.",
+    "sub_conditions": [
+      "Live attenuated vaccine within 4 weeks prior to investigational product",
+      "Planned live attenuated vaccine during study"
+    ],
+    "needed_info": [
+      "vaccination history with dates",
+      "planned vaccinations"
+    ]
+  },
+  {
+    "id": "E27",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Having undergone a major surgery.",
+    "sub_conditions": [
+      "Prior major surgery"
+    ],
+    "needed_info": [
+      "surgical history with dates"
+    ]
+  },
+  {
+    "id": "E28",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "Any diseases that at the investigator's discretion may confound the trial results, interfere with the participation in the entire trial, and/or would make participating in the trial not in the participant's best interest, or a medical history with treatment or laboratory abnormalities, or any other circumstances that would make it inappropriate for the participant to be enrolled.",
+    "sub_conditions": [
+      "Disease that may confound trial results per investigator",
+      "Condition interfering with full trial participation",
+      "Participation not in participant's best interest",
+      "Medical history, treatment or laboratory abnormalities making enrollment inappropriate"
+    ],
+    "needed_info": [
+      "full medical history",
+      "laboratory results",
+      "investigator's judgment"
+    ]
+  }
+]

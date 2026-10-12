@@ -1,0 +1,95 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "fail",
+    "evidence": "Profile lists only a \"suspected_diagnosis\": \"Nephrotic syndrome, most likely minimal change disease\" with a \"3-week history of periorbital edema and frothy urine\" and \"medications\": [] — there is no renal biopsy-confirmed pathological diagnosis and no corticosteroid therapy from which steroid responsiveness could be established.",
+    "sub_condition_notes": [
+      "Clinically diagnosed with NS: only suspected, not confirmed — not met on record",
+      "Pathological diagnosis of MCD/FSGS by renal biopsy within 7/10 years: no biopsy reported, new 3-week presentation — not met",
+      "Responsive to corticosteroid therapy: no medications recorded, patient untreated — cannot be met"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "\"medications\": [] and \"3-week history of periorbital edema and frothy urine\" — patient has active untreated disease, with no corticosteroid therapy and therefore no complete remission achieved.",
+    "sub_condition_notes": [
+      "Complete remission after corticosteroid therapy: not achieved (no corticosteroid treatment recorded)",
+      "Within 8 weeks of baseline: not applicable since no remission occurred"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "Profile states \"Nephrotic syndrome, most likely minimal change disease\" and \"Urinalysis shows heavy proteinuria without hematuria\", but no serologic/infectious/systemic workup is reported to rule out a secondary cause; this could be assessed by further history/testing.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No family history or genetic testing information is provided in the profile; this could be obtained by asking the patient/family now.",
+    "sub_condition_notes": [
+      "Known genetic defect associated with NS: not mentioned — unknown",
+      "Family history of NS: not mentioned — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "\"medications\": [] records no current medications, but prior B-cell depleting/modifying therapy within 6 months is not addressed in the profile.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No allergy history or atopic predisposition is mentioned in the profile; this could be asked of the patient now.",
+    "sub_condition_notes": [
+      "Allergy to monoclonal antibodies: not mentioned — unknown",
+      "Predisposition to allergies: not mentioned — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "\"medications\": [] indicates no listed medications, but prior immunosuppressant use within 60 days is not explicitly documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No information on immunoglobulin or immunomodulator (e.g., thymosin) administration is given in the profile.",
+    "sub_condition_notes": [
+      "Immunoglobulin within 90 days: not mentioned — unknown",
+      "Immunomodulators within 4 weeks: not mentioned — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Profile contains no information about participation in other clinical trials, past or planned.",
+    "sub_condition_notes": [
+      "Prior trial participation within 90 days/5 half-lives: not mentioned — unknown",
+      "Plans to participate in another trial: not mentioned — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Labs available are only \"Urinalysis shows heavy proteinuria without hematuria\" and \"serum albumin is low\"; no liver enzymes, creatinine, or eGFR are reported.",
+    "sub_condition_notes": [
+      "Marked liver function abnormality: no liver labs — unknown",
+      "Marked kidney function abnormality: no creatinine/eGFR reported — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "No serology results (HBsAg, HCV antibody, Treponema pallidum antibody, HIV status) are included in the profile's labs.",
+    "sub_condition_notes": [
+      "HBsAg: not reported — unknown",
+      "HCV antibody: not reported — unknown",
+      "Treponema pallidum antibody: not reported — unknown",
+      "HIV history/antibody: not reported — unknown"
+    ]
+  }
+]

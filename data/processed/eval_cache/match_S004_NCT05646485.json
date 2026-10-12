@@ -1,0 +1,55 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "Patient profile: \"age\": 68, \"age_unit\": \"years\" — 68 ≥ 50.",
+    "sub_condition_notes": [
+      "Age ≥ 50: satisfied (68 years)"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "History states only \"long smoking history\"; no pack-year quantification is given, so ≥15 pack-years cannot be confirmed. This could be asked of the patient now.",
+    "sub_condition_notes": [
+      "Current/former smoker: supported by \"long smoking history\"",
+      "≥15 pack-years: not quantified in profile → unknown"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No occupational information appears anywhere in the profile (history lists only \"long smoking history\"). Occupational history could be obtained by asking the patient.",
+    "sub_condition_notes": [
+      "Occupation type (textile worker, painter, dry cleaner): not stated → unknown",
+      "≥15 years of exposure: not stated → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "Profile lists history as only \"long smoking history\" and the diagnosis is \"suspected\" (\"Bladder cancer (urothelial/transitional cell carcinoma of the bladder)\"); no prior cancer history is mentioned, and absence of mention does not rule it out.",
+    "sub_condition_notes": [
+      "Prior bladder cancer: not mentioned → unknown",
+      "Prior kidney cancer: not mentioned → unknown",
+      "Prior prostate cancer: not mentioned → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "The profile documents current findings (\"painless gross hematuria\") and a current imaging study (\"CT urography reveals a mass in the bladder wall\"), but does not state whether any PRIOR evaluation of micro- or gross hematuria occurred in the preceding 2 years; onset timing of hematuria is also not given.",
+    "sub_condition_notes": [
+      "Prior gross hematuria evaluation within 2 years: not documented; current CT urography appears to be the present diagnostic workup → unknown",
+      "Prior microscopic hematuria evaluation within 2 years: not mentioned → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is obtained at the time of study enrollment/screening; no consent information exists in the profile.",
+    "sub_condition_notes": [
+      "Provision of informed consent: determined at screening visit → post_enrollment"
+    ]
+  }
+]

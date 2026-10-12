@@ -1,0 +1,229 @@
+[
+  {
+    "id": "I1",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Diagnosed chronic migraine and/or cluster (Hortons) headache",
+    "sub_conditions": [
+      "Diagnosis of chronic migraine",
+      "OR diagnosis of cluster (Horton's) headache"
+    ],
+    "needed_info": [
+      "diagnosis: chronic migraine",
+      "diagnosis: cluster headache"
+    ]
+  },
+  {
+    "id": "I2",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Men and women 18-65 years",
+    "sub_conditions": [
+      "Age ≥ 18 years",
+      "Age ≤ 65 years",
+      "Male or female sex"
+    ],
+    "needed_info": [
+      "age",
+      "sex"
+    ]
+  },
+  {
+    "id": "I3",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Diagnosed with chronic/high frequency migraine (≥15 headache days/month with at least ≥8 with migraine)",
+    "sub_conditions": [
+      "Diagnosis of chronic/high frequency migraine",
+      "≥15 headache days per month",
+      "≥8 migraine days per month"
+    ],
+    "needed_info": [
+      "diagnosis: chronic/high frequency migraine",
+      "headache days per month",
+      "migraine days per month"
+    ]
+  },
+  {
+    "id": "I4",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Diagnosed with chronic cluster headache (i.e. shorter remission than 3 months per year), diagnosed according to ICHD-III criteria",
+    "sub_conditions": [
+      "Diagnosis of chronic cluster headache",
+      "Remission periods shorter than 3 months per year",
+      "Diagnosis established according to ICHD-III criteria"
+    ],
+    "needed_info": [
+      "diagnosis: chronic cluster headache",
+      "remission period duration per year",
+      "diagnostic criteria used (ICHD-III)"
+    ]
+  },
+  {
+    "id": "I5",
+    "type": "inclusion",
+    "category": "post_enrollment",
+    "text": "Ability to perform yoga based movements and to give consent",
+    "sub_conditions": [
+      "Physically able to perform yoga-based movements",
+      "Able to give informed consent"
+    ],
+    "needed_info": [
+      "physical functional capacity",
+      "capacity to provide informed consent"
+    ]
+  },
+  {
+    "id": "I6",
+    "type": "inclusion",
+    "category": "administrative",
+    "text": "Internet connection with computer/ipad/mobile to perform digitally/tele-health instructions",
+    "sub_conditions": [
+      "Has internet connection",
+      "Has access to a computer, iPad, or mobile device"
+    ],
+    "needed_info": [
+      "internet access",
+      "access to computer/tablet/smartphone"
+    ]
+  },
+  {
+    "id": "I7",
+    "type": "inclusion",
+    "category": "administrative",
+    "text": "Willing to use wristwatch for actigraphy",
+    "sub_conditions": [
+      "Willingness to wear an actigraphy wristwatch"
+    ],
+    "needed_info": [
+      "willingness to wear actigraphy device"
+    ]
+  },
+  {
+    "id": "I8",
+    "type": "inclusion",
+    "category": "administrative",
+    "text": "Willing to leave blood samples in laboratory",
+    "sub_conditions": [
+      "Willingness to provide blood samples at a laboratory"
+    ],
+    "needed_info": [
+      "willingness to provide blood samples"
+    ]
+  },
+  {
+    "id": "E1",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Recent or planned operations during the last 6 weeks",
+    "sub_conditions": [
+      "Surgery within the last 6 weeks",
+      "Planned surgery"
+    ],
+    "needed_info": [
+      "surgical history with dates",
+      "planned surgical procedures"
+    ]
+  },
+  {
+    "id": "E2",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Drug dependence, alcohol dependence, mental disorders as psychosis, bipolar disorder, anxiety as PTSD etc",
+    "sub_conditions": [
+      "Drug dependence",
+      "Alcohol dependence",
+      "Psychosis",
+      "Bipolar disorder",
+      "Anxiety disorder such as PTSD",
+      "Other mental disorders"
+    ],
+    "needed_info": [
+      "substance use history",
+      "alcohol use history",
+      "psychiatric diagnosis history"
+    ]
+  },
+  {
+    "id": "E3",
+    "type": "exclusion",
+    "category": "administrative",
+    "text": "Parallel enrollment in other clinical trials",
+    "sub_conditions": [
+      "Currently enrolled in another clinical trial"
+    ],
+    "needed_info": [
+      "current clinical trial participation"
+    ]
+  },
+  {
+    "id": "E4",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Unmedicated high blood pressure, heart disease as heart failure",
+    "sub_conditions": [
+      "Untreated/unmedicated hypertension",
+      "Heart disease such as heart failure"
+    ],
+    "needed_info": [
+      "blood pressure values",
+      "antihypertensive medication use",
+      "cardiac diagnosis history"
+    ]
+  },
+  {
+    "id": "E5",
+    "type": "exclusion",
+    "category": "administrative",
+    "text": "Non Swedish speaking",
+    "sub_conditions": [
+      "Unable to speak Swedish"
+    ],
+    "needed_info": [
+      "language proficiency: Swedish"
+    ]
+  },
+  {
+    "id": "E6",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "Not able to perform low intensity exercise at home or FTF (face to face) - both online or live",
+    "sub_conditions": [
+      "Unable to perform low intensity exercise at home",
+      "Unable to perform low intensity exercise face to face (online or live)"
+    ],
+    "needed_info": [
+      "physical exercise capacity",
+      "functional status assessment"
+    ]
+  },
+  {
+    "id": "E7",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "Participants unsure to participate due to drug addiction or other causes",
+    "sub_conditions": [
+      "Uncertainty about participation due to drug addiction",
+      "Uncertainty about participation due to other causes"
+    ],
+    "needed_info": [
+      "willingness/commitment to participate",
+      "substance addiction status"
+    ]
+  },
+  {
+    "id": "E8",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "Disorientation and not able to inform regarding other serious conditions",
+    "sub_conditions": [
+      "Disorientation",
+      "Inability to provide information about other serious medical conditions"
+    ],
+    "needed_info": [
+      "cognitive/orientation status",
+      "ability to self-report medical history"
+    ]
+  }
+]

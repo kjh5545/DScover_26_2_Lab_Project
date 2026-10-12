@@ -1,0 +1,107 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "Profile lists 'suspected_diagnosis': 'Acute pancreatitis (alcohol-induced)' with 'severe epigastric pain radiating to the back' and 'markedly elevated serum lipase'/'markedly elevated serum amylase', but the diagnosis is only suspected and no confirmation of hospitalization or formal revised Atlanta criteria classification is on record.",
+    "sub_condition_notes": [
+      "Hospitalized: not stated in profile → unknown",
+      "AP by revised Atlanta criteria: characteristic pain + markedly elevated lipase/amylase present, but diagnosis recorded only as 'suspected' → unknown",
+      "Alcohol etiology: 'chronic alcohol use' supports it, but etiology not formally established → unknown"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "No smoking information appears in the profile (history lists only 'chronic alcohol use'); smoking status could be asked of the patient.",
+    "sub_condition_notes": [
+      "≥100 cigarettes lifetime: not stated → unknown",
+      "Currently smokes daily: not stated → unknown",
+      "≥1-year smoking history: not stated → unknown"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "'age': 54, 'age_unit': 'years' — within 18-80 years.",
+    "sub_condition_notes": [
+      "Age ≥18: 54 → pass",
+      "Age ≤80: 54 → pass"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "Written informed consent is obtained at enrollment/screening, so it cannot exist in the current profile.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "unknown",
+    "evidence": "Profile contains no statement about willingness to attend the three-monthly intervention; this can be asked of the patient now.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "Profile only notes 'chronic alcohol use' and suspected 'Acute pancreatitis (alcohol-induced)'; there is no information on gallstones, triglyceride or calcium levels, or viral infection, so combined/other etiologies cannot be ruled out.",
+    "sub_condition_notes": [
+      "Gallstone-related etiology: not assessed in profile → unknown",
+      "Hypertriglyceridemia >11.5 mM: no triglyceride lab reported → unknown",
+      "Hypercalcemia: no calcium lab reported → unknown",
+      "Viral infection: not mentioned → unknown",
+      "Combined etiological factors: cannot be determined → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No psychiatric history is listed; history contains only 'chronic alcohol use'. Absence of mention does not confirm absence of major psychiatric illness.",
+    "sub_condition_notes": [
+      "Schizophrenia: not mentioned → unknown",
+      "Bipolar disorder: not mentioned → unknown",
+      "Dementia: not mentioned → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "Medications list is empty and no smoking cessation program participation is mentioned; this can be asked of the patient.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No malignancy or oncologic treatment is mentioned in 'history': ['chronic alcohol use'] or 'medications': [].",
+    "sub_condition_notes": [
+      "Active anticancer treatment: not mentioned → unknown",
+      "Palliative treatment for malignancy: not mentioned → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "'sex': 'M' — a male patient cannot be pregnant or breastfeeding.",
+    "sub_condition_notes": [
+      "Pregnancy: impossible for male patient → pass",
+      "Breastfeeding: not applicable for male patient → pass"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "post_enrollment",
+    "evidence": "Life expectancy estimation is an investigator/clinical judgment made at screening; the profile contains no prognostic information.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "The profile does not record whether the patient agrees to participate; this can be asked of the patient now.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "post_enrollment",
+    "evidence": "'Other' is an open-ended exclusion resolved by investigator judgment at screening.",
+    "sub_condition_notes": []
+  }
+]

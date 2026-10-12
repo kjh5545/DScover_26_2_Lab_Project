@@ -1,0 +1,102 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"age\": 60, \"age_unit\": \"years\" — 60 ≥ 40.",
+    "sub_condition_notes": [
+      "Age ≥ 40 years: satisfied (60 years)"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Profile states \"suspected_diagnosis\": \"Idiopathic pulmonary fibrosis (usual interstitial pneumonia pattern)\" with \"Chest CT reveals bilateral basal reticular opacities with honeycombing\"; this is a suspicion plus supportive imaging, not a confirmed IPF diagnosis on record (\"history\": [] contains no IPF diagnosis).",
+    "sub_condition_notes": [
+      "Formal IPF diagnosis: not documented, only suspected — unknown"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "\"medications\": [] indicates no antifibrotic therapy is recorded, but the qualifying condition 'participants with IPF' is unconfirmed since IPF is only a \"suspected_diagnosis\".",
+    "sub_condition_notes": [
+      "Receiving locally approved antifibrotic at stable dose: no medications listed — not applicable",
+      "Not receiving local standard of care: consistent with \"medications\": [], but IPF diagnosis itself unconfirmed — unknown"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "No spirometry/FVC value in the profile; FVC % predicted must be measured at screening/on-site.",
+    "sub_condition_notes": [
+      "FVC ≥ 45% predicted: requires on-site pulmonary function testing"
+    ]
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "post_enrollment",
+    "evidence": "No DLCO or hemoglobin values in the profile; hemoglobin-corrected DLCO must be measured at screening.",
+    "sub_condition_notes": [
+      "DLCO corrected for hemoglobin ≥ 25% predicted: requires on-site testing"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "\"suspected_diagnosis\": \"Idiopathic pulmonary fibrosis (usual interstitial pneumonia pattern)\" and \"history\": [] — no alternative ILD is mentioned, but IPF is not yet confirmed and other ILD causes (e.g., connective tissue disease, exposure) have not been excluded in the profile.",
+    "sub_condition_notes": [
+      "Presence of non-IPF ILD: not documented, but cannot be ruled out from profile — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "\"Chest CT reveals bilateral basal reticular opacities with honeycombing\" — fibrotic changes are described, but no emphysema extent is reported, so the comparison cannot be made from the profile.",
+    "sub_condition_notes": [
+      "Extent of emphysema vs fibrosis on HRCT: emphysema not mentioned — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "Findings list \"progressive dyspnea\" and \"dry cough\" with no mention of an acute exacerbation event; \"history\": [] contains no such episode.",
+    "sub_condition_notes": [
+      "Acute exacerbation of IPF: not documented — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "\"history\": [] and \"medications\": [] — no infection or antibiotic treatment mentioned, but absence of mention does not rule it out.",
+    "sub_condition_notes": [
+      "Lower respiratory tract infection requiring treatment: not mentioned — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "\"history\": [] — no cardiac history, ACS/MI, unstable angina, PCI or CABG recorded; absence of mention is not confirmation.",
+    "sub_condition_notes": [
+      "ACS/acute MI: not mentioned — unknown",
+      "Unstable angina ± PCI: not mentioned — unknown",
+      "CABG: not mentioned — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "\"history\": [] — no heart failure diagnosis recorded; dyspnea is attributed to suspected IPF but cardiac status is not described.",
+    "sub_condition_notes": [
+      "Heart failure: not documented — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "\"history\": [] — no organ transplantation recorded, and likelihood of lung transplantation is not addressed in the profile.",
+    "sub_condition_notes": [
+      "History of organ transplantation: not mentioned — unknown",
+      "Likely to receive lung transplantation: requires investigator assessment/transplant listing status — unknown"
+    ]
+  }
+]

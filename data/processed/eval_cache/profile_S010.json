@@ -1,0 +1,15 @@
+{
+  "age": 73,
+  "age_unit": "years",
+  "sex": "M",
+  "suspected_diagnosis": "Rhegmatogenous retinal detachment of the right eye",
+  "findings": [
+    "sudden onset of a painless, curtain-like loss of vision in the right eye",
+    "preceded by flashes of light",
+    "floaters"
+  ],
+  "history": [],
+  "medications": [],
+  "labs": [],
+  "id": "S010"
+}

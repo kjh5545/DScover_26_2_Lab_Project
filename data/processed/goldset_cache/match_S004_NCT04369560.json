@@ -1,0 +1,116 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "Patient is \"age\": 68, \"age_unit\": \"years\", which is within 18 to 90 years.",
+    "sub_condition_notes": [
+      "Age ≥18: pass (68)",
+      "Age ≤90: pass (68)"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "post_enrollment",
+    "evidence": "Ability/willingness to understand and sign informed consent is determined at enrollment, not in the profile.",
+    "sub_condition_notes": [
+      "Able to understand consent: post_enrollment",
+      "Willing to sign written consent: post_enrollment"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "Profile states only \"suspected_diagnosis\": \"Bladder cancer (urothelial/transitional cell carcinoma of the bladder)\" and \"CT urography reveals a mass in the bladder wall\"; no cystoscopy-identified papillary tumor scheduled for TURBT and no histologic proof of MIBC is documented.",
+    "sub_condition_notes": [
+      "Papillary tumor identified by cystoscopy scheduled for TURBT: unknown — no cystoscopy result reported",
+      "Histologically proven MIBC, clinically localized, resectable with curative intent: unknown — diagnosis is only suspected, no pathology reported"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "No performance status / functional status information is given in the profile.",
+    "sub_condition_notes": [
+      "ECOG 0 or 1: unknown"
+    ]
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "unknown",
+    "evidence": "Labs list only \"CT urography reveals a mass in the bladder wall\"; no creatinine or creatinine clearance values are reported.",
+    "sub_condition_notes": [
+      "Creatinine <1.5 x ULN: unknown",
+      "Creatinine clearance ≥50 mL/min/1.73 m2 if creatinine ≥1.5 x ULN: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No allergy or hypersensitivity history is recorded; \"medications\": [] does not address contrast agent reactions.",
+    "sub_condition_notes": [
+      "Hypersensitivity to gadobutrol: unknown",
+      "Hypersensitivity to ferumoxytol: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No mention of claustrophobia or psychiatric history in the profile.",
+    "sub_condition_notes": [
+      "Severe claustrophobia preventing MRI: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No information about implanted devices, prostheses or pacemakers in the history (\"history\": [\"long smoking history\"]).",
+    "sub_condition_notes": [
+      "MRI-non-compatible implanted device: unknown",
+      "Prosthetic: unknown",
+      "Pacemaker: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Imaging shows only \"CT urography reveals a mass in the bladder wall\"; metastatic workup/status is not reported.",
+    "sub_condition_notes": [
+      "Known metastatic disease: unknown",
+      "Suspected metastatic disease: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "Patient \"sex\": \"M\" — pregnancy, lactation, or plans to conceive are not applicable.",
+    "sub_condition_notes": [
+      "Active pregnancy: pass (male)",
+      "Lactation: pass (male)",
+      "Plans to conceive (as a woman): pass (male)"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Findings list \"painless gross hematuria\" and \"mass in the bladder wall\"; no urinalysis/urine culture or UTI status is reported.",
+    "sub_condition_notes": [
+      "Untreated urinary tract infection: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No urologic history of urethral stricture is documented in the profile.",
+    "sub_condition_notes": [
+      "Known urethral stricture prohibiting foley placement: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "post_enrollment",
+    "evidence": "Open-ended criterion depending on the treating physician's judgment.",
+    "sub_condition_notes": [
+      "Other conditions deemed unacceptable risk: post_enrollment (investigator judgment)"
+    ]
+  }
+]

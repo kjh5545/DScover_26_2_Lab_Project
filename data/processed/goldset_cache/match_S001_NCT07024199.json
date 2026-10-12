@@ -1,0 +1,140 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "Profile states 'suspected_diagnosis': 'Acute pancreatitis (alcohol-induced)' with 'severe epigastric pain radiating to the back' and 'markedly elevated serum lipase'/'markedly elevated serum amylase', but the diagnosis is only suspected and no formal INSPPIRE-based diagnosis is on record.",
+    "sub_condition_notes": [
+      "Characteristic abdominal pain: present ('severe epigastric pain radiating to the back')",
+      "Enzyme elevation: present ('markedly elevated serum lipase', 'markedly elevated serum amylase')",
+      "Formal AP diagnosis per INSPPIRE criteria: not documented, only 'suspected_diagnosis'"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "'age': 54, 'age_unit': 'years' — far outside the required 3 to 18 years.",
+    "sub_condition_notes": [
+      "Age >= 3 years: satisfied",
+      "Age <= 18 years: NOT satisfied (54 years)"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "post_enrollment",
+    "evidence": "Profile reports 'severe epigastric pain radiating to the back', but a formal NRS/FLACC score on admission is an on-site measurement not present in the profile.",
+    "sub_condition_notes": [
+      "Abdominal pain present: yes ('severe epigastric pain radiating to the back')",
+      "NRS or FLACC >= 4 points: requires on-site scoring at admission"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "'medications': [] — no analgesics listed, but the profile does not explicitly state whether any painkiller was taken or the timing of a last dose.",
+    "sub_condition_notes": [
+      "No analgesic treatment before enrolment: not explicitly confirmed (medication list is empty but silence is not confirmation)",
+      "Last analgesic dose >= 6 hours before enrolment: no timing information available"
+    ]
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "post_enrollment",
+    "evidence": "Consent of legal guardians and of the patient is obtained at enrolment; no consent information in the profile.",
+    "sub_condition_notes": [
+      "Legal guardian consent: obtained at enrolment",
+      "Child consent (>=16 years): obtained at enrolment"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "'medications': [] — no information on whether a painkiller was taken, nor on the timing of any last dose.",
+    "sub_condition_notes": [
+      "Last dose of paracetamol/ibuprofen/metamizole < 6 hours before study entry: timing unknown"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No allergy information is given in the profile (history lists only 'chronic alcohol use').",
+    "sub_condition_notes": [
+      "Allergy to acetylsalicylic acid: unknown",
+      "Allergy to other NSAIDs: unknown",
+      "Allergy to paracetamol: unknown",
+      "Allergy to metamizole: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "History contains only 'chronic alcohol use'; no mention of inflammatory bowel disease.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Findings list 'severe epigastric pain radiating to the back', 'nausea', 'vomiting'; no mention of gastrointestinal or other active bleeding.",
+    "sub_condition_notes": [
+      "Gastrointestinal bleeding: not mentioned",
+      "Other active bleeding: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No mention of gastric or duodenal ulcer disease in the history ('chronic alcohol use' only).",
+    "sub_condition_notes": [
+      "Gastric ulcer disease: not mentioned",
+      "Duodenal ulcer disease: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "'medications': [] — no chronic medication documented, but chronic analgesic use is not explicitly addressed.",
+    "sub_condition_notes": [
+      "Chronic paracetamol use: not documented",
+      "Chronic NSAID use: not documented",
+      "Chronic metamizole use: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "History notes 'chronic alcohol use', but no liver function data or diagnosis of liver failure is provided.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "No cardiac history or NYHA classification is reported in the profile.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "Labs list only 'markedly elevated serum lipase' and 'markedly elevated serum amylase'; no renal function data or renal failure diagnosis.",
+    "sub_condition_notes": [
+      "Acute renal failure: unknown",
+      "Chronic renal failure: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "No malignancy is mentioned in the history ('chronic alcohol use' only).",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Consent status of legal guardians is determined at enrolment and is not in the profile.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E12",
+    "verdict": "post_enrollment",
+    "evidence": "Patient's own consent is obtained at enrolment; not documented in the profile.",
+    "sub_condition_notes": []
+  }
+]

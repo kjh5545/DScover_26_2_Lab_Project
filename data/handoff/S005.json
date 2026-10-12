@@ -1,0 +1,801 @@
+{
+  "patient_id": "S005",
+  "case_text": "A 34-year-old woman presents with recurrent episodes of severe unilateral throbbing headache preceded by visual scotomata, accompanied by photophobia, nausea, and phonophobia.",
+  "profile": {
+    "age": 34,
+    "age_unit": "years",
+    "sex": "F",
+    "suspected_diagnosis": "Migraine with aura",
+    "findings": [
+      "recurrent episodes of severe unilateral throbbing headache",
+      "visual scotomata preceding headache",
+      "photophobia",
+      "nausea",
+      "phonophobia"
+    ],
+    "history": [],
+    "medications": [],
+    "labs": [],
+    "id": "S005"
+  },
+  "search": {
+    "queries": [
+      "migraine with aura",
+      "migraine",
+      "episodic migraine"
+    ],
+    "rationale": "The patient's recurrent unilateral throbbing headaches with preceding visual scotomata, photophobia, phonophobia, and nausea fit migraine with aura, so searches move from the most specific subtype to broader migraine trials.",
+    "total_found": 18,
+    "after_hard_filter": 14
+  },
+  "trials": [
+    {
+      "nct_id": "NCT07348783",
+      "title": "Yogabased Movements for Primary Headaches (Migraine and/or Cluster Headache) - YOURHEAD",
+      "eligibility_criteria": "Inclusion Criteria:\n\n* Diagnosed chronic migraine and/or cluster (Hortons) headache\n* Men and women 18-65 years\n* Diagnosed with chronic/high frequency migraine (≥15 headache days/month with at least ≥8 with migraine)\n* Diagnosed with chronic cluster head ache (i.e shorter remission than 3 months per year), diagnosed according to ICHD-III criteria.\n* Ability to perform yoga based moments and to give consent.\n* Internet connection with computer/ipad/mobile to perform digitally/tele-health instructions\n* Willing to use wristwatch for actigraphy\n* Willing to leave blood samples in laboratory\n\nExclusion Criteria:\n\n* Recent or planned operations during the last 6 weeks\n* Drug dependence, alcohol dependence, mental disorders as psychosis, bipolar disorder, anxiety as PTSD etc)\n* Parallel enrollment in other clinical trails\n* Unmedicated high blood pressure, heart disease as heart failure\n* Non Swedish speaking\n* Not able to perform low intensity exercise at home or FTF (face to face) - both online or live.\n* Participants unsure to participate due to drug addiction or other causes\n* Disorientation and not able to inform regarding other serious conditions",
+      "minimum_age": "18 Years",
+      "maximum_age": "65 Years",
+      "sex": "ALL",
+      "criteria": [
+        {
+          "id": "I1",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Diagnosed chronic migraine and/or cluster (Hortons) headache",
+          "sub_conditions": [
+            "Diagnosis of chronic migraine",
+            "OR diagnosis of cluster (Horton's) headache"
+          ],
+          "needed_info": [
+            "diagnosis: chronic migraine",
+            "diagnosis: cluster headache"
+          ]
+        },
+        {
+          "id": "I2",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Men and women 18-65 years",
+          "sub_conditions": [
+            "Age ≥ 18 years",
+            "Age ≤ 65 years",
+            "Male or female sex"
+          ],
+          "needed_info": [
+            "age",
+            "sex"
+          ]
+        },
+        {
+          "id": "I3",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Diagnosed with chronic/high frequency migraine (≥15 headache days/month with at least ≥8 with migraine)",
+          "sub_conditions": [
+            "Diagnosis of chronic/high frequency migraine",
+            "≥15 headache days per month",
+            "≥8 migraine days per month"
+          ],
+          "needed_info": [
+            "diagnosis: chronic/high frequency migraine",
+            "headache days per month",
+            "migraine days per month"
+          ]
+        },
+        {
+          "id": "I4",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Diagnosed with chronic cluster headache (i.e. shorter remission than 3 months per year), diagnosed according to ICHD-III criteria",
+          "sub_conditions": [
+            "Diagnosis of chronic cluster headache",
+            "Remission periods shorter than 3 months per year",
+            "Diagnosis established according to ICHD-III criteria"
+          ],
+          "needed_info": [
+            "diagnosis: chronic cluster headache",
+            "remission period duration per year",
+            "diagnostic criteria used (ICHD-III)"
+          ]
+        },
+        {
+          "id": "I5",
+          "type": "inclusion",
+          "category": "post_enrollment",
+          "text": "Ability to perform yoga based movements and to give consent",
+          "sub_conditions": [
+            "Physically able to perform yoga-based movements",
+            "Able to give informed consent"
+          ],
+          "needed_info": [
+            "physical functional capacity",
+            "capacity to provide informed consent"
+          ]
+        },
+        {
+          "id": "I6",
+          "type": "inclusion",
+          "category": "administrative",
+          "text": "Internet connection with computer/ipad/mobile to perform digitally/tele-health instructions",
+          "sub_conditions": [
+            "Has internet connection",
+            "Has access to a computer, iPad, or mobile device"
+          ],
+          "needed_info": [
+            "internet access",
+            "access to computer/tablet/smartphone"
+          ]
+        },
+        {
+          "id": "I7",
+          "type": "inclusion",
+          "category": "administrative",
+          "text": "Willing to use wristwatch for actigraphy",
+          "sub_conditions": [
+            "Willingness to wear an actigraphy wristwatch"
+          ],
+          "needed_info": [
+            "willingness to wear actigraphy device"
+          ]
+        },
+        {
+          "id": "I8",
+          "type": "inclusion",
+          "category": "administrative",
+          "text": "Willing to leave blood samples in laboratory",
+          "sub_conditions": [
+            "Willingness to provide blood samples at a laboratory"
+          ],
+          "needed_info": [
+            "willingness to provide blood samples"
+          ]
+        },
+        {
+          "id": "E1",
+          "type": "exclusion",
+          "category": "temporal_numeric",
+          "text": "Recent or planned operations during the last 6 weeks",
+          "sub_conditions": [
+            "Surgery within the last 6 weeks",
+            "Planned surgery"
+          ],
+          "needed_info": [
+            "surgical history with dates",
+            "planned surgical procedures"
+          ]
+        },
+        {
+          "id": "E2",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Drug dependence, alcohol dependence, mental disorders as psychosis, bipolar disorder, anxiety as PTSD etc",
+          "sub_conditions": [
+            "Drug dependence",
+            "Alcohol dependence",
+            "Psychosis",
+            "Bipolar disorder",
+            "Anxiety disorder such as PTSD",
+            "Other mental disorders"
+          ],
+          "needed_info": [
+            "substance use history",
+            "alcohol use history",
+            "psychiatric diagnosis history"
+          ]
+        },
+        {
+          "id": "E3",
+          "type": "exclusion",
+          "category": "administrative",
+          "text": "Parallel enrollment in other clinical trials",
+          "sub_conditions": [
+            "Currently enrolled in another clinical trial"
+          ],
+          "needed_info": [
+            "current clinical trial participation"
+          ]
+        },
+        {
+          "id": "E4",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Unmedicated high blood pressure, heart disease as heart failure",
+          "sub_conditions": [
+            "Untreated/unmedicated hypertension",
+            "Heart disease such as heart failure"
+          ],
+          "needed_info": [
+            "blood pressure values",
+            "antihypertensive medication use",
+            "cardiac diagnosis history"
+          ]
+        },
+        {
+          "id": "E5",
+          "type": "exclusion",
+          "category": "administrative",
+          "text": "Non Swedish speaking",
+          "sub_conditions": [
+            "Unable to speak Swedish"
+          ],
+          "needed_info": [
+            "language proficiency: Swedish"
+          ]
+        },
+        {
+          "id": "E6",
+          "type": "exclusion",
+          "category": "post_enrollment",
+          "text": "Not able to perform low intensity exercise at home or FTF (face to face) - both online or live",
+          "sub_conditions": [
+            "Unable to perform low intensity exercise at home",
+            "Unable to perform low intensity exercise face to face (online or live)"
+          ],
+          "needed_info": [
+            "physical exercise capacity",
+            "functional status assessment"
+          ]
+        },
+        {
+          "id": "E7",
+          "type": "exclusion",
+          "category": "post_enrollment",
+          "text": "Participants unsure to participate due to drug addiction or other causes",
+          "sub_conditions": [
+            "Uncertainty about participation due to drug addiction",
+            "Uncertainty about participation due to other causes"
+          ],
+          "needed_info": [
+            "willingness/commitment to participate",
+            "substance addiction status"
+          ]
+        },
+        {
+          "id": "E8",
+          "type": "exclusion",
+          "category": "post_enrollment",
+          "text": "Disorientation and not able to inform regarding other serious conditions",
+          "sub_conditions": [
+            "Disorientation",
+            "Inability to provide information about other serious medical conditions"
+          ],
+          "needed_info": [
+            "cognitive/orientation status",
+            "ability to self-report medical history"
+          ]
+        }
+      ],
+      "judgments": [
+        {
+          "criterion_id": "I1",
+          "verdict": "unknown",
+          "evidence": "Profile lists \"suspected_diagnosis\": \"Migraine with aura\" and \"history\": [] — no confirmed diagnosis of chronic migraine or cluster (Horton's) headache is on record.",
+          "sub_condition_notes": [
+            "Diagnosis of chronic migraine: unknown — only a suspected diagnosis of 'Migraine with aura' is recorded, with no chronicity information",
+            "OR diagnosis of cluster (Horton's) headache: unknown — no such diagnosis documented in history"
+          ]
+        },
+        {
+          "criterion_id": "I2",
+          "verdict": "pass",
+          "evidence": "\"age\": 34, \"age_unit\": \"years\", \"sex\": \"F\"",
+          "sub_condition_notes": [
+            "Age ≥ 18 years: pass — 34 years",
+            "Age ≤ 65 years: pass — 34 years",
+            "Male or female sex: pass — sex 'F'"
+          ]
+        },
+        {
+          "criterion_id": "I3",
+          "verdict": "unknown",
+          "evidence": "Findings note \"recurrent episodes of severe unilateral throbbing headache\" but no headache-day or migraine-day frequency per month is recorded, and no chronic/high-frequency migraine diagnosis is on record.",
+          "sub_condition_notes": [
+            "Diagnosis of chronic/high frequency migraine: unknown — only 'suspected_diagnosis: Migraine with aura'",
+            "≥15 headache days per month: unknown — no frequency data in profile ('recurrent episodes' is unquantified)",
+            "≥8 migraine days per month: unknown — no frequency data in profile"
+          ]
+        },
+        {
+          "criterion_id": "I4",
+          "verdict": "unknown",
+          "evidence": "No cluster headache diagnosis is documented; \"history\": [] and the only diagnostic entry is \"suspected_diagnosis\": \"Migraine with aura\".",
+          "sub_condition_notes": [
+            "Diagnosis of chronic cluster headache: unknown — not documented",
+            "Remission periods shorter than 3 months per year: unknown — no remission data",
+            "Diagnosis established according to ICHD-III criteria: unknown — no diagnostic framework documented"
+          ]
+        },
+        {
+          "criterion_id": "I5",
+          "verdict": "post_enrollment",
+          "evidence": "Physical ability to perform yoga-based movements requires on-site functional assessment, and ability to give informed consent is assessed at enrollment; not derivable from profile.",
+          "sub_condition_notes": [
+            "Physically able to perform yoga-based movements: post_enrollment — requires investigator assessment",
+            "Able to give informed consent: post_enrollment — consent capacity is always assessed at enrollment"
+          ]
+        },
+        {
+          "criterion_id": "I6",
+          "verdict": "unknown",
+          "evidence": "Profile contains no information on internet access or device ownership; this could be asked of the patient now.",
+          "sub_condition_notes": [
+            "Has internet connection: unknown — not mentioned",
+            "Has access to a computer, iPad, or mobile device: unknown — not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "I7",
+          "verdict": "unknown",
+          "evidence": "No statement in the profile about willingness to wear an actigraphy wristwatch.",
+          "sub_condition_notes": [
+            "Willingness to wear an actigraphy wristwatch: unknown — not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "I8",
+          "verdict": "unknown",
+          "evidence": "Profile lists \"labs\": [] and contains no statement about willingness to provide blood samples.",
+          "sub_condition_notes": [
+            "Willingness to provide blood samples at a laboratory: unknown — not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E1",
+          "verdict": "unknown",
+          "evidence": "\"history\": [] — no surgical history or planned operations are recorded; absence of mention does not rule it out.",
+          "sub_condition_notes": [
+            "Surgery within the last 6 weeks: unknown — no surgical dates in profile",
+            "Planned surgery: unknown — not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E2",
+          "verdict": "unknown",
+          "evidence": "\"history\": [] and \"medications\": [] — no substance use or psychiatric diagnosis information is provided.",
+          "sub_condition_notes": [
+            "Drug dependence: unknown — not mentioned",
+            "Alcohol dependence: unknown — not mentioned",
+            "Psychosis: unknown — not mentioned",
+            "Bipolar disorder: unknown — not mentioned",
+            "Anxiety disorder such as PTSD: unknown — not mentioned",
+            "Other mental disorders: unknown — not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E3",
+          "verdict": "unknown",
+          "evidence": "No information in the profile about participation in other clinical trials.",
+          "sub_condition_notes": [
+            "Currently enrolled in another clinical trial: unknown — not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E4",
+          "verdict": "unknown",
+          "evidence": "\"labs\": [], \"medications\": [], \"history\": [] — no blood pressure values, antihypertensive use, or cardiac diagnoses recorded.",
+          "sub_condition_notes": [
+            "Untreated/unmedicated hypertension: unknown — no BP values or medication data",
+            "Heart disease such as heart failure: unknown — no cardiac history recorded"
+          ]
+        },
+        {
+          "criterion_id": "E5",
+          "verdict": "unknown",
+          "evidence": "Profile contains no information on language proficiency.",
+          "sub_condition_notes": [
+            "Unable to speak Swedish: unknown — language not documented"
+          ]
+        },
+        {
+          "criterion_id": "E6",
+          "verdict": "post_enrollment",
+          "evidence": "Capacity to perform low intensity exercise at home or face-to-face requires functional assessment by the investigator after application.",
+          "sub_condition_notes": [
+            "Unable to perform low intensity exercise at home: post_enrollment — requires functional assessment",
+            "Unable to perform low intensity exercise face to face (online or live): post_enrollment — requires functional assessment"
+          ]
+        },
+        {
+          "criterion_id": "E7",
+          "verdict": "post_enrollment",
+          "evidence": "Uncertainty about participation is determined at the time of enrollment/consent discussion; not available in the profile.",
+          "sub_condition_notes": [
+            "Uncertainty about participation due to drug addiction: post_enrollment — depends on participant's expressed commitment at enrollment",
+            "Uncertainty about participation due to other causes: post_enrollment — depends on participant's expressed commitment at enrollment"
+          ]
+        },
+        {
+          "criterion_id": "E8",
+          "verdict": "post_enrollment",
+          "evidence": "Orientation status and ability to report other serious conditions are assessed by the investigator at screening; the profile contains no cognitive assessment.",
+          "sub_condition_notes": [
+            "Disorientation: post_enrollment — requires on-site cognitive/orientation assessment",
+            "Inability to provide information about other serious medical conditions: post_enrollment — requires investigator assessment at screening"
+          ]
+        }
+      ],
+      "final_judgment": "insufficient_info"
+    },
+    {
+      "nct_id": "NCT04063540",
+      "title": "Acid-Sensing Ion Channel and Migraine Disease Proof of Concept Study on the Efficacy of Amiloride in the Prophylaxis of Migraine Aura",
+      "eligibility_criteria": "Inclusion Criteria:\n\n* Diagnosis of migraine with aura code\n* At least 1 aura with aura per month in the 3 months prior to inclusion\n* No prophylactic antimigraine treatment for at least 1 month prior to inclusion\n* For women of childbearing age, use of a reliable contraceptive method at least 3 months before and 1 month after the study\n* Signature of written informed consent\n* Patient affiliated with Social Security\n\nExclusion Criteria:\n\n* Existence of contraindication to taking amiloride:\n\n  * Known hypersensitivity to the molecule\n  * Hyperkalemia (potassium level (\\> 5.5 mmol / l))\n  * Use of another hyperkalemic diuretic or potassium salts\n  * Renal insufficiency (clearance \\<60 ml / min)\n  * Severe hepatocellular insufficiency\n  * In combination with lithium, converting enzyme inhibitors, angiotensin II inhibitors (except if there is hypokalemia), ciclosporin, tacrolimus, non-antiarrhythmic drugs giving torsades de pointes\n* Cardiovascular and renal history, for subjects over 75 years old\n* Patient, who from an investigator's point of view would not be compliant to the procedure of the study\n* Pregnant or lactating patient\n* Patient under trusteeship, under guardianship, protected by law",
+      "minimum_age": "18 Years",
+      "maximum_age": "80 Years",
+      "sex": "ALL",
+      "criteria": [
+        {
+          "id": "I1",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Diagnosis of migraine with aura code",
+          "sub_conditions": [
+            "Diagnosis of migraine with aura"
+          ],
+          "needed_info": [
+            "diagnosis",
+            "migraine subtype (with aura)"
+          ]
+        },
+        {
+          "id": "I2",
+          "type": "temporal_numeric",
+          "category": "temporal_numeric",
+          "text": "At least 1 aura with aura per month in the 3 months prior to inclusion",
+          "sub_conditions": [
+            "At least 1 migraine attack with aura per month",
+            "Frequency sustained during the 3 months prior to inclusion"
+          ],
+          "needed_info": [
+            "migraine/aura attack frequency per month",
+            "headache history over last 3 months"
+          ]
+        },
+        {
+          "id": "I3",
+          "type": "inclusion",
+          "category": "temporal_numeric",
+          "text": "No prophylactic antimigraine treatment for at least 1 month prior to inclusion",
+          "sub_conditions": [
+            "No prophylactic antimigraine treatment",
+            "Washout of at least 1 month prior to inclusion"
+          ],
+          "needed_info": [
+            "medication history",
+            "date of last prophylactic antimigraine treatment"
+          ]
+        },
+        {
+          "id": "I4",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "For women of childbearing age, use of a reliable contraceptive method at least 3 months before and 1 month after the study",
+          "sub_conditions": [
+            "Female of childbearing potential",
+            "Use of a reliable contraceptive method at least 3 months before the study",
+            "Willingness to continue contraception 1 month after the study"
+          ],
+          "needed_info": [
+            "sex",
+            "childbearing potential status",
+            "contraception method and start date"
+          ]
+        },
+        {
+          "id": "I5",
+          "type": "inclusion",
+          "category": "administrative",
+          "text": "Signature of written informed consent",
+          "sub_conditions": [
+            "Able and willing to sign written informed consent"
+          ],
+          "needed_info": [
+            "consent capability",
+            "signed consent form"
+          ]
+        },
+        {
+          "id": "I6",
+          "type": "inclusion",
+          "category": "administrative",
+          "text": "Patient affiliated with Social Security",
+          "sub_conditions": [
+            "Affiliation to a Social Security scheme"
+          ],
+          "needed_info": [
+            "health insurance / social security affiliation status"
+          ]
+        },
+        {
+          "id": "E1",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Known hypersensitivity to amiloride (the molecule)",
+          "sub_conditions": [
+            "Known hypersensitivity/allergy to amiloride"
+          ],
+          "needed_info": [
+            "drug allergy history"
+          ]
+        },
+        {
+          "id": "E2",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Hyperkalemia (potassium level > 5.5 mmol/l)",
+          "sub_conditions": [
+            "Serum potassium > 5.5 mmol/l"
+          ],
+          "needed_info": [
+            "lab: serum potassium"
+          ]
+        },
+        {
+          "id": "E3",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Use of another hyperkalemic diuretic or potassium salts",
+          "sub_conditions": [
+            "Use of another hyperkalemic (potassium-sparing) diuretic",
+            "Use of potassium salts/supplements"
+          ],
+          "needed_info": [
+            "current medication list"
+          ]
+        },
+        {
+          "id": "E4",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Renal insufficiency (creatinine clearance < 60 ml/min)",
+          "sub_conditions": [
+            "Creatinine clearance < 60 ml/min"
+          ],
+          "needed_info": [
+            "lab: creatinine clearance / eGFR",
+            "renal disease history"
+          ]
+        },
+        {
+          "id": "E5",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Severe hepatocellular insufficiency",
+          "sub_conditions": [
+            "Severe hepatocellular (liver) insufficiency"
+          ],
+          "needed_info": [
+            "liver function tests",
+            "hepatic disease history"
+          ]
+        },
+        {
+          "id": "E6",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Combination with lithium, converting enzyme inhibitors, angiotensin II inhibitors (except if there is hypokalemia), ciclosporin, tacrolimus, or non-antiarrhythmic drugs giving torsades de pointes",
+          "sub_conditions": [
+            "Concomitant lithium",
+            "Concomitant ACE inhibitors",
+            "Concomitant angiotensin II receptor inhibitors (unless hypokalemia present)",
+            "Concomitant ciclosporin",
+            "Concomitant tacrolimus",
+            "Concomitant non-antiarrhythmic drugs causing torsades de pointes"
+          ],
+          "needed_info": [
+            "current medication list",
+            "lab: serum potassium (for hypokalemia exception)"
+          ]
+        },
+        {
+          "id": "E7",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Cardiovascular and renal history, for subjects over 75 years old",
+          "sub_conditions": [
+            "Age over 75 years",
+            "History of cardiovascular disease",
+            "History of renal disease"
+          ],
+          "needed_info": [
+            "age",
+            "cardiovascular history",
+            "renal history"
+          ]
+        },
+        {
+          "id": "E8",
+          "type": "exclusion",
+          "category": "post_enrollment",
+          "text": "Patient who, from an investigator's point of view, would not be compliant to the procedure of the study",
+          "sub_conditions": [
+            "Investigator judgment of likely non-compliance with study procedures"
+          ],
+          "needed_info": [
+            "investigator assessment of compliance"
+          ]
+        },
+        {
+          "id": "E9",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Pregnant or lactating patient",
+          "sub_conditions": [
+            "Pregnancy",
+            "Breastfeeding/lactation"
+          ],
+          "needed_info": [
+            "pregnancy test result",
+            "breastfeeding status"
+          ]
+        },
+        {
+          "id": "E10",
+          "type": "exclusion",
+          "category": "administrative",
+          "text": "Patient under trusteeship, under guardianship, or protected by law",
+          "sub_conditions": [
+            "Under trusteeship (curatorship)",
+            "Under guardianship",
+            "Protected by law"
+          ],
+          "needed_info": [
+            "legal protection/guardianship status"
+          ]
+        }
+      ],
+      "judgments": [
+        {
+          "criterion_id": "I1",
+          "verdict": "unknown",
+          "evidence": "Profile lists only a \"suspected_diagnosis\": \"Migraine with aura\" with findings \"recurrent episodes of severe unilateral throbbing headache\", \"visual scotomata preceding headache\" — symptoms are suggestive but no confirmed/coded diagnosis is on record.",
+          "sub_condition_notes": [
+            "Diagnosis of migraine with aura: suspected only, not a confirmed diagnosis on record → unknown"
+          ]
+        },
+        {
+          "criterion_id": "I2",
+          "verdict": "unknown",
+          "evidence": "Profile states \"recurrent episodes of severe unilateral throbbing headache\" and \"visual scotomata preceding headache\" but gives no attack frequency or duration of history.",
+          "sub_condition_notes": [
+            "At least 1 migraine attack with aura per month: frequency not documented → unknown",
+            "Frequency sustained during the 3 months prior to inclusion: no timeline in profile → unknown"
+          ]
+        },
+        {
+          "criterion_id": "I3",
+          "verdict": "unknown",
+          "evidence": "\"medications\": [] — no medications are listed, but no explicit statement about prior prophylactic antimigraine treatment or date of last intake.",
+          "sub_condition_notes": [
+            "No prophylactic antimigraine treatment: medication list is empty but prior treatment not addressed → unknown",
+            "Washout of at least 1 month prior to inclusion: no dates available → unknown"
+          ]
+        },
+        {
+          "criterion_id": "I4",
+          "verdict": "unknown",
+          "evidence": "\"age\": 34, \"sex\": \"F\" — woman of potential childbearing age, but no contraception information in the profile.",
+          "sub_condition_notes": [
+            "Female of childbearing potential: 34-year-old female → consistent with childbearing potential",
+            "Use of reliable contraception ≥3 months before study: not documented → unknown",
+            "Willingness to continue contraception 1 month after study: not documented → unknown"
+          ]
+        },
+        {
+          "criterion_id": "I5",
+          "verdict": "post_enrollment",
+          "evidence": "Ability/willingness to sign written informed consent is determined at enrollment, not available in the profile.",
+          "sub_condition_notes": [
+            "Able and willing to sign written informed consent: post_enrollment"
+          ]
+        },
+        {
+          "criterion_id": "I6",
+          "verdict": "unknown",
+          "evidence": "No information on Social Security affiliation or health insurance in the profile.",
+          "sub_condition_notes": [
+            "Affiliation to a Social Security scheme: not documented → unknown"
+          ]
+        },
+        {
+          "criterion_id": "E1",
+          "verdict": "unknown",
+          "evidence": "\"history\": [] and \"medications\": [] — no allergy or drug hypersensitivity information provided.",
+          "sub_condition_notes": [
+            "Known hypersensitivity/allergy to amiloride: not documented → unknown"
+          ]
+        },
+        {
+          "criterion_id": "E2",
+          "verdict": "unknown",
+          "evidence": "\"labs\": [] — no serum potassium value available.",
+          "sub_condition_notes": [
+            "Serum potassium > 5.5 mmol/l: no lab value → unknown"
+          ]
+        },
+        {
+          "criterion_id": "E3",
+          "verdict": "unknown",
+          "evidence": "\"medications\": [] — medication list is empty, but use of potassium-sparing diuretics or potassium salts is not explicitly addressed.",
+          "sub_condition_notes": [
+            "Use of another hyperkalemic (potassium-sparing) diuretic: not documented → unknown",
+            "Use of potassium salts/supplements: not documented → unknown"
+          ]
+        },
+        {
+          "criterion_id": "E4",
+          "verdict": "unknown",
+          "evidence": "\"labs\": [] and \"history\": [] — no creatinine clearance/eGFR or renal disease information.",
+          "sub_condition_notes": [
+            "Creatinine clearance < 60 ml/min: no lab value → unknown"
+          ]
+        },
+        {
+          "criterion_id": "E5",
+          "verdict": "unknown",
+          "evidence": "\"history\": [] and \"labs\": [] — no liver function tests or hepatic history.",
+          "sub_condition_notes": [
+            "Severe hepatocellular insufficiency: not documented → unknown"
+          ]
+        },
+        {
+          "criterion_id": "E6",
+          "verdict": "unknown",
+          "evidence": "\"medications\": [] — no explicit documentation about lithium, ACE inhibitors, ARBs, ciclosporin, tacrolimus, or QT-prolonging drugs.",
+          "sub_condition_notes": [
+            "Concomitant lithium: not documented → unknown",
+            "Concomitant ACE inhibitors: not documented → unknown",
+            "Concomitant angiotensin II receptor inhibitors: not documented → unknown",
+            "Concomitant ciclosporin: not documented → unknown",
+            "Concomitant tacrolimus: not documented → unknown",
+            "Concomitant non-antiarrhythmic torsadogenic drugs: not documented → unknown"
+          ]
+        },
+        {
+          "criterion_id": "E7",
+          "verdict": "pass",
+          "evidence": "\"age\": 34, \"age_unit\": \"years\" — patient is not over 75 years old, so this age-restricted exclusion does not apply.",
+          "sub_condition_notes": [
+            "Age over 75 years: 34 years old → not met, exclusion inapplicable",
+            "History of cardiovascular disease: not documented, but irrelevant since age condition is not met",
+            "History of renal disease: not documented, but irrelevant since age condition is not met"
+          ]
+        },
+        {
+          "criterion_id": "E8",
+          "verdict": "post_enrollment",
+          "evidence": "Requires investigator's judgment of compliance, which is made after application.",
+          "sub_condition_notes": [
+            "Investigator judgment of likely non-compliance: post_enrollment"
+          ]
+        },
+        {
+          "criterion_id": "E9",
+          "verdict": "unknown",
+          "evidence": "34-year-old female; \"history\": [] contains no pregnancy or breastfeeding information and no pregnancy test in \"labs\": [].",
+          "sub_condition_notes": [
+            "Pregnancy: not documented → unknown",
+            "Breastfeeding/lactation: not documented → unknown"
+          ]
+        },
+        {
+          "criterion_id": "E10",
+          "verdict": "unknown",
+          "evidence": "No information on legal protection, guardianship, or trusteeship in the profile.",
+          "sub_condition_notes": [
+            "Under trusteeship (curatorship): not documented → unknown",
+            "Under guardianship: not documented → unknown",
+            "Protected by law: not documented → unknown"
+          ]
+        }
+      ],
+      "final_judgment": "insufficient_info"
+    }
+  ],
+  "meta": {
+    "model": "claude-opus-5",
+    "prompt_version": "v2",
+    "created": "2026-10-09",
+    "stages": "1-4"
+  }
+}

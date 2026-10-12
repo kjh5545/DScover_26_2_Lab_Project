@@ -1,0 +1,17 @@
+{
+  "age": 34,
+  "age_unit": "years",
+  "sex": "F",
+  "suspected_diagnosis": "Migraine with aura",
+  "findings": [
+    "recurrent episodes of severe unilateral throbbing headache",
+    "visual scotomata preceding headache",
+    "photophobia",
+    "nausea",
+    "phonophobia"
+  ],
+  "history": [],
+  "medications": [],
+  "labs": [],
+  "id": "S005"
+}

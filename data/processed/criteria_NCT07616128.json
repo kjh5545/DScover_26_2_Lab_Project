@@ -1,0 +1,110 @@
+[
+  {
+    "id": "I1",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Adults aged 18 to <65 years",
+    "sub_conditions": [
+      "Age >= 18 years",
+      "Age < 65 years",
+      "Adult"
+    ],
+    "needed_info": [
+      "age",
+      "date of birth"
+    ]
+  },
+  {
+    "id": "I2",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Migraine with or without aura, per ICHD-3 criteria",
+    "sub_conditions": [
+      "Diagnosis of migraine with aura OR migraine without aura",
+      "Diagnosis meets ICHD-3 diagnostic criteria"
+    ],
+    "needed_info": [
+      "diagnosis: migraine",
+      "aura status",
+      "diagnostic criteria used (ICHD-3)",
+      "headache history/characteristics"
+    ]
+  },
+  {
+    "id": "I3",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "History of failure with prior preventive migraine treatments",
+    "sub_conditions": [
+      "Prior use of at least one migraine preventive treatment",
+      "Documented lack of efficacy/failure (or intolerance) of that preventive treatment"
+    ],
+    "needed_info": [
+      "medication history: migraine preventives",
+      "treatment response/failure history",
+      "reason for discontinuation"
+    ]
+  },
+  {
+    "id": "I4",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Not currently using migraine preventive therapy",
+    "sub_conditions": [
+      "No ongoing/current migraine preventive medication use"
+    ],
+    "needed_info": [
+      "current medication list",
+      "migraine preventive therapy status"
+    ]
+  },
+  {
+    "id": "E1",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Difficulty distinguishing migraine from other headache types or presence of other primary headache disorders",
+    "sub_conditions": [
+      "Inability to reliably differentiate migraine attacks from other headache types",
+      "Presence of another primary headache disorder (e.g., cluster headache, tension-type headache disorder)"
+    ],
+    "needed_info": [
+      "headache history",
+      "diagnosis: other primary headache disorders",
+      "headache classification/diary"
+    ]
+  },
+  {
+    "id": "E2",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Use of certain medications",
+    "sub_conditions": [
+      "Current or recent use of protocol-prohibited medications"
+    ],
+    "needed_info": [
+      "current medication list",
+      "recent medication history",
+      "washout period information"
+    ]
+  },
+  {
+    "id": "E3",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Any clinically significant medical, psychiatric, neurological, cardiovascular, or laboratory abnormalities",
+    "sub_conditions": [
+      "Clinically significant medical condition",
+      "Clinically significant psychiatric condition",
+      "Clinically significant neurological condition",
+      "Clinically significant cardiovascular condition",
+      "Clinically significant laboratory abnormality"
+    ],
+    "needed_info": [
+      "medical history",
+      "psychiatric history",
+      "neurological history",
+      "cardiovascular history",
+      "laboratory test results"
+    ]
+  }
+]

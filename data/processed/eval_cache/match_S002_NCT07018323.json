@@ -1,0 +1,75 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "The profile contains no information about the patient's ability to understand trial requirements, provide written informed consent, or comply with protocol procedures (history and medications are empty).",
+    "sub_condition_notes": [
+      "Ability to understand trial requirements: not documented — unknown",
+      "Provision of written informed consent: not documented — unknown",
+      "Ability to comply with protocol procedures: not documented — unknown"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "\"age\": 29, \"age_unit\": \"years\", \"sex\": \"F\" — female participant aged ≥ 18 years.",
+    "sub_condition_notes": [
+      "Male or female: patient is female — satisfied",
+      "Age ≥ 18 years: 29 years — satisfied"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "Only a suspected diagnosis is recorded: \"suspected_diagnosis\": \"Hyperthyroidism, most likely Graves' disease (diffuse toxic goiter)\", supported by \"heat intolerance\", \"fine tremor\", \"tachycardia\", \"diffusely enlarged, non-tender thyroid gland\". No confirmed GD diagnosis and \"medications\": [] with no documented antithyroid drug therapy, so refractoriness to ATD cannot be established.",
+    "sub_condition_notes": [
+      "Diagnosis of GD: only suspected, not formally on record — unknown",
+      "Hyperthyroid state: clinical findings suggest hyperthyroidism but \"labs\": [] provide no confirmation — unknown",
+      "Despite ATD treatment: no antithyroid drug listed in \"medications\": [] — cannot confirm ATD-refractory status — unknown"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "Criterion refers to unspecified protocol-defined inclusion criteria that can only be assessed during screening by the investigator.",
+    "sub_condition_notes": [
+      "Unspecified protocol-specific criteria: assessable only at screening — post_enrollment"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "\"history\": [] — no record of prior radioactive iodine therapy or thyroidectomy; this could be asked of the patient but is not in the profile.",
+    "sub_condition_notes": [
+      "Prior successful RAI therapy: not documented — unknown",
+      "Prior total thyroidectomy: not documented — unknown (the \"diffusely enlarged, non-tender thyroid gland\" suggests an intact gland but does not formally rule out prior treatment history documentation)"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "post_enrollment",
+    "evidence": "\"history\": [] and \"medications\": [] give no other autoimmune disease, and the criterion explicitly depends on \"the Investigator's judgment\" of undue risk.",
+    "sub_condition_notes": [
+      "Autoimmune disease other than GD requiring treatment: not documented in history/medications — unknown from profile",
+      "Investigator's judgment of undue risk: requires investigator assessment — post_enrollment"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "Findings list only \"intermittent palpitations\", \"heat intolerance\", \"unintentional weight loss\", \"fine tremor\", \"tachycardia\", \"diffusely enlarged, non-tender thyroid gland\" — no ophthalmic findings are documented, and no information on planned TED treatment is available.",
+    "sub_condition_notes": [
+      "Moderate-to-severe active TED: no eye findings reported — unknown",
+      "Expected immediate surgical intervention for TED: not documented — unknown",
+      "Planned corrective surgery/irradiation/medical therapy for TED during study: not documented — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "post_enrollment",
+    "evidence": "Criterion refers to unspecified additional protocol exclusion criteria, assessable only during screening by the investigator.",
+    "sub_condition_notes": [
+      "Unspecified protocol-defined exclusions: assessable only at screening — post_enrollment"
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "age": 29,
+  "age_unit": "years",
+  "sex": "F",
+  "suspected_diagnosis": "Hyperthyroidism, most likely Graves' disease (diffuse toxic goiter)",
+  "findings": [
+    "intermittent palpitations",
+    "heat intolerance",
+    "unintentional weight loss",
+    "fine tremor",
+    "tachycardia",
+    "diffusely enlarged, non-tender thyroid gland"
+  ],
+  "history": [],
+  "medications": [],
+  "labs": [],
+  "id": "S002"
+}

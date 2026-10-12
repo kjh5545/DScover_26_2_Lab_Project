@@ -1,0 +1,135 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "Profile lists \"suspected_diagnosis\": \"Acute pancreatitis (alcohol-induced)\" with \"severe epigastric pain radiating to the back\" and \"markedly elevated serum lipase\"/\"markedly elevated serum amylase\" — this is a suspected, not a formally confirmed diagnosis, and no INSPPIRE-based (pediatric) classification is on record.",
+    "sub_condition_notes": [
+      "Abdominal pain compatible with AP: present (\"severe epigastric pain radiating to the back\")",
+      "Amylase/lipase ≥3x ULN: \"markedly elevated serum lipase\", \"markedly elevated serum amylase\" — degree relative to ULN not stated",
+      "Imaging findings: not reported",
+      "Formal INSPPIRE diagnosis on record: absent"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "\"age\": 54, \"age_unit\": \"years\" — far outside the required 3 to 18 years.",
+    "sub_condition_notes": [
+      "Age ≥3 years: satisfied",
+      "Age ≤18 years: not satisfied (54 years)"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "post_enrollment",
+    "evidence": "Profile reports \"severe epigastric pain radiating to the back\" but no NRS/FLACC score; the pain score is an on-admission measurement performed by the site.",
+    "sub_condition_notes": [
+      "NRS/FLACC score ≥4 on admission: requires on-site assessment"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "\"medications\": [] — no analgesic use or timing of last dose is documented; this can be asked of the patient now.",
+    "sub_condition_notes": [
+      "No analgesic before enrolment: not documented",
+      "Last analgesic dose ≥6 h before enrolment: not documented"
+    ]
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "unknown",
+    "evidence": "No consent information in the profile; the patient is 54 years old so legal-guardian consent is not documented or applicable, and patient consent status is not recorded.",
+    "sub_condition_notes": [
+      "Legal guardian consent: not documented (patient is an adult, age 54)",
+      "Patient consent (≥16 years): not documented"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "\"medications\": [] — no painkiller intake or timing is recorded; this could be clarified by asking the patient.",
+    "sub_condition_notes": [
+      "Paracetamol/ibuprofen/metamizole within <6 h: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No allergy information is given in the profile (\"history\": [\"chronic alcohol use\"]).",
+    "sub_condition_notes": [
+      "Allergy to ASA/NSAIDs: not documented",
+      "Allergy to paracetamol: not documented",
+      "Allergy to metamizole: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "History only lists \"chronic alcohol use\"; inflammatory bowel disease is neither confirmed nor excluded.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Findings list \"nausea\" and \"vomiting\" only; no mention of gastrointestinal or other active bleeding.",
+    "sub_condition_notes": [
+      "GI bleeding: not documented",
+      "Other active bleeding: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No gastric or duodenal ulcer disease mentioned in \"history\": [\"chronic alcohol use\"].",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "\"medications\": [] — chronic use of paracetamol/NSAIDs/metamizole is not documented and could be asked of the patient.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "\"history\": [\"chronic alcohol use\"] is a risk factor, but no liver failure diagnosis or liver function labs are in the profile (labs show only lipase and amylase).",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "No cardiac history or NYHA classification is reported in the profile.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "Labs list only \"markedly elevated serum lipase\" and \"markedly elevated serum amylase\"; no creatinine/renal function or renal failure diagnosis is recorded.",
+    "sub_condition_notes": [
+      "Acute renal failure: not documented",
+      "Chronic renal failure: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "No malignancy is mentioned in \"history\": [\"chronic alcohol use\"].",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "unknown",
+    "evidence": "No consent information is recorded; the patient is 54 years old, so legal guardians are not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E12",
+    "verdict": "unknown",
+    "evidence": "Patient is 54 years old (>16), but the profile contains no statement about consent to participate; this can be asked now.",
+    "sub_condition_notes": [
+      "Applies to patient (>16 years): yes, age 54",
+      "Consent refused: not documented"
+    ]
+  }
+]

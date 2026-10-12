@@ -1,0 +1,291 @@
+[
+  {
+    "id": "I1",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Patients suffering from migraine with aura, migraine without aura, episodic, and chronic migraine according to ICHD-3 diagnosis",
+    "sub_conditions": [
+      "Diagnosis of migraine according to ICHD-3 criteria",
+      "Migraine with aura OR migraine without aura",
+      "Episodic OR chronic migraine"
+    ],
+    "needed_info": [
+      "diagnosis: migraine",
+      "migraine subtype (with/without aura)",
+      "migraine pattern (episodic/chronic)",
+      "diagnostic criteria used (ICHD-3)"
+    ]
+  },
+  {
+    "id": "E1",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "History of any cardiac dysrhythmia",
+    "sub_conditions": [
+      "History of cardiac dysrhythmia/arrhythmia"
+    ],
+    "needed_info": [
+      "medical history: cardiac arrhythmia",
+      "ECG history"
+    ]
+  },
+  {
+    "id": "E2",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "History of hypertension",
+    "sub_conditions": [
+      "History of hypertension"
+    ],
+    "needed_info": [
+      "medical history: hypertension",
+      "blood pressure",
+      "antihypertensive medication history"
+    ]
+  },
+  {
+    "id": "E3",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "History of ischemic heart disease",
+    "sub_conditions": [
+      "History of ischemic heart disease"
+    ],
+    "needed_info": [
+      "medical history: ischemic heart disease/coronary artery disease"
+    ]
+  },
+  {
+    "id": "E4",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Active peptic ulcer disease",
+    "sub_conditions": [
+      "Active peptic ulcer disease"
+    ],
+    "needed_info": [
+      "medical history: peptic ulcer disease",
+      "current disease activity status"
+    ]
+  },
+  {
+    "id": "E5",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Inflammatory bowel disease",
+    "sub_conditions": [
+      "History of inflammatory bowel disease (Crohn's disease or ulcerative colitis)"
+    ],
+    "needed_info": [
+      "medical history: inflammatory bowel disease"
+    ]
+  },
+  {
+    "id": "E6",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Obsessive compulsive disorder",
+    "sub_conditions": [
+      "History/diagnosis of obsessive compulsive disorder"
+    ],
+    "needed_info": [
+      "psychiatric history: OCD"
+    ]
+  },
+  {
+    "id": "E7",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Pregnancy",
+    "sub_conditions": [
+      "Currently pregnant"
+    ],
+    "needed_info": [
+      "pregnancy status",
+      "lab: pregnancy test"
+    ]
+  },
+  {
+    "id": "E8",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Breast-feeding",
+    "sub_conditions": [
+      "Currently breast-feeding"
+    ],
+    "needed_info": [
+      "lactation/breastfeeding status"
+    ]
+  },
+  {
+    "id": "E9",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Renal failure",
+    "sub_conditions": [
+      "History of renal failure"
+    ],
+    "needed_info": [
+      "medical history: renal failure",
+      "lab: creatinine/eGFR"
+    ]
+  },
+  {
+    "id": "E10",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Hepatic failure",
+    "sub_conditions": [
+      "History of hepatic failure"
+    ],
+    "needed_info": [
+      "medical history: hepatic failure",
+      "lab: liver function tests"
+    ]
+  },
+  {
+    "id": "E11",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Sleep disorder",
+    "sub_conditions": [
+      "History/diagnosis of sleep disorder"
+    ],
+    "needed_info": [
+      "medical history: sleep disorder"
+    ]
+  },
+  {
+    "id": "E12",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Mental retardation",
+    "sub_conditions": [
+      "Diagnosis of mental retardation/intellectual disability"
+    ],
+    "needed_info": [
+      "medical history: intellectual disability",
+      "cognitive assessment"
+    ]
+  },
+  {
+    "id": "E13",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "History of substance abuse that prevents them from cooperating during the study",
+    "sub_conditions": [
+      "History of substance abuse",
+      "Substance abuse severe enough to prevent cooperation during the study"
+    ],
+    "needed_info": [
+      "substance abuse history",
+      "current substance use",
+      "ability to cooperate with study procedures"
+    ]
+  },
+  {
+    "id": "E14",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Headache due to cluster headache",
+    "sub_conditions": [
+      "Diagnosis of cluster headache"
+    ],
+    "needed_info": [
+      "headache diagnosis/type"
+    ]
+  },
+  {
+    "id": "E15",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Headache due to trigeminal neuralgia",
+    "sub_conditions": [
+      "Diagnosis of trigeminal neuralgia"
+    ],
+    "needed_info": [
+      "headache diagnosis/type",
+      "medical history: trigeminal neuralgia"
+    ]
+  },
+  {
+    "id": "E16",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Headache due to glossopharyngeal neuralgia",
+    "sub_conditions": [
+      "Diagnosis of glossopharyngeal neuralgia"
+    ],
+    "needed_info": [
+      "headache diagnosis/type",
+      "medical history: glossopharyngeal neuralgia"
+    ]
+  },
+  {
+    "id": "E17",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Headache secondary to trauma",
+    "sub_conditions": [
+      "Headache attributed to head/neck trauma"
+    ],
+    "needed_info": [
+      "headache etiology",
+      "history of head/neck trauma"
+    ]
+  },
+  {
+    "id": "E18",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Headache secondary to cranial disorder",
+    "sub_conditions": [
+      "Headache attributed to a cranial disorder"
+    ],
+    "needed_info": [
+      "headache etiology",
+      "medical history: cranial disorder"
+    ]
+  },
+  {
+    "id": "E19",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Headache secondary to vascular disorder",
+    "sub_conditions": [
+      "Headache attributed to a cranial/cervical vascular disorder"
+    ],
+    "needed_info": [
+      "headache etiology",
+      "medical history: vascular disorder",
+      "neuroimaging results"
+    ]
+  },
+  {
+    "id": "E20",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Headache secondary to infection",
+    "sub_conditions": [
+      "Headache attributed to infection"
+    ],
+    "needed_info": [
+      "headache etiology",
+      "infection history"
+    ]
+  },
+  {
+    "id": "E21",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Headache secondary to mass lesion",
+    "sub_conditions": [
+      "Headache attributed to an intracranial mass lesion"
+    ],
+    "needed_info": [
+      "headache etiology",
+      "neuroimaging results",
+      "history of intracranial mass/tumor"
+    ]
+  }
+]

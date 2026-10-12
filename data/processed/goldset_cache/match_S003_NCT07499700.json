@@ -1,0 +1,95 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "Profile lists only a \"suspected_diagnosis\": \"Nephrotic syndrome, most likely minimal change disease\"; no renal biopsy result or pathological diagnosis is recorded, and no information about corticosteroid responsiveness is given.",
+    "sub_condition_notes": [
+      "Clinical diagnosis of NS: only 'suspected diagnosis' of nephrotic syndrome with 'heavy proteinuria without hematuria' and 'serum albumin is low' — no confirmed diagnosis on record → unknown",
+      "Pathological diagnosis of MCD/FSGS by renal biopsy within 7/10 years: no biopsy mentioned → unknown",
+      "Responsive to corticosteroid therapy: 'medications': [] and no treatment history documented → unknown"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "No record of corticosteroid therapy or of any complete remission; \"medications\": [] does not establish treatment history or remission timing.",
+    "sub_condition_notes": [
+      "Complete remission after corticosteroid therapy: not documented → unknown",
+      "Within 8 weeks of baseline: no remission date available → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "Profile states \"suspected_diagnosis\": \"Nephrotic syndrome, most likely minimal change disease\" but contains no workup for secondary causes (infection, autoimmune, malignancy, drugs).",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No genetic testing results and no family history are mentioned anywhere in the profile.",
+    "sub_condition_notes": [
+      "Known genetic defects associated with NS: not mentioned → unknown",
+      "Family history of NS: not mentioned → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "\"medications\": [] records no current medications, but no information about prior B-cell depleting/modifying therapy (e.g., rituximab) in the past 6 months is provided.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No allergy history or atopic predisposition is documented in the profile.",
+    "sub_condition_notes": [
+      "Allergy to monoclonal antibodies: not mentioned → unknown",
+      "Predisposition to allergies: not mentioned → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "\"medications\": [] lists no current drugs, but prior immunosuppressant use within 60 days is not addressed in the profile.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No information on immunoglobulin or immunomodulator (e.g., thymosin) administration is present in the profile.",
+    "sub_condition_notes": [
+      "Immunoglobulin within 90 days: not mentioned → unknown",
+      "Immunomodulators such as thymosin within 4 weeks: not mentioned → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No mention of prior or planned participation in any clinical trial of an investigational drug.",
+    "sub_condition_notes": [
+      "Participation within 90 days / 5 half-lives: not mentioned → unknown",
+      "Plans to participate during study period: not mentioned → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Labs provided are only \"Urinalysis shows heavy proteinuria without hematuria\" and \"serum albumin is low\"; no transaminases, bilirubin, creatinine or eGFR are reported.",
+    "sub_condition_notes": [
+      "Marked liver function abnormality: no liver tests reported → unknown",
+      "Marked kidney function abnormality: no creatinine/eGFR reported → unknown"
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "No serology results (HBsAg, HCV antibody, Treponema pallidum antibody, HIV) are included in the labs: only urinalysis and serum albumin.",
+    "sub_condition_notes": [
+      "HBsAg positive: not tested/reported → unknown",
+      "HCV antibody positive: not tested/reported → unknown",
+      "Treponema pallidum antibody positive: not tested/reported → unknown",
+      "HIV history or antibody positive: not tested/reported → unknown"
+    ]
+  }
+]

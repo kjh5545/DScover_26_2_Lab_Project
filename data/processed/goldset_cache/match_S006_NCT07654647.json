@@ -1,0 +1,83 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"age\": 45, \"age_unit\": \"years\" — patient is 45 years old, which is 18 or older.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "The profile lists only \"fever\", \"facial pain\", \"black necrotic eschar on the nasal mucosa\", \"periorbital swelling\"; no cystic or tumoral osteolytic lesion or facial bone defect is documented.",
+    "sub_condition_notes": [
+      "Facial bone defect present: not documented",
+      "Defect resulting from cystic or tumoral osteolytic lesion: not documented"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No mention of acquired or congenital facial deformity, bony defect, or facial asymmetry in the findings or history.",
+    "sub_condition_notes": [
+      "Acquired or congenital facial deformity: not documented",
+      "Associated bony defect or facial asymmetry: not documented"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "The profile does not state any need for maxillofacial reconstruction or a patient-specific 3D-printed titanium implant; the suspected diagnosis is \"Rhino-orbital mucormycosis (invasive fungal rhinosinusitis)\".",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "unknown",
+    "evidence": "No aesthetic indication, custom facial implant plan, or microgenia/chin retrusion is mentioned in the profile.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I6",
+    "verdict": "post_enrollment",
+    "evidence": "Ability/willingness to provide written informed consent is assessed at the time of enrollment, not derivable from the profile.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "fail",
+    "evidence": "Findings include \"black necrotic eschar on the nasal mucosa\", \"periorbital swelling\", \"fever\" with \"suspected_diagnosis\": \"Rhino-orbital mucormycosis (invasive fungal rhinosinusitis)\" — an active pathological lesion.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "\"age\": 45, \"age_unit\": \"years\" — not below 18 years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No radiotherapy history is mentioned; history lists only \"poorly controlled type 2 diabetes\" and \"medications\": [].",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "\"labs\": [] — no vitamin D status recorded and no mention of deficiency or its treatment.",
+    "sub_condition_notes": [
+      "Vitamin D deficiency present: not documented",
+      "Chronic and untreated: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "fail",
+    "evidence": "History: \"poorly controlled type 2 diabetes\"; suspected diagnosis stated as occurring \"in the setting of poorly controlled diabetes\".",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "post_enrollment",
+    "evidence": "Ability/willingness to comply with follow-up requirements can only be determined after application and during study participation.",
+    "sub_condition_notes": []
+  }
+]

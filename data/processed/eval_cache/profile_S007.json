@@ -1,0 +1,17 @@
+{
+  "age": 3,
+  "age_unit": "months",
+  "sex": null,
+  "suspected_diagnosis": "Infantile hypertrophic pyloric stenosis",
+  "findings": [
+    "projectile non-bilious vomiting after feeding",
+    "visible peristalsis",
+    "palpable olive-shaped mass in the epigastrium"
+  ],
+  "history": [],
+  "medications": [],
+  "labs": [
+    "hypochloremic, hypokalemic metabolic alkalosis"
+  ],
+  "id": "S007"
+}

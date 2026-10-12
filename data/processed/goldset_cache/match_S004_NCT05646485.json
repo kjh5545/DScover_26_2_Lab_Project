@@ -1,0 +1,55 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "Patient age is \"68\" years, which is ≥ 50.",
+    "sub_condition_notes": [
+      "Age ≥ 50: 68 years — satisfied"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "History states only \"long smoking history\"; no pack-year quantification is provided, so ≥15 pack-years cannot be confirmed.",
+    "sub_condition_notes": [
+      "Smoking history present: yes (\"long smoking history\")",
+      "≥15 pack-years: not quantified in profile — unknown"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No occupational history is mentioned anywhere in the profile; this could be asked of the patient.",
+    "sub_condition_notes": [
+      "Occupational exposure type (textile worker, painter, dry cleaner): not mentioned — unknown",
+      "Duration ≥15 years: not mentioned — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "History lists only \"long smoking history\"; no prior bladder, kidney, or prostate cancer is mentioned, but absence of mention does not rule it out. Current finding is a \"suspected_diagnosis\": \"Bladder cancer\", not a prior history.",
+    "sub_condition_notes": [
+      "Prior bladder cancer: not mentioned — unknown",
+      "Prior kidney cancer: not mentioned — unknown",
+      "Prior prostate cancer: not mentioned — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "Profile reports current \"painless gross hematuria\" with \"CT urography reveals a mass in the bladder wall\", but does not state whether any hematuria evaluation occurred in the preceding 2 years.",
+    "sub_condition_notes": [
+      "Prior evaluation of microscopic hematuria within 2 years: not documented — unknown",
+      "Prior evaluation of gross hematuria within 2 years: not documented — unknown"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "post_enrollment",
+    "evidence": "Provision of informed consent is determined at the time of enrollment/screening and is not part of the patient profile.",
+    "sub_condition_notes": [
+      "Ability/willingness to provide informed consent: assessed at enrollment — post_enrollment"
+    ]
+  }
+]

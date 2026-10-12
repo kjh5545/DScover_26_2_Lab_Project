@@ -1,0 +1,95 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "The profile contains no information about the patient's ability to understand or willingness to sign informed consent; this could be asked of the patient now.",
+    "sub_condition_notes": [
+      "Ability to understand: not documented",
+      "Willingness to sign written informed consent: not documented"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Profile states 'suspected_diagnosis': 'Rhegmatogenous retinal detachment of the right eye' — a suspicion, not a confirmed primary diagnosis, and nothing is stated about the location of breaks (inferior vs. other).",
+    "sub_condition_notes": [
+      "Primary rhegmatogenous retinal detachment: only 'suspected', not confirmed on record",
+      "Inferior breaks: no information on break location in the profile"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "'age': 73, 'age_unit': 'years' — the patient is 18 years or older.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "pass",
+    "evidence": "'sex': 'M' — the patient is male and therefore not a woman of child-bearing potential; the pregnancy test requirement does not apply.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "'age': 73 years — not a pediatric patient.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "'sex': 'M' — a male patient cannot be pregnant.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "'history': [] — no ocular surgical history documented; prior retinal detachment repair in the right eye can neither be confirmed nor ruled out. This could be asked of the patient.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "'history': [] — no mention of prior scleral buckling in the study eye; absence of mention is not evidence of absence.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "Findings describe 'sudden onset of a painless, curtain-like loss of vision in the right eye', 'preceded by flashes of light', 'floaters', but no trauma history is recorded ('history': []); a traumatic cause is not explicitly excluded.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "'sudden onset of a painless, curtain-like loss of vision in the right eye', 'preceded by flashes of light', 'floaters' — the detachment is symptomatic and of sudden (recent) onset, not asymptomatic longstanding.",
+    "sub_condition_notes": [
+      "Asymptomatic: no — patient reports visual loss, flashes, floaters",
+      "Longstanding: no — 'sudden onset' described"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "post_enrollment",
+    "evidence": "Compliance with post-operative treatment (e.g., positioning, follow-up) can only be determined after enrollment and surgery.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "The profile gives no lens status (phakic, pseudophakic, or aphakic) for the right eye; this requires ocular examination/history that is not recorded.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "pass",
+    "evidence": "'suspected_diagnosis': 'Rhegmatogenous retinal detachment of the right eye' with 'flashes of light' and 'floaters' — the described mechanism is rhegmatogenous, not exudative.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "No information on retinoschisis in the profile; fundus examination findings beyond the listed symptoms are not provided.",
+    "sub_condition_notes": []
+  }
+]

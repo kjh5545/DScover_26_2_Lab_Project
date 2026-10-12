@@ -1,0 +1,221 @@
+[
+  {
+    "id": "I1",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Diagnosis of migraine with aura code",
+    "sub_conditions": [
+      "Diagnosis of migraine with aura"
+    ],
+    "needed_info": [
+      "diagnosis",
+      "migraine subtype (with aura)"
+    ]
+  },
+  {
+    "id": "I2",
+    "type": "temporal_numeric",
+    "category": "temporal_numeric",
+    "text": "At least 1 aura with aura per month in the 3 months prior to inclusion",
+    "sub_conditions": [
+      "At least 1 migraine attack with aura per month",
+      "Frequency sustained during the 3 months prior to inclusion"
+    ],
+    "needed_info": [
+      "migraine/aura attack frequency per month",
+      "headache history over last 3 months"
+    ]
+  },
+  {
+    "id": "I3",
+    "type": "inclusion",
+    "category": "temporal_numeric",
+    "text": "No prophylactic antimigraine treatment for at least 1 month prior to inclusion",
+    "sub_conditions": [
+      "No prophylactic antimigraine treatment",
+      "Washout of at least 1 month prior to inclusion"
+    ],
+    "needed_info": [
+      "medication history",
+      "date of last prophylactic antimigraine treatment"
+    ]
+  },
+  {
+    "id": "I4",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "For women of childbearing age, use of a reliable contraceptive method at least 3 months before and 1 month after the study",
+    "sub_conditions": [
+      "Female of childbearing potential",
+      "Use of a reliable contraceptive method at least 3 months before the study",
+      "Willingness to continue contraception 1 month after the study"
+    ],
+    "needed_info": [
+      "sex",
+      "childbearing potential status",
+      "contraception method and start date"
+    ]
+  },
+  {
+    "id": "I5",
+    "type": "inclusion",
+    "category": "administrative",
+    "text": "Signature of written informed consent",
+    "sub_conditions": [
+      "Able and willing to sign written informed consent"
+    ],
+    "needed_info": [
+      "consent capability",
+      "signed consent form"
+    ]
+  },
+  {
+    "id": "I6",
+    "type": "inclusion",
+    "category": "administrative",
+    "text": "Patient affiliated with Social Security",
+    "sub_conditions": [
+      "Affiliation to a Social Security scheme"
+    ],
+    "needed_info": [
+      "health insurance / social security affiliation status"
+    ]
+  },
+  {
+    "id": "E1",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Known hypersensitivity to amiloride (the molecule)",
+    "sub_conditions": [
+      "Known hypersensitivity/allergy to amiloride"
+    ],
+    "needed_info": [
+      "drug allergy history"
+    ]
+  },
+  {
+    "id": "E2",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Hyperkalemia (potassium level > 5.5 mmol/l)",
+    "sub_conditions": [
+      "Serum potassium > 5.5 mmol/l"
+    ],
+    "needed_info": [
+      "lab: serum potassium"
+    ]
+  },
+  {
+    "id": "E3",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Use of another hyperkalemic diuretic or potassium salts",
+    "sub_conditions": [
+      "Use of another hyperkalemic (potassium-sparing) diuretic",
+      "Use of potassium salts/supplements"
+    ],
+    "needed_info": [
+      "current medication list"
+    ]
+  },
+  {
+    "id": "E4",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Renal insufficiency (creatinine clearance < 60 ml/min)",
+    "sub_conditions": [
+      "Creatinine clearance < 60 ml/min"
+    ],
+    "needed_info": [
+      "lab: creatinine clearance / eGFR",
+      "renal disease history"
+    ]
+  },
+  {
+    "id": "E5",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Severe hepatocellular insufficiency",
+    "sub_conditions": [
+      "Severe hepatocellular (liver) insufficiency"
+    ],
+    "needed_info": [
+      "liver function tests",
+      "hepatic disease history"
+    ]
+  },
+  {
+    "id": "E6",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Combination with lithium, converting enzyme inhibitors, angiotensin II inhibitors (except if there is hypokalemia), ciclosporin, tacrolimus, or non-antiarrhythmic drugs giving torsades de pointes",
+    "sub_conditions": [
+      "Concomitant lithium",
+      "Concomitant ACE inhibitors",
+      "Concomitant angiotensin II receptor inhibitors (unless hypokalemia present)",
+      "Concomitant ciclosporin",
+      "Concomitant tacrolimus",
+      "Concomitant non-antiarrhythmic drugs causing torsades de pointes"
+    ],
+    "needed_info": [
+      "current medication list",
+      "lab: serum potassium (for hypokalemia exception)"
+    ]
+  },
+  {
+    "id": "E7",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Cardiovascular and renal history, for subjects over 75 years old",
+    "sub_conditions": [
+      "Age over 75 years",
+      "History of cardiovascular disease",
+      "History of renal disease"
+    ],
+    "needed_info": [
+      "age",
+      "cardiovascular history",
+      "renal history"
+    ]
+  },
+  {
+    "id": "E8",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "Patient who, from an investigator's point of view, would not be compliant to the procedure of the study",
+    "sub_conditions": [
+      "Investigator judgment of likely non-compliance with study procedures"
+    ],
+    "needed_info": [
+      "investigator assessment of compliance"
+    ]
+  },
+  {
+    "id": "E9",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Pregnant or lactating patient",
+    "sub_conditions": [
+      "Pregnancy",
+      "Breastfeeding/lactation"
+    ],
+    "needed_info": [
+      "pregnancy test result",
+      "breastfeeding status"
+    ]
+  },
+  {
+    "id": "E10",
+    "type": "exclusion",
+    "category": "administrative",
+    "text": "Patient under trusteeship, under guardianship, or protected by law",
+    "sub_conditions": [
+      "Under trusteeship (curatorship)",
+      "Under guardianship",
+      "Protected by law"
+    ],
+    "needed_info": [
+      "legal protection/guardianship status"
+    ]
+  }
+]

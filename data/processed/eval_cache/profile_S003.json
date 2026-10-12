@@ -1,0 +1,19 @@
+{
+  "age": 7,
+  "age_unit": "years",
+  "sex": "M",
+  "suspected_diagnosis": "Nephrotic syndrome, most likely minimal change disease",
+  "findings": [
+    "periorbital edema",
+    "frothy urine"
+  ],
+  "history": [
+    "3-week history of periorbital edema and frothy urine"
+  ],
+  "medications": [],
+  "labs": [
+    "Urinalysis shows heavy proteinuria without hematuria",
+    "serum albumin is low"
+  ],
+  "id": "S003"
+}

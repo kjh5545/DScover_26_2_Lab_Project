@@ -1,0 +1,20 @@
+{
+  "age": 54,
+  "age_unit": "years",
+  "sex": "M",
+  "suspected_diagnosis": "Acute pancreatitis (alcohol-induced)",
+  "findings": [
+    "severe epigastric pain radiating to the back",
+    "nausea",
+    "vomiting"
+  ],
+  "history": [
+    "chronic alcohol use"
+  ],
+  "medications": [],
+  "labs": [
+    "markedly elevated serum lipase",
+    "markedly elevated serum amylase"
+  ],
+  "id": "S001"
+}
