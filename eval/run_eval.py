@@ -210,6 +210,11 @@ def main():
             except anthropic.NotFoundError as e:
                 failures.append((m, cid, r, f"모델을 찾을 수 없음: {e.message}"))
             except anthropic.BadRequestError as e:
+                if "credit balance" in str(e.message).lower():
+                    # 잔액 부족은 다시 보내도 같은 결과라 남은 작업을 모두 취소하고 멈춘다 (공용 키라 잔액이 갑자기 바닥날 수 있음)
+                    for other in futs:
+                        other.cancel()
+                    sys.exit("API 크레딧 잔액이 부족해 중단했어요. 관리자에게 충전을 요청한 뒤 다시 실행하세요.")
                 failures.append((m, cid, r, f"잘못된 요청: {e.message}"))
             except anthropic.RateLimitError:
                 failures.append((m, cid, r, "요청 한도 초과 (SDK 재시도 후에도 실패)"))
