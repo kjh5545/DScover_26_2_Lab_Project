@@ -71,7 +71,7 @@ python scripts/run_intake.py S005 --no-screen   # 매칭 생략 (1→2→3)
     }
   ],
 
-  "meta": { "model": "claude-opus-5", "prompt_version": "v2", "created": "2026-10-09", "stages": "1-4" }
+  "meta": { "model": "claude-sonnet-5-5", "prompt_version": "v2", "created": "2026-10-09", "stages": "1-4" }
 }
 ```
 
@@ -87,7 +87,7 @@ python scripts/run_intake.py S005 --no-screen   # 매칭 생략 (1→2→3)
 
 - `meta.prompt_version = "v2"`: 2026-10-08 회의 결정 반영 — 동의서·참여 의사·열린 기준은
   `post_enrollment`, 명시되지 않은 사실은 추론으로 확정하지 않음(`unknown` 유지).
-  goldset_v1 기준 일치 90.2%, 최종 판단 15/15.
+  goldset_v1 기준 일치 90.2%, 최종 판단 15/15. (※ 이 수치는 claude-opus-5로 측정. 2026-10-12 기본 모델을 claude-sonnet-5-5로 바꿨으니 다시 측정 필요)
 
 ## 판정 값 대응표 (파일의 영어 값 ↔ 평가셋·시트의 한국어)
 

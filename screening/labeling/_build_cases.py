@@ -15,6 +15,14 @@ UNKNOWN_PROTOCOL = re.compile(r"defined in the protocol|^other$", re.I)
 # (환자, 시험, 기준) → 추가로 인정할 판정, 이유
 # 팀 결정(2026-10-08): 논리상 탈락 가능성이 있어도 명시되지 않았으면 모름 유지 → 추가 인정 판정 없음
 REVIEW = {}
+# 팀 결정(2026-10-12, v1.1): 연구자·의사 판단, 순응도 기준은 환자에게 물어서 알 수 없으므로 등록 후 확인
+INVESTIGATOR_JUDGMENT = {
+    ("S002", "NCT07018323", "E2"),  # in the Investigator's judgment
+    ("S003", "NCT07206537", "E2"),  # 약·보충제 복용 순응도
+    ("S004", "NCT04369560", "E8"),  # 담당 의사가 위험하다고 판단
+    ("S007", "NCT05561907", "I6"),  # 수술·전신마취 가능 여부 (의료진 평가)
+    ("S010", "NCT03714503", "E7"),  # 수술 후 치료 순응도
+}
 
 def criteria_block(n):
     p = raw[n]["protocolSection"]; e = p["eligibilityModule"]
@@ -49,6 +57,10 @@ def build():
                 if UNKNOWN_PROTOCOL.search(orig[cid].strip()) and set(vs) <= {"모름", "등록 후 확인"}:
                     # 팀 결정(2026-10-08): 내용이 공개되지 않은 기준("Other", "프로토콜에 정의됨")은 등록 후 확인
                     if vs != ["등록 후 확인"]: notes.append(f"{pid} {n} {cid}: 비공개 기준 {vs} → 등록 후 확인")
+                    vs = ["등록 후 확인"]
+                if (pid, n, cid) in INVESTIGATOR_JUDGMENT and set(vs) <= {"모름", "등록 후 확인"}:
+                    # 팀 결정(2026-10-12, v1.1): 연구자·의사 판단, 순응도는 등록 후 확인
+                    if vs != ["등록 후 확인"]: notes.append(f"{pid} {n} {cid}: 연구자 판단·순응도 {vs} → 등록 후 확인")
                     vs = ["등록 후 확인"]
                 if (pid, n, cid) in REVIEW:
                     alt, altf, why = REVIEW[(pid, n, cid)]

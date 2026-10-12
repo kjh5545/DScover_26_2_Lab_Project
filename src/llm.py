@@ -15,8 +15,9 @@ from pathlib import Path
 
 import anthropic
 
-# 기본 모델. 비용을 아끼려면 "claude-sonnet-5" 나 "claude-haiku-4-5"로 변경 가능.
-MODEL = "claude-opus-5"
+# 기본 모델: 회의 결정(2026-10-09)으로 판정 모델은 Sonnet 5.5. Opus 5보다 약 2.5배 저렴 (입력 $2 / 출력 $10, 100만 토큰당).
+# 공용 키라 모델을 바꿀 때는 비용 영향을 팀에 먼저 공유할 것.
+MODEL = "claude-sonnet-5-5"
 
 _client: anthropic.Anthropic | None = None
 
