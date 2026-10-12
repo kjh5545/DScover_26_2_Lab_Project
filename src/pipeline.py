@@ -22,7 +22,7 @@ from src.agents.trial_searcher import search_candidates
 from src.llm import MODEL
 
 ROOT = Path(__file__).resolve().parent.parent
-PROMPT_VERSION = "v2"  # 2026-10-08 회의 결정 반영 (goldset_v1 decisions)
+PROMPT_VERSION = "v3"  # 2026-10-12: goldset v1.1 결정 + 환자 원문 입력 (v2: 2026-10-08 회의 결정)
 
 
 # ── 단계별 함수 (개별 호출도 가능) ──────────────────────────
@@ -57,9 +57,9 @@ def parse_trial(trial: dict) -> list[dict]:
     return criteria
 
 
-def screen(profile: dict, criteria: list[dict]) -> tuple[list[dict], str]:
-    """[4] 조건별 4단계 판정 + 근거 → (판정 목록, 최종 판단)."""
-    judgments = match(profile, criteria)
+def screen(profile: dict, criteria: list[dict], case_text: str | None = None) -> tuple[list[dict], str]:
+    """[4] 조건별 4단계 판정 + 근거 → (판정 목록, 최종 판단). case_text: 환자 원문 (v3)."""
+    judgments = match(profile, criteria, case_text=case_text)
     return judgments, final_judgment(judgments)
 
 
@@ -88,7 +88,7 @@ def run_intake(case_text: str, patient_id: str = "CUSTOM",
             "criteria": parse_trial(t),
         }
         if do_screen:
-            entry["judgments"], entry["final_judgment"] = screen(profile, entry["criteria"])
+            entry["judgments"], entry["final_judgment"] = screen(profile, entry["criteria"], case_text)
         trials.append(entry)
 
     bundle = {
