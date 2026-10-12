@@ -5,7 +5,7 @@
 성균관대 AIHC Lab의 *Healthcare Agentic AI Challenge 2026* 주제를 그대로 수행합니다. 짧은 환자 설명을 받아 ClinicalTrials.gov에서 임상시험을 찾고, 선정·제외 기준과 한 줄씩 대조해 판정하고, 모자란 정보는 질문으로 채운 뒤, 적절한 임상시험을 근거와 함께 추천하는 시스템을 만듭니다.
 
 - 평가 비중: 매칭 정확성 30% · 랩 내 정성 평가 30% · 발표 40%
-- 판정 모델: Claude Sonnet 5.5 (팀 결정)
+- 판정 모델: Claude Sonnet 5.5 (팀 결정, `src/llm.py`)
 
 ## 팀원별 할 일
 
@@ -18,28 +18,31 @@
 | 서현 | 5번 질문 프롬프트 (코딩 없음) | [`docs/튜토리얼_서현.md`](docs/튜토리얼_서현.md) |
 | 인선 | 상세 환자·발표 기획 (코딩 없음) | [`docs/튜토리얼_인선.md`](docs/튜토리얼_인선.md) |
 
-## 진행 상황
+## 진행 상황 (2026-10-12)
 
 | 단계 | 내용 | 상태 |
 |---|---|---|
-| 사전 실험 | S005(편두통)로 수작업 스크리닝 → 판정 규칙 도출 → 프롬프트 v2 | 완료 |
-| 자동 평가 | Claude API로 반복 실행, 모델 4개 비교, 규칙 보완한 프롬프트 v3 | 완료 |
-| 정답 레이블 | 팀원 2명이 환자 9명 × 시험 15개, 기준 173개를 직접 판정 (공동 판정 일치도 93%) | 완료 → `goldset/` |
-| 에이전트 1 · 2 | 환자 정보 이해, 후보 검색 | 코드 작성 (`agents/`) |
-| 에이전트 3–7 | 기준 파싱, 매칭, 질문 생성, 재평가, 추천·설명 | 진행 예정 |
+| 사전 실험 | S005(편두통)로 수작업 스크리닝 → 판정 규칙 도출 → 프롬프트 | 완료 |
+| 자동 평가 | Claude API로 반복 실행, 모델 4개 비교 (`eval/`) | 완료 |
+| 정답 레이블 | 환자 9명 × 시험 15개, 기준 173개 (공동 판정 일치도 93%) | 평가 세트 v1.1 → `goldset/` |
+| 파이프라인 1~4번 | 환자 이해 → 시험 검색 → 기준 파싱 → 판정 (`src/`) | 완료. v2 프롬프트 161/173 (Opus 5) |
+| 5~7번, 데모 | 질문 생성, 재평가, 추천, Streamlit 데모 (`app.py`) | 초안 완료, 다듬는 중 |
+| 판정 프롬프트 v3 | 환자 원문 입력, 추정 진단 사용 금지, 나이·임신 기준 코드 판정 | `feature/judge-v3` 브랜치, 평가 대기 |
 
 ## 폴더 구조
 
 ```
 .
-├── agents/        에이전트 코드 (schemas.py = 에이전트 간 데이터 형식 약속)
-├── eval/          자동 평가 도구 (run_eval.py, compare.py), 판정 규칙 프롬프트 v2·v3
-├── goldset/       최종 평가 세트 v1 (goldset_v1.json = 평가 입력 겸 원본, 평가세트_v1.md = 사람용)
-├── screening/     사전 실험 기록, 팀원 레이블 원본 시트(labeling/스크리닝1, 스크리닝2)와 변환 도구
-├── synthetic-patients.json   대회 제공 예시 환자 10명
-├── info.txt       대회 공고
-├── 사전실험_정리.md / API_자동평가_정리.md   실험 정리 문서 (노션용)
-└── requirements.txt
+├── src/           팀 표준 파이프라인 (에이전트 1~7, LLM 공통 함수, ClinicalTrials.gov 도구)
+├── app.py         Streamlit 데모 화면 (streamlit run app.py)
+├── scripts/       실행·평가 스크립트 (run_intake.py, eval_vs_goldset.py 등)
+├── docs/          역할 분담, 팀원별 튜토리얼, HANDOFF.md (에이전트 출력 형식)
+├── goldset/       평가 세트 v1.1 (goldset_v1.json = 평가 입력 겸 원본, 평가세트_v1.md = 사람용)
+├── eval/          사전 실험용 자동 평가 도구와 결과 분석
+├── screening/     사전 실험 기록, 팀원 레이블 원본 시트와 변환 도구, 상세 환자 시트
+├── agents/        초기 뼈대 코드 (참고용, 정리 예정)
+├── data/          예시 환자, 처리 결과 캐시, handoff 예시(S005)
+└── synthetic-patients.json, info.txt, 사전실험_정리.md, API_자동평가_정리.md
 ```
 
 ## 시작하기
@@ -48,23 +51,20 @@
 pip install -r requirements.txt
 ```
 
-API 키는 `eval/.env.example`을 복사해 `eval/.env`로 이름을 바꾸고 키를 넣습니다. **`.env`는 git에 올라가지 않으며, 키를 코드나 채팅에 붙여넣지 마세요.** 팀 공용 키라 실행 전에 예상 비용을 공유합니다.
+API 키는 `.env.example`을 복사해 프로젝트 맨 위에 `.env`로 저장하고 키를 넣습니다 (평가 도구 `eval/`은 `eval/.env`). **`.env`는 git에 올라가지 않으며, 키를 코드나 채팅에 붙여넣지 마세요.** 연구실 모든 팀이 같은 크레딧을 쓰니 실행 전에 예상 비용을 공유합니다.
 
-### 에이전트 실행
+### 파이프라인과 데모
 ```bash
-python -m agents.patient_agent                                            # 1번: 환자 10명 → outputs/patient_profiles.json
-python -m agents.search_agent --profiles outputs/patient_profiles.json   # 2번: 후보 시험 검색
-python -m agents.search_agent --condition "bladder cancer" --age 68 --sex male   # 검색만 따로
+python scripts/run_intake.py S005        # 1→4번 전체 실행 → data/handoff/S005.json
+streamlit run app.py                     # 데모 화면
 ```
 
-### 자동 평가
+### 평가
 ```bash
-cd eval
-python run_eval.py --smoke                                                          # 연결 확인
-python run_eval.py --goldset --rules rules_prompt_v3.md --models claude-sonnet-5-5 --repeats 3   # 평가 세트로 채점
-python compare.py --a runs/<A 실행> --b runs/<B 실행> --cases-file ../goldset/goldset_v1.json --out 비교.md
+python scripts/eval_vs_goldset.py --skip-v3   # 저장된 결과만 채점 (무료)
+python scripts/eval_vs_goldset.py             # 판정 v3를 현재 모델로 새로 실행 (약 $1)
+python scripts/check_rule_checks.py           # 코드 판정(나이·임신)을 정답과 대조 (무료, judge-v3 브랜치)
 ```
-결과는 `eval/runs/<날짜_시간>/report.md`에 저장됩니다.
 
 ## 판정 규칙 (팀 합의)
 
@@ -75,15 +75,17 @@ python compare.py --a runs/<A 실행> --b runs/<B 실행> --cases-file ../goldse
 | 모름 | 지금 환자에게 물어보면 알 수 있지만 정보가 없음 |
 | 등록 후 확인 | 시험에 지원한 뒤에야 생기는 정보 |
 
-- 동의서·참여 의사·순응 의사 기준, 내용이 공개되지 않은 기준("Other", "프로토콜에 정의됨")은 **등록 후 확인**
-- 논리적으로 탈락을 추론할 수 있어도 환자 설명에 명시되지 않았으면 **모름**
+- 동의서·참여 의사, 내용이 공개되지 않은 기준("Other", "프로토콜에 정의됨"), 연구자·의사 판단, 순응도, 기대 여명은 **등록 후 확인**
+- 논리적으로 탈락을 추론할 수 있어도 환자 설명에 명시되지 않았으면 **모름**. 언급 없는 제외 기준, 기록에 없는 검사 수치도 **모름**
+- 나이·임신처럼 코드로 확실히 판정되는 기준은 코드가 판정 (judge-v3 브랜치)
 - 최종 판단: 적격 / 부적격 / 정보 부족. "적격 가능(등록 후 확인 필요)" 추가 여부는 실험 후 결정
-- 자세한 내용: `goldset/평가세트_v1.md`
+- 자세한 내용: `goldset/평가세트_v1.md` (v1.1)
 
 ## 주요 결과
 
 - 수작업에서 찾은 규칙을 프롬프트에 넣자 정답 일치가 10개 중 5개 → 10개로 증가 (사전 실험)
 - 규칙 3개를 보완한 v3에서 모델 4개 모두 최종 판단 18/18 일치, Opus는 기준 100%, Sonnet 5.5는 99% (S005 케이스 기준)
+- 팀원 레이블 평가 세트 v1.1에서 해준 파이프라인(v2 프롬프트, Opus 5) 기준 161/173 (93.1%), 최종 판단 15/15. 불일치 분석: `eval/결과_3차_해준파이프라인_불일치분석.md`
 - 자세한 내용: `사전실험_정리.md`, `API_자동평가_정리.md`, `eval/결과_2차_v3비교.md`
 
 ## 데이터 출처
