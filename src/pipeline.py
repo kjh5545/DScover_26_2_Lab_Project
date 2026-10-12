@@ -16,7 +16,7 @@ import json
 from pathlib import Path
 
 from src.agents.criteria_parser import parse_criteria
-from src.agents.matcher import final_judgment, match
+from src.agents.matcher import final_judgment, match, match_with_rules
 from src.agents.patient_profiler import profile_patient
 from src.agents.trial_searcher import search_candidates
 from src.llm import MODEL
@@ -58,8 +58,9 @@ def parse_trial(trial: dict) -> list[dict]:
 
 
 def screen(profile: dict, criteria: list[dict], case_text: str | None = None) -> tuple[list[dict], str]:
-    """[4] 조건별 4단계 판정 + 근거 → (판정 목록, 최종 판단). case_text: 환자 원문 (v3)."""
-    judgments = match(profile, criteria, case_text=case_text)
+    """[4] 조건별 4단계 판정 + 근거 → (판정 목록, 최종 판단). case_text: 환자 원문 (v3).
+    나이·임신 기준은 코드가 판정해 LLM 결과를 덮어쓴다 (src/tools/rule_checks.py)."""
+    judgments, _changed = match_with_rules(profile, criteria, case_text=case_text)
     return judgments, final_judgment(judgments)
 
 

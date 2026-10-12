@@ -176,3 +176,14 @@ def final_judgment(judgments: list[dict]) -> str:
     if "post_enrollment" in verdicts:
         return "probably_eligible"
     return "eligible"
+
+
+def match_with_rules(profile: dict, criteria: list[dict], case_text: str | None = None) -> tuple[list[dict], list[dict]]:
+    """LLM 판정 후, 코드로 확실히 판정되는 기준(나이, 임신·수유)을 코드 결과로 덮어쓴다.
+
+    반환: (판정 목록, 코드가 LLM과 다르게 바꾼 기준 목록). 코드 판정에는 "checked_by": "code"가 붙는다.
+    """
+    from src.tools.rule_checks import apply_code_checks, code_judgments
+
+    llm = match(profile, criteria, case_text=case_text)
+    return apply_code_checks(llm, code_judgments(profile, criteria))

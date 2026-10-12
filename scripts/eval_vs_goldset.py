@@ -8,6 +8,8 @@
 
 실행: python scripts/eval_vs_goldset.py            # v1·v2(캐시) + v3(없으면 새로 생성)
       python scripts/eval_vs_goldset.py --skip-v3  # 캐시만 채점 (무료)
+      python scripts/eval_vs_goldset.py --compare-v2  # v2 프롬프트도 현재 모델로 돌려 비교 (추가 약 $1)
+결과마다 "+ 코드 판정" 줄은 나이·임신 기준을 코드가 덮어쓴 점수 (파이프라인과 같은 방식)
 비용: v3 첫 실행 시 매칭 15회 (Sonnet 5.5 기준 약 $1). 재실행은 캐시라 무료.
 """
 
@@ -19,8 +21,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from src.agents.matcher import final_judgment, match
+from src.agents.matcher import SYSTEM_PROMPT_V2, final_judgment, match
 from src.llm import MODEL
+from src.tools.rule_checks import apply_code_checks, code_judgments
 
 _CANDIDATES = [ROOT / "goldset_v1.json", ROOT / "goldset" / "goldset_v1.json"]
 GOLD = next(p for p in _CANDIDATES if p.exists())
@@ -52,7 +55,8 @@ def get_profile(patient_id: str) -> dict:
     return json.loads((V1_CACHE / f"profile_{patient_id}.json").read_text(encoding="utf-8"))
 
 
-def evaluate(label: str, get_judgments) -> dict:
+def evaluate(label: str, get_judgments, use_code: bool = False) -> dict:
+    """use_code=True면 LLM 판정 위에 코드 판정(나이·임신)을 덮어써서 채점한다 (파이프라인과 같은 방식)."""
     gold = json.loads(GOLD.read_text(encoding="utf-8"))
     agree = total = finals_agree = 0
     noq_ok = noq_total = 0
@@ -66,6 +70,8 @@ def evaluate(label: str, get_judgments) -> dict:
         if judgments is None:
             continue
         n_evaluated += 1
+        if use_code:
+            judgments, _ = apply_code_checks(judgments, code_judgments(profile, criteria))
         by_id = {j["criterion_id"]: j for j in judgments}
 
         for cid, expected_ko in case["expected"].items():
@@ -137,13 +143,32 @@ def v3_judgments(case, profile, criteria):
 
 
 SKIP_V3 = "--skip-v3" in sys.argv
+COMPARE_V2 = "--compare-v2" in sys.argv   # v2 프롬프트도 현재 모델로 돌려 모델 효과와 프롬프트 효과를 나눠 본다 (약 $1)
+V2_NOW_CACHE = ROOT / "data" / "processed" / f"goldset_cache_v2_{MODEL}"
+
+
+def v2_now_judgments(case, profile, criteria):
+    """v2 프롬프트를 현재 모델(MODEL)로. 원문 입력 없이 v2 방식 그대로."""
+    V2_NOW_CACHE.mkdir(parents=True, exist_ok=True)
+    path = V2_NOW_CACHE / f"match_{case['id']}.json"
+    if path.exists():
+        return json.loads(path.read_text(encoding="utf-8"))
+    if SKIP_V3 or not COMPARE_V2:
+        return None
+    print(f"  매칭 중 (v2, {MODEL}): {case['id']}")
+    judgments = match(profile, criteria, system_prompt=SYSTEM_PROMPT_V2)
+    path.write_text(json.dumps(judgments, ensure_ascii=False, indent=2), encoding="utf-8")
+    return judgments
 
 
 def main() -> None:
     r1 = evaluate("v1 프롬프트 (회의 전 규칙)", v1_judgments)
     r2 = evaluate("v2 프롬프트 (회의 결정 반영, claude-opus-5)", v2_judgments)
+    r2c = evaluate("v2 + 코드 판정 (claude-opus-5)", v2_judgments, use_code=True)
+    r2n = evaluate(f"v2 프롬프트 ({MODEL}, --compare-v2)", v2_now_judgments)
     r3 = evaluate(f"v3 프롬프트 (원문 입력 + goldset v1.1, {MODEL})", v3_judgments)
-    last = r3 if not r3["criteria"].startswith("0/") else r2
+    r3c = evaluate(f"v3 + 코드 판정 ({MODEL}) ← 파이프라인과 같은 방식", v3_judgments, use_code=True)
+    last = r3c if not r3c["criteria"].startswith("0/") else r2c
 
     print(f"\n== {last['label']}에서 남은 불일치 ==")
     for d in last["disagreements"]:
@@ -151,7 +176,8 @@ def main() -> None:
         print(f"   AI 근거: {d['evidence']}")
 
     out = ROOT / "data" / "processed" / "eval_vs_goldset.json"
-    out.write_text(json.dumps({"v1": r1, "v2": r2, "v3": r3}, ensure_ascii=False, indent=2), encoding="utf-8")
+    out.write_text(json.dumps({"v1": r1, "v2": r2, "v2_code": r2c, "v2_now": r2n, "v3": r3, "v3_code": r3c},
+                              ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"\n저장: {out.relative_to(ROOT)}")
 
 

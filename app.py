@@ -15,7 +15,7 @@ from pathlib import Path
 import streamlit as st
 
 from src.agents.criteria_parser import parse_criteria
-from src.agents.matcher import final_judgment, match
+from src.agents.matcher import final_judgment, match, match_with_rules
 from src.agents.patient_profiler import profile_patient
 from src.agents.profile_updater import update_profile
 from src.agents.question_generator import generate_questions
@@ -56,7 +56,7 @@ def get_criteria_cached(trial: dict) -> list[dict]:
 
 def screen_trial(profile: dict, trial: dict, case_text: str | None = None) -> dict:
     criteria = get_criteria_cached(trial)
-    judgments = match(profile, criteria, case_text=case_text)
+    judgments, _ = match_with_rules(profile, criteria, case_text=case_text)
     return {
         "nct_id": trial["nct_id"],
         "title": trial["title"],
@@ -186,7 +186,7 @@ if "screenings" in st.session_state:
                     st.write("[4] 전체 시험 재평가...")
                     prev = {s["nct_id"]: s["judgments"] for s in screenings}
                     screenings = [
-                        {**s, "judgments": (new_j := match(profile, s["criteria"], case_text=st.session_state.get("case_text"))),
+                        {**s, "judgments": (new_j := match_with_rules(profile, s["criteria"], case_text=st.session_state.get("case_text"))[0]),
                          "final_judgment": final_judgment(new_j)}
                         for s in screenings
                     ]
