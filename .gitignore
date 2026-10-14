@@ -242,3 +242,7 @@ reference/
 # 해준 파이프라인 실행 결과 (형식 예시 S005만 커밋, 나머지는 각자 생성)
 data/handoff/*
 !data/handoff/S005.json
+
+# 질문 파일 (형식 예시 S005만 커밋, 나머지는 각자 생성)
+questions/*
+!questions/S005.json

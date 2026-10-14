@@ -1,0 +1,326 @@
+{
+  "v1": {
+    "label": "v1 프롬프트 (회의 전 규칙)",
+    "criteria": "141/173",
+    "finals": "13/15",
+    "no_questions": "6/6",
+    "disagreements": [
+      {
+        "case": "S001_NCT04647097",
+        "criterion_id": "I5",
+        "gold": "등록 후 확인",
+        "agent": "모름",
+        "evidence": "Profile contains no statement about willingness to attend the three-monthly intervention; "
+      },
+      {
+        "case": "S001_NCT04647097",
+        "criterion_id": "E6",
+        "gold": "모름",
+        "agent": "등록 후 확인",
+        "evidence": "Life expectancy estimation is an investigator/clinical judgment made at screening; the pro"
+      },
+      {
+        "case": "S001_NCT04647097",
+        "criterion_id": "E7",
+        "gold": "등록 후 확인",
+        "agent": "모름",
+        "evidence": "The profile does not record whether the patient agrees to participate; this can be asked o"
+      },
+      {
+        "case": "S001_NCT07024199",
+        "criterion_id": "I3",
+        "gold": "모름",
+        "agent": "등록 후 확인",
+        "evidence": "Profile reports \"severe epigastric pain radiating to the back\" but no NRS/FLACC score; the"
+      },
+      {
+        "case": "S001_NCT07024199",
+        "criterion_id": "I5",
+        "gold": "등록 후 확인",
+        "agent": "모름",
+        "evidence": "No consent information in the profile; the patient is 54 years old so legal-guardian conse"
+      },
+      {
+        "case": "S001_NCT07024199",
+        "criterion_id": "E11",
+        "gold": "등록 후 확인",
+        "agent": "모름",
+        "evidence": "No consent information is recorded; the patient is 54 years old, so legal guardians are no"
+      },
+      {
+        "case": "S001_NCT07024199",
+        "criterion_id": "E12",
+        "gold": "등록 후 확인",
+        "agent": "모름",
+        "evidence": "Patient is 54 years old (>16), but the profile contains no statement about consent to part"
+      },
+      {
+        "case": "S002_NCT06068179",
+        "criterion_id": "E11",
+        "gold": "등록 후 확인",
+        "agent": "모름",
+        "evidence": "Willingness and ability to comply with follow-up are not stated in the profile; this can b"
+      },
+      {
+        "case": "S002_NCT07018323",
+        "criterion_id": "I1",
+        "gold": "등록 후 확인",
+        "agent": "모름",
+        "evidence": "The profile contains no information about the patient's ability to understand trial requir"
+      },
+      {
+        "case": "S003_NCT07206537",
+        "criterion_id": "I1",
+        "gold": "모름",
+        "agent": "탈락",
+        "evidence": "Patient is a 7-year-old male with a 3-week history of periorbital edema and frothy urine a"
+      },
+      {
+        "case": "S003_NCT07206537",
+        "criterion_id": "I2",
+        "gold": "모름",
+        "agent": "탈락",
+        "evidence": "Patient has only a \"3-week history of periorbital edema and frothy urine\" and \"medications"
+      },
+      {
+        "case": "S003_NCT07206537",
+        "criterion_id": "E2",
+        "gold": "등록 후 확인",
+        "agent": "모름",
+        "evidence": "Profile lists \"medications\": [] with no information on adherence to medications or vitamin"
+      },
+      {
+        "case": "S003_NCT07499700",
+        "criterion_id": "I1",
+        "gold": "모름",
+        "agent": "탈락",
+        "evidence": "Profile lists only a \"suspected_diagnosis\": \"Nephrotic syndrome, most likely minimal chang"
+      },
+      {
+        "case": "S003_NCT07499700",
+        "criterion_id": "I2",
+        "gold": "모름",
+        "agent": "탈락",
+        "evidence": "\"medications\": [] and \"3-week history of periorbital edema and frothy urine\" — patient has"
+      },
+      {
+        "case": "S004_NCT04369560",
+        "criterion_id": "I2",
+        "gold": "등록 후 확인",
+        "agent": "모름",
+        "evidence": "The profile contains no information about the patient's ability to understand or willingne"
+      },
+      {
+        "case": "S006_NCT07654647",
+        "criterion_id": "I6",
+        "gold": "등록 후 확인",
+        "agent": "모름",
+        "evidence": "No information on consent capacity or willingness is present in the profile; the patient i"
+      },
+      {
+        "case": "S006_NCT07654647",
+        "criterion_id": "E1",
+        "gold": "모름",
+        "agent": "탈락",
+        "evidence": "Findings include \"fever\", \"facial pain\", \"black necrotic eschar on the nasal mucosa\", \"per"
+      },
+      {
+        "case": "S006_NCT07654647",
+        "criterion_id": "E6",
+        "gold": "등록 후 확인",
+        "agent": "모름",
+        "evidence": "No information in the profile about the patient's ability or willingness to comply with fo"
+      },
+      {
+        "case": "S007_NCT05561907",
+        "criterion_id": "I1",
+        "gold": "모름",
+        "agent": "탈락",
+        "evidence": "Patient is a 3-month-old infant with \"suspected_diagnosis\": \"Infantile hypertrophic pylori"
+      },
+      {
+        "case": "S007_NCT05561907",
+        "criterion_id": "I5",
+        "gold": "모름",
+        "agent": "등록 후 확인",
+        "evidence": "Life expectancy estimation and duodenal stenting outcome require clinical/investigator ass"
+      },
+      {
+        "case": "S007_NCT05561907",
+        "criterion_id": "I7",
+        "gold": "모름",
+        "agent": "탈락",
+        "evidence": "No malignancy exists in this patient — \"suspected_diagnosis\": \"Infantile hypertrophic pylo"
+      },
+      {
+        "case": "S007_NCT05561907",
+        "criterion_id": "E3",
+        "gold": "모름",
+        "agent": "통과",
+        "evidence": "Findings indicate gastric outlet-level obstruction proximal to the Ligament of Treitz: \"pr"
+      },
+      {
+        "case": "S007_NCT05561907",
+        "criterion_id": "E4",
+        "gold": "모름",
+        "agent": "탈락",
+        "evidence": "\"suspected_diagnosis\": \"Infantile hypertrophic pyloric stenosis\" with \"visible peristalsis"
+      },
+      {
+        "case": "S007_NCT05561907",
+        "criterion_id": "E6",
+        "gold": "모름",
+        "agent": "탈락",
+        "evidence": "Patient is 3 months old (\"age\": 3, \"age_unit\": \"months\") and therefore cannot complete sel"
+      },
+      {
+        "case": "S008_NCT07652658",
+        "criterion_id": "I4",
+        "gold": "모름",
+        "agent": "등록 후 확인",
+        "evidence": "No spirometry/FVC value in the profile; FVC % predicted must be measured at screening/on-s"
+      },
+      {
+        "case": "S008_NCT07652658",
+        "criterion_id": "I5",
+        "gold": "모름",
+        "agent": "등록 후 확인",
+        "evidence": "No DLCO or hemoglobin values in the profile; hemoglobin-corrected DLCO must be measured at"
+      },
+      {
+        "case": "S008_NCT07299695",
+        "criterion_id": "I3",
+        "gold": "모름",
+        "agent": "탈락",
+        "evidence": "Findings are \"progressive dyspnea\", \"dry cough\", \"clubbing of the fingers\" and CT shows on"
+      },
+      {
+        "case": "S008_NCT07299695",
+        "criterion_id": "I4",
+        "gold": "등록 후 확인",
+        "agent": "모름",
+        "evidence": "No information in the profile about the patient's capacity to understand or willingness to"
+      },
+      {
+        "case": "S008_NCT07299695",
+        "criterion_id": "E11",
+        "gold": "등록 후 확인",
+        "agent": "모름",
+        "evidence": "The profile does not state whether the patient refuses participation or declines written i"
+      },
+      {
+        "case": "S010_NCT03714503",
+        "criterion_id": "I1",
+        "gold": "등록 후 확인",
+        "agent": "모름",
+        "evidence": "The profile contains no information about the patient's ability to understand or willingne"
+      },
+      {
+        "case": "S010_NCT03714503",
+        "criterion_id": "E6",
+        "gold": "모름",
+        "agent": "통과",
+        "evidence": "'sudden onset of a painless, curtain-like loss of vision in the right eye', 'preceded by f"
+      },
+      {
+        "case": "S010_NCT03714503",
+        "criterion_id": "E9",
+        "gold": "모름",
+        "agent": "통과",
+        "evidence": "'suspected_diagnosis': 'Rhegmatogenous retinal detachment of the right eye' with 'flashes "
+      }
+    ]
+  },
+  "v2": {
+    "label": "v2 프롬프트 (회의 결정 반영)",
+    "criteria": "161/173",
+    "finals": "15/15",
+    "no_questions": "6/6",
+    "disagreements": [
+      {
+        "case": "S001_NCT07024199",
+        "criterion_id": "I3",
+        "gold": "모름",
+        "agent": "등록 후 확인",
+        "evidence": "Profile reports 'severe epigastric pain radiating to the back', but a formal NRS/FLACC sco"
+      },
+      {
+        "case": "S006_NCT07654647",
+        "criterion_id": "E1",
+        "gold": "모름",
+        "agent": "탈락",
+        "evidence": "Findings include \"black necrotic eschar on the nasal mucosa\", \"periorbital swelling\", \"fev"
+      },
+      {
+        "case": "S007_NCT05561907",
+        "criterion_id": "I1",
+        "gold": "모름",
+        "agent": "탈락",
+        "evidence": "Suspected diagnosis is 'Infantile hypertrophic pyloric stenosis'; no periampullary or gast"
+      },
+      {
+        "case": "S007_NCT05561907",
+        "criterion_id": "I5",
+        "gold": "모름",
+        "agent": "등록 후 확인",
+        "evidence": "Life expectancy estimation and duodenal stenting outcome require investigator assessment/c"
+      },
+      {
+        "case": "S007_NCT05561907",
+        "criterion_id": "I7",
+        "gold": "모름",
+        "agent": "탈락",
+        "evidence": "No malignancy is recorded; 'suspected_diagnosis': 'Infantile hypertrophic pyloric stenosis"
+      },
+      {
+        "case": "S007_NCT05561907",
+        "criterion_id": "E3",
+        "gold": "모름",
+        "agent": "통과",
+        "evidence": "'projectile non-bilious vomiting after feeding' with 'palpable olive-shaped mass in the ep"
+      },
+      {
+        "case": "S007_NCT05561907",
+        "criterion_id": "E4",
+        "gold": "모름",
+        "agent": "탈락",
+        "evidence": "'suspected_diagnosis': 'Infantile hypertrophic pyloric stenosis' — a luminal narrowing of "
+      },
+      {
+        "case": "S007_NCT05561907",
+        "criterion_id": "E6",
+        "gold": "모름",
+        "agent": "탈락",
+        "evidence": "Patient is a 3-month-old infant and therefore cannot complete quality of life surveys."
+      },
+      {
+        "case": "S008_NCT07652658",
+        "criterion_id": "I4",
+        "gold": "모름",
+        "agent": "등록 후 확인",
+        "evidence": "No pulmonary function values in profile; FVC % predicted requires on-site spirometry at sc"
+      },
+      {
+        "case": "S008_NCT07652658",
+        "criterion_id": "I5",
+        "gold": "모름",
+        "agent": "등록 후 확인",
+        "evidence": "No DLCO or hemoglobin data in profile; hemoglobin-corrected DLCO requires on-site screenin"
+      },
+      {
+        "case": "S010_NCT03714503",
+        "criterion_id": "E6",
+        "gold": "모름",
+        "agent": "통과",
+        "evidence": "Patient has symptoms of recent onset: \"sudden onset of a painless, curtain-like loss of vi"
+      },
+      {
+        "case": "S010_NCT03714503",
+        "criterion_id": "E9",
+        "gold": "모름",
+        "agent": "통과",
+        "evidence": "\"suspected_diagnosis\": \"Rhegmatogenous retinal detachment of the right eye\" — rhegmatogeno"
+      }
+    ]
+  }
+}
