@@ -1,0 +1,89 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "Ability and willingness to sign informed consent can only be determined after the patient applies.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "The description gives symptoms (curtain-like vision loss, flashes, floaters) but no formal diagnosis of retinal detachment and no information on break location (inferior breaks). The suspected diagnosis is an inference only.",
+    "sub_condition_notes": [
+      "Formal diagnosis of primary rhegmatogenous RD: not on record",
+      "Inferior breaks: not stated"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "73-year-old man; age 18 or older.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "pass",
+    "evidence": "Patient is male, so the pregnancy test requirement for women of child-bearing potential does not apply.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "Patient is 73 years old, not pediatric.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "Patient is male, so cannot be pregnant.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No history of prior retinal detachment repair is mentioned; history is empty.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No mention of prior scleral buckling in the right eye.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "Description states sudden onset with no mention of trauma, but absence of mention does not confirm no trauma.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Symptoms are described as sudden onset, but the duration of any detachment and whether it is longstanding is not established.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "post_enrollment",
+    "evidence": "Compliance with post-operative treatment can only be assessed after enrollment and surgery.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Lens status (phakic vs pseudophakic) of the right eye is not stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "Type of detachment (exudative vs rhegmatogenous) is not stated in the description; suspected diagnosis cannot be used.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "No information on retinoschisis in the description.",
+    "sub_condition_notes": []
+  }
+]
