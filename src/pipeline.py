@@ -1,6 +1,7 @@
-"""에이전트 1~4번 파이프라인 (담당: 해준).
+"""에이전트 파이프라인 (1~4번 담당: 해준, 질문 루프 5~6번 연결: 주희).
 
 [1] 환자 정보 이해 → [2] 후보 검색 + 하드 필터 → [3] 기준 파싱 → [4] 매칭·추론
+→ [5] 질문 (next_round) → 환자 답변 → [6] 관련 기준만 재판정 (reassess) → [5] ...
 
 단일 진입점 run_intake() 가 전 단계를 실행하고, 결과를 표준 전달 형식으로
 data/handoff/{patient_id}.json 에 저장한다. 이후 단계(질문 생성·추천) 담당
@@ -18,6 +19,7 @@ from pathlib import Path
 from src.agents.criteria_parser import parse_criteria
 from src.agents.matcher import final_judgment, match, match_with_rules
 from src.agents.patient_profiler import profile_patient
+from src.agents.question_generator import generate_questions
 from src.agents.trial_searcher import search_candidates
 from src.llm import MODEL
 
@@ -106,7 +108,140 @@ def run_intake(case_text: str, patient_id: str = "CUSTOM",
         },
     }
     if save:
-        out = ROOT / "data" / "handoff" / f"{patient_id}.json"
-        out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(json.dumps(bundle, ensure_ascii=False, indent=2), encoding="utf-8")
+        save_bundle(bundle)
     return bundle
+
+
+def save_bundle(bundle: dict) -> Path:
+    """bundle을 data/handoff/{patient_id}.json 에 저장한다."""
+    out = ROOT / "data" / "handoff" / f"{bundle['patient_id']}.json"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(bundle, ensure_ascii=False, indent=2), encoding="utf-8")
+    return out
+
+
+# ── 질문 루프: [5] 질문 → 환자 답변 → [6] 재평가 ───────────────────
+# 형식: docs/결정_HANDOFF_질문루프.md (bundle["rounds"]에 질문·답변·바뀐 판정을 라운드별로 쌓는다)
+
+def asked_criteria(bundle: dict) -> dict[str, set[str]]:
+    """이미 질문한 기준 {시험: {기준 ID}} — 같은 기준을 다시 묻지 않기 위해."""
+    asked: dict[str, set[str]] = {}
+    for r in bundle.get("rounds", []):
+        for q in r["questions"]:
+            for res in q.get("resolves", []):
+                asked.setdefault(res["trial"], set()).update(res["criteria"])
+    return asked
+
+
+def questions_per_trial(bundle: dict, max_questions: int = 5) -> list[dict]:
+    """임시 질문 생성: 해준의 build_questions()가 나오기 전까지 쓰는 대체 구현.
+
+    시험마다 기존 5번(generate_questions)을 불러 resolves 형식으로 바꾼다.
+    여러 시험에 걸친 질문 묶기는 하지 않는다. 부적격 시험과 이미 물어본 기준은 뺀다.
+    """
+    asked = asked_criteria(bundle)
+    questions = []
+    for t in bundle["trials"]:
+        if t.get("final_judgment") == "ineligible" or len(questions) >= max_questions:
+            continue
+        open_j = [j for j in t["judgments"]
+                  if j["verdict"] == "unknown" and j["criterion_id"] not in asked.get(t["nct_id"], set())]
+        open_ids = {j["criterion_id"] for j in open_j}
+        if not open_j:
+            continue
+        for q in generate_questions(t["criteria"], open_j):
+            ids = [cid for cid in q.get("criterion_ids", []) if cid in open_ids]
+            if ids:
+                questions.append({"text": q["question"], "needed_info": "",
+                                  "resolves": [{"trial": t["nct_id"], "criteria": ids}],
+                                  "priority": len(questions) + 1})
+    return questions[:max_questions]
+
+
+def next_round(bundle: dict, build_questions=None, max_questions: int = 5, save: bool = False) -> list[dict]:
+    """[5] 이번 라운드 질문을 만들어 bundle["rounds"]에 추가하고, 추가한 질문을 반환한다.
+
+    build_questions: bundle → [{"text", "needed_info", "resolves", "priority"}] 함수 (5번, 해준).
+                     없으면 questions_per_trial (임시). ID는 여기서 Q1, Q2, ... 통번호로 붙인다.
+    질문이 없으면 라운드를 만들지 않고 [] 반환.
+    """
+    rounds = bundle.setdefault("rounds", [])
+    questions = (build_questions or questions_per_trial)(bundle, max_questions=max_questions)
+    n_before = sum(len(r["questions"]) for r in rounds)
+    questions = [dict(q, id=f"Q{n_before + i}") for i, q in enumerate(questions, 1)]
+    if questions:
+        rounds.append({"round": len(rounds) + 1, "questions": questions, "answers": [], "changed": []})
+    if save:
+        save_bundle(bundle)
+    return questions
+
+
+def all_answers(bundle: dict) -> list[dict]:
+    """지금까지 받은 모든 답변 [{"id", "question", "answer"}] — 판정에 그대로 넘긴다."""
+    out = []
+    for r in bundle.get("rounds", []):
+        by_q = {a["question_id"]: a["answer"] for a in r["answers"]}
+        out += [{"id": q["id"], "question": q["text"], "answer": by_q[q["id"]]}
+                for q in r["questions"] if q["id"] in by_q]
+    return out
+
+
+def reassess(bundle: dict, answers: list[dict], full: bool = False, save: bool = False) -> list[dict]:
+    """[6] 환자 답변을 기록하고, 답과 관련된 기준만 다시 판정한다. 이번에 바뀐 판정 목록을 반환.
+
+    answers: [{"question_id": "Q1", "answer": "..."}] — 빈 답은 기록하지 않음 (답 없는 질문으로 남고, 다음 라운드에 다시 묻지 않음)
+    full=True: 모든 시험의 모든 기준을 다시 판정 (마지막 확인용 — 환자가 묻지 않은 정보를
+               덧붙였을 때 대비). answers=[] 와 같이 쓰면 답변 기록 없이 전체 재판정만 한다.
+    판정에는 원문 + 지금까지의 모든 답변이 들어가고, 프로필은 다시 쓰지 않는다.
+    """
+    rounds = bundle.get("rounds", [])
+    q_index = {q["id"]: (r, q) for r in rounds for q in r["questions"]}
+    new = [a for a in answers if str(a.get("answer", "")).strip()]
+    missing = [a["question_id"] for a in new if a["question_id"] not in q_index]
+    if missing:
+        raise ValueError(f"bundle에 없는 질문 ID: {missing}")
+
+    # 1. 답변 기록 (같은 질문에 다시 답하면 새 답으로 바꿈)
+    for a in new:
+        r, _ = q_index[a["question_id"]]
+        r["answers"] = [x for x in r["answers"] if x["question_id"] != a["question_id"]]
+        r["answers"].append({"question_id": a["question_id"], "answer": str(a["answer"]).strip()})
+
+    # 2. 다시 판정할 기준 {시험: {기준: [근거 질문 ID]}}
+    targets: dict[str, dict[str, list[str]]] = {}
+    if full:
+        for t in bundle["trials"]:
+            targets[t["nct_id"]] = {c["id"]: ["full"] for c in t["criteria"]}
+    else:
+        for a in new:
+            for res in q_index[a["question_id"]][1].get("resolves", []):
+                for cid in res["criteria"]:
+                    targets.setdefault(res["trial"], {}).setdefault(cid, []).append(a["question_id"])
+
+    # 3~4. 시험별로 그 기준만 다시 판정 (코드 판정·출력 검사 포함) → 합치고 최종 판단 다시 계산
+    answered = all_answers(bundle)
+    trials = {t["nct_id"]: t for t in bundle["trials"]}
+    changed = []
+    for nct, sources in targets.items():
+        t = trials.get(nct)
+        subset = [c for c in t["criteria"] if c["id"] in sources] if t else []
+        if not subset:
+            continue
+        new_j, _ = match_with_rules(bundle["profile"], subset, case_text=bundle.get("case_text"),
+                                    answers=answered)
+        by_id = {j["criterion_id"]: j for j in t["judgments"]}
+        for j in new_j:
+            before = by_id.get(j["criterion_id"], {}).get("verdict")
+            if before != j["verdict"]:
+                changed.append({"trial": nct, "criterion_id": j["criterion_id"], "from": before,
+                                "to": j["verdict"], "source": sources[j["criterion_id"]]})
+            by_id[j["criterion_id"]] = j
+        t["judgments"] = [by_id[c["id"]] for c in t["criteria"] if c["id"] in by_id]
+        t["final_judgment"] = final_judgment(t["judgments"])
+
+    # 5. 바뀐 판정 기록
+    if rounds:
+        rounds[-1]["changed"].extend(changed)
+    if save:
+        save_bundle(bundle)
+    return changed

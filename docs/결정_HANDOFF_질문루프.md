@@ -3,6 +3,11 @@
 > 작성: 주희 · 2026-10-15 · 상태: **확정 (코드 반영 예정)**
 > 대상: `docs/HANDOFF.md`, `src/pipeline.py`, `src/agents/matcher.py`, `app.py`
 > 코드에 반영되면 `docs/HANDOFF.md`에 합치고 이 문서는 지웁니다.
+>
+> **구현 현황 (10/15)**: `src/pipeline.py`에 `next_round()`, `reassess()`, `all_answers()`, `save_bundle()` 완성.
+> `match()`·`match_with_rules()`에 `answers` 인자 추가. 판정 출력 검사 완료.
+> 해준의 `build_questions()`가 나오기 전까지 `next_round()`는 임시 질문 생성(`questions_per_trial`: 시험별 기존 5번, 묶기 없음)을 씀.
+> 점검: `python scripts/check_reassess.py` (무료) · 실제 실행: `python scripts/run_reassess_demo.py` (비용 발생)
 
 ## 왜 바꾸나
 
@@ -46,7 +51,7 @@
         {"question_id": "Q1", "answer": "아니요, 그런 적 없어요"}   // 환자 말 그대로 (요약·번역 안 함)
       ],
       "changed": [                             // 6번이 채움: 이 라운드에서 바뀐 판정
-        {"trial": "NCT05646485", "criterion_id": "E2", "from": "unknown", "to": "pass", "source": "Q1"}
+        {"trial": "NCT05646485", "criterion_id": "E2", "from": "unknown", "to": "pass", "source": ["Q1"]}   // 이 기준을 다시 판정하게 한 질문들 (전체 재판정이면 ["full"])
       ]
     }
   ]

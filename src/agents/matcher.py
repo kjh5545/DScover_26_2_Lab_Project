@@ -144,21 +144,34 @@ Respond with ONLY a JSON array, one entry per criterion, no other text:
 
 
 def match(profile: dict, criteria: list[dict], case_text: str | None = None,
-          system_prompt: str | None = None) -> list[dict]:
+          system_prompt: str | None = None, answers: list[dict] | None = None) -> list[dict]:
     """기준별 판정 리스트를 반환한다.
 
     case_text: 환자 원문. 넣으면 판정 근거를 원문에서 인용하고, 프로필의 추정 진단을
                사실처럼 쓰는 실수를 줄인다 (v3). 넣지 않아도 동작한다 (이전 호출 호환).
     system_prompt: 비교 실험용. 기본은 v3 (SYSTEM_PROMPT).
+    answers: 질문 루프의 환자 답변 [{"id": "Q1", "question": ..., "answer": ...}].
+             넣으면 판정 근거에 'Q1 answer: "..."'처럼 답변을 인용한다 (6번 재평가, 2026-10-15).
     """
-    return ask_json(system_prompt or SYSTEM_PROMPT, build_user_message(profile, criteria, case_text))
+    return ask_json(system_prompt or SYSTEM_PROMPT, build_user_message(profile, criteria, case_text, answers))
 
 
-def build_user_message(profile: dict, criteria: list[dict], case_text: str | None = None) -> str:
+# 답변 안내는 시스템 프롬프트가 아니라 사용자 메시지에 넣는다
+# → 답변이 없을 때는 v3 평가(172/173)와 똑같은 요청이 나간다
+ANSWERS_HEADER = """PATIENT ANSWERS TO SCREENING QUESTIONS (authoritative; newer than the description):
+- Treat each answer as a fact stated by the patient. Quote it as evidence, e.g. 'Q1 answer: "..."'.
+- If the patient says they are unsure or have not checked, keep that criterion "unknown".
+- Judge only from what the answer states; do not infer beyond it."""
+
+
+def build_user_message(profile: dict, criteria: list[dict], case_text: str | None = None,
+                       answers: list[dict] | None = None) -> str:
     """판정 요청의 사용자 메시지 (match()와 배치 평가가 같이 쓴다)."""
     parts = []
     if case_text:
         parts.append("ORIGINAL PATIENT DESCRIPTION (authoritative):\n" + case_text)
+    if answers:
+        parts.append(ANSWERS_HEADER + "\n" + json.dumps(answers, ensure_ascii=False, indent=2))
     parts.append("PATIENT PROFILE (derived; may include facts from the patient's answers):\n"
                  + json.dumps(profile, ensure_ascii=False, indent=2))
     parts.append("ELIGIBILITY CRITERIA:\n" + json.dumps(criteria, ensure_ascii=False, indent=2))
@@ -183,7 +196,8 @@ def final_judgment(judgments: list[dict]) -> str:
     return "eligible"
 
 
-def match_with_rules(profile: dict, criteria: list[dict], case_text: str | None = None) -> tuple[list[dict], list[dict]]:
+def match_with_rules(profile: dict, criteria: list[dict], case_text: str | None = None,
+                     answers: list[dict] | None = None) -> tuple[list[dict], list[dict]]:
     """LLM 판정 후, 코드로 확실히 판정되는 기준(나이, 임신·수유)을 코드 결과로 덮어쓰고,
     출력 검사(validate_judgments)로 빠진 기준·이상한 값을 모름으로 채운다.
 
@@ -192,7 +206,7 @@ def match_with_rules(profile: dict, criteria: list[dict], case_text: str | None 
     """
     from src.tools.rule_checks import apply_code_checks, code_judgments
 
-    llm = match(profile, criteria, case_text=case_text)
+    llm = match(profile, criteria, case_text=case_text, answers=answers)
     judgments, changed = apply_code_checks(validate_shape(llm), code_judgments(profile, criteria))
     judgments, fixes = validate_judgments(criteria, judgments)
     return judgments, changed + fixes
