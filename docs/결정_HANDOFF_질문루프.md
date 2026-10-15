@@ -4,10 +4,11 @@
 > 대상: `docs/HANDOFF.md`, `src/pipeline.py`, `src/agents/matcher.py`, `app.py`
 > 코드에 반영되면 `docs/HANDOFF.md`에 합치고 이 문서는 지웁니다.
 >
-> **구현 현황 (10/15)**: `src/pipeline.py`에 `next_round()`, `reassess()`, `all_answers()`, `save_bundle()` 완성.
+> **구현 현황 (10/16)**: `src/pipeline.py`에 `next_round()`, `reassess()`, `final_check()`, `all_answers()`, `save_bundle()` 완성.
 > `match()`·`match_with_rules()`에 `answers` 인자 추가. 판정 출력 검사 완료.
-> 해준의 `build_questions()`가 나오기 전까지 `next_round()`는 임시 질문 생성(`questions_per_trial`: 시험별 기존 5번, 묶기 없음)을 씀.
-> 점검: `python scripts/check_reassess.py` (무료) · 실제 실행: `python scripts/run_reassess_demo.py` (비용 발생)
+> 해준의 `build_questions()`가 나오기 전까지 `next_round()`는 임시 질문 생성(`questions_per_trial`: 시험별 기존 5번을 **번갈아** 고름, 묶기 없음)을 씀.
+> 점검: `python scripts/check_reassess.py` (무료) · 실제 실행: `python scripts/run_reassess_demo.py` (비용 발생, 끝에 실제 비용 출력)
+> **10/16 첫 실제 실행 결과와 발견한 문제는 맨 아래 "실제 실행 결과" 절 참고**
 
 ## 왜 바꾸나
 
@@ -86,6 +87,9 @@ bundle = reassess(bundle, answers)   # answers: [{"question_id": "Q1", "answer":
 4. 기존 판정에 합치고 최종 판단 다시 계산
 5. `changed` 기록 후 bundle 반환 (저장은 `save=True`일 때)
 
+**질문 루프를 마치면 `final_check(bundle)`을 반드시 한 번 불러요** (모든 기준을 원문 + 모든 답변으로 다시 판정).
+부분 재판정이 놓친 것(묻지 않은 정보, 맥락에 따라 흔들린 판정)을 바로잡아요. 이유는 맨 아래 "실제 실행 결과" 문제 1.
+
 `app.py`, `run_interactive_demo.py`, 평가 스크립트가 모두 이 함수를 부르면, **평가한 코드 = 시연하는 코드**가 돼요.
 1~4번도 `app.py`가 `src/pipeline.py`의 함수(`understand_patient`, `find_candidates`, `parse_trial`, `screen`)를 부르게 맞추면 좋아요.
 
@@ -115,6 +119,7 @@ def build_questions(bundle: dict, max_questions: int = 5) -> list[dict]:
 ```
 - `id`는 안 붙여도 돼요. 파이프라인이 `Q1, Q2, ...` 통번호로 붙여요
 - 질문 재료에서 빼는 것: 부적격 시험, `post_enrollment` 기준, **이미 물어본 기준** (`bundle["rounds"]`의 `resolves`에 있는 것)
+- **여러 시험에 고루 나눠 묻기**: 한 시험의 질문만 앞에 몰리면 다른 시험은 그 라운드에 진전이 없어요 (10/16 실행에서 1라운드 5개가 전부 한 시험). 묶을 수 있는 건 묶고, 남는 자리는 시험별로 번갈아 채워 주세요
 - 개발·실험 중에는 반환값을 아무 파일에나 저장해서 봐도 괜찮아요. 최종 저장 위치만 handoff 파일의 `rounds`예요
 
 ## 누가 무엇을
@@ -125,6 +130,7 @@ def build_questions(bundle: dict, max_questions: int = 5) -> list[dict]:
 | `match()`에 `answers` 인자 (2) | 주희 | 안 넣으면 지금처럼 동작 |
 | `next_round(bundle)`: `build_questions()` 호출 → ID 붙여 `rounds`에 추가 | 주희 | |
 | `reassess(bundle, answers)`: 관련 기준만 재판정 → `changed` 기록 (3) | 주희 | 6번 |
+| `final_check(bundle)`: 루프를 마친 뒤 전체 재판정 한 번 | 주희 | `app.py`는 "질문 끝내기" 때 부르기 |
 | `build_questions(bundle)`: 질문 재료 모으기·묶기·문장 만들기 | 해준 | 지금 하는 "여러 시험에 걸친 질문 묶기"를 이 모양으로 |
 | `app.py`가 파이프라인 함수(`run_intake`, `next_round`, `reassess`)를 쓰게 | 해준 | `reassess()`가 나온 뒤. 주희가 도와도 됨 |
 | 질문 문장 프롬프트 | 서현 | 변화 없음. ID는 신경 안 써도 됨 |
@@ -137,3 +143,28 @@ def build_questions(bundle: dict, max_questions: int = 5) -> list[dict]:
 | 5번 코드 형태 | **파일을 안 건드리는 함수 (`build_questions`)** | 5번은 판정 파일을 신경 쓰지 않고 개발·실험 가능 (따로 두기의 장점) |
 | `profile_updater` | **판정에는 안 씀.** 화면에 "갱신된 프로필"을 보여 줄 때만 사용 (필요 없으면 해준이 빼도 됨) | 판정은 원문 + 답변을 직접 봄 |
 | 질문 ID | **`Q1, Q2, ...` 라운드를 넘어 통번호** | 라운드가 바뀌어도 "Q3 답변"처럼 근거를 하나로 가리킬 수 있음 |
+
+## 실제 실행 결과 (10/16, 주희)
+
+`python scripts/run_reassess_demo.py --full-check` (S004, 시뮬레이터 답변, 2라운드 + 전체 재판정). 결과 파일: `data/processed/reassess_demo_S004.json`
+※ 이 실행은 아래 고치기 **전** 코드라, 1라운드 질문이 한 시험에 몰려 있어요.
+
+| | 시작 | 1라운드 후 | 2라운드 후 | 전체 재판정 후 |
+|---|---|---|---|---|
+| NCT04369560 (MRI 연구) | 정보 부족, 모름 9 | **부적격**, 모름 8 | 부적격 (질문 안 함) | 정보 부족, 모름 9 |
+| NCT05646485 (혈뇨 검진) | 정보 부족, 모름 4 | 그대로 | 정보 부족, **모름 1** | 그대로 |
+
+잘 된 점
+- 질문이 자연스러움 (예: 페루목시톨 → "철분 주사"로 풀어서 물음)
+- 답 하나에 관련 기준만 바뀌고, 근거에 답변을 그대로 인용 (예: Q8 "하루 한 갑, 45년" → 45갑년이라 I2 통과)
+- "잘 모르겠어요" 답은 억지로 통과시키지 않고 모름 유지 (안전한 쪽)
+
+발견한 문제와 처리
+
+| # | 문제 | 처리 |
+|---|---|---|
+| 1 | **같은 답에 판정이 흔들림.** NCT04369560 I3("방광경으로 종양 확인 + 수술 예정")에 Q5 "조직검사 아직, 수술 일정 없음" → 부분 재판정은 **탈락**, 전체 재판정은 **모름** (정답: 모름, 아직 검사 진행 중). 잘못된 탈락 하나로 시험이 부적격이 돼서 2라운드에 그 시험엔 질문을 안 함 | 루프 끝 `final_check()`를 기본으로 (데모 스크립트도 기본 실행, 생략은 `--no-full-check`). 같은 문제가 계속 나오면 "검사·수술이 아직 안 됐지만 진행 중이면 모름" 규칙을 답변용 안내(`ANSWERS_HEADER`)에 넣는 걸 검토 (답변 없는 v3 요청은 그대로라 172/173 결과에 영향 없음) |
+| 2 | **질문이 한 시험에 몰림.** 임시 구현이 시험별 질문을 순서대로 이어 붙여서 1라운드 5개가 모두 NCT04369560 | 임시 구현을 시험별로 번갈아 고르게 고침. 해준 `build_questions()`에도 같은 요구 (위 "5번 코드가 지켜 줄 것") |
+| 3 | **"또는" 기준.** NCT05646485 I2(흡연 15갑년 이상)와 I3(직업 노출 15년 이상)는 둘 중 하나면 되는 위험 요인으로 보이는데, 지금 최종 판단은 포함 기준을 모두 만족해야 함 → 흡연으로 충족해도 I3가 모름이라 계속 "정보 부족" | 미해결. 3번 기준 파싱에서 "또는" 묶음을 표시하고 최종 판단이 반영하는 방식 검토 필요 (7번 추천 다듬을 때 같이) |
+
+비용: 이 실행은 비용 기록 전이라 정확한 값 없음 (AI 호출 약 9번, $0.1~0.2 추정). 이제 `src/llm.py`가 일반 호출 비용도 누계(`spent`)해서 데모 끝에 출력해요.

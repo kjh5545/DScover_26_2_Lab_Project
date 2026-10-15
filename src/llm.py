@@ -55,9 +55,19 @@ def _params(system: str, user: str, max_tokens: int) -> dict:
     }
 
 
+# 일반 호출 단가 (100만 토큰당). 모델을 바꾸면 같이 고칠 것. 배치는 이 값의 50% (BATCH_PRICE).
+PRICE = {"claude-sonnet-5-5": (2.0, 10.0), "claude-opus-5": (5.0, 25.0)}
+
+# 이 프로세스에서 ask()로 쓴 비용 누계 (달러). 스크립트 끝에 출력해 실제 비용을 확인한다.
+spent = {"calls": 0, "usd": 0.0}
+
+
 def ask(system: str, user: str, max_tokens: int = 16000) -> str:
     """시스템 프롬프트 + 사용자 메시지로 Claude를 호출해 텍스트 응답을 반환한다."""
     response = get_client().messages.create(**_params(system, user, max_tokens))
+    in_price, out_price = PRICE.get(MODEL, (0.0, 0.0))
+    spent["calls"] += 1
+    spent["usd"] += (response.usage.input_tokens * in_price + response.usage.output_tokens * out_price) / 1e6
     return next((b.text for b in response.content if b.type == "text"), "")
 
 

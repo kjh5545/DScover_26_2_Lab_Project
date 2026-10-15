@@ -63,6 +63,9 @@ def main() -> int:
     print("  " + "; ".join(f"{q['id']} → {q['resolves']}" for q in qs))
     check("ID가 Q1부터 통번호", [q["id"] for q in qs] == [f"Q{i}" for i in range(1, len(qs) + 1)])
     check("최대 3개", 0 < len(qs) <= 3)
+    check("시험별로 번갈아 고름 (앞의 두 질문이 서로 다른 시험)",
+          len(qs) >= 2 and qs[0]["resolves"][0]["trial"] != qs[1]["resolves"][0]["trial"])
+    check("priority가 1부터 순서대로", [q["priority"] for q in qs] == list(range(1, len(qs) + 1)))
     check("부적격 시험은 질문 안 함", all(r["trial"] not in ineligible for q in qs for r in q["resolves"]))
     check("rounds에 1라운드 기록", len(bundle["rounds"]) == 1 and bundle["rounds"][0]["round"] == 1)
 
@@ -114,8 +117,8 @@ def main() -> int:
     except ValueError:
         check("없는 질문 ID → 오류", True)
     match_calls.clear()
-    pipeline.reassess(bundle, [], full=True)
-    check("full=True면 모든 시험의 모든 기준 재판정",
+    pipeline.final_check(bundle)
+    check("final_check(전체 재판정)면 모든 시험의 모든 기준 재판정",
           sorted(sum((c["ids"] for c in match_calls), [])) == sorted(c["id"] for x in bundle["trials"] for c in x["criteria"]))
 
     print(f"\n{'모두 통과' if failures == 0 else f'실패 {failures}개'}")

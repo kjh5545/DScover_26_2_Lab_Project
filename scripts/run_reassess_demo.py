@@ -1,14 +1,15 @@
 """질문 루프 실제 실행: 질문 → 환자 시뮬레이터 답변 → 관련 기준만 재판정 (비용 발생).
 
-실행: python scripts/run_reassess_demo.py               # S004, 최대 2라운드
-      python scripts/run_reassess_demo.py --full-check  # 마지막에 전체 재판정 한 번 더 (묻지 않은 정보 대비)
+실행: python scripts/run_reassess_demo.py                  # S004, 최대 2라운드 + 마지막 전체 재판정
+      python scripts/run_reassess_demo.py --no-full-check  # 전체 재판정 생략 (부분 재판정만 보고 싶을 때)
 
 - 시작 판정은 평가 세트의 저장된 v3 판정(S004 × 시험 2개)을 써서 1~4번 비용이 들지 않는다
 - 답변은 src/testing/patient_simulator.py의 S004_FACT_SHEET로 시뮬레이터가 만든다
-- 질문은 해준의 build_questions()가 나오기 전까지 임시 구현(questions_per_trial)
-- AI 호출: 라운드마다 질문 생성(시험 수만큼) + 시뮬레이터 1 + 재판정(답이 걸린 시험 수만큼).
-  Sonnet 5.5 기준 2라운드 전체 약 $0.1~0.3
+- 질문은 해준의 build_questions()가 나오기 전까지 임시 구현(questions_per_trial, 시험별로 번갈아 고름)
+- AI 호출: 라운드마다 질문 생성(시험 수만큼) + 시뮬레이터 1 + 재판정(답이 걸린 시험 수만큼)
+  + 마지막 전체 재판정(시험 수만큼). Sonnet 5.5 기준 약 $0.1~0.3. 실제 비용은 끝에 출력
 결과: data/processed/reassess_demo_S004.json (handoff 형식 + rounds)
+10/16 첫 실행 기록: docs/결정_HANDOFF_질문루프.md "실제 실행 결과" 절
 """
 
 import json
@@ -18,7 +19,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from src.pipeline import next_round, reassess  # noqa: E402
+from src.llm import spent  # noqa: E402
+from src.pipeline import final_check, next_round, reassess  # noqa: E402
 from src.testing.goldset_bundle import make_bundle  # noqa: E402
 from src.testing.patient_simulator import S004_FACT_SHEET, answer_questions  # noqa: E402
 
@@ -55,15 +57,17 @@ def main() -> None:
             print(f"  {c['trial']} {c['criterion_id']}: {KO[c['from']]} → {KO[c['to']]} (근거 {', '.join(c['source'])})")
         print(f"지금: {counts(bundle)}")
 
-    if "--full-check" in sys.argv:
-        changed = reassess(bundle, [], full=True)
+    if "--no-full-check" not in sys.argv:
+        changed = final_check(bundle)
         print(f"\n── 마지막 전체 재판정 ── 바뀐 판정 {len(changed)}개")
         for c in changed:
             print(f"  {c['trial']} {c['criterion_id']}: {KO[c['from']]} → {KO[c['to']]}")
+        print(f"최종: {counts(bundle)}")
 
     out = ROOT / "data" / "processed" / "reassess_demo_S004.json"
     out.write_text(json.dumps(bundle, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"\n저장: {out.relative_to(ROOT)}")
+    print(f"AI 호출 {spent['calls']}번, 비용 약 ${spent['usd']:.3f}")
 
 
 if __name__ == "__main__":

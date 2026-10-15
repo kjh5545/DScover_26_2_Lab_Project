@@ -2,6 +2,7 @@
 
 [1] 환자 정보 이해 → [2] 후보 검색 + 하드 필터 → [3] 기준 파싱 → [4] 매칭·추론
 → [5] 질문 (next_round) → 환자 답변 → [6] 관련 기준만 재판정 (reassess) → [5] ...
+→ 루프를 마치면 전체 재판정 한 번 (final_check)
 
 단일 진입점 run_intake() 가 전 단계를 실행하고, 결과를 표준 전달 형식으로
 data/handoff/{patient_id}.json 에 저장한다. 이후 단계(질문 생성·추천) 담당
@@ -136,26 +137,32 @@ def asked_criteria(bundle: dict) -> dict[str, set[str]]:
 def questions_per_trial(bundle: dict, max_questions: int = 5) -> list[dict]:
     """임시 질문 생성: 해준의 build_questions()가 나오기 전까지 쓰는 대체 구현.
 
-    시험마다 기존 5번(generate_questions)을 불러 resolves 형식으로 바꾼다.
+    시험마다 기존 5번(generate_questions)을 불러 resolves 형식으로 바꾼 뒤,
+    시험별로 번갈아 하나씩 골라 max_questions개를 채운다 (한 시험에 질문이 몰리지 않게).
     여러 시험에 걸친 질문 묶기는 하지 않는다. 부적격 시험과 이미 물어본 기준은 뺀다.
     """
     asked = asked_criteria(bundle)
-    questions = []
+    per_trial = []
     for t in bundle["trials"]:
-        if t.get("final_judgment") == "ineligible" or len(questions) >= max_questions:
+        if t.get("final_judgment") == "ineligible":
             continue
         open_j = [j for j in t["judgments"]
                   if j["verdict"] == "unknown" and j["criterion_id"] not in asked.get(t["nct_id"], set())]
         open_ids = {j["criterion_id"] for j in open_j}
         if not open_j:
             continue
+        qs = []
         for q in generate_questions(t["criteria"], open_j):
             ids = [cid for cid in q.get("criterion_ids", []) if cid in open_ids]
             if ids:
-                questions.append({"text": q["question"], "needed_info": "",
-                                  "resolves": [{"trial": t["nct_id"], "criteria": ids}],
-                                  "priority": len(questions) + 1})
-    return questions[:max_questions]
+                qs.append({"text": q["question"], "needed_info": "",
+                           "resolves": [{"trial": t["nct_id"], "criteria": ids}]})
+        per_trial.append(qs)
+
+    questions = []
+    for i in range(max((len(qs) for qs in per_trial), default=0)):   # 시험 A 1번, 시험 B 1번, A 2번, ...
+        questions += [qs[i] for qs in per_trial if i < len(qs)]
+    return [dict(q, priority=n) for n, q in enumerate(questions[:max_questions], 1)]
 
 
 def next_round(bundle: dict, build_questions=None, max_questions: int = 5, save: bool = False) -> list[dict]:
@@ -245,3 +252,13 @@ def reassess(bundle: dict, answers: list[dict], full: bool = False, save: bool =
     if save:
         save_bundle(bundle)
     return changed
+
+
+def final_check(bundle: dict, save: bool = False) -> list[dict]:
+    """질문 루프를 마친 뒤 반드시 한 번 부른다: 모든 기준을 원문 + 모든 답변으로 다시 판정.
+
+    부분 재판정은 답과 관련된 기준만 보기 때문에 (1) 환자가 묻지 않은 정보를 덧붙인 경우를 놓치고
+    (2) 같은 답을 다른 맥락에서 다르게 판정할 수 있다. 10/16 실제 실행(S004)에서 "수술 일정 아직 없음"을
+    부분 재판정은 탈락, 전체 재판정은 모름으로 판정했고 정답은 모름이었다. 바뀐 판정은 source ["full"]로 기록.
+    """
+    return reassess(bundle, [], full=True, save=save)
