@@ -1,0 +1,105 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "A 60-year-old woman; age 60 years is ≥ 18.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "The description gives progressive dyspnea, dry cough, clubbing and CT with bilateral basal reticular opacities with honeycombing, which is suggestive of IPF. No formal IPF diagnosis fulfilling ATS/ERS criteria is on record (exclusion of other causes, multidisciplinary discussion not stated).",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "Presentation is 'progressive dyspnea' with no stated duration (<1 month not stated), no hospitalisation mentioned, no new ground-glass opacity or consolidation on CT, and no information on cardiac failure or fluid overload. The CT shows UIP-like changes only. The criterion also depends on the investigator's ascertainment.",
+    "sub_condition_notes": [
+      "Previous or concurrent IPF diagnosis: not formally documented; CT honeycombing is consistent with UIP pattern (could satisfy if diagnosis not previously established).",
+      "Acute worsening of dyspnoea <1 month: unknown, only 'progressive dyspnea' is stated.",
+      "CT with new bilateral ground-glass opacity/consolidation: not described (only reticular opacities with honeycombing).",
+      "Deterioration not explained by cardiac failure/fluid overload: unknown.",
+      "Hospitalisation: not stated."
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "Ability to understand and sign informed consent (or via a legal representative) is determined at enrollment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No mention of heart failure or pulmonary embolism in the description.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No information on allergies or hypersensitivity to corticosteroids, IVIG or their components.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No information on IgA levels or IgA deficiency.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Findings are suggestive of IPF, but no definite diagnosis based on clinical, radiological, laboratory evaluation and multidisciplinary discussion is documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No mention of malignancy or cancer treatment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No medications listed in the profile (medications: []); absence of a list does not confirm no recent corticosteroid or immunosuppressant use.",
+    "sub_condition_notes": [
+      "Prednisone >20 mg/day for >14 days in the last month: unknown.",
+      "Any immunosuppressant in the last month: unknown.",
+      ">1 mg/kg/day for >7 days in the last 15 days: unknown."
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No information on participation in another interventional trial.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Patient is a 60-year-old woman; pregnancy or lactation is not mentioned. Age makes pregnancy unlikely, but this is not stated as excluded.",
+    "sub_condition_notes": [
+      "Documented pregnancy: not mentioned.",
+      "Lactation: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "No information on tutorship or curatorship.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "No information on deprivation of liberty or court protection.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Refusal to participate or to provide consent is determined at enrollment.",
+    "sub_condition_notes": []
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is given only after the patient applies and is approached by the study team.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "The patient is 73 years old, which is outside the 18-70 year range.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "The description gives sudden painless curtain-like vision loss with flashes and floaters, but no formal RRD diagnosis is documented. Break location (inferior 4-8 o'clock) and any need for inferior retinotomy are not stated.",
+    "sub_condition_notes": [
+      "Formal RRD diagnosis: not on record, symptoms only.",
+      "Inferior retinal breaks between 4 and 8 o'clock within the detached area: not stated.",
+      "Requiring inferior retinotomy: not stated, and can only be determined at surgery."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information on the location of retinal breaks or on the indication for scleral buckling.",
+    "sub_condition_notes": [
+      "Only anterior breaks or dialysis: not stated.",
+      "Meets indications for scleral buckling: not stated."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No information on the location of retinal breaks relative to the detached area.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No pre-existing eye diseases are mentioned; the history is empty, but absence of mention does not rule them out.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No history of epilepsy or psychiatric disease is mentioned; the history is empty.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "post_enrollment",
+    "evidence": "This depends on the researcher's judgment of suitability.",
+    "sub_condition_notes": []
+  }
+]

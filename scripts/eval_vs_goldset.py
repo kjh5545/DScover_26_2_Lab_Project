@@ -9,6 +9,7 @@
 실행: python scripts/eval_vs_goldset.py            # v1·v2(캐시) + v3(없으면 새로 생성)
       python scripts/eval_vs_goldset.py --skip-v3  # 캐시만 채점 (무료)
       python scripts/eval_vs_goldset.py --compare-v2  # v2 프롬프트도 현재 모델로 돌려 비교 (추가 약 $1)
+      python scripts/eval_vs_goldset.py --batch    # 새로 돌릴 판정을 배치 API로 한 번에 (비용 50% 할인, 몇 분~1시간 대기)
 결과마다 "+ 코드 판정" 줄은 나이·임신 기준을 코드가 덮어쓴 점수 (파이프라인과 같은 방식)
 비용: v3 첫 실행 시 매칭 15회 (Sonnet 5.5 기준 약 $1). 재실행은 캐시라 무료.
 """
@@ -21,8 +22,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from src.agents.matcher import SYSTEM_PROMPT_V2, final_judgment, match
-from src.llm import MODEL
+from src.agents.matcher import SYSTEM_PROMPT, SYSTEM_PROMPT_V2, build_user_message, final_judgment, match
+from src.llm import MODEL, batch_ask_json
 from src.tools.rule_checks import apply_code_checks, code_judgments
 
 _CANDIDATES = [ROOT / "goldset_v1.json", ROOT / "goldset" / "goldset_v1.json"]
@@ -134,7 +135,7 @@ def v3_judgments(case, profile, criteria):
     path = V3_CACHE / f"match_{case['id']}.json"
     if path.exists():
         return json.loads(path.read_text(encoding="utf-8"))
-    if SKIP_V3:
+    if SKIP_V3 or BATCH:   # 배치에서 실패한 건을 정가로 다시 돌리지 않음
         return None
     print(f"  매칭 중 (v3, {MODEL}): {case['id']}")
     judgments = match(profile, criteria, case_text=case["patient"])
@@ -143,6 +144,7 @@ def v3_judgments(case, profile, criteria):
 
 
 SKIP_V3 = "--skip-v3" in sys.argv
+BATCH = "--batch" in sys.argv             # 배치 API (50% 할인). 실패한 건은 다음 실행 때 다시 시도
 COMPARE_V2 = "--compare-v2" in sys.argv   # v2 프롬프트도 현재 모델로 돌려 모델 효과와 프롬프트 효과를 나눠 본다 (약 $1)
 V2_NOW_CACHE = ROOT / "data" / "processed" / f"goldset_cache_v2_{MODEL}"
 
@@ -153,7 +155,7 @@ def v2_now_judgments(case, profile, criteria):
     path = V2_NOW_CACHE / f"match_{case['id']}.json"
     if path.exists():
         return json.loads(path.read_text(encoding="utf-8"))
-    if SKIP_V3 or not COMPARE_V2:
+    if SKIP_V3 or BATCH or not COMPARE_V2:
         return None
     print(f"  매칭 중 (v2, {MODEL}): {case['id']}")
     judgments = match(profile, criteria, system_prompt=SYSTEM_PROMPT_V2)
@@ -161,7 +163,37 @@ def v2_now_judgments(case, profile, criteria):
     return judgments
 
 
+def run_batch() -> None:
+    """캐시에 없는 v3(와 --compare-v2면 v2) 판정을 배치 API로 한 번에 만들어 캐시에 저장한다."""
+    gold = json.loads(GOLD.read_text(encoding="utf-8"))
+    jobs = [("v3", V3_CACHE, SYSTEM_PROMPT, True)]
+    if COMPARE_V2:
+        jobs.append(("v2", V2_NOW_CACHE, SYSTEM_PROMPT_V2, False))
+    requests, paths = {}, {}
+    for tag, cache, system, with_text in jobs:
+        cache.mkdir(parents=True, exist_ok=True)
+        for case in gold["cases"]:
+            path = cache / f"match_{case['id']}.json"
+            if path.exists():
+                continue
+            criteria = [{"id": r["id"], "type": r["kind"], "text": r["original"]} for r in case["rows"]]
+            cid = f"{tag}-{re.sub(r'[^A-Za-z0-9_-]', '_', case['id'])}"
+            user = build_user_message(get_profile(case["patient_id"]), criteria,
+                                      case["patient"] if with_text else None)
+            requests[cid], paths[cid] = (system, user), path
+    if not requests:
+        print("배치: 새로 돌릴 판정 없음 (모두 캐시에 있음)")
+        return
+    results, cost = batch_ask_json(requests)
+    for cid, judgments in results.items():
+        if judgments is not None:
+            paths[cid].write_text(json.dumps(judgments, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"배치 완료: {sum(v is not None for v in results.values())}/{len(requests)}건 저장, 실제 비용 약 ${cost:.2f}")
+
+
 def main() -> None:
+    if BATCH and not SKIP_V3:
+        run_batch()
     r1 = evaluate("v1 프롬프트 (회의 전 규칙)", v1_judgments)
     r2 = evaluate("v2 프롬프트 (회의 결정 반영, claude-opus-5)", v2_judgments)
     r2c = evaluate("v2 + 코드 판정 (claude-opus-5)", v2_judgments, use_code=True)

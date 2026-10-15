@@ -1,0 +1,48 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"A 68-year-old man\" — age 68 is ≥ 50.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Only \"a long smoking history\" is stated; the pack-year quantity is not given, so ≥15 pack-years cannot be confirmed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No occupation or occupational exposure history is described.",
+    "sub_condition_notes": [
+      "Whether the patient works or worked as a textile worker, painter, or dry cleaner is not stated.",
+      "Duration of occupational exposure (≥15 years) is not stated."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No prior history of bladder, kidney, or prostate cancer is mentioned. The bladder mass is a current finding, and its pathology is not stated.",
+    "sub_condition_notes": [
+      "Prior bladder cancer: not stated.",
+      "Prior kidney cancer: not stated.",
+      "Prior prostate cancer: not stated."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "The patient \"presents with painless gross hematuria\" and had CT urography, but the description does not say whether hematuria was evaluated earlier in the last 2 years.",
+    "sub_condition_notes": [
+      "Prior evaluation of microscopic hematuria within 2 years: not stated.",
+      "Prior evaluation of gross hematuria within 2 years: not stated. The current presentation and CT urography may be the first evaluation, but this is not confirmed."
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "post_enrollment",
+    "evidence": "Providing informed consent is only determined after the patient applies and is approached for consent.",
+    "sub_condition_notes": []
+  }
+]

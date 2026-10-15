@@ -151,13 +151,18 @@ def match(profile: dict, criteria: list[dict], case_text: str | None = None,
                사실처럼 쓰는 실수를 줄인다 (v3). 넣지 않아도 동작한다 (이전 호출 호환).
     system_prompt: 비교 실험용. 기본은 v3 (SYSTEM_PROMPT).
     """
+    return ask_json(system_prompt or SYSTEM_PROMPT, build_user_message(profile, criteria, case_text))
+
+
+def build_user_message(profile: dict, criteria: list[dict], case_text: str | None = None) -> str:
+    """판정 요청의 사용자 메시지 (match()와 배치 평가가 같이 쓴다)."""
     parts = []
     if case_text:
         parts.append("ORIGINAL PATIENT DESCRIPTION (authoritative):\n" + case_text)
     parts.append("PATIENT PROFILE (derived; may include facts from the patient's answers):\n"
                  + json.dumps(profile, ensure_ascii=False, indent=2))
     parts.append("ELIGIBILITY CRITERIA:\n" + json.dumps(criteria, ensure_ascii=False, indent=2))
-    return ask_json(system_prompt or SYSTEM_PROMPT, "\n\n".join(parts))
+    return "\n\n".join(parts)
 
 
 def final_judgment(judgments: list[dict]) -> str:

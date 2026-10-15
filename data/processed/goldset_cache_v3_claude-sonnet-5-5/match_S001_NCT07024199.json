@@ -1,0 +1,117 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "The patient has severe epigastric pain radiating to the back and markedly elevated lipase and amylase, but no formal diagnosis of AP is on record. The INSPPIRE criteria are not stated in the description, and imaging is not mentioned.",
+    "sub_condition_notes": [
+      "Abdominal pain consistent with pancreatitis: described.",
+      "Lipase/amylase ≥3x ULN: 'markedly elevated', exact values not given.",
+      "Imaging findings: not given."
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "The patient is a 54-year-old man, outside the 3 to 18 year age range.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "'Severe epigastric pain' is described, but no NRS or FLACC score is given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "No information on analgesic use before presentation. The medication list is empty, but that does not confirm no analgesic was taken.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "post_enrollment",
+    "evidence": "Consent is given at enrollment, and the criterion concerns guardians and children, which does not apply to an adult patient.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "Timing of the last painkiller dose is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No allergy information is given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "Inflammatory bowel disease is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Bleeding is not mentioned.",
+    "sub_condition_notes": [
+      "GI bleeding: not mentioned.",
+      "Other active bleeding: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "Ulcer disease is not mentioned.",
+    "sub_condition_notes": [
+      "Gastric ulcer: not mentioned.",
+      "Duodenal ulcer: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "The medication list is empty, but chronic analgesic use is not explicitly addressed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Chronic alcohol use is noted, but no liver failure diagnosis or liver tests are given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Heart failure is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "Renal function and renal failure are not mentioned.",
+    "sub_condition_notes": [
+      "Acute renal failure: not mentioned.",
+      "Chronic renal failure: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "Cancer is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Guardian consent is determined at enrollment and does not apply to an adult patient.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E12",
+    "verdict": "post_enrollment",
+    "evidence": "The patient's consent to participate is obtained at enrollment.",
+    "sub_condition_notes": []
+  }
+]
