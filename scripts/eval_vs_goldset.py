@@ -22,7 +22,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from src.agents.matcher import SYSTEM_PROMPT, SYSTEM_PROMPT_V2, build_user_message, final_judgment, match
+from src.agents.matcher import (SYSTEM_PROMPT, SYSTEM_PROMPT_V2, build_user_message, final_judgment, match,
+                                validate_judgments, validate_shape)
 from src.llm import MODEL, batch_ask_json
 from src.tools.rule_checks import apply_code_checks, code_judgments
 
@@ -57,11 +58,12 @@ def get_profile(patient_id: str) -> dict:
 
 
 def evaluate(label: str, get_judgments, use_code: bool = False) -> dict:
-    """use_code=True면 LLM 판정 위에 코드 판정(나이·임신)을 덮어써서 채점한다 (파이프라인과 같은 방식)."""
+    """use_code=True면 LLM 판정 위에 코드 판정(나이·임신)과 출력 검사를 더해 채점한다 (파이프라인과 같은 방식)."""
     gold = json.loads(GOLD.read_text(encoding="utf-8"))
     agree = total = finals_agree = 0
     noq_ok = noq_total = 0
     n_evaluated = 0
+    n_fixed = 0   # 출력 검사(validate_judgments)가 고친 기준 수
     disagreements = []
 
     for case in gold["cases"]:
@@ -72,7 +74,9 @@ def evaluate(label: str, get_judgments, use_code: bool = False) -> dict:
             continue
         n_evaluated += 1
         if use_code:
-            judgments, _ = apply_code_checks(judgments, code_judgments(profile, criteria))
+            judgments, _ = apply_code_checks(validate_shape(judgments), code_judgments(profile, criteria))
+            judgments, fixes = validate_judgments(criteria, judgments)
+            n_fixed += len(fixes)
         by_id = {j["criterion_id"]: j for j in judgments}
 
         for cid, expected_ko in case["expected"].items():
@@ -107,6 +111,8 @@ def evaluate(label: str, get_judgments, use_code: bool = False) -> dict:
         print(f"기준 일치: {agree}/{total} ({agree / total:.1%})")
     print(f"최종 판단 일치: {finals_agree}/{n_cases}")
     print(f"탈락 확정 시 질문 억제: {noq_ok}/{noq_total}")
+    if use_code and total:
+        print(f"출력 검사로 고친 기준: {n_fixed}")
     return {"label": label, "criteria": f"{agree}/{total}", "finals": f"{finals_agree}/{n_cases}",
             "no_questions": f"{noq_ok}/{noq_total}", "disagreements": disagreements}
 

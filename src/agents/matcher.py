@@ -184,11 +184,62 @@ def final_judgment(judgments: list[dict]) -> str:
 
 
 def match_with_rules(profile: dict, criteria: list[dict], case_text: str | None = None) -> tuple[list[dict], list[dict]]:
-    """LLM 판정 후, 코드로 확실히 판정되는 기준(나이, 임신·수유)을 코드 결과로 덮어쓴다.
+    """LLM 판정 후, 코드로 확실히 판정되는 기준(나이, 임신·수유)을 코드 결과로 덮어쓰고,
+    출력 검사(validate_judgments)로 빠진 기준·이상한 값을 모름으로 채운다.
 
-    반환: (판정 목록, 코드가 LLM과 다르게 바꾼 기준 목록). 코드 판정에는 "checked_by": "code"가 붙는다.
+    반환: (기준 순서대로 정리한 판정 목록, 코드 판정·출력 검사가 바꾼 내역).
+    코드 판정에는 "checked_by": "code", 출력 검사로 고친 판정에는 "checked_by": "validator"가 붙는다.
     """
     from src.tools.rule_checks import apply_code_checks, code_judgments
 
     llm = match(profile, criteria, case_text=case_text)
-    return apply_code_checks(llm, code_judgments(profile, criteria))
+    judgments, changed = apply_code_checks(validate_shape(llm), code_judgments(profile, criteria))
+    judgments, fixes = validate_judgments(criteria, judgments)
+    return judgments, changed + fixes
+
+
+VALID_VERDICTS = {"pass", "fail", "unknown", "post_enrollment"}
+
+
+def validate_shape(judgments) -> list[dict]:
+    """AI가 배열 대신 {"judgments": [...]} 같은 객체로 답해도 판정 목록만 꺼낸다."""
+    if isinstance(judgments, dict):
+        judgments = next((v for v in judgments.values() if isinstance(v, list)), [])
+    return [j for j in judgments if isinstance(j, dict)] if isinstance(judgments, list) else []
+
+
+def validate_judgments(criteria: list[dict], judgments: list[dict]) -> tuple[list[dict], list[dict]]:
+    """AI 판정 출력을 코드로 검사한다 (API 호출 없음, 무료).
+
+    - 빠진 기준 → unknown (빠진 탈락 기준 때문에 부적격 환자가 '적격'으로 나오는 안전 오류 방지)
+    - 이상한 판정값 → unknown
+    - 같은 기준이 두 번 → 앞의 것만 / 기준 목록에 없는 ID → 버림
+    고친 판정에는 "checked_by": "validator"가 붙는다.
+    반환: (기준 순서대로 정리한 판정 목록, 고친 내역 [{"criterion_id", "llm", "fixed", "reason"}])
+    """
+    ids = [c["id"] for c in criteria]
+    by_upper = {cid.upper(): cid for cid in ids}
+    kept: dict[str, dict] = {}
+    fixes = []
+    for j in validate_shape(judgments):
+        raw = str(j.get("criterion_id", "")).strip()
+        cid = by_upper.get(raw.upper())
+        verdict = j.get("verdict")
+        if cid is None:
+            fixes.append({"criterion_id": raw, "llm": verdict, "fixed": None, "reason": "기준 목록에 없는 ID → 버림"})
+            continue
+        if cid in kept:
+            fixes.append({"criterion_id": cid, "llm": verdict, "fixed": None, "reason": "같은 기준 중복 → 앞의 것만"})
+            continue
+        j = dict(j, criterion_id=cid)
+        if verdict not in VALID_VERDICTS:
+            fixes.append({"criterion_id": cid, "llm": verdict, "fixed": "unknown", "reason": "이상한 판정값 → 모름"})
+            j.update(verdict="unknown", checked_by="validator",
+                     evidence=f"(판정값 '{verdict}'이 올바르지 않아 모름 처리) {j.get('evidence', '')}".strip())
+        kept[cid] = j
+    for cid in ids:
+        if cid not in kept:
+            kept[cid] = {"criterion_id": cid, "verdict": "unknown", "checked_by": "validator",
+                         "evidence": "AI 출력에 이 기준이 없음 → 안전하게 모름 처리", "sub_condition_notes": []}
+            fixes.append({"criterion_id": cid, "llm": None, "fixed": "unknown", "reason": "AI 출력 누락 → 모름"})
+    return [kept[cid] for cid in ids], fixes

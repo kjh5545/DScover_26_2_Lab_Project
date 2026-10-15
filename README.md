@@ -79,6 +79,7 @@ streamlit run app.py                     # 데모 화면
 python scripts/eval_vs_goldset.py --skip-v3   # 저장된 결과만 채점 (무료)
 python scripts/eval_vs_goldset.py --batch     # 캐시에 없는 판정만 배치 API로 새로 실행 (50% 할인, 15건 약 $0.13)
 python scripts/check_rule_checks.py           # 코드 판정(나이·임신)을 정답과 대조 (무료)
+python scripts/check_validate.py              # 판정 출력 검사(빠진 기준 → 모름) 점검 (무료)
 ```
 
 ## 판정 규칙 (팀 합의)
