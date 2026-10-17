@@ -82,6 +82,8 @@ python scripts/check_rule_checks.py           # 코드 판정(나이·임신)을
 python scripts/check_validate.py              # 판정 출력 검사(빠진 기준 → 모름) 점검 (무료)
 python scripts/check_reassess.py              # 질문 루프(next_round → reassess) 점검, 가짜 AI (무료)
 python scripts/run_reassess_demo.py           # 질문 루프 실제 실행: S004, 시뮬레이터 답변 + 마지막 전체 재판정 (약 $0.1~0.3)
+python scripts/eval_detailed.py --check       # 인선 상세 환자 시트 읽기·점검 (무료)
+python scripts/eval_detailed.py [--loop]     # 상세 환자로 새 환자 검증: 바로 판정 / + 질문 루프 (비용 발생)
 ```
 
 ## 판정 규칙 (팀 합의)
