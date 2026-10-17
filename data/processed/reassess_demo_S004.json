@@ -102,55 +102,55 @@
         {
           "criterion_id": "I2",
           "verdict": "post_enrollment",
-          "evidence": "Ability and willingness to understand and sign informed consent is determined after the patient applies.",
+          "evidence": "Ability and willingness to understand and sign informed consent can only be determined at enrollment.",
           "sub_condition_notes": []
         },
         {
           "criterion_id": "I3",
           "verdict": "unknown",
-          "evidence": "Q5 answer: \"아직 조직검사는 안 받았고, 큰 병원 예약만 해둔 상태예요. ... 수술 일정은 아직 없어요.\" No cystoscopy-identified papillary tumor is documented and no TURBT is scheduled. There is no histologically proven MIBC either. Cystoscopy and TURBT may still be arranged at the larger hospital, so this is not confirmed as failed.",
+          "evidence": "Q1 answer: \"내시경이나 조직검사는 아직 안 받았고, 큰 병원 예약만 해둔 상태예요.\" No cystoscopy, no TURBT scheduled yet, and no histologic diagnosis. A bladder mass on CT only; the appointment may lead to cystoscopy/TURBT.",
           "sub_condition_notes": [
-            "Papillary tumor on cystoscopy scheduled for TURBT: no cystoscopy reported and no surgery scheduled (Q5), so not currently met; may change after the hospital appointment.",
-            "Histologically proven MIBC: no biopsy done (Q5), and Q6 says no cancer diagnosis has been made, so not met at present."
+            "Papillary tumor by cystoscopy scheduled for TURBT: not yet — no cystoscopy done, TURBT not scheduled (unknown whether it will be).",
+            "Histologically proven MIBC: no biopsy done, so not currently met; could become met after workup."
           ]
         },
         {
           "criterion_id": "I4",
           "verdict": "unknown",
-          "evidence": "No ECOG performance status or functional status is described.",
+          "evidence": "Q9 answer: \"네, 거동에 문제 없고 혼자 생활할 수 있어요.\" This suggests good function but does not formally establish ECOG 0 or 1 (ability to do light work, no daytime bed rest not explicitly stated).",
           "sub_condition_notes": []
         },
         {
           "criterion_id": "I5",
           "verdict": "unknown",
-          "evidence": "No creatinine or creatinine clearance values are given.",
-          "sub_condition_notes": [
-            "Creatinine < 1.5 x ULN: not given.",
-            "Creatinine clearance >= 50 mL/min/1.73 m2 (if creatinine >= 1.5 x ULN): not given."
-          ]
+          "evidence": "Q10 answer: \"최근 1년 안에는 피검사를 안 해봐서 결과지가 없어요.\" No creatinine value available.",
+          "sub_condition_notes": []
         },
         {
           "criterion_id": "E1",
           "verdict": "unknown",
-          "evidence": "Q2 answer: \"잘 모르겠어요. 그런 일이 있었다는 기억은 없어요.\" The patient is unsure and recalls no reaction; there is no confirmation about gadobutrol or ferumoxytol specifically.",
-          "sub_condition_notes": []
+          "evidence": "Q8 answer: \"잘 모르겠어요. 그런 주사 맞고 문제 생긴 기억은 없어요.\" Patient is unsure and has no recalled reaction; no confirmed exposure.",
+          "sub_condition_notes": [
+            "Gadobutrol: unknown.",
+            "Ferumoxytol: unknown."
+          ]
         },
         {
           "criterion_id": "E2",
           "verdict": "unknown",
-          "evidence": "Q4 answer: \"잘 모르겠어요. 그런 걸로 검사를 못 받은 적은 없었던 것 같아요.\" The patient is unsure and has probably never failed to complete a scan, but this is not confirmed.",
+          "evidence": "Q7 answer: \"그런 검사를 받아본 적이 없어서 잘 모르겠어요.\" Never had an MRI-type scan; claustrophobia status unknown.",
           "sub_condition_notes": []
         },
         {
           "criterion_id": "E3",
           "verdict": "unknown",
-          "evidence": "Q1 answer: \"그런 건 잘 모르겠어요. 따로 말씀드릴 만한 건 없는 것 같아요.\" The patient is unsure, so the absence of an implanted device is not confirmed.",
+          "evidence": "Q6 answer: \"잘 모르겠어요. 따로 들은 적은 없어요.\" Patient is unsure about implanted devices.",
           "sub_condition_notes": []
         },
         {
           "criterion_id": "E4",
           "verdict": "unknown",
-          "evidence": "Q3 answer: \"아니요, 그런 말은 못 들었어요. 퍼졌는지는 아직 잘 모르겠어요.\" Metastasis has not been reported, but staging has not been done, so spread is not ruled out.",
+          "evidence": "Only a bladder wall mass on CT urography is described; no information on staging or metastasis is given. Staging workup is not complete.",
           "sub_condition_notes": []
         },
         {
@@ -164,13 +164,13 @@
         {
           "criterion_id": "E6",
           "verdict": "unknown",
-          "evidence": "No urinalysis or urinary tract infection information is given.",
+          "evidence": "No urinalysis or urine culture/UTI information is provided; hematuria alone does not establish a UTI.",
           "sub_condition_notes": []
         },
         {
           "criterion_id": "E7",
           "verdict": "unknown",
-          "evidence": "No information about urethral stricture disease is given.",
+          "evidence": "No mention of urethral stricture disease.",
           "sub_condition_notes": []
         },
         {
@@ -229,24 +229,24 @@
         {
           "criterion_id": "I2",
           "verdict": "pass",
-          "evidence": "Q8 answer: \"하루에 한 갑 정도씩 45년 동안 피웠고, 지금도 피우고 있어요.\" (1 pack/day × 45 years = 45 pack-years, ≥15)",
+          "evidence": "Q2 answer: \"하루에 한 갑 정도씩 45년 동안 피웠고, 지금도 피우고 있어요.\" (about 1 pack/day × 45 years = ~45 pack-years, which is ≥15).",
           "sub_condition_notes": []
         },
         {
           "criterion_id": "I3",
           "verdict": "unknown",
-          "evidence": "Q9 answer: \"그건 잘 모르겠어요, 따로 기억나는 게 없네요.\" The patient is unsure, and no occupational history is documented. Whether this criterion is an alternative to I2 or an additional requirement is unclear, but the occupational data is not given either way.",
+          "evidence": "Q3 answer: \"그건 잘 모르겠어요, 따로 말씀드릴 만한 기억이 없어요.\" The patient is unsure, and no occupational exposure or duration is documented. This criterion may be an either/or alternative to I2, but that is not stated, so it stays unknown.",
           "sub_condition_notes": [
-            "Textile worker: not confirmed",
-            "Painter: not confirmed",
-            "Dry cleaner: not confirmed",
-            "Duration ≥15 years: unknown"
+            "Textile worker: unknown",
+            "Painter: unknown",
+            "Dry cleaner: unknown",
+            "≥15 years of exposure: unknown"
           ]
         },
         {
           "criterion_id": "E1",
           "verdict": "pass",
-          "evidence": "Q6 answer: \"아니요, 암 진단을 받은 적은 없어요. 동네 병원 CT에서 방광에 혹이 있다고만 들었고 아직 정확한 검사는 못 받았어요.\" The patient reports no prior bladder, kidney, or prostate cancer diagnosis or treatment.",
+          "evidence": "Q4 answer: \"암 진단을 받은 적은 없고 치료받은 적도 없어요. 이번에 방광에 혹이 있다는 말만 들었어요.\" The patient reports no prior bladder, kidney, or prostate cancer.",
           "sub_condition_notes": [
             "Bladder cancer history: none reported",
             "Kidney cancer history: none reported",
@@ -256,16 +256,15 @@
         {
           "criterion_id": "E2",
           "verdict": "pass",
-          "evidence": "Q7 answer: \"이번에 3주 전부터 피가 나온 게 처음이고, 그 전에는 그런 적이 없었던 것 같아요.\" The patient reports no earlier hematuria, so there was no earlier evaluation. The current CT is for the present episode.",
+          "evidence": "Q5 answer: \"3주 전부터 소변에 피가 섞여 나와서 동네 병원에서 CT를 찍었어요.\" The hematuria began 3 weeks ago, and the CT was done for the current episode. There is no mention of any earlier evaluation for hematuria within the last 2 years. Whether the current workup counts as a \"prior\" evaluation is for the study team to decide.",
           "sub_condition_notes": [
-            "Microhematuria evaluation in last 2 years: none reported",
-            "Gross hematuria evaluation in last 2 years: none reported (current episode is the first)"
+            "Micro or gross hematuria evaluation in the last 2 years: no earlier evaluation reported. The only workup described is the current CT for this 3-week episode."
           ]
         },
         {
           "criterion_id": "E3",
           "verdict": "post_enrollment",
-          "evidence": "Willingness and ability to provide informed consent is determined only when the patient applies and is consented.",
+          "evidence": "Informed consent is given at enrollment and cannot be determined beforehand.",
           "sub_condition_notes": []
         }
       ],
@@ -277,13 +276,13 @@
       "round": 1,
       "questions": [
         {
-          "text": "몸 안에 심장박동기, 인공관절, 금속 보철물 등 수술로 넣은 기계나 장치가 있으신가요? 있다면 어떤 것인지 알려주세요.",
-          "needed_info": "",
+          "text": "방광내시경 검사에서 방광 안에 종양이 보인다는 말을 들으셨거나, 방광 종양 제거 수술(경요도 방광종양절제술)이 예정되어 있나요? 방광 종양 조직검사 결과를 들으셨다면 함께 알려 주세요.",
+          "needed_info": "방광내시경에서 확인된 방광 종양 여부, 방광 종양 제거 수술 예정 여부, 방광 조직검사 결과 여부",
           "resolves": [
             {
               "trial": "NCT04369560",
               "criteria": [
-                "E3"
+                "I3"
               ]
             }
           ],
@@ -291,13 +290,13 @@
           "id": "Q1"
         },
         {
-          "text": "MRI나 CT 검사에서 쓰는 조영제, 또는 철분 주사를 맞고 심한 알레르기 반응(호흡곤란, 심한 두드러기, 쇼크 등)이 생긴 적이 있나요?",
-          "needed_info": "",
+          "text": "지금까지 담배를 하루에 대략 몇 갑씩, 몇 년 동안 피우셨나요?",
+          "needed_info": "흡연량과 흡연 기간",
           "resolves": [
             {
-              "trial": "NCT04369560",
+              "trial": "NCT05646485",
               "criteria": [
-                "E1"
+                "I2"
               ]
             }
           ],
@@ -305,13 +304,13 @@
           "id": "Q2"
         },
         {
-          "text": "지금까지 검사에서 암이 방광 밖의 다른 장기나 림프절 등으로 퍼졌다는 말을 들은 적이 있나요?",
-          "needed_info": "",
+          "text": "섬유(옷감) 관련 일, 페인트 작업, 드라이클리닝 업소에서 일하신 적이 있나요? 있다면 모두 합쳐 몇 년 정도 일하셨는지 알려 주세요.",
+          "needed_info": "직업상 노출 이력과 기간",
           "resolves": [
             {
-              "trial": "NCT04369560",
+              "trial": "NCT05646485",
               "criteria": [
-                "E4"
+                "I3"
               ]
             }
           ],
@@ -319,13 +318,13 @@
           "id": "Q3"
         },
         {
-          "text": "MRI처럼 좁고 밀폐된 기계 안에 들어가 있을 때 심하게 답답하거나 불안해서 검사를 끝까지 받기 어려웠던 적이 있나요?",
-          "needed_info": "",
+          "text": "이전에 방광, 신장(콩팥), 전립선에 암이 있다는 말을 들었거나 그 때문에 치료를 받으신 적이 있나요?",
+          "needed_info": "방광·신장·전립선 암의 과거력",
           "resolves": [
             {
-              "trial": "NCT04369560",
+              "trial": "NCT05646485",
               "criteria": [
-                "E2"
+                "E1"
               ]
             }
           ],
@@ -333,13 +332,13 @@
           "id": "Q4"
         },
         {
-          "text": "방광경 검사(방광 안을 내시경으로 보는 검사)나 조직검사를 받으셨나요? 받으셨다면 결과와 함께 방광 종양 제거 수술(경요도 방광종양 절제술) 일정이 잡혀 있는지 알려주세요.",
-          "needed_info": "",
+          "text": "최근 2년 안에 소변에 피가 섞여 나오거나 소변검사에서 피가 있다는 말을 들어서 검사를 받은 적이 있나요?",
+          "needed_info": "최근 2년 내 혈뇨 검사 경험",
           "resolves": [
             {
-              "trial": "NCT04369560",
+              "trial": "NCT05646485",
               "criteria": [
-                "I3"
+                "E2"
               ]
             }
           ],
@@ -350,29 +349,47 @@
       "answers": [
         {
           "question_id": "Q1",
-          "answer": "그런 건 잘 모르겠어요. 따로 말씀드릴 만한 건 없는 것 같아요."
+          "answer": "동네 병원에서 CT를 찍었더니 방광에 혹이 있다고 들었어요. 내시경이나 조직검사는 아직 안 받았고, 큰 병원 예약만 해둔 상태예요."
         },
         {
           "question_id": "Q2",
-          "answer": "잘 모르겠어요. 그런 일이 있었다는 기억은 없어요."
+          "answer": "하루에 한 갑 정도씩 45년 동안 피웠고, 지금도 피우고 있어요."
         },
         {
           "question_id": "Q3",
-          "answer": "아니요, 그런 말은 못 들었어요. 퍼졌는지는 아직 잘 모르겠어요."
+          "answer": "그건 잘 모르겠어요, 따로 말씀드릴 만한 기억이 없어요."
         },
         {
           "question_id": "Q4",
-          "answer": "잘 모르겠어요. 그런 걸로 검사를 못 받은 적은 없었던 것 같아요."
+          "answer": "암 진단을 받은 적은 없고 치료받은 적도 없어요. 이번에 방광에 혹이 있다는 말만 들었어요."
         },
         {
           "question_id": "Q5",
-          "answer": "아직 조직검사는 안 받았고, 큰 병원 예약만 해둔 상태예요. 동네 병원 CT에서 방광에 혹이 있다고 들었고, 수술 일정은 아직 없어요."
+          "answer": "3주 전부터 소변에 피가 섞여 나와서 동네 병원에서 CT를 찍었어요. 아프지는 않았어요."
         }
       ],
       "changed": [
         {
-          "trial": "NCT04369560",
-          "criterion_id": "I3",
+          "trial": "NCT05646485",
+          "criterion_id": "I2",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "Q2"
+          ]
+        },
+        {
+          "trial": "NCT05646485",
+          "criterion_id": "E1",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "Q4"
+          ]
+        },
+        {
+          "trial": "NCT05646485",
+          "criterion_id": "E2",
           "from": "unknown",
           "to": "fail",
           "source": [
@@ -385,13 +402,13 @@
       "round": 2,
       "questions": [
         {
-          "text": "병원에서 방광암, 신장암(콩팥암), 전립선암 중 하나라도 진단을 받거나 치료를 받은 적이 있나요?",
-          "needed_info": "",
+          "text": "심장박동기나 몸속에 넣은 의료기구·보형물(예: 인공관절, 금속 핀, 인공 달팽이관)이 있으신가요? 있다면 어떤 것인지 알려 주세요.",
+          "needed_info": "MRI와 맞지 않을 수 있는 몸속 삽입 기구·보형물·심장박동기 유무",
           "resolves": [
             {
-              "trial": "NCT05646485",
+              "trial": "NCT04369560",
               "criteria": [
-                "E1"
+                "E3"
               ]
             }
           ],
@@ -399,11 +416,11 @@
           "id": "Q6"
         },
         {
-          "text": "이번 증상 이전에 최근 2년 안에 소변에 피가 섞여 나오거나 검사에서 소변에 피가 있다는 말을 듣고, 병원에서 이에 대한 검사를 받은 적이 있나요?",
-          "needed_info": "",
+          "text": "MRI처럼 좁고 막힌 기계 안에 들어가는 검사를 받을 때 너무 답답하거나 무서워서 검사를 중단했거나 못 받은 적이 있나요?",
+          "needed_info": "MRI 검사를 끝까지 받지 못할 정도의 폐쇄공포 경험",
           "resolves": [
             {
-              "trial": "NCT05646485",
+              "trial": "NCT04369560",
               "criteria": [
                 "E2"
               ]
@@ -413,13 +430,13 @@
           "id": "Q7"
         },
         {
-          "text": "지금까지 담배를 얼마나 피우셨는지 알려주세요. 하루에 평균 몇 개비(또는 몇 갑)씩, 총 몇 년 정도 피우셨나요?",
-          "needed_info": "",
+          "text": "MRI 조영제(검사용 주사약)나 철분 주사를 맞고 호흡곤란, 얼굴 붓기, 쇼크 같은 심한 알레르기 반응이 있었던 적이 있나요?",
+          "needed_info": "가돌리늄 계열 MRI 조영제(가도부트롤)나 페루목시톨(철분 주사) 과민반응 경험",
           "resolves": [
             {
-              "trial": "NCT05646485",
+              "trial": "NCT04369560",
               "criteria": [
-                "I2"
+                "E1"
               ]
             }
           ],
@@ -427,71 +444,80 @@
           "id": "Q8"
         },
         {
-          "text": "섬유 공장, 페인트 작업, 세탁소(드라이클리닝) 중에서 일해 보신 적이 있나요? 있다면 총 몇 년 정도 일하셨는지 알려주세요.",
-          "needed_info": "",
+          "text": "평소 식사, 옷 입기, 외출 같은 일상생활을 혼자 하실 수 있나요? 가벼운 일이나 사무 일은 할 수 있는지, 낮에 누워 지내거나 도움이 필요한 시간이 많은지도 알려 주세요.",
+          "needed_info": "일상 활동 수준(수행 능력)",
           "resolves": [
             {
-              "trial": "NCT05646485",
+              "trial": "NCT04369560",
               "criteria": [
-                "I3"
+                "I4"
               ]
             }
           ],
           "priority": 4,
           "id": "Q9"
+        },
+        {
+          "text": "최근에 신장(콩팥) 기능을 보는 피검사(크레아티닌)를 받으신 적이 있나요? 결과지가 있으면 보여 주세요.",
+          "needed_info": "신장 기능 혈액검사(크레아티닌) 시행 여부와 결과지 보유 여부",
+          "resolves": [
+            {
+              "trial": "NCT04369560",
+              "criteria": [
+                "I5"
+              ]
+            }
+          ],
+          "priority": 5,
+          "id": "Q10"
         }
       ],
       "answers": [
         {
           "question_id": "Q6",
-          "answer": "아니요, 암 진단을 받은 적은 없어요. 동네 병원 CT에서 방광에 혹이 있다고만 들었고 아직 정확한 검사는 못 받았어요."
+          "answer": "잘 모르겠어요. 따로 들은 적은 없어요."
         },
         {
           "question_id": "Q7",
-          "answer": "이번에 3주 전부터 피가 나온 게 처음이고, 그 전에는 그런 적이 없었던 것 같아요."
+          "answer": "그런 검사를 받아본 적이 없어서 잘 모르겠어요."
         },
         {
           "question_id": "Q8",
-          "answer": "하루에 한 갑 정도씩 45년 동안 피웠고, 지금도 피우고 있어요."
+          "answer": "잘 모르겠어요. 그런 주사 맞고 문제 생긴 기억은 없어요."
         },
         {
           "question_id": "Q9",
-          "answer": "그건 잘 모르겠어요, 따로 기억나는 게 없네요."
+          "answer": "네, 거동에 문제 없고 혼자 생활할 수 있어요."
+        },
+        {
+          "question_id": "Q10",
+          "answer": "최근 1년 안에는 피검사를 안 해봐서 결과지가 없어요."
         }
       ],
       "changed": [
         {
-          "trial": "NCT05646485",
-          "criterion_id": "I2",
+          "trial": "NCT04369560",
+          "criterion_id": "I4",
           "from": "unknown",
           "to": "pass",
           "source": [
-            "Q8"
+            "Q9"
           ]
         },
         {
-          "trial": "NCT05646485",
-          "criterion_id": "E1",
-          "from": "unknown",
-          "to": "pass",
+          "trial": "NCT04369560",
+          "criterion_id": "I4",
+          "from": "pass",
+          "to": "unknown",
           "source": [
-            "Q6"
+            "full"
           ]
         },
         {
           "trial": "NCT05646485",
           "criterion_id": "E2",
-          "from": "unknown",
-          "to": "pass",
-          "source": [
-            "Q7"
-          ]
-        },
-        {
-          "trial": "NCT04369560",
-          "criterion_id": "I3",
           "from": "fail",
-          "to": "unknown",
+          "to": "pass",
           "source": [
             "full"
           ]

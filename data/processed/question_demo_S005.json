@@ -1,0 +1,142 @@
+{
+  "patient_id": "S005",
+  "questions": [
+    {
+      "text": "한 달에 두통이 있는 날은 보통 며칠인가요? 최근 3개월 동안 시야에 이상(반짝이거나 가려 보이는 증상 등)이 먼저 나타난 두통은 한 달에 몇 번쯤 있었나요?",
+      "needed_info": "한 달 두통 일수와 전조(시야 이상)를 동반한 발작 횟수",
+      "resolves": [
+        {
+          "trial": "NCT07348783",
+          "criteria": [
+            "I1",
+            "I3"
+          ]
+        },
+        {
+          "trial": "NCT04063540",
+          "criteria": [
+            "I1",
+            "I2"
+          ]
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "text": "지금 드시는 약을 모두 알려주시겠어요? 혈압약, 소변을 늘리는 약(이뇨제), 칼륨 보충제, 최근 한 달 사이 편두통 예방을 위해 드신 약도 포함해 주세요.",
+      "needed_info": "현재 복용 약 목록, 혈압약 복용 여부, 최근 한 달 내 편두통 예방약 복용 여부",
+      "resolves": [
+        {
+          "trial": "NCT07348783",
+          "criteria": [
+            "E4"
+          ]
+        },
+        {
+          "trial": "NCT04063540",
+          "criteria": [
+            "I3",
+            "E3",
+            "E6"
+          ]
+        }
+      ],
+      "priority": 2
+    },
+    {
+      "text": "스웨덴어로 대화하고 설명을 이해하는 데 어려움이 없으신가요?",
+      "needed_info": "스웨덴어 사용 가능 여부",
+      "resolves": [
+        {
+          "trial": "NCT07348783",
+          "criteria": [
+            "E5"
+          ]
+        }
+      ],
+      "priority": 3
+    },
+    {
+      "text": "혈액검사에서 칼륨, 신장(콩팥) 기능, 간 기능 검사를 받은 적이 있나요? 있다면 그 결과지를 가지고 계신가요?",
+      "needed_info": "칼륨, 신장 기능, 간 기능 검사 경험과 결과지 보유 여부",
+      "resolves": [
+        {
+          "trial": "NCT04063540",
+          "criteria": [
+            "E2",
+            "E4",
+            "E5",
+            "E6"
+          ]
+        }
+      ],
+      "priority": 4
+    },
+    {
+      "text": "혹시 지금 임신 중이거나 수유 중이신가요? 임신이 가능한 상황이라면 피임을 하고 계신지, 하고 있다면 언제부터인지도 알려주세요.",
+      "needed_info": "임신·수유 여부, 피임 방법과 시작 시기",
+      "resolves": [
+        {
+          "trial": "NCT04063540",
+          "criteria": [
+            "I4",
+            "E9"
+          ]
+        }
+      ],
+      "priority": 5
+    }
+  ],
+  "not_asked": [
+    {
+      "trial": "NCT07348783",
+      "criterion_id": "I4",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT07348783",
+      "criterion_id": "I6",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT07348783",
+      "criterion_id": "I7",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT07348783",
+      "criterion_id": "I8",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT07348783",
+      "criterion_id": "E1",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT07348783",
+      "criterion_id": "E2",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT07348783",
+      "criterion_id": "E3",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT04063540",
+      "criterion_id": "I6",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT04063540",
+      "criterion_id": "E1",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT04063540",
+      "criterion_id": "E10",
+      "reason": "질문 수 제한으로 보류"
+    }
+  ]
+}
