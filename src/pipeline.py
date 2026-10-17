@@ -122,7 +122,7 @@ def save_bundle(bundle: dict) -> Path:
 
 
 # ── 질문 루프: [5] 질문 → 환자 답변 → [6] 재평가 ───────────────────
-# 형식: docs/결정_HANDOFF_질문루프.md (bundle["rounds"]에 질문·답변·바뀐 판정을 라운드별로 쌓는다)
+# 형식: docs/질문루프_정리.md (bundle["rounds"]에 질문·답변·바뀐 판정을 라운드별로 쌓는다)
 
 def asked_criteria(bundle: dict) -> dict[str, set[str]]:
     """이미 질문한 기준 {시험: {기준 ID}} — 같은 기준을 다시 묻지 않기 위해."""

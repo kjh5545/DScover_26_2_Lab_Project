@@ -125,7 +125,7 @@ if start:
             st.write(f"[3-4] {trial['nct_id']} 기준 파싱 + 매칭 ({i}/{len(search['candidates'])})...")
             screenings.append(screen_trial(profile, trial, case_text))
         status.update(label="분석 완료", state="complete")
-    # 질문 루프는 bundle(handoff 형식) 하나에 질문·답변·바뀐 판정을 쌓는다 (docs/결정_HANDOFF_질문루프.md)
+    # 질문 루프는 bundle(handoff 형식) 하나에 질문·답변·바뀐 판정을 쌓는다 (docs/질문루프_정리.md)
     bundle = {"patient_id": pid, "case_text": case_text, "profile": profile, "trials": screenings}
     st.session_state.update(bundle=bundle, search=search, prev_judgments={}, last_changed=[], finished=False)
 

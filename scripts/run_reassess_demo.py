@@ -9,7 +9,7 @@
 - AI 호출: 라운드마다 질문 생성 1 + 시뮬레이터 1 + 재판정(답이 걸린 시험 수만큼)
   + 마지막 전체 재판정(시험 수만큼). Sonnet 5.5 기준 약 $0.1~0.3. 실제 비용은 끝에 출력
 결과: data/processed/reassess_demo_S004.json (handoff 형식 + rounds)
-10/16 첫 실행 기록: docs/결정_HANDOFF_질문루프.md "실제 실행 결과" 절
+실행 기록: docs/질문루프_정리.md 6절 (10/16 첫 실행 결과 파일은 커밋 057ba65)
 """
 
 import json
