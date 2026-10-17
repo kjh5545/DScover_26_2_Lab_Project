@@ -6,11 +6,11 @@
 >
 > **구현 현황 (10/16)**: `src/pipeline.py`에 `next_round()`, `reassess()`, `final_check()`, `all_answers()`, `save_bundle()` 완성.
 > `match()`·`match_with_rules()`에 `answers` 인자 추가. 판정 출력 검사 완료.
-> 해준의 `build_questions()`가 나오기 전까지 `next_round()`는 임시 질문 생성(`questions_per_trial`: 시험별 기존 5번을 **번갈아** 고름, 묶기 없음)을 씀.
-> **10/17 해준 PR #1(`src/question_builder.py`) 병합.** 질문 루프에서는 `next_round(bundle, build_questions=questions_for_round)`로 쓴다.
-> 병합하면서 주희가 고친 것: 시험별로 번갈아 고르기, 새로 풀리는 기준이 없는 질문 건너뛰기, 지난 라운드에 물어본 기준 빼기, 질문 목록만 돌려주는 `questions_for_round` 추가.
-> 아직 기본값은 임시 구현이다. 남은 두 가지를 팀과 정한 뒤 기본값으로 바꾼다: (1) 시험마다 needed_info 문구가 달라 여러 시험 묶기가 실제로 안 일어남 (S005에서 두 시험에 걸친 묶음 0개),
-> (2) 질문 문장 AI에 기준 번호만 넘기고 기준 원문은 안 넘김 (needed_info가 없는 시험은 원문 앞 60자로 질문이 됨). 서현 프롬프트를 넣을 때 같이 처리.
+> **10/17 해준 PR #1(`src/question_builder.py`) 병합 → 질문 루프 기본값.** "코드가 고르고 → AI가 묶어서 쓰고 → 코드가 검사":
+> ① 코드가 모름 기준을 고름 (부적격 시험·등록 후 확인·이미 물어본 기준 제외) → ② AI가 서현 v2.1 규칙으로 **기준 원문**을 보고 뜻이 같은 정보끼리 묶어 질문을 쓰고 `resolves`를 적음 (호출 1번)
+> → ③ 코드가 검사·정리 (없는 기준 번호 버리기, 새로 풀리는 기준이 없는 질문 빼기, 여러 시험에 걸친 질문 먼저 → 시험별로 번갈아, 최대 개수로 자르기).
+> 바꾼 이유: needed_info 글자 비교로는 시험마다 문구가 달라 묶이지 않았고 (S005에서 두 시험에 걸친 묶음 0개), 문장 AI가 기준 번호만 받아 내용을 몰랐음. 임시 구현 `questions_per_trial`은 삭제.
+> `app.py`도 이 루프(`next_round` → `reassess` → "질문 끝내기" 때 `final_check`)로 연결. 답을 받아도 프로필은 다시 쓰지 않음 (판정이 원문 + 답변을 직접 봄).
 > 점검: `python scripts/check_reassess.py` (무료) · 실제 실행: `python scripts/run_reassess_demo.py` (비용 발생, 끝에 실제 비용 출력)
 > **10/16 첫 실제 실행 결과와 발견한 문제는 맨 아래 "실제 실행 결과" 절 참고**
 
@@ -135,8 +135,8 @@ def build_questions(bundle: dict, max_questions: int = 5) -> list[dict]:
 | `next_round(bundle)`: `build_questions()` 호출 → ID 붙여 `rounds`에 추가 | 주희 | |
 | `reassess(bundle, answers)`: 관련 기준만 재판정 → `changed` 기록 (3) | 주희 | 6번 |
 | `final_check(bundle)`: 루프를 마친 뒤 전체 재판정 한 번 | 주희 | `app.py`는 "질문 끝내기" 때 부르기 |
-| `build_questions(bundle)`: 질문 재료 모으기·묶기·문장 만들기 | 해준 | 10/17 병합 (PR #1). 남은 것: 다른 문구끼리 묶는 방식, 문장 AI에 기준 원문 넘기기 |
-| `app.py`가 파이프라인 함수(`run_intake`, `next_round`, `reassess`)를 쓰게 | 해준 | `reassess()`가 나온 뒤. 주희가 도와도 됨 |
+| `build_questions(bundle)`: 질문 재료 모으기·묶기·문장 만들기 | 해준 → 주희 | 10/17 병합 (PR #1), 서현 v2.1 프롬프트로 AI 묶기 + 코드 검사 |
+| `app.py`가 질문 루프 함수(`next_round`, `reassess`, `final_check`)를 쓰게 | 해준 → 주희 | 10/17 완료. 1~4번은 아직 app.py 안의 함수로 실행 (`run_intake`로 바꾸는 건 남음) |
 | 질문 문장 프롬프트 | 서현 | 변화 없음. ID는 신경 안 써도 됨 |
 
 ## 정한 것

@@ -1,8 +1,8 @@
 """질문 파일 생성 (튜토리얼 Step 2): handoff/<환자>.json → questions/<환자>.json
 
 사용법:
-    python scripts/build_questions.py S005            # LLM으로 질문 문장 생성 (호출 1회)
-    python scripts/build_questions.py S005 --no-llm   # 임시 문장, 무료 (흐름 확인용)
+    python scripts/build_questions.py S005            # AI가 서현 v2.1 규칙으로 묶어서 질문 작성 (호출 1회, 약 $0.01~0.02)
+    python scripts/build_questions.py S005 --no-llm   # needed_info 글자가 같은 것끼리 묶고 임시 문장, 무료 (흐름 확인용)
     python scripts/build_questions.py S005 --top 5    # 질문 수 (기본 5)
 """
 
@@ -35,6 +35,8 @@ def main() -> None:
         covered = ", ".join(f"{r['trial']}({len(r['criteria'])}개)" for r in q["resolves"])
         print(f"{q['priority']}. {q['text']}")
         print(f"   ↳ 해결 대상: {covered}")
+    for n in result["not_asked"]:
+        print(f"   (질문 안 함) {n.get('trial')} {n.get('criterion_id')} — {n.get('reason')}")
 
     out = ROOT / "questions" / f"{args.patient}.json"
     out.parent.mkdir(exist_ok=True)

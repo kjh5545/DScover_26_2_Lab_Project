@@ -3,6 +3,7 @@
 실행: python scripts/check_reassess.py
 - S004 환자의 평가 세트 시험 2개 + 저장된 v3 판정으로 bundle을 만들고
 - 질문 생성·판정 AI를 가짜로 바꿔, 파이프라인이 형식대로 기록하고 관련 기준만 다시 판정하는지 본다
+- 7~9번: 질문 코드(src/question_builder.py)가 기준 원문을 넘기고, AI 결과를 검사·정리하는지
 실제 AI로 돌리는 건 scripts/run_reassess_demo.py (비용 발생)
 """
 
@@ -13,8 +14,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
+import re
+
 import src.agents.matcher as matcher
 import src.pipeline as pipeline
+import src.question_builder as qb
 from src.agents.matcher import build_user_message, final_judgment
 from src.testing.goldset_bundle import make_bundle
 
@@ -37,15 +41,36 @@ def fake_match(profile, criteria, case_text=None, system_prompt=None, answers=No
     return [{"criterion_id": c["id"], "verdict": "pass", "evidence": "fake"} for c in criteria]
 
 
-def fake_generate_questions(criteria, judgments):
-    """unknown 기준을 2개씩 묶어 질문 하나로."""
-    ids = [j["criterion_id"] for j in judgments if j["verdict"] == "unknown"]
-    return [{"criterion_ids": ids[i:i + 2], "question": f"질문 {ids[i:i + 2]}"} for i in range(0, len(ids), 2)]
+question_inputs = []
+
+
+def parse_question_input(user: str) -> dict[str, list[str]]:
+    """질문 AI 입력에서 {시험: [기준 ID]}를 읽는다."""
+    out, trial = {}, None
+    for line in user.splitlines():
+        m = re.match(r"\[시험 \d+: (NCT\d+)", line)
+        if m:
+            trial = m.group(1)
+            out[trial] = []
+        m = re.match(r"([IE]\d+)\. ", line)
+        if m and trial:
+            out[trial].append(m.group(1))
+    return out
+
+
+def fake_question_ai(system, user):
+    """시험마다 '모름' 기준을 2개씩 묶어 질문 하나로 (시험 순서대로 이어 붙여서 돌려줌)."""
+    question_inputs.append(user)
+    qs = []
+    for trial, ids in parse_question_input(user).items():
+        qs += [{"question": f"질문 {ids[i:i + 2]}", "needed_info": "",
+                "resolves": [{"trial": trial, "criteria": ids[i:i + 2]}]} for i in range(0, len(ids), 2)]
+    return {"questions": qs, "not_asked": []}
 
 
 def main() -> int:
     matcher.match = fake_match                         # 이 점검 안에서만 가짜 AI 사용
-    pipeline.generate_questions = fake_generate_questions
+    qb.ask_json = fake_question_ai
     bundle = make_bundle("S004")
     trials = {t["nct_id"]: t for t in bundle["trials"]}
     print("bundle: S004 × " + ", ".join(f"{n}({t['final_judgment']})" for n, t in trials.items()))
@@ -121,36 +146,54 @@ def main() -> int:
     check("final_check(전체 재판정)면 모든 시험의 모든 기준 재판정",
           sorted(sum((c["ids"] for c in match_calls), [])) == sorted(c["id"] for x in bundle["trials"] for c in x["criteria"]))
 
-    print("\n7. 해준 질문 묶기(question_builder)를 질문 루프에 넣기 (문장은 임시 문장, use_llm=False)")
-    from functools import partial
+    print("\n7. 질문 코드: AI 입력에 기준 원문과 답변이 들어감")
+    check("기준 원문이 들어감 (S004 I3 원문)", "papillary tumor" in question_inputs[0])
+    check("1라운드에는 이미 받은 답변 없음", "[이미 받은 답변]" not in question_inputs[0])
+    check("2라운드 입력에 1라운드 답변이 들어감", "아니요, 없어요" in question_inputs[1])
+    check("2라운드 입력에 이미 물어본 기준 없음",
+          all(c not in parse_question_input(question_inputs[1]).get(r["trial"], [])
+              for q in qs for r in q["resolves"] for c in r["criteria"]))
 
-    from src.question_builder import questions_for_round
-    builder = partial(questions_for_round, use_llm=False)
-    for pid, b in [("S004", make_bundle("S004")), ("S001", make_bundle("S001")),
-                   ("S005", json.loads((ROOT / "data" / "handoff" / "S005.json").read_text(encoding="utf-8")))]:
-        inel = {t["nct_id"] for t in b["trials"] if t["final_judgment"] == "ineligible"}
-        open_trials = [t["nct_id"] for t in b["trials"] if t["nct_id"] not in inel
-                       and any(j["verdict"] == "unknown" for j in t["judgments"])]
-        hq = pipeline.next_round(b, build_questions=builder, max_questions=5)
-        print(f"  {pid}: " + "; ".join(f"{q['id']} → {q['resolves']}" for q in hq))
-        check(f"{pid} ID가 Q1부터, priority 1부터",
-              [q["id"] for q in hq] == [f"Q{i}" for i in range(1, len(hq) + 1)]
-              and [q["priority"] for q in hq] == list(range(1, len(hq) + 1)))
-        check(f"{pid} 부적격 시험은 질문 안 함", all(r["trial"] not in inel for q in hq for r in q["resolves"]))
-        if len(open_trials) >= 2:
-            check(f"{pid} 시험별로 번갈아 고름 (앞의 두 질문이 서로 다른 시험)",
-                  len(hq) >= 2 and hq[0]["resolves"][0]["trial"] != hq[1]["resolves"][0]["trial"])
-        seen, adds_new = set(), True
-        for q in hq:
-            pairs = {(r["trial"], c) for r in q["resolves"] for c in r["criteria"]}
-            adds_new &= not pairs <= seen
-            seen |= pairs
-        check(f"{pid} 질문마다 새로 풀리는 기준이 있음 (같은 기준만 다시 묻는 질문 없음)", adds_new)
-        asked = pipeline.asked_criteria(b)
-        hq2 = pipeline.next_round(b, build_questions=builder, max_questions=5)
-        check(f"{pid} 2라운드: ID가 이어지고 이미 물어본 기준 없음",
-              (not hq2 or hq2[0]["id"] == f"Q{len(hq) + 1}")
-              and all(c not in asked.get(r["trial"], set()) for q in hq2 for r in q["resolves"] for c in r["criteria"]))
+    print("\n8. 질문 코드: AI 결과 검사·정리 (S005)")
+    b5 = json.loads((ROOT / "data" / "handoff" / "S005.json").read_text(encoding="utf-8"))
+    A, B = "NCT04063540", "NCT07348783"
+    messy = {"questions": [
+        {"question": "A 약 질문", "resolves": [{"trial": A, "criteria": ["E3"]}]},
+        {"question": "지금 드시는 약을 모두 알려 주세요.", "needed_info": "지금 먹는 약",
+         "resolves": [{"trial": A, "criteria": ["E3", "E6", "Z9"]}, {"trial": B, "criteria": ["E4"]},
+                      {"trial": "NCT99999999", "criteria": ["I1"]}]},
+        {"question": "A E6만 다시", "resolves": [{"trial": A, "criteria": ["E6"]}]},
+        {"question": "  ", "resolves": [{"trial": B, "criteria": ["I6"]}]},
+        {"question": "B 진단 질문", "resolves": [{"trial": B, "criteria": ["I1"]}]},
+        {"question": "A 진단 질문", "resolves": [{"trial": A, "criteria": ["I1"]}]},
+        {"question": "없는 기준만", "resolves": [{"trial": A, "criteria": ["I99"]}]},
+    ], "not_asked": [{"trial": B, "criterion_id": "E5", "reason": "질문 수 제한으로 보류"}]}
+    qb.ask_json = lambda system, user: messy
+    r5 = qb.build_questions(b5, top_k=5)
+    print("  " + "; ".join(f"{q['priority']}. {q['text']} → {q['resolves']}" for q in r5["questions"]))
+    check("여러 시험에 걸친 질문이 맨 앞", r5["questions"][0]["text"].startswith("지금 드시는 약"))
+    check("없는 기준 번호(Z9, 없는 시험)는 버림",
+          r5["questions"][0]["resolves"] == [{"trial": A, "criteria": ["E3", "E6"]}, {"trial": B, "criteria": ["E4"]}])
+    check("이미 다룬 기준만 있는 질문, 빈 질문, 없는 기준만 있는 질문은 뺌",
+          sorted(q["text"] for q in r5["questions"]) == sorted(["지금 드시는 약을 모두 알려 주세요.", "B 진단 질문", "A 진단 질문"]))
+    check("priority 1부터", [q["priority"] for q in r5["questions"]] == [1, 2, 3])
+    check("질문하지 않은 기준(not_asked)도 넘겨줌", r5["not_asked"] == messy["not_asked"])
+    qb.ask_json = lambda system, user: messy["questions"][:2]
+    check("AI가 목록만 줘도 처리", len(qb.build_questions(b5, top_k=5)["questions"]) == 1)
+    qb.ask_json = lambda system, user: messy
+    check("최대 개수로 자름", len(qb.questions_for_round(b5, max_questions=1)) == 1)
+
+    print("\n9. 질문 코드: AI 없이 (use_llm=False, 무료 흐름 확인용)")
+    from functools import partial
+    builder = partial(qb.questions_for_round, use_llm=False)
+    hq = pipeline.next_round(b5, build_questions=builder, max_questions=5)
+    print("  " + "; ".join(f"{q['id']} → {q['resolves']}" for q in hq))
+    check("질문 5개, 시험별로 번갈아", len(hq) == 5 and hq[0]["resolves"][0]["trial"] != hq[1]["resolves"][0]["trial"])
+    hq2 = pipeline.next_round(b5, build_questions=builder, max_questions=5)
+    asked = {(r["trial"], c) for q in hq for r in q["resolves"] for c in r["criteria"]}
+    check("2라운드: ID가 이어지고 이미 물어본 기준 없음",
+          bool(hq2) and hq2[0]["id"] == "Q6"
+          and not any((r["trial"], c) in asked for q in hq2 for r in q["resolves"] for c in r["criteria"]))
 
     print(f"\n{'모두 통과' if failures == 0 else f'실패 {failures}개'}")
     return 1 if failures else 0

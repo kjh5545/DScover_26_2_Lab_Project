@@ -20,9 +20,9 @@ from pathlib import Path
 from src.agents.criteria_parser import parse_criteria
 from src.agents.matcher import final_judgment, match, match_with_rules
 from src.agents.patient_profiler import profile_patient
-from src.agents.question_generator import generate_questions
 from src.agents.trial_searcher import search_candidates
 from src.llm import MODEL
+from src.question_builder import questions_for_round
 
 ROOT = Path(__file__).resolve().parent.parent
 PROMPT_VERSION = "v3"  # 2026-10-12: goldset v1.1 결정 + 환자 원문 입력 (v2: 2026-10-08 회의 결정)
@@ -134,47 +134,16 @@ def asked_criteria(bundle: dict) -> dict[str, set[str]]:
     return asked
 
 
-def questions_per_trial(bundle: dict, max_questions: int = 5) -> list[dict]:
-    """임시 질문 생성: 해준의 build_questions()가 나오기 전까지 쓰는 대체 구현.
-
-    시험마다 기존 5번(generate_questions)을 불러 resolves 형식으로 바꾼 뒤,
-    시험별로 번갈아 하나씩 골라 max_questions개를 채운다 (한 시험에 질문이 몰리지 않게).
-    여러 시험에 걸친 질문 묶기는 하지 않는다. 부적격 시험과 이미 물어본 기준은 뺀다.
-    """
-    asked = asked_criteria(bundle)
-    per_trial = []
-    for t in bundle["trials"]:
-        if t.get("final_judgment") == "ineligible":
-            continue
-        open_j = [j for j in t["judgments"]
-                  if j["verdict"] == "unknown" and j["criterion_id"] not in asked.get(t["nct_id"], set())]
-        open_ids = {j["criterion_id"] for j in open_j}
-        if not open_j:
-            continue
-        qs = []
-        for q in generate_questions(t["criteria"], open_j):
-            ids = [cid for cid in q.get("criterion_ids", []) if cid in open_ids]
-            if ids:
-                qs.append({"text": q["question"], "needed_info": "",
-                           "resolves": [{"trial": t["nct_id"], "criteria": ids}]})
-        per_trial.append(qs)
-
-    questions = []
-    for i in range(max((len(qs) for qs in per_trial), default=0)):   # 시험 A 1번, 시험 B 1번, A 2번, ...
-        questions += [qs[i] for qs in per_trial if i < len(qs)]
-    return [dict(q, priority=n) for n, q in enumerate(questions[:max_questions], 1)]
-
-
 def next_round(bundle: dict, build_questions=None, max_questions: int = 5, save: bool = False) -> list[dict]:
     """[5] 이번 라운드 질문을 만들어 bundle["rounds"]에 추가하고, 추가한 질문을 반환한다.
 
-    build_questions: bundle → [{"text", "needed_info", "resolves", "priority"}] 함수 (5번, 해준:
-                     src.question_builder.questions_for_round). 없으면 questions_per_trial (임시).
+    build_questions: bundle → [{"text", "needed_info", "resolves", "priority"}] 함수 (5번).
+                     없으면 src.question_builder.questions_for_round (서현 v2.1 프롬프트, AI 호출 1번).
                      ID는 여기서 Q1, Q2, ... 통번호로 붙인다.
     질문이 없으면 라운드를 만들지 않고 [] 반환.
     """
     rounds = bundle.setdefault("rounds", [])
-    questions = (build_questions or questions_per_trial)(bundle, max_questions=max_questions)
+    questions = (build_questions or questions_for_round)(bundle, max_questions=max_questions)
     n_before = sum(len(r["questions"]) for r in rounds)
     questions = [dict(q, id=f"Q{n_before + i}") for i, q in enumerate(questions, 1)]
     if questions:

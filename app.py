@@ -6,7 +6,8 @@
 화면 흐름:
   1. 환자 선택(S001~S010) 또는 직접 입력 → [분석 시작]
   2. 프로필 → 후보 검색(하드 필터) → 시험별 스크리닝 시트 → 추천 순위
-  3. "모름" 기준에 대한 확인 질문에 답하면 → 재평가 → 판정 변화(이전→이후) 표시
+  3. 질문 루프: 여러 시험에 공통으로 필요한 정보부터 질문(next_round) → 답하면 관련 기준만 재판정(reassess)
+     → 판정 변화(이전→이후) 표시 → "질문 끝내기"로 전체 재판정 한 번(final_check)
 """
 
 import json
@@ -15,12 +16,11 @@ from pathlib import Path
 import streamlit as st
 
 from src.agents.criteria_parser import parse_criteria
-from src.agents.matcher import final_judgment, match, match_with_rules
+from src.agents.matcher import final_judgment, match_with_rules
 from src.agents.patient_profiler import profile_patient
-from src.agents.profile_updater import update_profile
-from src.agents.question_generator import generate_questions
 from src.agents.recommender import rank_trials
 from src.agents.trial_searcher import search_candidates
+from src.pipeline import all_answers, final_check, next_round, reassess
 
 ROOT = Path(__file__).resolve().parent
 
@@ -125,16 +125,17 @@ if start:
             st.write(f"[3-4] {trial['nct_id']} 기준 파싱 + 매칭 ({i}/{len(search['candidates'])})...")
             screenings.append(screen_trial(profile, trial, case_text))
         status.update(label="분석 완료", state="complete")
-    st.session_state.update(profile=profile, search=search, screenings=screenings, round=1, case_text=case_text,
-                            prev_judgments={})
+    # 질문 루프는 bundle(handoff 형식) 하나에 질문·답변·바뀐 판정을 쌓는다 (docs/결정_HANDOFF_질문루프.md)
+    bundle = {"patient_id": pid, "case_text": case_text, "profile": profile, "trials": screenings}
+    st.session_state.update(bundle=bundle, search=search, prev_judgments={}, last_changed=[], finished=False)
 
 # ── 결과 표시 ───────────────────────────────────────────────
-if "screenings" in st.session_state:
-    profile = st.session_state["profile"]
-    screenings = st.session_state["screenings"]
+if "bundle" in st.session_state:
+    bundle = st.session_state["bundle"]
+    screenings = bundle["trials"]
 
     with st.expander("🧑‍⚕️ 구조화된 환자 프로필", expanded=False):
-        st.json(profile)
+        st.json(bundle["profile"])
 
     ranking = rank_trials(screenings)
     st.subheader("추천 순위")
@@ -149,6 +150,13 @@ if "screenings" in st.session_state:
         fails = [j["criterion_id"] for j in s["judgments"] if j["verdict"] == "fail"]
         st.markdown(f"**제외. {s['nct_id']}** — {FINAL_KO['ineligible']} (탈락 기준: {', '.join(fails)})")
 
+    if st.session_state["last_changed"]:
+        st.subheader("바뀐 판정 (방금 반영)")
+        for c in st.session_state["last_changed"]:
+            src = "전체 재판정" if c["source"] == ["full"] else ", ".join(c["source"]) + " 답변"
+            st.markdown(f"- **{c['trial']} {c['criterion_id']}**: {VERDICT_KO.get(c['from'], c['from'])} → "
+                        f"{VERDICT_KO.get(c['to'], c['to'])} (근거: {src})")
+
     st.subheader("시험별 스크리닝 시트")
     tabs = st.tabs([s["nct_id"] for s in screenings])
     prev_map = st.session_state.get("prev_judgments", {})
@@ -157,43 +165,50 @@ if "screenings" in st.session_state:
             st.markdown(f"**{s['title']}** — {FINAL_KO[s['final_judgment']]}")
             render_screening(s, prev_map.get(s["nct_id"]))
 
-    # ── 질문 루프 ───────────────────────────────────────────
-    needs_info = [s for s in screenings if s["final_judgment"] == "insufficient_info"]
-    if needs_info:
-        st.subheader(f"💬 확인 질문 (라운드 {st.session_state['round']})")
-        target = needs_info[0]  # 추천 1순위 후보부터 질문
-        if "questions" not in st.session_state:
-            with st.spinner("[5] 질문 생성 에이전트..."):
-                st.session_state["questions"] = generate_questions(target["criteria"], target["judgments"])
-                st.session_state["question_target"] = target["nct_id"]
-        questions = st.session_state["questions"]
-        st.caption(f"대상 시험: {st.session_state['question_target']} — 답을 아는 것만 적어도 됩니다.")
+    if bundle.get("rounds"):
+        with st.expander("🗒️ 질문·답변 기록", expanded=False):
+            for a in all_answers(bundle):
+                st.markdown(f"**{a['id']}. {a['question']}**  \n→ {a['answer']}")
 
-        with st.form("qa_form"):
-            answers = [st.text_input(f"Q{i}. {q['question']}", key=f"q{st.session_state['round']}_{i}")
-                       for i, q in enumerate(questions, 1)]
-            submitted = st.form_submit_button("답변 반영 후 재평가", type="primary")
+    def snapshot() -> dict:
+        return {s["nct_id"]: [dict(j) for j in s["judgments"]] for s in screenings}
 
-        if submitted:
-            qa_pairs = [{"question": q["question"], "answer": a}
-                        for q, a in zip(questions, answers) if a.strip()]
-            if not qa_pairs:
-                st.warning("답변을 하나 이상 입력해주세요.")
-            else:
-                with st.status("재평가 중...", expanded=True) as status:
-                    st.write("[5b] 프로필 갱신...")
-                    profile = update_profile(profile, qa_pairs)
-                    st.write("[4] 전체 시험 재평가...")
-                    prev = {s["nct_id"]: s["judgments"] for s in screenings}
-                    screenings = [
-                        {**s, "judgments": (new_j := match_with_rules(profile, s["criteria"], case_text=st.session_state.get("case_text"))[0]),
-                         "final_judgment": final_judgment(new_j)}
-                        for s in screenings
-                    ]
-                    status.update(label="재평가 완료", state="complete")
-                st.session_state.update(profile=profile, screenings=screenings,
-                                        prev_judgments=prev, round=st.session_state["round"] + 1)
-                del st.session_state["questions"]
-                st.rerun()
+    # ── 질문 루프: [5] next_round → 환자 답변 → [6] reassess → ... → 끝내면 final_check ──
+    if st.session_state["finished"]:
+        st.success("질문을 마치고 전체 재판정까지 끝났습니다. 위 판정이 최종 결과입니다.")
     else:
-        st.success("모든 시험의 판정이 확정되었습니다 (남은 확인 질문 없음).")
+        if "pending" not in st.session_state:
+            with st.spinner("[5] 질문 생성 에이전트 (여러 시험에 공통으로 필요한 정보부터)..."):
+                st.session_state["pending"] = next_round(bundle)
+        questions = st.session_state["pending"]
+        if questions:
+            st.subheader(f"💬 확인 질문 (라운드 {bundle['rounds'][-1]['round']})")
+            st.caption("답을 아는 것만 적어도 됩니다. 답하지 않은 질문은 다음 라운드에 다시 묻지 않아요.")
+            with st.form("qa_form"):
+                answers = []
+                for q in questions:
+                    related = ", ".join(f"{r['trial']} {'·'.join(r['criteria'])}" for r in q["resolves"])
+                    answers.append(st.text_input(f"{q['id']}. {q['text']}", key=f"a_{q['id']}", help=f"관련 기준: {related}"))
+                submitted = st.form_submit_button("답변 반영 후 재평가", type="primary")
+            if submitted:
+                filled = [{"question_id": q["id"], "answer": a} for q, a in zip(questions, answers) if a.strip()]
+                if not filled:
+                    st.warning("답변을 하나 이상 입력해주세요.")
+                else:
+                    prev = snapshot()
+                    with st.spinner("[6] 답과 관련된 기준만 다시 판정..."):
+                        changed = reassess(bundle, filled)
+                    st.session_state.update(prev_judgments=prev, last_changed=changed)
+                    del st.session_state["pending"]
+                    st.rerun()
+        else:
+            st.info("더 물어볼 '모름' 기준이 없습니다. 질문을 끝내고 전체 재판정을 해 주세요.")
+
+        if bundle.get("rounds") and st.button("질문 끝내기 (전체 재판정)",
+                                              help="모든 기준을 원문 + 모든 답변으로 한 번 더 판정합니다"):
+            prev = snapshot()
+            with st.spinner("전체 재판정 중..."):
+                changed = final_check(bundle)
+            st.session_state.update(prev_judgments=prev, last_changed=changed, finished=True)
+            st.session_state.pop("pending", None)
+            st.rerun()
