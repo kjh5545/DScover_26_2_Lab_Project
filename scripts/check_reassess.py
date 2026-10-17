@@ -121,6 +121,37 @@ def main() -> int:
     check("final_check(전체 재판정)면 모든 시험의 모든 기준 재판정",
           sorted(sum((c["ids"] for c in match_calls), [])) == sorted(c["id"] for x in bundle["trials"] for c in x["criteria"]))
 
+    print("\n7. 해준 질문 묶기(question_builder)를 질문 루프에 넣기 (문장은 임시 문장, use_llm=False)")
+    from functools import partial
+
+    from src.question_builder import questions_for_round
+    builder = partial(questions_for_round, use_llm=False)
+    for pid, b in [("S004", make_bundle("S004")), ("S001", make_bundle("S001")),
+                   ("S005", json.loads((ROOT / "data" / "handoff" / "S005.json").read_text(encoding="utf-8")))]:
+        inel = {t["nct_id"] for t in b["trials"] if t["final_judgment"] == "ineligible"}
+        open_trials = [t["nct_id"] for t in b["trials"] if t["nct_id"] not in inel
+                       and any(j["verdict"] == "unknown" for j in t["judgments"])]
+        hq = pipeline.next_round(b, build_questions=builder, max_questions=5)
+        print(f"  {pid}: " + "; ".join(f"{q['id']} → {q['resolves']}" for q in hq))
+        check(f"{pid} ID가 Q1부터, priority 1부터",
+              [q["id"] for q in hq] == [f"Q{i}" for i in range(1, len(hq) + 1)]
+              and [q["priority"] for q in hq] == list(range(1, len(hq) + 1)))
+        check(f"{pid} 부적격 시험은 질문 안 함", all(r["trial"] not in inel for q in hq for r in q["resolves"]))
+        if len(open_trials) >= 2:
+            check(f"{pid} 시험별로 번갈아 고름 (앞의 두 질문이 서로 다른 시험)",
+                  len(hq) >= 2 and hq[0]["resolves"][0]["trial"] != hq[1]["resolves"][0]["trial"])
+        seen, adds_new = set(), True
+        for q in hq:
+            pairs = {(r["trial"], c) for r in q["resolves"] for c in r["criteria"]}
+            adds_new &= not pairs <= seen
+            seen |= pairs
+        check(f"{pid} 질문마다 새로 풀리는 기준이 있음 (같은 기준만 다시 묻는 질문 없음)", adds_new)
+        asked = pipeline.asked_criteria(b)
+        hq2 = pipeline.next_round(b, build_questions=builder, max_questions=5)
+        check(f"{pid} 2라운드: ID가 이어지고 이미 물어본 기준 없음",
+              (not hq2 or hq2[0]["id"] == f"Q{len(hq) + 1}")
+              and all(c not in asked.get(r["trial"], set()) for q in hq2 for r in q["resolves"] for c in r["criteria"]))
+
     print(f"\n{'모두 통과' if failures == 0 else f'실패 {failures}개'}")
     return 1 if failures else 0
 

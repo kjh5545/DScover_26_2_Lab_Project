@@ -245,3 +245,7 @@ data/handoff/*
 
 # 평가 스크립트 출력 (각자 실행하면 생김)
 data/processed/eval_vs_goldset.json
+
+# 질문 파일 (형식 예시 S005만 커밋, 나머지는 각자 생성)
+questions/*
+!questions/S005.json

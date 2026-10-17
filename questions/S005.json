@@ -1,0 +1,71 @@
+{
+  "patient_id": "S005",
+  "questions": [
+    {
+      "text": "diagnosis: chronic migraine 에 대해 알려주세요. (임시 문장)",
+      "needed_info": "diagnosis: chronic migraine",
+      "resolves": [
+        {
+          "trial": "NCT07348783",
+          "criteria": [
+            "I1"
+          ]
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "text": "current medication list 에 대해 알려주세요. (임시 문장)",
+      "needed_info": "current medication list",
+      "resolves": [
+        {
+          "trial": "NCT04063540",
+          "criteria": [
+            "E3",
+            "E6"
+          ]
+        }
+      ],
+      "priority": 2
+    },
+    {
+      "text": "diagnosis: chronic/high frequency migraine 에 대해 알려주세요. (임시 문장)",
+      "needed_info": "diagnosis: chronic/high frequency migraine",
+      "resolves": [
+        {
+          "trial": "NCT07348783",
+          "criteria": [
+            "I3"
+          ]
+        }
+      ],
+      "priority": 3
+    },
+    {
+      "text": "diagnosis 에 대해 알려주세요. (임시 문장)",
+      "needed_info": "diagnosis",
+      "resolves": [
+        {
+          "trial": "NCT04063540",
+          "criteria": [
+            "I1"
+          ]
+        }
+      ],
+      "priority": 4
+    },
+    {
+      "text": "diagnosis: chronic cluster headache 에 대해 알려주세요. (임시 문장)",
+      "needed_info": "diagnosis: chronic cluster headache",
+      "resolves": [
+        {
+          "trial": "NCT07348783",
+          "criteria": [
+            "I4"
+          ]
+        }
+      ],
+      "priority": 5
+    }
+  ]
+}

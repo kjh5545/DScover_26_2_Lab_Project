@@ -168,8 +168,9 @@ def questions_per_trial(bundle: dict, max_questions: int = 5) -> list[dict]:
 def next_round(bundle: dict, build_questions=None, max_questions: int = 5, save: bool = False) -> list[dict]:
     """[5] 이번 라운드 질문을 만들어 bundle["rounds"]에 추가하고, 추가한 질문을 반환한다.
 
-    build_questions: bundle → [{"text", "needed_info", "resolves", "priority"}] 함수 (5번, 해준).
-                     없으면 questions_per_trial (임시). ID는 여기서 Q1, Q2, ... 통번호로 붙인다.
+    build_questions: bundle → [{"text", "needed_info", "resolves", "priority"}] 함수 (5번, 해준:
+                     src.question_builder.questions_for_round). 없으면 questions_per_trial (임시).
+                     ID는 여기서 Q1, Q2, ... 통번호로 붙인다.
     질문이 없으면 라운드를 만들지 않고 [] 반환.
     """
     rounds = bundle.setdefault("rounds", [])
