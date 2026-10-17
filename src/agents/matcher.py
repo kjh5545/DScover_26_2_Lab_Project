@@ -161,7 +161,10 @@ def match(profile: dict, criteria: list[dict], case_text: str | None = None,
 ANSWERS_HEADER = """PATIENT ANSWERS TO SCREENING QUESTIONS (authoritative; newer than the description):
 - Treat each answer as a fact stated by the patient. Quote it as evidence, e.g. 'Q1 answer: "..."'.
 - If the patient says they are unsure or have not checked, keep that criterion "unknown".
-- Judge only from what the answer states; do not infer beyond it."""
+- Judge only from what the answer states; do not infer beyond it.
+- "Prior", "previous", or "history of" in a criterion means before enrollment in this trial. A test or
+  evaluation the patient says was already done for the current problem counts as prior, even if recent
+  (e.g. a scan done last month for the current symptom is a prior evaluation of that symptom)."""
 
 
 def build_user_message(profile: dict, criteria: list[dict], case_text: str | None = None,
