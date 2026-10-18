@@ -22,13 +22,14 @@ def _norm(s: str) -> str:
     return re.sub(r"[\s*`]", "", s)
 
 
-def _section(text: str, start: str, end: str) -> str:
+def _section(text: str, start: str, *ends: str) -> str:
+    """start 다음부터 ends 중 가장 먼저 나오는 곳까지 (칸을 지운 시트도 읽히게)."""
     i = text.find(start)
     if i < 0:
         return ""
     i += len(start)
-    j = text.find(end, i)
-    return text[i:j if j >= 0 else len(text)]
+    found = [j for j in (text.find(e, i) for e in ends) if j >= 0]
+    return text[i:min(found) if found else len(text)]
 
 
 def parse_sheet(path: Path) -> dict:
@@ -48,7 +49,7 @@ def parse_sheet(path: Path) -> dict:
     short_text = " ".join(l.lstrip("> ").strip() for l in short.splitlines()[1:] if l.strip())
 
     # 상세 설명: 안내 문장, 빈 줄, 자리표시를 빼고 남은 줄 (인용 기호 ">"는 있어도 없어도 됨)
-    detailed = _section(text, "## 상세 환자 설명", "**덧붙인 정보 메모")
+    detailed = _section(text, "## 상세 환자 설명", "**덧붙인 정보 메모", "## 판정 작성 방법")
     lines = [l.lstrip(">").strip() for l in detailed.splitlines()[1:]]
     lines = [l for l in lines if l and l != PLACEHOLDER and not l.startswith("원래 문장은 그대로")]
     detailed_text = " ".join(lines)

@@ -166,7 +166,7 @@ def main() -> int:
     if "--rounds" in sys.argv:
         rounds = int(sys.argv[sys.argv.index("--rounds") + 1])
         args = [a for a in args if a != str(rounds)]
-    paths = [Path(a) for a in args] or sorted((ROOT / "screening" / "detailed").glob("*/*_detailed_sheet.md"))
+    paths = [Path(a) for a in args] or sorted((ROOT / "screening" / "detailed").glob("*/*_detailed_sheet*.md"))
     sheets = [parse_sheet(p) for p in paths]
     filled = [s for s in sheets if is_filled(s)]
     print(f"시트 {len(sheets)}개 중 채워진 시트 {len(filled)}개: {[s['patient_id'] for s in filled]}")
