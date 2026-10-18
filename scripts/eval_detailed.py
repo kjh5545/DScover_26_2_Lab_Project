@@ -22,7 +22,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from src.agents.matcher import final_judgment, match_with_rules  # noqa: E402
+from src.agents.matcher import final_judgment, match_with_rules, prompt_tag  # noqa: E402
 from src.llm import spent  # noqa: E402
 from src.testing.detailed_sheet import is_filled, parse_sheet  # noqa: E402
 
@@ -106,7 +106,7 @@ def run_direct(sheet: dict) -> dict:
     criteria = {t["nct_id"]: t["criteria"] for t in make_bundle(pid)["trials"]}
     judged = {}
     for t in sheet["trials"]:
-        cache = OUT / f"{key}_{t['nct_id']}.json"
+        cache = OUT / f"{key}{prompt_tag()}_{t['nct_id']}.json"   # 판정 안내가 바뀌면 새로 판정
         if cache.exists():
             judged[t["nct_id"]] = json.loads(cache.read_text(encoding="utf-8"))
             continue

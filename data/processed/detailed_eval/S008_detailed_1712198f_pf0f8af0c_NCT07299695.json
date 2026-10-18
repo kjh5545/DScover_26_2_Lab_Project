@@ -1,0 +1,114 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "checked_by": "code",
+    "evidence": "환자 나이 60세, 기준 18세 이상 → 해당 (코드 판정)",
+    "sub_condition_notes": [],
+    "llm_verdict": "pass"
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "She was diagnosed with IPF by her pulmonologist 14 months ago and HRCT shows a UIP pattern, but the description does not state that ATS/ERS consensus criteria were formally fulfilled.",
+    "sub_condition_notes": [
+      "Stated IPF diagnosis alone is not enough; the standard/process met is not documented."
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "fail",
+    "evidence": "\"has not been hospitalized for her lung disease\"; \"her breathlessness has worsened gradually over the past 18 months without any sudden change\"; no new ground-glass opacity or consolidation described.",
+    "sub_condition_notes": [
+      "Hospitalised with definite/suspected AE-IPF: not hospitalized (fail).",
+      "Previous diagnosis of IPF: present.",
+      "Acute worsening of dyspnoea <1 month: no, gradual over 18 months, no sudden change (fail).",
+      "CT with new bilateral ground-glass opacity/consolidation: not described; CT shows basal reticular opacities with honeycombing.",
+      "Deterioration not explained by cardiac failure: normal LV function on echo, but the other sub-conditions fail."
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "Ability to understand and sign informed consent is determined at enrollment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No acute worsening is described, and the echocardiogram showed normal left ventricular function, but pulmonary embolism is not mentioned and no acute worsening is stated to be due to either cause.",
+    "sub_condition_notes": [
+      "Uncontrolled heart failure: echo last month showed normal LV function, but not explicitly ruled out as a cause of acute worsening.",
+      "Pulmonary embolism: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No information on hypersensitivity to corticosteroids, IVIG or study treatment components.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "IgA deficiency is not mentioned and no IgA level is given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "IPF diagnosed by a pulmonologist with a UIP pattern on HRCT, but multidisciplinary discussion is not stated.",
+    "sub_condition_notes": [
+      "Multidisciplinary discussion not documented in the description."
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No mention of malignancy or cancer treatment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Current medications are nintedanib, omeprazole and levothyroxine; no corticosteroids or immunosuppressants are listed, but recent use is not explicitly excluded.",
+    "sub_condition_notes": [
+      "Prednisone >20 mg for >14 days: not mentioned.",
+      "Immunosuppressants in the last month: not mentioned.",
+      ">1 mg/kg/d for >7 days in last 15 days: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No mention of participation in another interventional trial.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "pass",
+    "evidence": "\"She is postmenopausal\"; pregnancy is not plausible. Lactation is not mentioned, but postmenopausal status logically rules out documented pregnancy or lactation.",
+    "sub_condition_notes": [
+      "Pregnancy: ruled out by postmenopausal status.",
+      "Lactation: postmenopausal, so not expected."
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "No information on tutorship or curatorship.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "No information on deprivation of liberty or court protection.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Refusal or consent to participate is determined at enrollment.",
+    "sub_condition_notes": []
+  }
+]

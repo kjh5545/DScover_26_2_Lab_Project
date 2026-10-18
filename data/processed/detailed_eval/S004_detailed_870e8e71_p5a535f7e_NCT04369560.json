@@ -1,0 +1,93 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "checked_by": "code",
+    "evidence": "환자 나이 68세, 기준 18세 이상 ~ 90세 이하 → 해당 (코드 판정)",
+    "sub_condition_notes": [],
+    "llm_verdict": "pass"
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "post_enrollment",
+    "evidence": "Ability and willingness to understand and sign informed consent can only be determined after the patient applies.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "\"Cystoscopy two days ago revealed a papillary bladder tumor on the left bladder wall\" and \"Transurethral resection of bladder tumor (TURBT) is scheduled for next week.\" The first option (papillary tumor on cystoscopy scheduled for TURBT) is met, so histologic MIBC is not required.",
+    "sub_condition_notes": [
+      "Papillary tumor identified by cystoscopy and scheduled for TURBT: met.",
+      "Histologically proven MIBC: not applicable, since no histology exists yet, but the criterion is an OR."
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "pass",
+    "evidence": "\"He is fully active, walks about three miles most mornings, and has no restrictions in daily or strenuous activity.\" This describes unrestricted activity, consistent with ECOG 0.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "pass",
+    "evidence": "\"Serum creatinine is 1.0 mg/dL (institutional upper limit of normal: 1.3 mg/dL)\"; 1.0 is below 1.5 x 1.3 = 1.95 mg/dL.",
+    "sub_condition_notes": [
+      "Creatinine < 1.5 x ULN: met.",
+      "Creatinine clearance alternative applies only if creatinine is ≥ 1.5 x ULN, so it is not needed."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information on allergies or hypersensitivity to gadobutrol or ferumoxytol.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No information on claustrophobia.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No mention of implanted devices, prosthetics, or pacemakers.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "pass",
+    "evidence": "\"CT of the chest, abdomen, and pelvis shows no enlarged lymph nodes or evidence of distant metastases.\"",
+    "sub_condition_notes": [
+      "Known metastatic disease: none per CT.",
+      "Suspected metastatic disease: none suggested by the imaging described."
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "checked_by": "code",
+    "evidence": "환자가 남성라 임신·수유 기준에 해당하지 않음 (코드 판정)",
+    "sub_condition_notes": [],
+    "llm_verdict": "pass"
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "\"Urinalysis shows red blood cells but no white blood cells or nitrite, and a urine culture was negative.\" No UTI is present.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No mention of urethral stricture disease. Cystoscopy was performed, but stricture status is not stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "post_enrollment",
+    "evidence": "Depends on the treating physician's judgment of unacceptable risk.",
+    "sub_condition_notes": []
+  }
+]

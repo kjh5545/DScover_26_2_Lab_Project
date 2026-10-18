@@ -1,0 +1,110 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "checked_by": "code",
+    "evidence": "환자 나이 60세, 기준 18세 이상 → 해당 (코드 판정)",
+    "sub_condition_notes": [],
+    "llm_verdict": "pass"
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Diagnosed with IPF by her pulmonologist 14 months ago, with a UIP pattern on HRCT, but the description does not state that ATS/ERS consensus criteria were met.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "fail",
+    "evidence": "\"has not been hospitalized for her lung disease\"; her breathlessness \"worsened gradually over the past 18 months without any sudden change\", so there is no acute worsening and no hospitalisation for AE-IPF.",
+    "sub_condition_notes": [
+      "Hospitalised with definite/suspected AE-IPF: fail, not hospitalized",
+      "Previous/concurrent IPF diagnosis: met (diagnosed 14 months ago)",
+      "Acute worsening of dyspnoea <1 month: not met, gradual over 18 months",
+      "CT with new bilateral ground-glass opacity/consolidation: not described, only reticular opacities with honeycombing",
+      "Not fully explained by cardiac failure/fluid overload: normal LV function on echo, but the other criteria are not met"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "Ability to understand and sign informed consent is determined at enrollment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No acute worsening is described. Echo showed normal left ventricular function, but uncontrolled heart failure and pulmonary embolism are not explicitly addressed.",
+    "sub_condition_notes": [
+      "Uncontrolled heart failure: not stated; normal LV function on echo last month",
+      "Pulmonary embolism: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No information on hypersensitivity to corticosteroids, IVIG or study treatment components.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "IgA level or IgA deficiency is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "IPF diagnosed by her pulmonologist, but multidisciplinary discussion is not stated, and AE-IPF is not diagnosed.",
+    "sub_condition_notes": [
+      "IPF diagnosis: on record by pulmonologist",
+      "Multidisciplinary discussion: not stated",
+      "AE-IPF: no acute exacerbation described"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No mention of malignancy or cancer treatment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Medications listed are nintedanib, omeprazole and levothyroxine; no corticosteroids or immunosuppressants are mentioned, but their absence is not explicitly stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Participation in other interventional trials is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "pass",
+    "evidence": "Patient is a 60-year-old \"postmenopausal\" woman, which logically rules out pregnancy; lactation is not mentioned but is implausible given postmenopausal status.",
+    "sub_condition_notes": [
+      "Pregnancy: ruled out by postmenopausal status",
+      "Lactation: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "Tutorship or curatorship status is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "Deprivation of liberty or court protection is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Refusal or consent decision is determined at enrollment.",
+    "sub_condition_notes": []
+  }
+]

@@ -1,0 +1,67 @@
+{
+  "S004": {
+    "sheet": "screening\\detailed\\인선\\S004_detailed_sheet_filled.md",
+    "direct": {
+      "same": 19,
+      "total": 19,
+      "decided_ok": 9,
+      "decided": 9,
+      "confusion": {
+        "pass->pass": 9,
+        "post_enrollment->post_enrollment": 3,
+        "unknown->unknown": 7
+      },
+      "misses": [],
+      "finals": [
+        {
+          "trial": "NCT04369560",
+          "gold": "insufficient_info",
+          "ai": "insufficient_info"
+        },
+        {
+          "trial": "NCT05646485",
+          "gold": "insufficient_info",
+          "ai": "insufficient_info"
+        }
+      ]
+    }
+  },
+  "S008": {
+    "sheet": "screening\\detailed\\인선\\S008_detailed_sheet_filled.md",
+    "direct": {
+      "same": 26,
+      "total": 27,
+      "decided_ok": 10,
+      "decided": 11,
+      "confusion": {
+        "pass->pass": 9,
+        "unknown->unknown": 14,
+        "fail->fail": 1,
+        "post_enrollment->post_enrollment": 2,
+        "pass->unknown": 1
+      },
+      "misses": [
+        {
+          "trial": "NCT07299695",
+          "id": "E1",
+          "gold": "pass",
+          "ai": "unknown",
+          "ai_evidence": "No acute worsening is described, and the echocardiogram showed normal left ventricular function, but pulmonary embolism is not mentioned and no acute worsening is stated to be due to either cause.",
+          "gold_evidence": "\"worsened gradually over the past 18 months without any sudden change\" → 급성 악화 없음, 시험 1 E3과 같은 근거 (10/18 주희 재판정, 원래 모름)"
+        }
+      ],
+      "finals": [
+        {
+          "trial": "NCT07652658",
+          "gold": "insufficient_info",
+          "ai": "insufficient_info"
+        },
+        {
+          "trial": "NCT07299695",
+          "gold": "ineligible",
+          "ai": "ineligible"
+        }
+      ]
+    }
+  }
+}

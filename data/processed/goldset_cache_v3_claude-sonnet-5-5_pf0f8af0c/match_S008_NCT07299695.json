@@ -1,0 +1,99 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"A 60-year-old woman\"",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "No formal IPF diagnosis is stated. The description gives only symptoms and CT findings (\"bilateral basal reticular opacities with honeycombing\"). Whether ATS/ERS criteria were met is not stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No hospitalisation is mentioned. The description says \"progressive dyspnea\" but gives no duration and no new ground-glass opacity or consolidation on CT. There is no stated IPF diagnosis, and exclusion of cardiac failure or fluid overload is not stated. Investigator ascertainment is also required.",
+    "sub_condition_notes": [
+      "Hospitalised: not stated (unknown)",
+      "Previous or concurrent IPF diagnosis: not formally stated (unknown)",
+      "Acute worsening of dyspnoea <1 month: only \"progressive dyspnea\", duration not given (unknown)",
+      "CT with new bilateral ground-glass opacity/consolidation on a UIP background: only reticular opacities with honeycombing are described (unknown)",
+      "Not fully explained by cardiac failure or fluid overload: not stated (unknown)",
+      "Ascertainment by the responsible Primary Investigator: post_enrollment"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "Ability to understand and sign informed consent is determined at enrollment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "The description does not mention heart failure or pulmonary embolism as the cause of the worsening.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No allergy or hypersensitivity information is given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "IgA level or IgA deficiency is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No definite diagnosis of IPF or AE-IPF, and no multidisciplinary discussion, is stated on record.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "Malignancy and cancer treatment are not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "The medications list is empty, but no statement says the patient has not received corticosteroids or immunosuppressants.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Participation in other trials is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Pregnancy and lactation status are not stated. The patient is a 60-year-old woman, but this does not confirm absence.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "Tutorship or curatorship status is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "Deprivation of liberty or court protection is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Refusal to participate or to give consent is determined only at or after enrollment.",
+    "sub_condition_notes": []
+  }
+]

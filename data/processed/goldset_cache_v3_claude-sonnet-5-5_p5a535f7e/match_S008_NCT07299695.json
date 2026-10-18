@@ -1,0 +1,108 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "A 60-year-old woman; age 60 years meets ≥18.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "No formal IPF diagnosis is stated. The description gives only symptoms and CT findings (bilateral basal reticular opacities with honeycombing), and does not say ATS/ERS criteria were met.",
+    "sub_condition_notes": [
+      "Formal IPF diagnosis per ATS/ERS criteria: not stated"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "The description gives 'progressive dyspnea' but no hospitalisation, no acute worsening of <1 month, no new ground-glass opacity or consolidation on CT, and no exclusion of cardiac failure or fluid overload. Determination by the PI is also required.",
+    "sub_condition_notes": [
+      "Hospitalised: not stated",
+      "Previous or concurrent IPF diagnosis: not formally stated (CT shows honeycombing, which does not establish a diagnosis)",
+      "Acute worsening <1 month: not stated (only 'progressive dyspnea')",
+      "CT with new bilateral ground-glass opacity/consolidation: not described (only reticular opacities with honeycombing)",
+      "Not explained by cardiac failure/fluid overload: not stated",
+      "AE-IPF ascertained by the Primary Investigator: investigator judgment, determined after enrollment"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "Ability to understand and sign informed consent is determined at enrollment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "The description does not mention heart failure or pulmonary embolism.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No allergy or hypersensitivity history is given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No IgA level or IgA deficiency is mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "post_enrollment",
+    "evidence": "This depends on multidisciplinary discussion, which has not been documented and is determined by the study team. The description gives only symptoms and CT findings.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No malignancy or cancer treatment is mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "The medication list is empty, but no explicit statement says she has had no corticosteroids or immunosuppressants. Absence of mention is not a negative.",
+    "sub_condition_notes": [
+      ">20 mg/day prednisone for >14 days in the last month: not stated",
+      "Any immunosuppressant in the last month: not stated",
+      ">1 mg/kg/day for >7 days in the last 15 days: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Participation in another interventional trial is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "She is a 60-year-old woman. Pregnancy and lactation are not mentioned, and age alone does not confirm absence under the conservative rules.",
+    "sub_condition_notes": [
+      "Documented pregnancy: not stated",
+      "Lactation: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "Tutorship or curatorship status is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "Deprivation of liberty or court protection is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness to participate and to give consent is determined at enrollment.",
+    "sub_condition_notes": []
+  }
+]

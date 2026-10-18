@@ -1,0 +1,57 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "The patient is 7 years old (under 16) and male, and the description mentions heavy proteinuria and low albumin. It does not say he has been treated with glucocorticoids or what dose. The profile lists no medications.",
+    "sub_condition_notes": [
+      "Under 16 years, either gender: pass (age 7, male).",
+      "Treated with GC for the first time: not stated, unknown.",
+      "Initial dose of 2 mg/kg/day prednisolone with gradual taper: not stated, unknown."
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "The description does not mention glucocorticoid therapy, its duration, or a vitamin D level. The profile lists no medications.",
+    "sub_condition_notes": [
+      "On glucocorticoid therapy for more than 6 months: not stated, unknown. The 3-week symptom history does not establish treatment duration.",
+      "Vitamin D level of 30 ng/ml or above: no value given, unknown."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No kidney function measures (creatinine, eGFR) are given. Heavy proteinuria and low albumin do not establish whether kidney function is impaired.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "post_enrollment",
+    "evidence": "Compliance with medications or supplements concerns adherence. No medications are listed, and adherence can only be assessed after enrollment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No gallbladder or biliary disease, cystic fibrosis, celiac disease, or other malabsorption is mentioned. Absence of mention is not confirmation.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No history of bleeding disorders, osteomalacia, or other vitamin K-related disorders is mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "Fracture history is not mentioned in the description.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No genetic testing or genetic cause of nephrotic syndrome is described. Nephrotic syndrome is also not formally diagnosed in the description, only the features of it.",
+    "sub_condition_notes": []
+  }
+]

@@ -1,0 +1,42 @@
+시트 4개 중 채워진 시트 2개: ['S004', 'S008']
+
+[S004] screening\detailed\인선\S004_detailed_sheet_filled.md (작성: 인선)
+  상세 설명 1021자, 메모 0줄
+  NCT04369560: {'통과': 7, '등록 후 확인': 2, '모름': 4} / 최종 판단 정보 부족
+  NCT05646485: {'통과': 2, '모름': 3, '등록 후 확인': 1} / 최종 판단 정보 부족
+
+[S008] screening\detailed\인선\S008_detailed_sheet_filled.md (작성: 인선)
+  상세 설명 1025자, 메모 0줄
+  NCT07652658: {'통과': 7, '모름': 5} / 최종 판단 정보 부족
+  NCT07299695: {'통과': 3, '모름': 9, '탈락': 1, '등록 후 확인': 2} / 최종 판단 부적격
+
+######## S004 ########
+
+  == A. 상세 설명으로 바로 판정 ==
+  기준 일치: 19/19
+  정답이 통과·탈락인 기준: 9/9 맞힘 (통과 9/9, 탈락 0/0)
+  혼동표 (행: 정답, 열: AI)      통과      탈락      모름  등록 후 확인
+                        통과       9       0       0       0
+                        모름       0       0       7       0
+                   등록 후 확인       0       0       0       3
+  최종 판단 NCT04369560: 정답 정보 부족 / AI 정보 부족 ✔
+  최종 판단 NCT05646485: 정답 정보 부족 / AI 정보 부족 ✔
+
+######## S008 ########
+
+  == A. 상세 설명으로 바로 판정 ==
+  기준 일치: 26/27
+  정답이 통과·탈락인 기준: 10/11 맞힘 (통과 9/10, 탈락 1/1)
+  혼동표 (행: 정답, 열: AI)      통과      탈락      모름  등록 후 확인
+                        통과       9       0       1       0
+                        탈락       0       1       0       0
+                        모름       0       0      14       0
+                   등록 후 확인       0       0       0       2
+  [NCT07299695 E1] 정답=통과 vs AI=모름
+     AI 근거: No acute worsening is described, and the echocardiogram showed normal left ventricular function, but pulmonary embolism is not mentioned and no acute worsening 
+     정답 근거: "worsened gradually over the past 18 months without any sudden change" → 급성 악화 없음, 시험 1 E3과 같은 근거 (10/18 주희 재판정, 원래 모름)
+  최종 판단 NCT07652658: 정답 정보 부족 / AI 정보 부족 ✔
+  최종 판단 NCT07299695: 정답 부적격 / AI 부적격 ✔
+
+저장: C:\Users\kangj\claude_code\26_2_DScover\data\processed\detailed_eval\summary.json
+AI 호출 4번, 비용 약 $0.077

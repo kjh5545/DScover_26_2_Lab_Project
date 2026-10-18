@@ -1,0 +1,57 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is given at enrollment; it cannot be determined beforehand.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "The patient is 73 years old, which is outside the 18-70 range.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "The description gives symptoms (\"painless, curtain-like loss of vision in the right eye, preceded by flashes of light and floaters\") but no confirmed RRD diagnosis and no data on break location or the need for retinotomy.",
+    "sub_condition_notes": [
+      "RRD (primary or recurrent): no formal diagnosis on record, so unknown.",
+      "Inferior retinal breaks between 4 and 8 o'clock within the detached area: not stated, so unknown.",
+      "Requiring inferior retinotomy: not stated, so unknown."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information on break locations or on indications for scleral buckling.",
+    "sub_condition_notes": [
+      "Only anterior breaks or dialysis: not stated.",
+      "Meets indications for scleral buckling: not stated."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No information on the location of any retinal breaks relative to the detached area.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No history of corneal ulcers, glaucoma, uveitis or other serious eye disease is mentioned; absence of mention does not rule them out.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No history of epilepsy or psychiatric disease is mentioned; the history list is empty.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "post_enrollment",
+    "evidence": "This depends on the researcher's judgment of suitability.",
+    "sub_condition_notes": []
+  }
+]

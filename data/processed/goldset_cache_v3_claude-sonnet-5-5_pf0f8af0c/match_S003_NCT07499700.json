@@ -1,0 +1,92 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "The description gives a 3-week history of periorbital edema and frothy urine, heavy proteinuria and low albumin. It states no formal NS diagnosis, no renal biopsy, and no corticosteroid response. 'Minimal change disease' appears only as a suspected diagnosis.",
+    "sub_condition_notes": [
+      "Clinical NS diagnosis: not formally stated; the findings are suggestive only (unknown)",
+      "Biopsy-confirmed MCD/FSGS within 7/10 years: no biopsy documented (unknown)",
+      "Corticosteroid responsiveness: not stated, and the profile lists no medications (unknown)"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "There is no mention of corticosteroid therapy or of complete remission. The profile lists no medications.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "The description does not state whether a secondary cause of NS has been excluded. The suspected diagnosis cannot be used as evidence.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "Genetic testing and family history are not mentioned.",
+    "sub_condition_notes": [
+      "Known genetic defects: not mentioned (unknown)",
+      "Family history of NS: not mentioned (unknown)"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "Prior B-cell depleting therapy is not mentioned. The profile lists no medications, but prior treatment history is not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Allergy history is not mentioned.",
+    "sub_condition_notes": [
+      "Allergy to monoclonal antibodies: not mentioned (unknown)",
+      "Predisposition to allergies: not mentioned (unknown)"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "Immunosuppressant use is not mentioned. The medications list is empty, but that is not an explicit statement of no prior use.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Receipt of immunoglobulin or immunomodulators is not mentioned.",
+    "sub_condition_notes": [
+      "Immunoglobulin within 90 days: not mentioned (unknown)",
+      "Immunomodulators such as thymosin within 4 weeks: not mentioned (unknown)"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Participation in other trials, past or planned, is not mentioned.",
+    "sub_condition_notes": [
+      "Recent investigational drug participation: not mentioned (unknown)",
+      "Plans to join another trial: not mentioned (unknown)"
+    ]
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Only urinalysis (heavy proteinuria) and low serum albumin are given. Liver and kidney function values such as creatinine and transaminases are not reported.",
+    "sub_condition_notes": [
+      "Liver function: no values (unknown)",
+      "Kidney function: no creatinine or eGFR values (unknown)"
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "No hepatitis B, hepatitis C, syphilis or HIV results or history are mentioned.",
+    "sub_condition_notes": [
+      "HBsAg: not reported (unknown)",
+      "HCV antibodies: not reported (unknown)",
+      "Treponema pallidum antibodies: not reported (unknown)",
+      "HIV history or antibodies: not reported (unknown)"
+    ]
+  }
+]

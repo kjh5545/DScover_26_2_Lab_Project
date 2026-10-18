@@ -1,0 +1,83 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"A 68-year-old man\" falls within 18 to 90 years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "post_enrollment",
+    "evidence": "Ability and willingness to understand and sign informed consent can only be determined at enrollment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "CT urography shows \"a mass in the bladder wall\", but no cystoscopy finding of a papillary tumor, TURBT scheduling, or histologic proof of MIBC is described.",
+    "sub_condition_notes": [
+      "Papillary tumor on cystoscopy scheduled for TURBT: not stated",
+      "Histologically proven MIBC, clinically localized and resectable: not stated"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "No ECOG performance status is given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "unknown",
+    "evidence": "No creatinine or creatinine clearance values are given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information about hypersensitivity to gadobutrol or ferumoxytol.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "Claustrophobia is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "Implanted devices, prostheses, or pacemakers are not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Metastatic disease is not mentioned. The CT urography finding is only a bladder wall mass, and staging is not described.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "The patient is a man, so pregnancy, lactation, and plans to conceive do not apply.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Urinary tract infection status is not stated. Hematuria is described as painless, but infection is not addressed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Urethral stricture disease is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "post_enrollment",
+    "evidence": "Unacceptable risk is a judgment made by the treating physician.",
+    "sub_condition_notes": []
+  }
+]

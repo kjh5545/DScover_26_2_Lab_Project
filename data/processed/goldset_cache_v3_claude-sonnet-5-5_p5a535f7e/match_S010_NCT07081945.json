@@ -1,0 +1,54 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is given at enrollment; nothing in the description addresses it.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "The patient is 73 years old, outside the required range of 18 to 70 years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "The description gives symptoms (curtain-like vision loss, flashes, floaters) but no formal RRD diagnosis. Break locations and the need for an inferior retinotomy are not stated.",
+    "sub_condition_notes": [
+      "RRD diagnosis: not formally on record; the symptoms only suggest it.",
+      "Inferior retinal breaks between 4 and 8 o'clock within the detached area: not stated.",
+      "Retinotomy required inferiorly between 4 and 8 o'clock: not stated."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "Break locations and indications for scleral buckling are not described.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "The locations of any retinal breaks and their relation to the detached area are not described.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No pre-existing eye diseases (corneal ulcer, glaucoma, uveitis, etc.) are mentioned. Their absence is not stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No history of epilepsy or psychiatric disease is mentioned. The history list is empty, which does not confirm absence.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "post_enrollment",
+    "evidence": "This depends on the researcher's judgment of suitability.",
+    "sub_condition_notes": []
+  }
+]

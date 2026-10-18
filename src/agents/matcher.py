@@ -7,8 +7,11 @@
 - 실험 5에서 v3 규칙 3개로 Opus 기준 일치 100% 달성
 - 프롬프트 v3 (2026-10-12): goldset v1.1 불일치 분석 반영 — 환자 원문 입력, 추정 진단 사용 금지(규칙 9),
   검사 수치 미기재 = unknown(규칙 10), 연구자 판단·순응도·수술 적합성·기대 여명 = post_enrollment(규칙 4)
+- 규칙 11·12 (2026-10-18, 시험 중): 정해진 기준·절차를 거친 진단은 명시돼야 통과(11), 진단 X가 있어도
+  다른 병 Y가 없다고 보지 않음(12). 상세 환자(S008)에서 AI가 추론으로 통과를 준 3건을 보고 추가
 """
 
+import hashlib
 import json
 
 from src.llm import ask_json
@@ -74,6 +77,20 @@ Judgment rules (follow strictly):
    scores) that are not given are "unknown" — a prior result may exist in the
    patient's records. Use "post_enrollment" only when the criterion itself
    requires a measurement at screening or on the study day.
+11. When a criterion requires a diagnosis made by a specific standard or
+   process (e.g. "fulfils ATS/ERS criteria", "confirmed by multidisciplinary
+   discussion", "histologically proven", "as defined by ... criteria"), a
+   stated diagnosis alone is not enough. Judge that part "pass"/"fail" only if
+   the description states the standard or process was met; do not rebuild it
+   from individual findings. Whether the standard or process was met is a
+   fact on record, so the verdict is "unknown", not "post_enrollment".
+   If another explicitly stated fact already decides
+   the criterion (e.g. "not hospitalized" for a criterion requiring
+   hospitalization), judge from that fact.
+12. Having diagnosis X does not rule out a different coexisting condition. An
+   exclusion such as "ILD other than IPF" or "other cause of ..." stays
+   "unknown" unless the description states it is absent (rule 4 still applies
+   first).
 
 Respond with ONLY a JSON array, one entry per criterion, no other text:
 [
@@ -141,6 +158,15 @@ Respond with ONLY a JSON array, one entry per criterion, no other text:
   },
   ...
 ]"""
+
+
+V3_PROMPT_SHA = "bf6d408a"   # 평가 세트 172/173 (2026-10-15)에 쓴 v3 SYSTEM_PROMPT
+
+
+def prompt_tag(system_prompt: str | None = None) -> str:
+    """결과 저장 이름에 붙일 판정 안내 표시. v3 그대로면 "" (기존 저장 결과 재사용), 바뀌었으면 "_p<해시 8자리>"."""
+    sha = hashlib.sha1((system_prompt or SYSTEM_PROMPT).encode("utf-8")).hexdigest()[:8]
+    return "" if sha == V3_PROMPT_SHA else f"_p{sha}"
 
 
 def match(profile: dict, criteria: list[dict], case_text: str | None = None,

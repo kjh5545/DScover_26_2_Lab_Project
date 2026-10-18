@@ -1,0 +1,48 @@
+  배치 제출: msgbatch_01YM34GXPpxR58U7mA6WzBNy (15건). 결과를 기다리는 중...
+  진행: 처리 중 15, 완료 0, 실패 0
+  진행: 처리 중 15, 완료 0, 실패 0
+  진행: 처리 중 15, 완료 0, 실패 0
+  진행: 처리 중 15, 완료 0, 실패 0
+  진행: 처리 중 15, 완료 0, 실패 0
+  진행: 처리 중 0, 완료 15, 실패 0
+배치 완료: 15/15건 저장, 실제 비용 약 $0.13
+
+== v1 프롬프트 (회의 전 규칙) ==
+기준 일치: 143/173 (82.7%)
+최종 판단 일치: 13/15
+탈락 확정 시 질문 억제: 6/6
+
+== v2 프롬프트 (회의 결정 반영, claude-opus-5) ==
+기준 일치: 161/173 (93.1%)
+최종 판단 일치: 15/15
+탈락 확정 시 질문 억제: 6/6
+
+== v2 + 코드 판정 (claude-opus-5) ==
+기준 일치: 161/173 (93.1%)
+최종 판단 일치: 15/15
+탈락 확정 시 질문 억제: 6/6
+출력 검사로 고친 기준: 0
+
+== v2 프롬프트 (claude-sonnet-5-5, --compare-v2) ==
+결과 없음 (캐시가 없고 --skip-v3 이거나 아직 실행 전)
+최종 판단 일치: 0/0
+탈락 확정 시 질문 억제: 0/0
+
+== v3 프롬프트 (원문 입력 + goldset v1.1, claude-sonnet-5-5) ==
+기준 일치: 170/173 (98.3%)
+최종 판단 일치: 15/15
+탈락 확정 시 질문 억제: 6/6
+
+== v3 + 코드 판정 (claude-sonnet-5-5) ← 파이프라인과 같은 방식 ==
+기준 일치: 171/173 (98.8%)
+최종 판단 일치: 15/15
+탈락 확정 시 질문 억제: 6/6
+출력 검사로 고친 기준: 0
+
+== v3 + 코드 판정 (claude-sonnet-5-5) ← 파이프라인과 같은 방식에서 남은 불일치 ==
+[S006_NCT07654647 E1] 정답=모름 vs AI=탈락
+   AI 근거: The patient has a "black necrotic eschar on the nasal mucosa" with periorbital swelling an
+[S008_NCT07299695 E4] 정답=모름 vs AI=등록 후 확인
+   AI 근거: This depends on multidisciplinary discussion, which has not been documented and is determi
+
+저장: data\processed\eval_vs_goldset.json

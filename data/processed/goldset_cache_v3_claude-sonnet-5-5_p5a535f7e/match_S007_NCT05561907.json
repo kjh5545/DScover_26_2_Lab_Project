@@ -1,0 +1,94 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "No malignancy is mentioned in the description. Absence of mention is not proof that none exists, and the suspected diagnosis cannot be used to rule it out.",
+    "sub_condition_notes": [
+      "Periampullary malignancy: not stated",
+      "Distal gastric cancer: not stated"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "The description states 'projectile non-bilious vomiting after feeding', which is post-prandial vomiting (1 of 4). Abdominal pain, inability to tolerate PO and imaging consistent with GOO are not mentioned, so the 2-of-4 requirement is not confirmed.",
+    "sub_condition_notes": [
+      "Post-prandial vomiting: present",
+      "Abdominal pain: not stated",
+      "Inability to tolerate PO: not stated",
+      "Imaging consistent with GOO: not stated"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No GOOSS score or description of oral intake level is given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "fail",
+    "evidence": "Age is 3 months, so the patient is not over 18 years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "post_enrollment",
+    "evidence": "Life expectancy is a clinician's estimate. Failed duodenal stenting is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I6",
+    "verdict": "post_enrollment",
+    "evidence": "Surgical candidacy and fitness for general anesthesia are evaluated by the clinical team.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I7",
+    "verdict": "unknown",
+    "evidence": "No malignancy or disease resectability is described.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "fail",
+    "evidence": "Age is 3 months, which is under 18 years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "Sex is not stated and pregnancy is not mentioned. A 3-month-old is very unlikely to be pregnant, but this is not stated in the description.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No information is given on obstruction distal to the Ligament of Treitz.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Other luminal strictures of the GI tract are not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No surgical history is recorded. The profile's history is empty, which is not an explicit statement of no prior surgery.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Ability to complete quality of life surveys is not stated. Inferring that an infant cannot complete them would be a developmental assumption.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Ascites is not mentioned in the description.",
+    "sub_condition_notes": []
+  }
+]

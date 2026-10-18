@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from src.agents.matcher import (SYSTEM_PROMPT, SYSTEM_PROMPT_V2, build_user_message, final_judgment, match,
-                                validate_judgments, validate_shape)
+                                prompt_tag, validate_judgments, validate_shape)
 from src.llm import MODEL, batch_ask_json
 from src.tools.rule_checks import apply_code_checks, code_judgments
 
@@ -31,7 +31,8 @@ _CANDIDATES = [ROOT / "goldset_v1.json", ROOT / "goldset" / "goldset_v1.json"]
 GOLD = next(p for p in _CANDIDATES if p.exists())
 V1_CACHE = ROOT / "data" / "processed" / "eval_cache"      # 규칙 반영 전 판정 (베이스라인)
 V2_CACHE = ROOT / "data" / "processed" / "goldset_cache"   # 규칙 반영 후 판정 (claude-opus-5)
-V3_CACHE = ROOT / "data" / "processed" / f"goldset_cache_v3_{MODEL}"  # v3 프롬프트 + 환자 원문
+# v3 프롬프트 + 환자 원문. 판정 안내를 고치면 폴더 이름에 해시가 붙어 v3 결과(파이프라인 시작점)를 덮지 않음
+V3_CACHE = ROOT / "data" / "processed" / f"goldset_cache_v3_{MODEL}{prompt_tag()}"
 
 EN2KO = {"pass": "통과", "fail": "탈락", "unknown": "모름", "post_enrollment": "등록 후 확인"}
 FINAL_EN2KO = {"eligible": "적격", "probably_eligible": "적격 가능 (등록 후 확인 필요)",

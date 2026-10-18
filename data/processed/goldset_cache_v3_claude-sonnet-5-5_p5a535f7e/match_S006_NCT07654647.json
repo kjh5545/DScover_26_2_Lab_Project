@@ -1,0 +1,74 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "A 45-year-old man; age 45 years meets the 18-year minimum.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "No facial bone defects from cystic or tumoral osteolytic lesions are described. Findings are fever, facial pain, nasal eschar and periorbital swelling.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No acquired or congenital facial deformity, bony defect or facial asymmetry is stated. Periorbital swelling is not a described deformity.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "No mention of a need for patient-specific 3D-printed titanium implants for maxillofacial reconstruction.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "unknown",
+    "evidence": "No aesthetic indication or microgenia is mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I6",
+    "verdict": "post_enrollment",
+    "evidence": "Ability to provide written informed consent is determined at enrollment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "fail",
+    "evidence": "The patient has a \"black necrotic eschar on the nasal mucosa\" with periorbital swelling and facial pain, which are active pathological lesions at presentation.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "The patient is 45 years old, so he is not below 18.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No history of radiotherapy is mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Vitamin D status is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "fail",
+    "evidence": "The description states \"poorly controlled type 2 diabetes\", which matches uncontrolled diabetes mellitus.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness and ability to comply with follow-up is assessed after the patient applies.",
+    "sub_condition_notes": []
+  }
+]

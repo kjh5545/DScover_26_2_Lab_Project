@@ -1,0 +1,47 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "checked_by": "code",
+    "evidence": "환자 나이 68세, 기준 50세 이상 → 해당 (코드 판정)",
+    "sub_condition_notes": [],
+    "llm_verdict": "pass"
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "He has smoked about one pack a day for 45 years and is still smoking, which is about 45 pack-years (≥15).",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No occupation or occupational exposure history is described (textile worker, painter, dry cleaner, etc.).",
+    "sub_condition_notes": [
+      "The inclusion may be satisfied by any one of the listed occupations, but none is mentioned.",
+      "Duration of occupational exposure is not given."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No prior cancer history is mentioned. The current bladder tumor is suspected but has no histopathological diagnosis. The description does not state that he has had no prior bladder, kidney, or prostate cancer.",
+    "sub_condition_notes": [
+      "Prior bladder cancer: not stated",
+      "Prior kidney cancer: not stated",
+      "Prior prostate cancer: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "The hematuria began three weeks ago, and CT urography and cystoscopy have already been done for it. This is the current evaluation, and the description does not say whether there was any evaluation of hematuria in the prior 2 years. Whether the current workup counts as a 'prior evaluation' is not defined.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness and ability to provide informed consent can only be determined when the patient is approached for enrollment.",
+    "sub_condition_notes": []
+  }
+]

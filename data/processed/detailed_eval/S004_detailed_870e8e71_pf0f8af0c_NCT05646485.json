@@ -1,0 +1,52 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "checked_by": "code",
+    "evidence": "환자 나이 68세, 기준 50세 이상 → 해당 (코드 판정)",
+    "sub_condition_notes": [],
+    "llm_verdict": "pass"
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "He has smoked about one pack a day for 45 years and is still smoking, which is about 45 pack-years and ≥15.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No occupation or occupational exposure history is described.",
+    "sub_condition_notes": [
+      "Textile worker: not mentioned.",
+      "Painter: not mentioned.",
+      "Dry cleaner: not mentioned.",
+      "Duration of ≥15 years of exposure: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "The description does not state whether he has had prior bladder, kidney, or prostate cancer. No histopathological diagnosis has been established for the current bladder tumor, and the current suspected tumor is not a prior history.",
+    "sub_condition_notes": [
+      "Prior bladder cancer: not stated.",
+      "Prior kidney cancer: not stated.",
+      "Prior prostate cancer: not stated."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "The current hematuria began three weeks ago and cystoscopy was done two days ago, so he has had a recent evaluation. The description does not say whether an earlier evaluation of micro or gross hematuria took place within the last 2 years, and whether the current workup counts is unclear.",
+    "sub_condition_notes": [
+      "Microhematuria evaluation within 2 years: not stated.",
+      "Gross hematuria evaluation within 2 years: the current evaluation began within the past three weeks, but whether it counts as a prior evaluation is unclear."
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "post_enrollment",
+    "evidence": "Whether he provides informed consent can only be determined when he is approached for enrollment.",
+    "sub_condition_notes": []
+  }
+]

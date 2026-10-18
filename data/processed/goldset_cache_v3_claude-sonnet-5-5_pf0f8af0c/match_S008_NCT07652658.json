@@ -1,0 +1,84 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "A 60-year-old woman; age 60 ≥ 40.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "The description gives symptoms and CT findings (bilateral basal reticular opacities with honeycombing) but no formal IPF diagnosis on record. Suspected diagnosis is an inference only.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No medications or antifibrotic therapy mentioned; medications list is empty, and the IPF diagnosis itself is not established.",
+    "sub_condition_notes": [
+      "Receiving stable-dose antifibrotic: not stated",
+      "Not receiving local standard of care: not stated"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "No FVC value given; a prior result may exist in records.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "unknown",
+    "evidence": "No DLCO value given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No statement ruling out other ILD; having a suspected IPF does not exclude a different coexisting ILD.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "CT describes reticular opacities with honeycombing but does not mention emphysema extent.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "Presentation is progressive dyspnea and dry cough; no mention of acute exacerbation either way.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No information about respiratory tract infection.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "History is empty; no mention of coronary events or interventions.",
+    "sub_condition_notes": [
+      "ACS/MI: not stated",
+      "Unstable angina: not stated",
+      "PCI/CABG: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No mention of heart failure; dyspnea is described without a stated cause.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No mention of organ transplantation history or lung transplant listing.",
+    "sub_condition_notes": [
+      "History of organ transplantation: not stated",
+      "Likely to receive lung transplantation: not stated; a clinician's determination"
+    ]
+  }
+]

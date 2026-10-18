@@ -1,0 +1,94 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "A 29-year-old woman; age 29 is within 18 to 60.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "No formal diagnosis of Graves' disease is on record; the description lists only symptoms and exam findings (palpitations, heat intolerance, weight loss, tremor, tachycardia, diffuse non-tender goiter). Graves' is only a suspected diagnosis.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No mention of prior treatment or relapse; the history and medications are empty, and no Graves' diagnosis is on record.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No workup of etiology is described, and no statement rules out other causes of hyperthyroidism.",
+    "sub_condition_notes": [
+      "Toxic multinodular goiter: not stated",
+      "Toxic adenoma: not stated",
+      "Hashimoto's thyroiditis: not stated",
+      "Subacute thyroiditis: not stated",
+      "Iodine-induced hyperthyroidism: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No eye findings or thyroid eye disease are mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No mention of thyroid cancer or of any planned surgery.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No liver or kidney tests (ALT, AST, creatinine) are given; labs are empty.",
+    "sub_condition_notes": [
+      "ALT/AST: not given",
+      "Creatinine: not given"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No WBC value is given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Tachycardia and palpitations are described, but heart failure and NYHA class are not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "No infection history is mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "The patient is a 29-year-old woman, but pregnancy, breastfeeding, pregnancy plans, and contraception are not stated.",
+    "sub_condition_notes": [
+      "Pregnant: not stated",
+      "Breastfeeding: not stated",
+      "Planning pregnancy: not stated",
+      "Ability to comply with contraception: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "No information on current or previous participation in clinical studies.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness to participate and comply with follow-up is determined after the patient applies.",
+    "sub_condition_notes": []
+  }
+]
