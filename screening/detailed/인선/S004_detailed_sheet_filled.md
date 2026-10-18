@@ -29,9 +29,9 @@
 |---|---|---|---|---|---|---|
 | I1 | 선정 | 18 to 90 years of age | 18–90세 | 통과 | "A 68-year-old man" |  |
 | I2 | 선정 | Able to understand and willing to sign a written informed consent document | 서면 동의 가능 | 등록 후 확인 | 서면 동의 관련 질문은 등록 후 확인으로 통일하기로  |  |
-| I3 | 선정 | A papillary tumor identified by cystoscopy that has been scheduled for TURBT OR histologically proven MIBC that is clinically localized and amenable to surgical resection with curative intent. | 방광내시경에서 유두상 종양이 확인되어 경요도 방광종양절제술(TURBT)이 예정됨, 또는 조직검사로 확인된 근침윤성 방광암(MIBC)으로 국소적이고 완치 목적 수술이 가능 | 통과 | "Cystoscopy two days ago revealed a papillary bladder tumor" + "TURBT is scheduled for next week" → OR 앞부분 충족 |  |
+| I3 | 선정 | A papillary tumor identified by cystoscopy that has been scheduled for TURBT OR histologically proven MIBC that is clinically localized and amenable to surgical resection with curative intent. | 방광내시경에서 유두상 종양이 확인되어 경요도 방광종양절제술(TURBT)이 예정됨, 또는 조직검사로 확인된 근침윤성 방광암(MIBC)으로 국소적이고 완치 목적 수술이 가능 | 통과 | "Cystoscopy two days ago revealed a papillary bladder tumor" + "Transurethral resection of bladder tumor (TURBT) is scheduled for next week" → OR 앞부분 충족 |  |
 | I4 | 선정 | Performance status of ECOG 0 or 1 | 전신 상태(ECOG) 0 또는 1 (일상생활 거의 지장 없음) | 통과 | "He is fully active, walks about three miles most mornings, and has no restrictions in daily or strenuous activity." |  |
-| I5 | 선정 | Normal renal function as defined as creatinine less than 1.5 x institutional upper limit of normal (ULN) OR creatinine clearance greater than or equal to 50 mL/min/1.73 m2 by Cockcroft-Gault formula for subjects with creatinine levels greater than or equal to 1.5 x ULN. | 신장 기능 정상 (크레아티닌 정상 상한 1.5배 미만, 또는 크레아티닌 청소율 50 이상) | 통과 | "Serum creatinine is 1.0 mg/dL (institutional upper limit of normal 1.3 mg/dL)." |  |
+| I5 | 선정 | Normal renal function as defined as creatinine less than 1.5 x institutional upper limit of normal (ULN) OR creatinine clearance greater than or equal to 50 mL/min/1.73 m2 by Cockcroft-Gault formula for subjects with creatinine levels greater than or equal to 1.5 x ULN. | 신장 기능 정상 (크레아티닌 정상 상한 1.5배 미만, 또는 크레아티닌 청소율 50 이상) | 통과 | "Serum creatinine is 1.0 mg/dL (institutional upper limit of normal: 1.3 mg/dL)." |  |
 | E1 | 제외 | Severe hypersensitivity reaction to gadobutrol or ferumoxytol. | 조영제(가도부트롤, 페루목시톨)에 심한 과민반응 | 모름 | CT 검사를 받은 기록은 있지만, CT 검사의 종류에 따라 조영제를 사용하지 않았을 수도 있으므로 확인 필요 | "이전에 CT 검사를 받으실 때 조영제라는 약물을 투여받으신 적이 있나요?" |
 | E2 | 제외 | Severe claustrophobia that will prevent completion of the MRI study. | MRI를 끝까지 받기 어려운 심한 폐소공포증 | 모름 | MRI 또는 폐소공포증 관련 정보 없음 | "평소에 좁거나 밀폐된 공간에 있을 때 심한 불안감이나 공포를 느끼시나요?" |
 | E3 | 제외 | Any MRI-non-compatible implanted device, prosthetic or pacemaker. | MRI와 호환되지 않는 체내 기기, 보형물, 심박조율기 | 모름 | 관련 정보 명시되어 있지 않음 | "몸속에 심박조율기나 인공관절 등 의료기기 또는 인공보형물을 삽입한 적이 있으신가요? 있다면 해당 장치가 MRI 검사를 받을 수 있는 제품인지 안내받으신 적이 있나요?" |
@@ -65,12 +65,12 @@
 | I2 | 선정 | Smoking: ≥15 pack-year smoking history | 흡연력 15갑년 이상 (하루 갑 수 × 흡연 연수) | 통과 | "He has smoked about one pack a day for 45 years and is still smoking." |  |
 | I3 | 선정 | Occupation:≥ 15 years of occupational exposures including: textile worker, painter, dry cleaners | 섬유 노동자, 도장공, 세탁업 등 직업적 노출 15년 이상 | 모름 | 환자의 직업 관련 정보 없음 | "섬유·직물 제조업, 페인트 도장 작업, 또는 세탁업 관련 업무에 약 15년 이상 종사하신 적이 있나요?" |
 | E1 | 제외 | Prior history of bladder, kidney, or prostate cancer | 방광암, 신장암, 전립선암 병력 | 모름 | 정확한 암 진단 기록 명시되어 있지 않음 | "과거에 방광암, 신장암, 또는 전립선암을 진단받은 적이 있나요?" |
-| E2 | 제외 | Prior evaluation of micro or gross hematuria within the last 2 years | 최근 2년 이내 현미경적 또는 육안적 혈뇨로 검사(평가)를 받은 적 있음 | 탈락 | "The hematuria began three weeks ago" + "CT urography reveals a mass" + "Cystoscopy two days ago" → 최근 2년 안에 혈뇨 검사를 받음 | "최근 2년 이내 혈뇨로 인해 검사를 받으신 적이 있나요?" |
+| E2 | 제외 | Prior evaluation of micro or gross hematuria within the last 2 years | 최근 2년 이내 현미경적 또는 육안적 혈뇨로 검사(평가)를 받은 적 있음 | 모름 | "The hematuria began three weeks ago" + "CT urography reveals a mass" + "Cystoscopy two days ago" → 최근 검사는 있으나 혈뇨 때문에 받은 검사라고 명시되지 않음 | "최근 2년 안에 소변에 피가 섞여 나오는 것 때문에 검사나 진료를 받으신 적이 있나요? 이번에 받으신 CT나 방광내시경도 포함해서 알려 주세요." |
 | E3 | 제외 | Do not provide informed consent | 동의하지 않음 | 등록 후 확인 | 동의 여부는 등록 후 확인 |  |
 
-**최종 판단** (적격 / 부적격 / 정보 부족 / 적격 가능(등록 후 확인 필요)): 부적격
+**최종 판단** (적격 / 부적격 / 정보 부족 / 적격 가능(등록 후 확인 필요)): 정보 부족
 
-**최종 판단 이유 (한 줄):** E2 기준에 의해 최종 탈락 처리 됨
+**최종 판단 이유 (한 줄):** 명확한 탈락 사유가 없음. 2개를 제외한 나머지 기준들이 전부 모름임.
 
 **헷갈렸던 점:**
 - 
