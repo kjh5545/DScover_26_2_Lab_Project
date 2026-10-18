@@ -1,0 +1,34 @@
+{
+  "age": 60,
+  "age_unit": "years",
+  "sex": "F",
+  "suspected_diagnosis": "Idiopathic pulmonary fibrosis (usual interstitial pneumonia pattern), stable chronic progression without acute exacerbation",
+  "findings": [
+    "progressive dyspnea",
+    "dry cough",
+    "clubbing of the fingers",
+    "breathlessness has worsened gradually over the past 18 months without any sudden change"
+  ],
+  "history": [
+    "diagnosed with idiopathic pulmonary fibrosis by her pulmonologist 14 months ago",
+    "followed in the outpatient clinic and has not been hospitalized for her lung disease",
+    "postmenopausal",
+    "former smoker (20 pack-years, quit 10 years ago)",
+    "reflux",
+    "hypothyroidism"
+  ],
+  "medications": [
+    "nintedanib 150 mg twice daily (same dose for the past eight months)",
+    "omeprazole 20 mg daily",
+    "levothyroxine 75 mcg daily"
+  ],
+  "labs": [
+    "Chest CT: bilateral basal reticular opacities with honeycombing",
+    "HRCT: usual interstitial pneumonia pattern with fibrosis predominating and only minimal emphysema",
+    "ANA negative",
+    "FVC 68% of predicted",
+    "hemoglobin-corrected DLCO 42% of predicted",
+    "Echocardiogram last month: normal left ventricular function"
+  ],
+  "id": "S008_detailed_1712198f"
+}

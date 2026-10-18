@@ -1,0 +1,110 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "checked_by": "code",
+    "evidence": "환자 나이 60세, 기준 18세 이상 → 해당 (코드 판정)",
+    "sub_condition_notes": [],
+    "llm_verdict": "pass"
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "\"diagnosed with idiopathic pulmonary fibrosis by her pulmonologist 14 months ago\"; HRCT shows \"usual interstitial pneumonia pattern\" with honeycombing and negative ANA. The description does not explicitly cite ATS/ERS criteria, but the diagnosis and HRCT pattern are on record.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "fail",
+    "evidence": "Patient is not hospitalised: \"has not been hospitalized for her lung disease\". Dyspnea worsened \"gradually over the past 18 months without any sudden change\", so there is no acute worsening of <1 month. No new ground-glass opacity or consolidation is described.",
+    "sub_condition_notes": [
+      "Previous/concurrent IPF diagnosis: met",
+      "Acute worsening <1 month: not met (gradual over 18 months)",
+      "CT with new bilateral GGO/consolidation on UIP: not met (only reticular opacities with honeycombing)",
+      "Not fully explained by cardiac failure: normal LV function, but the other criteria fail",
+      "Hospitalised with definite/suspected AE-IPF: not met"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "Ability to understand and sign informed consent is determined at enrollment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "No acute worsening is described (\"without any sudden change\"), and the \"echocardiogram last month showed normal left ventricular function\". Pulmonary embolism is not mentioned, but there is no acute worsening to attribute to it.",
+    "sub_condition_notes": [
+      "Uncontrolled heart failure: not present, normal LV function",
+      "Pulmonary embolism: not mentioned; no acute worsening"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No information on allergies or hypersensitivity to corticosteroids, IVIG, or their components.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "IgA level or IgA deficiency is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "pass",
+    "evidence": "IPF diagnosed by her pulmonologist 14 months ago, with a supporting HRCT UIP pattern, honeycombing, and negative ANA, so the IPF diagnosis is definite on record.",
+    "sub_condition_notes": [
+      "Definite IPF diagnosis: documented",
+      "Definite AE-IPF diagnosis: not applicable as an alternative; the IPF diagnosis suffices for this criterion as written"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No malignancy or cancer treatment is mentioned; absence of mention does not rule it out.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Medications listed are nintedanib, omeprazole and levothyroxine, with no corticosteroids or immunosuppressants mentioned. The list may not be exhaustive.",
+    "sub_condition_notes": [
+      "Prednisone >20 mg for >14 days in the last month: not mentioned",
+      "Immunosuppressant in the last month: not mentioned",
+      "Corticosteroid >1 mg/kg/d for >7 days in the last 15 days: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Participation in another interventional trial is not stated. Nintedanib is described as ongoing clinical treatment, not a trial.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "pass",
+    "evidence": "Patient is a 60-year-old \"postmenopausal\" woman, so pregnancy and lactation are logically ruled out.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "Legal guardianship or curatorship status is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "Deprivation of liberty or court protection is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Refusal to participate or to provide consent is determined only when the patient is approached for the study.",
+    "sub_condition_notes": []
+  }
+]

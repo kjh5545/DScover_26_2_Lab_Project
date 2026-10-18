@@ -1,0 +1,682 @@
+{
+  "patient_id": "S008",
+  "case_text": "A 60-year-old woman presents with progressive dyspnea, dry cough, and clubbing of the fingers. Chest CT reveals bilateral basal reticular opacities with honeycombing.",
+  "profile": {
+    "age": 60,
+    "age_unit": "years",
+    "sex": "F",
+    "suspected_diagnosis": "Idiopathic pulmonary fibrosis (usual interstitial pneumonia pattern)",
+    "findings": [
+      "progressive dyspnea",
+      "dry cough",
+      "clubbing of the fingers"
+    ],
+    "history": [],
+    "medications": [],
+    "labs": [
+      "Chest CT reveals bilateral basal reticular opacities with honeycombing"
+    ],
+    "id": "S008"
+  },
+  "trials": [
+    {
+      "nct_id": "NCT07652658",
+      "title": "NCT07652658",
+      "criteria": [
+        {
+          "id": "I1",
+          "type": "inclusion",
+          "text": "Age ≥ 40 years"
+        },
+        {
+          "id": "I2",
+          "type": "inclusion",
+          "text": "IPF diagnosis"
+        },
+        {
+          "id": "I3",
+          "type": "inclusion",
+          "text": "Participants with IPF receiving locally approved antifibrotic therapies at a stable dose, or participants with IPF not receiving local standard of care"
+        },
+        {
+          "id": "I4",
+          "type": "inclusion",
+          "text": "FVC ≥ 45% predicted of normal"
+        },
+        {
+          "id": "I5",
+          "type": "inclusion",
+          "text": "DLCO corrected for hemoglobin ≥ 25% predicted of normal"
+        },
+        {
+          "id": "E1",
+          "type": "exclusion",
+          "text": "ILD other than IPF"
+        },
+        {
+          "id": "E2",
+          "type": "exclusion",
+          "text": "The extent of emphysema is greater than the extent of fibrotic changes on chest HRCT scan"
+        },
+        {
+          "id": "E3",
+          "type": "exclusion",
+          "text": "Acute exacerbation of IPF"
+        },
+        {
+          "id": "E4",
+          "type": "exclusion",
+          "text": "Lower respiratory tract infection requiring treatment"
+        },
+        {
+          "id": "E5",
+          "type": "exclusion",
+          "text": "Acute coronary syndrome/acute myocardial infarction, unstable angina ± coronary intervention with Percutaneous Coronary Intervention, or Coronary Artery Bypass Grafting"
+        },
+        {
+          "id": "E6",
+          "type": "exclusion",
+          "text": "Heart failure"
+        },
+        {
+          "id": "E7",
+          "type": "exclusion",
+          "text": "History of organ transplantation or is likely to receive lung transplantation"
+        }
+      ],
+      "judgments": [
+        {
+          "criterion_id": "I1",
+          "verdict": "pass",
+          "checked_by": "code",
+          "evidence": "환자 나이 60세, 기준 40세 이상 → 해당 (코드 판정)",
+          "sub_condition_notes": [],
+          "llm_verdict": "pass"
+        },
+        {
+          "criterion_id": "I2",
+          "verdict": "pass",
+          "evidence": "Q1 answer: \"14개월 전에 폐 전문의에게 특발성 폐섬유증이라고 진단받았어요.\" (diagnosed with IPF by a pulmonologist 14 months ago). The patient is unsure about biopsy or multidisciplinary review, but the IPF diagnosis is on record.",
+          "sub_condition_notes": []
+        },
+        {
+          "criterion_id": "I3",
+          "verdict": "pass",
+          "evidence": "Q4 answer: \"닌테다닙 150mg을 하루 두 번, 8개월째 같은 용량으로 먹고 있어요.\" (nintedanib 150 mg twice daily, same dose for 8 months). This is an approved antifibrotic at a stable dose.",
+          "sub_condition_notes": [
+            "Receiving an approved antifibrotic (nintedanib) at a stable dose: met",
+            "The alternative (not receiving standard of care) is not needed"
+          ]
+        },
+        {
+          "criterion_id": "I4",
+          "verdict": "pass",
+          "evidence": "Q5 answer: \"폐활량이 예상치의 68%\" (lung capacity 68% of predicted). The patient reports this as an FVC-type value, which is ≥ 45%. The result sheet is not in hand, but the reported value meets the threshold.",
+          "sub_condition_notes": []
+        },
+        {
+          "criterion_id": "I5",
+          "verdict": "unknown",
+          "evidence": "Q5 answer: \"확산능력은 42% 정도\" (diffusing capacity about 42%). This is above 25%, but it is unclear whether it was corrected for hemoglobin, and no hemoglobin value is given.",
+          "sub_condition_notes": [
+            "DLCO 42% reported, which is above 25%",
+            "Hemoglobin correction not confirmed"
+          ]
+        },
+        {
+          "criterion_id": "E1",
+          "verdict": "unknown",
+          "evidence": "Q1 answer states an IPF diagnosis, but the patient does not know whether a biopsy or multidisciplinary discussion was done. No other ILD is mentioned, and absence of mention does not exclude one.",
+          "sub_condition_notes": []
+        },
+        {
+          "criterion_id": "E2",
+          "verdict": "pass",
+          "evidence": "Q6 answer: \"폐기종이 아주 조금 있다고는 들었는데, 폐가 딱딱하게 굳는 섬유화가 주된 문제라고 하셨어요.\" (only a little emphysema; fibrosis is the main problem). Emphysema is therefore not greater than fibrosis.",
+          "sub_condition_notes": []
+        },
+        {
+          "criterion_id": "E3",
+          "verdict": "pass",
+          "evidence": "Q2 answer: \"갑자기 심해진 적은 없고 지난 1년 반 동안 서서히 조금씩 더 숨이 차졌어요. 폐 때문에 입원한 적도 없어요.\" (no sudden worsening, gradual progression, no hospitalization).",
+          "sub_condition_notes": []
+        },
+        {
+          "criterion_id": "E4",
+          "verdict": "pass",
+          "evidence": "Q7 answer: \"그런 감염으로 치료받았다는 기억은 따로 없어요. 입원한 적도 없고요.\" (no recollection of treatment for a lung infection, no hospitalization).",
+          "sub_condition_notes": []
+        },
+        {
+          "criterion_id": "E5",
+          "verdict": "pass",
+          "evidence": "Q3 answer: \"심근경색이나 협심증, 스텐트나 수술을 받은 적은 없는 걸로 알아요.\" (no MI, angina, stent, or surgery as far as the patient knows).",
+          "sub_condition_notes": [
+            "Acute coronary syndrome/MI/unstable angina: denied",
+            "PCI/CABG: denied"
+          ]
+        },
+        {
+          "criterion_id": "E6",
+          "verdict": "pass",
+          "evidence": "Q3 answer: \"지난달 심장 초음파를 했는데 심장 기능은 정상이라고 들었어요.\" (echocardiogram last month, cardiac function normal). No heart failure treatment is reported.",
+          "sub_condition_notes": []
+        },
+        {
+          "criterion_id": "E7",
+          "verdict": "unknown",
+          "evidence": "Q8 answer: \"장기이식 수술을 받은 적은 없어요. 폐이식에 대해 들은 적이 있는지는 잘 모르겠어요.\" No prior transplant, but the patient is unsure whether lung transplant was discussed.",
+          "sub_condition_notes": [
+            "History of organ transplantation: denied (pass)",
+            "Likely to receive lung transplantation: unknown"
+          ]
+        }
+      ],
+      "final_judgment": "insufficient_info"
+    },
+    {
+      "nct_id": "NCT07299695",
+      "title": "NCT07299695",
+      "criteria": [
+        {
+          "id": "I1",
+          "type": "inclusion",
+          "text": "Patients ≥ 18 years of age"
+        },
+        {
+          "id": "I2",
+          "type": "inclusion",
+          "text": "Patients with IPF diagnosis that fulfils ATS/ERS Consensus Criteria."
+        },
+        {
+          "id": "I3",
+          "type": "inclusion",
+          "text": "Patients hospitalised with a definite or suspected AE-IPF diagnosis, as defined by the international working group criteria and as ascertained by the responsible Primary Investigator. / The criteria of IPF-AE are as follows: / Previous or concurrent diagnosis of IPF / Acute worsening or development of dyspnoea typically < 1 month duration / Computed tomography with new bilateral ground-glass opacity and/or consolidation superimposed on a background pattern consistent with usual interstitial pneumonia pattern / Deterioration not fully explained by cardiac failure or fluid overload Patients who fail to meet all 4 criteria due to missing computed tomography should be considered as having \"suspected Acute Exacerbation\". / If the diagnosis of IPF is not previously established, this criterion can be met by the presence of radiologic and/or histopathologic changes consistent with usual interstitial pneumonia pattern on the current evaluation. / If no previous computed tomography is available, the qualifier \"new\" can be dropped from the third AE-IPF criterion."
+        },
+        {
+          "id": "I4",
+          "type": "inclusion",
+          "text": "Patient able to understand and sign a written informed consent form. In case of incapacity of the patient, the written informed consent form will be signed by the patients' legally authorized representative."
+        },
+        {
+          "id": "E1",
+          "type": "exclusion",
+          "text": "Patients with acute worsening due to uncontrolled heart failure or pulmonary embolism."
+        },
+        {
+          "id": "E2",
+          "type": "exclusion",
+          "text": "Patients with known hypersensitivity to corticosteroids, IVIG or any component of the study treatment."
+        },
+        {
+          "id": "E3",
+          "type": "exclusion",
+          "text": "Patients with known IgA deficiency (IgA level <7 mg/dL)- to preclude IVIG reactions."
+        },
+        {
+          "id": "E4",
+          "type": "exclusion",
+          "text": "Patients without a definite diagnosis of IPF or AE-IPF based on clinical, radiological, laboratory evaluation, and multidisciplinary discussion."
+        },
+        {
+          "id": "E5",
+          "type": "exclusion",
+          "text": "Patients with active malignancy or currently receiving cancer treatment, except for basal cell or squamous cell skin cancer or low-risk prostate cancer (T1 or T2a stage with PSA <10 ng/dL). These criteria are aligned with current guidelines."
+        },
+        {
+          "id": "E6",
+          "type": "exclusion",
+          "text": "Patients that have received treatment for >14 days within the preceding month with >20mg daily prednisone (or equivalent) or any treatment during the last month with immunosuppressants (e.g., cyclophosphamide, mycophenolate etc.) according to already published therapeutic protocols or > 1 mg/kg/d from more than 7 days in the last 15 days."
+        },
+        {
+          "id": "E7",
+          "type": "exclusion",
+          "text": "Patients participating to another interventional clinical trial."
+        },
+        {
+          "id": "E8",
+          "type": "exclusion",
+          "text": "Patients with documented pregnancy or lactation."
+        },
+        {
+          "id": "E9",
+          "type": "exclusion",
+          "text": "Patients under tutorship or curatorship."
+        },
+        {
+          "id": "E10",
+          "type": "exclusion",
+          "text": "Patients deprived of liberty or under court protection."
+        },
+        {
+          "id": "E11",
+          "type": "exclusion",
+          "text": "Patients who refuse to participate or decline to provide written informed consent."
+        }
+      ],
+      "judgments": [
+        {
+          "criterion_id": "I1",
+          "verdict": "pass",
+          "checked_by": "code",
+          "evidence": "환자 나이 60세, 기준 18세 이상 → 해당 (코드 판정)",
+          "sub_condition_notes": [],
+          "llm_verdict": "pass"
+        },
+        {
+          "criterion_id": "I2",
+          "verdict": "unknown",
+          "evidence": "Q1 answer: \"14개월 전에 폐 전문의에게 특발성 폐섬유증이라고 진단받았어요. 폐 조직검사나 여러 의사 협진을 받았는지는 잘 모르겠어요.\" CT shows honeycombing, but whether the diagnosis fulfils ATS/ERS criteria (multidisciplinary discussion, biopsy) is not confirmed.",
+          "sub_condition_notes": [
+            "IPF diagnosis reported by a pulmonologist",
+            "Fulfilment of ATS/ERS consensus criteria not confirmed"
+          ]
+        },
+        {
+          "criterion_id": "I3",
+          "verdict": "fail",
+          "evidence": "Q2 answer: \"갑자기 심해진 적은 없고 지난 1년 반 동안 서서히 조금씩 더 숨이 차졌어요. 폐 때문에 입원한 적도 없어요.\" The patient is not hospitalised and the dyspnea is gradual, not an acute worsening of <1 month.",
+          "sub_condition_notes": [
+            "Previous or concurrent IPF diagnosis: reported (Q1)",
+            "Acute worsening of dyspnea <1 month: not met (gradual over 1.5 years)",
+            "New bilateral ground-glass opacity/consolidation on CT: not described; CT shows only reticular opacities with honeycombing",
+            "Not fully explained by cardiac failure: Q3 says heart function normal on echo",
+            "Hospitalised with definite or suspected AE-IPF: no hospitalisation"
+          ]
+        },
+        {
+          "criterion_id": "I4",
+          "verdict": "post_enrollment",
+          "evidence": "Ability to understand and sign informed consent is determined after the patient applies.",
+          "sub_condition_notes": []
+        },
+        {
+          "criterion_id": "E1",
+          "verdict": "pass",
+          "evidence": "Q2 answer: no sudden worsening, only gradual progression over 1.5 years. Q3 answer: \"지난달 심장 초음파를 했는데 심장 기능은 정상이라고 들었어요.\" Pulmonary embolism is not mentioned, but there is no acute worsening to attribute to it.",
+          "sub_condition_notes": [
+            "Uncontrolled heart failure: no, heart function normal on echo",
+            "Pulmonary embolism as cause of acute worsening: no acute worsening reported"
+          ]
+        },
+        {
+          "criterion_id": "E2",
+          "verdict": "unknown",
+          "evidence": "No information on hypersensitivity to corticosteroids, IVIG or study treatment components.",
+          "sub_condition_notes": []
+        },
+        {
+          "criterion_id": "E3",
+          "verdict": "unknown",
+          "evidence": "No information on IgA level or IgA deficiency.",
+          "sub_condition_notes": []
+        },
+        {
+          "criterion_id": "E4",
+          "verdict": "unknown",
+          "evidence": "Q1 answer: IPF diagnosed by a pulmonologist 14 months ago, but \"폐 조직검사나 여러 의사 협진을 받았는지는 잘 모르겠어요.\" Multidisciplinary discussion is unconfirmed.",
+          "sub_condition_notes": [
+            "Clinical/radiological diagnosis present",
+            "Multidisciplinary discussion unknown"
+          ]
+        },
+        {
+          "criterion_id": "E5",
+          "verdict": "unknown",
+          "evidence": "No mention of malignancy or cancer treatment in the description or answers.",
+          "sub_condition_notes": []
+        },
+        {
+          "criterion_id": "E6",
+          "verdict": "pass",
+          "evidence": "Q4 answer: \"스테로이드나 면역억제제는 안 먹어요.\" Current medications are nintedanib, omeprazole and levothyroxine.",
+          "sub_condition_notes": [
+            "Prednisone >20 mg for >14 days in the last month: no steroids",
+            "Immunosuppressants in the last month: none",
+            "High-dose steroids >1 mg/kg/d: no steroids"
+          ]
+        },
+        {
+          "criterion_id": "E7",
+          "verdict": "unknown",
+          "evidence": "Participation in another interventional trial is not mentioned. Nintedanib is reported as a regular medication, but trial participation is not stated.",
+          "sub_condition_notes": []
+        },
+        {
+          "criterion_id": "E8",
+          "verdict": "unknown",
+          "evidence": "Pregnancy and lactation are not mentioned. The patient is 60 years old, but menopausal status is not stated, and lactation is not addressed.",
+          "sub_condition_notes": []
+        },
+        {
+          "criterion_id": "E9",
+          "verdict": "unknown",
+          "evidence": "No information on tutorship or curatorship.",
+          "sub_condition_notes": []
+        },
+        {
+          "criterion_id": "E10",
+          "verdict": "unknown",
+          "evidence": "No information on deprivation of liberty or court protection.",
+          "sub_condition_notes": []
+        },
+        {
+          "criterion_id": "E11",
+          "verdict": "post_enrollment",
+          "evidence": "Refusal to participate or to give consent is determined only after the patient applies and is approached for consent.",
+          "sub_condition_notes": []
+        }
+      ],
+      "final_judgment": "ineligible"
+    }
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "questions": [
+        {
+          "text": "지금까지 의사에게 폐 질환에 대해 어떤 병명(예: 특발성 폐섬유증, 간질성 폐질환, 폐기종)을 들으셨나요? 폐 조직검사나 여러 의사의 협의 진료를 받으신 적이 있다면 함께 알려주세요.",
+          "needed_info": "폐 질환 진단명(특발성 폐섬유증 여부, 다른 간질성 폐질환, 폐기종)과 진단 과정",
+          "resolves": [
+            {
+              "trial": "NCT07652658",
+              "criteria": [
+                "I2",
+                "E1"
+              ]
+            },
+            {
+              "trial": "NCT07299695",
+              "criteria": [
+                "I2",
+                "E4"
+              ]
+            }
+          ],
+          "priority": 1,
+          "id": "Q1"
+        },
+        {
+          "text": "최근 한 달 사이에 숨찬 증상이 갑자기 심해져서 입원하거나 응급 치료를 받으신 적이 있나요?",
+          "needed_info": "최근 호흡곤란의 급격한 악화 및 입원·응급 치료 여부",
+          "resolves": [
+            {
+              "trial": "NCT07652658",
+              "criteria": [
+                "E3"
+              ]
+            },
+            {
+              "trial": "NCT07299695",
+              "criteria": [
+                "I3"
+              ]
+            }
+          ],
+          "priority": 2,
+          "id": "Q2"
+        },
+        {
+          "text": "심근경색이나 협심증으로 치료받았거나 스텐트 시술·관상동맥 우회로 수술을 받은 적, 또는 심부전(심장 기능이 약해 숨이 차고 다리가 붓는 병)으로 치료받은 적이 있나요?",
+          "needed_info": "심장 질환 병력(심근경색·협심증·시술/수술·심부전)",
+          "resolves": [
+            {
+              "trial": "NCT07652658",
+              "criteria": [
+                "E5",
+                "E6"
+              ]
+            },
+            {
+              "trial": "NCT07299695",
+              "criteria": [
+                "E1"
+              ]
+            }
+          ],
+          "priority": 3,
+          "id": "Q3"
+        },
+        {
+          "text": "지금 드시거나 최근 한 달 사이에 드신 약을 알려주세요. 특히 폐섬유증 치료제(니answers 닌테다닙, 피르페니돈), 스테로이드(프레드니손 등), 면역억제제가 있는지 알려주세요.",
+          "needed_info": "현재 및 최근 복용 약(항섬유화제, 스테로이드, 면역억제제)",
+          "resolves": [
+            {
+              "trial": "NCT07652658",
+              "criteria": [
+                "I3"
+              ]
+            },
+            {
+              "trial": "NCT07299695",
+              "criteria": [
+                "E6"
+              ]
+            }
+          ],
+          "priority": 4,
+          "id": "Q4"
+        },
+        {
+          "text": "폐기능검사(숨을 크게 불어 폐 능력을 재는 검사)나 폐확산능검사를 받으신 적이 있나요? 있다면 결과지를 가지고 계신지 알려주세요.",
+          "needed_info": "폐기능검사(FVC, DLCO) 시행 여부와 결과지 보유 여부",
+          "resolves": [
+            {
+              "trial": "NCT07652658",
+              "criteria": [
+                "I4",
+                "I5"
+              ]
+            }
+          ],
+          "priority": 5,
+          "id": "Q5"
+        }
+      ],
+      "answers": [
+        {
+          "question_id": "Q1",
+          "answer": "14개월 전에 폐 전문의에게 특발성 폐섬유증이라고 진단받았어요. 폐 조직검사나 여러 의사 협진을 받았는지는 잘 모르겠어요."
+        },
+        {
+          "question_id": "Q2",
+          "answer": "아니요, 갑자기 심해진 적은 없고 지난 1년 반 동안 서서히 조금씩 더 숨이 차졌어요. 폐 때문에 입원한 적도 없어요."
+        },
+        {
+          "question_id": "Q3",
+          "answer": "심근경색이나 협심증, 스텐트나 수술을 받은 적은 없는 걸로 알아요. 지난달 심장 초음파를 했는데 심장 기능은 정상이라고 들었어요."
+        },
+        {
+          "question_id": "Q4",
+          "answer": "닌테다닙 150mg을 하루 두 번, 8개월째 같은 용량으로 먹고 있어요. 그 외에 역류 때문에 오메프라졸 20mg, 갑상선저하증 때문에 레보티록신 75mcg를 매일 먹어요. 스테로이드나 면역억제제는 안 먹어요."
+        },
+        {
+          "question_id": "Q5",
+          "answer": "네, 검사를 받았어요. 폐활량이 예상치의 68%, 확산능력은 42% 정도라고 들었어요. 결과지를 제가 가지고 있는지는 잘 모르겠어요."
+        }
+      ],
+      "changed": [
+        {
+          "trial": "NCT07652658",
+          "criterion_id": "I2",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "Q1"
+          ]
+        },
+        {
+          "trial": "NCT07652658",
+          "criterion_id": "I3",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "Q4"
+          ]
+        },
+        {
+          "trial": "NCT07652658",
+          "criterion_id": "I4",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "Q5"
+          ]
+        },
+        {
+          "trial": "NCT07652658",
+          "criterion_id": "I5",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "Q5"
+          ]
+        },
+        {
+          "trial": "NCT07652658",
+          "criterion_id": "E3",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "Q2"
+          ]
+        },
+        {
+          "trial": "NCT07652658",
+          "criterion_id": "E5",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "Q3"
+          ]
+        },
+        {
+          "trial": "NCT07652658",
+          "criterion_id": "E6",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "Q3"
+          ]
+        },
+        {
+          "trial": "NCT07299695",
+          "criterion_id": "I3",
+          "from": "unknown",
+          "to": "fail",
+          "source": [
+            "Q2"
+          ]
+        },
+        {
+          "trial": "NCT07299695",
+          "criterion_id": "E1",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "Q3"
+          ]
+        },
+        {
+          "trial": "NCT07299695",
+          "criterion_id": "E6",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "Q4"
+          ]
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "questions": [
+        {
+          "text": "흉부 CT 결과를 들으실 때 폐기종(폐 조직이 망가져 공기가 찬 상태)이 있다는 말을 들으셨나요? CT 결과지를 가지고 계신지도 알려주세요.",
+          "needed_info": "흉부 CT에서 폐기종 언급 여부와 CT 결과지 보유 여부",
+          "resolves": [
+            {
+              "trial": "NCT07652658",
+              "criteria": [
+                "E2"
+              ]
+            }
+          ],
+          "priority": 1,
+          "id": "Q6"
+        },
+        {
+          "text": "폐렴이나 기관지염처럼 폐나 기관지에 생기는 감염으로 항생제 등 치료를 받으신 적이 있나요?",
+          "needed_info": "치료가 필요했던 하기도(폐·기관지) 감염 경험",
+          "resolves": [
+            {
+              "trial": "NCT07652658",
+              "criteria": [
+                "E4"
+              ]
+            }
+          ],
+          "priority": 2,
+          "id": "Q7"
+        },
+        {
+          "text": "장기이식 수술을 받은 적이 있거나, 의사에게 폐이식을 받게 될 수 있다는 말을 들으신 적이 있나요?",
+          "needed_info": "장기이식 수술 경험 및 폐이식 가능성에 대한 설명 여부",
+          "resolves": [
+            {
+              "trial": "NCT07652658",
+              "criteria": [
+                "E7"
+              ]
+            }
+          ],
+          "priority": 3,
+          "id": "Q8"
+        }
+      ],
+      "answers": [
+        {
+          "question_id": "Q6",
+          "answer": "폐기종이 아주 조금 있다고는 들었는데, 폐가 딱딱하게 굳는 섬유화가 주된 문제라고 하셨어요. CT 결과지를 제가 가지고 있는지는 잘 모르겠어요."
+        },
+        {
+          "question_id": "Q7",
+          "answer": "그런 감염으로 치료받았다는 기억은 따로 없어요. 입원한 적도 없고요."
+        },
+        {
+          "question_id": "Q8",
+          "answer": "장기이식 수술을 받은 적은 없어요. 폐이식에 대해 들은 적이 있는지는 잘 모르겠어요."
+        }
+      ],
+      "changed": [
+        {
+          "trial": "NCT07652658",
+          "criterion_id": "E2",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "Q6"
+          ]
+        },
+        {
+          "trial": "NCT07652658",
+          "criterion_id": "E4",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "Q7"
+          ]
+        },
+        {
+          "trial": "NCT07652658",
+          "criterion_id": "I5",
+          "from": "pass",
+          "to": "unknown",
+          "source": [
+            "full"
+          ]
+        }
+      ]
+    }
+  ]
+}

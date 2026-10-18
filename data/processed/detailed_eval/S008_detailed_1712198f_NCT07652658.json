@@ -1,0 +1,82 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "checked_by": "code",
+    "evidence": "환자 나이 60세, 기준 40세 이상 → 해당 (코드 판정)",
+    "sub_condition_notes": [],
+    "llm_verdict": "pass"
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "\"She was diagnosed with idiopathic pulmonary fibrosis by her pulmonologist 14 months ago\"; HRCT shows UIP pattern.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "\"She has taken nintedanib 150 mg twice daily at the same dose for the past eight months.\" Nintedanib is an approved antifibrotic at a stable dose.",
+    "sub_condition_notes": [
+      "Receiving approved antifibrotic: yes (nintedanib)",
+      "Stable dose: same dose for 8 months"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "pass",
+    "evidence": "\"FVC 68% of predicted\" (≥ 45%).",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "pass",
+    "evidence": "\"hemoglobin-corrected DLCO 42% of predicted\" (≥ 25%).",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "Diagnosed with IPF; HRCT shows a UIP pattern and \"her ANA is negative\". No other ILD is described.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "\"HRCT shows a usual interstitial pneumonia pattern with fibrosis predominating and only minimal emphysema\" – emphysema extent is not greater than fibrosis.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "pass",
+    "evidence": "\"her breathlessness has worsened gradually over the past 18 months without any sudden change\" and she \"has not been hospitalized for her lung disease\".",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No mention of any lower respiratory tract infection or its treatment. Her symptoms are chronic dyspnea and dry cough only.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No cardiac history of ACS, MI, unstable angina, PCI or CABG is mentioned. Absence of mention is not confirmation.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "\"An echocardiogram last month showed normal left ventricular function.\" There is no formal statement about heart failure, and heart failure with preserved ejection fraction is not excluded.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No mention of prior organ transplantation or of plans or listing for lung transplantation.",
+    "sub_condition_notes": [
+      "History of organ transplantation: not mentioned",
+      "Likely to receive lung transplantation: not mentioned (clinician judgment)"
+    ]
+  }
+]

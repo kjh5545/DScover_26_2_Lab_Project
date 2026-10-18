@@ -1,0 +1,628 @@
+{
+  "patient_id": "S004",
+  "case_text": "A 68-year-old man with a long smoking history presents with painless gross hematuria. CT urography reveals a mass in the bladder wall.",
+  "profile": {
+    "age": 68,
+    "age_unit": "years",
+    "sex": "M",
+    "suspected_diagnosis": "Bladder cancer (urothelial/transitional cell carcinoma of the bladder)",
+    "findings": [
+      "painless gross hematuria",
+      "mass in the bladder wall"
+    ],
+    "history": [
+      "long smoking history"
+    ],
+    "medications": [],
+    "labs": [
+      "CT urography reveals a mass in the bladder wall"
+    ],
+    "id": "S004"
+  },
+  "trials": [
+    {
+      "nct_id": "NCT04369560",
+      "title": "NCT04369560",
+      "criteria": [
+        {
+          "id": "I1",
+          "type": "inclusion",
+          "text": "18 to 90 years of age"
+        },
+        {
+          "id": "I2",
+          "type": "inclusion",
+          "text": "Able to understand and willing to sign a written informed consent document"
+        },
+        {
+          "id": "I3",
+          "type": "inclusion",
+          "text": "A papillary tumor identified by cystoscopy that has been scheduled for TURBT OR histologically proven MIBC that is clinically localized and amenable to surgical resection with curative intent."
+        },
+        {
+          "id": "I4",
+          "type": "inclusion",
+          "text": "Performance status of ECOG 0 or 1"
+        },
+        {
+          "id": "I5",
+          "type": "inclusion",
+          "text": "Normal renal function as defined as creatinine less than 1.5 x institutional upper limit of normal (ULN) OR creatinine clearance greater than or equal to 50 mL/min/1.73 m2 by Cockcroft-Gault formula for subjects with creatinine levels greater than or equal to 1.5 x ULN."
+        },
+        {
+          "id": "E1",
+          "type": "exclusion",
+          "text": "Severe hypersensitivity reaction to gadobutrol or ferumoxytol."
+        },
+        {
+          "id": "E2",
+          "type": "exclusion",
+          "text": "Severe claustrophobia that will prevent completion of the MRI study."
+        },
+        {
+          "id": "E3",
+          "type": "exclusion",
+          "text": "Any MRI-non-compatible implanted device, prosthetic or pacemaker."
+        },
+        {
+          "id": "E4",
+          "type": "exclusion",
+          "text": "Known or suspected metastatic disease."
+        },
+        {
+          "id": "E5",
+          "type": "exclusion",
+          "text": "Women with active pregnancy, lactation or plans to conceive"
+        },
+        {
+          "id": "E6",
+          "type": "exclusion",
+          "text": "Untreated urinary tract infection"
+        },
+        {
+          "id": "E7",
+          "type": "exclusion",
+          "text": "Known urethral stricture disease that would prohibit placement of foley catheter."
+        },
+        {
+          "id": "E8",
+          "type": "exclusion",
+          "text": "Any other conditions considered as unacceptable risk by the treating physician"
+        }
+      ],
+      "judgments": [
+        {
+          "criterion_id": "I1",
+          "verdict": "pass",
+          "checked_by": "code",
+          "evidence": "환자 나이 68세, 기준 18세 이상 ~ 90세 이하 → 해당 (코드 판정)",
+          "sub_condition_notes": [],
+          "llm_verdict": "pass"
+        },
+        {
+          "criterion_id": "I2",
+          "verdict": "post_enrollment",
+          "evidence": "Ability and willingness to understand and sign informed consent can only be determined after the patient applies.",
+          "sub_condition_notes": []
+        },
+        {
+          "criterion_id": "I3",
+          "verdict": "pass",
+          "evidence": "Q1 answer: \"이틀 전 방광내시경에서 종양이 보인다고 해서 다음 주에 제거 수술을 받기로 했어요. 아직 조직검사 결과로 암이라고 확진받은 건 아니에요.\" Tumor seen at cystoscopy and TURBT scheduled next week. The criterion is an OR, so histologic MIBC is not required. Whether the tumor is papillary is not stated.",
+          "sub_condition_notes": [
+            "Option A (tumor identified by cystoscopy, scheduled for TURBT): the patient reports a tumor seen at cystoscopy and TURBT scheduled. The papillary morphology is not stated, so the study team should confirm it.",
+            "Option B (histologically proven MIBC): not met, since there is no histologic confirmation. It is not needed because the criterion is an OR."
+          ]
+        },
+        {
+          "criterion_id": "I4",
+          "verdict": "pass",
+          "evidence": "Q8 answer: \"네, 다 혼자 할 수 있어요. 낮에 누워 지내지 않고, 아침마다 3마일 정도 걸을 만큼 활동에 지장이 없어요.\" This is consistent with ECOG 0 (fully active, no restriction).",
+          "sub_condition_notes": []
+        },
+        {
+          "criterion_id": "I5",
+          "verdict": "pass",
+          "evidence": "Q10 answer: \"최근에 받았고 크레아티닌 수치가 1.0으로 정상이라고 들었어요.\" A creatinine of 1.0 is below 1.5 x ULN.",
+          "sub_condition_notes": [
+            "Creatinine < 1.5 x ULN: met by the patient-reported value of 1.0, described as normal.",
+            "Creatinine clearance alternative: only applies if creatinine is >= 1.5 x ULN, so not applicable."
+          ]
+        },
+        {
+          "criterion_id": "E1",
+          "verdict": "pass",
+          "evidence": "Q12 answer: \"그런 주사를 맞아본 기억이 없고, 그런 알레르기 반응도 없었어요.\"",
+          "sub_condition_notes": [
+            "Gadobutrol: no severe reaction reported.",
+            "Ferumoxytol: no severe reaction reported."
+          ]
+        },
+        {
+          "criterion_id": "E2",
+          "verdict": "unknown",
+          "evidence": "Q7 answer: \"MRI는 받아본 적이 없어서 잘 모르겠어요.\" The patient has never had an MRI and is unsure about claustrophobia.",
+          "sub_condition_notes": []
+        },
+        {
+          "criterion_id": "E3",
+          "verdict": "unknown",
+          "evidence": "Q6 answer: \"잘 모르겠어요. 따로 그런 걸 넣었다는 얘기는 들어본 적이 없어요.\" The patient is unsure whether any implanted device is present.",
+          "sub_condition_notes": [
+            "Implanted device: unsure.",
+            "Prosthetic: unsure.",
+            "Pacemaker: unsure."
+          ]
+        },
+        {
+          "criterion_id": "E4",
+          "verdict": "pass",
+          "evidence": "Q9 answer: \"아니요, 그런 말은 못 들었어요. CT 검사에서도 다른 곳으로 퍼진 소견은 없다고 했어요.\"",
+          "sub_condition_notes": [
+            "Known metastatic disease: none reported.",
+            "Suspected metastatic disease: none reported, and CT showed no spread."
+          ]
+        },
+        {
+          "criterion_id": "E5",
+          "verdict": "pass",
+          "checked_by": "code",
+          "evidence": "환자가 남성라 임신·수유 기준에 해당하지 않음 (코드 판정)",
+          "sub_condition_notes": [],
+          "llm_verdict": "pass"
+        },
+        {
+          "criterion_id": "E6",
+          "verdict": "pass",
+          "evidence": "Q11 answer: \"따갑거나 열이 나는 증상은 없었어요. 소변 배양검사에서도 균이 안 나왔다고 들었고, 감염 때문에 치료받을 건 없어요.\"",
+          "sub_condition_notes": []
+        },
+        {
+          "criterion_id": "E7",
+          "verdict": "pass",
+          "evidence": "Q13 answer: \"요도가 좁다는 말은 들은 적 없어요. 소변줄 넣는 게 어려웠던 적도 없었던 것 같아요.\" There is no known urethral stricture.",
+          "sub_condition_notes": []
+        },
+        {
+          "criterion_id": "E8",
+          "verdict": "post_enrollment",
+          "evidence": "This depends on the treating physician's judgment of unacceptable risk, which is determined after enrollment.",
+          "sub_condition_notes": []
+        }
+      ],
+      "final_judgment": "insufficient_info"
+    },
+    {
+      "nct_id": "NCT05646485",
+      "title": "NCT05646485",
+      "criteria": [
+        {
+          "id": "I1",
+          "type": "inclusion",
+          "text": "Age ≥ 50"
+        },
+        {
+          "id": "I2",
+          "type": "inclusion",
+          "text": "Smoking: ≥15 pack-year smoking history"
+        },
+        {
+          "id": "I3",
+          "type": "inclusion",
+          "text": "Occupation:≥ 15 years of occupational exposures including: textile worker, painter, dry cleaners"
+        },
+        {
+          "id": "E1",
+          "type": "exclusion",
+          "text": "Prior history of bladder, kidney, or prostate cancer"
+        },
+        {
+          "id": "E2",
+          "type": "exclusion",
+          "text": "Prior evaluation of micro or gross hematuria within the last 2 years"
+        },
+        {
+          "id": "E3",
+          "type": "exclusion",
+          "text": "Do not provide informed consent"
+        }
+      ],
+      "judgments": [
+        {
+          "criterion_id": "I1",
+          "verdict": "pass",
+          "checked_by": "code",
+          "evidence": "환자 나이 68세, 기준 50세 이상 → 해당 (코드 판정)",
+          "sub_condition_notes": [],
+          "llm_verdict": "pass"
+        },
+        {
+          "criterion_id": "I2",
+          "verdict": "pass",
+          "evidence": "Q2 answer: \"하루에 한 갑 정도씩 45년 동안 피웠고, 지금도 피우고 있어요.\" One pack a day for 45 years is about 45 pack-years, which is at least 15.",
+          "sub_condition_notes": []
+        },
+        {
+          "criterion_id": "I3",
+          "verdict": "unknown",
+          "evidence": "Q3 answer: \"그건 잘 모르겠어요. 따로 말씀드릴 만한 기억은 없네요.\" The patient is unsure, and no occupational history of textile, painting or dry-cleaning work is documented.",
+          "sub_condition_notes": []
+        },
+        {
+          "criterion_id": "E1",
+          "verdict": "pass",
+          "evidence": "Q4 answer: \"그런 말을 들은 적은 없어요. 이번이 처음이에요.\" Q1 answer: \"아직 조직검사 결과로 암이라고 확진받은 건 아니에요.\" No prior bladder, kidney or prostate cancer is reported.",
+          "sub_condition_notes": []
+        },
+        {
+          "criterion_id": "E2",
+          "verdict": "fail",
+          "evidence": "Original description: CT urography already done for gross hematuria. Q1 answer: \"이틀 전 방광내시경에서 종양이 보인다고 해서...\" Q5 answer: \"소변에 피가 나온 건 3주 전부터이고, 이번에 처음 검사받고 있어요.\" Under the stated rule, an evaluation already done for the current problem counts as prior even if recent. The CT urography and cystoscopy for this hematuria therefore count as a prior evaluation within the last 2 years.",
+          "sub_condition_notes": [
+            "The patient says there was no testing before this episode, but the current workup (CT urography, cystoscopy) is itself a completed evaluation of gross hematuria."
+          ]
+        },
+        {
+          "criterion_id": "E3",
+          "verdict": "post_enrollment",
+          "evidence": "Willingness to provide informed consent is only determined at enrollment.",
+          "sub_condition_notes": []
+        }
+      ],
+      "final_judgment": "ineligible"
+    }
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "questions": [
+        {
+          "text": "방광내시경 검사에서 방광 종양이 보여 방광 종양 제거 수술(TURBT)을 받기로 하셨거나, 조직검사로 방광암이라는 결과를 들으신 적이 있나요?",
+          "needed_info": "방광내시경 소견, 방광 종양 제거 수술 예정 여부, 조직검사 결과",
+          "resolves": [
+            {
+              "trial": "NCT04369560",
+              "criteria": [
+                "I3"
+              ]
+            }
+          ],
+          "priority": 1,
+          "id": "Q1"
+        },
+        {
+          "text": "지금까지 담배를 얼마나 피우셨나요? 하루에 몇 갑씩 몇 년 피우셨는지 알려주세요.",
+          "needed_info": "흡연량과 흡연 기간",
+          "resolves": [
+            {
+              "trial": "NCT05646485",
+              "criteria": [
+                "I2"
+              ]
+            }
+          ],
+          "priority": 2,
+          "id": "Q2"
+        },
+        {
+          "text": "염색·직물 공장, 페인트 작업, 세탁소에서 일하신 적이 있나요? 있다면 몇 년 동안 일하셨는지 알려주세요.",
+          "needed_info": "직업 노출 이력과 기간",
+          "resolves": [
+            {
+              "trial": "NCT05646485",
+              "criteria": [
+                "I3"
+              ]
+            }
+          ],
+          "priority": 3,
+          "id": "Q3"
+        },
+        {
+          "text": "과거에 방광, 신장, 전립선에 암이 있다는 말을 듣거나 그 암으로 치료를 받으신 적이 있나요?",
+          "needed_info": "방광암, 신장암, 전립선암 병력",
+          "resolves": [
+            {
+              "trial": "NCT05646485",
+              "criteria": [
+                "E1"
+              ]
+            }
+          ],
+          "priority": 4,
+          "id": "Q4"
+        },
+        {
+          "text": "최근 2년 안에 소변에 피가 섞여 나오거나 소변검사에서 피가 발견되어 그 원인을 알아보는 검사를 받으신 적이 있나요?",
+          "needed_info": "최근 2년 내 혈뇨 원인 검사 이력",
+          "resolves": [
+            {
+              "trial": "NCT05646485",
+              "criteria": [
+                "E2"
+              ]
+            }
+          ],
+          "priority": 5,
+          "id": "Q5"
+        }
+      ],
+      "answers": [
+        {
+          "question_id": "Q1",
+          "answer": "네, 이틀 전 방광내시경에서 종양이 보인다고 해서 다음 주에 제거 수술을 받기로 했어요. 아직 조직검사 결과로 암이라고 확진받은 건 아니에요."
+        },
+        {
+          "question_id": "Q2",
+          "answer": "하루에 한 갑 정도씩 45년 동안 피웠고, 지금도 피우고 있어요."
+        },
+        {
+          "question_id": "Q3",
+          "answer": "그건 잘 모르겠어요. 따로 말씀드릴 만한 기억은 없네요."
+        },
+        {
+          "question_id": "Q4",
+          "answer": "그런 말을 들은 적은 없어요. 이번이 처음이에요."
+        },
+        {
+          "question_id": "Q5",
+          "answer": "소변에 피가 나온 건 3주 전부터이고, 이번에 처음 검사받고 있어요. 그 전에는 검사받은 적 없어요."
+        }
+      ],
+      "changed": [
+        {
+          "trial": "NCT05646485",
+          "criterion_id": "I2",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "Q2"
+          ]
+        },
+        {
+          "trial": "NCT05646485",
+          "criterion_id": "E1",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "Q4"
+          ]
+        },
+        {
+          "trial": "NCT05646485",
+          "criterion_id": "E2",
+          "from": "unknown",
+          "to": "fail",
+          "source": [
+            "Q5"
+          ]
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "questions": [
+        {
+          "text": "몸속에 심장박동기나 그 밖의 삽입된 의료기기, 인공 보형물이 있으신가요?",
+          "needed_info": "MRI와 맞지 않을 수 있는 몸속 삽입 기기·보형물 여부",
+          "resolves": [
+            {
+              "trial": "NCT04369560",
+              "criteria": [
+                "E3"
+              ]
+            }
+          ],
+          "priority": 1,
+          "id": "Q6"
+        },
+        {
+          "text": "좁고 막힌 공간에 있으면 심하게 답답하거나 무서워서 MRI 검사를 끝까지 받기 어려웠던 적이 있으신가요?",
+          "needed_info": "MRI 검사를 끝까지 받기 어려울 정도의 폐쇄공포 경험",
+          "resolves": [
+            {
+              "trial": "NCT04369560",
+              "criteria": [
+                "E2"
+              ]
+            }
+          ],
+          "priority": 2,
+          "id": "Q7"
+        },
+        {
+          "text": "평소 식사, 옷 입기, 외출 같은 일상 활동을 혼자 하실 수 있나요? 낮 시간 중 누워 지내는 시간이 얼마나 되는지도 알려주세요.",
+          "needed_info": "일상 활동 수준과 낮 시간 누워 지내는 정도",
+          "resolves": [
+            {
+              "trial": "NCT04369560",
+              "criteria": [
+                "I4"
+              ]
+            }
+          ],
+          "priority": 3,
+          "id": "Q8"
+        },
+        {
+          "text": "의료진에게 암이 다른 곳으로 퍼졌거나 퍼졌을 가능성이 있다는 말을 들으신 적이 있나요?",
+          "needed_info": "전이가 있다거나 의심된다는 설명을 들은 적이 있는지",
+          "resolves": [
+            {
+              "trial": "NCT04369560",
+              "criteria": [
+                "E4"
+              ]
+            }
+          ],
+          "priority": 4,
+          "id": "Q9"
+        },
+        {
+          "text": "최근 콩팥 기능(크레아티닌)을 보는 피검사를 받으신 적이 있나요? 있다면 결과지를 가지고 계신가요?",
+          "needed_info": "콩팥 기능 혈액검사 시행 여부와 결과지 보유 여부",
+          "resolves": [
+            {
+              "trial": "NCT04369560",
+              "criteria": [
+                "I5"
+              ]
+            }
+          ],
+          "priority": 5,
+          "id": "Q10"
+        }
+      ],
+      "answers": [
+        {
+          "question_id": "Q6",
+          "answer": "잘 모르겠어요. 따로 그런 걸 넣었다는 얘기는 들어본 적이 없어요."
+        },
+        {
+          "question_id": "Q7",
+          "answer": "MRI는 받아본 적이 없어서 잘 모르겠어요."
+        },
+        {
+          "question_id": "Q8",
+          "answer": "네, 다 혼자 할 수 있어요. 낮에 누워 지내지 않고, 아침마다 3마일 정도 걸을 만큼 활동에 지장이 없어요."
+        },
+        {
+          "question_id": "Q9",
+          "answer": "아니요, 그런 말은 못 들었어요. CT 검사에서도 다른 곳으로 퍼진 소견은 없다고 했어요."
+        },
+        {
+          "question_id": "Q10",
+          "answer": "네, 최근에 받았고 크레아티닌 수치가 1.0으로 정상이라고 들었어요. 결과지를 직접 가지고 있는지는 잘 모르겠어요."
+        }
+      ],
+      "changed": [
+        {
+          "trial": "NCT04369560",
+          "criterion_id": "I4",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "Q8"
+          ]
+        },
+        {
+          "trial": "NCT04369560",
+          "criterion_id": "I5",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "Q10"
+          ]
+        },
+        {
+          "trial": "NCT04369560",
+          "criterion_id": "E4",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "Q9"
+          ]
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "questions": [
+        {
+          "text": "소변을 볼 때 따갑거나 화끈거리는 느낌, 갑자기 자주 마려운 느낌, 열이 나는 증상이 있으셨나요? 또는 소변검사에서 요로 감염(방광염 등)이 있다는 말을 듣고 아직 치료를 받지 못하셨나요?",
+          "needed_info": "치료받지 않은 요로 감염을 의심할 증상 또는 진단·치료 여부",
+          "resolves": [
+            {
+              "trial": "NCT04369560",
+              "criteria": [
+                "E6"
+              ]
+            }
+          ],
+          "priority": 1,
+          "id": "Q11"
+        },
+        {
+          "text": "MRI 조영제(가도부트롤)나 정맥으로 맞는 철분 주사(페루목시톨)를 맞고 숨쉬기 힘들거나 얼굴이 붓는 등 심한 알레르기 반응이 있었던 적이 있나요?",
+          "needed_info": "가도부트롤 또는 페루목시톨에 대한 심한 알레르기 반응 경험",
+          "resolves": [
+            {
+              "trial": "NCT04369560",
+              "criteria": [
+                "E1"
+              ]
+            }
+          ],
+          "priority": 2,
+          "id": "Q12"
+        },
+        {
+          "text": "소변이 나오는 길(요도)이 좁아졌다는 말을 들으셨거나, 소변줄(도뇨관)을 넣기 어려웠던 적이 있으신가요?",
+          "needed_info": "요도 협착 병력 또는 소변줄 삽입이 어려웠던 경험",
+          "resolves": [
+            {
+              "trial": "NCT04369560",
+              "criteria": [
+                "E7"
+              ]
+            }
+          ],
+          "priority": 3,
+          "id": "Q13"
+        }
+      ],
+      "answers": [
+        {
+          "question_id": "Q11",
+          "answer": "아니요, 따갑거나 열이 나는 증상은 없었어요. 소변 배양검사에서도 균이 안 나왔다고 들었고, 감염 때문에 치료받을 건 없어요."
+        },
+        {
+          "question_id": "Q12",
+          "answer": "그런 주사를 맞아본 기억이 없고, 그런 알레르기 반응도 없었어요."
+        },
+        {
+          "question_id": "Q13",
+          "answer": "요도가 좁다는 말은 들은 적 없어요. 소변줄 넣는 게 어려웠던 적도 없었던 것 같아요."
+        }
+      ],
+      "changed": [
+        {
+          "trial": "NCT04369560",
+          "criterion_id": "E1",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "Q12"
+          ]
+        },
+        {
+          "trial": "NCT04369560",
+          "criterion_id": "E6",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "Q11"
+          ]
+        },
+        {
+          "trial": "NCT04369560",
+          "criterion_id": "E7",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "Q13"
+          ]
+        },
+        {
+          "trial": "NCT04369560",
+          "criterion_id": "I3",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "full"
+          ]
+        }
+      ]
+    }
+  ]
+}

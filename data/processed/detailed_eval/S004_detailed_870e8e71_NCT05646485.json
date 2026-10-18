@@ -1,0 +1,46 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "checked_by": "code",
+    "evidence": "환자 나이 68세, 기준 50세 이상 → 해당 (코드 판정)",
+    "sub_condition_notes": [],
+    "llm_verdict": "pass"
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "He has smoked about one pack a day for 45 years and is still smoking, which is about 45 pack-years and meets the ≥15 pack-year requirement.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "The description does not mention his occupation or any occupational exposure (textile worker, painter, dry cleaner).",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No prior bladder, kidney, or prostate cancer is mentioned. The current bladder tumor is newly found and has no histopathological diagnosis yet. Absence of mention means the criterion cannot be confirmed.",
+    "sub_condition_notes": [
+      "Prior bladder cancer: not mentioned; current tumor is newly found and unconfirmed",
+      "Prior kidney cancer: not mentioned",
+      "Prior prostate cancer: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "The hematuria began three weeks ago and cystoscopy was done two days ago. The description does not say whether he had any hematuria evaluation in the past 2 years. Whether the current workup counts as a prior evaluation is unclear.",
+    "sub_condition_notes": [
+      "Micro or gross hematuria evaluation within the last 2 years: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "post_enrollment",
+    "evidence": "Providing informed consent is determined after the patient applies and is approached for consent.",
+    "sub_condition_notes": []
+  }
+]

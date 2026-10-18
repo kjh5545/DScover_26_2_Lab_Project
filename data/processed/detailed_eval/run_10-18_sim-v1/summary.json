@@ -1,0 +1,395 @@
+{
+  "S004": {
+    "sheet": "screening\\detailed\\인선\\S004_detailed_sheet_filled.md",
+    "direct": {
+      "same": 18,
+      "total": 19,
+      "decided_ok": 8,
+      "decided": 8,
+      "confusion": {
+        "pass->pass": 8,
+        "post_enrollment->post_enrollment": 3,
+        "unknown->unknown": 7,
+        "unknown->pass": 1
+      },
+      "misses": [
+        {
+          "trial": "NCT04369560",
+          "id": "E4",
+          "gold": "unknown",
+          "ai": "pass",
+          "ai_evidence": "CT of the chest, abdomen, and pelvis shows no enlarged lymph nodes or evidence of distant metastases.",
+          "gold_evidence": "전이 관련 의학적 진단 명시되어 있지 않음"
+        }
+      ],
+      "finals": [
+        {
+          "trial": "NCT04369560",
+          "gold": "insufficient_info",
+          "ai": "insufficient_info"
+        },
+        {
+          "trial": "NCT05646485",
+          "gold": "insufficient_info",
+          "ai": "insufficient_info"
+        }
+      ]
+    },
+    "loop": {
+      "before": {
+        "same": 14,
+        "total": 19,
+        "decided_ok": 3,
+        "decided": 8,
+        "confusion": {
+          "pass->pass": 3,
+          "post_enrollment->post_enrollment": 3,
+          "pass->unknown": 5,
+          "unknown->unknown": 8
+        },
+        "misses": [
+          {
+            "trial": "NCT04369560",
+            "id": "I3",
+            "gold": "pass",
+            "ai": "unknown",
+            "ai_evidence": "The description gives only \"CT urography reveals a mass in the bladder wall\". It does not mention cystoscopy, a papillary tumor, a scheduled TURBT, histologic proof of MIBC, or clinical localization or resectability.",
+            "gold_evidence": "\"Cystoscopy two days ago revealed a papillary bladder tumor\" + \"Transurethral resection of bladder tumor (TURBT) is scheduled for next week\" → OR 앞부분 충족"
+          },
+          {
+            "trial": "NCT04369560",
+            "id": "I4",
+            "gold": "pass",
+            "ai": "unknown",
+            "ai_evidence": "No ECOG performance status is given in the description.",
+            "gold_evidence": "\"He is fully active, walks about three miles most mornings, and has no restrictions in daily or strenuous activity.\""
+          },
+          {
+            "trial": "NCT04369560",
+            "id": "I5",
+            "gold": "pass",
+            "ai": "unknown",
+            "ai_evidence": "No creatinine or creatinine clearance values are given. They may exist in the patient's records.",
+            "gold_evidence": "\"Serum creatinine is 1.0 mg/dL (institutional upper limit of normal: 1.3 mg/dL).\""
+          },
+          {
+            "trial": "NCT04369560",
+            "id": "E6",
+            "gold": "pass",
+            "ai": "unknown",
+            "ai_evidence": "Hematuria is present, but no urinary tract infection or urinalysis result is mentioned.",
+            "gold_evidence": "\"no white blood cells or nitrite, and a urine culture was negative\" → 요로감염 없음"
+          },
+          {
+            "trial": "NCT05646485",
+            "id": "I2",
+            "gold": "pass",
+            "ai": "unknown",
+            "ai_evidence": "Only \"a long smoking history\" is stated; the pack-year quantity is not given, so ≥15 pack-years cannot be confirmed.",
+            "gold_evidence": "\"He has smoked about one pack a day for 45 years and is still smoking.\""
+          }
+        ]
+      },
+      "after": {
+        "same": 14,
+        "total": 19,
+        "decided_ok": 8,
+        "decided": 8,
+        "confusion": {
+          "pass->pass": 8,
+          "post_enrollment->post_enrollment": 3,
+          "unknown->pass": 4,
+          "unknown->unknown": 3,
+          "unknown->fail": 1
+        },
+        "misses": [
+          {
+            "trial": "NCT04369560",
+            "id": "E1",
+            "gold": "unknown",
+            "ai": "pass",
+            "ai_evidence": "Q12 answer: \"그런 주사를 맞아본 기억이 없고, 그런 알레르기 반응도 없었어요.\"",
+            "gold_evidence": "CT 검사를 받은 기록은 있지만, CT 검사의 종류에 따라 조영제를 사용하지 않았을 수도 있으므로 확인 필요"
+          },
+          {
+            "trial": "NCT04369560",
+            "id": "E4",
+            "gold": "unknown",
+            "ai": "pass",
+            "ai_evidence": "Q9 answer: \"아니요, 그런 말은 못 들었어요. CT 검사에서도 다른 곳으로 퍼진 소견은 없다고 했어요.\"",
+            "gold_evidence": "전이 관련 의학적 진단 명시되어 있지 않음"
+          },
+          {
+            "trial": "NCT04369560",
+            "id": "E7",
+            "gold": "unknown",
+            "ai": "pass",
+            "ai_evidence": "Q13 answer: \"요도가 좁다는 말은 들은 적 없어요. 소변줄 넣는 게 어려웠던 적도 없었던 것 같아요.\" There is no known urethral stricture.",
+            "gold_evidence": "요도 협착 관련 정보 없음"
+          },
+          {
+            "trial": "NCT05646485",
+            "id": "E1",
+            "gold": "unknown",
+            "ai": "pass",
+            "ai_evidence": "Q4 answer: \"그런 말을 들은 적은 없어요. 이번이 처음이에요.\" Q1 answer: \"아직 조직검사 결과로 암이라고 확진받은 건 아니에요.\" No prior bladder, kidney or prostate cancer is reported.",
+            "gold_evidence": "정확한 암 진단 기록 명시되어 있지 않음"
+          },
+          {
+            "trial": "NCT05646485",
+            "id": "E2",
+            "gold": "unknown",
+            "ai": "fail",
+            "ai_evidence": "Original description: CT urography already done for gross hematuria. Q1 answer: \"이틀 전 방광내시경에서 종양이 보인다고 해서...\" Q5 answer: \"소변에 피가 나온 건 3주 전부터이고, 이번에 처음 검사받고 있어요.\" Under the stated rule, an evaluation already done for the current problem counts as prior even if recent. The CT urography and cystoscopy for this hematuria therefore count as a prior evaluation within the last 2 years.",
+            "gold_evidence": "\"The hematuria began three weeks ago\" + \"CT urography reveals a mass\" + \"Cystoscopy two days ago\" → 최근 검사는 있으나 혈뇨 때문에 받은 검사라고 명시되지 않음"
+          }
+        ],
+        "finals": [
+          {
+            "trial": "NCT04369560",
+            "gold": "insufficient_info",
+            "ai": "insufficient_info"
+          },
+          {
+            "trial": "NCT05646485",
+            "gold": "insufficient_info",
+            "ai": "ineligible"
+          }
+        ]
+      },
+      "questions": 13,
+      "unknown_before": 13,
+      "unknown_after": 3
+    }
+  },
+  "S008": {
+    "sheet": "screening\\detailed\\인선\\S008_detailed_sheet_filled.md",
+    "direct": {
+      "same": 23,
+      "total": 27,
+      "decided_ok": 10,
+      "decided": 10,
+      "confusion": {
+        "pass->pass": 9,
+        "unknown->pass": 4,
+        "unknown->unknown": 11,
+        "fail->fail": 1,
+        "post_enrollment->post_enrollment": 2
+      },
+      "misses": [
+        {
+          "trial": "NCT07652658",
+          "id": "E1",
+          "gold": "unknown",
+          "ai": "pass",
+          "ai_evidence": "Diagnosed with IPF; HRCT shows a UIP pattern and \"her ANA is negative\". No other ILD is described.",
+          "gold_evidence": "다른 간질성 폐질환 진단 내용 및 병력 없음"
+        },
+        {
+          "trial": "NCT07299695",
+          "id": "I2",
+          "gold": "unknown",
+          "ai": "pass",
+          "ai_evidence": "\"diagnosed with idiopathic pulmonary fibrosis by her pulmonologist 14 months ago\"; HRCT shows \"usual interstitial pneumonia pattern\" with honeycombing and negative ANA. The description does not explicitly cite ATS/ERS criteria, but the diagnosis and HRCT pattern are on record.",
+          "gold_evidence": "IPF 진단은 받았으니, ATS/ERS 합의 기준을 충족했는지 여부는 알 수 없음"
+        },
+        {
+          "trial": "NCT07299695",
+          "id": "E1",
+          "gold": "unknown",
+          "ai": "pass",
+          "ai_evidence": "No acute worsening is described (\"without any sudden change\"), and the \"echocardiogram last month showed normal left ventricular function\". Pulmonary embolism is not mentioned, but there is no acute worsening to attribute to it.",
+          "gold_evidence": "심부전, 폐색전증 관련 정보 없음"
+        },
+        {
+          "trial": "NCT07299695",
+          "id": "E4",
+          "gold": "unknown",
+          "ai": "pass",
+          "ai_evidence": "IPF diagnosed by her pulmonologist 14 months ago, with a supporting HRCT UIP pattern, honeycombing, and negative ANA, so the IPF diagnosis is definite on record.",
+          "gold_evidence": "I2와 같은 것을 물어보는 질문. ATS/ERS 합의 기준을 충족했는지 여부 모르며, 급성 악화가 아니므로 AE-IPF는 아님"
+        }
+      ],
+      "finals": [
+        {
+          "trial": "NCT07652658",
+          "gold": "insufficient_info",
+          "ai": "insufficient_info"
+        },
+        {
+          "trial": "NCT07299695",
+          "gold": "ineligible",
+          "ai": "ineligible"
+        }
+      ]
+    },
+    "loop": {
+      "before": {
+        "same": 19,
+        "total": 27,
+        "decided_ok": 2,
+        "decided": 10,
+        "confusion": {
+          "pass->pass": 2,
+          "pass->unknown": 7,
+          "unknown->unknown": 15,
+          "fail->unknown": 1,
+          "post_enrollment->post_enrollment": 2
+        },
+        "misses": [
+          {
+            "trial": "NCT07652658",
+            "id": "I2",
+            "gold": "pass",
+            "ai": "unknown",
+            "ai_evidence": "Symptoms and CT (bilateral basal reticular opacities with honeycombing) are suggestive, but no formal IPF diagnosis is on record; the suspected diagnosis is an inference.",
+            "gold_evidence": "\" She was diagnosed with idiopathic pulmonary fibrosis by her pulmonologist 14 months ago\""
+          },
+          {
+            "trial": "NCT07652658",
+            "id": "I3",
+            "gold": "pass",
+            "ai": "unknown",
+            "ai_evidence": "No medications or antifibrotic therapy mentioned (medications list empty); the patient's treatment status is not stated.",
+            "gold_evidence": "\"She has taken nintedanib 150 mg twice daily at the same dose for the past eight months.\" - nintedanib은 대표적인 IPF 치료제, 150mg 하루 2회는 일반적인 성인 용량이라고 함"
+          },
+          {
+            "trial": "NCT07652658",
+            "id": "I4",
+            "gold": "pass",
+            "ai": "unknown",
+            "ai_evidence": "No FVC value given; may exist in records.",
+            "gold_evidence": "\"Pulmonary function tests show FVC 68% of predicted\""
+          },
+          {
+            "trial": "NCT07652658",
+            "id": "I5",
+            "gold": "pass",
+            "ai": "unknown",
+            "ai_evidence": "No DLCO value given; may exist in records.",
+            "gold_evidence": "\"hemoglobin-corrected DLCO 42% of predicted.\""
+          },
+          {
+            "trial": "NCT07652658",
+            "id": "E2",
+            "gold": "pass",
+            "ai": "unknown",
+            "ai_evidence": "CT describes reticular opacities with honeycombing but does not mention emphysema extent.",
+            "gold_evidence": "\"High-resolution CT shows a usual interstitial pneumonia pattern with fibrosis predominating and only minimal emphysema\" - 섬유화가 주를 이루고 폐기종은 경미-논리적 추론 가능"
+          },
+          {
+            "trial": "NCT07652658",
+            "id": "E3",
+            "gold": "pass",
+            "ai": "unknown",
+            "ai_evidence": "Description says 'progressive dyspnea' but does not state whether an acute exacerbation is present.",
+            "gold_evidence": "\" and her breathlessness has worsened gradually over the past 18 months without any sudden change.\"-서서히 악화됨"
+          },
+          {
+            "trial": "NCT07299695",
+            "id": "I3",
+            "gold": "fail",
+            "ai": "unknown",
+            "ai_evidence": "Presentation is 'progressive dyspnea' with no stated duration (<1 month not stated), no hospitalisation mentioned, no new ground-glass opacity or consolidation on CT, and no information on cardiac failure or fluid overload. The CT shows UIP-like changes only. The criterion also depends on the investigator's ascertainment.",
+            "gold_evidence": "\"She was diagnosed with idiopathic pulmonary fibrosis by her pulmonologist 14 months ago, and her breathlessness has worsened gradually over the past 18 months without any sudden change.\" - IPF가 급성으로 악화된 경우가 아님"
+          },
+          {
+            "trial": "NCT07299695",
+            "id": "E8",
+            "gold": "pass",
+            "ai": "unknown",
+            "ai_evidence": "Patient is a 60-year-old woman; pregnancy or lactation is not mentioned. Age makes pregnancy unlikely, but this is not stated as excluded.",
+            "gold_evidence": "\"She is postmenopausal\" - 폐경 후이며 60세 환자인 것을 통해 임신, 수유 중이 아님을 판단"
+          }
+        ]
+      },
+      "after": {
+        "same": 20,
+        "total": 27,
+        "decided_ok": 8,
+        "decided": 10,
+        "confusion": {
+          "pass->pass": 7,
+          "pass->unknown": 2,
+          "unknown->unknown": 10,
+          "unknown->pass": 5,
+          "fail->fail": 1,
+          "post_enrollment->post_enrollment": 2
+        },
+        "misses": [
+          {
+            "trial": "NCT07652658",
+            "id": "I5",
+            "gold": "pass",
+            "ai": "unknown",
+            "ai_evidence": "Q5 answer: \"확산능력은 42% 정도\" (diffusing capacity about 42%). This is above 25%, but it is unclear whether it was corrected for hemoglobin, and no hemoglobin value is given.",
+            "gold_evidence": "\"hemoglobin-corrected DLCO 42% of predicted.\""
+          },
+          {
+            "trial": "NCT07652658",
+            "id": "E4",
+            "gold": "unknown",
+            "ai": "pass",
+            "ai_evidence": "Q7 answer: \"그런 감염으로 치료받았다는 기억은 따로 없어요. 입원한 적도 없고요.\" (no recollection of treatment for a lung infection, no hospitalization).",
+            "gold_evidence": "감염 관련 진단 내용 정보 없음"
+          },
+          {
+            "trial": "NCT07652658",
+            "id": "E5",
+            "gold": "unknown",
+            "ai": "pass",
+            "ai_evidence": "Q3 answer: \"심근경색이나 협심증, 스텐트나 수술을 받은 적은 없는 걸로 알아요.\" (no MI, angina, stent, or surgery as far as the patient knows).",
+            "gold_evidence": "관련 병력 정보 없음"
+          },
+          {
+            "trial": "NCT07652658",
+            "id": "E6",
+            "gold": "unknown",
+            "ai": "pass",
+            "ai_evidence": "Q3 answer: \"지난달 심장 초음파를 했는데 심장 기능은 정상이라고 들었어요.\" (echocardiogram last month, cardiac function normal). No heart failure treatment is reported.",
+            "gold_evidence": "심부전 관련 정보 없음"
+          },
+          {
+            "trial": "NCT07299695",
+            "id": "E1",
+            "gold": "unknown",
+            "ai": "pass",
+            "ai_evidence": "Q2 answer: no sudden worsening, only gradual progression over 1.5 years. Q3 answer: \"지난달 심장 초음파를 했는데 심장 기능은 정상이라고 들었어요.\" Pulmonary embolism is not mentioned, but there is no acute worsening to attribute to it.",
+            "gold_evidence": "심부전, 폐색전증 관련 정보 없음"
+          },
+          {
+            "trial": "NCT07299695",
+            "id": "E6",
+            "gold": "unknown",
+            "ai": "pass",
+            "ai_evidence": "Q4 answer: \"스테로이드나 면역억제제는 안 먹어요.\" Current medications are nintedanib, omeprazole and levothyroxine.",
+            "gold_evidence": "관련 복용 정보 없음"
+          },
+          {
+            "trial": "NCT07299695",
+            "id": "E8",
+            "gold": "pass",
+            "ai": "unknown",
+            "ai_evidence": "Pregnancy and lactation are not mentioned. The patient is 60 years old, but menopausal status is not stated, and lactation is not addressed.",
+            "gold_evidence": "\"She is postmenopausal\" - 폐경 후이며 60세 환자인 것을 통해 임신, 수유 중이 아님을 판단"
+          }
+        ],
+        "finals": [
+          {
+            "trial": "NCT07652658",
+            "gold": "insufficient_info",
+            "ai": "insufficient_info"
+          },
+          {
+            "trial": "NCT07299695",
+            "gold": "ineligible",
+            "ai": "ineligible"
+          }
+        ]
+      },
+      "questions": 8,
+      "unknown_before": 23,
+      "unknown_after": 12
+    }
+  }
+}
