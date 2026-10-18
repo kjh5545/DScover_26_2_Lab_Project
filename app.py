@@ -183,22 +183,42 @@ if "bundle" in st.session_state:
         questions = st.session_state["pending"]
         if questions:
             st.subheader(f"💬 확인 질문 (라운드 {bundle['rounds'][-1]['round']})")
-            st.caption("답을 아는 것만 적어도 됩니다. 답하지 않은 질문은 다음 라운드에 다시 묻지 않아요.")
-            with st.form("qa_form"):
-                answers = []
-                for q in questions:
-                    related = ", ".join(f"{r['trial']} {'·'.join(r['criteria'])}" for r in q["resolves"])
-                    answers.append(st.text_input(f"{q['id']}. {q['text']}", key=f"a_{q['id']}", help=f"관련 기준: {related}"))
-                submitted = st.form_submit_button("답변 반영 후 재평가", type="primary")
+            st.caption("질문을 하나씩 보여 줘요. 모르면 비워 두고 '다음'을 누르세요. 답은 마지막에 한 번에 반영해요 "
+                       "(답하지 않은 질문은 다음 라운드에 다시 묻지 않아요).")
+            # 한 번에 한 질문: 답은 draft에 모았다가 마지막 버튼에서 한 번에 재판정 (호출 수는 그대로)
+            # 폼을 쓰지 않아서 입력 칸에서 엔터를 눌러도 제출되지 않는다
+            draft = st.session_state.setdefault("draft", {})
+            i = min(st.session_state.setdefault("q_index", 0), len(questions) - 1)
+            q = questions[i]
+            key = f"a_{q['id']}"
+            if key not in st.session_state:          # 보이지 않는 입력 칸은 지워지므로 draft에서 되살림
+                st.session_state[key] = draft.get(q["id"], "")
+
+            def move(step: int) -> None:
+                draft[q["id"]] = st.session_state[key]
+                st.session_state["q_index"] = i + step
+
+            st.progress((i + 1) / len(questions), text=f"질문 {i + 1} / {len(questions)}")
+            related = ", ".join(f"{r['trial']} {'·'.join(r['criteria'])}" for r in q["resolves"])
+            st.text_input(f"{q['id']}. {q['text']}", key=key, help=f"관련 기준: {related}")
+            left, right, _ = st.columns([1, 2, 3])
+            left.button("← 이전", on_click=move, args=(-1,), disabled=i == 0)
+            last = i == len(questions) - 1
+            submitted = right.button("답변 반영 후 재평가" if last else "다음 →", type="primary",
+                                     on_click=move, args=(0 if last else 1,)) and last
+            done = [x["id"] for x in questions if draft.get(x["id"], "").strip()]
+            if done:
+                st.caption(f"답한 질문: {', '.join(done)}")
             if submitted:
-                filled = [{"question_id": q["id"], "answer": a} for q, a in zip(questions, answers) if a.strip()]
+                filled = [{"question_id": x["id"], "answer": draft[x["id"]]} for x in questions
+                          if draft.get(x["id"], "").strip()]
                 if not filled:
                     st.warning("답변을 하나 이상 입력해주세요.")
                 else:
                     prev = snapshot()
                     with st.spinner("[6] 답과 관련된 기준만 다시 판정..."):
                         changed = reassess(bundle, filled)
-                    st.session_state.update(prev_judgments=prev, last_changed=changed)
+                    st.session_state.update(prev_judgments=prev, last_changed=changed, draft={}, q_index=0)
                     del st.session_state["pending"]
                     st.rerun()
         else:
@@ -209,6 +229,6 @@ if "bundle" in st.session_state:
             prev = snapshot()
             with st.spinner("전체 재판정 중..."):
                 changed = final_check(bundle)
-            st.session_state.update(prev_judgments=prev, last_changed=changed, finished=True)
+            st.session_state.update(prev_judgments=prev, last_changed=changed, finished=True, draft={}, q_index=0)
             st.session_state.pop("pending", None)
             st.rerun()
