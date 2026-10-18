@@ -35,7 +35,7 @@
 | E1 | 제외 | Severe hypersensitivity reaction to gadobutrol or ferumoxytol. | 조영제(가도부트롤, 페루목시톨)에 심한 과민반응 | 모름 | CT 검사를 받은 기록은 있지만, CT 검사의 종류에 따라 조영제를 사용하지 않았을 수도 있으므로 확인 필요 | "이전에 CT 검사를 받으실 때 조영제라는 약물을 투여받으신 적이 있나요?" |
 | E2 | 제외 | Severe claustrophobia that will prevent completion of the MRI study. | MRI를 끝까지 받기 어려운 심한 폐소공포증 | 모름 | MRI 또는 폐소공포증 관련 정보 없음 | "평소에 좁거나 밀폐된 공간에 있을 때 심한 불안감이나 공포를 느끼시나요?" |
 | E3 | 제외 | Any MRI-non-compatible implanted device, prosthetic or pacemaker. | MRI와 호환되지 않는 체내 기기, 보형물, 심박조율기 | 모름 | 관련 정보 명시되어 있지 않음 | "몸속에 심박조율기나 인공관절 등 의료기기 또는 인공보형물을 삽입한 적이 있으신가요? 있다면 해당 장치가 MRI 검사를 받을 수 있는 제품인지 안내받으신 적이 있나요?" |
-| E4 | 제외 | Known or suspected metastatic disease. | 전이가 알려져 있거나 의심됨 | 모름 | 전이 관련 의학적 진단 명시되어 있지 않음 | "의사에게 전이가 의심된다고 진단받은 적이 있나요?" |
+| E4 | 제외 | Known or suspected metastatic disease. | 전이가 알려져 있거나 의심됨 | 통과 | "CT of the chest, abdomen, and pelvis shows no enlarged lymph nodes or evidence of distant metastases" → 전이 소견 없음 (10/18 주희 재판정, 원래 모름) |  |
 | E5 | 제외 | Women with active pregnancy, lactation or plans to conceive | 임신, 수유, 임신 계획 중인 여성 | 통과 | 환자는 남자이다 |  |
 | E6 | 제외 | Untreated urinary tract infection | 치료받지 않은 요로감염 | 통과 |  "no white blood cells or nitrite, and a urine culture was negative" → 요로감염 없음 |  |
 | E7 | 제외 | Known urethral stricture disease that would prohibit placement of foley catheter. | 도뇨관 삽입이 어려운 요도 협착 | 모름 | 요도 협착 관련 정보 없음 | "의사에게 요도 협착이라는 질환을 진단받은 적이 있나요?" |
