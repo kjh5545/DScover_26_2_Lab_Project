@@ -1,0 +1,44 @@
+[
+  {
+    "id": "I1",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Undergoing radical cystectomy for confirmed or suspected urothelial carcinoma of the bladder",
+    "sub_conditions": [
+      "Undergoing radical cystectomy",
+      "Indication is confirmed urothelial carcinoma of the bladder OR suspected urothelial carcinoma of the bladder"
+    ],
+    "needed_info": [
+      "planned or scheduled procedures (radical cystectomy)",
+      "diagnosis (confirmed or suspected urothelial carcinoma of the bladder)"
+    ]
+  },
+  {
+    "id": "I2",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Prior abdominal imaging",
+    "sub_conditions": [
+      "Has undergone abdominal imaging prior to enrollment"
+    ],
+    "needed_info": [
+      "imaging history (abdominal imaging)"
+    ]
+  },
+  {
+    "id": "E1",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "History of partial cystectomy or complex bladder reconstruction or substitution (i.e. bladder augment or urothelial recurrence in a neobladder)",
+    "sub_conditions": [
+      "History of partial cystectomy",
+      "History of complex bladder reconstruction",
+      "History of bladder substitution",
+      "Examples: bladder augmentation or urothelial recurrence in a neobladder"
+    ],
+    "needed_info": [
+      "surgical history (partial cystectomy)",
+      "surgical history (bladder reconstruction, augmentation, substitution, neobladder)"
+    ]
+  }
+]

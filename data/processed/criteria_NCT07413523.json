@@ -1,0 +1,202 @@
+[
+  {
+    "id": "I1",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Age > 18 years",
+    "sub_conditions": [
+      "Age greater than 18 years"
+    ],
+    "needed_info": [
+      "age"
+    ]
+  },
+  {
+    "id": "I2",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "WHO performance status ≤ 2",
+    "sub_conditions": [
+      "WHO performance status 0, 1, or 2"
+    ],
+    "needed_info": [
+      "WHO performance status"
+    ]
+  },
+  {
+    "id": "I3",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Pathological proven urothelial carcinoma",
+    "sub_conditions": [
+      "Urothelial carcinoma confirmed by pathology"
+    ],
+    "needed_info": [
+      "diagnosis",
+      "pathology report"
+    ]
+  },
+  {
+    "id": "I4",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Stage IV disease at imaging",
+    "sub_conditions": [
+      "Stage IV disease",
+      "Staging established by imaging"
+    ],
+    "needed_info": [
+      "disease stage",
+      "imaging reports"
+    ]
+  },
+  {
+    "id": "I5",
+    "type": "inclusion",
+    "category": "temporal_numeric",
+    "text": "Maximum of 3 extracranial metastases",
+    "sub_conditions": [
+      "Number of extracranial metastases ≤ 3"
+    ],
+    "needed_info": [
+      "imaging reports",
+      "number and location of metastases"
+    ]
+  },
+  {
+    "id": "I6",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Indication to receive I or II line of standard systemic therapy",
+    "sub_conditions": [
+      "Indication for first-line standard systemic therapy",
+      "OR indication for second-line standard systemic therapy"
+    ],
+    "needed_info": [
+      "treatment history",
+      "line of therapy",
+      "treatment plan"
+    ]
+  },
+  {
+    "id": "I7",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Adequate liver function",
+    "sub_conditions": [
+      "Adequate liver function"
+    ],
+    "needed_info": [
+      "lab: liver function tests (bilirubin, AST, ALT)"
+    ]
+  },
+  {
+    "id": "I8",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Adequate bone marrow function",
+    "sub_conditions": [
+      "Adequate bone marrow function"
+    ],
+    "needed_info": [
+      "lab: complete blood count (hemoglobin, neutrophils, platelets)"
+    ]
+  },
+  {
+    "id": "I9",
+    "type": "inclusion",
+    "category": "administrative",
+    "text": "Written informed consent",
+    "sub_conditions": [
+      "Patient provides written informed consent"
+    ],
+    "needed_info": [
+      "informed consent status"
+    ]
+  },
+  {
+    "id": "E1",
+    "type": "exclusion",
+    "category": "administrative",
+    "text": "Inability to provide informed consent",
+    "sub_conditions": [
+      "Unable to provide informed consent"
+    ],
+    "needed_info": [
+      "consent capability"
+    ]
+  },
+  {
+    "id": "E2",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Previous radiation therapy on the same target lesions",
+    "sub_conditions": [
+      "Prior radiation therapy to the same target lesions"
+    ],
+    "needed_info": [
+      "radiation therapy history",
+      "target lesion locations"
+    ]
+  },
+  {
+    "id": "E3",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Pregnant or breastfeeding patients",
+    "sub_conditions": [
+      "Pregnant",
+      "Breastfeeding"
+    ],
+    "needed_info": [
+      "pregnancy status",
+      "breastfeeding status"
+    ]
+  },
+  {
+    "id": "E4",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Prior malignancy within the last five years (except adequately treated basal cell carcinoma of the skin or in situ carcinoma of the skin or in situ carcinoma of the cervix, surgically cured, or localized prostate cancer without evidence of biochemical progression)",
+    "sub_conditions": [
+      "Prior malignancy within the last five years",
+      "Exception: adequately treated basal cell carcinoma of the skin",
+      "Exception: in situ carcinoma of the skin",
+      "Exception: surgically cured in situ carcinoma of the cervix",
+      "Exception: localized prostate cancer without evidence of biochemical progression"
+    ],
+    "needed_info": [
+      "cancer history",
+      "dates of prior malignancies",
+      "type of prior malignancy",
+      "treatment of prior malignancy",
+      "PSA/biochemical progression status"
+    ]
+  },
+  {
+    "id": "E5",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "Mental conditions rendering the patient incapable to understand the nature, scope, and consequences of the study",
+    "sub_conditions": [
+      "Mental condition present",
+      "Resulting incapacity to understand the nature, scope, and consequences of the study"
+    ],
+    "needed_info": [
+      "psychiatric/mental history",
+      "investigator assessment of understanding"
+    ]
+  },
+  {
+    "id": "E6",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "WHO PS >=3",
+    "sub_conditions": [
+      "WHO performance status 3 or higher"
+    ],
+    "needed_info": [
+      "WHO performance status"
+    ]
+  }
+]

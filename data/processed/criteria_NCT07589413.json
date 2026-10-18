@@ -1,0 +1,178 @@
+[
+  {
+    "id": "I1",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Age 18 years or older.",
+    "sub_conditions": [
+      "age >= 18 years"
+    ],
+    "needed_info": [
+      "age"
+    ]
+  },
+  {
+    "id": "I2",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Suspected or histologically confirmed urothelial carcinoma of the bladder.",
+    "sub_conditions": [
+      "suspected urothelial carcinoma of the bladder",
+      "OR histologically confirmed urothelial carcinoma of the bladder"
+    ],
+    "needed_info": [
+      "diagnosis",
+      "histology/pathology report",
+      "clinical suspicion of bladder cancer"
+    ]
+  },
+  {
+    "id": "I3",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Scheduled to undergo TURBT.",
+    "sub_conditions": [
+      "scheduled for transurethral resection of bladder tumor (TURBT)"
+    ],
+    "needed_info": [
+      "planned procedures",
+      "surgical schedule"
+    ]
+  },
+  {
+    "id": "I4",
+    "type": "inclusion",
+    "category": "post_enrollment",
+    "text": "Availability of sufficient peripheral blood samples for cfDNA extraction and mutation analysis.",
+    "sub_conditions": [
+      "sufficient peripheral blood sample available for cfDNA extraction",
+      "sufficient peripheral blood sample available for mutation analysis"
+    ],
+    "needed_info": [
+      "blood sample collection/availability",
+      "sample volume"
+    ]
+  },
+  {
+    "id": "I5",
+    "type": "inclusion",
+    "category": "post_enrollment",
+    "text": "Availability of complete clinicopathological and perioperative data.",
+    "sub_conditions": [
+      "complete clinicopathological data available",
+      "complete perioperative data available"
+    ],
+    "needed_info": [
+      "clinicopathological records",
+      "perioperative records"
+    ]
+  },
+  {
+    "id": "I6",
+    "type": "inclusion",
+    "category": "administrative",
+    "text": "Ability to provide informed consent and comply with study follow-up.",
+    "sub_conditions": [
+      "able to provide informed consent",
+      "able to comply with study follow-up"
+    ],
+    "needed_info": [
+      "capacity to consent",
+      "ability/willingness to attend follow-up"
+    ]
+  },
+  {
+    "id": "E1",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Non-urothelial bladder malignancy confirmed by pathology.",
+    "sub_conditions": [
+      "non-urothelial bladder malignancy",
+      "confirmed by pathology"
+    ],
+    "needed_info": [
+      "histology/pathology report",
+      "tumor histologic type"
+    ]
+  },
+  {
+    "id": "E2",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "History of other malignant tumors within the past 5 years, except adequately treated non-melanoma skin cancer or carcinoma in situ of the cervix.",
+    "sub_conditions": [
+      "other malignant tumor within the past 5 years",
+      "exception: adequately treated non-melanoma skin cancer",
+      "exception: carcinoma in situ of the cervix"
+    ],
+    "needed_info": [
+      "cancer history",
+      "dates of prior malignancies",
+      "treatment history of prior malignancies"
+    ]
+  },
+  {
+    "id": "E3",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Previous radical cystectomy or systemic antitumor therapy before enrollment.",
+    "sub_conditions": [
+      "previous radical cystectomy",
+      "previous systemic antitumor therapy before enrollment"
+    ],
+    "needed_info": [
+      "surgical history",
+      "oncologic treatment history",
+      "medication history"
+    ]
+  },
+  {
+    "id": "E4",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "Inadequate blood sample quality or insufficient DNA yield for mutation analysis.",
+    "sub_conditions": [
+      "inadequate blood sample quality",
+      "OR insufficient DNA yield for mutation analysis"
+    ],
+    "needed_info": [
+      "blood sample quality assessment",
+      "DNA yield from lab processing"
+    ]
+  },
+  {
+    "id": "E5",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Pregnancy or breastfeeding.",
+    "sub_conditions": [
+      "pregnant",
+      "breastfeeding"
+    ],
+    "needed_info": [
+      "pregnancy status",
+      "lactation status"
+    ]
+  },
+  {
+    "id": "E6",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "Serious uncontrolled intercurrent illness that may interfere with study participation, follow-up, or compliance, including active infection, symptomatic congestive heart failure, unstable angina, clinically significant arrhythmia, severe psychiatric illness, or other conditions judged by the investigator to make participation unsuitable.",
+    "sub_conditions": [
+      "active infection",
+      "symptomatic congestive heart failure",
+      "unstable angina",
+      "clinically significant arrhythmia",
+      "severe psychiatric illness",
+      "other serious uncontrolled intercurrent illness judged by the investigator to make participation unsuitable"
+    ],
+    "needed_info": [
+      "infection status",
+      "cardiac history",
+      "psychiatric history",
+      "comorbidities",
+      "investigator judgment"
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+﻿ID,구분,기준,판정,근거
+I1,선정,Age > 18 years,✅ 통과,"환자 나이 68세, 기준 18세 초과 → 해당 (코드 판정)"
+I2,선정,WHO performance status ≤ 2,❓ 모름,No WHO performance status is given in the description or in the answers.
+I3,선정,Pathological proven urothelial carcinoma,❓ 모름 → ❌ 탈락,"Q1 answer: ""아직 조직검사 결과는 없어요. 이틀 전 방광내시경에서 종양이 보였고, 조직검사는 다음주 수술때 하기로 했어요."" There is no pathology confirmation yet."
+I4,선정,Stage IV disease at imaging,❌ 탈락,"Q5 answer: ""가슴, 배, 골반 CT에서 림프절이 커지거나 다른 곳으로 퍼진 소견은 없다고 들었어요."" Imaging shows no lymph node enlargement or spread, so the "
+I5,선정,Maximum of 3 extracranial metastases,❓ 모름,"Q5 answer reports no spread on CT, but the patient has not reported a formal count of metastases and the report is held "
+I6,선정,Indication to receive I or II line of standard systemic therapy,❓ 모름,Q2 answer: no prior systemic therapy. Q4 answer: transurethral resection is planned next week. No systemic therapy plan 
+I7,선정,Adequate liver function,❓ 모름,No liver function tests are given.
+I8,선정,Adequate bone marrow function,❓ 모름,No complete blood count is given.
+I9,선정,Written informed consent,🕒 등록 후 확인,Written informed consent is only given after the patient applies.
+E1,제외,Inability to provide informed consent,🕒 등록 후 확인,Capacity to provide informed consent is assessed at enrollment.
+E2,제외,Previous radiation therapy on the same target lesions,✅ 통과,"Q2 answer: ""아니요, 방광 수술이나 항암치료, 방사선치료를 받은 적은 없어요."""
+E3,제외,Pregnant or breastfeeding patients,✅ 통과,환자가 남성라 임신·수유 기준에 해당하지 않음 (코드 판정)
+E4,제외,Prior malignancy within the last five years (except adequately treated basal cel,✅ 통과,"Q3 answer: ""아니요, 암 진단을 받은 적은 이번이 처음이에요."" The patient reports no prior cancer diagnosis, and the current bladder tumor is"
+E5,제외,"Mental conditions rendering the patient incapable to understand the nature, scop",🕒 등록 후 확인,Whether a mental condition impairs understanding of the study is an investigator assessment. No mental condition is ment
+E6,제외,WHO PS >=3,❓ 모름,No WHO performance status is given.

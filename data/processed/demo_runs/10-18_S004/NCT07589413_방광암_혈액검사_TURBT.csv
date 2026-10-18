@@ -1,0 +1,13 @@
+﻿ID,구분,기준,판정,근거
+I1,선정,Age 18 years or older.,✅ 통과,"환자 나이 68세, 기준 18세 이상 → 해당 (코드 판정)"
+I2,선정,Suspected or histologically confirmed urothelial carcinoma of the bladder.,✅ 통과,"Suspected bladder urothelial carcinoma is enough. The description reports ""painless gross hematuria. CT urography reveal"
+I3,선정,Scheduled to undergo TURBT.,✅ 통과,"Q4 answer: ""방광 종양을 내시경으로 제거하는 수술이 다음주로 예정되어 있어요."" (endoscopic tumor removal surgery is scheduled for next week). Q1 also"
+I4,선정,Availability of sufficient peripheral blood samples for cfDNA extraction and mut,🕒 등록 후 확인,Blood sample availability and volume are determined at collection after enrollment.
+I5,선정,Availability of complete clinicopathological and perioperative data.,🕒 등록 후 확인,Completeness of clinicopathological and perioperative data can only be determined by the study team after surgery and fo
+I6,선정,Ability to provide informed consent and comply with study follow-up.,🕒 등록 후 확인,Ability to consent and comply with follow-up is assessed at enrollment and afterward.
+E1,제외,Non-urothelial bladder malignancy confirmed by pathology.,✅ 통과,"Q1 answer: ""아직 조직검사 결과는 없어요."" (no biopsy result yet). Pathology confirmation of a non-urothelial malignancy does not exi"
+E2,제외,"History of other malignant tumors within the past 5 years, except adequately tre",✅ 통과,"Q3 answer: ""아니요, 암 진단을 받은 적은 이번이 처음이에요."" (no prior cancer diagnosis; this is the first)."
+E3,제외,Previous radical cystectomy or systemic antitumor therapy before enrollment.,✅ 통과,"Q2 answer: ""아니요, 방광 수술이나 항암치료, 방사선치료를 받은 적은 없어요."" (no prior bladder surgery, chemotherapy, or radiotherapy)."
+E4,제외,Inadequate blood sample quality or insufficient DNA yield for mutation analysis.,🕒 등록 후 확인,Sample quality and DNA yield are known only after laboratory processing following enrollment.
+E5,제외,Pregnancy or breastfeeding.,✅ 통과,환자가 남성라 임신·수유 기준에 해당하지 않음 (코드 판정)
+E6,제외,Serious uncontrolled intercurrent illness that may interfere with study particip,🕒 등록 후 확인,"The criterion includes investigator judgment about unsuitability, and no comorbidities are described."

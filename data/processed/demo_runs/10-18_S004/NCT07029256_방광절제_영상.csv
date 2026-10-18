@@ -1,0 +1,4 @@
+﻿ID,구분,기준,판정,근거
+I1,선정,Undergoing radical cystectomy for confirmed or suspected urothelial carcinoma of,❓ 모름,"Q4 answer: ""방광 종양을 내시경으로 제거하는 수술이 다음주로 예정되어 있어요. 방광 전체를 떼는 수술은 잘 모르겠어요."" The scheduled procedure is endoscopic tumor res"
+I2,선정,Prior abdominal imaging,✅ 통과,"Description: ""CT urography reveals a mass in the bladder wall."" Q5 answer: ""가슴, 배, 골반 CT에서 림프절이 커지거나 다른 곳으로 퍼진 소견은 없다고 들"
+E1,제외,History of partial cystectomy or complex bladder reconstruction or substitution ,✅ 통과,"Q2 answer: ""아니요, 방광 수술이나 항암치료, 방사선치료를 받은 적은 없어요."" The patient reports no prior bladder surgery. Q3 answer: ""암 진단을 받은 적은 "
