@@ -1,0 +1,364 @@
+[
+  {
+    "id": "I1",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Adult patients attending Accident and Emergency (A&E) at or admitted to recruiting hospitals via a GP with a new diagnosis of AP established by two of the following three criteria: (1) typical continuous upper abdominal pain; (2) amylase and/or lipase three or more times the upper limit of normal; (3) characteristic findings on abdominal imaging (if undertaken urgently by CT or MRI)",
+    "sub_conditions": [
+      "adult patient",
+      "attending A&E at a recruiting hospital or admitted to a recruiting hospital via a GP",
+      "new diagnosis of acute pancreatitis",
+      "at least two of three: typical continuous upper abdominal pain; amylase and/or lipase >=3x upper limit of normal; characteristic findings on abdominal imaging (CT or MRI, if urgently undertaken)"
+    ],
+    "needed_info": [
+      "age",
+      "admission route/location",
+      "diagnosis of acute pancreatitis",
+      "symptoms: abdominal pain",
+      "lab: amylase",
+      "lab: lipase",
+      "imaging: CT/MRI abdomen"
+    ]
+  },
+  {
+    "id": "I2",
+    "type": "inclusion",
+    "category": "temporal_numeric",
+    "text": "Patients in whom trial treatment can be started within 36 hours of admission to hospital with a new diagnosis of acute pancreatitis allowing 120 min for preparation of trial medication",
+    "sub_conditions": [
+      "trial treatment can be started within 36 hours of hospital admission with new diagnosis of acute pancreatitis",
+      "120 minutes allowed for preparation of trial medication"
+    ],
+    "needed_info": [
+      "time of hospital admission",
+      "time of diagnosis",
+      "feasibility of treatment start time"
+    ]
+  },
+  {
+    "id": "I3",
+    "type": "inclusion",
+    "category": "administrative",
+    "text": "Patients from whom appropriate consent is obtained (from the patient or their legal representative).",
+    "sub_conditions": [
+      "consent obtained from the patient or their legal representative"
+    ],
+    "needed_info": [
+      "informed consent status",
+      "legal representative availability"
+    ]
+  },
+  {
+    "id": "E1",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Age <18 or >85",
+    "sub_conditions": [
+      "age <18",
+      "age >85"
+    ],
+    "needed_info": [
+      "age"
+    ]
+  },
+  {
+    "id": "E2",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Patients with a bodyweight over 200 kg",
+    "sub_conditions": [
+      "bodyweight >200 kg"
+    ],
+    "needed_info": [
+      "body weight"
+    ]
+  },
+  {
+    "id": "E3",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Known previous AP within the last 30 days or chronic pancreatitis",
+    "sub_conditions": [
+      "known previous acute pancreatitis within the last 30 days",
+      "chronic pancreatitis"
+    ],
+    "needed_info": [
+      "history of acute pancreatitis with dates",
+      "diagnosis of chronic pancreatitis"
+    ]
+  },
+  {
+    "id": "E4",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Multiple sclerosis, systemic vasculitis, Guillain-Barré syndrome or other demyelinating disorder",
+    "sub_conditions": [
+      "multiple sclerosis",
+      "systemic vasculitis",
+      "Guillain-Barré syndrome",
+      "other demyelinating disorder"
+    ],
+    "needed_info": [
+      "medical history: neurological/demyelinating disorders",
+      "medical history: vasculitis"
+    ]
+  },
+  {
+    "id": "E5",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Known epilepsy",
+    "sub_conditions": [
+      "known epilepsy"
+    ],
+    "needed_info": [
+      "medical history: epilepsy"
+    ]
+  },
+  {
+    "id": "E6",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Moderate to severe heart failure and/or coronary disease (NYHA III/IV)",
+    "sub_conditions": [
+      "moderate to severe heart failure (NYHA III/IV)",
+      "coronary disease (NYHA III/IV)"
+    ],
+    "needed_info": [
+      "diagnosis: heart failure",
+      "NYHA class",
+      "diagnosis: coronary disease"
+    ]
+  },
+  {
+    "id": "E7",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Severe respiratory conditions including cystic fibrosis, severe asthma and severe chronic obstructive pulmonary disease (COPD)",
+    "sub_conditions": [
+      "cystic fibrosis",
+      "severe asthma",
+      "severe COPD",
+      "other severe respiratory conditions"
+    ],
+    "needed_info": [
+      "diagnosis: respiratory disease",
+      "severity of asthma/COPD"
+    ]
+  },
+  {
+    "id": "E8",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "On home oxygen or home mechanical ventilation",
+    "sub_conditions": [
+      "on home oxygen",
+      "on home mechanical ventilation"
+    ],
+    "needed_info": [
+      "home oxygen use",
+      "home ventilation use"
+    ]
+  },
+  {
+    "id": "E9",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Jaundice (serum bilirubin >50 µmol/L), and/or known advanced liver disease, on waiting list for liver transplantation or considered unsuitable for transplantation",
+    "sub_conditions": [
+      "jaundice with serum bilirubin >50 µmol/L",
+      "known advanced liver disease",
+      "on waiting list for liver transplantation",
+      "considered unsuitable for liver transplantation"
+    ],
+    "needed_info": [
+      "lab: serum bilirubin",
+      "diagnosis: liver disease",
+      "transplant list status"
+    ]
+  },
+  {
+    "id": "E10",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Known cancer for which chemotherapy and/or radiotherapy ongoing/completed in last 6 months",
+    "sub_conditions": [
+      "known cancer with ongoing chemotherapy",
+      "known cancer with ongoing radiotherapy",
+      "chemotherapy completed in last 6 months",
+      "radiotherapy completed in last 6 months"
+    ],
+    "needed_info": [
+      "cancer diagnosis",
+      "chemotherapy history with dates",
+      "radiotherapy history with dates"
+    ]
+  },
+  {
+    "id": "E11",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Known haematological malignancy",
+    "sub_conditions": [
+      "known haematological malignancy"
+    ],
+    "needed_info": [
+      "diagnosis: haematological malignancy"
+    ]
+  },
+  {
+    "id": "E12",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Known end-stage cancer requiring palliative care",
+    "sub_conditions": [
+      "known end-stage cancer requiring palliative care"
+    ],
+    "needed_info": [
+      "cancer stage",
+      "palliative care status"
+    ]
+  },
+  {
+    "id": "E13",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Known established infection prior to or suspected infection, including COVID-19, at the time of AP onset",
+    "sub_conditions": [
+      "known established infection prior to AP onset",
+      "suspected infection at time of AP onset",
+      "including COVID-19"
+    ],
+    "needed_info": [
+      "infection history",
+      "current infection status",
+      "COVID-19 status"
+    ]
+  },
+  {
+    "id": "E14",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Known history of tuberculosis, or household contact with those with tuberculosis or opportunistic infection",
+    "sub_conditions": [
+      "known history of tuberculosis",
+      "household contact with someone with tuberculosis",
+      "household contact with someone with opportunistic infection"
+    ],
+    "needed_info": [
+      "history of tuberculosis",
+      "household contact exposure"
+    ]
+  },
+  {
+    "id": "E15",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Known history of infective hepatitis",
+    "sub_conditions": [
+      "known history of infective hepatitis"
+    ],
+    "needed_info": [
+      "medical history: hepatitis"
+    ]
+  },
+  {
+    "id": "E16",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Rare diseases or inborn errors of metabolism that significantly increase the risk of infections, including severe combined immunodeficiency (SCID) and homozygous sickle cell disease",
+    "sub_conditions": [
+      "rare diseases that significantly increase infection risk",
+      "inborn errors of metabolism that significantly increase infection risk",
+      "severe combined immunodeficiency (SCID)",
+      "homozygous sickle cell disease"
+    ],
+    "needed_info": [
+      "medical history: rare diseases/metabolic disorders",
+      "diagnosis: SCID",
+      "diagnosis: sickle cell disease"
+    ]
+  },
+  {
+    "id": "E17",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Known live vaccine or infectious agent within one month of admission",
+    "sub_conditions": [
+      "live vaccine within one month of admission",
+      "infectious agent exposure/administration within one month of admission"
+    ],
+    "needed_info": [
+      "vaccination history with dates",
+      "infectious agent exposure"
+    ]
+  },
+  {
+    "id": "E18",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Known immunosuppressive or biologic therapy within one month of admission",
+    "sub_conditions": [
+      "immunosuppressive therapy within one month of admission",
+      "biologic therapy within one month of admission"
+    ],
+    "needed_info": [
+      "medication history with dates"
+    ]
+  },
+  {
+    "id": "E19",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Known hypersensitivity to infliximab or to inactive components of REMICADE® or to any murine proteins",
+    "sub_conditions": [
+      "hypersensitivity to infliximab",
+      "hypersensitivity to inactive components of REMICADE",
+      "hypersensitivity to murine proteins"
+    ],
+    "needed_info": [
+      "allergy history"
+    ]
+  },
+  {
+    "id": "E20",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Known pregnancy or lactation at admission",
+    "sub_conditions": [
+      "known pregnancy at admission",
+      "lactation at admission"
+    ],
+    "needed_info": [
+      "pregnancy status",
+      "lactation status"
+    ]
+  },
+  {
+    "id": "E21",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "Females of childbearing potential who do not agree to use adequate contraception up to 6 months after infliximab infusion",
+    "sub_conditions": [
+      "female of childbearing potential",
+      "does not agree to use adequate contraception up to 6 months after infliximab infusion"
+    ],
+    "needed_info": [
+      "sex",
+      "childbearing potential",
+      "agreement to use contraception"
+    ]
+  },
+  {
+    "id": "E22",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Known participation in investigational medicinal product study within last three months.",
+    "sub_conditions": [
+      "participation in an investigational medicinal product study within last three months"
+    ],
+    "needed_info": [
+      "clinical trial participation history with dates"
+    ]
+  }
+]

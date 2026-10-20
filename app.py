@@ -120,8 +120,7 @@ with st.sidebar:
 shown_case = st.session_state.get("bundle", {}).get("case_text") or case_text
 st.markdown(f"> **환자 케이스:** {shown_case}" if shown_case.strip() else "_왼쪽에서 환자를 선택하세요._")
 if st.session_state.get("preview"):
-    st.info("예시 모드 — 저장된 S005 결과를 보여주고 있어요. 질문 생성은 무료 모드로 돌고, 재평가는 API가 필요해 비활성화됩니다.",
-            icon=":material/visibility:")
+    st.info("예시 모드 — 저장된 S005 결과를 보여주고 있어요. 질문 생성은 무료 모드로 돌고, 재평가는 API가 필요해 비활성화됩니다.")
 
 # ── 1차 분석 ────────────────────────────────────────────────
 if start:

@@ -126,8 +126,16 @@ def inject_css() -> None:
 
 html, body, [class*="st-"], button, input, textarea {{
   font-family: "Pretendard Variable", Pretendard, -apple-system, "Apple SD Gothic Neo", sans-serif;
+  font-weight: 500;
+}}
+/* 위 전역 폰트가 Material 아이콘 폰트까지 덮어쓰면 아이콘이 글자로 보임 → 아이콘 폰트 복원 */
+[data-testid="stIconMaterial"], .material-symbols-rounded, [class*="material-symbols"] {{
+  font-family: "Material Symbols Rounded" !important; font-weight: 400 !important;
 }}
 .stApp {{ background: {T["bg"]}; color: {T["ink"]}; }}
+.stButton > button {{ font-weight: 700; }}
+.stMarkdown p, .stMarkdown li {{ font-weight: 500; }}
+strong, b {{ font-weight: 750; }}
 [data-testid="stSidebar"] {{ background: {T["tint"]}; border-right: 1px solid {T["border"]}; }}
 [data-testid="stSidebar"] * {{ color: {T["ink"]}; }}
 h1,h2,h3, .stMarkdown {{ color: {T["ink"]}; }}
@@ -135,17 +143,17 @@ h1,h2,h3, .stMarkdown {{ color: {T["ink"]}; }}
 .hero {{ display:flex; gap:14px; align-items:center; padding: 6px 0 2px; }}
 .hero-icon {{ width:46px;height:46px;border-radius:14px;background:{T["accent_soft"]};
   color:{T["accent"]}; display:flex;align-items:center;justify-content:center; }}
-.hero-title {{ font-size:1.55rem; font-weight:700; letter-spacing:-0.01em; }}
+.hero-title {{ font-size:1.55rem; font-weight:800; letter-spacing:-0.01em; }}
 .hero-sub {{ color:{T["muted"]}; font-size:0.92rem; margin-top:2px; }}
 .disclaimer {{ margin:10px 0 4px; padding:8px 14px; border-left:3px solid {T["border"]};
   background:{T["tint"]}; border-radius:0 10px 10px 0; color:{T["muted"]}; font-size:0.82rem; }}
 
 .sec-h {{ display:flex; gap:8px; align-items:center; margin:26px 0 10px;
-  font-size:1.12rem; font-weight:700; color:{T["ink"]}; }}
+  font-size:1.12rem; font-weight:800; color:{T["ink"]}; }}
 .sec-h svg {{ color:{T["accent"]}; }}
 
 .vb {{ display:inline-flex; align-items:center; gap:5px; padding:2px 10px; border-radius:999px;
-  font-size:0.8rem; font-weight:600; white-space:nowrap; line-height:1.7; }}
+  font-size:0.8rem; font-weight:700; white-space:nowrap; line-height:1.7; }}
 .vb-lg {{ font-size:0.88rem; padding:4px 13px; }}
 .arrow {{ margin:0 6px; color:{T["muted"]}; font-weight:700; }}
 
@@ -157,10 +165,10 @@ h1,h2,h3, .stMarkdown {{ color: {T["ink"]}; }}
 .card-title {{ color:{T["muted"]}; font-size:0.88rem; margin:6px 0 8px; }}
 .chips {{ display:flex; gap:6px; flex-wrap:wrap; }}
 .chip {{ display:inline-flex; align-items:center; gap:4px; padding:1px 9px; border-radius:999px;
-  font-size:0.76rem; font-weight:600; }}
+  font-size:0.76rem; font-weight:700; }}
 
 table.sheet {{ width:100%; border-collapse:collapse; font-size:0.85rem; margin:4px 0 8px; }}
-table.sheet th {{ text-align:left; color:{T["muted"]}; font-weight:600; font-size:0.76rem;
+table.sheet th {{ text-align:left; color:{T["muted"]}; font-weight:700; font-size:0.76rem;
   padding:7px 10px; border-bottom:1px solid {T["border"]}; background:{T["tint"]}; }}
 table.sheet td {{ padding:8px 10px; border-bottom:1px solid {T["tint"]}; vertical-align:top; }}
 table.sheet td.cid {{ font-weight:700; white-space:nowrap; }}
