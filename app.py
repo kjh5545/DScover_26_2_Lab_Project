@@ -15,12 +15,8 @@ from pathlib import Path
 
 import streamlit as st
 
-from src.agents.criteria_parser import parse_criteria
-from src.agents.matcher import final_judgment, match_with_rules
-from src.agents.patient_profiler import profile_patient
 from src.agents.recommender import rank_trials
-from src.agents.trial_searcher import search_candidates
-from src.pipeline import all_answers, final_check, next_round, reassess
+from src.pipeline import all_answers, final_check, next_round, reassess, run_intake
 from src.question_builder import questions_for_round
 from src import ui
 
@@ -39,29 +35,6 @@ ui.header()
 def load_patients() -> dict:
     data = json.loads((ROOT / "data" / "raw" / "official_synthetic_patients.json").read_text(encoding="utf-8"))
     return {t["num"]: t["title"] for t in data["topics"]}
-
-
-def get_criteria_cached(trial: dict) -> list[dict]:
-    """기준 파싱 (디스크 캐시 재사용 — 데모 중 반복 비용 절약)."""
-    path = ROOT / "data" / "processed" / f"criteria_{trial['nct_id']}.json"
-    if path.exists():
-        return json.loads(path.read_text(encoding="utf-8"))
-    criteria = parse_criteria(trial["eligibility_criteria"])
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(criteria, ensure_ascii=False, indent=2), encoding="utf-8")
-    return criteria
-
-
-def screen_trial(profile: dict, trial: dict, case_text: str | None = None) -> dict:
-    criteria = get_criteria_cached(trial)
-    judgments, _ = match_with_rules(profile, criteria, case_text=case_text)
-    return {
-        "nct_id": trial["nct_id"],
-        "title": trial["title"],
-        "criteria": criteria,
-        "judgments": judgments,
-        "final_judgment": final_judgment(judgments),
-    }
 
 
 def render_screening(s: dict, prev_judgments: list[dict] | None = None) -> None:
@@ -113,7 +86,7 @@ with st.sidebar:
                  help="data/handoff/S005.json 저장본을 불러와요 — API 호출 없음"):
         example = json.loads((ROOT / "data" / "handoff" / "S005.json").read_text(encoding="utf-8"))
         st.session_state.clear()
-        st.session_state.update(bundle=example, search=None, prev_judgments={},
+        st.session_state.update(bundle=example, prev_judgments={},
                                 last_changed=[], finished=False, preview=True)
         st.rerun()
 
@@ -122,24 +95,16 @@ st.markdown(f"> **환자 케이스:** {shown_case}" if shown_case.strip() else "
 if st.session_state.get("preview"):
     st.info("예시 모드 — 저장된 S005 결과를 보여주고 있어요. 질문 생성은 무료 모드로 돌고, 재평가는 API가 필요해 비활성화됩니다.")
 
-# ── 1차 분석 ────────────────────────────────────────────────
+# ── 1차 분석: 1~4번은 팀 표준 진입점 run_intake 하나로 (10/20 합의) ───────
 if start:
     st.session_state.clear()
     with st.status("에이전트 파이프라인 실행 중...", expanded=True) as status:
-        st.write("[1] 환자 정보 이해 에이전트...")
-        profile = profile_patient(case_text)
-        profile["id"] = pid
-        st.write("[2] 후보 검색 + 하드 필터(나이·성별)...")
-        search = search_candidates(profile, max_candidates=max_candidates)
-        st.write(f"    검색어 {search['queries']} → {search['total_found']}건 → 필터 후 {search['after_hard_filter']}건")
-        screenings = []
-        for i, trial in enumerate(search["candidates"], 1):
-            st.write(f"[3-4] {trial['nct_id']} 기준 파싱 + 매칭 ({i}/{len(search['candidates'])})...")
-            screenings.append(screen_trial(profile, trial, case_text))
+        # save=False: 데모 실행이 data/handoff/의 커밋된 예시 파일을 덮어쓰지 않게
+        bundle = run_intake(case_text, patient_id=pid, max_candidates=max_candidates,
+                            save=False, on_step=st.write)
         status.update(label="분석 완료", state="complete")
     # 질문 루프는 bundle(handoff 형식) 하나에 질문·답변·바뀐 판정을 쌓는다 (docs/질문루프_정리.md)
-    bundle = {"patient_id": pid, "case_text": case_text, "profile": profile, "trials": screenings}
-    st.session_state.update(bundle=bundle, search=search, prev_judgments={}, last_changed=[], finished=False)
+    st.session_state.update(bundle=bundle, prev_judgments={}, last_changed=[], finished=False)
 
 # ── 결과 표시 ───────────────────────────────────────────────
 if "bundle" in st.session_state:
