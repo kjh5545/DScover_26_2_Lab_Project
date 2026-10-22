@@ -2,26 +2,16 @@
   "S004": {
     "sheet": "screening\\detailed\\인선\\S004_detailed_sheet_filled.md",
     "direct": {
-      "same": 18,
+      "same": 19,
       "total": 19,
-      "decided_ok": 8,
-      "decided": 8,
+      "decided_ok": 9,
+      "decided": 9,
       "confusion": {
-        "pass->pass": 8,
+        "pass->pass": 9,
         "post_enrollment->post_enrollment": 3,
-        "unknown->unknown": 7,
-        "unknown->pass": 1
+        "unknown->unknown": 7
       },
-      "misses": [
-        {
-          "trial": "NCT04369560",
-          "id": "E4",
-          "gold": "unknown",
-          "ai": "pass",
-          "ai_evidence": "CT of the chest, abdomen, and pelvis shows no enlarged lymph nodes or evidence of distant metastases.",
-          "gold_evidence": "전이 관련 의학적 진단 명시되어 있지 않음"
-        }
-      ],
+      "misses": [],
       "finals": [
         {
           "trial": "NCT04369560",
@@ -37,15 +27,15 @@
     },
     "loop": {
       "before": {
-        "same": 14,
+        "same": 13,
         "total": 19,
         "decided_ok": 3,
-        "decided": 8,
+        "decided": 9,
         "confusion": {
           "pass->pass": 3,
           "post_enrollment->post_enrollment": 3,
-          "pass->unknown": 5,
-          "unknown->unknown": 8
+          "pass->unknown": 6,
+          "unknown->unknown": 7
         },
         "misses": [
           {
@@ -74,6 +64,14 @@
           },
           {
             "trial": "NCT04369560",
+            "id": "E4",
+            "gold": "pass",
+            "ai": "unknown",
+            "ai_evidence": "The description reports only a bladder wall mass on CT urography and does not mention staging or metastasis. Absence of mention does not rule out metastatic disease.",
+            "gold_evidence": "\"CT of the chest, abdomen, and pelvis shows no enlarged lymph nodes or evidence of distant metastases\" → 전이 소견 없음 (10/18 주희 재판정, 원래 모름)"
+          },
+          {
+            "trial": "NCT04369560",
             "id": "E6",
             "gold": "pass",
             "ai": "unknown",
@@ -91,32 +89,23 @@
         ]
       },
       "after": {
-        "same": 17,
+        "same": 18,
         "total": 19,
-        "decided_ok": 7,
-        "decided": 8,
+        "decided_ok": 9,
+        "decided": 9,
         "confusion": {
-          "pass->pass": 7,
+          "pass->pass": 9,
           "post_enrollment->post_enrollment": 3,
-          "unknown->unknown": 7,
-          "pass->unknown": 1,
+          "unknown->unknown": 6,
           "unknown->fail": 1
         },
         "misses": [
-          {
-            "trial": "NCT04369560",
-            "id": "E6",
-            "gold": "pass",
-            "ai": "unknown",
-            "ai_evidence": "Q13 answer: \"소변 배양검사는 음성이었고, 소변검사에서도 백혈구나 아질산염은 없었어요. 따갑거나 열이 나는 증상이나 항생제 치료를 받았는지는 잘 기억이 안 나요.\" Urine culture was negative, which argues against a UTI. However, the patient is unsure about symptoms and antibiotic treatment, so this is not confirmed.",
-            "gold_evidence": "\"no white blood cells or nitrite, and a urine culture was negative\" → 요로감염 없음"
-          },
           {
             "trial": "NCT05646485",
             "id": "E2",
             "gold": "unknown",
             "ai": "fail",
-            "ai_evidence": "Q3 answer: \"혈뇨는 3주 전부터 간헐적으로 있었고, 그 증상으로 최근에 CT와 소변검사, 방광내시경을 받았어요.\" Per the rules, an evaluation already done for the current symptom counts as prior, so he had a hematuria evaluation within the last 2 years.",
+            "ai_evidence": "Q3 answer: \"눈에 보이는 혈뇨가 3주 전부터 간헐적으로 있어서 최근에 CT 요로조영술, 소변검사, 소변배양검사, 방광내시경을 받았어요.\" Cystoscopy was done two days ago. Per the instructions, an evaluation already done for the current problem counts as prior, even if recent.",
             "gold_evidence": "\"The hematuria began three weeks ago\" + \"CT urography reveals a mass\" + \"Cystoscopy two days ago\" → 최근 검사는 있으나 혈뇨 때문에 받은 검사라고 명시되지 않음"
           }
         ],
@@ -133,21 +122,21 @@
           }
         ]
       },
-      "questions": 13,
+      "questions": 14,
       "unknown_before": 13,
-      "unknown_after": 8
+      "unknown_after": 6
     }
   },
   "S008": {
     "sheet": "screening\\detailed\\인선\\S008_detailed_sheet_filled.md",
     "direct": {
-      "same": 23,
+      "same": 24,
       "total": 27,
-      "decided_ok": 10,
-      "decided": 10,
+      "decided_ok": 11,
+      "decided": 11,
       "confusion": {
-        "pass->pass": 9,
-        "unknown->pass": 4,
+        "pass->pass": 10,
+        "unknown->pass": 3,
         "unknown->unknown": 11,
         "fail->fail": 1,
         "post_enrollment->post_enrollment": 2
@@ -168,14 +157,6 @@
           "ai": "pass",
           "ai_evidence": "\"diagnosed with idiopathic pulmonary fibrosis by her pulmonologist 14 months ago\"; HRCT shows \"usual interstitial pneumonia pattern\" with honeycombing and negative ANA. The description does not explicitly cite ATS/ERS criteria, but the diagnosis and HRCT pattern are on record.",
           "gold_evidence": "IPF 진단은 받았으니, ATS/ERS 합의 기준을 충족했는지 여부는 알 수 없음"
-        },
-        {
-          "trial": "NCT07299695",
-          "id": "E1",
-          "gold": "unknown",
-          "ai": "pass",
-          "ai_evidence": "No acute worsening is described (\"without any sudden change\"), and the \"echocardiogram last month showed normal left ventricular function\". Pulmonary embolism is not mentioned, but there is no acute worsening to attribute to it.",
-          "gold_evidence": "심부전, 폐색전증 관련 정보 없음"
         },
         {
           "trial": "NCT07299695",
@@ -201,14 +182,14 @@
     },
     "loop": {
       "before": {
-        "same": 19,
+        "same": 18,
         "total": 27,
         "decided_ok": 2,
-        "decided": 10,
+        "decided": 11,
         "confusion": {
           "pass->pass": 2,
-          "pass->unknown": 7,
-          "unknown->unknown": 15,
+          "pass->unknown": 8,
+          "unknown->unknown": 14,
           "fail->unknown": 1,
           "post_enrollment->post_enrollment": 2
         },
@@ -271,6 +252,14 @@
           },
           {
             "trial": "NCT07299695",
+            "id": "E1",
+            "gold": "pass",
+            "ai": "unknown",
+            "ai_evidence": "No mention of heart failure or pulmonary embolism in the description.",
+            "gold_evidence": "\"worsened gradually over the past 18 months without any sudden change\" → 급성 악화 없음, 시험 1 E3과 같은 근거 (10/18 주희 재판정, 원래 모름)"
+          },
+          {
+            "trial": "NCT07299695",
             "id": "E8",
             "gold": "pass",
             "ai": "unknown",
@@ -280,41 +269,49 @@
         ]
       },
       "after": {
-        "same": 24,
+        "same": 23,
         "total": 27,
         "decided_ok": 9,
-        "decided": 10,
+        "decided": 11,
         "confusion": {
           "pass->pass": 8,
-          "unknown->unknown": 13,
           "unknown->pass": 2,
+          "unknown->unknown": 12,
           "fail->fail": 1,
           "post_enrollment->post_enrollment": 2,
-          "pass->unknown": 1
+          "pass->unknown": 2
         },
         "misses": [
           {
-            "trial": "NCT07299695",
-            "id": "I2",
+            "trial": "NCT07652658",
+            "id": "E1",
             "gold": "unknown",
             "ai": "pass",
-            "ai_evidence": "Q1 answer: \"네, 14개월 전에 호흡기내과 의사에게 특발성 폐섬유증이라고 진단받았어요.\" Description: CT with \"bilateral basal reticular opacities with honeycombing\", progressive dyspnea, dry cough. A formal IPF diagnosis is on record and the CT pattern is consistent with UIP.",
-            "gold_evidence": "IPF 진단은 받았으니, ATS/ERS 합의 기준을 충족했는지 여부는 알 수 없음"
+            "ai_evidence": "Q6 answer: \"특발성 폐섬유증 진단만 받았고, 다른 간질성 폐질환을 진단받았다는 얘기는 기억나지 않아요. 항핵항체(ANA) 검사는 음성이었어요.\" The patient reports only an IPF diagnosis and no other ILD.",
+            "gold_evidence": "다른 간질성 폐질환 진단 내용 및 병력 없음"
+          },
+          {
+            "trial": "NCT07652658",
+            "id": "E6",
+            "gold": "unknown",
+            "ai": "pass",
+            "ai_evidence": "Q5 answer: \"심부전을 진단받았다는 얘기는 기억나지 않아요. 지난달 심장 초음파를 했는데 좌심실 기능은 정상이라고 했어요.\" No heart failure diagnosis is recalled, and LV function is normal on echo.",
+            "gold_evidence": "심부전 관련 정보 없음"
           },
           {
             "trial": "NCT07299695",
             "id": "E1",
-            "gold": "unknown",
-            "ai": "pass",
-            "ai_evidence": "Q2 answer: \"갑자기 나빠진 적은 없어요\" (no acute worsening). Q3 answer: echo last month, \"좌심실 기능은 정상\". No acute worsening exists that could be attributed to heart failure or PE.",
-            "gold_evidence": "심부전, 폐색전증 관련 정보 없음"
+            "gold": "pass",
+            "ai": "unknown",
+            "ai_evidence": "No acute worsening described. Q5 answer: heart failure diagnosis not remembered; echo last month \"좌심실 기능은 정상\". Pulmonary embolism not mentioned. Cannot confirm absence of uncontrolled heart failure or PE as cause of acute worsening.",
+            "gold_evidence": "\"worsened gradually over the past 18 months without any sudden change\" → 급성 악화 없음, 시험 1 E3과 같은 근거 (10/18 주희 재판정, 원래 모름)"
           },
           {
             "trial": "NCT07299695",
             "id": "E8",
             "gold": "pass",
             "ai": "unknown",
-            "ai_evidence": "Pregnancy/lactation not documented. The patient is 60 years old, but this is not stated explicitly as excluding pregnancy or lactation.",
+            "ai_evidence": "Patient is a 60-year-old woman; pregnancy/lactation not mentioned and not logically excluded by description.",
             "gold_evidence": "\"She is postmenopausal\" - 폐경 후이며 60세 환자인 것을 통해 임신, 수유 중이 아님을 판단"
           }
         ],
@@ -331,7 +328,7 @@
           }
         ]
       },
-      "questions": 8,
+      "questions": 13,
       "unknown_before": 23,
       "unknown_after": 14
     }

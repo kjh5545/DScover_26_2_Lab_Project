@@ -1,0 +1,326 @@
+{
+  "patient_id": "S005",
+  "questions": [
+    {
+      "text": "의사에게 만성 편두통(chronic migraine), 군발두통(cluster headache), 전조가 있는 편두통(migraine with aura) 중 진단받은 것이 있나요? 진단명이 적힌 진료 기록이 있으면 제공해 주실 수 있는지도 알려 주세요.",
+      "needed_info": "만성 편두통(chronic migraine), 군발두통(cluster headache), 전조가 있는 편두통(migraine with aura) 진단 여부와 진단명이 적힌 진료 기록 제공 가능 여부",
+      "resolves": [
+        {
+          "trial": "NCT07348783",
+          "criteria": [
+            "I1",
+            "I4"
+          ]
+        },
+        {
+          "trial": "NCT04063540",
+          "criteria": [
+            "I1"
+          ]
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "text": "두통 전에 시야 이상 같은 전조 증상이 나타난 편두통 발작이 있었던 달마다, 그 연도와 월, 그리고 그 달의 발작 횟수를 알려 주실 수 있나요? 날짜가 표시된 두통 일지가 있으면 제공할 수 있는지도 알려 주세요.",
+      "needed_info": "전조를 동반한 편두통 발작이 있었던 각 달의 연·월과 달별 발작 횟수, 날짜가 표시된 두통 일지 제공 가능 여부",
+      "resolves": [
+        {
+          "trial": "NCT04063540",
+          "criteria": [
+            "I2"
+          ]
+        }
+      ],
+      "priority": 2
+    },
+    {
+      "text": "두통이 있었던 날이 각 달에 며칠이었는지 달별(연도와 월)로 알려 주실 수 있나요? 날짜가 표시된 두통 일지가 있으면 제공할 수 있는지도 알려 주세요.",
+      "needed_info": "월별 두통이 있었던 날 수(연·월 구분), 날짜가 표시된 두통 일지 제공 가능 여부",
+      "resolves": [
+        {
+          "trial": "NCT07348783",
+          "criteria": [
+            "I3"
+          ]
+        }
+      ],
+      "priority": 3
+    },
+    {
+      "text": "현재 사용 중인 모든 약(먹는 약, 주사, 영양제·보충제 포함)의 이름이 적힌 약 목록이나 처방전을 제공해 주실 수 있나요?",
+      "needed_info": "현재 사용 중인 약 전체(먹는 약, 주사, 보충제 포함)의 이름, 또는 약 목록·처방전 제공 가능 여부",
+      "resolves": [
+        {
+          "trial": "NCT04063540",
+          "criteria": [
+            "E3",
+            "E6"
+          ]
+        },
+        {
+          "trial": "NCT07348783",
+          "criteria": [
+            "E4"
+          ]
+        }
+      ],
+      "priority": 4
+    },
+    {
+      "text": "혈중 칼륨 수치, 신장 기능(크레아티닌 청소율 등), 간 기능 검사가 들어 있는 혈액검사 결과지가 있으면 제공해 주실 수 있나요?",
+      "needed_info": "혈중 칼륨, 크레아티닌 청소율/eGFR, 간 기능 검사 관련 기존 검사 결과지 보유 및 제공 가능 여부",
+      "resolves": [
+        {
+          "trial": "NCT04063540",
+          "criteria": [
+            "E2",
+            "E4",
+            "E5"
+          ]
+        }
+      ],
+      "priority": 5
+    }
+  ],
+  "not_asked": [
+    {
+      "trial": "NCT07348783",
+      "criterion_id": "I6",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT07348783",
+      "criterion_id": "E1",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT07348783",
+      "criterion_id": "E2",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT07348783",
+      "criterion_id": "E3",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT07348783",
+      "criterion_id": "E5",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT04063540",
+      "criterion_id": "I3",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT04063540",
+      "criterion_id": "I4",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT04063540",
+      "criterion_id": "I6",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT04063540",
+      "criterion_id": "E1",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT04063540",
+      "criterion_id": "E9",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT04063540",
+      "criterion_id": "E10",
+      "reason": "질문 수 제한으로 보류"
+    }
+  ],
+  "review": {
+    "priority_notes": [
+      {
+        "question_number": 1,
+        "reason": "두 시험의 선정 기준에 공통으로 필요한 두통 진단 정보를 제공합니다. NCT07348783 I1·I4와 NCT04063540 I1의 진단 요건 판정에 직접 도움이 되며, 진단 기록도 요청합니다."
+      },
+      {
+        "question_number": 2,
+        "reason": "NCT04063540 I2의 월별 전조 편두통 발작 횟수 판정에 직접 필요한 정보입니다. 등록일이 없으므로 연·월이 있는 답변이나 기록을 요청합니다."
+      },
+      {
+        "question_number": 3,
+        "reason": "NCT07348783 I3의 월별 두통 일수 조건 판정에 직접 필요한 정보입니다. 이 시험에 배정된 질문이 상대적으로 적다는 점도 고려했습니다."
+      },
+      {
+        "question_number": 4,
+        "reason": "현재 사용 약 목록 하나로 NCT04063540 E3·E6와 NCT07348783 E4의 약물 관련 판정에 동시에 도움이 되므로 공통성이 높습니다."
+      },
+      {
+        "question_number": 5,
+        "reason": "기존 혈액검사 결과지 하나로 NCT04063540 E2·E4·E5의 검사 기반 제외 기준 판정에 도움이 될 수 있습니다. 수치는 환자 기억에 의존하지 않고 기록으로 확인합니다."
+      }
+    ],
+    "criterion_checks": [
+      {
+        "trial": "NCT07348783",
+        "criterion_id": "I1",
+        "question_numbers": [
+          1
+        ],
+        "asked_info": [
+          "만성 편두통(chronic migraine) 또는 군발두통(cluster headache) 진단 여부",
+          "진단명이 적힌 진료 기록 제공 가능 여부"
+        ],
+        "remaining_info": [
+          "진단 기록의 내용과 진단 시점 확인 필요"
+        ]
+      },
+      {
+        "trial": "NCT07348783",
+        "criterion_id": "I4",
+        "question_numbers": [
+          1
+        ],
+        "asked_info": [
+          "군발두통(cluster headache) 진단 여부",
+          "진단명이 적힌 진료 기록 제공 가능 여부"
+        ],
+        "remaining_info": [
+          "만성 군발두통(chronic cluster headache) 여부(연간 관해 기간 3개월 미만)",
+          "ICHD-III 기준에 따른 진단 여부는 진단 기록으로 확인 필요"
+        ]
+      },
+      {
+        "trial": "NCT07348783",
+        "criterion_id": "I3",
+        "question_numbers": [
+          3
+        ],
+        "asked_info": [
+          "각 달(연·월)의 두통이 있었던 날 수",
+          "날짜가 표시된 두통 일지 제공 가능 여부"
+        ],
+        "remaining_info": [
+          "각 달 편두통이 있었던 날 수(≥8일) 확인 필요",
+          "원문의 ≥15 headache days/month 조건에 해당하는 기간 해석 확인 필요",
+          "chronic/high frequency migraine 진단 여부 확인 필요"
+        ]
+      },
+      {
+        "trial": "NCT07348783",
+        "criterion_id": "E4",
+        "question_numbers": [
+          4
+        ],
+        "asked_info": [
+          "현재 사용 중인 약 이름(혈압약 사용 여부 확인용) 또는 약 목록·처방전 제공 가능 여부"
+        ],
+        "remaining_info": [
+          "혈압 수치(unmedicated high blood pressure 여부)",
+          "heart failure 등 심장질환 진단 이력 확인 필요"
+        ]
+      },
+      {
+        "trial": "NCT04063540",
+        "criterion_id": "I1",
+        "question_numbers": [
+          1
+        ],
+        "asked_info": [
+          "전조가 있는 편두통(migraine with aura) 진단 여부",
+          "진단명이 적힌 진료 기록 제공 가능 여부"
+        ],
+        "remaining_info": [
+          "원문의 'Diagnosis of migraine with aura code'에 해당하는 구체적 진단 기준·코드는 진료 기록으로 확인 필요"
+        ]
+      },
+      {
+        "trial": "NCT04063540",
+        "criterion_id": "I2",
+        "question_numbers": [
+          2
+        ],
+        "asked_info": [
+          "전조를 동반한 편두통 발작이 있었던 각 달의 연·월과 달별 발작 횟수",
+          "날짜가 표시된 두통 일지 제공 가능 여부"
+        ],
+        "remaining_info": [
+          "등록일(inclusion date)이 없어 'in the 3 months prior to inclusion' 기간과의 대조는 등록일 확인 후 필요",
+          "원문 'at least 1 aura with aura per month'의 의미 해석 확인 필요"
+        ]
+      },
+      {
+        "trial": "NCT04063540",
+        "criterion_id": "E3",
+        "question_numbers": [
+          4
+        ],
+        "asked_info": [
+          "현재 사용 중인 약 이름(먹는 약, 주사, 보충제 포함) 또는 약 목록·처방전 제공 가능 여부"
+        ],
+        "remaining_info": [
+          "목록에 hyperkalemic diuretic 또는 potassium salts가 포함되는지 확인 필요"
+        ]
+      },
+      {
+        "trial": "NCT04063540",
+        "criterion_id": "E6",
+        "question_numbers": [
+          4
+        ],
+        "asked_info": [
+          "현재 사용 중인 약 이름(먹는 약, 주사, 보충제 포함) 또는 약 목록·처방전 제공 가능 여부"
+        ],
+        "remaining_info": [
+          "lithium, converting enzyme inhibitors, angiotensin II inhibitors, ciclosporin, tacrolimus, torsades de pointes를 일으키는 non-antiarrhythmic drugs 해당 여부 확인 필요",
+          "angiotensin II inhibitors의 hypokalemia 예외 적용 여부는 혈중 칼륨 수치 확인 필요"
+        ]
+      },
+      {
+        "trial": "NCT04063540",
+        "criterion_id": "E2",
+        "question_numbers": [
+          5
+        ],
+        "asked_info": [
+          "혈중 칼륨이 포함된 기존 혈액검사 결과지 보유·제공 가능 여부"
+        ],
+        "remaining_info": [
+          "결과지에 혈중 칼륨이 포함되어 있는지, 수치가 >5.5 mmol/l인지 확인 필요",
+          "검사 날짜 확인 필요"
+        ]
+      },
+      {
+        "trial": "NCT04063540",
+        "criterion_id": "E4",
+        "question_numbers": [
+          5
+        ],
+        "asked_info": [
+          "크레아티닌 청소율/신장 기능 검사가 포함된 기존 결과지 보유·제공 가능 여부"
+        ],
+        "remaining_info": [
+          "결과지에 크레아티닌 청소율 또는 eGFR이 포함되어 있는지, 수치가 <60 ml/min인지 확인 필요",
+          "신장 질환 병력 확인 필요"
+        ]
+      },
+      {
+        "trial": "NCT04063540",
+        "criterion_id": "E5",
+        "question_numbers": [
+          5
+        ],
+        "asked_info": [
+          "간 기능 검사가 포함된 기존 결과지 보유·제공 가능 여부"
+        ],
+        "remaining_info": [
+          "결과지에 간 기능 검사가 포함되어 있는지 확인 필요",
+          "severe hepatocellular insufficiency 해당 여부와 간질환 병력 확인 필요"
+        ]
+      }
+    ]
+  }
+}

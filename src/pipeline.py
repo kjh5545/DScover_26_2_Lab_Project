@@ -131,7 +131,7 @@ def save_bundle(bundle: dict) -> Path:
 # 형식: docs/질문루프_정리.md (bundle["rounds"]에 질문·답변·바뀐 판정을 라운드별로 쌓는다)
 
 def asked_criteria(bundle: dict) -> dict[str, set[str]]:
-    """이미 질문한 기준 {시험: {기준 ID}} — 같은 기준을 다시 묻지 않기 위해."""
+    """이미 질문한 기준 {시험: {기준 ID}}."""
     asked: dict[str, set[str]] = {}
     for r in bundle.get("rounds", []):
         for q in r["questions"]:
@@ -140,11 +140,25 @@ def asked_criteria(bundle: dict) -> dict[str, set[str]]:
     return asked
 
 
+def ask_history(bundle: dict) -> dict[tuple[str, str], dict[str, int]]:
+    """기준별 질문 기록 {(시험, 기준): {"asked": 물어본 횟수, "answered": 답을 받은 횟수}} — 5번 후속 질문 판단용."""
+    history: dict[tuple[str, str], dict[str, int]] = {}
+    for r in bundle.get("rounds", []):
+        answered = {a["question_id"] for a in r["answers"]}
+        for q in r["questions"]:
+            for res in q.get("resolves", []):
+                for cid in res["criteria"]:
+                    h = history.setdefault((res["trial"], cid), {"asked": 0, "answered": 0})
+                    h["asked"] += 1
+                    h["answered"] += q["id"] in answered
+    return history
+
+
 def next_round(bundle: dict, build_questions=None, max_questions: int = 5, save: bool = False) -> list[dict]:
     """[5] 이번 라운드 질문을 만들어 bundle["rounds"]에 추가하고, 추가한 질문을 반환한다.
 
     build_questions: bundle → [{"text", "needed_info", "resolves", "priority"}] 함수 (5번).
-                     없으면 src.question_builder.questions_for_round (서현 v2.1 프롬프트, AI 호출 1번).
+                     없으면 src.question_builder.questions_for_round (서현 v2.3.3 프롬프트, AI 호출 1번).
                      ID는 여기서 Q1, Q2, ... 통번호로 붙인다.
     질문이 없으면 라운드를 만들지 않고 [] 반환.
     """
