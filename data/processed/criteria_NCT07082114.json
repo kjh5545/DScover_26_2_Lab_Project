@@ -1,0 +1,477 @@
+[
+  {
+    "id": "I1",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Male or female subjects between 18 and 75 years of age (inclusive).",
+    "sub_conditions": [
+      "Age ≥18 years",
+      "Age ≤75 years",
+      "Male or female"
+    ],
+    "needed_info": [
+      "age",
+      "sex"
+    ]
+  },
+  {
+    "id": "I2",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Have been diagnosed with type 2 diabetes mellitus (T2DM) for at least 3 months based on the World Health Organization criteria",
+    "sub_conditions": [
+      "Diagnosis of T2DM per WHO criteria",
+      "T2DM duration ≥3 months"
+    ],
+    "needed_info": [
+      "diagnosis",
+      "date of T2DM diagnosis"
+    ]
+  },
+  {
+    "id": "I3",
+    "type": "inclusion",
+    "category": "temporal_numeric",
+    "text": "Participants treated with a stable dose of metformin (maintenance dose of at least 1500 mg/day or a maximally tolerated dose not less than 1000 mg) for at least 8 weeks prior to screening; and must be stable for at least 12 weeks prior to randomization.",
+    "sub_conditions": [
+      "Stable metformin dose for ≥8 weeks prior to screening",
+      "Metformin dose ≥1500 mg/day or maximally tolerated dose ≥1000 mg",
+      "Stable for ≥12 weeks prior to randomization"
+    ],
+    "needed_info": [
+      "medication history: metformin dose",
+      "metformin duration and stability"
+    ]
+  },
+  {
+    "id": "I4",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "HbA1c ≥7.5% and ≤11.0% at screening as assessed by the local laboratory",
+    "sub_conditions": [
+      "Screening HbA1c ≥7.5%",
+      "Screening HbA1c ≤11.0%"
+    ],
+    "needed_info": [
+      "lab: HbA1c (local lab, screening)"
+    ]
+  },
+  {
+    "id": "I5",
+    "type": "inclusion",
+    "category": "post_enrollment",
+    "text": "HbA1c ≥7.5% and ≤11.0% prior to randomization as assessed by the specified central laboratory.",
+    "sub_conditions": [
+      "Pre-randomization HbA1c ≥7.5%",
+      "Pre-randomization HbA1c ≤11.0%",
+      "Assessed by central laboratory"
+    ],
+    "needed_info": [
+      "lab: HbA1c (central lab, prior to randomization)"
+    ]
+  },
+  {
+    "id": "I6",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Having a body mass index (BMI) of 19.0 to 40.0 kg/m2, inclusive.",
+    "sub_conditions": [
+      "BMI ≥19.0 kg/m2",
+      "BMI ≤40.0 kg/m2"
+    ],
+    "needed_info": [
+      "BMI",
+      "height",
+      "weight"
+    ]
+  },
+  {
+    "id": "I7",
+    "type": "inclusion",
+    "category": "administrative",
+    "text": "Female participants of childbearing potential and male participants must agree to use highly effective contraception method from the day of signing the ICF and until 30 days (female) or 90 days (male) after the final dose administration.",
+    "sub_conditions": [
+      "Agree to use highly effective contraception (females of childbearing potential and males)",
+      "Contraception from ICF signing until 30 days (female) or 90 days (male) after final dose"
+    ],
+    "needed_info": [
+      "sex",
+      "childbearing potential",
+      "willingness to use contraception"
+    ]
+  },
+  {
+    "id": "I8",
+    "type": "inclusion",
+    "category": "administrative",
+    "text": "Able to understand and comply with protocol requirements, agree to maintain the same dietary and exercise habits throughout the trial, be willing to complete the trial in strict compliance with the clinical trial protocol and provide written informed consent.",
+    "sub_conditions": [
+      "Able to understand and comply with protocol requirements",
+      "Agree to maintain same dietary and exercise habits throughout trial",
+      "Willing to complete trial in compliance with protocol",
+      "Provide written informed consent"
+    ],
+    "needed_info": [
+      "capacity to understand/comply",
+      "willingness to maintain diet/exercise",
+      "informed consent"
+    ]
+  },
+  {
+    "id": "E1",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Diagnosed with type 1 diabetes mellitus (including latent autoimmune diabetes in adults), special types of diabetes or gestational diabetes mellitus",
+    "sub_conditions": [
+      "Type 1 diabetes mellitus",
+      "Latent autoimmune diabetes in adults",
+      "Special types of diabetes",
+      "Gestational diabetes mellitus"
+    ],
+    "needed_info": [
+      "diabetes type diagnosis"
+    ]
+  },
+  {
+    "id": "E2",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Evidence of acute complications of diabetes (e.g., diabetic ketoacidosis, diabetic lactosidosis, or hyperosmolar nonketotic coma) within 6 months prior to signing the informed consent form (ICF).",
+    "sub_conditions": [
+      "Diabetic ketoacidosis within 6 months",
+      "Diabetic lactic acidosis within 6 months",
+      "Hyperosmolar nonketotic coma within 6 months",
+      "Other acute diabetes complications within 6 months"
+    ],
+    "needed_info": [
+      "medical history: acute diabetic complications and dates"
+    ]
+  },
+  {
+    "id": "E3",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Have a known self or family history of medullary thyroid carcinoma, thyroid C-cell hyperplasia or multiple endocrine neoplasia type II (MEN2)",
+    "sub_conditions": [
+      "Personal or family history of medullary thyroid carcinoma",
+      "Personal or family history of thyroid C-cell hyperplasia",
+      "Personal or family history of MEN2"
+    ],
+    "needed_info": [
+      "medical history",
+      "family history"
+    ]
+  },
+  {
+    "id": "E4",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "History of acute or chronic pancreatitis or pancreatic injury, or any high-risk factor which may lead to pancreatitis",
+    "sub_conditions": [
+      "History of acute pancreatitis",
+      "History of chronic pancreatitis",
+      "History of pancreatic injury",
+      "Any high-risk factor for pancreatitis"
+    ],
+    "needed_info": [
+      "medical history: pancreatitis/pancreatic injury",
+      "risk factors for pancreatitis"
+    ]
+  },
+  {
+    "id": "E5",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Symptomatic gallbladder disease that requires treatment during the trial (subjects with prior cholecystectomy can be enrolled if deemed eligible by the investigator)",
+    "sub_conditions": [
+      "Symptomatic gallbladder disease requiring treatment during trial",
+      "Exception: prior cholecystectomy if investigator deems eligible"
+    ],
+    "needed_info": [
+      "medical history: gallbladder disease",
+      "surgical history: cholecystectomy"
+    ]
+  },
+  {
+    "id": "E6",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Have had dysphagia, or any condition or disease possibly affecting gastric emptying or nutrients absorption in the opinion of the investigator, such as history of surgery affecting gastric emptying, gastroesophageal reflux disease, pyloric obstruction, irritable bowel syndrome, etc.",
+    "sub_conditions": [
+      "Dysphagia",
+      "Surgery affecting gastric emptying",
+      "Gastroesophageal reflux disease",
+      "Pyloric obstruction",
+      "Irritable bowel syndrome",
+      "Other condition affecting gastric emptying or nutrient absorption per investigator"
+    ],
+    "needed_info": [
+      "medical history: GI conditions",
+      "surgical history"
+    ]
+  },
+  {
+    "id": "E7",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Unstable angina within 3 months prior to screening",
+    "sub_conditions": [
+      "Unstable angina within 3 months prior to screening"
+    ],
+    "needed_info": [
+      "cardiovascular history with dates"
+    ]
+  },
+  {
+    "id": "E8",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Heart failure (NYHA class III or IV) within 3 months prior to screening",
+    "sub_conditions": [
+      "Heart failure NYHA III or IV within 3 months prior to screening"
+    ],
+    "needed_info": [
+      "heart failure diagnosis",
+      "NYHA class"
+    ]
+  },
+  {
+    "id": "E9",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Myocardial infarction within 3 months prior to screening",
+    "sub_conditions": [
+      "MI within 3 months prior to screening"
+    ],
+    "needed_info": [
+      "cardiovascular history with dates"
+    ]
+  },
+  {
+    "id": "E10",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Coronary artery bypass grafting or percutaneous coronary intervention within 3 months prior to screening",
+    "sub_conditions": [
+      "CABG within 3 months",
+      "PCI within 3 months"
+    ],
+    "needed_info": [
+      "procedure history with dates"
+    ]
+  },
+  {
+    "id": "E11",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Uncontrolled severe arrhythmias within 3 months prior to screening (including ventricular tachycardia, ventricular fibrillation, atrial fibrillation, second to third degree atrioventricular block, sick sinus node syndrome, pre-excitation syndrome, etc.)",
+    "sub_conditions": [
+      "Ventricular tachycardia",
+      "Ventricular fibrillation",
+      "Atrial fibrillation",
+      "Second to third degree AV block",
+      "Sick sinus syndrome",
+      "Pre-excitation syndrome",
+      "Other uncontrolled severe arrhythmia"
+    ],
+    "needed_info": [
+      "arrhythmia history with dates and control status"
+    ]
+  },
+  {
+    "id": "E12",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Cerebrovascular accident within 3 months prior to screening",
+    "sub_conditions": [
+      "Cerebrovascular accident within 3 months prior to screening"
+    ],
+    "needed_info": [
+      "stroke history with dates"
+    ]
+  },
+  {
+    "id": "E13",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Have a history of proliferative diabetic retinopathy and/or diabetic maculopathy that requires treatment, or evidence of other severe retinopathy that requires treatment during the study.",
+    "sub_conditions": [
+      "Proliferative diabetic retinopathy requiring treatment",
+      "Diabetic maculopathy requiring treatment",
+      "Other severe retinopathy requiring treatment during study"
+    ],
+    "needed_info": [
+      "ophthalmologic history",
+      "retinopathy status"
+    ]
+  },
+  {
+    "id": "E14",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Have a known history of liver disease, including: acute or chronic active liver disease (except non-alcoholic steatohepatitis) such as active hepatitis B, hepatitis C; or primary biliary cholangitis.",
+    "sub_conditions": [
+      "Acute or chronic active liver disease (except NASH)",
+      "Active hepatitis B",
+      "Hepatitis C",
+      "Primary biliary cholangitis"
+    ],
+    "needed_info": [
+      "liver disease history",
+      "hepatitis B/C status"
+    ]
+  },
+  {
+    "id": "E15",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Used strong CYP3A4 or P-gp inhibitors within 14 days prior to randomization or 5 half-lives (whichever is longer)",
+    "sub_conditions": [
+      "Strong CYP3A4 inhibitor use within 14 days or 5 half-lives prior to randomization",
+      "Strong P-gp inhibitor use within 14 days or 5 half-lives prior to randomization"
+    ],
+    "needed_info": [
+      "medication history with dates"
+    ]
+  },
+  {
+    "id": "E16",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Current use with strong/moderate CYP3A4 inhibitors or strong P-gp inducers that cannot be discontinued during the trial",
+    "sub_conditions": [
+      "Current strong/moderate CYP3A4 inhibitor that cannot be discontinued",
+      "Current strong P-gp inducer that cannot be discontinued"
+    ],
+    "needed_info": [
+      "current medications"
+    ]
+  },
+  {
+    "id": "E17",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Any prior use of OATP1B1/OATP1B3 inhibitors",
+    "sub_conditions": [
+      "Prior use of OATP1B1 inhibitors",
+      "Prior use of OATP1B3 inhibitors"
+    ],
+    "needed_info": [
+      "medication history"
+    ]
+  },
+  {
+    "id": "E18",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Current use of narrow therapeutic index drugs that are substrates of CYP2C8, CYP3A4, UGT1A1, P-gp, or OATP1B1/OATP1B3 and cannot be discontinued during the trial.",
+    "sub_conditions": [
+      "Narrow therapeutic index substrate of CYP2C8",
+      "of CYP3A4",
+      "of UGT1A1",
+      "of P-gp",
+      "of OATP1B1/OATP1B3",
+      "Cannot be discontinued during trial"
+    ],
+    "needed_info": [
+      "current medications"
+    ]
+  },
+  {
+    "id": "E19",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Use of any glucose-lowering medication within 4 weeks prior to signing the ICF, including but not limited to α-glucosidase inhibitors (e.g., acarbose), thiazolidinediones, DPP-4 inhibitors, glucokinase activators, SGLT-2 inhibitors, with the exception of short-term insulin therapy due to a concomitant illness, stress, or perioperative period (cumulative duration ≤ 7 days).",
+    "sub_conditions": [
+      "α-glucosidase inhibitors within 4 weeks",
+      "Thiazolidinediones within 4 weeks",
+      "DPP-4 inhibitors within 4 weeks",
+      "Glucokinase activators within 4 weeks",
+      "SGLT-2 inhibitors within 4 weeks",
+      "Other glucose-lowering medication (other than metformin per protocol) within 4 weeks",
+      "Exception: short-term insulin ≤7 days cumulative for illness, stress or perioperative"
+    ],
+    "needed_info": [
+      "medication history with dates",
+      "insulin use duration and reason"
+    ]
+  },
+  {
+    "id": "E20",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Having used a GLP-1 analogue within 3 months prior to signing the ICF",
+    "sub_conditions": [
+      "GLP-1 analogue use within 3 months prior to ICF"
+    ],
+    "needed_info": [
+      "medication history with dates"
+    ]
+  },
+  {
+    "id": "E21",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Previous discontinuation of a GLP-1 analogue due to safety/tolerability or lack of efficacy.",
+    "sub_conditions": [
+      "Prior GLP-1 analogue discontinuation due to safety/tolerability",
+      "Prior GLP-1 analogue discontinuation due to lack of efficacy"
+    ],
+    "needed_info": [
+      "medication history with discontinuation reasons"
+    ]
+  },
+  {
+    "id": "E22",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Pregnancy or lactation.",
+    "sub_conditions": [
+      "Pregnancy",
+      "Lactation"
+    ],
+    "needed_info": [
+      "pregnancy status",
+      "lactation status"
+    ]
+  },
+  {
+    "id": "E23",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Subjects with a known hypersensitivity to SGLT-2i or GLP-1 receptor agonists (GLP-1RA), or a history of severe drug allergies.",
+    "sub_conditions": [
+      "Known hypersensitivity to SGLT-2 inhibitors",
+      "Known hypersensitivity to GLP-1 receptor agonists",
+      "History of severe drug allergies"
+    ],
+    "needed_info": [
+      "allergy history"
+    ]
+  },
+  {
+    "id": "E24",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Enrolled in or participated in any other clinical study of drugs or medical devices within 3 months (or within 5 half-lives, whichever is longer) prior to signing the ICF (except for subjects who signed written informed consent without any intervention of investigational product or medical devices).",
+    "sub_conditions": [
+      "Participation in another drug or device study within 3 months or 5 half-lives (whichever is longer) prior to ICF",
+      "Exception: signed consent without receiving any investigational product or device"
+    ],
+    "needed_info": [
+      "clinical trial participation history with dates"
+    ]
+  },
+  {
+    "id": "E25",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "Any other condition considered by the investigator which is not suitable for participating in this study.",
+    "sub_conditions": [
+      "Investigator judgment of unsuitability"
+    ],
+    "needed_info": [
+      "investigator judgment"
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "age": 24,
+  "age_unit": "years",
+  "sex": "M",
+  "suspected_diagnosis": "Uncontrolled persistent asthma (asthma exacerbation/poor control despite inhaled corticosteroid therapy)",
+  "findings": [
+    "worsening wheezing",
+    "chest tightness",
+    "night-time cough"
+  ],
+  "history": [
+    "asthma since childhood"
+  ],
+  "medications": [
+    "daily inhaled corticosteroid"
+  ],
+  "labs": [],
+  "id": "N002"
+}

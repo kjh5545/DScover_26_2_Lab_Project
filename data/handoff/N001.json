@@ -1,0 +1,1681 @@
+{
+  "patient_id": "N001",
+  "case_text": "A 58-year-old woman with a 9-year history of type 2 diabetes reports fatigue and increased thirst; her HbA1c remains above target despite metformin.",
+  "profile": {
+    "age": 58,
+    "age_unit": "years",
+    "sex": "F",
+    "suspected_diagnosis": "Type 2 diabetes mellitus with inadequate glycemic control on metformin",
+    "findings": [
+      "fatigue",
+      "increased thirst"
+    ],
+    "history": [
+      "9-year history of type 2 diabetes"
+    ],
+    "medications": [
+      "metformin"
+    ],
+    "labs": [
+      "HbA1c above target despite metformin"
+    ],
+    "id": "N001"
+  },
+  "search": {
+    "queries": [
+      "type 2 diabetes mellitus inadequately controlled on metformin",
+      "type 2 diabetes mellitus",
+      "hyperglycemia type 2 diabetes"
+    ],
+    "rationale": "The patient has long-standing type 2 diabetes with HbA1c above target despite metformin, so trials of add-on therapy for inadequately controlled type 2 diabetes are most relevant.",
+    "total_found": 23,
+    "after_hard_filter": 22
+  },
+  "trials": [
+    {
+      "nct_id": "NCT07082114",
+      "title": "A Phase 3 Study to Evaluate Efficacy and Safety of HDM1002 Tablets in Adults With Type 2 Diabetes Mellitus",
+      "eligibility_criteria": "Inclusion Criteria:\n\n1. Male or female subjects between 18 and 75 years of age (inclusive).\n2. Have been diagnosed with type 2 diabetes mellitus (T2DM) for at least 3 months based on the World Health Organization, and participants treated with a stable dose of metformin (with maintenance dose of at least 1500 mg/day or a maximally tolerated dose not less than 1000 mg) for at least 8 weeks prior to screening; and must be stable for at least 12 weeks prior to randomization.\n3. HbA1c ≥7.5% and ≤11.0% at screening as assessed by the local laboratory, and HbA1c ≥7.5% and ≤11.0% prior to randomization as assessed by the specified central laboratory.\n4. Having a body mass index (BMI) of 19.0 to 40.0 kg/m2, inclusive.\n5. Female participants of childbearing potential and male participants must agree to use highly effective contraception method from the day of signing the ICF and until 30 days (female) or 90 days (male) after the final dose administration.\n6. Able to understand and comply with protocol requirements, agree to maintain the same dietary and exercise habits throughout the trial, be willing to complete the trial in strict compliance with the clinical trial protocol and provide written informed consent.\n\nExclusion Criteria:\n\n1. Diagnosed with type 1 diabetes mellitus (including latent autoimmune diabetes in adults), special types of diabetes or gestational diabetes mellitus\n2. Evidence of acute complications of diabetes (e.g., diabetic ketoacidosis, diabetic lactosidosis, or hyperosmolar nonketotic coma) within 6 months prior to signing the informed consent form (ICF).\n3. Have a known self or family history of medullary thyroid carcinoma, thyroid C-cell hyperplasia or multiple endocrine neoplasia type II (MEN2)\n4. History of acute or chronic pancreatitis or pancreatic injury, or any high-risk factor which may lead to pancreatitis; or have symptomatic gallbladder disease that requires treatment during the trial (subjects with prior cholecystectomy can be enrolled if deemed eligible by the investigator)\n5. Have had dysphagia, or any condition or disease possibly affecting gastric emptying or nutrients absorption in the opinion of the investigator, such as history of surgery affecting gastric emptying, gastroesophageal reflux disease, pyloric obstruction, irritable bowel syndrome, etc.\n6. Have had any of the following within 3 months prior to screening:\n\n   * Unstable angina；\n   * Heart failure (New York Heart Association, class III or IV);\n   * Myocardial infarction (MI)；\n   * Coronary artery bypass grafting or percutaneous coronary intervention；\n   * Uncontrolled severe arrhythmias (including: ventricular tachycardia, ventricular fibrillation, atrial fibrillation, second to third degree atrioventricular block, sick sinus node syndrome, pre-excitation syndrome, etc.)；\n   * Cerebrovascular accident\n7. Have a history of proliferative diabetic retinopathy and/or diabetic maculopathy that requires treatment, or evidence of other severe retinopathy that requires treatment during the study.\n8. Have a known history of liver disease, including: acute or chronic active liver disease (except non-alcoholic steatohepatitis) such as active hepatitis B, hepatitis C; or primary biliary cholangitis.\n9. Used strong CYP3A4 or P-gp inhibitors within 14 days prior to randomization or 5 half-lives (whichever is longer); current use with strong/moderate CYP3A4 inhibitors or strong P-gp inducers that cannot be discontinued during the trial; any prior use OATP1B1/OATP1B3 inhibitors; current use with narrow therapeutic index drugs that are substrates of CYP2C8, CYP3A4, UGT1A1, P-gp, or OATP1B1/OATP1B3 and cannot be discontinued during the trial.\n10. Use of any glucose-lowering medication within 4 weeks prior to signing the ICF, including but not limited to: α-glucosidase inhibitors (e.g., acarbose), thiazolidinediones, and dipeptidyl peptidase-4 inhibitors (DPP-4i) inhibitors, glucose kinase activators, sodium-glucose cotransporter-2 inhibitors (SGLT-2i) ,with the exception of short-term insulin therapy due to a concomitant illness, stress, or perioperative period (cumulative duration ≤ 7 days).\n11. Having used a Glucagon-like peptide-1 (GLP-1) analogue within 3 months prior to signing the ICF; or previous discontinuation of a GLP-1 analogue due to safety/tolerability or lack of efficacy.\n12. Pregnancy or lactation.\n13. Subjects with a known hypersensitivity to SGLT-2i or GLP-1 receptor agonists (GLP-1RA), or a history of severe drug allergies.\n14. Enrolled in or participated in any other clinical study of drugs or medical devices within 3 months (or within 5 half-lives, whichever is longer) prior to signing the ICF (except for subjects who signed written informed consent without any intervention of investigational product or medical devices).\n15. Any other condition considered by the investigator which is not suitable for participating in this study.",
+      "minimum_age": "18 Years",
+      "maximum_age": "75 Years",
+      "sex": "ALL",
+      "criteria": [
+        {
+          "id": "I1",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Male or female subjects between 18 and 75 years of age (inclusive).",
+          "sub_conditions": [
+            "Age ≥18 years",
+            "Age ≤75 years",
+            "Male or female"
+          ],
+          "needed_info": [
+            "age",
+            "sex"
+          ]
+        },
+        {
+          "id": "I2",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Have been diagnosed with type 2 diabetes mellitus (T2DM) for at least 3 months based on the World Health Organization criteria",
+          "sub_conditions": [
+            "Diagnosis of T2DM per WHO criteria",
+            "T2DM duration ≥3 months"
+          ],
+          "needed_info": [
+            "diagnosis",
+            "date of T2DM diagnosis"
+          ]
+        },
+        {
+          "id": "I3",
+          "type": "inclusion",
+          "category": "temporal_numeric",
+          "text": "Participants treated with a stable dose of metformin (maintenance dose of at least 1500 mg/day or a maximally tolerated dose not less than 1000 mg) for at least 8 weeks prior to screening; and must be stable for at least 12 weeks prior to randomization.",
+          "sub_conditions": [
+            "Stable metformin dose for ≥8 weeks prior to screening",
+            "Metformin dose ≥1500 mg/day or maximally tolerated dose ≥1000 mg",
+            "Stable for ≥12 weeks prior to randomization"
+          ],
+          "needed_info": [
+            "medication history: metformin dose",
+            "metformin duration and stability"
+          ]
+        },
+        {
+          "id": "I4",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "HbA1c ≥7.5% and ≤11.0% at screening as assessed by the local laboratory",
+          "sub_conditions": [
+            "Screening HbA1c ≥7.5%",
+            "Screening HbA1c ≤11.0%"
+          ],
+          "needed_info": [
+            "lab: HbA1c (local lab, screening)"
+          ]
+        },
+        {
+          "id": "I5",
+          "type": "inclusion",
+          "category": "post_enrollment",
+          "text": "HbA1c ≥7.5% and ≤11.0% prior to randomization as assessed by the specified central laboratory.",
+          "sub_conditions": [
+            "Pre-randomization HbA1c ≥7.5%",
+            "Pre-randomization HbA1c ≤11.0%",
+            "Assessed by central laboratory"
+          ],
+          "needed_info": [
+            "lab: HbA1c (central lab, prior to randomization)"
+          ]
+        },
+        {
+          "id": "I6",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Having a body mass index (BMI) of 19.0 to 40.0 kg/m2, inclusive.",
+          "sub_conditions": [
+            "BMI ≥19.0 kg/m2",
+            "BMI ≤40.0 kg/m2"
+          ],
+          "needed_info": [
+            "BMI",
+            "height",
+            "weight"
+          ]
+        },
+        {
+          "id": "I7",
+          "type": "inclusion",
+          "category": "administrative",
+          "text": "Female participants of childbearing potential and male participants must agree to use highly effective contraception method from the day of signing the ICF and until 30 days (female) or 90 days (male) after the final dose administration.",
+          "sub_conditions": [
+            "Agree to use highly effective contraception (females of childbearing potential and males)",
+            "Contraception from ICF signing until 30 days (female) or 90 days (male) after final dose"
+          ],
+          "needed_info": [
+            "sex",
+            "childbearing potential",
+            "willingness to use contraception"
+          ]
+        },
+        {
+          "id": "I8",
+          "type": "inclusion",
+          "category": "administrative",
+          "text": "Able to understand and comply with protocol requirements, agree to maintain the same dietary and exercise habits throughout the trial, be willing to complete the trial in strict compliance with the clinical trial protocol and provide written informed consent.",
+          "sub_conditions": [
+            "Able to understand and comply with protocol requirements",
+            "Agree to maintain same dietary and exercise habits throughout trial",
+            "Willing to complete trial in compliance with protocol",
+            "Provide written informed consent"
+          ],
+          "needed_info": [
+            "capacity to understand/comply",
+            "willingness to maintain diet/exercise",
+            "informed consent"
+          ]
+        },
+        {
+          "id": "E1",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Diagnosed with type 1 diabetes mellitus (including latent autoimmune diabetes in adults), special types of diabetes or gestational diabetes mellitus",
+          "sub_conditions": [
+            "Type 1 diabetes mellitus",
+            "Latent autoimmune diabetes in adults",
+            "Special types of diabetes",
+            "Gestational diabetes mellitus"
+          ],
+          "needed_info": [
+            "diabetes type diagnosis"
+          ]
+        },
+        {
+          "id": "E2",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Evidence of acute complications of diabetes (e.g., diabetic ketoacidosis, diabetic lactosidosis, or hyperosmolar nonketotic coma) within 6 months prior to signing the informed consent form (ICF).",
+          "sub_conditions": [
+            "Diabetic ketoacidosis within 6 months",
+            "Diabetic lactic acidosis within 6 months",
+            "Hyperosmolar nonketotic coma within 6 months",
+            "Other acute diabetes complications within 6 months"
+          ],
+          "needed_info": [
+            "medical history: acute diabetic complications and dates"
+          ]
+        },
+        {
+          "id": "E3",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Have a known self or family history of medullary thyroid carcinoma, thyroid C-cell hyperplasia or multiple endocrine neoplasia type II (MEN2)",
+          "sub_conditions": [
+            "Personal or family history of medullary thyroid carcinoma",
+            "Personal or family history of thyroid C-cell hyperplasia",
+            "Personal or family history of MEN2"
+          ],
+          "needed_info": [
+            "medical history",
+            "family history"
+          ]
+        },
+        {
+          "id": "E4",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "History of acute or chronic pancreatitis or pancreatic injury, or any high-risk factor which may lead to pancreatitis",
+          "sub_conditions": [
+            "History of acute pancreatitis",
+            "History of chronic pancreatitis",
+            "History of pancreatic injury",
+            "Any high-risk factor for pancreatitis"
+          ],
+          "needed_info": [
+            "medical history: pancreatitis/pancreatic injury",
+            "risk factors for pancreatitis"
+          ]
+        },
+        {
+          "id": "E5",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Symptomatic gallbladder disease that requires treatment during the trial (subjects with prior cholecystectomy can be enrolled if deemed eligible by the investigator)",
+          "sub_conditions": [
+            "Symptomatic gallbladder disease requiring treatment during trial",
+            "Exception: prior cholecystectomy if investigator deems eligible"
+          ],
+          "needed_info": [
+            "medical history: gallbladder disease",
+            "surgical history: cholecystectomy"
+          ]
+        },
+        {
+          "id": "E6",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Have had dysphagia, or any condition or disease possibly affecting gastric emptying or nutrients absorption in the opinion of the investigator, such as history of surgery affecting gastric emptying, gastroesophageal reflux disease, pyloric obstruction, irritable bowel syndrome, etc.",
+          "sub_conditions": [
+            "Dysphagia",
+            "Surgery affecting gastric emptying",
+            "Gastroesophageal reflux disease",
+            "Pyloric obstruction",
+            "Irritable bowel syndrome",
+            "Other condition affecting gastric emptying or nutrient absorption per investigator"
+          ],
+          "needed_info": [
+            "medical history: GI conditions",
+            "surgical history"
+          ]
+        },
+        {
+          "id": "E7",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Unstable angina within 3 months prior to screening",
+          "sub_conditions": [
+            "Unstable angina within 3 months prior to screening"
+          ],
+          "needed_info": [
+            "cardiovascular history with dates"
+          ]
+        },
+        {
+          "id": "E8",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Heart failure (NYHA class III or IV) within 3 months prior to screening",
+          "sub_conditions": [
+            "Heart failure NYHA III or IV within 3 months prior to screening"
+          ],
+          "needed_info": [
+            "heart failure diagnosis",
+            "NYHA class"
+          ]
+        },
+        {
+          "id": "E9",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Myocardial infarction within 3 months prior to screening",
+          "sub_conditions": [
+            "MI within 3 months prior to screening"
+          ],
+          "needed_info": [
+            "cardiovascular history with dates"
+          ]
+        },
+        {
+          "id": "E10",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Coronary artery bypass grafting or percutaneous coronary intervention within 3 months prior to screening",
+          "sub_conditions": [
+            "CABG within 3 months",
+            "PCI within 3 months"
+          ],
+          "needed_info": [
+            "procedure history with dates"
+          ]
+        },
+        {
+          "id": "E11",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Uncontrolled severe arrhythmias within 3 months prior to screening (including ventricular tachycardia, ventricular fibrillation, atrial fibrillation, second to third degree atrioventricular block, sick sinus node syndrome, pre-excitation syndrome, etc.)",
+          "sub_conditions": [
+            "Ventricular tachycardia",
+            "Ventricular fibrillation",
+            "Atrial fibrillation",
+            "Second to third degree AV block",
+            "Sick sinus syndrome",
+            "Pre-excitation syndrome",
+            "Other uncontrolled severe arrhythmia"
+          ],
+          "needed_info": [
+            "arrhythmia history with dates and control status"
+          ]
+        },
+        {
+          "id": "E12",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Cerebrovascular accident within 3 months prior to screening",
+          "sub_conditions": [
+            "Cerebrovascular accident within 3 months prior to screening"
+          ],
+          "needed_info": [
+            "stroke history with dates"
+          ]
+        },
+        {
+          "id": "E13",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Have a history of proliferative diabetic retinopathy and/or diabetic maculopathy that requires treatment, or evidence of other severe retinopathy that requires treatment during the study.",
+          "sub_conditions": [
+            "Proliferative diabetic retinopathy requiring treatment",
+            "Diabetic maculopathy requiring treatment",
+            "Other severe retinopathy requiring treatment during study"
+          ],
+          "needed_info": [
+            "ophthalmologic history",
+            "retinopathy status"
+          ]
+        },
+        {
+          "id": "E14",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Have a known history of liver disease, including: acute or chronic active liver disease (except non-alcoholic steatohepatitis) such as active hepatitis B, hepatitis C; or primary biliary cholangitis.",
+          "sub_conditions": [
+            "Acute or chronic active liver disease (except NASH)",
+            "Active hepatitis B",
+            "Hepatitis C",
+            "Primary biliary cholangitis"
+          ],
+          "needed_info": [
+            "liver disease history",
+            "hepatitis B/C status"
+          ]
+        },
+        {
+          "id": "E15",
+          "type": "exclusion",
+          "category": "temporal_numeric",
+          "text": "Used strong CYP3A4 or P-gp inhibitors within 14 days prior to randomization or 5 half-lives (whichever is longer)",
+          "sub_conditions": [
+            "Strong CYP3A4 inhibitor use within 14 days or 5 half-lives prior to randomization",
+            "Strong P-gp inhibitor use within 14 days or 5 half-lives prior to randomization"
+          ],
+          "needed_info": [
+            "medication history with dates"
+          ]
+        },
+        {
+          "id": "E16",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Current use with strong/moderate CYP3A4 inhibitors or strong P-gp inducers that cannot be discontinued during the trial",
+          "sub_conditions": [
+            "Current strong/moderate CYP3A4 inhibitor that cannot be discontinued",
+            "Current strong P-gp inducer that cannot be discontinued"
+          ],
+          "needed_info": [
+            "current medications"
+          ]
+        },
+        {
+          "id": "E17",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Any prior use of OATP1B1/OATP1B3 inhibitors",
+          "sub_conditions": [
+            "Prior use of OATP1B1 inhibitors",
+            "Prior use of OATP1B3 inhibitors"
+          ],
+          "needed_info": [
+            "medication history"
+          ]
+        },
+        {
+          "id": "E18",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Current use of narrow therapeutic index drugs that are substrates of CYP2C8, CYP3A4, UGT1A1, P-gp, or OATP1B1/OATP1B3 and cannot be discontinued during the trial.",
+          "sub_conditions": [
+            "Narrow therapeutic index substrate of CYP2C8",
+            "of CYP3A4",
+            "of UGT1A1",
+            "of P-gp",
+            "of OATP1B1/OATP1B3",
+            "Cannot be discontinued during trial"
+          ],
+          "needed_info": [
+            "current medications"
+          ]
+        },
+        {
+          "id": "E19",
+          "type": "exclusion",
+          "category": "temporal_numeric",
+          "text": "Use of any glucose-lowering medication within 4 weeks prior to signing the ICF, including but not limited to α-glucosidase inhibitors (e.g., acarbose), thiazolidinediones, DPP-4 inhibitors, glucokinase activators, SGLT-2 inhibitors, with the exception of short-term insulin therapy due to a concomitant illness, stress, or perioperative period (cumulative duration ≤ 7 days).",
+          "sub_conditions": [
+            "α-glucosidase inhibitors within 4 weeks",
+            "Thiazolidinediones within 4 weeks",
+            "DPP-4 inhibitors within 4 weeks",
+            "Glucokinase activators within 4 weeks",
+            "SGLT-2 inhibitors within 4 weeks",
+            "Other glucose-lowering medication (other than metformin per protocol) within 4 weeks",
+            "Exception: short-term insulin ≤7 days cumulative for illness, stress or perioperative"
+          ],
+          "needed_info": [
+            "medication history with dates",
+            "insulin use duration and reason"
+          ]
+        },
+        {
+          "id": "E20",
+          "type": "exclusion",
+          "category": "temporal_numeric",
+          "text": "Having used a GLP-1 analogue within 3 months prior to signing the ICF",
+          "sub_conditions": [
+            "GLP-1 analogue use within 3 months prior to ICF"
+          ],
+          "needed_info": [
+            "medication history with dates"
+          ]
+        },
+        {
+          "id": "E21",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Previous discontinuation of a GLP-1 analogue due to safety/tolerability or lack of efficacy.",
+          "sub_conditions": [
+            "Prior GLP-1 analogue discontinuation due to safety/tolerability",
+            "Prior GLP-1 analogue discontinuation due to lack of efficacy"
+          ],
+          "needed_info": [
+            "medication history with discontinuation reasons"
+          ]
+        },
+        {
+          "id": "E22",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Pregnancy or lactation.",
+          "sub_conditions": [
+            "Pregnancy",
+            "Lactation"
+          ],
+          "needed_info": [
+            "pregnancy status",
+            "lactation status"
+          ]
+        },
+        {
+          "id": "E23",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Subjects with a known hypersensitivity to SGLT-2i or GLP-1 receptor agonists (GLP-1RA), or a history of severe drug allergies.",
+          "sub_conditions": [
+            "Known hypersensitivity to SGLT-2 inhibitors",
+            "Known hypersensitivity to GLP-1 receptor agonists",
+            "History of severe drug allergies"
+          ],
+          "needed_info": [
+            "allergy history"
+          ]
+        },
+        {
+          "id": "E24",
+          "type": "exclusion",
+          "category": "temporal_numeric",
+          "text": "Enrolled in or participated in any other clinical study of drugs or medical devices within 3 months (or within 5 half-lives, whichever is longer) prior to signing the ICF (except for subjects who signed written informed consent without any intervention of investigational product or medical devices).",
+          "sub_conditions": [
+            "Participation in another drug or device study within 3 months or 5 half-lives (whichever is longer) prior to ICF",
+            "Exception: signed consent without receiving any investigational product or device"
+          ],
+          "needed_info": [
+            "clinical trial participation history with dates"
+          ]
+        },
+        {
+          "id": "E25",
+          "type": "exclusion",
+          "category": "post_enrollment",
+          "text": "Any other condition considered by the investigator which is not suitable for participating in this study.",
+          "sub_conditions": [
+            "Investigator judgment of unsuitability"
+          ],
+          "needed_info": [
+            "investigator judgment"
+          ]
+        }
+      ],
+      "judgments": [
+        {
+          "criterion_id": "I1",
+          "verdict": "pass",
+          "checked_by": "code",
+          "evidence": "환자 나이 58세, 기준 18세 이상 ~ 75세 이하 → 해당 (코드 판정)",
+          "sub_condition_notes": [],
+          "llm_verdict": "pass"
+        },
+        {
+          "criterion_id": "I2",
+          "verdict": "unknown",
+          "evidence": "\"9-year history of type 2 diabetes\" is stated, but there is no mention of whether it was formally diagnosed per WHO criteria.",
+          "sub_conditions_notes": [],
+          "sub_condition_notes": [
+            "Diagnosis of T2DM per WHO criteria: a T2DM history is stated, but the diagnostic criteria used are not documented, so unknown",
+            "T2DM duration ≥3 months: 9-year history stated, which satisfies this sub-condition"
+          ]
+        },
+        {
+          "criterion_id": "I3",
+          "verdict": "unknown",
+          "evidence": "Patient is on metformin (\"HbA1c remains above target despite metformin\"), but dose, duration and stability are not given.",
+          "sub_condition_notes": [
+            "Stable for ≥8 weeks before screening: not given",
+            "Dose ≥1500 mg/day or maximally tolerated ≥1000 mg: not given",
+            "Stable ≥12 weeks before randomization: not given"
+          ]
+        },
+        {
+          "criterion_id": "I4",
+          "verdict": "unknown",
+          "evidence": "Only \"HbA1c above target\" is stated; no numeric value is given.",
+          "sub_condition_notes": [
+            "HbA1c ≥7.5%: value not given",
+            "HbA1c ≤11.0%: value not given"
+          ]
+        },
+        {
+          "criterion_id": "I5",
+          "verdict": "post_enrollment",
+          "evidence": "Requires a central laboratory HbA1c measured prior to randomization, which occurs after enrollment.",
+          "sub_condition_notes": [
+            "Pre-randomization HbA1c ≥7.5%: post-enrollment measurement",
+            "Pre-randomization HbA1c ≤11.0%: post-enrollment measurement",
+            "Central laboratory assessment: study procedure"
+          ]
+        },
+        {
+          "criterion_id": "I6",
+          "verdict": "unknown",
+          "evidence": "No height, weight or BMI is given.",
+          "sub_condition_notes": [
+            "BMI ≥19.0: not given",
+            "BMI ≤40.0: not given"
+          ]
+        },
+        {
+          "criterion_id": "I7",
+          "verdict": "post_enrollment",
+          "evidence": "Willingness to use contraception is an agreement made at consent. Childbearing potential is also not stated (58-year-old woman, menopausal status not given).",
+          "sub_condition_notes": [
+            "Agree to use highly effective contraception: willingness, determined at enrollment",
+            "Duration of contraception: protocol commitment, determined at enrollment"
+          ]
+        },
+        {
+          "criterion_id": "I8",
+          "verdict": "post_enrollment",
+          "evidence": "Ability and willingness to comply, maintain diet and exercise habits, and provide written informed consent are determined after the patient applies.",
+          "sub_condition_notes": [
+            "Understand and comply with protocol: post_enrollment",
+            "Maintain same diet/exercise: willingness, post_enrollment",
+            "Complete trial in compliance: post_enrollment",
+            "Written informed consent: post_enrollment"
+          ]
+        },
+        {
+          "criterion_id": "E1",
+          "verdict": "unknown",
+          "evidence": "Description states \"type 2 diabetes\" but does not explicitly rule out LADA, special types of diabetes or gestational diabetes.",
+          "sub_condition_notes": [
+            "Type 1 diabetes: not stated; type 2 is stated, but this was not explicitly ruled out, so unknown",
+            "LADA: not mentioned",
+            "Special types of diabetes: not mentioned",
+            "Gestational diabetes: not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E2",
+          "verdict": "unknown",
+          "evidence": "No mention of acute diabetic complications; symptoms of fatigue and thirst do not establish any.",
+          "sub_condition_notes": [
+            "DKA within 6 months: not mentioned",
+            "Lactic acidosis within 6 months: not mentioned",
+            "Hyperosmolar coma within 6 months: not mentioned",
+            "Other acute complications: not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E3",
+          "verdict": "unknown",
+          "evidence": "No personal or family history is given.",
+          "sub_condition_notes": [
+            "Medullary thyroid carcinoma: not mentioned",
+            "C-cell hyperplasia: not mentioned",
+            "MEN2: not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E4",
+          "verdict": "unknown",
+          "evidence": "No pancreatic history or risk factors are mentioned.",
+          "sub_condition_notes": [
+            "Acute pancreatitis: not mentioned",
+            "Chronic pancreatitis: not mentioned",
+            "Pancreatic injury: not mentioned",
+            "High-risk factors: not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E5",
+          "verdict": "unknown",
+          "evidence": "No gallbladder history is mentioned.",
+          "sub_condition_notes": [
+            "Symptomatic gallbladder disease: not mentioned",
+            "Cholecystectomy exception: not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E6",
+          "verdict": "unknown",
+          "evidence": "No GI history is mentioned.",
+          "sub_condition_notes": [
+            "Dysphagia: not mentioned",
+            "Gastric emptying surgery: not mentioned",
+            "GERD: not mentioned",
+            "Pyloric obstruction: not mentioned",
+            "IBS: not mentioned",
+            "Other condition per investigator: not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E7",
+          "verdict": "unknown",
+          "evidence": "No cardiovascular history is mentioned.",
+          "sub_condition_notes": [
+            "Unstable angina within 3 months: not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E8",
+          "verdict": "unknown",
+          "evidence": "No heart failure history is mentioned.",
+          "sub_condition_notes": [
+            "Heart failure NYHA III/IV within 3 months: not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E9",
+          "verdict": "unknown",
+          "evidence": "No MI history is mentioned.",
+          "sub_condition_notes": [
+            "MI within 3 months: not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E10",
+          "verdict": "unknown",
+          "evidence": "No procedure history is mentioned.",
+          "sub_condition_notes": [
+            "CABG within 3 months: not mentioned",
+            "PCI within 3 months: not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E11",
+          "verdict": "unknown",
+          "evidence": "No arrhythmia history is mentioned.",
+          "sub_condition_notes": [
+            "Ventricular tachycardia: not mentioned",
+            "Ventricular fibrillation: not mentioned",
+            "Atrial fibrillation: not mentioned",
+            "2nd-3rd degree AV block: not mentioned",
+            "Sick sinus syndrome: not mentioned",
+            "Pre-excitation syndrome: not mentioned",
+            "Other severe arrhythmia: not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E12",
+          "verdict": "unknown",
+          "evidence": "No stroke history is mentioned.",
+          "sub_condition_notes": [
+            "Cerebrovascular accident within 3 months: not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E13",
+          "verdict": "unknown",
+          "evidence": "No eye history is mentioned.",
+          "sub_condition_notes": [
+            "Proliferative retinopathy requiring treatment: not mentioned",
+            "Diabetic maculopathy requiring treatment: not mentioned",
+            "Other severe retinopathy: not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E14",
+          "verdict": "unknown",
+          "evidence": "No liver disease history is mentioned.",
+          "sub_condition_notes": [
+            "Acute/chronic active liver disease: not mentioned",
+            "Active hepatitis B: not mentioned",
+            "Hepatitis C: not mentioned",
+            "Primary biliary cholangitis: not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E15",
+          "verdict": "unknown",
+          "evidence": "Only metformin is listed; the full medication history is not given.",
+          "sub_condition_notes": [
+            "Strong CYP3A4 inhibitor use: not mentioned",
+            "Strong P-gp inhibitor use: not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E16",
+          "verdict": "unknown",
+          "evidence": "Only metformin is listed as a current medication; other medications are not described.",
+          "sub_condition_notes": [
+            "Strong/moderate CYP3A4 inhibitor: not mentioned",
+            "Strong P-gp inducer: not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E17",
+          "verdict": "unknown",
+          "evidence": "No history of OATP1B1/1B3 inhibitor use is given.",
+          "sub_condition_notes": [
+            "OATP1B1 inhibitors: not mentioned",
+            "OATP1B3 inhibitors: not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E18",
+          "verdict": "unknown",
+          "evidence": "Only metformin is listed; other current medications are not described.",
+          "sub_condition_notes": [
+            "CYP2C8 NTI substrate: not mentioned",
+            "CYP3A4 NTI substrate: not mentioned",
+            "UGT1A1 NTI substrate: not mentioned",
+            "P-gp NTI substrate: not mentioned",
+            "OATP1B1/1B3 NTI substrate: not mentioned",
+            "Cannot be discontinued: not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E19",
+          "verdict": "unknown",
+          "evidence": "Only metformin is mentioned; use of other glucose-lowering drugs is not stated either way.",
+          "sub_condition_notes": [
+            "α-glucosidase inhibitors: not mentioned",
+            "Thiazolidinediones: not mentioned",
+            "DPP-4 inhibitors: not mentioned",
+            "Glucokinase activators: not mentioned",
+            "SGLT-2 inhibitors: not mentioned",
+            "Other glucose-lowering medication: not mentioned",
+            "Short-term insulin exception: not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E20",
+          "verdict": "unknown",
+          "evidence": "No GLP-1 analogue use is mentioned.",
+          "sub_condition_notes": [
+            "GLP-1 analogue within 3 months: not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E21",
+          "verdict": "unknown",
+          "evidence": "No GLP-1 analogue history is mentioned.",
+          "sub_condition_notes": [
+            "Discontinuation due to safety/tolerability: not mentioned",
+            "Discontinuation due to lack of efficacy: not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E22",
+          "verdict": "unknown",
+          "evidence": "Pregnancy and lactation status are not stated for this 58-year-old woman.",
+          "sub_condition_notes": [
+            "Pregnancy: not stated",
+            "Lactation: not stated"
+          ]
+        },
+        {
+          "criterion_id": "E23",
+          "verdict": "unknown",
+          "evidence": "No allergy history is mentioned.",
+          "sub_condition_notes": [
+            "SGLT-2i hypersensitivity: not mentioned",
+            "GLP-1RA hypersensitivity: not mentioned",
+            "Severe drug allergies: not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E24",
+          "verdict": "unknown",
+          "evidence": "No clinical trial participation history is mentioned.",
+          "sub_condition_notes": [
+            "Other study within 3 months/5 half-lives: not mentioned",
+            "Exception for consent without intervention: not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E25",
+          "verdict": "post_enrollment",
+          "evidence": "Depends on the investigator's judgment of suitability.",
+          "sub_condition_notes": [
+            "Investigator judgment of unsuitability: post_enrollment"
+          ]
+        }
+      ],
+      "final_judgment": "insufficient_info"
+    },
+    {
+      "nct_id": "NCT06863532",
+      "title": "Efficacy and Safety Comparison of Cofrogliptin Add-on Versus Metformin Dose-escalation in Type 2 Diabetes Patients Inadequately Controlled With SGLT-2 Inhibitors Plus Low-Dose Metformin:A Multicenter, Open-Label Trial",
+      "eligibility_criteria": "Inclusion Criteria:\n\n* Able to understand and voluntarily sign a written informed consent form.\n* Male or female aged 18-74 years (inclusive).\n* Meet the diagnostic criteria for type 2 diabetes mellitus (T2DM).\n* Have initiated treatment with any one of the SGLT2i monotherapy (dapagliflozin 10mg/d, canagliflozin 100mg/d, empagliflozin 10mg/d, ertugliflozin 5mg/day, or henagliflozin 10mg/day) for at least 8 weeks.\n* Have received 500-1000mg/day metformin treatment for at least 8 weeks with a stable, unchanged dose maintained during the screening period.\n* HbA1c level within the range of 7.5% to 9.5% inclusive.\n* Fasting blood glucose (FBG) level less than 15 mmol/L before randomization.\n* Body mass index (BMI) less than or equal to 40 kg/m2 before randomization.\n* Urine ketone test negative before randomization.\n* Estimated glomerular filtration rate (eGFR) of 60 ml/min/1.73m2 or higher before randomization.\n* Agree to maintain the same diet and exercise habits throughout the trial, and be willing and able to correctly use a home blood glucose meter for self-monitoring of blood glucose (SMBG) and keep records.\n\nExclusion Criteria:\n\n* Type 1 diabetes mellitus.\n* Various types of secondary diabetes.\n* Pending or having undergone pancreatic or β-cell transplantation.\n* History of pancreatitis or pancreatic resection.\n* Complicated with diabetic ketoacidosis or hyperosmolar coma.\n* Moderate or severe liver insufficiency of any cause, defined as ALT (SGPT), AST (SGOT), or alkaline phosphatase serum levels greater than 3 times the upper limit of normal (ULN) during the screening period.\n* Acute coronary syndrome (ST-segment elevation myocardial infarction, non-ST-segment elevation myocardial infarction, unstable angina), stroke, or transient ischemic attack (TIA) within the past 3 months.\n* Uncontrolled hypertension: systolic blood pressure ≥ 160 mmHg or diastolic blood pressure ≥ 90 mmHg.\n* Hemoglobin level less than 10 g/l or 100 mg/dl.\n* Recurrent genitourinary infections more than twice within the past 3 months.\n* History of bariatric surgery or other gastrointestinal surgeries causing chronic malabsorption within the past 2 years.\n* Received anti-obesity medication within the past 3 months or any other treatment (e.g., surgery, radical diet plans) that led to unstable body weight at the time of screening.\n* History of cancer (except basal cell carcinoma) and/or cancer treatment within the past 5 years.\n* Human immunodeficiency virus (HIV) positivity.\n* Severe peripheral vascular disease.\n* Hematological malignancies or any diseases causing hemolysis or erythrocyte instability (e.g., malaria, babesiosis, hemolytic anemia).\n* Coexisting immune system diseases or currently receiving systemic corticosteroid therapy.\n* Changes in thyroid hormone dosage within the past 6 weeks, or any other uncontrolled endocrine or metabolic disorders outside of T2DM.\n* Alcohol or drug abuse within the past 3 months that may reduce trial compliance, or any chronic illnesses that the investigator believes may lead to reduced trial compliance or reduced use of the study drug.\n* Known allergies to components of the study medication or other drugs with similar chemical structures or excipients.\n* Pregnant women, women planning to become pregnant during the study, or lactating women. Subjects unwilling to use reliable contraception (including condoms, spermicides, or intrauterine devices) from the time of signing the informed consent form until 28 days after the last administration of the study medication, or women planning to use progesterone-containing contraceptives during this period. Men with fertility plans during the study.\n* Participation in any other clinical study within the past 30 days.\n* Any other condition deemed unsuitable for participation in this study by the investigator.",
+      "minimum_age": "18 Years",
+      "maximum_age": "74 Years",
+      "sex": "ALL",
+      "criteria": [
+        {
+          "id": "I1",
+          "type": "inclusion",
+          "category": "administrative",
+          "text": "Able to understand and voluntarily sign a written informed consent form.",
+          "sub_conditions": [
+            "Able to understand the informed consent form",
+            "Willing to voluntarily sign a written informed consent form"
+          ],
+          "needed_info": [
+            "consent capability",
+            "willingness to sign informed consent"
+          ]
+        },
+        {
+          "id": "I2",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Male or female aged 18-74 years (inclusive).",
+          "sub_conditions": [
+            "Male or female",
+            "Age 18-74 years inclusive"
+          ],
+          "needed_info": [
+            "age",
+            "sex"
+          ]
+        },
+        {
+          "id": "I3",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Meet the diagnostic criteria for type 2 diabetes mellitus (T2DM).",
+          "sub_conditions": [
+            "Meets diagnostic criteria for T2DM"
+          ],
+          "needed_info": [
+            "diagnosis"
+          ]
+        },
+        {
+          "id": "I4",
+          "type": "inclusion",
+          "category": "temporal_numeric",
+          "text": "Have initiated treatment with any one of the SGLT2i monotherapy (dapagliflozin 10mg/d, canagliflozin 100mg/d, empagliflozin 10mg/d, ertugliflozin 5mg/day, or henagliflozin 10mg/day) for at least 8 weeks.",
+          "sub_conditions": [
+            "On SGLT2i monotherapy with one of: dapagliflozin 10 mg/d, canagliflozin 100 mg/d, empagliflozin 10 mg/d, ertugliflozin 5 mg/d, or henagliflozin 10 mg/d",
+            "Treatment duration at least 8 weeks"
+          ],
+          "needed_info": [
+            "medication history",
+            "current medications and doses",
+            "treatment duration"
+          ]
+        },
+        {
+          "id": "I5",
+          "type": "inclusion",
+          "category": "temporal_numeric",
+          "text": "Have received 500-1000mg/day metformin treatment for at least 8 weeks with a stable, unchanged dose maintained during the screening period.",
+          "sub_conditions": [
+            "Metformin dose 500-1000 mg/day",
+            "Treatment duration at least 8 weeks",
+            "Stable unchanged dose during the screening period"
+          ],
+          "needed_info": [
+            "medication history",
+            "metformin dose",
+            "treatment duration",
+            "dose changes"
+          ]
+        },
+        {
+          "id": "I6",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "HbA1c level within the range of 7.5% to 9.5% inclusive.",
+          "sub_conditions": [
+            "HbA1c between 7.5% and 9.5% inclusive"
+          ],
+          "needed_info": [
+            "lab: HbA1c"
+          ]
+        },
+        {
+          "id": "I7",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Fasting blood glucose (FBG) level less than 15 mmol/L before randomization.",
+          "sub_conditions": [
+            "FBG < 15 mmol/L before randomization"
+          ],
+          "needed_info": [
+            "lab: fasting blood glucose"
+          ]
+        },
+        {
+          "id": "I8",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Body mass index (BMI) less than or equal to 40 kg/m2 before randomization.",
+          "sub_conditions": [
+            "BMI ≤ 40 kg/m2 before randomization"
+          ],
+          "needed_info": [
+            "BMI",
+            "height",
+            "weight"
+          ]
+        },
+        {
+          "id": "I9",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Urine ketone test negative before randomization.",
+          "sub_conditions": [
+            "Urine ketone test negative"
+          ],
+          "needed_info": [
+            "lab: urine ketones"
+          ]
+        },
+        {
+          "id": "I10",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Estimated glomerular filtration rate (eGFR) of 60 ml/min/1.73m2 or higher before randomization.",
+          "sub_conditions": [
+            "eGFR ≥ 60 ml/min/1.73m2"
+          ],
+          "needed_info": [
+            "lab: eGFR"
+          ]
+        },
+        {
+          "id": "I11",
+          "type": "inclusion",
+          "category": "post_enrollment",
+          "text": "Agree to maintain the same diet and exercise habits throughout the trial, and be willing and able to correctly use a home blood glucose meter for self-monitoring of blood glucose (SMBG) and keep records.",
+          "sub_conditions": [
+            "Agree to maintain the same diet throughout the trial",
+            "Agree to maintain the same exercise habits throughout the trial",
+            "Willing and able to correctly use a home blood glucose meter for SMBG",
+            "Willing and able to keep records"
+          ],
+          "needed_info": [
+            "patient agreement/willingness",
+            "ability to use glucose meter"
+          ]
+        },
+        {
+          "id": "E1",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Type 1 diabetes mellitus.",
+          "sub_conditions": [
+            "Type 1 diabetes mellitus"
+          ],
+          "needed_info": [
+            "diagnosis"
+          ]
+        },
+        {
+          "id": "E2",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Various types of secondary diabetes.",
+          "sub_conditions": [
+            "Secondary diabetes of any type"
+          ],
+          "needed_info": [
+            "diagnosis"
+          ]
+        },
+        {
+          "id": "E3",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Pending or having undergone pancreatic or β-cell transplantation.",
+          "sub_conditions": [
+            "Pending pancreatic transplantation",
+            "Pending β-cell transplantation",
+            "Prior pancreatic transplantation",
+            "Prior β-cell transplantation"
+          ],
+          "needed_info": [
+            "surgical/transplant history"
+          ]
+        },
+        {
+          "id": "E4",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "History of pancreatitis or pancreatic resection.",
+          "sub_conditions": [
+            "History of pancreatitis",
+            "History of pancreatic resection"
+          ],
+          "needed_info": [
+            "medical history",
+            "surgical history"
+          ]
+        },
+        {
+          "id": "E5",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Complicated with diabetic ketoacidosis or hyperosmolar coma.",
+          "sub_conditions": [
+            "Diabetic ketoacidosis",
+            "Hyperosmolar coma"
+          ],
+          "needed_info": [
+            "diagnosis",
+            "medical history"
+          ]
+        },
+        {
+          "id": "E6",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Moderate or severe liver insufficiency of any cause, defined as ALT (SGPT), AST (SGOT), or alkaline phosphatase serum levels greater than 3 times the upper limit of normal (ULN) during the screening period.",
+          "sub_conditions": [
+            "ALT > 3x ULN",
+            "AST > 3x ULN",
+            "Alkaline phosphatase > 3x ULN",
+            "Moderate or severe liver insufficiency"
+          ],
+          "needed_info": [
+            "lab: ALT",
+            "lab: AST",
+            "lab: alkaline phosphatase",
+            "liver disease diagnosis"
+          ]
+        },
+        {
+          "id": "E7",
+          "type": "exclusion",
+          "category": "temporal_numeric",
+          "text": "Acute coronary syndrome (ST-segment elevation myocardial infarction, non-ST-segment elevation myocardial infarction, unstable angina), stroke, or transient ischemic attack (TIA) within the past 3 months.",
+          "sub_conditions": [
+            "STEMI within past 3 months",
+            "NSTEMI within past 3 months",
+            "Unstable angina within past 3 months",
+            "Stroke within past 3 months",
+            "TIA within past 3 months"
+          ],
+          "needed_info": [
+            "cardiovascular history with dates",
+            "cerebrovascular history with dates"
+          ]
+        },
+        {
+          "id": "E8",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Uncontrolled hypertension: systolic blood pressure ≥ 160 mmHg or diastolic blood pressure ≥ 90 mmHg.",
+          "sub_conditions": [
+            "Systolic BP ≥ 160 mmHg",
+            "Diastolic BP ≥ 90 mmHg"
+          ],
+          "needed_info": [
+            "blood pressure",
+            "hypertension history"
+          ]
+        },
+        {
+          "id": "E9",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Hemoglobin level less than 10 g/l or 100 mg/dl.",
+          "sub_conditions": [
+            "Hemoglobin below threshold (10 g/dl as stated, units inconsistent)"
+          ],
+          "needed_info": [
+            "lab: hemoglobin"
+          ]
+        },
+        {
+          "id": "E10",
+          "type": "exclusion",
+          "category": "temporal_numeric",
+          "text": "Recurrent genitourinary infections more than twice within the past 3 months.",
+          "sub_conditions": [
+            "More than 2 genitourinary infections within the past 3 months"
+          ],
+          "needed_info": [
+            "infection history with dates",
+            "count of infections"
+          ]
+        },
+        {
+          "id": "E11",
+          "type": "exclusion",
+          "category": "temporal_numeric",
+          "text": "History of bariatric surgery or other gastrointestinal surgeries causing chronic malabsorption within the past 2 years.",
+          "sub_conditions": [
+            "Bariatric surgery within past 2 years",
+            "Other GI surgery causing chronic malabsorption within past 2 years"
+          ],
+          "needed_info": [
+            "surgical history with dates"
+          ]
+        },
+        {
+          "id": "E12",
+          "type": "exclusion",
+          "category": "temporal_numeric",
+          "text": "Received anti-obesity medication within the past 3 months or any other treatment (e.g., surgery, radical diet plans) that led to unstable body weight at the time of screening.",
+          "sub_conditions": [
+            "Anti-obesity medication within past 3 months",
+            "Other treatment (surgery, radical diet plans) causing unstable body weight at screening"
+          ],
+          "needed_info": [
+            "medication history",
+            "weight history",
+            "diet/surgical history"
+          ]
+        },
+        {
+          "id": "E13",
+          "type": "exclusion",
+          "category": "temporal_numeric",
+          "text": "History of cancer (except basal cell carcinoma) and/or cancer treatment within the past 5 years.",
+          "sub_conditions": [
+            "Cancer other than basal cell carcinoma (history)",
+            "Cancer treatment within past 5 years"
+          ],
+          "needed_info": [
+            "cancer history",
+            "cancer treatment history with dates"
+          ]
+        },
+        {
+          "id": "E14",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Human immunodeficiency virus (HIV) positivity.",
+          "sub_conditions": [
+            "HIV positive"
+          ],
+          "needed_info": [
+            "HIV status"
+          ]
+        },
+        {
+          "id": "E15",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Severe peripheral vascular disease.",
+          "sub_conditions": [
+            "Severe peripheral vascular disease"
+          ],
+          "needed_info": [
+            "diagnosis"
+          ]
+        },
+        {
+          "id": "E16",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Hematological malignancies or any diseases causing hemolysis or erythrocyte instability (e.g., malaria, babesiosis, hemolytic anemia).",
+          "sub_conditions": [
+            "Hematological malignancy",
+            "Disease causing hemolysis or erythrocyte instability (e.g., malaria, babesiosis, hemolytic anemia)"
+          ],
+          "needed_info": [
+            "diagnosis",
+            "hematologic history"
+          ]
+        },
+        {
+          "id": "E17",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Coexisting immune system diseases or currently receiving systemic corticosteroid therapy.",
+          "sub_conditions": [
+            "Coexisting immune system disease",
+            "Currently receiving systemic corticosteroid therapy"
+          ],
+          "needed_info": [
+            "diagnosis",
+            "current medications"
+          ]
+        },
+        {
+          "id": "E18",
+          "type": "exclusion",
+          "category": "temporal_numeric",
+          "text": "Changes in thyroid hormone dosage within the past 6 weeks, or any other uncontrolled endocrine or metabolic disorders outside of T2DM.",
+          "sub_conditions": [
+            "Thyroid hormone dose change within past 6 weeks",
+            "Other uncontrolled endocrine disorder outside T2DM",
+            "Other uncontrolled metabolic disorder outside T2DM"
+          ],
+          "needed_info": [
+            "medication history (thyroid hormone)",
+            "endocrine/metabolic diagnoses and control status"
+          ]
+        },
+        {
+          "id": "E19",
+          "type": "exclusion",
+          "category": "post_enrollment",
+          "text": "Alcohol or drug abuse within the past 3 months that may reduce trial compliance, or any chronic illnesses that the investigator believes may lead to reduced trial compliance or reduced use of the study drug.",
+          "sub_conditions": [
+            "Alcohol abuse within past 3 months that may reduce compliance",
+            "Drug abuse within past 3 months that may reduce compliance",
+            "Chronic illness judged by investigator to reduce compliance or study drug use"
+          ],
+          "needed_info": [
+            "substance use history",
+            "chronic illness history",
+            "investigator judgment"
+          ]
+        },
+        {
+          "id": "E20",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Known allergies to components of the study medication or other drugs with similar chemical structures or excipients.",
+          "sub_conditions": [
+            "Allergy to study medication components",
+            "Allergy to drugs with similar chemical structures",
+            "Allergy to excipients"
+          ],
+          "needed_info": [
+            "allergy history"
+          ]
+        },
+        {
+          "id": "E21",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Pregnant women, women planning to become pregnant during the study, or lactating women.",
+          "sub_conditions": [
+            "Pregnant",
+            "Planning pregnancy during the study",
+            "Lactating"
+          ],
+          "needed_info": [
+            "pregnancy status",
+            "pregnancy plans",
+            "lactation status"
+          ]
+        },
+        {
+          "id": "E22",
+          "type": "exclusion",
+          "category": "administrative",
+          "text": "Subjects unwilling to use reliable contraception (including condoms, spermicides, or intrauterine devices) from the time of signing the informed consent form until 28 days after the last administration of the study medication, or women planning to use progesterone-containing contraceptives during this period.",
+          "sub_conditions": [
+            "Unwilling to use reliable contraception from consent until 28 days after last dose",
+            "Women planning to use progesterone-containing contraceptives during this period"
+          ],
+          "needed_info": [
+            "contraception willingness",
+            "contraceptive plans"
+          ]
+        },
+        {
+          "id": "E23",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Men with fertility plans during the study.",
+          "sub_conditions": [
+            "Male with fertility plans during the study"
+          ],
+          "needed_info": [
+            "sex",
+            "fertility plans"
+          ]
+        },
+        {
+          "id": "E24",
+          "type": "exclusion",
+          "category": "temporal_numeric",
+          "text": "Participation in any other clinical study within the past 30 days.",
+          "sub_conditions": [
+            "Participated in another clinical study within past 30 days"
+          ],
+          "needed_info": [
+            "clinical trial participation history with dates"
+          ]
+        },
+        {
+          "id": "E25",
+          "type": "exclusion",
+          "category": "post_enrollment",
+          "text": "Any other condition deemed unsuitable for participation in this study by the investigator.",
+          "sub_conditions": [
+            "Investigator judges patient unsuitable"
+          ],
+          "needed_info": [
+            "investigator judgment"
+          ]
+        }
+      ],
+      "judgments": [
+        {
+          "criterion_id": "I1",
+          "verdict": "post_enrollment",
+          "evidence": "Ability and willingness to consent are determined at enrollment; not described.",
+          "sub_conditions_notes": []
+        },
+        {
+          "criterion_id": "I2",
+          "verdict": "pass",
+          "checked_by": "code",
+          "evidence": "환자 나이 58세, 기준 18세 이상 ~ 74세 이하 → 해당 (코드 판정)",
+          "sub_condition_notes": [],
+          "llm_verdict": "pass"
+        },
+        {
+          "criterion_id": "I3",
+          "verdict": "pass",
+          "evidence": "\"9-year history of type 2 diabetes\" with HbA1c above target on metformin.",
+          "sub_condition_notes": [
+            "Type 2 diabetes is stated in the description as a history; a formal diagnosis on record is reasonably stated."
+          ]
+        },
+        {
+          "criterion_id": "I4",
+          "verdict": "fail",
+          "evidence": "Only metformin is listed as a medication: \"her HbA1c remains above target despite metformin\"; no SGLT2 inhibitor is mentioned.",
+          "sub_condition_notes": [
+            "SGLT2i monotherapy: not mentioned; the only medication listed is metformin",
+            "Duration of at least 8 weeks: no SGLT2i treatment described"
+          ]
+        },
+        {
+          "criterion_id": "I5",
+          "verdict": "unknown",
+          "evidence": "Metformin use is stated but dose, duration and stability are not given.",
+          "sub_condition_notes": [
+            "Dose 500-1000 mg/day: unknown",
+            "Duration at least 8 weeks: unknown (9-year diabetes history does not state metformin duration)",
+            "Stable dose during screening: unknown"
+          ]
+        },
+        {
+          "criterion_id": "I6",
+          "verdict": "unknown",
+          "evidence": "Only \"HbA1c above target despite metformin\"; no numeric value.",
+          "sub_condition_notes": [
+            "HbA1c value not given"
+          ]
+        },
+        {
+          "criterion_id": "I7",
+          "verdict": "unknown",
+          "evidence": "No fasting blood glucose value given.",
+          "sub_condition_notes": [
+            "FBG not given"
+          ]
+        },
+        {
+          "criterion_id": "I8",
+          "verdict": "unknown",
+          "evidence": "No height, weight or BMI given.",
+          "sub_condition_notes": [
+            "BMI not given"
+          ]
+        },
+        {
+          "criterion_id": "I9",
+          "verdict": "unknown",
+          "evidence": "No urine ketone result given.",
+          "sub_condition_notes": [
+            "Urine ketones not given"
+          ]
+        },
+        {
+          "criterion_id": "I10",
+          "verdict": "unknown",
+          "evidence": "No eGFR given.",
+          "sub_condition_notes": [
+            "eGFR not given"
+          ]
+        },
+        {
+          "criterion_id": "I11",
+          "verdict": "post_enrollment",
+          "evidence": "Agreement/willingness and ability regarding diet, exercise and SMBG are future commitments.",
+          "sub_condition_notes": [
+            "Diet agreement: post_enrollment",
+            "Exercise agreement: post_enrollment",
+            "Glucose meter use: post_enrollment",
+            "Record keeping: post_enrollment"
+          ]
+        },
+        {
+          "criterion_id": "E1",
+          "verdict": "unknown",
+          "evidence": "Described as type 2 diabetes, but absence of type 1 is not explicitly stated.",
+          "sub_condition_notes": [
+            "Type 1 diabetes: not stated"
+          ]
+        },
+        {
+          "criterion_id": "E2",
+          "verdict": "unknown",
+          "evidence": "No mention of secondary diabetes.",
+          "sub_condition_notes": [
+            "Not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E3",
+          "verdict": "unknown",
+          "evidence": "No transplant history mentioned.",
+          "sub_condition_notes": [
+            "Pending pancreatic: unknown",
+            "Pending β-cell: unknown",
+            "Prior pancreatic: unknown",
+            "Prior β-cell: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E4",
+          "verdict": "unknown",
+          "evidence": "No mention of pancreatitis or pancreatic resection.",
+          "sub_condition_notes": [
+            "Pancreatitis: unknown",
+            "Pancreatic resection: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E5",
+          "verdict": "unknown",
+          "evidence": "Fatigue and thirst reported, but no DKA or hyperosmolar coma stated.",
+          "sub_condition_notes": [
+            "DKA: unknown",
+            "Hyperosmolar coma: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E6",
+          "verdict": "unknown",
+          "evidence": "No liver labs or liver disease mentioned.",
+          "sub_condition_notes": [
+            "ALT: unknown",
+            "AST: unknown",
+            "ALP: unknown",
+            "Liver insufficiency: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E7",
+          "verdict": "unknown",
+          "evidence": "No cardiovascular or cerebrovascular events mentioned.",
+          "sub_condition_notes": [
+            "STEMI: unknown",
+            "NSTEMI: unknown",
+            "Unstable angina: unknown",
+            "Stroke: unknown",
+            "TIA: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E8",
+          "verdict": "unknown",
+          "evidence": "No blood pressure given.",
+          "sub_condition_notes": [
+            "Systolic: unknown",
+            "Diastolic: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E9",
+          "verdict": "unknown",
+          "evidence": "No hemoglobin value given.",
+          "sub_condition_notes": [
+            "Hemoglobin: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E10",
+          "verdict": "unknown",
+          "evidence": "No genitourinary infections mentioned.",
+          "sub_condition_notes": [
+            "Not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E11",
+          "verdict": "unknown",
+          "evidence": "No surgical history mentioned.",
+          "sub_condition_notes": [
+            "Bariatric surgery: unknown",
+            "GI surgery with malabsorption: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E12",
+          "verdict": "unknown",
+          "evidence": "No anti-obesity medication or weight-affecting treatment mentioned.",
+          "sub_condition_notes": [
+            "Anti-obesity medication: unknown",
+            "Other weight-affecting treatment: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E13",
+          "verdict": "unknown",
+          "evidence": "No cancer history mentioned.",
+          "sub_condition_notes": [
+            "Cancer history: unknown",
+            "Cancer treatment: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E14",
+          "verdict": "unknown",
+          "evidence": "HIV status not mentioned.",
+          "sub_condition_notes": [
+            "HIV: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E15",
+          "verdict": "unknown",
+          "evidence": "No peripheral vascular disease mentioned.",
+          "sub_condition_notes": [
+            "Not mentioned"
+          ]
+        },
+        {
+          "criterion_id": "E16",
+          "verdict": "unknown",
+          "evidence": "No hematological disease mentioned.",
+          "sub_condition_notes": [
+            "Hematological malignancy: unknown",
+            "Hemolytic disease: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E17",
+          "verdict": "unknown",
+          "evidence": "Only metformin listed; no immune disease or corticosteroid use stated.",
+          "sub_condition_notes": [
+            "Immune disease: unknown",
+            "Systemic corticosteroids: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E18",
+          "verdict": "unknown",
+          "evidence": "No thyroid medication or other endocrine/metabolic disorders mentioned.",
+          "sub_condition_notes": [
+            "Thyroid dose change: unknown",
+            "Other endocrine disorder: unknown",
+            "Other metabolic disorder: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E19",
+          "verdict": "post_enrollment",
+          "evidence": "Depends on investigator's judgment of compliance.",
+          "sub_condition_notes": [
+            "Alcohol abuse: post_enrollment",
+            "Drug abuse: post_enrollment",
+            "Chronic illness judged by investigator: post_enrollment"
+          ]
+        },
+        {
+          "criterion_id": "E20",
+          "verdict": "unknown",
+          "evidence": "No allergy history given.",
+          "sub_condition_notes": [
+            "Allergies: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E21",
+          "verdict": "unknown",
+          "evidence": "58-year-old woman; pregnancy, plans and lactation not stated.",
+          "sub_condition_notes": [
+            "Pregnant: unknown",
+            "Planning pregnancy: unknown",
+            "Lactating: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E22",
+          "verdict": "post_enrollment",
+          "evidence": "Willingness to use contraception is a future commitment/intent.",
+          "sub_condition_notes": [
+            "Unwilling to use contraception: post_enrollment",
+            "Progesterone contraceptive plans: post_enrollment"
+          ]
+        },
+        {
+          "criterion_id": "E23",
+          "verdict": "pass",
+          "evidence": "Patient is a woman, so this male-only exclusion does not apply.",
+          "sub_condition_notes": [
+            "Male with fertility plans: not applicable (female)"
+          ]
+        },
+        {
+          "criterion_id": "E24",
+          "verdict": "unknown",
+          "evidence": "No clinical trial participation mentioned.",
+          "sub_condition_notes": [
+            "Recent study participation: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E25",
+          "verdict": "post_enrollment",
+          "evidence": "Investigator judgment.",
+          "sub_condition_notes": [
+            "Investigator judgment: post_enrollment"
+          ]
+        }
+      ],
+      "final_judgment": "ineligible"
+    }
+  ],
+  "meta": {
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v3",
+    "created": "2026-10-22",
+    "stages": "1-4"
+  }
+}

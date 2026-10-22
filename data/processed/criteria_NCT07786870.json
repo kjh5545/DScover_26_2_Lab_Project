@@ -1,0 +1,143 @@
+[
+  {
+    "id": "I1",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "age > 18 years, without the upper age limit",
+    "sub_conditions": [
+      "age > 18 years",
+      "no upper age limit"
+    ],
+    "needed_info": [
+      "age"
+    ]
+  },
+  {
+    "id": "I2",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "asthma (diagnosis in accordance with the GINA 2023 guidelines)",
+    "sub_conditions": [
+      "diagnosis of asthma",
+      "diagnosis made in accordance with GINA 2023 guidelines"
+    ],
+    "needed_info": [
+      "diagnosis",
+      "diagnostic criteria used (GINA 2023)"
+    ]
+  },
+  {
+    "id": "E1",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "other respiratory diseases (e.g., chronic obstructive pulmonary disease [COPD])",
+    "sub_conditions": [
+      "other respiratory diseases besides asthma",
+      "COPD"
+    ],
+    "needed_info": [
+      "diagnosis",
+      "medical history"
+    ]
+  },
+  {
+    "id": "E2",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "active cigarette smoking or a smoking history of >10 pack-years",
+    "sub_conditions": [
+      "active cigarette smoking",
+      "smoking history of >10 pack-years"
+    ],
+    "needed_info": [
+      "smoking status",
+      "pack-years smoking history"
+    ]
+  },
+  {
+    "id": "E3",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "active malignancy",
+    "sub_conditions": [
+      "active malignancy"
+    ],
+    "needed_info": [
+      "diagnosis",
+      "oncology history",
+      "current cancer status"
+    ]
+  },
+  {
+    "id": "E4",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "active pulmonary tuberculosis or active respiratory tract infection",
+    "sub_conditions": [
+      "active pulmonary tuberculosis",
+      "active respiratory tract infection"
+    ],
+    "needed_info": [
+      "diagnosis",
+      "current infection status"
+    ]
+  },
+  {
+    "id": "E5",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "use of antibiotics within 4 weeks prior to study enrollment",
+    "sub_conditions": [
+      "antibiotic use within 4 weeks before enrollment"
+    ],
+    "needed_info": [
+      "medication history",
+      "antibiotic dates"
+    ]
+  },
+  {
+    "id": "E6",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "current long-term home oxygen therapy (>15 hours per day)",
+    "sub_conditions": [
+      "current long-term home oxygen therapy",
+      "oxygen use >15 hours per day"
+    ],
+    "needed_info": [
+      "oxygen therapy status",
+      "daily hours of oxygen use"
+    ]
+  },
+  {
+    "id": "E7",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "current treatment with monoclonal antibody therapies (e.g., omalizumab, mepolizumab, reslizumab, dupilumab, tezepelumab, or other biologics)",
+    "sub_conditions": [
+      "omalizumab",
+      "mepolizumab",
+      "reslizumab",
+      "dupilumab",
+      "tezepelumab",
+      "other biologics"
+    ],
+    "needed_info": [
+      "current medication list",
+      "biologic therapy history"
+    ]
+  },
+  {
+    "id": "E8",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "pregnancy",
+    "sub_conditions": [
+      "pregnancy"
+    ],
+    "needed_info": [
+      "pregnancy status",
+      "sex"
+    ]
+  }
+]

@@ -95,15 +95,23 @@ def finals(label: str, sheet: dict, judged: dict[str, list[dict]]) -> list[dict]
     return out
 
 
+def base_bundle(pid: str) -> dict:
+    """짧은 설명의 판정 묶음 (질문 루프 시작점): 평가 세트 환자(S)는 v3 평가 결과로, 새 환자(N)는
+    run_intake가 저장한 data/handoff/<환자>.json (시스템이 짧은 설명으로 직접 검색한 시험)."""
+    if pid.startswith("N"):
+        return json.loads((ROOT / "data" / "handoff" / f"{pid}.json").read_text(encoding="utf-8"))
+    from src.testing.goldset_bundle import make_bundle
+    return make_bundle(pid)
+
+
 def run_direct(sheet: dict) -> dict:
     """A. 상세 설명으로 바로 판정."""
     from src.pipeline import understand_patient
-    from src.testing.goldset_bundle import make_bundle
 
     pid = sheet["patient_id"]
     key = f"{pid}_detailed_{hashlib.sha1(sheet['detailed_text'].encode('utf-8')).hexdigest()[:8]}"
     profile = understand_patient(sheet["detailed_text"], patient_id=key)   # 같은 설명이면 저장된 것 사용
-    criteria = {t["nct_id"]: t["criteria"] for t in make_bundle(pid)["trials"]}
+    criteria = {t["nct_id"]: t["criteria"] for t in base_bundle(pid)["trials"]}
     judged = {}
     for t in sheet["trials"]:
         cache = OUT / f"{key}_{t['nct_id']}.json"
@@ -121,11 +129,11 @@ def run_direct(sheet: dict) -> dict:
 def run_loop(sheet: dict, rounds: int) -> dict:
     """B. 짧은 설명에서 시작 → 질문 루프 (시뮬레이터는 상세 설명만 보고 답함) → 마지막 전체 재판정."""
     from src.pipeline import final_check, next_round, reassess
-    from src.testing.goldset_bundle import make_bundle
     from src.testing.patient_simulator import answer_questions
 
     gold = gold_of(sheet)
-    bundle = make_bundle(sheet["patient_id"])
+    bundle = base_bundle(sheet["patient_id"])
+    bundle.pop("rounds", None)
     snapshot = lambda: {t["nct_id"]: [dict(j) for j in t["judgments"]] for t in bundle["trials"]}  # noqa: E731
     n_unknown = lambda: sum(j["verdict"] == "unknown" for t in bundle["trials"] for j in t["judgments"])  # noqa: E731
     before = compare("B-0. 짧은 설명 (루프 전)", gold, snapshot())

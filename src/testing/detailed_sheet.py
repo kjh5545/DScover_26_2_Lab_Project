@@ -40,7 +40,7 @@ def parse_sheet(path: Path) -> dict:
     """
     text = Path(path).read_text(encoding="utf-8")
     problems = []
-    m = re.search(r"·\s*(S\d+)", text)
+    m = re.search(r"·\s*([SN]\d+)", text)   # S: 평가 세트 환자, N: 새 환자 (10/22)
     patient_id = m.group(1) if m else Path(path).stem.split("_")[0]
     m = re.search(r"작성자:\s*(\S+)", text)
     author = m.group(1) if m else Path(path).parent.name
@@ -95,17 +95,23 @@ def parse_sheet(path: Path) -> dict:
 
 
 def _check_against_goldset(patient_id: str, trials: list[dict]) -> list[str]:
-    """시트의 시험·기준 ID가 평가 세트와 같은지 (판정할 기준 목록을 평가 세트에서 가져오기 때문)."""
-    gold = json.loads(GOLD.read_text(encoding="utf-8"))
-    by_trial = {c["trial"]: [r["id"] for r in c["rows"]] for c in gold["cases"] if c["patient_id"] == patient_id}
+    """시트의 시험·기준 ID가 판정할 기준 목록과 같은지 — 평가 세트 환자(S)는 goldset, 새 환자(N)는 handoff."""
+    if patient_id.startswith("N"):
+        bundle = json.loads((ROOT / "data" / "handoff" / f"{patient_id}.json").read_text(encoding="utf-8"))
+        by_trial = {t["nct_id"]: [c["id"] for c in t["criteria"]] for t in bundle["trials"]}
+        source = "handoff"
+    else:
+        gold = json.loads(GOLD.read_text(encoding="utf-8"))
+        by_trial = {c["trial"]: [r["id"] for r in c["rows"]] for c in gold["cases"] if c["patient_id"] == patient_id}
+        source = "평가 세트"
     out = []
     for t in trials:
         if t["nct_id"] not in by_trial:
-            out.append(f"{t['nct_id']}: 평가 세트에 없는 시험")
+            out.append(f"{t['nct_id']}: {source}에 없는 시험")
             continue
         ids = [r["id"] for r in t["rows"]]
         if ids != by_trial[t["nct_id"]]:
-            out.append(f"{t['nct_id']}: 기준 ID가 평가 세트와 다름 (시트 {ids} / 평가 세트 {by_trial[t['nct_id']]})")
+            out.append(f"{t['nct_id']}: 기준 ID가 {source}와 다름 (시트 {ids} / {source} {by_trial[t['nct_id']]})")
     return out
 
 

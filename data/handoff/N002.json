@@ -1,0 +1,745 @@
+{
+  "patient_id": "N002",
+  "case_text": "A 24-year-old man with asthma since childhood presents with worsening wheezing, chest tightness, and night-time cough despite daily inhaled corticosteroid use.",
+  "profile": {
+    "age": 24,
+    "age_unit": "years",
+    "sex": "M",
+    "suspected_diagnosis": "Uncontrolled persistent asthma (asthma exacerbation/poor control despite inhaled corticosteroid therapy)",
+    "findings": [
+      "worsening wheezing",
+      "chest tightness",
+      "night-time cough"
+    ],
+    "history": [
+      "asthma since childhood"
+    ],
+    "medications": [
+      "daily inhaled corticosteroid"
+    ],
+    "labs": [],
+    "id": "N002"
+  },
+  "search": {
+    "queries": [
+      "uncontrolled persistent asthma",
+      "asthma inadequately controlled on inhaled corticosteroids",
+      "asthma"
+    ],
+    "rationale": "The patient is a young adult with childhood-onset asthma who has worsening symptoms (wheezing, chest tightness, nocturnal cough) despite daily inhaled corticosteroid, so trials for uncontrolled persistent asthma are the best match.",
+    "total_found": 21,
+    "after_hard_filter": 17
+  },
+  "trials": [
+    {
+      "nct_id": "NCT07786870",
+      "title": "Expression of TSLP Isoforms in Asthma",
+      "eligibility_criteria": "1. Inclusion criteria\n\n   * age \\> 18 years, without the upper age limit,\n   * asthma (diagnosis in accordance with the GINA 2023 guidelines),\n2. Exclusion criteria\n\n   * other respiratory diseases (e.g., chronic obstructive pulmonary disease \\[COPD\\]);\n   * active cigarette smoking or a smoking history of \\>10 pack-years;\n   * active malignancy;\n   * active pulmonary tuberculosis or active respiratory tract infection;\n   * use of antibiotics within 4 weeks prior to study enrollment;\n   * current long-term home oxygen therapy (\\>15 hours per day);\n   * current treatment with monoclonal antibody therapies (e.g., omalizumab, mepolizumab, reslizumab, dupilumab, tezepelumab, or other biologics);\n   * pregnancy.",
+      "minimum_age": "18 Years",
+      "maximum_age": null,
+      "sex": "ALL",
+      "criteria": [
+        {
+          "id": "I1",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "age > 18 years, without the upper age limit",
+          "sub_conditions": [
+            "age > 18 years",
+            "no upper age limit"
+          ],
+          "needed_info": [
+            "age"
+          ]
+        },
+        {
+          "id": "I2",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "asthma (diagnosis in accordance with the GINA 2023 guidelines)",
+          "sub_conditions": [
+            "diagnosis of asthma",
+            "diagnosis made in accordance with GINA 2023 guidelines"
+          ],
+          "needed_info": [
+            "diagnosis",
+            "diagnostic criteria used (GINA 2023)"
+          ]
+        },
+        {
+          "id": "E1",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "other respiratory diseases (e.g., chronic obstructive pulmonary disease [COPD])",
+          "sub_conditions": [
+            "other respiratory diseases besides asthma",
+            "COPD"
+          ],
+          "needed_info": [
+            "diagnosis",
+            "medical history"
+          ]
+        },
+        {
+          "id": "E2",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "active cigarette smoking or a smoking history of >10 pack-years",
+          "sub_conditions": [
+            "active cigarette smoking",
+            "smoking history of >10 pack-years"
+          ],
+          "needed_info": [
+            "smoking status",
+            "pack-years smoking history"
+          ]
+        },
+        {
+          "id": "E3",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "active malignancy",
+          "sub_conditions": [
+            "active malignancy"
+          ],
+          "needed_info": [
+            "diagnosis",
+            "oncology history",
+            "current cancer status"
+          ]
+        },
+        {
+          "id": "E4",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "active pulmonary tuberculosis or active respiratory tract infection",
+          "sub_conditions": [
+            "active pulmonary tuberculosis",
+            "active respiratory tract infection"
+          ],
+          "needed_info": [
+            "diagnosis",
+            "current infection status"
+          ]
+        },
+        {
+          "id": "E5",
+          "type": "exclusion",
+          "category": "temporal_numeric",
+          "text": "use of antibiotics within 4 weeks prior to study enrollment",
+          "sub_conditions": [
+            "antibiotic use within 4 weeks before enrollment"
+          ],
+          "needed_info": [
+            "medication history",
+            "antibiotic dates"
+          ]
+        },
+        {
+          "id": "E6",
+          "type": "exclusion",
+          "category": "temporal_numeric",
+          "text": "current long-term home oxygen therapy (>15 hours per day)",
+          "sub_conditions": [
+            "current long-term home oxygen therapy",
+            "oxygen use >15 hours per day"
+          ],
+          "needed_info": [
+            "oxygen therapy status",
+            "daily hours of oxygen use"
+          ]
+        },
+        {
+          "id": "E7",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "current treatment with monoclonal antibody therapies (e.g., omalizumab, mepolizumab, reslizumab, dupilumab, tezepelumab, or other biologics)",
+          "sub_conditions": [
+            "omalizumab",
+            "mepolizumab",
+            "reslizumab",
+            "dupilumab",
+            "tezepelumab",
+            "other biologics"
+          ],
+          "needed_info": [
+            "current medication list",
+            "biologic therapy history"
+          ]
+        },
+        {
+          "id": "E8",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "pregnancy",
+          "sub_conditions": [
+            "pregnancy"
+          ],
+          "needed_info": [
+            "pregnancy status",
+            "sex"
+          ]
+        }
+      ],
+      "judgments": [
+        {
+          "criterion_id": "I1",
+          "verdict": "pass",
+          "evidence": "\"A 24-year-old man\" - age 24 is over 18 and no upper limit applies.",
+          "sub_condition_notes": [
+            "age > 18 years: pass (24 years)",
+            "no upper age limit: pass (not applicable to the patient)"
+          ]
+        },
+        {
+          "criterion_id": "I2",
+          "verdict": "unknown",
+          "evidence": "The description states \"asthma since childhood\", so an asthma diagnosis is on record. It does not say whether the diagnosis was made according to the GINA 2023 guidelines.",
+          "sub_condition_notes": [
+            "diagnosis of asthma: present (\"asthma since childhood\")",
+            "diagnosis in accordance with GINA 2023: not documented, unknown"
+          ]
+        },
+        {
+          "criterion_id": "E1",
+          "verdict": "unknown",
+          "evidence": "Only asthma is described. No other respiratory disease or COPD is mentioned or ruled out.",
+          "sub_condition_notes": [
+            "other respiratory diseases besides asthma: not mentioned, unknown",
+            "COPD: not mentioned, unknown"
+          ]
+        },
+        {
+          "criterion_id": "E2",
+          "verdict": "unknown",
+          "evidence": "Smoking status and pack-year history are not mentioned.",
+          "sub_condition_notes": [
+            "active cigarette smoking: unknown",
+            "smoking history >10 pack-years: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E3",
+          "verdict": "unknown",
+          "evidence": "No malignancy or oncology history is mentioned.",
+          "sub_condition_notes": [
+            "active malignancy: not stated, unknown"
+          ]
+        },
+        {
+          "criterion_id": "E4",
+          "verdict": "unknown",
+          "evidence": "The patient has worsening wheezing, chest tightness and night-time cough, but no infection or tuberculosis is documented or ruled out.",
+          "sub_condition_notes": [
+            "active pulmonary tuberculosis: not mentioned, unknown",
+            "active respiratory tract infection: not mentioned, unknown"
+          ]
+        },
+        {
+          "criterion_id": "E5",
+          "verdict": "unknown",
+          "evidence": "The only medication listed is \"daily inhaled corticosteroid\". Recent antibiotic use is not mentioned.",
+          "sub_condition_notes": [
+            "antibiotic use within 4 weeks before enrollment: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E6",
+          "verdict": "unknown",
+          "evidence": "Home oxygen therapy is not mentioned.",
+          "sub_condition_notes": [
+            "current long-term home oxygen therapy: unknown",
+            "oxygen use >15 hours per day: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E7",
+          "verdict": "unknown",
+          "evidence": "The only medication listed is \"daily inhaled corticosteroid\". Biologic use is not stated either way.",
+          "sub_condition_notes": [
+            "omalizumab: not mentioned, unknown",
+            "mepolizumab: not mentioned, unknown",
+            "reslizumab: not mentioned, unknown",
+            "dupilumab: not mentioned, unknown",
+            "tezepelumab: not mentioned, unknown",
+            "other biologics: not mentioned, unknown"
+          ]
+        },
+        {
+          "criterion_id": "E8",
+          "verdict": "pass",
+          "checked_by": "code",
+          "evidence": "환자가 남성라 임신·수유 기준에 해당하지 않음 (코드 판정)",
+          "sub_condition_notes": [],
+          "llm_verdict": "pass"
+        }
+      ],
+      "final_judgment": "insufficient_info"
+    },
+    {
+      "nct_id": "NCT07139899",
+      "title": "Downstream Effects of Airway Mucus Plugs on 129Xenon MRI in Severe Asthma",
+      "eligibility_criteria": "Inclusion Criteria:\n\n* Adequate completion of informed consent process with written documentation\n* Patients 18 - 65 years old\n* Physician diagnosis of asthma for \\> 1 year\n* Able to perform reproducible spirometry according to ATS criteria based on clinical PFTs within previous 30 days of enrollment\n* All racial/ethnic backgrounds may participate\n* Blood eosinophil count \\> 300 cells/μL\n* Smoking history \\<10 pack years\n* No smoking history (including vapes, cigar, or marijuana use) in the last 3 months\n* About to initiate asthma therapy with either dupilumab, tezepelumab, or benralizumab as part of their standard of care\n\nExclusion Criteria:\n\n* Respiratory tract infection within the 4 weeks prior to Visit 1\n* Body mass index (BMI) \\> 30 at Visit 1\n* One-time doses such as intra-articular injections require a 4-week washout prior to Visit 1\n* Asthma-related ER visit within the previous 4 weeks of Visit 1 or at any time while on the study\n* Significant concomitant medical illness, including (but not limited to) heart disease, cancer, uncontrolled diabetes, other chronic lung diseases (determined by the Investigator.)\n* Resting O2 saturation \\<90% with maximum supplemental O2 delivered by nasal cannula\n* Positive urine pregnancy test at Visit 1 or at any time while on the study\n* Participation in an intervention study (including bronchoscopy) or use of investigative drugs within the past 30 days or plans to enroll in such a trial during the study\n* Unable or unlikely to complete study assessments in the opinion of the Investigator\n* Study intervention poses undue risk to patient in the opinion of the Investigator\n* Conditions that will prohibit MRI scanning determined by the MRI safety screening.",
+      "minimum_age": "18 Years",
+      "maximum_age": "65 Years",
+      "sex": "ALL",
+      "criteria": [
+        {
+          "id": "I1",
+          "type": "inclusion",
+          "category": "administrative",
+          "text": "Adequate completion of informed consent process with written documentation",
+          "sub_conditions": [
+            "Completion of informed consent process",
+            "Written documentation of consent"
+          ],
+          "needed_info": [
+            "informed consent status",
+            "consent documentation"
+          ]
+        },
+        {
+          "id": "I2",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Patients 18 - 65 years old",
+          "sub_conditions": [
+            "Age >= 18 years",
+            "Age <= 65 years"
+          ],
+          "needed_info": [
+            "age"
+          ]
+        },
+        {
+          "id": "I3",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Physician diagnosis of asthma for > 1 year",
+          "sub_conditions": [
+            "Physician diagnosis of asthma",
+            "Duration of asthma diagnosis > 1 year"
+          ],
+          "needed_info": [
+            "diagnosis: asthma",
+            "date of asthma diagnosis"
+          ]
+        },
+        {
+          "id": "I4",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Able to perform reproducible spirometry according to ATS criteria based on clinical PFTs within previous 30 days of enrollment",
+          "sub_conditions": [
+            "Able to perform reproducible spirometry per ATS criteria",
+            "Clinical PFTs performed within previous 30 days of enrollment"
+          ],
+          "needed_info": [
+            "pulmonary function test results",
+            "PFT date",
+            "spirometry reproducibility per ATS criteria"
+          ]
+        },
+        {
+          "id": "I5",
+          "type": "inclusion",
+          "category": "administrative",
+          "text": "All racial/ethnic backgrounds may participate",
+          "sub_conditions": [
+            "No restriction by race/ethnicity"
+          ],
+          "needed_info": [
+            "race/ethnicity (no restriction)"
+          ]
+        },
+        {
+          "id": "I6",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Blood eosinophil count > 300 cells/μL",
+          "sub_conditions": [
+            "Blood eosinophil count > 300 cells/μL"
+          ],
+          "needed_info": [
+            "lab: blood eosinophil count"
+          ]
+        },
+        {
+          "id": "I7",
+          "type": "inclusion",
+          "category": "temporal_numeric",
+          "text": "Smoking history <10 pack years",
+          "sub_conditions": [
+            "Smoking history < 10 pack-years"
+          ],
+          "needed_info": [
+            "smoking history (pack-years)"
+          ]
+        },
+        {
+          "id": "I8",
+          "type": "inclusion",
+          "category": "temporal_numeric",
+          "text": "No smoking history (including vapes, cigar, or marijuana use) in the last 3 months",
+          "sub_conditions": [
+            "No cigarette smoking in last 3 months",
+            "No vaping in last 3 months",
+            "No cigar use in last 3 months",
+            "No marijuana use in last 3 months"
+          ],
+          "needed_info": [
+            "recent smoking/vaping/cigar/marijuana use history"
+          ]
+        },
+        {
+          "id": "I9",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "About to initiate asthma therapy with either dupilumab, tezepelumab, or benralizumab as part of their standard of care",
+          "sub_conditions": [
+            "About to initiate dupilumab OR tezepelumab OR benralizumab",
+            "Therapy is part of standard of care"
+          ],
+          "needed_info": [
+            "current/planned asthma medication",
+            "treatment plan"
+          ]
+        },
+        {
+          "id": "E1",
+          "type": "exclusion",
+          "category": "temporal_numeric",
+          "text": "Respiratory tract infection within the 4 weeks prior to Visit 1",
+          "sub_conditions": [
+            "Respiratory tract infection within 4 weeks prior to Visit 1"
+          ],
+          "needed_info": [
+            "history of respiratory tract infection",
+            "infection date"
+          ]
+        },
+        {
+          "id": "E2",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Body mass index (BMI) > 30 at Visit 1",
+          "sub_conditions": [
+            "BMI > 30 at Visit 1"
+          ],
+          "needed_info": [
+            "BMI (height, weight)"
+          ]
+        },
+        {
+          "id": "E3",
+          "type": "exclusion",
+          "category": "temporal_numeric",
+          "text": "One-time doses such as intra-articular injections require a 4-week washout prior to Visit 1",
+          "sub_conditions": [
+            "One-time doses (e.g., intra-articular injections) within 4 weeks prior to Visit 1"
+          ],
+          "needed_info": [
+            "medication history: one-time doses/intra-articular injections",
+            "date of last injection"
+          ]
+        },
+        {
+          "id": "E4",
+          "type": "exclusion",
+          "category": "temporal_numeric",
+          "text": "Asthma-related ER visit within the previous 4 weeks of Visit 1 or at any time while on the study",
+          "sub_conditions": [
+            "Asthma-related ER visit within 4 weeks before Visit 1",
+            "Asthma-related ER visit at any time while on the study"
+          ],
+          "needed_info": [
+            "ER visit history",
+            "ER visits during study"
+          ]
+        },
+        {
+          "id": "E5",
+          "type": "exclusion",
+          "category": "post_enrollment",
+          "text": "Significant concomitant medical illness, including (but not limited to) heart disease, cancer, uncontrolled diabetes, other chronic lung diseases (determined by the Investigator.)",
+          "sub_conditions": [
+            "Heart disease",
+            "Cancer",
+            "Uncontrolled diabetes",
+            "Other chronic lung diseases",
+            "Other significant concomitant illness as determined by Investigator"
+          ],
+          "needed_info": [
+            "medical history",
+            "diagnoses",
+            "investigator judgment"
+          ]
+        },
+        {
+          "id": "E6",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Resting O2 saturation <90% with maximum supplemental O2 delivered by nasal cannula",
+          "sub_conditions": [
+            "Resting O2 saturation < 90% despite maximum supplemental O2 via nasal cannula"
+          ],
+          "needed_info": [
+            "resting oxygen saturation",
+            "supplemental O2 use"
+          ]
+        },
+        {
+          "id": "E7",
+          "type": "exclusion",
+          "category": "post_enrollment",
+          "text": "Positive urine pregnancy test at Visit 1 or at any time while on the study",
+          "sub_conditions": [
+            "Positive urine pregnancy test at Visit 1",
+            "Positive urine pregnancy test at any time during study"
+          ],
+          "needed_info": [
+            "urine pregnancy test result",
+            "pregnancy status"
+          ]
+        },
+        {
+          "id": "E8",
+          "type": "exclusion",
+          "category": "temporal_numeric",
+          "text": "Participation in an intervention study (including bronchoscopy) or use of investigative drugs within the past 30 days or plans to enroll in such a trial during the study",
+          "sub_conditions": [
+            "Participation in an intervention study (including bronchoscopy) within past 30 days",
+            "Use of investigational drugs within past 30 days",
+            "Plans to enroll in such a trial during the study"
+          ],
+          "needed_info": [
+            "clinical trial participation history",
+            "investigational drug use history",
+            "plans for other trial enrollment"
+          ]
+        },
+        {
+          "id": "E9",
+          "type": "exclusion",
+          "category": "post_enrollment",
+          "text": "Unable or unlikely to complete study assessments in the opinion of the Investigator",
+          "sub_conditions": [
+            "Unable or unlikely to complete study assessments per Investigator opinion"
+          ],
+          "needed_info": [
+            "investigator judgment"
+          ]
+        },
+        {
+          "id": "E10",
+          "type": "exclusion",
+          "category": "post_enrollment",
+          "text": "Study intervention poses undue risk to patient in the opinion of the Investigator",
+          "sub_conditions": [
+            "Study intervention poses undue risk per Investigator opinion"
+          ],
+          "needed_info": [
+            "investigator judgment"
+          ]
+        },
+        {
+          "id": "E11",
+          "type": "exclusion",
+          "category": "post_enrollment",
+          "text": "Conditions that will prohibit MRI scanning determined by the MRI safety screening.",
+          "sub_conditions": [
+            "Conditions prohibiting MRI scanning per MRI safety screening"
+          ],
+          "needed_info": [
+            "MRI safety screening results",
+            "implants/devices history"
+          ]
+        }
+      ],
+      "judgments": [
+        {
+          "criterion_id": "I1",
+          "verdict": "post_enrollment",
+          "evidence": "Informed consent is completed after the patient applies; nothing in the description addresses it.",
+          "sub_condition_notes": [
+            "Consent process: post_enrollment",
+            "Written documentation: post_enrollment"
+          ]
+        },
+        {
+          "criterion_id": "I2",
+          "verdict": "pass",
+          "checked_by": "code",
+          "evidence": "환자 나이 24세, 기준 18세 이상 ~ 65세 이하 → 해당 (코드 판정)",
+          "sub_condition_notes": [],
+          "llm_verdict": "pass"
+        },
+        {
+          "criterion_id": "I3",
+          "verdict": "unknown",
+          "evidence": "Description says \"asthma since childhood\", but does not state a formal physician diagnosis or its date.",
+          "sub_condition_notes": [
+            "Physician diagnosis of asthma: not explicitly stated, unknown",
+            "Duration > 1 year: asthma since childhood suggests this, but the diagnosis date is not given, unknown"
+          ]
+        },
+        {
+          "criterion_id": "I4",
+          "verdict": "unknown",
+          "evidence": "No PFT or spirometry results or dates are mentioned.",
+          "sub_condition_notes": [
+            "Ability to perform reproducible spirometry: unknown",
+            "PFTs within previous 30 days: unknown"
+          ]
+        },
+        {
+          "criterion_id": "I5",
+          "verdict": "pass",
+          "evidence": "The criterion states all racial/ethnic backgrounds may participate, so there is no restriction.",
+          "sub_condition_notes": [
+            "No restriction by race/ethnicity: pass"
+          ]
+        },
+        {
+          "criterion_id": "I6",
+          "verdict": "unknown",
+          "evidence": "No blood eosinophil count is given (labs list is empty).",
+          "sub_condition_notes": [
+            "Eosinophils > 300 cells/μL: unknown"
+          ]
+        },
+        {
+          "criterion_id": "I7",
+          "verdict": "unknown",
+          "evidence": "Smoking history is not mentioned.",
+          "sub_condition_notes": [
+            "< 10 pack-years: unknown"
+          ]
+        },
+        {
+          "criterion_id": "I8",
+          "verdict": "unknown",
+          "evidence": "No information on recent smoking, vaping, cigar or marijuana use.",
+          "sub_condition_notes": [
+            "Cigarettes: unknown",
+            "Vaping: unknown",
+            "Cigar: unknown",
+            "Marijuana: unknown"
+          ]
+        },
+        {
+          "criterion_id": "I9",
+          "verdict": "unknown",
+          "evidence": "Only a daily inhaled corticosteroid is mentioned. No plan to start dupilumab, tezepelumab or benralizumab is stated.",
+          "sub_condition_notes": [
+            "About to initiate one of the biologics: unknown",
+            "Part of standard of care: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E1",
+          "verdict": "unknown",
+          "evidence": "Respiratory infection history is not mentioned. Symptoms are worsening wheeze, chest tightness and night cough, with no infection stated.",
+          "sub_condition_notes": [
+            "Respiratory tract infection within 4 weeks: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E2",
+          "verdict": "unknown",
+          "evidence": "Height, weight and BMI are not given.",
+          "sub_condition_notes": [
+            "BMI > 30 at Visit 1: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E3",
+          "verdict": "unknown",
+          "evidence": "No history of one-time doses or injections is mentioned.",
+          "sub_condition_notes": [
+            "One-time doses within 4 weeks: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E4",
+          "verdict": "unknown",
+          "evidence": "No ER visit history is mentioned. The patient has worsening symptoms, but no ER visit is stated.",
+          "sub_condition_notes": [
+            "ER visit within 4 weeks before Visit 1: unknown",
+            "ER visit while on study: post_enrollment, a future event"
+          ]
+        },
+        {
+          "criterion_id": "E5",
+          "verdict": "post_enrollment",
+          "evidence": "Determined by the Investigator. No other comorbidities are listed in the description.",
+          "sub_condition_notes": [
+            "Heart disease: not mentioned",
+            "Cancer: not mentioned",
+            "Uncontrolled diabetes: not mentioned",
+            "Other chronic lung disease: not mentioned",
+            "Other significant illness: investigator determination"
+          ]
+        },
+        {
+          "criterion_id": "E6",
+          "verdict": "unknown",
+          "evidence": "No oxygen saturation or supplemental oxygen information is given.",
+          "sub_condition_notes": [
+            "Resting SpO2 < 90% on maximum nasal cannula O2: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E7",
+          "verdict": "pass",
+          "evidence": "The patient is a man, so a positive pregnancy test is not possible.",
+          "sub_condition_notes": [
+            "Positive test at Visit 1: not applicable, male",
+            "Positive test during study: not applicable, male"
+          ]
+        },
+        {
+          "criterion_id": "E8",
+          "verdict": "unknown",
+          "evidence": "No information on recent trial participation, investigational drugs or plans to enroll in another trial.",
+          "sub_condition_notes": [
+            "Intervention study within 30 days: unknown",
+            "Investigational drug within 30 days: unknown",
+            "Plans to enroll in another trial: unknown"
+          ]
+        },
+        {
+          "criterion_id": "E9",
+          "verdict": "post_enrollment",
+          "evidence": "Depends on the Investigator's opinion.",
+          "sub_condition_notes": [
+            "Investigator opinion: post_enrollment"
+          ]
+        },
+        {
+          "criterion_id": "E10",
+          "verdict": "post_enrollment",
+          "evidence": "Depends on the Investigator's opinion.",
+          "sub_condition_notes": [
+            "Investigator opinion: post_enrollment"
+          ]
+        },
+        {
+          "criterion_id": "E11",
+          "verdict": "post_enrollment",
+          "evidence": "Determined by the study's MRI safety screening.",
+          "sub_condition_notes": [
+            "MRI safety screening result: post_enrollment"
+          ]
+        }
+      ],
+      "final_judgment": "insufficient_info"
+    }
+  ],
+  "meta": {
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v3",
+    "created": "2026-10-22",
+    "stages": "1-4"
+  }
+}

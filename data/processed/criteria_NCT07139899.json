@@ -1,0 +1,273 @@
+[
+  {
+    "id": "I1",
+    "type": "inclusion",
+    "category": "administrative",
+    "text": "Adequate completion of informed consent process with written documentation",
+    "sub_conditions": [
+      "Completion of informed consent process",
+      "Written documentation of consent"
+    ],
+    "needed_info": [
+      "informed consent status",
+      "consent documentation"
+    ]
+  },
+  {
+    "id": "I2",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Patients 18 - 65 years old",
+    "sub_conditions": [
+      "Age >= 18 years",
+      "Age <= 65 years"
+    ],
+    "needed_info": [
+      "age"
+    ]
+  },
+  {
+    "id": "I3",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Physician diagnosis of asthma for > 1 year",
+    "sub_conditions": [
+      "Physician diagnosis of asthma",
+      "Duration of asthma diagnosis > 1 year"
+    ],
+    "needed_info": [
+      "diagnosis: asthma",
+      "date of asthma diagnosis"
+    ]
+  },
+  {
+    "id": "I4",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Able to perform reproducible spirometry according to ATS criteria based on clinical PFTs within previous 30 days of enrollment",
+    "sub_conditions": [
+      "Able to perform reproducible spirometry per ATS criteria",
+      "Clinical PFTs performed within previous 30 days of enrollment"
+    ],
+    "needed_info": [
+      "pulmonary function test results",
+      "PFT date",
+      "spirometry reproducibility per ATS criteria"
+    ]
+  },
+  {
+    "id": "I5",
+    "type": "inclusion",
+    "category": "administrative",
+    "text": "All racial/ethnic backgrounds may participate",
+    "sub_conditions": [
+      "No restriction by race/ethnicity"
+    ],
+    "needed_info": [
+      "race/ethnicity (no restriction)"
+    ]
+  },
+  {
+    "id": "I6",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Blood eosinophil count > 300 cells/μL",
+    "sub_conditions": [
+      "Blood eosinophil count > 300 cells/μL"
+    ],
+    "needed_info": [
+      "lab: blood eosinophil count"
+    ]
+  },
+  {
+    "id": "I7",
+    "type": "inclusion",
+    "category": "temporal_numeric",
+    "text": "Smoking history <10 pack years",
+    "sub_conditions": [
+      "Smoking history < 10 pack-years"
+    ],
+    "needed_info": [
+      "smoking history (pack-years)"
+    ]
+  },
+  {
+    "id": "I8",
+    "type": "inclusion",
+    "category": "temporal_numeric",
+    "text": "No smoking history (including vapes, cigar, or marijuana use) in the last 3 months",
+    "sub_conditions": [
+      "No cigarette smoking in last 3 months",
+      "No vaping in last 3 months",
+      "No cigar use in last 3 months",
+      "No marijuana use in last 3 months"
+    ],
+    "needed_info": [
+      "recent smoking/vaping/cigar/marijuana use history"
+    ]
+  },
+  {
+    "id": "I9",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "About to initiate asthma therapy with either dupilumab, tezepelumab, or benralizumab as part of their standard of care",
+    "sub_conditions": [
+      "About to initiate dupilumab OR tezepelumab OR benralizumab",
+      "Therapy is part of standard of care"
+    ],
+    "needed_info": [
+      "current/planned asthma medication",
+      "treatment plan"
+    ]
+  },
+  {
+    "id": "E1",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Respiratory tract infection within the 4 weeks prior to Visit 1",
+    "sub_conditions": [
+      "Respiratory tract infection within 4 weeks prior to Visit 1"
+    ],
+    "needed_info": [
+      "history of respiratory tract infection",
+      "infection date"
+    ]
+  },
+  {
+    "id": "E2",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Body mass index (BMI) > 30 at Visit 1",
+    "sub_conditions": [
+      "BMI > 30 at Visit 1"
+    ],
+    "needed_info": [
+      "BMI (height, weight)"
+    ]
+  },
+  {
+    "id": "E3",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "One-time doses such as intra-articular injections require a 4-week washout prior to Visit 1",
+    "sub_conditions": [
+      "One-time doses (e.g., intra-articular injections) within 4 weeks prior to Visit 1"
+    ],
+    "needed_info": [
+      "medication history: one-time doses/intra-articular injections",
+      "date of last injection"
+    ]
+  },
+  {
+    "id": "E4",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Asthma-related ER visit within the previous 4 weeks of Visit 1 or at any time while on the study",
+    "sub_conditions": [
+      "Asthma-related ER visit within 4 weeks before Visit 1",
+      "Asthma-related ER visit at any time while on the study"
+    ],
+    "needed_info": [
+      "ER visit history",
+      "ER visits during study"
+    ]
+  },
+  {
+    "id": "E5",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "Significant concomitant medical illness, including (but not limited to) heart disease, cancer, uncontrolled diabetes, other chronic lung diseases (determined by the Investigator.)",
+    "sub_conditions": [
+      "Heart disease",
+      "Cancer",
+      "Uncontrolled diabetes",
+      "Other chronic lung diseases",
+      "Other significant concomitant illness as determined by Investigator"
+    ],
+    "needed_info": [
+      "medical history",
+      "diagnoses",
+      "investigator judgment"
+    ]
+  },
+  {
+    "id": "E6",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Resting O2 saturation <90% with maximum supplemental O2 delivered by nasal cannula",
+    "sub_conditions": [
+      "Resting O2 saturation < 90% despite maximum supplemental O2 via nasal cannula"
+    ],
+    "needed_info": [
+      "resting oxygen saturation",
+      "supplemental O2 use"
+    ]
+  },
+  {
+    "id": "E7",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "Positive urine pregnancy test at Visit 1 or at any time while on the study",
+    "sub_conditions": [
+      "Positive urine pregnancy test at Visit 1",
+      "Positive urine pregnancy test at any time during study"
+    ],
+    "needed_info": [
+      "urine pregnancy test result",
+      "pregnancy status"
+    ]
+  },
+  {
+    "id": "E8",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Participation in an intervention study (including bronchoscopy) or use of investigative drugs within the past 30 days or plans to enroll in such a trial during the study",
+    "sub_conditions": [
+      "Participation in an intervention study (including bronchoscopy) within past 30 days",
+      "Use of investigational drugs within past 30 days",
+      "Plans to enroll in such a trial during the study"
+    ],
+    "needed_info": [
+      "clinical trial participation history",
+      "investigational drug use history",
+      "plans for other trial enrollment"
+    ]
+  },
+  {
+    "id": "E9",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "Unable or unlikely to complete study assessments in the opinion of the Investigator",
+    "sub_conditions": [
+      "Unable or unlikely to complete study assessments per Investigator opinion"
+    ],
+    "needed_info": [
+      "investigator judgment"
+    ]
+  },
+  {
+    "id": "E10",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "Study intervention poses undue risk to patient in the opinion of the Investigator",
+    "sub_conditions": [
+      "Study intervention poses undue risk per Investigator opinion"
+    ],
+    "needed_info": [
+      "investigator judgment"
+    ]
+  },
+  {
+    "id": "E11",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "Conditions that will prohibit MRI scanning determined by the MRI safety screening.",
+    "sub_conditions": [
+      "Conditions prohibiting MRI scanning per MRI safety screening"
+    ],
+    "needed_info": [
+      "MRI safety screening results",
+      "implants/devices history"
+    ]
+  }
+]

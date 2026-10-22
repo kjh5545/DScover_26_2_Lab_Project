@@ -242,6 +242,8 @@ reference/
 # 해준 파이프라인 실행 결과 (형식 예시 S005만 커밋, 나머지는 각자 생성)
 data/handoff/*
 !data/handoff/S005.json
+# 새 상세 환자(N...)의 검색·판정 결과: 정답 시트의 시험 목록이 이 파일에 고정돼 있어서 공유 (검색은 실행마다 달라질 수 있음)
+!data/handoff/N*.json
 
 # 평가 스크립트 출력 (각자 실행하면 생김)
 data/processed/eval_vs_goldset.json

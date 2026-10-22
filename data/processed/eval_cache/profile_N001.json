@@ -1,0 +1,20 @@
+{
+  "age": 58,
+  "age_unit": "years",
+  "sex": "F",
+  "suspected_diagnosis": "Type 2 diabetes mellitus with inadequate glycemic control on metformin",
+  "findings": [
+    "fatigue",
+    "increased thirst"
+  ],
+  "history": [
+    "9-year history of type 2 diabetes"
+  ],
+  "medications": [
+    "metformin"
+  ],
+  "labs": [
+    "HbA1c above target despite metformin"
+  ],
+  "id": "N001"
+}
