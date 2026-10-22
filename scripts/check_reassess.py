@@ -42,6 +42,7 @@ def fake_match(profile, criteria, case_text=None, system_prompt=None, answers=No
 
 
 question_inputs = []
+question_outputs = []
 
 
 def parse_question_input(user: str) -> dict[str, list[str]]:
@@ -65,6 +66,7 @@ def fake_question_ai(system, user):
     for trial, ids in parse_question_input(user).items():
         qs += [{"question": f"질문 {ids[i:i + 2]}", "needed_info": "",
                 "resolves": [{"trial": trial, "criteria": ids[i:i + 2]}]} for i in range(0, len(ids), 2)]
+    question_outputs.append(qs)
     return {"questions": qs, "not_asked": []}
 
 
@@ -88,8 +90,8 @@ def main() -> int:
     print("  " + "; ".join(f"{q['id']} → {q['resolves']}" for q in qs))
     check("ID가 Q1부터 통번호", [q["id"] for q in qs] == [f"Q{i}" for i in range(1, len(qs) + 1)])
     check("최대 3개", 0 < len(qs) <= 3)
-    check("시험별로 번갈아 고름 (앞의 두 질문이 서로 다른 시험)",
-          len(qs) >= 2 and qs[0]["resolves"][0]["trial"] != qs[1]["resolves"][0]["trial"])
+    check("AI가 준 순서 그대로 (v2.3.3: 코드가 다시 정렬하지 않음)",
+          [q["text"] for q in qs] == [q["question"] for q in question_outputs[-1]][:len(qs)])
     check("priority가 1부터 순서대로", [q["priority"] for q in qs] == list(range(1, len(qs) + 1)))
     check("부적격 시험은 질문 안 함", all(r["trial"] not in ineligible for q in qs for r in q["resolves"]))
     check("rounds에 1라운드 기록", len(bundle["rounds"]) == 1 and bundle["rounds"][0]["round"] == 1)
@@ -119,7 +121,7 @@ def main() -> int:
     check("최종 판단 다시 계산", t["final_judgment"] == final_judgment(t["judgments"]))
     check("판정 순서가 기준 순서와 같음", [j["criterion_id"] for j in t["judgments"]] == [c["id"] for c in t["criteria"]])
 
-    print("\n4. 2라운드: 이미 물어본 기준은 다시 안 물음")
+    print("\n4. 2라운드: 답이 판정을 정했거나(Q1) 건너뛴(Q2·Q3) 기준은 다시 안 물음")
     asked_before = pipeline.asked_criteria(bundle)
     qs2 = pipeline.next_round(bundle, max_questions=3)
     print("  " + "; ".join(f"{q['id']} → {q['resolves']}" for q in qs2))
@@ -171,15 +173,15 @@ def main() -> int:
     qb.ask_json = lambda system, user: messy
     r5 = qb.build_questions(b5, top_k=5)
     print("  " + "; ".join(f"{q['priority']}. {q['text']} → {q['resolves']}" for q in r5["questions"]))
-    check("여러 시험에 걸친 질문이 맨 앞", r5["questions"][0]["text"].startswith("지금 드시는 약"))
+    check("AI가 준 순서 그대로, 이미 다룬 기준만 있는 질문·빈 질문·없는 기준만 있는 질문은 뺌",
+          [q["text"] for q in r5["questions"]] == ["A 약 질문", "지금 드시는 약을 모두 알려 주세요.", "B 진단 질문", "A 진단 질문"])
     check("없는 기준 번호(Z9, 없는 시험)는 버림",
-          r5["questions"][0]["resolves"] == [{"trial": A, "criteria": ["E3", "E6"]}, {"trial": B, "criteria": ["E4"]}])
-    check("이미 다룬 기준만 있는 질문, 빈 질문, 없는 기준만 있는 질문은 뺌",
-          sorted(q["text"] for q in r5["questions"]) == sorted(["지금 드시는 약을 모두 알려 주세요.", "B 진단 질문", "A 진단 질문"]))
-    check("priority 1부터", [q["priority"] for q in r5["questions"]] == [1, 2, 3])
+          r5["questions"][1]["resolves"] == [{"trial": A, "criteria": ["E3", "E6"]}, {"trial": B, "criteria": ["E4"]}])
+    check("priority 1부터", [q["priority"] for q in r5["questions"]] == [1, 2, 3, 4])
     check("질문하지 않은 기준(not_asked)도 넘겨줌", r5["not_asked"] == messy["not_asked"])
+    check("review가 없으면 빈 칸", r5["review"] == {})
     qb.ask_json = lambda system, user: messy["questions"][:2]
-    check("AI가 목록만 줘도 처리", len(qb.build_questions(b5, top_k=5)["questions"]) == 1)
+    check("AI가 목록만 줘도 처리", len(qb.build_questions(b5, top_k=5)["questions"]) == 2)
     qb.ask_json = lambda system, user: messy
     check("최대 개수로 자름", len(qb.questions_for_round(b5, max_questions=1)) == 1)
 
@@ -188,12 +190,32 @@ def main() -> int:
     builder = partial(qb.questions_for_round, use_llm=False)
     hq = pipeline.next_round(b5, build_questions=builder, max_questions=5)
     print("  " + "; ".join(f"{q['id']} → {q['resolves']}" for q in hq))
-    check("질문 5개, 시험별로 번갈아", len(hq) == 5 and hq[0]["resolves"][0]["trial"] != hq[1]["resolves"][0]["trial"])
+    check("질문 5개", len(hq) == 5)
     hq2 = pipeline.next_round(b5, build_questions=builder, max_questions=5)
     asked = {(r["trial"], c) for q in hq for r in q["resolves"] for c in r["criteria"]}
     check("2라운드: ID가 이어지고 이미 물어본 기준 없음",
           bool(hq2) and hq2[0]["id"] == "Q6"
           and not any((r["trial"], c) in asked for q in hq2 for r in q["resolves"] for c in r["criteria"]))
+
+    print("\n10. 후속 질문 (v2.3.3 규칙 13): 답을 받았는데도 모름인 기준은 한 번 더, 건너뛴 기준·두 번 물은 기준은 안 물음")
+    matcher.match = lambda profile, criteria, **kw: [{"criterion_id": c["id"], "verdict": "unknown",
+                                                      "evidence": "fake"} for c in criteria]
+    qb.ask_json = fake_question_ai
+    bf = make_bundle("S004")
+    f1 = pipeline.next_round(bf, max_questions=3)
+    pipeline.reassess(bf, [{"question_id": f1[0]["id"], "answer": "잘 모르겠어요"}])   # f1[1]·f1[2]는 건너뜀
+    ids = lambda q: {(r["trial"], c) for r in q["resolves"] for c in r["criteria"]}  # noqa: E731
+    inputs2 = parse_question_input(qb.question_input(bf, qb.collect_materials(bf), 3))
+    in2 = {(t, c) for t, cs in inputs2.items() for c in cs}
+    check("답을 받았는데 아직 모름인 기준(Q1)은 다시 후보", ids(f1[0]) <= in2)
+    check("건너뛴 질문(Q2·Q3)의 기준은 후보에서 빠짐", not ((ids(f1[1]) | ids(f1[2])) & in2))
+    check("2라운드 입력에 1라운드 답변이 들어감 (AI가 남은 정보만 묻게)",
+          "잘 모르겠어요" in qb.question_input(bf, qb.collect_materials(bf), 3))
+    f2 = pipeline.next_round(bf, max_questions=3)
+    again = [q for q in f2 if ids(q) & ids(f1[0])]
+    pipeline.reassess(bf, [{"question_id": q["id"], "answer": "기록도 없어요"} for q in again])
+    in3 = {(m["trial"], m["criterion_id"]) for m in qb.collect_materials(bf)}
+    check("두 번 물은 기준은 3라운드 후보에서 빠짐", bool(again) and not (ids(f1[0]) & in3))
 
     print(f"\n{'모두 통과' if failures == 0 else f'실패 {failures}개'}")
     return 1 if failures else 0
