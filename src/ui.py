@@ -103,6 +103,33 @@ def screening_table(rows: list[dict]) -> str:
             '<th>판정</th><th>근거</th></tr></thead><tbody>' + body + "</tbody></table>")
 
 
+def detail_group(verdict: str, heading: str, items: list[dict]) -> str:
+    """추천 근거 패널의 판정 그룹: 배지 헤더 + (기준 ID·원문·근거 인용) 행들.
+
+    items: [{"id", "text", "evidence"}]
+    """
+    if not items:
+        return ""
+    fg, _bg = STATUS.get(verdict, (T["muted"], T["tint"]))
+    rows = "".join(
+        f'<div class="ev-row"><div class="ev-head"><span class="ev-id" style="color:{fg};">'
+        f'{html.escape(it["id"])}</span><span class="ev-text">{html.escape(it["text"])}</span></div>'
+        + (f'<div class="ev-quote">{html.escape(it["evidence"])}</div>' if it.get("evidence") else "")
+        for it in items
+    )
+    return (f'<div class="ev-group"><div class="ev-group-h">{badge(verdict)}'
+            f'<span class="ev-count">{len(items)}개</span>'
+            f'<span class="ev-why">{html.escape(heading)}</span></div>{rows}</div>')
+
+
+def rank_reason(pos: int, final: str, n_pass: int, n_total: int, n_unknown: int) -> str:
+    """이 순위가 나온 코드 규칙 설명 한 줄."""
+    return (f'<div class="why-line">{icon("pulse", 13)} <b>{pos}위인 이유</b> — '
+            f'최종 판단 <b>{LABEL.get(final, final)}</b> · 통과 <b>{n_pass}/{n_total}</b> · '
+            f'모름 <b>{n_unknown}</b>개. 순위는 판단 등급 → 통과 비율 → 모름 적은 순의 '
+            f'<b>코드 규칙</b>으로 정해져 같은 입력이면 항상 같습니다.</div>')
+
+
 def header() -> None:
     st.markdown(
         f'<div class="hero"><div class="hero-icon">{icon("pulse", 26)}</div>'
@@ -176,6 +203,20 @@ table.sheet td.kind {{ color:{T["muted"]}; white-space:nowrap; }}
 table.sheet td.crit {{ max-width:330px; }}
 table.sheet td.verd {{ white-space:nowrap; }}
 table.sheet td.ev {{ color:{T["muted"]}; max-width:340px; }}
+
+.why-line {{ display:flex; gap:7px; align-items:baseline; padding:9px 13px; margin:2px 0 10px;
+  background:{T["accent_soft"]}; border-radius:10px; font-size:0.86rem; }}
+.why-line svg {{ color:{T["accent"]}; flex:none; position:relative; top:1px; }}
+.ev-group {{ margin:10px 0 14px; }}
+.ev-group-h {{ display:flex; align-items:center; gap:8px; margin-bottom:6px; }}
+.ev-count {{ font-weight:700; font-size:0.8rem; color:{T["ink"]}; }}
+.ev-why {{ color:{T["muted"]}; font-size:0.8rem; }}
+.ev-row {{ border-left:2px solid {T["border"]}; padding:4px 0 6px 12px; margin:0 0 6px 4px; }}
+.ev-head {{ display:flex; gap:8px; align-items:baseline; }}
+.ev-id {{ font-weight:800; font-size:0.8rem; flex:none; }}
+.ev-text {{ font-size:0.85rem; font-weight:600; }}
+.ev-quote {{ color:{T["muted"]}; font-size:0.8rem; margin-top:3px; font-style:normal; }}
+.ev-quote::before {{ content:"└ 근거 "; color:{T["accent"]}; font-weight:700; }}
 
 .stButton > button[kind="primary"] {{ background:{T["accent"]}; border:none; border-radius:10px; }}
 .stButton > button {{ border-radius:10px; border-color:{T["border"]}; }}

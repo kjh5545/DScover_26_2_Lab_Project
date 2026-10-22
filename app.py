@@ -15,7 +15,7 @@ from pathlib import Path
 
 import streamlit as st
 
-from src.agents.recommender import rank_trials
+from src.agents.recommender import explain, rank_trials
 from src.pipeline import all_answers, final_check, next_round, reassess, run_intake
 from src.question_builder import questions_for_round
 from src import ui
@@ -116,16 +116,55 @@ if "bundle" in st.session_state:
 
     ranking = rank_trials(screenings)
     ui.section("추천 순위", "pulse")
+
+    def verdict_groups(s: dict) -> dict:
+        """[7] 근거 패널 재료: 판정별로 (기준 ID·원문·근거)를 묶는다 — LLM 불필요."""
+        crit_by_id = {c["id"]: c for c in s["criteria"]}
+        groups = {"pass": [], "fail": [], "unknown": [], "post_enrollment": []}
+        for j in s["judgments"]:
+            groups.setdefault(j["verdict"], []).append({
+                "id": j["criterion_id"],
+                "text": crit_by_id.get(j["criterion_id"], {}).get("text", "")[:90],
+                "evidence": j.get("evidence", "")[:140],
+            })
+        return groups
+
     for i, s in enumerate(ranking["recommended"], 1):
         counts = {}
         for j in s["judgments"]:
             counts[j["verdict"]] = counts.get(j["verdict"], 0) + 1
         st.markdown(ui.rank_card(f"{i}위", s["nct_id"], s["title"][:90],
                                  s["final_judgment"], counts), unsafe_allow_html=True)
+        with st.expander(f"{i}위 근거 자세히 보기 — 왜 이 순위이고, 뭐가 맞았고, 뭐가 남았나"):
+            g = verdict_groups(s)
+            st.markdown(ui.rank_reason(i, s["final_judgment"], len(g["pass"]),
+                                       len(s["judgments"]), len(g["unknown"]))
+                        + ui.detail_group("pass", "환자 정보와 맞음이 확인된 기준", g["pass"])
+                        + ui.detail_group("unknown", "아직 미확인 — 환자에게 물어보면 알 수 있음", g["unknown"])
+                        + ui.detail_group("post_enrollment", "시험에 지원해야 확인되는 항목", g["post_enrollment"])
+                        + ui.detail_group("fail", "탈락 사유", g["fail"]),
+                        unsafe_allow_html=True)
     for s in ranking["excluded"]:
         fails = [j["criterion_id"] for j in s["judgments"] if j["verdict"] == "fail"]
         st.markdown(ui.rank_card("제외", s["nct_id"], s["title"][:90],
                                  "ineligible", {"fail_ids": fails}), unsafe_allow_html=True)
+        with st.expander(f"제외 근거 — {s['nct_id']}"):
+            g = verdict_groups(s)
+            st.markdown(ui.detail_group("fail", "이 기준 때문에 탈락이 확정됨", g["fail"]),
+                        unsafe_allow_html=True)
+
+    # ── [7] 결과 설명 에이전트: AI 종합 리포트 (LLM 1회) ──
+    ui.section("AI 종합 리포트", "doc")
+    if st.session_state.get("report"):
+        st.markdown(st.session_state["report"])
+        st.caption("※ 7번 결과 설명 에이전트가 작성한 리포트입니다. 의학적 자문이 아닌 참고용입니다.")
+    elif st.session_state.get("preview"):
+        st.caption("예시 모드에서는 AI 리포트(LLM 호출)를 생성할 수 없어요. 위의 '근거 자세히 보기'는 판정 데이터로 바로 그려져서 지금도 볼 수 있습니다.")
+    elif st.button("리포트 생성", icon=":material/article:",
+                   help="7번 결과 설명 에이전트가 순위·근거·미확인 항목을 서술형 리포트로 정리합니다 (LLM 호출 1회)"):
+        with st.spinner("[7] 결과 설명 에이전트 작성 중..."):
+            st.session_state["report"] = explain(bundle["profile"], ranking)
+        st.rerun()
 
     if st.session_state["last_changed"]:
         ui.section("바뀐 판정 (방금 반영)", "check")
