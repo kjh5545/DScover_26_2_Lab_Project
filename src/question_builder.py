@@ -27,8 +27,9 @@ FINAL_KO = {"eligible": "적격(eligible)", "probably_eligible": "적격 가능(
 
 # ② 질문 프롬프트 — 서현 v2.3.3 (10/21, 노션 부록 A 전문). 입력 부분([질문 수]·[이미 받은 답변]·[환자]·[시험 n])은
 #   question_input()이 만든다. 노션에 옮기며 사라진 번호(규칙 1~13, 출력 1~3)만 되살렸고 문장은 그대로.
-#   review(우선순위 이유·기준별 확인 정보)는 실험 검토용이라 build_questions 결과에만 담고 질문 루프는 쓰지 않는다.
-QUESTION_SYSTEM_PROMPT = """당신은 임상시험 사전 스크리닝에서 환자에게 확인 질문을 만드는 담당자입니다.
+#   review(우선순위 이유·기준별 확인 정보)는 실험 검토용. 이 전문(_REVIEW)은 review까지 출력하고, 질문 루프가 쓰는
+#   QUESTION_SYSTEM_PROMPT(아래)는 review 출력만 뺀 것 — 출력이 2~3배 짧아져 질문 생성 비용이 약 절반 (10/22 결정)
+QUESTION_SYSTEM_PROMPT_REVIEW = """당신은 임상시험 사전 스크리닝에서 환자에게 확인 질문을 만드는 담당자입니다.
 
 [목적과 사용 상황]
 환자가 직접 질문을 읽고 답하는 상황입니다.
@@ -223,6 +224,15 @@ questions는 우선순위 순서로 정렬하세요.
             "criterion_checks": [{"trial": "<NCT ID>", "criterion_id": "<기준 ID>", "question_numbers": [1],
                                   "asked_info": ["<이번 질문으로 실제 요청한 정보>"],
                                   "remaining_info": ["<아직 다루지 않은 조건·기록 검토·해석 확인 사항>"]}]}}"""
+
+_REVIEW_OUTPUT = QUESTION_SYSTEM_PROMPT_REVIEW[QUESTION_SYSTEM_PROMPT_REVIEW.index("3. review\n"):
+                                               QUESTION_SYSTEM_PROMPT_REVIEW.index("배열에 항목이 없으면")]
+_REVIEW_EXAMPLE = QUESTION_SYSTEM_PROMPT_REVIEW[QUESTION_SYSTEM_PROMPT_REVIEW.index(',\n "review": {'):-1]
+QUESTION_SYSTEM_PROMPT = (QUESTION_SYSTEM_PROMPT_REVIEW
+                          .replace(_REVIEW_OUTPUT, "review는 출력하지 마세요. 규칙에서 review·검토 기록·asked_info·"
+                                                   "remaining_info를 말한 부분은 질문을 만들 때 스스로 점검하는 "
+                                                   "기준으로만 쓰세요.\n")
+                          .replace(_REVIEW_EXAMPLE, ""))
 
 # 서현 v2.1 (10/17~10/21 사용). 비교 실험용으로 남겨 둠
 QUESTION_SYSTEM_PROMPT_V21 = """당신은 임상시험 사전 스크리닝에서 환자에게 확인 질문을 만드는 담당자입니다.

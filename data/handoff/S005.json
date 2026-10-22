@@ -269,148 +269,149 @@
         {
           "criterion_id": "I1",
           "verdict": "unknown",
-          "evidence": "Profile lists \"suspected_diagnosis\": \"Migraine with aura\" and \"history\": [] — no confirmed diagnosis of chronic migraine or cluster (Horton's) headache is on record.",
+          "evidence": "The description gives recurrent migraine-like episodes but no formal diagnosis of chronic migraine or cluster headache: \"recurrent episodes of severe unilateral throbbing headache preceded by visual scotomata\". The suspected diagnosis (migraine with aura) is an inference, not a diagnosis on record.",
+          "sub_conditions_notes": [],
           "sub_condition_notes": [
-            "Diagnosis of chronic migraine: unknown — only a suspected diagnosis of 'Migraine with aura' is recorded, with no chronicity information",
-            "OR diagnosis of cluster (Horton's) headache: unknown — no such diagnosis documented in history"
+            "Diagnosis of chronic migraine: unknown, no formal diagnosis or frequency stated",
+            "Diagnosis of cluster headache: unknown, no diagnosis stated"
           ]
         },
         {
           "criterion_id": "I2",
           "verdict": "pass",
-          "evidence": "\"age\": 34, \"age_unit\": \"years\", \"sex\": \"F\"",
+          "evidence": "\"A 34-year-old woman\"",
           "sub_condition_notes": [
-            "Age ≥ 18 years: pass — 34 years",
-            "Age ≤ 65 years: pass — 34 years",
-            "Male or female sex: pass — sex 'F'"
+            "Age ≥ 18: pass (34)",
+            "Age ≤ 65: pass (34)",
+            "Male or female sex: pass (female)"
           ]
         },
         {
           "criterion_id": "I3",
           "verdict": "unknown",
-          "evidence": "Findings note \"recurrent episodes of severe unilateral throbbing headache\" but no headache-day or migraine-day frequency per month is recorded, and no chronic/high-frequency migraine diagnosis is on record.",
+          "evidence": "Only \"recurrent episodes\" are described. No headache-day or migraine-day frequency and no diagnosis of chronic/high frequency migraine are given.",
           "sub_condition_notes": [
-            "Diagnosis of chronic/high frequency migraine: unknown — only 'suspected_diagnosis: Migraine with aura'",
-            "≥15 headache days per month: unknown — no frequency data in profile ('recurrent episodes' is unquantified)",
-            "≥8 migraine days per month: unknown — no frequency data in profile"
+            "Diagnosis of chronic/high frequency migraine: unknown",
+            "≥15 headache days per month: unknown",
+            "≥8 migraine days per month: unknown"
           ]
         },
         {
           "criterion_id": "I4",
           "verdict": "unknown",
-          "evidence": "No cluster headache diagnosis is documented; \"history\": [] and the only diagnostic entry is \"suspected_diagnosis\": \"Migraine with aura\".",
+          "evidence": "No diagnosis of chronic cluster headache, remission period information, or diagnostic criteria are described.",
           "sub_condition_notes": [
-            "Diagnosis of chronic cluster headache: unknown — not documented",
-            "Remission periods shorter than 3 months per year: unknown — no remission data",
-            "Diagnosis established according to ICHD-III criteria: unknown — no diagnostic framework documented"
+            "Diagnosis of chronic cluster headache: unknown",
+            "Remission shorter than 3 months per year: unknown",
+            "Diagnosed per ICHD-III: unknown"
           ]
         },
         {
           "criterion_id": "I5",
           "verdict": "post_enrollment",
-          "evidence": "Physical ability to perform yoga-based movements requires on-site functional assessment, and ability to give informed consent is assessed at enrollment; not derivable from profile.",
+          "evidence": "Ability to give informed consent and physical capacity for yoga movements are determined at enrollment/screening. Nothing in the description addresses them.",
           "sub_condition_notes": [
-            "Physically able to perform yoga-based movements: post_enrollment — requires investigator assessment",
-            "Able to give informed consent: post_enrollment — consent capacity is always assessed at enrollment"
+            "Physically able to perform yoga-based movements: assessed by the study team",
+            "Able to give informed consent: post_enrollment by rule"
           ]
         },
         {
           "criterion_id": "I6",
           "verdict": "unknown",
-          "evidence": "Profile contains no information on internet access or device ownership; this could be asked of the patient now.",
+          "evidence": "No information on internet access or devices.",
           "sub_condition_notes": [
-            "Has internet connection: unknown — not mentioned",
-            "Has access to a computer, iPad, or mobile device: unknown — not mentioned"
+            "Has internet connection: unknown",
+            "Has computer/iPad/mobile device: unknown"
           ]
         },
         {
           "criterion_id": "I7",
-          "verdict": "unknown",
-          "evidence": "No statement in the profile about willingness to wear an actigraphy wristwatch.",
+          "verdict": "post_enrollment",
+          "evidence": "Willingness to wear an actigraphy wristwatch is a willingness/compliance criterion.",
           "sub_condition_notes": [
-            "Willingness to wear an actigraphy wristwatch: unknown — not mentioned"
+            "Willingness to wear actigraphy wristwatch: post_enrollment"
           ]
         },
         {
           "criterion_id": "I8",
-          "verdict": "unknown",
-          "evidence": "Profile lists \"labs\": [] and contains no statement about willingness to provide blood samples.",
+          "verdict": "post_enrollment",
+          "evidence": "Willingness to provide blood samples is a willingness/participation criterion.",
           "sub_condition_notes": [
-            "Willingness to provide blood samples at a laboratory: unknown — not mentioned"
+            "Willingness to provide blood samples: post_enrollment"
           ]
         },
         {
           "criterion_id": "E1",
           "verdict": "unknown",
-          "evidence": "\"history\": [] — no surgical history or planned operations are recorded; absence of mention does not rule it out.",
+          "evidence": "No surgical history or planned procedures are mentioned; the profile history is empty.",
           "sub_condition_notes": [
-            "Surgery within the last 6 weeks: unknown — no surgical dates in profile",
-            "Planned surgery: unknown — not mentioned"
+            "Surgery within last 6 weeks: unknown",
+            "Planned surgery: unknown"
           ]
         },
         {
           "criterion_id": "E2",
           "verdict": "unknown",
-          "evidence": "\"history\": [] and \"medications\": [] — no substance use or psychiatric diagnosis information is provided.",
+          "evidence": "No substance use, alcohol use, or psychiatric history is mentioned.",
           "sub_condition_notes": [
-            "Drug dependence: unknown — not mentioned",
-            "Alcohol dependence: unknown — not mentioned",
-            "Psychosis: unknown — not mentioned",
-            "Bipolar disorder: unknown — not mentioned",
-            "Anxiety disorder such as PTSD: unknown — not mentioned",
-            "Other mental disorders: unknown — not mentioned"
+            "Drug dependence: unknown",
+            "Alcohol dependence: unknown",
+            "Psychosis: unknown",
+            "Bipolar disorder: unknown",
+            "Anxiety disorder such as PTSD: unknown",
+            "Other mental disorders: unknown"
           ]
         },
         {
           "criterion_id": "E3",
           "verdict": "unknown",
-          "evidence": "No information in the profile about participation in other clinical trials.",
+          "evidence": "No information on current participation in other clinical trials.",
           "sub_condition_notes": [
-            "Currently enrolled in another clinical trial: unknown — not mentioned"
+            "Currently enrolled in another clinical trial: unknown"
           ]
         },
         {
           "criterion_id": "E4",
           "verdict": "unknown",
-          "evidence": "\"labs\": [], \"medications\": [], \"history\": [] — no blood pressure values, antihypertensive use, or cardiac diagnoses recorded.",
+          "evidence": "No blood pressure values, antihypertensive medication, or cardiac history given; medications list is empty.",
           "sub_condition_notes": [
-            "Untreated/unmedicated hypertension: unknown — no BP values or medication data",
-            "Heart disease such as heart failure: unknown — no cardiac history recorded"
+            "Unmedicated hypertension: unknown",
+            "Heart disease such as heart failure: unknown"
           ]
         },
         {
           "criterion_id": "E5",
           "verdict": "unknown",
-          "evidence": "Profile contains no information on language proficiency.",
+          "evidence": "Language proficiency is not mentioned.",
           "sub_condition_notes": [
-            "Unable to speak Swedish: unknown — language not documented"
+            "Unable to speak Swedish: unknown"
           ]
         },
         {
           "criterion_id": "E6",
           "verdict": "post_enrollment",
-          "evidence": "Capacity to perform low intensity exercise at home or face-to-face requires functional assessment by the investigator after application.",
+          "evidence": "Ability to perform low intensity exercise is a functional assessment made by the study team. Nothing is stated in the description.",
           "sub_condition_notes": [
-            "Unable to perform low intensity exercise at home: post_enrollment — requires functional assessment",
-            "Unable to perform low intensity exercise face to face (online or live): post_enrollment — requires functional assessment"
+            "Unable to exercise at home: post_enrollment",
+            "Unable to exercise face to face/online: post_enrollment"
           ]
         },
         {
           "criterion_id": "E7",
           "verdict": "post_enrollment",
-          "evidence": "Uncertainty about participation is determined at the time of enrollment/consent discussion; not available in the profile.",
+          "evidence": "Uncertainty about participation is a willingness/commitment matter determined after application.",
           "sub_condition_notes": [
-            "Uncertainty about participation due to drug addiction: post_enrollment — depends on participant's expressed commitment at enrollment",
-            "Uncertainty about participation due to other causes: post_enrollment — depends on participant's expressed commitment at enrollment"
+            "Uncertainty due to drug addiction: post_enrollment",
+            "Uncertainty due to other causes: post_enrollment"
           ]
         },
         {
           "criterion_id": "E8",
           "verdict": "post_enrollment",
-          "evidence": "Orientation status and ability to report other serious conditions are assessed by the investigator at screening; the profile contains no cognitive assessment.",
+          "evidence": "Orientation and ability to report medical history are assessed by the study team at screening. The description does not mention disorientation.",
           "sub_condition_notes": [
-            "Disorientation: post_enrollment — requires on-site cognitive/orientation assessment",
-            "Inability to provide information about other serious medical conditions: post_enrollment — requires investigator assessment at screening"
+            "Disorientation: assessed by study team",
+            "Inability to provide information about other serious conditions: assessed by study team"
           ]
         }
       ],
@@ -648,43 +649,43 @@
         {
           "criterion_id": "I1",
           "verdict": "unknown",
-          "evidence": "Profile lists only a \"suspected_diagnosis\": \"Migraine with aura\" with findings \"recurrent episodes of severe unilateral throbbing headache\", \"visual scotomata preceding headache\" — symptoms are suggestive but no confirmed/coded diagnosis is on record.",
+          "evidence": "Description gives symptoms (\"severe unilateral throbbing headache preceded by visual scotomata, accompanied by photophobia, nausea, and phonophobia\") but no formal diagnosis of migraine with aura is on record; the suspected diagnosis is only an inference.",
           "sub_condition_notes": [
-            "Diagnosis of migraine with aura: suspected only, not a confirmed diagnosis on record → unknown"
+            "Diagnosis of migraine with aura: symptoms suggest it, but no formal diagnosis stated -> unknown"
           ]
         },
         {
           "criterion_id": "I2",
           "verdict": "unknown",
-          "evidence": "Profile states \"recurrent episodes of severe unilateral throbbing headache\" and \"visual scotomata preceding headache\" but gives no attack frequency or duration of history.",
+          "evidence": "Only \"recurrent episodes\" are described; no monthly frequency or 3-month history is given.",
           "sub_condition_notes": [
-            "At least 1 migraine attack with aura per month: frequency not documented → unknown",
-            "Frequency sustained during the 3 months prior to inclusion: no timeline in profile → unknown"
+            "At least 1 attack with aura per month: not stated",
+            "Sustained over 3 months before inclusion: not stated"
           ]
         },
         {
           "criterion_id": "I3",
           "verdict": "unknown",
-          "evidence": "\"medications\": [] — no medications are listed, but no explicit statement about prior prophylactic antimigraine treatment or date of last intake.",
+          "evidence": "Profile medications list is empty, but no explicit statement about prophylactic antimigraine treatment or washout.",
           "sub_condition_notes": [
-            "No prophylactic antimigraine treatment: medication list is empty but prior treatment not addressed → unknown",
-            "Washout of at least 1 month prior to inclusion: no dates available → unknown"
+            "No prophylactic treatment: not explicitly stated",
+            "1-month washout: not stated"
           ]
         },
         {
           "criterion_id": "I4",
           "verdict": "unknown",
-          "evidence": "\"age\": 34, \"sex\": \"F\" — woman of potential childbearing age, but no contraception information in the profile.",
+          "evidence": "Patient is a 34-year-old woman, but childbearing potential and contraceptive use are not stated.",
           "sub_condition_notes": [
-            "Female of childbearing potential: 34-year-old female → consistent with childbearing potential",
-            "Use of reliable contraception ≥3 months before study: not documented → unknown",
-            "Willingness to continue contraception 1 month after study: not documented → unknown"
+            "Female of childbearing potential: female aged 34 but status not stated",
+            "Reliable contraception for 3 months before: not stated",
+            "Willingness to continue contraception 1 month after: willingness is only determined after enrollment"
           ]
         },
         {
           "criterion_id": "I5",
           "verdict": "post_enrollment",
-          "evidence": "Ability/willingness to sign written informed consent is determined at enrollment, not available in the profile.",
+          "evidence": "Ability and willingness to sign informed consent is established at enrollment.",
           "sub_condition_notes": [
             "Able and willing to sign written informed consent: post_enrollment"
           ]
@@ -692,100 +693,100 @@
         {
           "criterion_id": "I6",
           "verdict": "unknown",
-          "evidence": "No information on Social Security affiliation or health insurance in the profile.",
+          "evidence": "No information on Social Security affiliation.",
           "sub_condition_notes": [
-            "Affiliation to a Social Security scheme: not documented → unknown"
+            "Affiliation to Social Security: not stated"
           ]
         },
         {
           "criterion_id": "E1",
           "verdict": "unknown",
-          "evidence": "\"history\": [] and \"medications\": [] — no allergy or drug hypersensitivity information provided.",
+          "evidence": "No drug allergy history given.",
           "sub_condition_notes": [
-            "Known hypersensitivity/allergy to amiloride: not documented → unknown"
+            "Hypersensitivity to amiloride: not stated"
           ]
         },
         {
           "criterion_id": "E2",
           "verdict": "unknown",
-          "evidence": "\"labs\": [] — no serum potassium value available.",
+          "evidence": "No potassium value given (labs empty).",
           "sub_condition_notes": [
-            "Serum potassium > 5.5 mmol/l: no lab value → unknown"
+            "Serum potassium > 5.5 mmol/l: unknown"
           ]
         },
         {
           "criterion_id": "E3",
           "verdict": "unknown",
-          "evidence": "\"medications\": [] — medication list is empty, but use of potassium-sparing diuretics or potassium salts is not explicitly addressed.",
+          "evidence": "No medication information beyond an empty medication list; use not explicitly ruled out.",
           "sub_condition_notes": [
-            "Use of another hyperkalemic (potassium-sparing) diuretic: not documented → unknown",
-            "Use of potassium salts/supplements: not documented → unknown"
+            "Other hyperkalemic diuretic: not stated",
+            "Potassium salts: not stated"
           ]
         },
         {
           "criterion_id": "E4",
           "verdict": "unknown",
-          "evidence": "\"labs\": [] and \"history\": [] — no creatinine clearance/eGFR or renal disease information.",
+          "evidence": "No creatinine clearance or renal history given.",
           "sub_condition_notes": [
-            "Creatinine clearance < 60 ml/min: no lab value → unknown"
+            "Creatinine clearance < 60 ml/min: unknown"
           ]
         },
         {
           "criterion_id": "E5",
           "verdict": "unknown",
-          "evidence": "\"history\": [] and \"labs\": [] — no liver function tests or hepatic history.",
+          "evidence": "No liver function tests or hepatic history given.",
           "sub_condition_notes": [
-            "Severe hepatocellular insufficiency: not documented → unknown"
+            "Severe hepatocellular insufficiency: not stated"
           ]
         },
         {
           "criterion_id": "E6",
           "verdict": "unknown",
-          "evidence": "\"medications\": [] — no explicit documentation about lithium, ACE inhibitors, ARBs, ciclosporin, tacrolimus, or QT-prolonging drugs.",
+          "evidence": "No medication list given (empty); concomitant drugs not explicitly ruled out.",
           "sub_condition_notes": [
-            "Concomitant lithium: not documented → unknown",
-            "Concomitant ACE inhibitors: not documented → unknown",
-            "Concomitant angiotensin II receptor inhibitors: not documented → unknown",
-            "Concomitant ciclosporin: not documented → unknown",
-            "Concomitant tacrolimus: not documented → unknown",
-            "Concomitant non-antiarrhythmic torsadogenic drugs: not documented → unknown"
+            "Lithium: not stated",
+            "ACE inhibitors: not stated",
+            "Angiotensin II inhibitors: not stated; potassium unknown",
+            "Ciclosporin: not stated",
+            "Tacrolimus: not stated",
+            "Torsades-inducing non-antiarrhythmics: not stated"
           ]
         },
         {
           "criterion_id": "E7",
           "verdict": "pass",
-          "evidence": "\"age\": 34, \"age_unit\": \"years\" — patient is not over 75 years old, so this age-restricted exclusion does not apply.",
+          "evidence": "Patient is 34 years old, so not over 75; the criterion applies only to subjects over 75.",
           "sub_condition_notes": [
-            "Age over 75 years: 34 years old → not met, exclusion inapplicable",
-            "History of cardiovascular disease: not documented, but irrelevant since age condition is not met",
-            "History of renal disease: not documented, but irrelevant since age condition is not met"
+            "Age over 75: no (34 years)",
+            "History of cardiovascular disease: applies only if over 75, so not exclusionary",
+            "History of renal disease: applies only if over 75, so not exclusionary"
           ]
         },
         {
           "criterion_id": "E8",
           "verdict": "post_enrollment",
-          "evidence": "Requires investigator's judgment of compliance, which is made after application.",
+          "evidence": "Depends on the investigator's judgment of compliance.",
           "sub_condition_notes": [
-            "Investigator judgment of likely non-compliance: post_enrollment"
+            "Investigator judgment of non-compliance: post_enrollment"
           ]
         },
         {
           "criterion_id": "E9",
           "verdict": "unknown",
-          "evidence": "34-year-old female; \"history\": [] contains no pregnancy or breastfeeding information and no pregnancy test in \"labs\": [].",
+          "evidence": "Pregnancy and lactation status are not stated.",
           "sub_condition_notes": [
-            "Pregnancy: not documented → unknown",
-            "Breastfeeding/lactation: not documented → unknown"
+            "Pregnancy: not stated",
+            "Breastfeeding: not stated"
           ]
         },
         {
           "criterion_id": "E10",
           "verdict": "unknown",
-          "evidence": "No information on legal protection, guardianship, or trusteeship in the profile.",
+          "evidence": "No information on legal protection, guardianship, or trusteeship.",
           "sub_condition_notes": [
-            "Under trusteeship (curatorship): not documented → unknown",
-            "Under guardianship: not documented → unknown",
-            "Protected by law: not documented → unknown"
+            "Trusteeship: not stated",
+            "Guardianship: not stated",
+            "Protected by law: not stated"
           ]
         }
       ],

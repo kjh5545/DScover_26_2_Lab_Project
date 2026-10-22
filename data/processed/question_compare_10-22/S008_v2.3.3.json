@@ -1,0 +1,348 @@
+{
+  "patient_id": "S008",
+  "questions": [
+    {
+      "text": "의사에게 특발성 폐섬유증(IPF, Idiopathic Pulmonary Fibrosis)으로 진단받은 적이 있나요? 있다면 진단 내용이 적힌 진료 기록이나 진단서를 제공할 수 있는지 알려 주세요.",
+      "needed_info": "특발성 폐섬유증(IPF) 진단 여부와 진단 내용이 적힌 기존 진료 기록 제공 가능 여부",
+      "resolves": [
+        {
+          "trial": "NCT07652658",
+          "criteria": [
+            "I2"
+          ]
+        },
+        {
+          "trial": "NCT07299695",
+          "criteria": [
+            "I2",
+            "E4"
+          ]
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "text": "폐기능검사를 받은 적이 있나요? 있다면 강제폐활량(FVC)과 일산화탄소 확산능(DLCO)이 나와 있는 결과지를 제공할 수 있는지 알려 주세요.",
+      "needed_info": "폐기능검사(FVC, DLCO) 시행 여부와 결과지 제공 가능 여부. 수치는 환자 기억으로 묻지 않음",
+      "resolves": [
+        {
+          "trial": "NCT07652658",
+          "criteria": [
+            "I4",
+            "I5"
+          ]
+        }
+      ],
+      "priority": 2
+    },
+    {
+      "text": "의사에게 특발성 폐섬유증의 급성 악화(acute exacerbation, 짧은 기간에 호흡곤란이 갑자기 심해지는 상태)로 진단받았거나 의심된다는 말을 들은 적이 있나요? 있다면 그때 입원했는지, 입원 날짜(연월)와 관련 기록 제공 가능 여부를 알려 주세요.",
+      "needed_info": "특발성 폐섬유증의 급성 악화(acute exacerbation) 진단 또는 의심 이력, 그에 따른 입원 여부와 입원 날짜(연월), 관련 기록 제공 가능 여부",
+      "resolves": [
+        {
+          "trial": "NCT07652658",
+          "criteria": [
+            "E3"
+          ]
+        },
+        {
+          "trial": "NCT07299695",
+          "criteria": [
+            "I3"
+          ]
+        }
+      ],
+      "priority": 3
+    },
+    {
+      "text": "흉부 CT(HRCT) 영상 판독지를 제공할 수 있나요? 가능하면 검사 날짜가 보이는 판독지를 부탁드립니다.",
+      "needed_info": "흉부 CT(HRCT) 판독지 제공 가능 여부와 검사 날짜 확인",
+      "resolves": [
+        {
+          "trial": "NCT07652658",
+          "criteria": [
+            "E2"
+          ]
+        },
+        {
+          "trial": "NCT07299695",
+          "criteria": [
+            "I3"
+          ]
+        }
+      ],
+      "priority": 4
+    },
+    {
+      "text": "항섬유화제(antifibrotic), 스테로이드, 면역억제제를 사용 중이거나 사용한 적이 있다면, 먹는 약뿐 아니라 주사·주입 치료까지 포함해서 약 이름, 용량, 사용 날짜가 적힌 처방전이나 투약 기록을 제공할 수 있나요?",
+      "needed_info": "항섬유화제, 스테로이드, 면역억제제(먹는 약, 주사·주입 포함)의 사용 여부와 약 이름·용량·사용 날짜가 적힌 처방전·투약 기록 제공 가능 여부",
+      "resolves": [
+        {
+          "trial": "NCT07652658",
+          "criteria": [
+            "I3"
+          ]
+        },
+        {
+          "trial": "NCT07299695",
+          "criteria": [
+            "E6"
+          ]
+        }
+      ],
+      "priority": 5
+    }
+  ],
+  "not_asked": [
+    {
+      "trial": "NCT07652658",
+      "criterion_id": "E1",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT07652658",
+      "criterion_id": "E4",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT07652658",
+      "criterion_id": "E5",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT07652658",
+      "criterion_id": "E6",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT07652658",
+      "criterion_id": "E7",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT07299695",
+      "criterion_id": "E1",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT07299695",
+      "criterion_id": "E2",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT07299695",
+      "criterion_id": "E3",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT07299695",
+      "criterion_id": "E5",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT07299695",
+      "criterion_id": "E7",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT07299695",
+      "criterion_id": "E8",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT07299695",
+      "criterion_id": "E9",
+      "reason": "질문 수 제한으로 보류"
+    },
+    {
+      "trial": "NCT07299695",
+      "criterion_id": "E10",
+      "reason": "질문 수 제한으로 보류"
+    }
+  ],
+  "review": {
+    "priority_notes": [
+      {
+        "question_number": 1,
+        "reason": "IPF 진단 여부와 진단 기록은 두 시험의 선정 기준 I2 판정에 직접 필요하고, NCT07299695 E4의 진단 확정 여부 판단에도 도움이 되어 공통성이 높음."
+      },
+      {
+        "question_number": 2,
+        "reason": "NCT07652658의 I4(FVC)와 I5(DLCO) 두 선정 기준 판정에 필요한 검사 결과지를 한 번에 확인할 수 있음. 환자 설명에는 폐기능 정보가 없음."
+      },
+      {
+        "question_number": 3,
+        "reason": "급성 악화 이력과 입원 여부는 NCT07652658 E3 제외 여부와 NCT07299695 I3(AE-IPF로 입원) 판정에 직접 도움이 되어 두 시험에 공통됨."
+      },
+      {
+        "question_number": 4,
+        "reason": "흉부 CT 판독지는 NCT07652658 E2(폐기종 범위와 섬유화 범위 비교)와 NCT07299695 I3의 CT 조건 판정에 필요한 영상 정보를 제공함."
+      },
+      {
+        "question_number": 5,
+        "reason": "약물 기록은 NCT07652658 I3(항섬유화제 사용 및 안정 용량 여부)와 NCT07299695 E6(스테로이드·면역억제제 사용 이력) 판정에 공통으로 필요한 정보임. 기준 날짜가 없어 날짜가 포함된 기록을 요청함."
+      }
+    ],
+    "criterion_checks": [
+      {
+        "trial": "NCT07652658",
+        "criterion_id": "I2",
+        "question_numbers": [
+          1
+        ],
+        "asked_info": [
+          "특발성 폐섬유증(IPF) 진단 여부",
+          "진단 내용이 적힌 진료 기록·진단서 제공 가능 여부"
+        ],
+        "remaining_info": [
+          "제공된 기록에서 IPF 진단 내용 확인 필요"
+        ]
+      },
+      {
+        "trial": "NCT07652658",
+        "criterion_id": "I3",
+        "question_numbers": [
+          5
+        ],
+        "asked_info": [
+          "항섬유화제 사용 여부",
+          "약 이름·용량·사용 날짜가 적힌 처방전·투약 기록 제공 가능 여부"
+        ],
+        "remaining_info": [
+          "locally approved antifibrotic therapies를 stable dose로 사용 중인지, 또는 IPF 환자이면서 local standard of care를 받지 않는지 기록 확인 필요",
+          "안정 용량의 구체적 기준은 원문에 없어 기록 검토 시 확인 필요"
+        ]
+      },
+      {
+        "trial": "NCT07652658",
+        "criterion_id": "I4",
+        "question_numbers": [
+          2
+        ],
+        "asked_info": [
+          "폐기능검사(FVC 포함) 시행 여부",
+          "결과지 제공 가능 여부"
+        ],
+        "remaining_info": [
+          "FVC가 정상 예측치의 45% 이상인지 결과지로 확인 필요",
+          "제공된 결과지에 FVC가 포함되어 있는지 확인 필요"
+        ]
+      },
+      {
+        "trial": "NCT07652658",
+        "criterion_id": "I5",
+        "question_numbers": [
+          2
+        ],
+        "asked_info": [
+          "폐기능검사(DLCO 포함) 시행 여부",
+          "결과지 제공 가능 여부"
+        ],
+        "remaining_info": [
+          "헤모글로빈 보정 DLCO가 정상 예측치의 25% 이상인지 결과지로 확인 필요",
+          "제공된 결과지에 DLCO와 헤모글로빈 보정 값이 포함되어 있는지 확인 필요"
+        ]
+      },
+      {
+        "trial": "NCT07652658",
+        "criterion_id": "E2",
+        "question_numbers": [
+          4
+        ],
+        "asked_info": [
+          "흉부 CT(HRCT) 판독지 제공 가능 여부",
+          "검사 날짜 확인"
+        ],
+        "remaining_info": [
+          "흉부 HRCT에서 폐기종 범위가 섬유화 변화 범위보다 큰지 판독 내용 확인 필요",
+          "제공된 판독지에 두 범위의 비교가 기재되어 있는지 확인 필요"
+        ]
+      },
+      {
+        "trial": "NCT07652658",
+        "criterion_id": "E3",
+        "question_numbers": [
+          3
+        ],
+        "asked_info": [
+          "특발성 폐섬유증의 급성 악화(acute exacerbation) 진단 또는 의심 이력",
+          "입원 여부와 입원 날짜(연월)",
+          "관련 기록 제공 가능 여부"
+        ],
+        "remaining_info": [
+          "IPF의 acute exacerbation 해당 여부는 관련 기록으로 확인 필요",
+          "원문에 기준 시점이 없어 해당 이력의 시점 확인 필요"
+        ]
+      },
+      {
+        "trial": "NCT07299695",
+        "criterion_id": "I2",
+        "question_numbers": [
+          1
+        ],
+        "asked_info": [
+          "특발성 폐섬유증(IPF) 진단 여부",
+          "진단 내용이 적힌 진료 기록·진단서 제공 가능 여부"
+        ],
+        "remaining_info": [
+          "ATS/ERS Consensus Criteria 충족 여부는 관련 기록으로 확인 필요"
+        ]
+      },
+      {
+        "trial": "NCT07299695",
+        "criterion_id": "I3",
+        "question_numbers": [
+          3,
+          4
+        ],
+        "asked_info": [
+          "특발성 폐섬유증의 급성 악화(acute exacerbation) 진단 또는 의심 이력",
+          "입원 여부와 입원 날짜(연월)",
+          "관련 기록 제공 가능 여부",
+          "흉부 CT(HRCT) 판독지 제공 가능 여부와 검사 날짜"
+        ],
+        "remaining_info": [
+          "definite 또는 suspected AE-IPF로 입원했고 책임 연구자가 확인했는지 확인 필요",
+          "IPF의 이전 또는 동시 진단 여부",
+          "호흡곤란의 급성 악화 또는 발생(통상 1개월 미만) 여부",
+          "CT에서 usual interstitial pneumonia 패턴 위에 새로운 양측 간유리음영 및/또는 경화가 있는지 확인 필요",
+          "악화가 심부전 또는 체액 과다로 완전히 설명되지 않는지 확인 필요",
+          "IPF 진단이 이전에 확립되지 않았다면 현재 평가의 영상·조직 소견 확인 필요",
+          "이전 CT가 없으면 세 번째 AE-IPF 기준에서 'new'를 제외할 수 있다는 원문 조건 확인 필요"
+        ]
+      },
+      {
+        "trial": "NCT07299695",
+        "criterion_id": "E4",
+        "question_numbers": [
+          1
+        ],
+        "asked_info": [
+          "특발성 폐섬유증(IPF) 진단 여부",
+          "진단 내용이 적힌 진료 기록·진단서 제공 가능 여부"
+        ],
+        "remaining_info": [
+          "IPF 또는 AE-IPF의 definite 진단이 임상·영상·검사실 평가와 multidisciplinary discussion에 근거했는지 확인 필요",
+          "AE-IPF 진단 여부는 별도 확인 필요"
+        ]
+      },
+      {
+        "trial": "NCT07299695",
+        "criterion_id": "E6",
+        "question_numbers": [
+          5
+        ],
+        "asked_info": [
+          "스테로이드·면역억제제(항섬유화제 포함 약 기록 요청 범위 내) 사용 여부",
+          "약 이름·용량·사용 날짜가 적힌 처방전·투약 기록 제공 가능 여부"
+        ],
+        "remaining_info": [
+          "지난 1개월 중 14일 초과로 prednisone 20mg/일 초과(또는 동등 용량)를 사용했는지 확인 필요",
+          "지난 1개월 동안 면역억제제를 사용했는지 확인 필요",
+          "지난 15일 중 7일 초과로 1 mg/kg/일 초과를 사용했는지 확인 필요",
+          "기준 날짜(등록일 등)가 입력에 없어 기록 날짜와 대조 필요"
+        ]
+      }
+    ]
+  }
+}
