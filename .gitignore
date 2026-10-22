@@ -249,3 +249,6 @@ data/processed/eval_vs_goldset.json
 # 질문 파일 (형식 예시 S005만 커밋, 나머지는 각자 생성)
 questions/*
 !questions/S005.json
+
+# 데모 "직접 입력" 환자 프로필 (설명 내용별로 저장됨, 공유할 필요 없음)
+data/processed/eval_cache/profile_CUSTOM_*.json

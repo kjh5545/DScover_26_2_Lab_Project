@@ -10,6 +10,7 @@
      → 판정 변화(이전→이후) 표시 → "질문 끝내기"로 전체 재판정 한 번(final_check)
 """
 
+import hashlib
 import json
 from pathlib import Path
 
@@ -69,9 +70,11 @@ with st.sidebar:
                            format_func=lambda p: f"{p} — {patients[p][:40]}...")
         case_text = patients[pid]
     else:
-        pid = "CUSTOM"
         case_text = st.text_area("환자 케이스 (영어)", height=120,
                                  placeholder="A 45-year-old man with ...")
+        # run_intake는 환자 ID별로 프로필을 저장해 다시 쓴다 → 직접 입력은 설명 내용별로 ID를 달리해서
+        # 다른 환자의 저장된 프로필을 가져다 쓰지 않게
+        pid = "CUSTOM_" + hashlib.sha1(case_text.strip().encode("utf-8")).hexdigest()[:8]
     max_candidates = st.slider("스크리닝할 후보 시험 수", 1, 5, 3,
                                help="많을수록 정확하지만 LLM 비용과 시간이 늘어납니다")
     st.divider()
@@ -113,6 +116,9 @@ if "bundle" in st.session_state:
 
     with st.expander("구조화된 환자 프로필", expanded=False):
         st.json(bundle["profile"])
+    if not screenings:   # 검색·나이·성별 필터 후 후보가 없으면 판정표·질문이 없음 (st.tabs([])는 오류)
+        st.warning("조건(나이·성별)에 맞는 후보 시험을 찾지 못했어요. 환자 설명을 바꾸거나 후보 수를 늘려 보세요.")
+        st.stop()
 
     ranking = rank_trials(screenings)
     ui.section("추천 순위", "pulse")
