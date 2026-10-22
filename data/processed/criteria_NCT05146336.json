@@ -1,0 +1,71 @@
+[
+  {
+    "id": "I1",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Planned OR actual CytoSorb® 300 mL device utilization",
+    "sub_conditions": [
+      "Planned use of CytoSorb® 300 mL device",
+      "OR actual use of CytoSorb® 300 mL device"
+    ],
+    "needed_info": [
+      "planned or actual CytoSorb 300 mL treatment",
+      "treatment history"
+    ]
+  },
+  {
+    "id": "I2",
+    "type": "inclusion",
+    "category": "administrative",
+    "text": "Informed consent for prospective registry participation",
+    "sub_conditions": [
+      "Informed consent given for participation in the prospective registry"
+    ],
+    "needed_info": [
+      "informed consent status"
+    ]
+  },
+  {
+    "id": "E1",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Use of the CytoSorb® 300 mL device for antithrombotic removal only",
+    "sub_conditions": [
+      "CytoSorb® 300 mL device used solely for antithrombotic removal"
+    ],
+    "needed_info": [
+      "indication for CytoSorb use",
+      "treatment history"
+    ]
+  },
+  {
+    "id": "E2",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Intraoperative use of CytoSorb® 300 mL device during cardiac surgery only",
+    "sub_conditions": [
+      "CytoSorb® 300 mL device used only intraoperatively",
+      "Use occurs during cardiac surgery"
+    ],
+    "needed_info": [
+      "CytoSorb use setting (intraoperative vs. other)",
+      "cardiac surgery history",
+      "treatment history"
+    ]
+  },
+  {
+    "id": "E3",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "The occurrence of a complication or other medically justified circumstance that arises after written informed consent has been obtained from the patient and before or during the planned therapy and as a result of which the use of CytoSorb® 300 mL Adsorber is contraindicated or no longer appropriate.",
+    "sub_conditions": [
+      "Complication or other medically justified circumstance arising after written informed consent and before or during planned therapy",
+      "Resulting in CytoSorb® 300 mL Adsorber use being contraindicated or no longer appropriate"
+    ],
+    "needed_info": [
+      "post-consent clinical course",
+      "complications during therapy",
+      "investigator/clinician judgment on appropriateness of CytoSorb use"
+    ]
+  }
+]

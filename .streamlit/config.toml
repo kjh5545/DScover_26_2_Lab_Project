@@ -1,0 +1,7 @@
+# 데모 테마 — Ada 톤 (docs: src/ui.py 참고)
+[theme]
+base = "light"
+primaryColor = "#1266C7"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F4F7FA"
+textColor = "#293754"

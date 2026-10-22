@@ -71,17 +71,23 @@ def screen(profile: dict, criteria: list[dict], case_text: str | None = None) ->
 
 def run_intake(case_text: str, patient_id: str = "CUSTOM",
                max_candidates: int = 3, do_screen: bool = True,
-               save: bool = True) -> dict:
+               save: bool = True, on_step=None) -> dict:
     """1→2→3(→4) 전체 실행 후 전달 형식(bundle)을 반환·저장한다.
 
     do_screen=False 면 매칭([4])을 건너뛰고 파싱까지만 수행
     (질문 생성 담당이 매칭을 직접 돌려보고 싶을 때).
+    on_step: 진행 상황 콜백 (str을 받음) — 데모 화면·CLI가 단계 표시에 쓴다. 없으면 조용히 실행.
     """
+    step = on_step or (lambda msg: None)
+    step("[1] 환자 정보 이해 에이전트...")
     profile = understand_patient(case_text, patient_id)
+    step("[2] 후보 검색 + 하드 필터(나이·성별)...")
     search = find_candidates(profile, max_candidates=max_candidates)
+    step(f"    검색어 {search['queries']} → {search['total_found']}건 → 필터 후 {search['after_hard_filter']}건")
 
     trials = []
-    for t in search["candidates"]:
+    for i, t in enumerate(search["candidates"], 1):
+        step(f"[3-4] {t['nct_id']} 기준 파싱 + 매칭 ({i}/{len(search['candidates'])})...")
         entry = {
             "nct_id": t["nct_id"],
             "title": t["title"],

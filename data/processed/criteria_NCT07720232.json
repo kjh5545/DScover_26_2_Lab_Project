@@ -1,0 +1,258 @@
+[
+  {
+    "id": "I1",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Meet at least two of the three characteristic criteria for AP: ① Acute onset of persistent upper abdominal pain; ② Serum amylase and/or lipase activity at least three times above the upper limit of normal; ③ Imaging findings on CT, MRI, or abdominal ultrasonography.",
+    "sub_conditions": [
+      "Acute onset of persistent upper abdominal pain",
+      "Serum amylase and/or lipase at least 3 times the upper limit of normal",
+      "Imaging findings consistent with AP on CT, MRI, or abdominal ultrasonography",
+      "At least two of the three above are met"
+    ],
+    "needed_info": [
+      "symptoms: abdominal pain onset and character",
+      "lab: serum amylase",
+      "lab: serum lipase",
+      "imaging: CT/MRI/ultrasound findings"
+    ]
+  },
+  {
+    "id": "I2",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Meet the diagnostic criteria for hypertriglyceridemia-associated acute pancreatitis (HTG-AP): fulfill the AP diagnostic criteria and concurrent hypertriglyceridemia (serum triglycerides ≥11.3 mmol/L or 5.65-11.3 mmol/L with lactescent serum), with exclusion of other common causes of AP such as cholelithiasis and alcoholism.",
+    "sub_conditions": [
+      "Fulfills AP diagnostic criteria",
+      "Serum triglycerides ≥11.3 mmol/L, or 5.65-11.3 mmol/L with lactescent serum",
+      "Other common causes of AP (e.g., cholelithiasis, alcoholism) excluded"
+    ],
+    "needed_info": [
+      "diagnosis: acute pancreatitis",
+      "lab: serum triglycerides",
+      "serum appearance (lactescent)",
+      "etiology workup: gallstones, alcohol use history"
+    ]
+  },
+  {
+    "id": "I3",
+    "type": "inclusion",
+    "category": "temporal_numeric",
+    "text": "Admission within 72 hours of symptom onset.",
+    "sub_conditions": [
+      "Time from symptom onset to admission ≤72 hours"
+    ],
+    "needed_info": [
+      "symptom onset time",
+      "admission time"
+    ]
+  },
+  {
+    "id": "I4",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Disease severity assessed as mild acute pancreatitis (MAP) within 48 hours of admission, defined by absence of organ dysfunction and absence of local or systemic complications.",
+    "sub_conditions": [
+      "Classified as mild AP within 48 hours of admission",
+      "No organ dysfunction",
+      "No local complications",
+      "No systemic complications"
+    ],
+    "needed_info": [
+      "severity classification of AP",
+      "organ function assessment",
+      "imaging/clinical evidence of local or systemic complications"
+    ]
+  },
+  {
+    "id": "I5",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Age between 18 and 65 years.",
+    "sub_conditions": [
+      "Age ≥18 years",
+      "Age ≤65 years"
+    ],
+    "needed_info": [
+      "age"
+    ]
+  },
+  {
+    "id": "I6",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "No history of allergy to microbiological agents.",
+    "sub_conditions": [
+      "No history of allergy to microbiological agents"
+    ],
+    "needed_info": [
+      "allergy history"
+    ]
+  },
+  {
+    "id": "I7",
+    "type": "inclusion",
+    "category": "administrative",
+    "text": "Signed informed consent obtained.",
+    "sub_conditions": [
+      "Signed informed consent"
+    ],
+    "needed_info": [
+      "informed consent status"
+    ]
+  },
+  {
+    "id": "E1",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Concurrent biliary, alcoholic, or other etiologies of acute pancreatitis;",
+    "sub_conditions": [
+      "Concurrent biliary etiology of AP",
+      "Concurrent alcoholic etiology of AP",
+      "Concurrent other etiologies of AP"
+    ],
+    "needed_info": [
+      "etiology of AP",
+      "gallstone/biliary history",
+      "alcohol use history"
+    ]
+  },
+  {
+    "id": "E2",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Acute exacerbation of chronic pancreatitis or pancreatic tumor;",
+    "sub_conditions": [
+      "Acute exacerbation of chronic pancreatitis",
+      "Pancreatic tumor"
+    ],
+    "needed_info": [
+      "history of chronic pancreatitis",
+      "imaging",
+      "pancreatic tumor diagnosis"
+    ]
+  },
+  {
+    "id": "E3",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Severe hypertriglyceridemia-associated acute pancreatitis: classified as moderately severe or severe AP per the Expert Consensus on the Diagnosis and Treatment of Hypertriglyceridemic Acute Pancreatitis.",
+    "sub_conditions": [
+      "Classified as moderately severe AP",
+      "Classified as severe AP"
+    ],
+    "needed_info": [
+      "AP severity classification"
+    ]
+  },
+  {
+    "id": "E4",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Within 48 hours, meeting any one of: modified Marshall score ≥2, MCTSI score ≥4, APACHE II score ≥15, BISAP score ≥3, or Ranson score ≥3.",
+    "sub_conditions": [
+      "Modified Marshall score ≥2 within 48 hours",
+      "MCTSI score ≥4 within 48 hours",
+      "APACHE II score ≥15 within 48 hours",
+      "BISAP score ≥3 within 48 hours",
+      "Ranson score ≥3 within 48 hours"
+    ],
+    "needed_info": [
+      "modified Marshall score",
+      "MCTSI score",
+      "APACHE II score",
+      "BISAP score",
+      "Ranson score"
+    ]
+  },
+  {
+    "id": "E5",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Severe hepatic or renal dysfunction (serum creatinine >177 μmol/L or ALT >150 U/L);",
+    "sub_conditions": [
+      "Severe hepatic dysfunction (ALT >150 U/L)",
+      "Severe renal dysfunction (serum creatinine >177 μmol/L)"
+    ],
+    "needed_info": [
+      "lab: serum creatinine",
+      "lab: ALT",
+      "hepatic/renal disease history"
+    ]
+  },
+  {
+    "id": "E6",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Active infection, malignancy, immunodeficiency, or requiring long-term use of immunosuppressants;",
+    "sub_conditions": [
+      "Active infection",
+      "Malignancy",
+      "Immunodeficiency",
+      "Requiring long-term immunosuppressant use"
+    ],
+    "needed_info": [
+      "infection status",
+      "cancer history",
+      "immune status",
+      "medication history: immunosuppressants"
+    ]
+  },
+  {
+    "id": "E7",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Diagnosed diabetes mellitus;",
+    "sub_conditions": [
+      "Diagnosed diabetes mellitus"
+    ],
+    "needed_info": [
+      "diagnosis: diabetes mellitus"
+    ]
+  },
+  {
+    "id": "E8",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Pregnancy or breastfeeding;",
+    "sub_conditions": [
+      "Pregnancy",
+      "Breastfeeding"
+    ],
+    "needed_info": [
+      "pregnancy status",
+      "lactation status"
+    ]
+  },
+  {
+    "id": "E9",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "History of lactose intolerance;",
+    "sub_conditions": [
+      "History of lactose intolerance"
+    ],
+    "needed_info": [
+      "history of lactose intolerance"
+    ]
+  },
+  {
+    "id": "E10",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Use within 4 weeks prior to enrollment of antibiotics, probiotics, prebiotics, synbiotics, or other microbiological agents, as well as gastrointestinal motility drugs (e.g., domperidone, mosapride) or other medications that may significantly affect gut microbiota or gastrointestinal function.",
+    "sub_conditions": [
+      "Antibiotic use within 4 weeks",
+      "Probiotic use within 4 weeks",
+      "Prebiotic use within 4 weeks",
+      "Synbiotic use within 4 weeks",
+      "Other microbiological agent use within 4 weeks",
+      "Gastrointestinal motility drug use (e.g., domperidone, mosapride) within 4 weeks",
+      "Other medications significantly affecting gut microbiota or GI function within 4 weeks"
+    ],
+    "needed_info": [
+      "medication history within the last 4 weeks",
+      "dates of medication use"
+    ]
+  }
+]
