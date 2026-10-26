@@ -1,0 +1,8 @@
+{
+  "queries": [
+    "rhegmatogenous retinal detachment",
+    "retinal detachment",
+    "proliferative vitreoretinopathy"
+  ],
+  "rationale": "The patient's suspected diagnosis is rhegmatogenous retinal detachment, with classic symptoms of flashes, floaters, and a curtain-like vision loss. Searching the specific condition first, then broader retinal detachment, then proliferative vitreoretinopathy as a related repair complication that many trials target."
+}

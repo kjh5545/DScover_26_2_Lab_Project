@@ -61,27 +61,49 @@ def hard_filter(trials: list[dict], age_years: float | None, sex: str | None) ->
     return kept
 
 
-def search_candidates(profile: dict, max_candidates: int = 3) -> dict:
-    """프로필 → 검색어 결정(LLM) → API 검색 → 하드 필터 → 후보 반환."""
-    plan = ask_json(SYSTEM_PROMPT, json.dumps(profile, ensure_ascii=False))
+def plan_queries(profile: dict) -> dict:
+    """프로필 → 검색어 1~3개 결정 (LLM 1회). 반환: {"queries": [...], "rationale": "..."}"""
+    return ask_json(SYSTEM_PROMPT, json.dumps(profile, ensure_ascii=False))
 
+
+def collect_pool(queries: list[str], per_query: int = 20, pool_cap: int | None = None) -> dict[str, dict]:
+    """검색어들로 API를 돌려 중복 제거한 후보 풀을 만든다. pool_cap이 차면 추가 검색 생략."""
     seen: dict[str, dict] = {}
-    for query in plan["queries"]:
-        for t in search_trials(query, max_results=20):
+    for query in queries:
+        for t in search_trials(query, max_results=per_query):
             if t["nct_id"] not in seen:
                 seen[t["nct_id"]] = t
-        if len(seen) >= max_candidates * 5:
-            break  # 후보 풀이 충분하면 추가 검색 생략
+        if pool_cap and len(seen) >= pool_cap:
+            break
+    return seen
+
+
+def search_candidates(profile: dict, max_candidates: int = 3, relevance: bool = False) -> dict:
+    """프로필 → 검색어 결정(LLM) → API 검색 → 하드 필터 → (옵션) 관련성 필터 → 후보 반환.
+
+    relevance=True면 제목·질환명만 보고 "정말 이 환자의 병에 관한 시험인가"를
+    싼 모델로 한 번 거른다 (src/agents/relevance_filter.py — 1위 팀 방식).
+    """
+    plan = plan_queries(profile)
+    seen = collect_pool(plan["queries"], pool_cap=max_candidates * 5 if not relevance else None)
 
     age = profile.get("age")
     if age is not None and profile.get("age_unit") == "months":
         age = age / 12
     candidates = hard_filter(list(seen.values()), age, profile.get("sex"))
 
+    dropped = []
+    if relevance and candidates:
+        from src.agents.relevance_filter import filter_relevant
+        candidates, dropped = filter_relevant(profile, candidates)
+
     return {
         "queries": plan["queries"],
         "rationale": plan.get("rationale", ""),
         "total_found": len(seen),
-        "after_hard_filter": len(candidates),
+        "after_hard_filter": len(candidates) + len(dropped),
+        "after_relevance": len(candidates) if relevance else None,
+        "dropped_irrelevant": [{"nct_id": d["nct_id"], "reason": d.get("_drop_reason", "")}
+                               for d in dropped],
         "candidates": candidates[:max_candidates],
     }

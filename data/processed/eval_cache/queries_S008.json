@@ -1,0 +1,8 @@
+{
+  "queries": [
+    "idiopathic pulmonary fibrosis",
+    "usual interstitial pneumonia",
+    "pulmonary fibrosis"
+  ],
+  "rationale": "The patient's progressive dyspnea, dry cough, clubbing, and CT showing basal reticular opacities with honeycombing point to idiopathic pulmonary fibrosis with a UIP pattern, so queries run from the specific diagnosis to broader fibrotic lung disease."
+}
