@@ -1,0 +1,7 @@
+{
+  "queries": [
+    "infectious mononucleosis",
+    "Epstein-Barr virus infection"
+  ],
+  "rationale": "The patient has a positive monospot with classic findings (fever, pharyngitis, posterior cervical lymphadenopathy, splenomegaly), so I search the specific diagnosis first and then the broader EBV infection category."
+}

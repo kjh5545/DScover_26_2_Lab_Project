@@ -1,0 +1,8 @@
+{
+  "queries": [
+    "rhino-orbital mucormycosis",
+    "mucormycosis",
+    "invasive fungal rhinosinusitis"
+  ],
+  "rationale": "The presentation of necrotic nasal eschar, periorbital swelling, and fever in a patient with poorly controlled diabetes points to rhino-orbital mucormycosis, so queries move from the most specific diagnosis to broader fungal infection terms."
+}

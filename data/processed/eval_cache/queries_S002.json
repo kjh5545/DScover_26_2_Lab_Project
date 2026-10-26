@@ -1,0 +1,8 @@
+{
+  "queries": [
+    "Graves disease",
+    "Hyperthyroidism",
+    "Diffuse toxic goiter"
+  ],
+  "rationale": "The patient's palpitations, heat intolerance, weight loss, tremor, tachycardia and diffusely enlarged non-tender thyroid point to Graves' disease, so queries run from the specific diagnosis to the broader hyperthyroidism category."
+}
