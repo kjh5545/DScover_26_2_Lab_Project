@@ -84,19 +84,28 @@ with st.sidebar:
         st.session_state.clear()
         st.rerun()
     st.divider()
-    # API 없이 저장된 결과로 화면만 보는 모드 (디자인 확인·발표 리허설용)
-    if st.button("예시 결과 미리보기 (S005)", icon=":material/visibility:",
-                 help="data/handoff/S005.json 저장본을 불러와요 — API 호출 없음"):
-        example = json.loads((ROOT / "data" / "handoff" / "S005.json").read_text(encoding="utf-8"))
-        st.session_state.clear()
-        st.session_state.update(bundle=example, prev_judgments={},
-                                last_changed=[], finished=False, preview=True)
-        st.rerun()
+    # API 없이 저장된 결과로 화면만 보는 모드 (디자인 확인·발표 리허설·캡처용)
+    examples = sorted((ROOT / "data" / "handoff").glob("*.json"))
+    if examples:
+        pick = st.selectbox("저장된 예시", examples, format_func=lambda p: p.stem,
+                            help="data/handoff/ 의 저장본 — API 호출 없음")
+        if st.button("예시 결과 미리보기", icon=":material/visibility:"):
+            example = json.loads(pick.read_text(encoding="utf-8"))
+            st.session_state.clear()
+            # 번들에 미리보기 상태가 저장돼 있으면 복원 (리허설 번들: 바뀐 판정·다음 질문)
+            view = example.pop("_preview_state", {})
+            st.session_state.update(bundle=example,
+                                    prev_judgments=view.get("prev_judgments", {}),
+                                    last_changed=view.get("last_changed", []),
+                                    finished=False, preview=True)
+            if view.get("pending"):
+                st.session_state["pending"] = view["pending"]
+            st.rerun()
 
 shown_case = st.session_state.get("bundle", {}).get("case_text") or case_text
 st.markdown(f"> **환자 케이스:** {shown_case}" if shown_case.strip() else "_왼쪽에서 환자를 선택하세요._")
 if st.session_state.get("preview"):
-    st.info("예시 모드 — 저장된 S005 결과를 보여주고 있어요. 질문 생성은 무료 모드로 돌고, 재평가는 API가 필요해 비활성화됩니다.")
+    st.info("예시 모드 — 저장된 결과를 보여주고 있어요. 재평가(LLM 호출)는 비활성화됩니다.")
 
 # ── 1차 분석: 1~4번은 팀 표준 진입점 run_intake 하나로 (10/20 합의) ───────
 if start:
