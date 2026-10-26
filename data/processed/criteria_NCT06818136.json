@@ -1,0 +1,216 @@
+[
+  {
+    "id": "I1",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Participants aged 45 years or older",
+    "sub_conditions": [
+      "age >= 45 years"
+    ],
+    "needed_info": [
+      "age"
+    ]
+  },
+  {
+    "id": "I2",
+    "type": "inclusion",
+    "category": "administrative",
+    "text": "Participants who are willing and able to provide written informed consent and adhere to study procedures",
+    "sub_conditions": [
+      "willing and able to provide written informed consent",
+      "willing and able to adhere to study procedures"
+    ],
+    "needed_info": [
+      "consent capability",
+      "willingness to comply with study procedures"
+    ]
+  },
+  {
+    "id": "I3",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Participants presenting with visible and/or non-visible haematuria within 6 months prior to study enrollment",
+    "sub_conditions": [
+      "visible haematuria and/or non-visible haematuria",
+      "haematuria occurred within 6 months prior to enrollment"
+    ],
+    "needed_info": [
+      "diagnosis: haematuria (visible or non-visible)",
+      "date of haematuria presentation"
+    ]
+  },
+  {
+    "id": "I4",
+    "type": "inclusion",
+    "category": "temporal_numeric",
+    "text": "Participants scheduled to undergo standard of care cystoscopy for urinary bladder examination within 60 days after study enrollment",
+    "sub_conditions": [
+      "scheduled for standard of care cystoscopy for bladder examination",
+      "cystoscopy scheduled within 60 days after enrollment"
+    ],
+    "needed_info": [
+      "cystoscopy schedule/date",
+      "planned procedure"
+    ]
+  },
+  {
+    "id": "I5",
+    "type": "inclusion",
+    "category": "post_enrollment",
+    "text": "Participants who are able to produce at least 10 ml of voided urine",
+    "sub_conditions": [
+      "able to produce >= 10 ml voided urine"
+    ],
+    "needed_info": [
+      "urine sample volume (on-site collection)"
+    ]
+  },
+  {
+    "id": "E1",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Participants with history of urothelial cancer in the bladder and/or upper urinary tract",
+    "sub_conditions": [
+      "history of urothelial cancer in the bladder",
+      "history of urothelial cancer in the upper urinary tract"
+    ],
+    "needed_info": [
+      "medical history: urothelial cancer"
+    ]
+  },
+  {
+    "id": "E2",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Participants who had prior cystoscopy for haematuria within the past 2 years",
+    "sub_conditions": [
+      "prior cystoscopy for haematuria",
+      "cystoscopy within past 2 years"
+    ],
+    "needed_info": [
+      "procedure history: cystoscopy",
+      "date and indication of cystoscopy"
+    ]
+  },
+  {
+    "id": "E3",
+    "type": "exclusion",
+    "category": "administrative",
+    "text": "Participants previously enrolled in this study",
+    "sub_conditions": [
+      "previous enrollment in this study"
+    ],
+    "needed_info": [
+      "study enrollment history"
+    ]
+  },
+  {
+    "id": "E4",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Participants treated for prostate cancer within the last 12 months",
+    "sub_conditions": [
+      "treated for prostate cancer",
+      "treatment within last 12 months"
+    ],
+    "needed_info": [
+      "medical history: prostate cancer",
+      "treatment history and dates"
+    ]
+  },
+  {
+    "id": "E5",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Participants treated for kidney cancer within the last 12 months",
+    "sub_conditions": [
+      "treated for kidney cancer",
+      "treatment within last 12 months"
+    ],
+    "needed_info": [
+      "medical history: kidney cancer",
+      "treatment history and dates"
+    ]
+  },
+  {
+    "id": "E6",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Participants with untreated urinary tract infection",
+    "sub_conditions": [
+      "urinary tract infection",
+      "untreated"
+    ],
+    "needed_info": [
+      "diagnosis: urinary tract infection",
+      "treatment status"
+    ]
+  },
+  {
+    "id": "E7",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Participants with symptomatic urinary tract stones (e.g. flank pain)",
+    "sub_conditions": [
+      "urinary tract stones",
+      "symptomatic (e.g. flank pain)"
+    ],
+    "needed_info": [
+      "diagnosis: urinary tract stones",
+      "symptoms: flank pain"
+    ]
+  },
+  {
+    "id": "E8",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Participants on dialysis for end stage renal failure",
+    "sub_conditions": [
+      "end stage renal failure",
+      "currently on dialysis"
+    ],
+    "needed_info": [
+      "diagnosis: end stage renal failure",
+      "dialysis status"
+    ]
+  },
+  {
+    "id": "E9",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Participants with a long term urinary catheter",
+    "sub_conditions": [
+      "long term urinary catheter in use"
+    ],
+    "needed_info": [
+      "catheter use and duration"
+    ]
+  },
+  {
+    "id": "E10",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Pregnancy (self-reported)",
+    "sub_conditions": [
+      "pregnant (self-reported)"
+    ],
+    "needed_info": [
+      "pregnancy status"
+    ]
+  },
+  {
+    "id": "E11",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "Participants who, because of medical status, or frailty is not expected to be able to complete the full diagnostic pathway",
+    "sub_conditions": [
+      "medical status makes completion of full diagnostic pathway unlikely",
+      "frailty makes completion of full diagnostic pathway unlikely"
+    ],
+    "needed_info": [
+      "investigator judgment",
+      "medical status",
+      "frailty assessment"
+    ]
+  }
+]
