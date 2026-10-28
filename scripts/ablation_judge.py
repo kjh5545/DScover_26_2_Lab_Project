@@ -193,7 +193,7 @@ def judged(conds, items, repeats):
                 raw = validate_shape(json.loads(p.read_text(encoding="utf-8")))
                 code, _ = apply_code_checks(raw, code_judgments(it["profile"], it["criteria"]))
                 code, _ = validate_judgments(it["criteria"], code)
-                out[(c, it["case"], r)] = {"raw": raw, "code": code}
+                out[(c, it["dataset"], it["case"], r)] = {"raw": raw, "code": code}
     return out
 
 
@@ -254,7 +254,7 @@ def report(conds, items, repeats) -> None:
             votes = defaultdict(Counter)
             for it in its:
                 for r in range(1, repeats + 1):
-                    j = res.get((c, it["case"], r))
+                    j = res.get((c, ds, it["case"], r))
                     if not j:
                         continue
                     for mode in ("raw", "code"):
