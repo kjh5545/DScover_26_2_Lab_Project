@@ -1,0 +1,93 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "Severe epigastric pain radiating to the back plus markedly elevated lipase and amylase meet at least 2 of 3 revised Atlanta criteria (pain and enzymes >3x ULN). Chronic alcohol use suggests an alcohol etiology. Hospitalization is implied by the acute presentation.",
+    "sub_condition_notes": [
+      "Revised Atlanta: characteristic pain and lipase/amylase elevation are present",
+      "Alcohol etiology is suggested by history, though etiologic workup is not documented",
+      "Hospitalization is not explicitly stated"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Smoking status is not mentioned in the patient description or profile.",
+    "sub_condition_notes": [
+      "At least 100 lifetime cigarettes: unknown",
+      "Daily smoker now: unknown",
+      "At least 1-year smoking history: unknown"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "Patient is 54 years old, within 18-80.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "Written informed consent is obtained only during the enrollment process.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "unknown",
+    "evidence": "Willingness to attend interventions every three months is not documented; it could be asked of the patient.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information on gallstones, triglycerides, calcium, or viral infection. The etiologic workup is not given, so other or combined causes cannot be ruled out.",
+    "sub_condition_notes": [
+      "Gallstone disease: not documented",
+      "Triglycerides above 11.5 mM: not documented",
+      "Hypercalcemia: not documented",
+      "Viral infection: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No psychiatric history is documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "Participation in a smoking cessation program is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No mention of malignancy or cancer treatment. Medication list is empty, but this is not confirmation.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "Patient is a 54-year-old man, so pregnancy and breastfeeding do not apply.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Life expectancy is not stated. No terminal illness is documented, but this has not been assessed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "post_enrollment",
+    "evidence": "Agreement to participate is determined only when the patient is approached for enrollment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "post_enrollment",
+    "evidence": "The 'Other' criterion is non-specific and can only be judged by the study team.",
+    "sub_condition_notes": []
+  }
+]

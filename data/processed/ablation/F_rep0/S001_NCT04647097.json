@@ -1,0 +1,97 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "The description gives epigastric pain radiating to the back and markedly elevated lipase and amylase with chronic alcohol use. It does not state hospitalization, that the revised Atlanta criteria were met, or that the pancreatitis was diagnosed as alcohol-induced.",
+    "sub_condition_notes": [
+      "Hospitalized: not stated",
+      "Alcohol-induced AP: only a suspected diagnosis, not stated as a diagnosis",
+      "Revised Atlanta criteria: not stated as met, so this cannot be rebuilt from the individual findings"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Smoking status is not mentioned in the description.",
+    "sub_condition_notes": [
+      "Daily smoker: not stated",
+      "At least 100 lifetime cigarettes: not stated",
+      "At least 1-year smoking history: not stated"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "A 54-year-old man; age 54 falls within 18-80.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "Written informed consent is given after the patient applies.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness to participate in the intervention every three months is a willingness and compliance criterion.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "The description does not mention gallstones, triglyceride level, calcium, or viral infection, so other etiologies are not ruled out.",
+    "sub_condition_notes": [
+      "Gallstone-related etiology: not mentioned",
+      "Hypertriglyceridemia above 11.5 mM: not mentioned",
+      "Hypercalcemia: not mentioned",
+      "Viral infection: not mentioned",
+      "Combined etiological factors: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No psychiatric history is mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "Participation in a smoking cessation program is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Malignancy and its treatment are not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "The patient is a 54-year-old man, so pregnancy and breastfeeding do not apply.",
+    "sub_condition_notes": [
+      "Pregnancy: not applicable to a male patient",
+      "Breastfeeding: not applicable to a male patient"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "post_enrollment",
+    "evidence": "Life expectancy is a clinician's estimate that the patient cannot know.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "post_enrollment",
+    "evidence": "Agreement to participate is a willingness criterion decided after the patient applies.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "post_enrollment",
+    "evidence": "'Other' is an open-ended criterion whose content is not disclosed.",
+    "sub_condition_notes": []
+  }
+]
