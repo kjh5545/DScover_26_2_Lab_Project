@@ -1,0 +1,97 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "Profile lists \"suspected_diagnosis\": \"Acute pancreatitis (alcohol-induced)\", with \"severe epigastric pain radiating to the back\" and \"markedly elevated serum lipase\" and amylase. Hospitalization status is not stated, and no imaging is recorded.",
+    "sub_condition_notes": [
+      "Revised Atlanta criteria need 2 of 3: characteristic pain (met per profile), lipase/amylase >3x ULN (\"markedly elevated\", exact values not given), characteristic imaging (not reported).",
+      "Hospitalization is not explicitly stated, and the diagnosis is only 'suspected', not formally confirmed.",
+      "Alcohol etiology: only \"chronic alcohol use\" is recorded, and other causes are not excluded."
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "No smoking history is in the profile; only \"chronic alcohol use\" is listed under history.",
+    "sub_condition_notes": [
+      "Smoked at least 100 cigarettes in lifetime: not reported.",
+      "Currently smokes daily: not reported.",
+      "At least 1-year history of smoking: not reported."
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "\"age\": 54, \"age_unit\": \"years\", which falls within 18-80.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "Written informed consent is obtained only after the patient applies and is screened.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness to attend the intervention every three months is a willingness/compliance criterion.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "The profile gives no information on gallstones, triglycerides, calcium or viral infection. It records only \"suspected_diagnosis\": \"Acute pancreatitis (alcohol-induced)\".",
+    "sub_condition_notes": [
+      "Gallstone etiology: not reported.",
+      "Hypertriglyceridemia >11.5 mM: not reported.",
+      "Hypercalcemia: not reported.",
+      "Viral infection: not reported.",
+      "Combined etiological factors: not reported."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No psychiatric history is mentioned in the profile.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No mention of participation in a smoking cessation program. \"medications\": [] does not rule out program participation.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No malignancy or cancer treatment is mentioned. \"medications\": [] does not confirm the absence of palliative or active treatment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "\"sex\": \"M\", so pregnancy and breastfeeding are not applicable.",
+    "sub_condition_notes": [
+      "Pregnancy: not possible in a male patient.",
+      "Breastfeeding: not applicable to a male patient."
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Life expectancy is not stated in the profile.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "post_enrollment",
+    "evidence": "Agreement to participate is not in the profile and is only established after the patient is approached or applies.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "post_enrollment",
+    "evidence": "Open-ended \"Other\" criterion with undisclosed content.",
+    "sub_condition_notes": []
+  }
+]
