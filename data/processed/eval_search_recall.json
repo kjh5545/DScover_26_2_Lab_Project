@@ -1,18 +1,132 @@
 {
   "top": 5,
-  "relevance": true,
+  "relevance": false,
+  "rank": true,
+  "per_query": 200,
   "recall": {
-    "검색 풀": "10/15",
-    "하드 필터": "10/15",
-    "관련성 필터": "10/15",
-    "상위 5": "6/15"
+    "검색 풀": "14/15",
+    "하드 필터": "14/15",
+    "관련성 단계": "14/15",
+    "상위 5": "8/15"
   },
-  "misses": [
+  "curve": {
+    "recall@1": "5/15",
+    "recall@3": "7/15",
+    "recall@5": "8/15",
+    "recall@10": "9/15",
+    "recall@15": "9/15",
+    "recall@20": "11/15",
+    "recall@30": "13/15",
+    "recall@50": "13/15"
+  },
+  "placements": [
     {
       "patient": "S001",
       "nct": "NCT04647097",
-      "reason": "상위 5 밖 (25위)"
+      "rank": 2,
+      "score": 85,
+      "auto_ok": false
     },
+    {
+      "patient": "S001",
+      "nct": "NCT07024199",
+      "rank": null,
+      "score": null,
+      "auto_ok": true
+    },
+    {
+      "patient": "S002",
+      "nct": "NCT06068179",
+      "rank": null,
+      "score": null,
+      "auto_ok": false
+    },
+    {
+      "patient": "S002",
+      "nct": "NCT07018323",
+      "rank": 21,
+      "score": 55,
+      "auto_ok": false
+    },
+    {
+      "patient": "S003",
+      "nct": "NCT07206537",
+      "rank": 22,
+      "score": 40,
+      "auto_ok": false
+    },
+    {
+      "patient": "S003",
+      "nct": "NCT07499700",
+      "rank": null,
+      "score": null,
+      "auto_ok": true
+    },
+    {
+      "patient": "S004",
+      "nct": "NCT04369560",
+      "rank": 16,
+      "score": 78,
+      "auto_ok": false
+    },
+    {
+      "patient": "S004",
+      "nct": "NCT05646485",
+      "rank": 1,
+      "score": 88,
+      "auto_ok": false
+    },
+    {
+      "patient": "S006",
+      "nct": "NCT07654647",
+      "rank": 5,
+      "score": 28,
+      "auto_ok": false
+    },
+    {
+      "patient": "S007",
+      "nct": "NCT05561907",
+      "rank": null,
+      "score": null,
+      "auto_ok": true
+    },
+    {
+      "patient": "S008",
+      "nct": "NCT07652658",
+      "rank": 20,
+      "score": 84,
+      "auto_ok": false
+    },
+    {
+      "patient": "S008",
+      "nct": "NCT07299695",
+      "rank": 149,
+      "score": 45,
+      "auto_ok": false
+    },
+    {
+      "patient": "S009",
+      "nct": "NCT07478952",
+      "rank": 2,
+      "score": 78,
+      "auto_ok": false
+    },
+    {
+      "patient": "S010",
+      "nct": "NCT03714503",
+      "rank": 10,
+      "score": 73,
+      "auto_ok": false
+    },
+    {
+      "patient": "S010",
+      "nct": "NCT07081945",
+      "rank": null,
+      "score": null,
+      "auto_ok": true
+    }
+  ],
+  "misses": [
     {
       "patient": "S001",
       "nct": "NCT07024199",
@@ -26,12 +140,12 @@
     {
       "patient": "S002",
       "nct": "NCT07018323",
-      "reason": "상위 5 밖 (9위)"
+      "reason": "상위 5 밖 (21위, 관련도 55점)"
     },
     {
       "patient": "S003",
       "nct": "NCT07206537",
-      "reason": "상위 5 밖 (25위)"
+      "reason": "상위 5 밖 (22위, 관련도 40점)"
     },
     {
       "patient": "S003",
@@ -41,12 +155,7 @@
     {
       "patient": "S004",
       "nct": "NCT04369560",
-      "reason": "검색어로 안 잡힘"
-    },
-    {
-      "patient": "S004",
-      "nct": "NCT05646485",
-      "reason": "검색어로 안 잡힘"
+      "reason": "상위 5 밖 (16위, 관련도 78점)"
     },
     {
       "patient": "S007",
@@ -56,17 +165,17 @@
     {
       "patient": "S008",
       "nct": "NCT07652658",
-      "reason": "검색어로 안 잡힘"
+      "reason": "상위 5 밖 (20위, 관련도 84점)"
     },
     {
       "patient": "S008",
       "nct": "NCT07299695",
-      "reason": "검색어로 안 잡힘"
+      "reason": "상위 5 밖 (149위, 관련도 45점)"
     },
     {
       "patient": "S010",
       "nct": "NCT03714503",
-      "reason": "상위 5 밖 (7위)"
+      "reason": "상위 5 밖 (10위, 관련도 73점)"
     },
     {
       "patient": "S010",
