@@ -1,7 +1,7 @@
 """[2b] 관련성 필터·랭킹 — 검색이 집어온 "엉뚱한 시험" 거르기/줄세우기.
 
 두 모드: filter_relevant(keep/drop, 튜토리얼 Step 3·1위 팀 방식)
-       rank_relevant(0~10점 랭킹, 실험 3 — 큰 풀에서 상위 N 재현율 올리기)
+       rank_relevant(0~100점 랭킹, 실험 3 — 큰 풀에서 상위 N 재현율 올리기)
 
 키워드 검색은 같은 장기·같은 증상이라는 이유로 무관한 시험을 끌고 온다
 (예: 생후 3개월 유문협착증 영아에게 성인 악성 위 출구 폐쇄 수술 시험).
@@ -39,19 +39,36 @@ Respond with ONLY a JSON array, one entry per trial, same order:
 RANK_SYSTEM_PROMPT = """You rank clinical-trial search results for ONE patient.
 
 You see the patient's age, sex, suspected diagnosis and key findings, plus a
-list of trials (id, title, target conditions only — no eligibility text).
-Score each trial 0-10 for how likely it is to be meant for this patient:
+list of trials (id, title, target conditions, summary snippet — no full
+eligibility text). Score each trial 0-100 for how well it fits THIS patient
+specifically. The pool may contain hundreds of trials for the same disease,
+so you must discriminate WITHIN the disease using every detail available:
+subtype, stage (e.g. muscle-invasive vs non-invasive), newly diagnosed vs
+relapsed, treatment line, age group, intervention type.
 
-- 8-10: targets the patient's (suspected) disease itself.
-- 4-7: targets its direct work-up/treatment/observation, or a broader
-  disease group that clearly includes this patient.
-- 1-3: same organ or same symptom only — probably a different disease.
-- 0: ONLY when the trial is clearly about a different disease or population
-  this patient cannot belong to. Never give 0 because information is
-  missing; if unsure, give 3 or more.
+First decide where the patient is on the clinical pathway, then score fit:
+
+- If the diagnosis is only SUSPECTED (work-up stage, no confirmed histology
+  or staging yet): screening / diagnostic / staging / surveillance trials fit
+  BEST; treatment trials that require a confirmed diagnosis, a specific stage
+  or a prior treatment line fit WORSE — the patient cannot enter them today.
+- If the diagnosis is CONFIRMED: treatment trials matching the stage/line fit
+  best; pure screening trials fit worse.
+
+- 80-100: right disease AND right point in the pathway — this patient could
+  plausibly enter today; nothing in the title/summary contradicts them.
+- 50-79: right disease, but wrong or unclear point in the pathway
+  (e.g. requires confirmed/staged disease the patient does not have yet,
+  a different stage/line, or a broader group than the diagnosis).
+- 20-49: related disease area only — probably not designed for this patient.
+- 1-19: same organ or same symptom, different disease.
+- 0: ONLY when clearly a different disease or population this patient cannot
+  belong to. Never 0 because information is missing; if unsure give 40+.
+
+Spread your scores — do not give many trials the same number.
 
 Respond with ONLY a JSON array, one entry per trial, same order:
-[{"nct_id": "...", "score": <0-10>}, ...]"""
+[{"nct_id": "...", "score": <0-100>}, ...]"""
 
 
 def _patient_summary(profile: dict) -> dict:
@@ -65,20 +82,22 @@ def _patient_summary(profile: dict) -> dict:
 
 
 def rank_relevant(profile: dict, candidates: list[dict],
-                  chunk_size: int = 150) -> tuple[list[dict], list[dict]]:
+                  chunk_size: int = 30) -> tuple[list[dict], list[dict]]:
     """(관련도 점수순 시험, 0점으로 제외된 시험) 반환. 각 시험에 _relevance 점수가 붙는다.
 
-    filter_relevant와 입력이 같고 출력만 keep/drop 대신 점수라, 거의 같은 비용으로
+    filter_relevant와 입력이 같고 출력만 keep/drop 대신 0~100점이라, 거의 같은 비용으로
     "무관 제거"에 더해 "유관 순위"까지 얻는다 (실험 3 — 큰 풀에서 상위 N 재현율 올리기).
-    같은 점수끼리는 검색 순서(구체적 검색어 먼저)가 유지된다. 채점 실패분은 중립 5점.
-    풀이 크면 chunk_size개씩 나눠 호출한다 (응답 길이 한도 때문).
+    같은 병의 시험 수백 건끼리 변별해야 하므로 제목+요약 앞부분으로 병기·아형·치료 단계까지
+    보고 채점한다. 같은 점수끼리는 검색 순서(구체적 검색어 먼저)가 유지된다.
+    채점 실패분은 중립 50점. 풀이 크면 chunk_size개씩 나눠 호출한다 (응답 길이 한도 때문).
     """
     patient = _patient_summary(profile)
     scores: dict[str, int] = {}
     for i in range(0, len(candidates), chunk_size):
         part = candidates[i:i + chunk_size]
         trials = [{"nct_id": t["nct_id"], "title": t.get("title", ""),
-                   "conditions": t.get("conditions", [])} for t in part]
+                   "conditions": t.get("conditions", []),
+                   "summary": (t.get("summary") or "")[:500]} for t in part]
         user = ("PATIENT:\n" + json.dumps(patient, ensure_ascii=False)
                 + "\n\nTRIALS:\n" + json.dumps(trials, ensure_ascii=False, indent=1))
         try:
@@ -86,13 +105,13 @@ def rank_relevant(profile: dict, candidates: list[dict],
             for v in verdicts:
                 if isinstance(v, dict) and v.get("nct_id"):
                     try:
-                        scores[v["nct_id"]] = max(0, min(10, int(v.get("score", 5))))
+                        scores[v["nct_id"]] = max(0, min(100, int(v.get("score", 50))))
                     except (TypeError, ValueError):
                         pass
         except Exception as e:  # 채점 실패 시 해당 묶음은 중립 유지 (떨어뜨리지 않음)
-            print(f"  관련도 채점 실패 → 묶음 {i // chunk_size + 1} 중립(5점) 유지: {e}")
+            print(f"  관련도 채점 실패 → 묶음 {i // chunk_size + 1} 중립(50점) 유지: {e}")
 
-    scored = [dict(t, _relevance=scores.get(t["nct_id"], 5)) for t in candidates]
+    scored = [dict(t, _relevance=scores.get(t["nct_id"], 50)) for t in candidates]
     scored.sort(key=lambda t: -t["_relevance"])  # 안정 정렬 — 동점은 검색 순서 유지
     kept = [t for t in scored if t["_relevance"] > 0]
     dropped = [dict(t, _drop_reason="관련도 0점 (명백한 무관)")

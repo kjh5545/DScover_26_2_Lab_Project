@@ -106,6 +106,12 @@ def main() -> None:
             kept, dropped = filtered, []
 
         kept_ids = [t["nct_id"] for t in kept]
+        score_of = {t["nct_id"]: t.get("_relevance") for t in kept}
+        if args.rank:  # 분석용: 정답을 이기는 상위 시험들 저장
+            (CACHE / f"ranked_{pid}.json").write_text(json.dumps(
+                [{"rank": i + 1, "nct_id": t["nct_id"], "score": t.get("_relevance"),
+                  "title": t.get("title", "")} for i, t in enumerate(kept[:30])],
+                ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"\n{pid} — 검색어 {queries} → 풀 {len(pool)}건, 필터 후 {len(filtered)}건"
               + (f", 관련성 후 {len(kept)}건 (거름 {len(dropped)})" if llm_screen else ""))
         for nct in gold_ncts:
@@ -117,9 +123,11 @@ def main() -> None:
             for s, ok in zip(stages, [in_pool, in_filtered, in_kept, in_top]):
                 hit[s] += ok
             rank = kept_ids.index(nct) + 1 if in_kept else None
-            placements.append({"patient": pid, "nct": nct, "rank": rank, "auto_ok": False})
+            score_s = f", 관련도 {score_of[nct]}점" if in_kept and score_of.get(nct) is not None else ""
+            placements.append({"patient": pid, "nct": nct, "rank": rank,
+                               "score": score_of.get(nct), "auto_ok": False})
             if in_top:
-                print(f"  O {nct} (상위 {rank}위)")
+                print(f"  O {nct} (상위 {rank}위{score_s})")
                 continue
             if not in_pool:
                 status = trial_status(nct)
@@ -136,7 +144,7 @@ def main() -> None:
             elif not in_kept:
                 reason = "관련성 단계 탈락 ⚠"
             else:
-                reason = f"상위 {args.top} 밖 ({rank}위)"
+                reason = f"상위 {args.top} 밖 ({rank}위{score_s})"
             misses.append({"patient": pid, "nct": nct, "reason": reason})
             print(f"  X {nct} — {reason}")
 
