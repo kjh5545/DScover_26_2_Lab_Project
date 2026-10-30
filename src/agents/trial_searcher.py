@@ -20,12 +20,18 @@ Given a structured patient profile, decide what to search on
 ClinicalTrials.gov to find trials this patient might join.
 
 Rules:
-- Give 1-3 search queries (condition names in English), most specific first.
-  e.g. "migraine with aura" before "migraine".
-- Base queries on the suspected diagnosis and key findings only.
+- Give 5-8 search queries (English), most specific first:
+  1. the suspected diagnosis, specific then general
+     (e.g. "migraine with aura", then "migraine")
+  2. common synonyms or alternative medical names for the same diagnosis
+     (e.g. "infantile hypertrophic pyloric stenosis" / "pyloric stenosis")
+  3. 1-3 key symptoms or findings usable as standalone search terms
+     (e.g. "projectile vomiting", "chronic cough")
+- Base every query on the profile only. Do not invent a diagnosis
+  that the findings do not support.
 
 Respond with ONLY a JSON object, no other text:
-{"queries": ["<condition query>", ...], "rationale": "<one sentence why>"}"""
+{"queries": ["<query>", ...], "rationale": "<one sentence why>"}"""
 
 
 def _parse_age_years(age_str: str | None) -> float | None:
@@ -62,12 +68,20 @@ def hard_filter(trials: list[dict], age_years: float | None, sex: str | None) ->
 
 
 def plan_queries(profile: dict) -> dict:
-    """프로필 → 검색어 1~3개 결정 (LLM 1회). 반환: {"queries": [...], "rationale": "..."}"""
+    """프로필 → 검색어 5~8개 결정 (LLM 1회). 반환: {"queries": [...], "rationale": "..."}
+
+    검색어 하나로는 표기 차이(동의어)나 증상 중심 등록 시험을 놓친다 —
+    재현율 측정에서 미스의 한 축이 "검색어로 안 잡힘"이었다 (TrialGPT도 다중 키워드).
+    """
     return ask_json(SYSTEM_PROMPT, json.dumps(profile, ensure_ascii=False))
 
 
-def collect_pool(queries: list[str], per_query: int = 20, pool_cap: int | None = None) -> dict[str, dict]:
-    """검색어들로 API를 돌려 중복 제거한 후보 풀을 만든다. pool_cap이 차면 추가 검색 생략."""
+def collect_pool(queries: list[str], per_query: int = 200, pool_cap: int | None = None) -> dict[str, dict]:
+    """검색어들로 API를 돌려 중복 제거한 후보 풀을 만든다. pool_cap이 차면 추가 검색 생략.
+
+    per_query 기본 200: 50에서는 페이지 한도로 정답 3건을 놓쳤다 (재현율 측정에서 검증).
+    API는 무료라 늘려도 비용은 그대로다.
+    """
     seen: dict[str, dict] = {}
     for query in queries:
         for t in search_trials(query, max_results=per_query):
@@ -78,14 +92,18 @@ def collect_pool(queries: list[str], per_query: int = 20, pool_cap: int | None =
     return seen
 
 
-def search_candidates(profile: dict, max_candidates: int = 3, relevance: bool = False) -> dict:
-    """프로필 → 검색어 결정(LLM) → API 검색 → 하드 필터 → (옵션) 관련성 필터 → 후보 반환.
+def search_candidates(profile: dict, max_candidates: int = 3, relevance: bool = False,
+                      rank: bool = False) -> dict:
+    """프로필 → 검색어 결정(LLM) → API 검색 → 하드 필터 → (옵션) 관련성 거르기/랭킹 → 후보.
 
-    relevance=True면 제목·질환명만 보고 "정말 이 환자의 병에 관한 시험인가"를
-    싼 모델로 한 번 거른다 (src/agents/relevance_filter.py — 1위 팀 방식).
+    relevance=True: 제목·질환명만 보고 확신 있는 무관만 거른다 (keep/drop).
+    rank=True: 같은 입력으로 관련도 0~10점을 매겨 점수순 정렬, 0점만 제외 (실험 3).
+      풀이 커져도(검색어 5~8개 × 200건) 정답이 상위 N에 들 수 있게 하는 핵심.
+      둘 다 켜면 rank가 우선. 어느 쪽도 Haiku라 비용은 거의 같다.
     """
     plan = plan_queries(profile)
-    seen = collect_pool(plan["queries"], pool_cap=max_candidates * 5 if not relevance else None)
+    llm_screen = rank or relevance
+    seen = collect_pool(plan["queries"], pool_cap=None if llm_screen else max_candidates * 5)
 
     age = profile.get("age")
     if age is not None and profile.get("age_unit") == "months":
@@ -93,7 +111,10 @@ def search_candidates(profile: dict, max_candidates: int = 3, relevance: bool = 
     candidates = hard_filter(list(seen.values()), age, profile.get("sex"))
 
     dropped = []
-    if relevance and candidates:
+    if candidates and rank:
+        from src.agents.relevance_filter import rank_relevant
+        candidates, dropped = rank_relevant(profile, candidates)
+    elif candidates and relevance:
         from src.agents.relevance_filter import filter_relevant
         candidates, dropped = filter_relevant(profile, candidates)
 
@@ -102,7 +123,7 @@ def search_candidates(profile: dict, max_candidates: int = 3, relevance: bool = 
         "rationale": plan.get("rationale", ""),
         "total_found": len(seen),
         "after_hard_filter": len(candidates) + len(dropped),
-        "after_relevance": len(candidates) if relevance else None,
+        "after_relevance": len(candidates) if llm_screen else None,
         "dropped_irrelevant": [{"nct_id": d["nct_id"], "reason": d.get("_drop_reason", "")}
                                for d in dropped],
         "candidates": candidates[:max_candidates],
