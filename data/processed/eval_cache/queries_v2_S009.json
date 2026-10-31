@@ -1,0 +1,13 @@
+{
+  "queries": [
+    "infectious mononucleosis",
+    "Epstein-Barr virus infection",
+    "EBV infectious mononucleosis",
+    "glandular fever",
+    "Epstein-Barr virus",
+    "splenomegaly",
+    "pharyngitis with lymphadenopathy",
+    "fatigue"
+  ],
+  "rationale": "The profile (fever, sore throat, fatigue, posterior cervical lymphadenopathy, splenomegaly, positive monospot) supports infectious mononucleosis due to EBV, so queries cover the diagnosis, its synonyms, and key findings."
+}

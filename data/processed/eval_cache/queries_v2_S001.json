@@ -1,0 +1,12 @@
+{
+  "queries": [
+    "alcohol-induced acute pancreatitis",
+    "acute pancreatitis",
+    "alcoholic pancreatitis",
+    "acute pancreatitis pain management",
+    "pancreatitis",
+    "epigastric pain radiating to back",
+    "elevated serum lipase"
+  ],
+  "rationale": "The profile supports acute pancreatitis likely from alcohol use (epigastric pain radiating to the back, vomiting, markedly elevated lipase and amylase, chronic alcohol use), so queries move from the specific etiology to the general diagnosis, synonyms, and key findings."
+}

@@ -1,0 +1,13 @@
+{
+  "queries": [
+    "Graves' disease",
+    "Graves hyperthyroidism",
+    "hyperthyroidism",
+    "diffuse toxic goiter",
+    "thyrotoxicosis",
+    "Basedow's disease",
+    "heat intolerance weight loss palpitations",
+    "diffuse goiter"
+  ],
+  "rationale": "The profile (palpitations, heat intolerance, weight loss, tremor, tachycardia, diffusely enlarged non-tender thyroid) supports Graves' disease/hyperthyroidism, so queries move from the specific diagnosis to synonyms and then to key symptoms and findings."
+}

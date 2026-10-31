@@ -1,0 +1,13 @@
+{
+  "queries": [
+    "minimal change disease children",
+    "childhood nephrotic syndrome",
+    "steroid-sensitive nephrotic syndrome",
+    "idiopathic nephrotic syndrome",
+    "minimal change nephrotic syndrome",
+    "nephrotic syndrome",
+    "proteinuria children",
+    "periorbital edema"
+  ],
+  "rationale": "The profile of a 7-year-old with periorbital edema, frothy urine, heavy proteinuria without hematuria, and hypoalbuminemia supports pediatric nephrotic syndrome, most likely minimal change disease, so queries move from specific to general diagnosis, then synonyms, then key findings."
+}

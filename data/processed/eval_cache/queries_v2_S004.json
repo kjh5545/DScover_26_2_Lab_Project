@@ -1,0 +1,13 @@
+{
+  "queries": [
+    "urothelial carcinoma of the bladder",
+    "bladder cancer",
+    "transitional cell carcinoma of the bladder",
+    "muscle-invasive bladder cancer",
+    "non-muscle invasive bladder cancer",
+    "urinary bladder neoplasms",
+    "painless gross hematuria",
+    "bladder mass"
+  ],
+  "rationale": "The profile of a 68-year-old male smoker with painless gross hematuria and a bladder wall mass on CT urography supports suspected urothelial bladder carcinoma, so queries cover the specific diagnosis, synonyms, disease stages, and key findings."
+}
