@@ -1,0 +1,30 @@
+{
+  "denominators": {
+    "S004": {
+      "criteria": 19,
+      "candidates_U": 13,
+      "non_candidates": 6,
+      "subset": true,
+      "gold_keys_match": true,
+      "M8a_denominator": 6,
+      "M8b_denominator": 7,
+      "M8d_denominator": 6
+    },
+    "S008": {
+      "criteria": 27,
+      "candidates_U": 23,
+      "non_candidates": 4,
+      "subset": true,
+      "gold_keys_match": true,
+      "M8a_denominator": 9,
+      "M8b_denominator": 14,
+      "M8d_denominator": 4
+    }
+  },
+  "gates": {
+    "annotation": "차단: 사전 주석 기록 없음",
+    "versions": "통과",
+    "outside_changes": [],
+    "api_key_present": false
+  }
+}

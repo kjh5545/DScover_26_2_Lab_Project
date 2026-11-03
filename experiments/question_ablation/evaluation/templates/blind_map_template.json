@@ -1,0 +1,12 @@
+{
+  "warning": "채점자에게 주지 않는다. 채점 결과 잠금 전에는 열지 않는다.",
+  "seed": null,
+  "sets": {
+    "<blind_id>": {
+      "run_key": "",
+      "arm": "",
+      "patient_id": "",
+      "rep": null
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "m4a_definition_review": {
+    "approved": false,
+    "reviewed_by": [],
+    "date": "",
+    "note": ""
+  },
+  "judge_freeze_confirmed_by": [],
+  "people": [
+    {
+      "id": "",
+      "role": "annotator | rater | adjudicator | manager",
+      "gold_exposed": "none | partial | full",
+      "exposure_scope": ""
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "records": [
+    {
+      "blind_id": "",
+      "patient_id": "",
+      "question_no": "",
+      "question_text": "",
+      "needed_info": "",
+      "n_links": "",
+      "n_trials": "",
+      "assumption": "",
+      "assumption_error": "",
+      "redundancy": "",
+      "redundancy_error": "",
+      "duplicate_of": "",
+      "single_topic": "",
+      "single_topic_error": "",
+      "overgroup": "",
+      "overgroup_error": "",
+      "other_error": "",
+      "rationale": "",
+      "unsure_reason": "",
+      "rater_id": "",
+      "needs_review": ""
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "source": {
+    "path": "src/question_builder.py",
+    "symbol": "QUESTION_SYSTEM_PROMPT",
+    "commit": "7c7b7f864c973fd1609d2b26311e27610aa0202d",
+    "blob": "3575b8aae568752d26af2e40eacf585c2aaf6d9f",
+    "symbol_sha256": "da845f66efbb168135b2cbd5025237a40ad015b667d41cad4a8738a5f5ccc159"
+  },
+  "encoding": "UTF-8, LF, no BOM, no trailing newline",
+  "conditions": {
+    "C0": {
+      "file": "C0_baseline.txt",
+      "sha256": "ec97da014bcfdc5ee04aa6e6bebae8c58d3db85ea99f0079953678a11d3afa22",
+      "bytes": 1393,
+      "chars": 794
+    },
+    "C_full": {
+      "file": "C_full_v233.txt",
+      "sha256": "da845f66efbb168135b2cbd5025237a40ad015b667d41cad4a8738a5f5ccc159",
+      "bytes": 15838,
+      "chars": 7024
+    },
+    "A1": {
+      "file": "A1_no_priority.txt",
+      "sha256": "af5ae19b697a60488f68db5bc4372e2addc8d08202319df91cd0899c5adec608",
+      "bytes": 14321,
+      "chars": 6387
+    },
+    "A2": {
+      "file": "A2_no_grouping.txt",
+      "sha256": "ed0ac5be71424b91b18ab7c9288b614fb6bb96f20731c3a2aa3ee7d1316e3179",
+      "bytes": 14954,
+      "chars": 6650
+    },
+    "A2s": {
+      "file": "A2s_no_grouping_commonality.txt",
+      "sha256": "ac7d6c52495093fca0624e59934da3f6a26ea56d31c4a9f69885415cd869c1b2",
+      "bytes": 14825,
+      "chars": 6597
+    }
+  }
+}

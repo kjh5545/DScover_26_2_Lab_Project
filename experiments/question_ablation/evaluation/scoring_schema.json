@@ -1,0 +1,73 @@
+{
+  "version": "1.0",
+  "values": {
+    "assumption": ["PASS", "FAIL", "UNSURE"],
+    "redundancy": ["PASS", "FAIL", "UNSURE"],
+    "single_topic": ["PASS", "FAIL", "UNSURE"],
+    "overgroup": ["PASS", "FAIL", "UNSURE", "NA"],
+    "preservation": ["PASS", "FAIL", "UNSURE", "NA"],
+    "coverage": ["FULL", "PARTIAL", "NONE", "UNSURE"],
+    "group_validity": ["VALID", "INVALID", "UNSURE", "NA"],
+    "askable": ["ASK_PATIENT", "ASK_RECORD", "NOT_OBTAINABLE", "UNSURE"],
+    "decisiveness": ["0", "1", "2", "UNSURE"],
+    "centrality": ["0", "1", "2", "UNSURE"],
+    "simulator_code": ["S0", "S1", "S2", "S3", "S4"]
+  },
+  "error_codes": {
+    "F1": "기간·기준 시점 왜곡",
+    "F2": "수치·단위 왜곡",
+    "F3": "빈도·집계 방식 왜곡",
+    "F4": "진단명·질환 범위 왜곡",
+    "F5": "약물명·용량 왜곡",
+    "F6": "투여 경로 왜곡",
+    "F7": "AND/OR·예외 논리 왜곡",
+    "F8": "적용 대상·신체 부위 왜곡",
+    "F9": "원문에 없는 조건 추가",
+    "F10": "원인 관계 왜곡",
+    "A1": "진단 전제",
+    "A2": "치료·검사 전제",
+    "A3": "증상·소견의 확진 전제",
+    "A4": "미래·가능 사실의 기정사실화",
+    "A5": "정보 없음을 없음으로 해석",
+    "C1": "허위 연결",
+    "C2": "일부 조건만 확인",
+    "C3": "기록 보유 여부만 확인",
+    "G1": "서로 다른 사실 결합",
+    "G2": "서로 다른 기간 혼합",
+    "G3": "서로 다른 대상 혼합",
+    "G4": "서로 다른 측정값 혼합",
+    "G5": "묶는 과정의 기준별 세부 조건 손실",
+    "T1": "주제 단일성 위반",
+    "R1": "같은 세트 안의 동일 정보 반복",
+    "R2": "입력에 이미 있는 정보 재질문",
+    "U1": "환자 기억으로 수치 요구",
+    "P1": "적격 여부 고지·유도"
+  },
+  "question_columns": {
+    "given": ["blind_id", "patient_id", "question_no", "question_text", "needed_info", "n_links", "n_trials"],
+    "rated": ["assumption", "assumption_error", "redundancy", "redundancy_error", "duplicate_of", "single_topic",
+              "single_topic_error", "overgroup", "overgroup_error", "other_error", "rationale", "unsure_reason",
+              "rater_id", "needs_review"]
+  },
+  "link_columns": {
+    "given": ["blind_id", "patient_id", "question_no", "trial_id", "criterion_id", "criterion_type", "criterion_text",
+              "question_text", "needed_info", "is_multi_link"],
+    "rated": ["preservation", "coverage", "group_validity", "error_codes", "rationale", "unsure_reason", "rater_id",
+              "needs_review"]
+  },
+  "preannotation_columns": {
+    "given": ["annotation_id", "patient_id", "patient_text", "trial_id", "trial_status", "criterion_id",
+              "criterion_type", "criterion_text", "initial_verdict", "is_candidate"],
+    "rated": ["askable", "decisiveness", "centrality", "rationale", "unsure_reason", "rater_id", "needs_review"]
+  },
+  "cluster_columns": ["cluster_id", "patient_id", "shared_fact", "trial_id", "criterion_id", "rationale", "rater_id"],
+  "preannotation_final_columns": ["patient_id", "trial_id", "criterion_id", "final_askable", "final_tier", "h_strict",
+                                  "h_any", "adjudication_note"],
+  "rater_registry_columns": ["rater_id", "role", "gold_exposed", "exposure_scope", "note"],
+  "adjudication_columns": ["sheet", "item_key", "field", "rater1_id", "rater1_value", "rater2_id", "rater2_value",
+                           "final_value", "reason", "adjudicator_id"],
+  "simulator_audit_columns": ["audit_id", "patient_id", "question_text", "answer_text", "fact_text", "simulator_code",
+                              "rationale", "rater_id", "needs_review"],
+  "forbidden_in_rater_packet": ["arm", "condition", "run_key", "rep", "seed", "prompt", "gold", "fact", "detailed",
+                                "timestamp", "cost", "not_asked"]
+}

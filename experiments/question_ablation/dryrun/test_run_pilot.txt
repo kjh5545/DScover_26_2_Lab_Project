@@ -1,0 +1,55 @@
+test_a2s_never_runs_downstream (__main__.Downstream.test_a2s_never_runs_downstream) ... ok
+test_check_answers (__main__.Downstream.test_check_answers) ... ok
+test_missing_questions_do_not_trigger_calls (__main__.Downstream.test_missing_questions_do_not_trigger_calls) ... ok
+test_saves_both_stages_and_raw_answers (__main__.Downstream.test_saves_both_stages_and_raw_answers) ... ok
+test_simulator_checkpoint_reused_on_resume (__main__.Downstream.test_simulator_checkpoint_reused_on_resume) ... ok
+test_simulator_count_and_order_checked (__main__.Downstream.test_simulator_count_and_order_checked) ... ok
+test_counts (__main__.Estimate.test_counts) ... ok
+test_price_matches_repository (__main__.Estimate.test_price_matches_repository) ... ok
+test_api_error_leaves_no_result_and_resumes (__main__.Execution.test_api_error_leaves_no_result_and_resumes) ... ok
+test_api_error_streak_stops_paid_loop (__main__.Execution.test_api_error_streak_stops_paid_loop) ... ok
+test_arrange_report_detects_mismatch (__main__.Execution.test_arrange_report_detects_mismatch) ... ok
+test_format_failure_retries_once (__main__.Execution.test_format_failure_retries_once) ... ok
+test_hangul_threshold_is_diagnostic_only (__main__.Execution.test_hangul_threshold_is_diagnostic_only) ... ok
+test_no_llm_module_is_left_patched (__main__.Execution.test_no_llm_module_is_left_patched) ... ok
+test_program_bug_is_not_hidden_as_api_error (__main__.Execution.test_program_bug_is_not_hidden_as_api_error) ... ok
+test_raw_and_arranged_saved_separately (__main__.Execution.test_raw_and_arranged_saved_separately) ... ok
+test_refusal_is_recorded_not_retried (__main__.Execution.test_refusal_is_recorded_not_retried) ... ok
+test_resume_after_interruption (__main__.Execution.test_resume_after_interruption) ... ok
+test_retry_limit_survives_restart (__main__.Execution.test_retry_limit_survives_restart) ... ok
+test_two_format_failures_stop_without_redraw (__main__.Execution.test_two_format_failures_stop_without_redraw) ... ok
+test_config_changes_detected (__main__.Integrity.test_config_changes_detected) ... ok
+test_prompt_tamper_detected (__main__.Integrity.test_prompt_tamper_detected) ... ok
+test_workspace_rejects_changed_plan_and_mock_mix (__main__.Integrity.test_workspace_rejects_changed_plan_and_mock_mix) ... ok
+test_write_new_never_overwrites (__main__.Integrity.test_write_new_never_overwrites) ... ok
+test_fact_text_only_reaches_simulator (__main__.Leakage.test_fact_text_only_reaches_simulator) ... ok
+test_question_stage_cannot_read_gold_or_facts (__main__.Leakage.test_question_stage_cannot_read_gold_or_facts) ... ok
+test_rater_packet_has_no_condition_or_gold (__main__.Leakage.test_rater_packet_has_no_condition_or_gold) ... ok
+test_annotation_tamper_detected (__main__.PaidGate.test_annotation_tamper_detected) ... ok
+test_dry_run_allowed_without_lock_or_key (__main__.PaidGate.test_dry_run_allowed_without_lock_or_key) ... ok
+test_gold_exposure_changes_blind_label (__main__.PaidGate.test_gold_exposure_changes_blind_label) ... ok
+test_lock_passes_only_when_complete (__main__.PaidGate.test_lock_passes_only_when_complete) ... ok
+test_lock_record_cannot_be_overwritten (__main__.PaidGate.test_lock_record_cannot_be_overwritten) ... ok
+test_paid_blocked_without_annotation_lock (__main__.PaidGate.test_paid_blocked_without_annotation_lock) ... ok
+test_paid_needs_explicit_experiment_id (__main__.PaidGate.test_paid_needs_explicit_experiment_id) ... ok
+test_population_mismatch_blocked (__main__.PaidGate.test_population_mismatch_blocked) ... ok
+test_review_and_people_required (__main__.PaidGate.test_review_and_people_required) ... ok
+test_all_prompts_load (__main__.Plan.test_all_prompts_load) ... ok
+test_denominators (__main__.Plan.test_denominators) ... ok
+test_inputs_identical_across_arms (__main__.Plan.test_inputs_identical_across_arms) ... ok
+test_plan_has_thirty_runs (__main__.Plan.test_plan_has_thirty_runs) ... ok
+test_plan_is_reproducible_and_blocked_by_rep (__main__.Plan.test_plan_is_reproducible_and_blocked_by_rep) ... ok
+test_runner_does_not_call_overwriting_helpers (__main__.Repository.test_runner_does_not_call_overwriting_helpers) ... ok
+test_shared_files_unchanged_by_full_mock_run (__main__.Repository.test_shared_files_unchanged_by_full_mock_run) ... ok
+test_full_chain (__main__.ScoringChain.test_full_chain) ... ok
+test_invalid_scores_cannot_be_merged (__main__.ScoringChain.test_invalid_scores_cannot_be_merged) ... ok
+test_locked_scores_cannot_change_before_report (__main__.ScoringChain.test_locked_scores_cannot_change_before_report) ... ok
+test_real_transport_request_and_response (__main__.SdkShape.test_real_transport_request_and_response) ... C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\unittest\case.py:579: ResourceWarning: unclosed <socket.socket fd=5416, family=2, type=1, proto=0, laddr=('127.0.0.1', 65225)>
+  if method() is not None:
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+
+----------------------------------------------------------------------
+Ran 47 tests in 43.805s
+
+OK

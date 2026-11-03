@@ -1,0 +1,3 @@
+# 해시로 고정한 프롬프트: 체크아웃 때 줄바꿈이 바뀌면 안 됨 (core.autocrlf=true 환경 대비)
+prompts/*.txt -text
+prompts/manifest.json -text

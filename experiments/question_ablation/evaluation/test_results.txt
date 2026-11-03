@@ -1,0 +1,33 @@
+test_disagreements_go_to_adjudication_form (__main__.Agreement.test_disagreements_go_to_adjudication_form) ... ok
+test_kappa_hand_value (__main__.Agreement.test_kappa_hand_value) ... ok
+test_kappa_undefined_when_constant (__main__.Agreement.test_kappa_undefined_when_constant) ... ok
+test_double_score_sample_covers_every_cell (__main__.Blinding.test_double_score_sample_covers_every_cell) ... ok
+test_no_condition_information_in_packet (__main__.Blinding.test_no_condition_information_in_packet) ... ok
+test_order_does_not_reveal_condition (__main__.Blinding.test_order_does_not_reveal_condition) ... ok
+test_question_order_kept_inside_set (__main__.Blinding.test_question_order_kept_inside_set) ... ok
+test_unblind_requires_lock_and_unchanged_file (__main__.Blinding.test_unblind_requires_lock_and_unchanged_file) ... ok
+test_all_required_cases_present (__main__.Cases.test_all_required_cases_present) ... ok
+test_linked_is_not_covered (__main__.Cases.test_linked_is_not_covered) ... ok
+test_metrics_match_hand_calculation (__main__.Cases.test_metrics_match_hand_calculation) ... ok
+test_scored_sheet_passes_validation (__main__.Cases.test_scored_sheet_passes_validation) ... ok
+test_unasked_condition_is_partial_not_distortion (__main__.Cases.test_unasked_condition_is_partial_not_distortion) ... ok
+test_zero_denominator_is_none (__main__.Cases.test_zero_denominator_is_none) ... ok
+test_every_code_is_documented (__main__.Documents.test_every_code_is_documented) ... ok
+test_every_metric_is_defined (__main__.Documents.test_every_metric_is_defined) ... ok
+test_rater_documents_do_not_reveal_conditions (__main__.Documents.test_rater_documents_do_not_reveal_conditions) ... ok
+test_templates_match_schema (__main__.Documents.test_templates_match_schema) ... ok
+test_hangul_ratio (__main__.Metrics.test_hangul_ratio) ... ok
+test_m8 (__main__.Metrics.test_m8) ... ok
+test_stability (__main__.Metrics.test_stability) ... ok
+test_tier_rule (__main__.Metrics.test_tier_rule) ... ok
+test_verdict_flip (__main__.Metrics.test_verdict_flip) ... ok
+test_packet_from_saved_real_questions (__main__.RealInputs.test_packet_from_saved_real_questions) ... ok
+test_preannotation_has_no_answer_information (__main__.RealInputs.test_preannotation_has_no_answer_information) ... ok
+test_r1_needs_target (__main__.Validator.test_r1_needs_target) ... ok
+test_rejects_inconsistent_ratings (__main__.Validator.test_rejects_inconsistent_ratings) ... ok
+test_unsure_with_reason_is_allowed (__main__.Validator.test_unsure_with_reason_is_allowed) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 4.297s
+
+OK

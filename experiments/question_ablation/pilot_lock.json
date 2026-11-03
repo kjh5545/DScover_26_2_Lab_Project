@@ -1,0 +1,73 @@
+{
+  "versions": {
+    "model_id": "claude-sonnet-5-5",
+    "max_tokens": 16000,
+    "thinking": {
+      "type": "adaptive"
+    },
+    "extra_params": [],
+    "max_questions": 5,
+    "plan_seed": 20261102,
+    "prompt_sha256": {
+      "C0": "ec97da014bcfdc5ee04aa6e6bebae8c58d3db85ea99f0079953678a11d3afa22",
+      "C_full": "da845f66efbb168135b2cbd5025237a40ad015b667d41cad4a8738a5f5ccc159",
+      "A1": "af5ae19b697a60488f68db5bc4372e2addc8d08202319df91cd0899c5adec608",
+      "A2": "ed0ac5be71424b91b18ab7c9288b614fb6bb96f20731c3a2aa3ee7d1316e3179",
+      "A2s": "ac7d6c52495093fca0624e59934da3f6a26ea56d31c4a9f69885415cd869c1b2"
+    },
+    "judge_prompt_sha256": "404e82537c0ccab4096e9b7151edd25712746a2acb713925879f0ecdbf838595",
+    "judge_answers_header_sha256": "c18310c28d33c5d4538d8e0c5ad97ca0436bbd934ad3e703dd91c06ee86472c3",
+    "simulator_prompt_sha256": "030d4c8c1917daa0ddd360d70ad3b9f37576a851ee24600ed909b7ad8a76923e",
+    "input_sha256": {
+      "S004": "060d6b88af612d1993aab449c196582ddf2afe76dbfa9c15ea002bcb63b6cb5d",
+      "S008": "1bf58d4d6b9d208d757a25b382d42b0858da9d7b28185702afce05feb482324a"
+    },
+    "file_blobs": {
+      "src/question_builder.py": "3575b8aae568752d26af2e40eacf585c2aaf6d9f",
+      "src/llm.py": "28e3f884e99ae76637a14b4182b6d52b87ead8c2",
+      "src/pipeline.py": "479e937dfd24ecbd060ef5564c5348560454c295",
+      "src/agents/matcher.py": "6558ccd111e66ad3588eb647d0689a759983e9f1",
+      "src/tools/rule_checks.py": "a2b056838fe1efe0504ffb31c3576cecb18f6b6b",
+      "src/testing/patient_simulator.py": "1a453a9367a6240a433d44dcd8ffad2d1432180f",
+      "src/testing/goldset_bundle.py": "a02b4902230d1e60f8e9662aa8269574b2410413",
+      "src/testing/detailed_sheet.py": "f869de9e371bbe740d4959c93225951d126f141c",
+      "scripts/eval_detailed.py": "96ee21b0c2673fa283586b166696876be832d9f8",
+      "goldset/goldset_v1.json": "6c660a9cb542822196530face282a71d690a1af8",
+      "screening/detailed/인선/S004_detailed_sheet_filled.md": "babac5705148b12f44e1541fa79554b013f5d450",
+      "screening/detailed/인선/S008_detailed_sheet_filled.md": "ac8b3af9f8fef7cdbc6268fee2a4e21b75069488",
+      "data/processed/eval_cache/profile_S004.json": "fffd5064b378358fd37340f7276ffa161da177f7",
+      "data/processed/eval_cache/profile_S008.json": "7b2d2a654b08bd58bcb770895668a125bac42dee",
+      "data/processed/goldset_cache_v3_claude-sonnet-5-5/match_S004_NCT04369560.json": "54e4ca34a59c46e32690979e9361ecfd45e0a9dc",
+      "data/processed/goldset_cache_v3_claude-sonnet-5-5/match_S004_NCT05646485.json": "b922bf907001faab7410c85c5e297b78f9392e72",
+      "data/processed/goldset_cache_v3_claude-sonnet-5-5/match_S008_NCT07299695.json": "2faf3c12e8be62270cd1154607872ac0e17f15ea",
+      "data/processed/goldset_cache_v3_claude-sonnet-5-5/match_S008_NCT07652658.json": "cdd25145cfa2061c2f5dde3e77e80ea12f18e2d5"
+    }
+  },
+  "runtime": {
+    "python": "3.11.2",
+    "anthropic_sdk": "2.3.0",
+    "git_head": "7c7b7f864c973fd1609d2b26311e27610aa0202d"
+  },
+  "denominators": {
+    "S004": {
+      "criteria": 19,
+      "candidates_U": 13,
+      "non_candidates": 6,
+      "subset": true,
+      "gold_keys_match": true,
+      "M8a_denominator": 6,
+      "M8b_denominator": 7,
+      "M8d_denominator": 6
+    },
+    "S008": {
+      "criteria": 27,
+      "candidates_U": 23,
+      "non_candidates": 4,
+      "subset": true,
+      "gold_keys_match": true,
+      "M8a_denominator": 9,
+      "M8b_denominator": 14,
+      "M8d_denominator": 4
+    }
+  }
+}
