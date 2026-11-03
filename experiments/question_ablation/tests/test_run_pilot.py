@@ -408,6 +408,112 @@ class PaidGate(Base):
         self.assertFalse(rp.blind_status(None)["independent_gold_blind"])
 
 
+class FakeReal:
+    """MockTransport 응답에 실제 모델명과 토큰 수를 붙인다. API는 부르지 않는다."""
+
+    def __init__(self, model="claude-sonnet-5-5", tokens=(1000, 500), error=None, text=None):
+        self.mock, self.model, self.tokens, self.error, self.text = rp.MockTransport(), model, tokens, error, text
+
+    def __call__(self, system, user):
+        if self.error:
+            raise self.error
+        r = self.mock(system, user)
+        return {**r, "model": self.model, "input_tokens": self.tokens[0], "output_tokens": self.tokens[1],
+                **({"text": self.text} if self.text is not None else {})}
+
+
+class StatusError(Exception):
+    def __init__(self, code):
+        super().__init__(f"status {code}")
+        self.status_code = code
+
+
+class Smoke(Base):
+    def args(self, exp="smoke1", paid=None):
+        return types.SimpleNamespace(experiment=exp, paid=paid or exp)
+
+    def client(self):
+        return types.SimpleNamespace(api_key="test-not-a-key",
+                                     models=types.SimpleNamespace(retrieve=lambda m: types.SimpleNamespace(id=m)))
+
+    def locked(self):
+        base = self.root / "ann"
+        rp.lock_annotation(self.real_annotation(base), base / "annotation_record.json")
+        return base / "annotation_record.json"
+
+    def test_smoke_and_pilot_ids_are_separate(self):
+        with self.assertRaisesRegex(rp.GateError, "연동 테스트 전용"):
+            rp.paid_gate(self.args())
+        with self.assertRaisesRegex(rp.GateError, "smoke"):
+            rp.smoke_gate(self.args("pilot1"), "ping")
+        with self.assertRaisesRegex(rp.GateError, "--paid"):
+            rp.smoke_gate(self.args(paid="yes"), "ping")
+
+    def test_ping_needs_no_annotation_and_sends_no_patient_data(self):
+        with mock.patch.object(rp, "ANNOTATION_RECORD", self.root / "none.json"), \
+                mock.patch.object(rp, "REAL_ROOT", self.root / "real"):
+            with self.assertRaisesRegex(rp.GateError, "사전 주석"):
+                rp.smoke_gate(self.args(), "questions")
+            ws, v = rp.smoke_gate(self.args(), "ping")
+            fake = FakeReal(text="OK")
+            with mock.patch.object(rp, "RealTransport", lambda client: fake):
+                r = rp.run_smoke("ping", ws, v, self.client())
+        self.assertEqual([c["user"] for c in fake.mock.calls], ["ping"])
+        self.assertTrue(r["model_lookup_match"] and r["reply_ok"])
+        self.assertGreater(r["spent_usd"], 0)
+        self.assertTrue((ws.root / "smoke_ping_001.json").exists())
+
+    def test_questions_then_downstream_stay_within_plan(self):
+        with mock.patch.object(rp, "ANNOTATION_RECORD", self.locked()), \
+                mock.patch.object(rp, "REAL_ROOT", self.root / "real"):
+            ws, v = rp.smoke_gate(self.args(), "questions")
+            fake = FakeReal()
+            with mock.patch.object(rp, "RealTransport", lambda client: fake):
+                q = rp.run_smoke("questions", ws, v, self.client())
+                self.assertEqual((q["done"], len(fake.mock.calls)), ({"ok": 2}, 2))
+                d = rp.run_smoke("downstream", ws, v, self.client())
+        self.assertEqual(d["done"], {"ok": 1})
+        stages = Counter(c["stage"] for c in d["runs"]["C_full__S004__r1"]["calls"])
+        self.assertEqual(stages["simulator"], 1)
+        self.assertLessEqual(stages["reassess"], 2)
+        self.assertEqual(len(fake.mock.calls), 2 + sum(stages.values()))
+        self.assertLessEqual(len(fake.mock.calls), 7)
+        self.assertNotIn("question_text", json.dumps(q, ensure_ascii=False))
+        log = ws.root.joinpath("smoke_calls.jsonl").read_text(encoding="utf-8").splitlines()
+        self.assertEqual(len(log), len(fake.mock.calls))
+        with self.assertRaises(rp.GateError):
+            ws.prepare(rp.make_plan(), v)
+
+    def test_model_mismatch_stops_after_logging(self):
+        t = rp.SmokeTransport(FakeReal(model="claude-other"), self.ws, "claude-sonnet-5-5")
+        with self.assertRaisesRegex(rp.GateError, "모델 불일치"):
+            t("s", "u")
+        self.assertEqual(len((self.ws.root / "smoke_calls.jsonl").read_text(encoding="utf-8").splitlines()), 1)
+
+    def test_cost_caps(self):
+        with self.assertRaisesRegex(rp.GateError, "1회 비용"):
+            rp.SmokeTransport(FakeReal(tokens=(30000, 16000)), self.ws, "claude-sonnet-5-5")("s", "u")
+        with open(self.ws.root / "smoke_calls.jsonl", "a", encoding="utf-8") as f:
+            f.write(json.dumps({"cost_usd": rp.SMOKE_BUDGET_USD}) + "\n")
+        fake = FakeReal()
+        with self.assertRaisesRegex(rp.GateError, "누계"):
+            rp.SmokeTransport(fake, self.ws, "claude-sonnet-5-5")("s", "u")
+        self.assertEqual(len(fake.mock.calls), 0)
+
+    def test_auth_errors_stop_instead_of_retrying(self):
+        for code in (401, 403, 404):
+            t = rp.SmokeTransport(FakeReal(error=StatusError(code)), self.ws, "claude-sonnet-5-5")
+            with self.assertRaisesRegex(rp.GateError, str(code)):
+                rp.execute("questions", rp.SMOKE_PLAN, self.ws, t)
+        t = rp.SmokeTransport(FakeReal(error=ConnectionError("x")), self.ws, "claude-sonnet-5-5")
+        self.assertEqual(rp.execute("questions", rp.SMOKE_PLAN, self.ws, t)["api_error"], 2)
+
+    def test_empty_key_blocked(self):
+        with mock.patch.object(rp.llm, "get_client", lambda: types.SimpleNamespace(api_key="")):
+            with self.assertRaisesRegex(rp.GateError, "API 키 없음"):
+                rp.smoke_client()
+
+
 class ScoringChain(Base):
     """채점표 생성 → 평가자 2명 → 조정 → 잠금 → 공개 → 지표. 값은 자동 입력한 가짜 채점이다."""
 
@@ -542,6 +648,35 @@ class SdkShape(Base):
         self.assertEqual((reply["input_tokens"], reply["output_tokens"], reply["stop_reason"]), (100, 50, "end_turn"))
         self.assertEqual(json.loads(reply["text"]), {"questions": [], "not_asked": []})
         self.assertEqual(reply["model"], "claude-sonnet-5-5")
+
+    def test_sdk_401_stops_smoke(self):
+        try:
+            import anthropic
+        except ImportError:
+            self.skipTest("SDK 없음")
+        if getattr(anthropic, "__version__", None) is None:
+            self.skipTest("SDK 없음 (스텁)")
+        server = http.server.HTTPServer(("127.0.0.1", 0), Unauthorized)
+        threading.Thread(target=server.serve_forever, daemon=True).start()
+        try:
+            client = anthropic.Anthropic(api_key="test-not-a-key", base_url=f"http://127.0.0.1:{server.server_port}",
+                                         max_retries=0)
+            t = rp.SmokeTransport(rp.RealTransport(client), self.ws, "claude-sonnet-5-5")
+            with self.assertRaisesRegex(rp.GateError, "401"):
+                rp.execute("questions", rp.SMOKE_PLAN, self.ws, t)
+        finally:
+            server.shutdown()
+
+
+class Unauthorized(Handler):
+    def do_POST(self):
+        self.rfile.read(int(self.headers["content-length"]))
+        data = b'{"type": "error", "error": {"type": "authentication_error", "message": "invalid x-api-key"}}'
+        self.send_response(401)
+        self.send_header("content-type", "application/json")
+        self.send_header("content-length", str(len(data)))
+        self.end_headers()
+        self.wfile.write(data)
 
 
 class Estimate(unittest.TestCase):

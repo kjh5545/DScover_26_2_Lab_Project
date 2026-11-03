@@ -13,7 +13,7 @@ Agent 5 질문 프롬프트 v2.3.3의 전체 효과와 규칙별 기여를 통�
 | `build_prompts.py` | 프롬프트 생성·검증 |
 | `run_pilot.py` | 실행기 |
 | `pilot_lock.json` | 고정 값 (모델, 프롬프트, 판정기, 시뮬레이터, 데이터 해시) |
-| `evaluation/` | 채점 도구, 양식, 사전 주석표, 가상 예시 |
+| `evaluation/` | 채점 도구, 사전 주석 보조(`annotation_tools.py`), 양식, 사전 주석표, 가상 예시 |
 | `tests/` | 실행기 테스트 |
 | `dryrun/` | mock 실행 결과 |
 | `cost_estimate.md` | 비용 추정 |
@@ -37,7 +37,9 @@ py -3.11 -m venv ../.venv-question-ablation
 ```bash
 $PY experiments/question_ablation/build_prompts.py --check        # 프롬프트 검증 53건
 $PY experiments/question_ablation/evaluation/tests/test_scoring.py # 채점 도구 28건
-$PY experiments/question_ablation/tests/test_run_pilot.py          # 실행기 47건
+$PY experiments/question_ablation/tests/test_run_pilot.py          # 실행기 55건
+$PY experiments/question_ablation/evaluation/tests/test_annotation_tools.py  # 주석 보조 10건
+$PY experiments/question_ablation/evaluation/annotation_tools.py check|compare|finalize ...  # 사전 주석 검사·일치도·확정표
 $PY experiments/question_ablation/run_pilot.py check               # 평가 분모, 고정 값, 유료 실행 조건
 $PY experiments/question_ablation/run_pilot.py plan                # 실행 순서 30건
 $PY experiments/question_ablation/run_pilot.py estimate            # 호출 수·비용
@@ -49,6 +51,8 @@ dry-run은 API 키와 사전 주석 없이 동작한다. 응답은 모두 가짜
 ## 실행 순서
 
 ```bash
+# 0. 유료: 연동 테스트 (분석 제외). ping은 잠금 없이, questions·downstream은 잠금 후. 단계마다 승인
+$PY experiments/question_ablation/run_pilot.py smoke ping --experiment smoke1 --paid smoke1
 # 1. 사전 주석 확정 파일을 evaluation/preannotation/에 둔 뒤 잠금
 $PY experiments/question_ablation/run_pilot.py lock-annotation <작성한 기록.json>
 # 2. 유료: 질문 생성 30회. --paid에 실험 ID를 다시 적어야 시작된다

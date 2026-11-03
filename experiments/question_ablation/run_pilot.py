@@ -7,6 +7,7 @@ eval_detailed.run_loop는 기존 결과를 덮어쓰므로 쓰지 않는다.
 
 무료:  freeze · check · plan · dry-run · estimate · packet · compare-raters · merge · lock-scores · sim-audit · report
 유료:  questions · downstream  (사전 주석 잠금 + --paid <실험 ID> 없이는 시작하지 않음)
+       smoke ping|questions|downstream  (연동 테스트, 분석 제외. ping은 실험 데이터 없음)
 
 실행 방법: experiments/question_ablation/README.md
 """
@@ -676,6 +677,8 @@ def paid_gate(args) -> tuple[Workspace, list[dict], dict]:
     """유료 실행 조건 전부 검사."""
     if args.paid != args.experiment:
         raise GateError("--paid에 실험 ID를 그대로 적어야 유료 실행이 시작됨")
+    if args.experiment.startswith(SMOKE_PREFIX):
+        raise GateError(f"'{SMOKE_PREFIX}'로 시작하는 실험 ID는 연동 테스트 전용")
     annotation_gate()
     versions = verify_versions()
     denominators()
@@ -687,6 +690,128 @@ def paid_gate(args) -> tuple[Workspace, list[dict], dict]:
     plan = make_plan()
     ws.prepare(plan, versions)
     return ws, plan, versions
+
+
+# ── 소규모 연동 테스트 (Phase 6A, 유료) ─────────────────────
+# 결과는 분석에서 제외한다. 파일럿과 실행 계획이 달라 같은 폴더에 섞이지 않는다 (Workspace.prepare).
+
+SMOKE_PREFIX = "smoke"
+SMOKE_PLAN = [  # 6A-1: S004의 C0·C_full 질문 2회. 6A-2: C_full 1세트만 후속 판정
+    {"run_key": run_key("C0", "S004", 1), "arm": "C0", "patient_id": "S004", "rep": 1, "downstream": False},
+    {"run_key": run_key("C_full", "S004", 1), "arm": "C_full", "patient_id": "S004", "rep": 1, "downstream": True},
+]
+SMOKE_CALL_CAP_USD = 0.20   # 호출 1회 안전 상한: 출력 16,000토큰($0.16) + 입력 2만 토큰($0.04)
+SMOKE_BUDGET_USD = 1.00     # 같은 smoke 폴더의 누계 상한. 넘으면 다음 호출 전에 멈춘다
+SMOKE_STOP_STATUS = (401, 403, 404)
+PING = ("Reply with exactly one word: OK", "ping")   # 6A-0. 실험 데이터를 보내지 않는다
+
+
+def stop_on_status(e: Exception) -> None:
+    code = getattr(e, "status_code", None)
+    if code in SMOKE_STOP_STATUS:
+        raise GateError(f"API {code} 오류: 키·권한·모델 확인 전까지 중단") from e
+
+
+class SmokeTransport:
+    """연동 테스트 중단 조건. 응답은 검사 전에 smoke_calls.jsonl에 먼저 남긴다."""
+
+    def __init__(self, inner, ws: Workspace, model_id: str):
+        self.inner, self.model_id = inner, model_id
+        self.log = ws.root / "smoke_calls.jsonl"
+        old = [json.loads(l) for l in self.log.read_text(encoding="utf-8").splitlines()] if self.log.exists() else []
+        self.spent = sum(r["cost_usd"] or 0.0 for r in old)
+
+    def __call__(self, system: str, user: str) -> dict:
+        if self.spent >= SMOKE_BUDGET_USD:
+            raise GateError(f"smoke 누계 비용 ${self.spent:.2f}가 상한 ${SMOKE_BUDGET_USD:.2f}에 도달")
+        try:
+            reply = self.inner(system, user)
+        except Exception as e:  # noqa: BLE001  상태 코드만 보고 나머지는 그대로 올린다
+            stop_on_status(e)
+            raise
+        price = llm.PRICE.get(reply["model"])
+        cost = (reply["input_tokens"] * price[0] + reply["output_tokens"] * price[1]) / 1e6 if price else None
+        self.spent += cost or 0.0
+        self.log.parent.mkdir(parents=True, exist_ok=True)
+        with open(self.log, "a", encoding="utf-8") as f:
+            f.write(json.dumps({**{k: reply[k] for k in ("model", "stop_reason", "input_tokens", "output_tokens",
+                                                          "request_id", "elapsed")},
+                                "cost_usd": cost, "text_head": reply["text"][:300],
+                                "time": time.strftime("%Y-%m-%dT%H:%M:%S")}, ensure_ascii=False) + "\n")
+        if reply["model"] != self.model_id:
+            raise GateError(f"응답 모델 불일치: {reply['model']} (고정 {self.model_id})")
+        if not cost:
+            raise GateError("호출 비용을 계산할 수 없음 (단가 없음 또는 토큰 0)")
+        if cost > SMOKE_CALL_CAP_USD:
+            raise GateError(f"호출 1회 비용 ${cost:.3f}가 상한 ${SMOKE_CALL_CAP_USD:.2f} 초과")
+        return reply
+
+
+def smoke_gate(args, step: str) -> tuple[Workspace, dict]:
+    """6A-0(ping)은 실험 데이터를 쓰지 않아 사전 주석 잠금 없이 열린다. 6A-1·2는 파일럿과 같은 조건."""
+    if args.paid != args.experiment:
+        raise GateError("--paid에 실험 ID를 그대로 적어야 유료 실행이 시작됨")
+    if not args.experiment.startswith(SMOKE_PREFIX):
+        raise GateError(f"연동 테스트 실험 ID는 '{SMOKE_PREFIX}'로 시작해야 함")
+    if step != "ping":
+        annotation_gate()
+        denominators()
+    versions = verify_versions()
+    if tracked_changes():
+        raise GateError(f"실험 폴더 밖 변경 있음: {tracked_changes()[:5]}")
+    ws = Workspace(REAL_ROOT / args.experiment, mock=False)
+    ws.prepare(SMOKE_PLAN, versions)
+    return ws, versions
+
+
+def smoke_client():
+    """키 값은 출력하지 않는다. 빈 .env도 여기서 걸린다."""
+    try:
+        client = llm.get_client()
+    except Exception as e:  # noqa: BLE001
+        raise GateError(f"API 클라이언트 생성 실패 ({type(e).__name__})") from None
+    if not getattr(client, "api_key", None):
+        raise GateError("API 키 없음")
+    return client
+
+
+def smoke_ping(client, transport: SmokeTransport, model_id: str) -> dict:
+    try:
+        found = getattr(client.models.retrieve(model_id), "id", None)
+    except Exception as e:  # noqa: BLE001
+        stop_on_status(e)
+        raise
+    reply = transport(*PING)
+    return {"model_lookup": found, "model_lookup_match": found == model_id,
+            "reply_ok": reply["text"].strip().strip(".").upper() == "OK",
+            "call": {k: reply[k] for k in ("model", "stop_reason", "input_tokens", "output_tokens")}}
+
+
+def run_smoke(step: str, ws: Workspace, versions: dict, client) -> dict:
+    """질문 텍스트는 출력하지 않는다. 결과 파일은 관리자만 본다."""
+    transport = SmokeTransport(RealTransport(client), ws, versions["model_id"])
+    if step == "ping":
+        result = smoke_ping(client, transport, versions["model_id"])
+    else:
+        done = execute(step, SMOKE_PLAN, ws, transport)
+        folder = ws.questions if step == "questions" else ws.downstream
+        result = {"done": dict(done), "runs": {}}
+        for e in SMOKE_PLAN:
+            f = folder / f"{e['run_key']}.json"
+            if f.exists():
+                r = read_json(f)
+                result["runs"][e["run_key"]] = {
+                    "status": r["status"], "failed_stage": r.get("failed_stage"),
+                    "n_final_questions": len(r.get("final_questions", [])),
+                    "d9_below_heuristic": r.get("d9_below_heuristic"), "not_asked_report": r.get("not_asked_report"),
+                    "calls": r["calls"]}
+    result.update(step=step, analysis="제외 (연동 테스트)", spent_usd=round(transport.spent, 4),
+                  budget_usd=SMOKE_BUDGET_USD)
+    n = 1
+    while (ws.root / f"smoke_{step}_{n:03d}.json").exists():
+        n += 1
+    write_new(ws.root / f"smoke_{step}_{n:03d}.json", result)
+    return result
 
 
 # ── 채점 연결 (STEP 4 scoring.py 재사용) ───────────────────
@@ -915,6 +1040,10 @@ def main() -> int:
         p = sub.add_parser(name, help="유료")
         p.add_argument("--experiment", required=True)
         p.add_argument("--paid", required=True, help="실험 ID를 다시 적는다")
+    p = sub.add_parser("smoke", help="유료 연동 테스트 (분석 제외)")
+    p.add_argument("step", choices=["ping", "questions", "downstream"])
+    p.add_argument("--experiment", required=True, help=f"'{SMOKE_PREFIX}'로 시작")
+    p.add_argument("--paid", required=True, help="실험 ID를 다시 적는다")
     for name, extra in (("packet", ["--seed"]), ("lock-scores", []), ("sim-audit", [])):
         p = sub.add_parser(name)
         p.add_argument("--workspace", type=Path, required=True)
@@ -951,6 +1080,10 @@ def main() -> int:
     elif args.cmd in ("questions", "downstream"):
         ws, plan, _ = paid_gate(args)
         print(dict(execute(args.cmd, plan, ws, RealTransport())))
+    elif args.cmd == "smoke":
+        client = smoke_client()   # 키가 없으면 결과 폴더를 만들기 전에 멈춘다
+        ws, versions = smoke_gate(args, args.step)
+        print(json.dumps(run_smoke(args.step, ws, versions, client), ensure_ascii=False, indent=2))
     elif args.cmd == "packet":
         ws = Workspace.existing(args.workspace)
         print(f"blind 세트 {len(build_rater_packet(ws, args.seed))}개")

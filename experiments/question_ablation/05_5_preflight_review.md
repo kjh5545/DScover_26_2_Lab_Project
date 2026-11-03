@@ -32,6 +32,8 @@
 | A2 | `ed0ac5be71424b91` |
 | A2s | `ac7d6c52495093fc` |
 
+**2026-11-03 갱신:** STEP 1~5.5 산출물을 로컬 커밋 `c9b71a9`로 보존하였다 (푸시 안 함). 이후 `smoke` 명령과 주석 보조 스크립트를 추가하였다. 테스트는 실행기 55/55, 주석 보조 10/10, 프롬프트 53/53, 채점 28/28 통과이고 `check` 결과는 위와 같다.
+
 `pilot_lock.json`에는 "미충족 조건" 필드가 없다. 고정 값만 있고, 미충족 여부는 `check`와 `annotation_record.json`으로 판단한다.
 
 ---
@@ -40,13 +42,13 @@
 
 | 번호 | 발견 | 영향 | 대응 |
 |---|---|---|---|
-| 1 | **소규모 실행 CLI가 없다.** `questions`는 항상 30회 전부 실행한다. | Phase 6A를 현재 명령으로 실행할 수 없다. | `smoke` 명령 구현 승인 필요. 다른 실험 ID로 `questions`를 실행하면 안 된다. |
-| 2 | `report`는 1회만 실행할 수 있다. | 6C에서 M1~M7만 먼저 집계할 수 없다. | 6D 끝에서 함께 집계 |
-| 3 | 사전 주석 일치도 계산, 등급 계산, 확정표 생성 도구가 없다. | 수작업 오류 위험. 등급은 "계산"이라고 지침에 있으나 CLI가 없다. | 수동 수행 또는 보조 스크립트 승인 |
+| 1 | **소규모 실행 CLI가 없다.** `questions`는 항상 30회 전부 실행한다. | Phase 6A를 현재 명령으로 실행할 수 없다. | **[해결]** `smoke` 명령 추가 (7.5절). `questions`·`downstream`은 `smoke`로 시작하는 실험 ID를 거부한다. |
+| 2 | `report`는 1회만 실행할 수 있다. | 6C에서 M1~M7만 먼저 집계할 수 없다. | **[결정]** 6D 끝에서 함께 집계 |
+| 3 | 사전 주석 일치도 계산, 등급 계산, 확정표 생성 도구가 없다. | 수작업 오류 위험. 등급은 "계산"이라고 지침에 있으나 CLI가 없다. | **[해결]** `evaluation/annotation_tools.py` 추가 (7.2절) |
 | 4 | 잠금 전 검증 전용 명령이 없다. `lock-annotation`은 검증에 통과하면 바로 잠근다. | 시험 삼아 실행할 수 없다. | 7절의 비잠금 검증 사용. 등급과 `h_strict`의 일치는 이 검증도 보지 않는다. |
-| 5 | `.env`는 파일 존재만 검사한다. | 빈 파일도 키 있음으로 표시된다. | 6A-0에서 실제 인증 확인 |
+| 5 | `.env`는 파일 존재만 검사한다. | 빈 파일도 키 있음으로 표시된다. | 6A-0에서 실제 인증 확인. `smoke`는 클라이언트의 키 값이 비어 있으면 결과 폴더를 만들기 전에 멈춘다. `check`와 파일럿 명령은 그대로이다. |
 | 6 | SDK 버전은 대조 대상이 아니다. | SDK를 올리면 API 버전이 바뀌어도 차단되지 않는다. | 가상환경의 SDK를 올리지 않는다. 다른 PC 실행 금지 또는 `anthropic==2.3.0` 설치 |
-| 7 | 응답 `model`이 가격표에 없으면 비용이 0으로 기록되고 멈추지 않는다. | 모델 불일치를 놓칠 수 있다. | 6A에서 확인. `attempts/`의 `model` 필드 점검 |
+| 7 | 응답 `model`이 가격표에 없으면 비용이 0으로 기록되고 멈추지 않는다. | 모델 불일치를 놓칠 수 있다. | `smoke`는 응답 모델 불일치와 비용 0을 차단한다. 파일럿 명령(6B·6D)은 여전히 차단하지 않으므로 `attempts/`의 `model` 필드를 점검한다. |
 | 8 | `lock-scores`와 `merge`는 재실행 시 덮어쓴다. | 잠금 후 수정이 코드로 막히지 않는다. | 1회만 실행, 해시 별도 기록 |
 | 9 | 결과 폴더가 `.gitignore`에 없고, 잠긴 CSV는 줄바꿈 보호가 없다. | 실수 커밋, 해시 불일치 | [git_backup_checklist.md](git_backup_checklist.md) |
 | 10 | 설계의 "M4a 상한 병기"가 구현되어 있지 않다. | 보고 누락 가능 | [M4a_team_review.md](M4a_team_review.md) 결정 6번 |
@@ -176,9 +178,27 @@ $env:PYTHONIOENCODING = "utf-8"
 $R = "experiments\question_ablation\run_pilot.py"
 ```
 
-### 7.2 사전 주석 파일 검증 (잠그지 않음)
+### 7.2 사전 주석 보조와 검증 (무료, 잠그지 않음)
 
-`S00x_final.csv`를 저장한 뒤 실행한다. 빈 목록 `[]`이 나와야 한다. 전용 CLI가 없어 기존 함수를 직접 호출한다.
+보조 스크립트는 값을 대신 정하지 않는다. 사람이 적은 값과 조정 결과로 등급, `h_strict`, `h_any`만 계산하며 결과 파일을 덮어쓰지 않는다. `<...>`는 실제 경로로 바꾼다.
+
+```powershell
+$A = "experiments\question_ablation\evaluation\annotation_tools.py"
+$P = "experiments\question_ablation\evaluation\preannotation"
+# 1. 주석자 제출 파일 형식 검사 (주석자도 제출 전에 쓸 수 있다)
+& $py $A check S004 <주석자1_S004.csv> --clusters <주석자1_S004_clusters.csv>
+# 2. 일치도와 조정 양식 (관리자·조정자). 결과: S004_annotation_agreement.json, S004_adjudication.csv
+& $py $A compare S004 <주석자1_S004.csv> <주석자2_S004.csv> --out <조정 폴더> --clusters <군집1.csv> <군집2.csv>
+# 3. 조정표의 final_value, reason, adjudicator_id를 채운 뒤 확정표 생성 → $P\S004_final.csv
+& $py $A finalize S004 <주석자1_S004.csv> <주석자2_S004.csv> --adjudication <조정 폴더>\S004_adjudication.csv --out $P
+```
+
+- `compare`는 값이 다르거나 양쪽 모두 UNSURE인 항목을 조정 양식에 넣는다. 등급 불일치는 직접성·핵심성 조정으로 해소된다.
+- `finalize`는 조정표가 현재 불일치와 정확히 같고 모든 행에 값·사유·조정자가 있을 때만 파일을 만든다. `final_askable`은 UNSURE로 확정할 수 없다.
+- `--score-columns`는 M4a 결정 5번(확정 점수 열 추가)이 승인된 경우에만 쓴다. 잠금 전에 정해야 한다.
+- 군집 확정표 `S00x_clusters.csv`는 조정자가 직접 작성하고 `check ... --clusters`로 검사한다.
+
+확정표를 저장한 뒤 실행기의 모집단 검사도 한다. 빈 목록 `[]`이 나와야 한다.
 
 ```powershell
 & $py -c "import sys; sys.path.insert(0,'experiments/question_ablation'); import run_pilot as r; b=r.ANNOTATION_RECORD.parent; [print(p, r.check_annotation_population(p, r.sc.read_csv(b/(p+'_final.csv')))) for p in r.PATIENTS]"
@@ -202,7 +222,22 @@ $R = "experiments\question_ablation\run_pilot.py"
 
 ### 7.5 소규모 실제 API 호출 (유료)
 
-**실행 가능한 명령이 없다.** Phase 6A의 `smoke`는 제안 상태이다. 대신 `questions`를 쓰면 30회가 호출된다.
+단계마다 따로 승인받는다. 결과는 `data\processed\question_ablation\smoke1\`에 저장되며 분석에서 제외한다. `--paid`에 실험 ID를 다시 적어야 시작된다.
+
+```powershell
+& $py $R smoke ping --experiment smoke1 --paid smoke1        # 6A-0: 모델 조회 + 고정 문구 1회. 사전 주석 잠금 불필요
+& $py $R smoke questions --experiment smoke1 --paid smoke1   # 6A-1: S004 C0·C_full 질문 2회. 잠금 필요
+& $py $R smoke downstream --experiment smoke1 --paid smoke1  # 6A-2: C_full 1세트 후속 판정 4~5회. 잠금 필요
+```
+
+| 자동 중단 | 내용 |
+|---|---|
+| 401·403·404 | 재시도 없이 즉시 중단 |
+| 응답 모델 | `claude-sonnet-5-5`와 다르면 중단 |
+| 비용 | 호출 1회 $0.20 초과, 단가를 몰라 비용이 0이면 중단. 같은 폴더 누계 $1.00에 도달하면 다음 호출 전에 중단 |
+| 기타 | 파일럿과 같다: API 오류 3회 연속, 형식 실패 2회, 고정 값 변경 |
+
+모든 응답은 검사 전에 `smoke_calls.jsonl`에 남는다. 출력에는 질문 문장을 넣지 않는다. **`questions`를 다른 실험 ID로 실행하면 30회가 호출되므로 연동 테스트에 쓰지 않는다.**
 
 ### 7.6 전체 질문 생성 (유료, 승인 후)
 
@@ -258,8 +293,8 @@ $seed = Get-Random -Maximum 2147483647
 | 3 | 판정기 고정 항목 확인 | 인선 님, 주희 님 | 5절 |
 | 4 | "기억나지 않아요" 처리 | 팀 | 파일럿은 현행 고정, 한계로 보고 |
 | 5 | API 키 수령과 비용 공지 | 주희 님, 팀 | 저장소 팀 규칙 |
-| 6 | `smoke` 구현 승인 | 사용자 | 승인 권장 |
-| 7 | 주석 보조 스크립트 승인 | 사용자 | 승인 권장 |
-| 8 | Git 백업 시점과 푸시 | 사용자 | 로컬 커밋 먼저, 푸시는 채점 잠금 후 |
-| 9 | M1~M7 집계 시점 | 사용자 | 6D 끝 |
+| 6 | `smoke` 구현 승인 | 사용자 | **승인·구현 완료 (2026-11-03)** |
+| 7 | 주석 보조 스크립트 승인 | 사용자 | **승인·구현 완료 (2026-11-03)** |
+| 8 | Git 백업 시점과 푸시 | 사용자 | **로컬 커밋 `c9b71a9` 완료.** 푸시는 채점 잠금 후 |
+| 9 | M1~M7 집계 시점 | 사용자 | **결정: 6D 끝** |
 | 10 | 해준 님 실행 코드와 중복 여부 | 팀 | 실행 전 확인 |
