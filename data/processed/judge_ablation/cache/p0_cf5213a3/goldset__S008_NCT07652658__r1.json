@@ -1,0 +1,80 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "Patient is 60 years old, which meets the age ≥ 40 requirement.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "The suspected diagnosis is IPF with a UIP pattern (basal reticular opacities with honeycombing, clubbing, dyspnea, dry cough). A confirmed IPF diagnosis, with other ILD causes excluded, is not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "Medications list is empty. The patient either receives no antifibrotics or has not been asked. Either arm of the criterion could be satisfied, but antifibrotic use and dose stability are not documented.",
+    "sub_condition_notes": [
+      "Stable-dose antifibrotic: unknown",
+      "Not receiving standard of care: unknown"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "No pulmonary function test results (FVC % predicted) are provided.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "unknown",
+    "evidence": "No DLCO or hemoglobin values are provided.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "The presentation is consistent with IPF, but a full evaluation (exposures, connective tissue disease serology, etc.) to exclude other ILDs is not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "CT describes basal reticular opacities with honeycombing, and emphysema is not mentioned. The relative extent of emphysema versus fibrosis is not stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "Dyspnea is described as progressive, with no mention of acute worsening. An acute exacerbation is not documented, but it is not explicitly ruled out.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No information on a lower respiratory tract infection. The cough is described as dry, but infection is not explicitly ruled out.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "History is empty. No cardiac history is documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No heart failure diagnosis is documented, but dyspnea has not been attributed to a cause beyond the suspected IPF, and history is empty.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No history of transplantation or lung transplant listing is documented.",
+    "sub_condition_notes": [
+      "Prior organ transplant: unknown",
+      "Likely to receive lung transplant: unknown"
+    ]
+  }
+]

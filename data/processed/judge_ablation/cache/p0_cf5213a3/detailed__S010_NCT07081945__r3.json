@@ -1,0 +1,61 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is obtained only when the patient is approached and enrolled; no consent information is given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "Patient is 73 years old; the criterion requires age 18-70.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "Rhegmatogenous RD with a single horseshoe tear at 5 o'clock inside the detached area, which is an inferior break between 4 and 8 o'clock.",
+    "sub_condition_notes": [
+      "Inferior break between 4 and 8 o'clock within the detached area: met (tear at 5 o'clock).",
+      "Retinotomy requirement: not needed, since only one of the two conditions is required."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "The tear is a horseshoe tear at 5 o'clock, not described as only anterior breaks or dialysis, and no indication for scleral buckling is stated.",
+    "sub_condition_notes": [
+      "Only anterior breaks or dialysis: not present (single horseshoe tear at 5 o'clock).",
+      "Meets scleral buckling indications: not indicated."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "The 5 o'clock tear is inside the detached area, so it is not a break outside the detached area.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "fail",
+    "evidence": "Patient has primary open-angle glaucoma in both eyes, and glaucoma is explicitly listed as a pre-existing serious eye disease.",
+    "sub_condition_notes": [
+      "Glaucoma is controlled with latanoprost but is still a pre-existing glaucoma diagnosis."
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No history of epilepsy or serious psychiatric disease is mentioned, but it is not explicitly ruled out.",
+    "sub_condition_notes": [
+      "Epilepsy: not documented.",
+      "Serious psychiatric disease: not documented."
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "post_enrollment",
+    "evidence": "This depends on the investigator's judgment, which only the study team can make.",
+    "sub_condition_notes": []
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "fail",
+    "evidence": "The patient has a new 3-week presentation with suspected minimal change disease. No renal biopsy is documented, and he has not yet received corticosteroids, so steroid responsiveness is unestablished.",
+    "sub_condition_notes": [
+      "Clinical NS diagnosis: consistent (heavy proteinuria, low albumin, edema), but not yet formally confirmed.",
+      "Biopsy-confirmed MCD/FSGS within 7/10 years: no biopsy reported.",
+      "Corticosteroid responsiveness: no steroid therapy yet, so not established."
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "The patient is newly presenting with active nephrotic syndrome and has had no corticosteroid therapy or complete remission, so he cannot be within 8 weeks of a remission."
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "The profile suggests primary nephrotic syndrome (likely minimal change disease), but no workup for secondary causes (infection, drugs, systemic disease) is documented."
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "Genetic testing and family history of nephrotic syndrome are not mentioned. This can be asked of the family."
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "pass",
+    "evidence": "The medication list is empty and no prior B-cell therapy is reported. The patient is newly presenting, which makes prior rituximab or similar unlikely."
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No allergy history is provided. It can be obtained from the family."
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "The medication list is empty, with no immunosuppressant use reported and a new presentation."
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No medications are listed, but receipt of immunoglobulin or immunomodulators such as thymosin is not explicitly addressed. It can be confirmed with the family."
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Participation in other trials is not mentioned, and neither is any plan to participate in one."
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Serum creatinine, eGFR and liver enzymes are not reported. Only albumin (low) and urinalysis are given."
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "No HBsAg, HCV, syphilis or HIV results are reported. They are obtainable through testing or records."
+  }
+]

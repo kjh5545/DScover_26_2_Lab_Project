@@ -1,0 +1,108 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"A 60-year-old woman\" – age 60 years is ≥ 18.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Clinical picture (progressive dyspnea, dry cough, clubbing) and CT with \"bilateral basal reticular opacities with honeycombing\" suggest IPF/UIP. However, the IPF diagnosis is only \"suspected\" in the profile; no formal diagnosis fulfilling ATS/ERS criteria (exclusion of other causes, multidisciplinary review) is on record.",
+    "sub_condition_notes": [
+      "Suspected diagnosis only, not a confirmed formal diagnosis",
+      "UIP-pattern CT with honeycombing is supportive"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "Description mentions progressive dyspnea and honeycombing (UIP background) but no hospitalisation, no acute worsening of <1 month, no new bilateral ground-glass opacity/consolidation, and no information about cardiac failure/fluid overload exclusion.",
+    "sub_condition_notes": [
+      "Previous or concurrent IPF diagnosis: only suspected; UIP radiologic pattern present on current evaluation (could satisfy the alternate pathway)",
+      "Acute worsening of dyspnoea <1 month: only 'progressive' dyspnea, duration not stated",
+      "CT with new bilateral ground-glass opacity/consolidation: not described (only reticular opacities with honeycombing)",
+      "Deterioration not explained by cardiac failure/fluid overload: not given",
+      "Hospitalised: not stated"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "No information on the patient's capacity to understand and sign informed consent or on a legal representative.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information on heart failure or pulmonary embolism assessment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No allergy or hypersensitivity history is provided.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No IgA level or IgA deficiency information is provided.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Diagnosis is only \"suspected\" (IPF, UIP pattern); no record of a definite diagnosis after multidisciplinary discussion, nor evidence that it was ruled out.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No mention of malignancy or cancer treatment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Medications list is empty and no steroid or immunosuppressant use is described; absence of mention does not confirm none.",
+    "sub_condition_notes": [
+      "Prednisone >20 mg/day for >14 days in past month: not documented",
+      "Any immunosuppressant in last month: not documented",
+      ">1 mg/kg/d for >7 days in last 15 days: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No information on participation in other interventional trials.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Patient is a 60-year-old woman; pregnancy is very unlikely at this age but lactation/pregnancy is not documented either way.",
+    "sub_condition_notes": [
+      "Pregnancy: not documented (unlikely given age)",
+      "Lactation: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "No information on tutorship or curatorship status.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "No information on deprivation of liberty or court protection.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness to participate and provide consent is determined only when the patient is approached by the study team; nothing is stated in the description.",
+    "sub_condition_notes": []
+  }
+]

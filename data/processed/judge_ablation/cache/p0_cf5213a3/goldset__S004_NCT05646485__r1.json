@@ -1,0 +1,48 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "Patient is 68 years old, which meets the age ≥ 50 requirement.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "The description says 'long smoking history' but gives no pack-year quantification, so ≥15 pack-years cannot be confirmed. This can be obtained by asking the patient.",
+    "sub_condition_notes": [
+      "Pack-year history not quantified"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No occupational history is given. Whether the patient has ≥15 years of exposure as a textile worker, painter, or dry cleaner can be obtained by asking the patient.",
+    "sub_condition_notes": [
+      "The criterion's wording is ambiguous: it may be an alternative to the smoking criterion rather than an additional requirement"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No prior bladder, kidney, or prostate cancer is mentioned, but the history does not explicitly rule it out. The current presentation is a suspected new diagnosis.",
+    "sub_condition_notes": [
+      "Prior bladder cancer: not documented",
+      "Prior kidney cancer: not documented",
+      "Prior prostate cancer: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "The patient presents with gross hematuria and a bladder mass on CT urography. It is not stated whether hematuria was evaluated in the past 2 years or whether this is the first evaluation. The patient can be asked.",
+    "sub_condition_notes": [
+      "Current presentation may itself be the evaluation, and prior evaluation timing is not given"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is obtained only after the patient applies and is approached by the study team. No refusal is documented.",
+    "sub_condition_notes": []
+  }
+]

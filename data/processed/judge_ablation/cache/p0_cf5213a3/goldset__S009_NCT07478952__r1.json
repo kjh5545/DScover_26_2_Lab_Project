@@ -1,0 +1,75 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "fail",
+    "evidence": "Patient presents with fever, sore throat, fatigue, lymphadenopathy, splenomegaly and a positive monospot (active infectious mononucleosis), so he is not healthy on medical evaluation.",
+    "sub_condition_notes": [
+      "Active acute illness on exam and labs; not healthy"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "Patient is male (assigned male at birth), so pregnancy/breastfeeding restriction does not apply.",
+    "sub_condition_notes": [
+      "Male; criterion not applicable"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information on recent or planned surgical procedures. Splenomegaly may lead to activity restrictions but no surgery is mentioned.",
+    "sub_condition_notes": [
+      "Surgery within 7 days prior: not given",
+      "Scheduled surgery within 28 days after intervention: not given"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "History is empty; no immunodeficiency, asplenia or recurrent severe infection reported. Spleen is present (splenomegaly), but other history is not documented.",
+    "sub_condition_notes": [
+      "Asplenia: not present, since splenomegaly is noted",
+      "Immunodeficiency/immunosuppressive condition/recurrent severe infections: not documented, needs confirmation"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No medications listed; corticosteroid use in the past 90 days is not explicitly confirmed. Steroids are sometimes used in mononucleosis complications, so future need is uncertain.",
+    "sub_condition_notes": [
+      "Past corticosteroid use: not documented",
+      "Anticipated need during study: cannot be determined"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Medications list is empty, but past 180-day immunosuppressive treatment history has not been explicitly confirmed.",
+    "sub_condition_notes": [
+      "Prior systemic immunosuppressants: not documented",
+      "Future plans: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "Vaccination history and future vaccine plans are not provided.",
+    "sub_condition_notes": [
+      "Vaccines in prior 28 days: not given",
+      "Planned vaccines through Day 85: not given"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No history of myocarditis/pericarditis recorded, but history field is empty and not explicitly confirmed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No information on prior investigational EBV vaccine receipt; unlikely but not documented.",
+    "sub_condition_notes": []
+  }
+]

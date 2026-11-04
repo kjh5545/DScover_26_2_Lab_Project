@@ -1,0 +1,35 @@
+{
+  "age": 24,
+  "age_unit": "years",
+  "sex": "M",
+  "suspected_diagnosis": "Uncontrolled severe eosinophilic (likely allergic) asthma",
+  "findings": [
+    "worsening wheezing",
+    "chest tightness",
+    "night-time cough despite daily inhaled corticosteroid use",
+    "asthma attack after exposure to a cat",
+    "no fever",
+    "resting oxygen saturation is 97% on room air",
+    "BMI is 24 kg/m²"
+  ],
+  "history": [
+    "asthma since childhood, diagnosed by a pulmonologist at age 8",
+    "no other lung disease",
+    "emergency department visit ten days ago for an asthma attack after exposure to a cat",
+    "treated with a 5-day course of oral prednisone without antibiotics",
+    "never smoked cigarettes, vaped, or used cigars or marijuana",
+    "works as a graphic designer",
+    "first dupilumab injection scheduled for next week"
+  ],
+  "medications": [
+    "high-dose budesonide-formoterol twice daily",
+    "oral prednisone 5-day course (recent)",
+    "dupilumab (planned, first injection next week)"
+  ],
+  "labs": [
+    "Spirometry two weeks ago (met ATS quality criteria): FEV1 68% of predicted",
+    "blood eosinophil count 450 cells/μL",
+    "chest X-ray normal (at ED visit)"
+  ],
+  "id": "N002_detailed_7656a30d"
+}

@@ -1,0 +1,93 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "No information on the patient's capacity to understand or willingness to sign consent is given.",
+    "sub_condition_notes": [
+      "Ability to understand: not stated",
+      "Willingness to sign: not stated"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "\"macula-off rhegmatogenous retinal detachment extending inferiorly from the 3 to 9 o'clock positions, with a single horseshoe tear at the 5 o'clock position\"; no prior retinal surgery, so primary. The 5 o'clock tear is an inferior break.",
+    "sub_condition_notes": [
+      "Primary: \"never had retinal surgery or scleral buckling in either eye\" - met",
+      "Rhegmatogenous: met",
+      "Inferior breaks: tear at 5 o'clock lies in the inferior half - met"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "73-year-old man; 18 or older.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "pass",
+    "evidence": "Patient is male, so this criterion about women of child-bearing potential does not apply.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "Age 73, not pediatric.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "Patient is male, so pregnancy is ruled out.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "pass",
+    "evidence": "\"has never had retinal surgery or scleral buckling in either eye\"; the right-eye cataract surgery was not a retinal detachment repair.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "pass",
+    "evidence": "\"never had retinal surgery or scleral buckling in either eye\"",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "\"he has had no injury to the eye or head\"; detachment has a horseshoe tear with flashes and floaters, consistent with a non-traumatic cause.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "Symptomatic with acute onset: \"The symptoms began two days ago\" with curtain-like vision loss, so not asymptomatic or longstanding.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No information on the patient's expected compliance with post-operative treatment; this can only be seen after surgery.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "pass",
+    "evidence": "\"uncomplicated cataract surgery with an intraocular lens implant in the right eye two years ago\"; the study eye is pseudophakic, not phakic.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "pass",
+    "evidence": "\"no sign of an exudative detachment\"; the detachment is rhegmatogenous.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "pass",
+    "evidence": "\"There is no retinoschisis\"",
+    "sub_condition_notes": []
+  }
+]

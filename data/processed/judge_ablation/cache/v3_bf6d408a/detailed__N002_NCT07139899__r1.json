@@ -1,0 +1,178 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is completed and documented only after the patient applies to the study.",
+    "sub_condition_notes": [
+      "Consent process: post_enrollment",
+      "Written documentation: post_enrollment"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "\"A 24-year-old man\"",
+    "sub_condition_notes": [
+      "Age >= 18: yes (24)",
+      "Age <= 65: yes (24)"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "\"A pulmonologist diagnosed asthma when he was 8 years old\"; he is now 24.",
+    "sub_condition_notes": [
+      "Physician diagnosis of asthma: yes, by a pulmonologist",
+      "Duration > 1 year: diagnosed at age 8, now 24 (about 16 years)"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "pass",
+    "evidence": "\"Spirometry two weeks ago met ATS quality criteria and showed an FEV1 of 68% of predicted\"",
+    "sub_condition_notes": [
+      "Able to perform ATS-quality spirometry: yes",
+      "PFTs within 30 days: two weeks ago, so within 30 days of now"
+    ]
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "pass",
+    "evidence": "No restriction by race or ethnicity, so the patient is not excluded on this basis.",
+    "sub_condition_notes": [
+      "No restriction by race/ethnicity"
+    ]
+  },
+  {
+    "criterion_id": "I6",
+    "verdict": "pass",
+    "evidence": "\"his blood eosinophil count is 450 cells/μL\"",
+    "sub_condition_notes": [
+      "450 > 300"
+    ]
+  },
+  {
+    "criterion_id": "I7",
+    "verdict": "pass",
+    "evidence": "\"He has never smoked cigarettes, vaped, or used cigars or marijuana.\"",
+    "sub_condition_notes": [
+      "Smoking history < 10 pack-years: never smoked, so 0 pack-years"
+    ]
+  },
+  {
+    "criterion_id": "I8",
+    "verdict": "pass",
+    "evidence": "\"He has never smoked cigarettes, vaped, or used cigars or marijuana.\"",
+    "sub_condition_notes": [
+      "No cigarettes: pass",
+      "No vaping: pass",
+      "No cigars: pass",
+      "No marijuana: pass"
+    ]
+  },
+  {
+    "criterion_id": "I9",
+    "verdict": "pass",
+    "evidence": "\"his pulmonologist has scheduled his first dupilumab injection for next week as part of standard care\"",
+    "sub_condition_notes": [
+      "About to initiate dupilumab: yes",
+      "Part of standard of care: yes"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "The recent ED visit was for an asthma attack after cat exposure, with no fever, a normal chest X-ray, and no antibiotics. No respiratory tract infection is stated, but the description does not explicitly rule one out.",
+    "sub_condition_notes": [
+      "Respiratory tract infection within 4 weeks: not stated either way"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "\"His BMI is 24 kg/m²\"",
+    "sub_condition_notes": [
+      "BMI 24 is not > 30. Visit 1 measurement may be repeated at screening, but the current value does not exclude him."
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "There is no mention of one-time doses or intra-articular injections. Only a 5-day oral prednisone course is described, which is not a one-time dose.",
+    "sub_condition_notes": [
+      "One-time doses within 4 weeks: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "fail",
+    "evidence": "\"Ten days ago he visited the emergency department for an asthma attack after exposure to a cat\"",
+    "sub_condition_notes": [
+      "Asthma-related ER visit within 4 weeks before Visit 1: yes, 10 days ago",
+      "ER visit while on study: not yet applicable"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "post_enrollment",
+    "evidence": "This is determined by the Investigator. The patient states \"he has no other lung disease\", but other illnesses are not described.",
+    "sub_condition_notes": [
+      "Heart disease: not stated",
+      "Cancer: not stated",
+      "Uncontrolled diabetes: not stated",
+      "Other chronic lung diseases: none per patient",
+      "Other significant illness: investigator determination"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "\"his resting oxygen saturation is 97% on room air\"",
+    "sub_condition_notes": [
+      "97% on room air is not < 90%"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "pass",
+    "evidence": "The patient is a 24-year-old man, so a positive pregnancy test is not possible.",
+    "sub_condition_notes": [
+      "Visit 1: male",
+      "During study: male"
+    ]
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "There is no mention of participation in intervention studies, investigational drug use, or plans to enroll in other trials.",
+    "sub_condition_notes": [
+      "Intervention study within 30 days: not stated",
+      "Investigational drugs within 30 days: not stated",
+      "Plans to enroll in another trial: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "post_enrollment",
+    "evidence": "This depends on the Investigator's opinion.",
+    "sub_condition_notes": [
+      "Investigator opinion"
+    ]
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "post_enrollment",
+    "evidence": "This depends on the Investigator's opinion.",
+    "sub_condition_notes": [
+      "Investigator opinion"
+    ]
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "This is determined by the MRI safety screening done by the study team. No implant history is described.",
+    "sub_condition_notes": [
+      "MRI safety screening: post_enrollment"
+    ]
+  }
+]

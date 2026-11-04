@@ -1,0 +1,42 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "A 68-year-old man; age 68 is ≥ 50.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "The description only says \"a long smoking history\". It gives no pack-year quantity, so ≥15 pack-years cannot be confirmed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No occupation or occupational exposure is mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No prior history of bladder, kidney, or prostate cancer is stated. The bladder mass is a current finding, and its history is not described.",
+    "sub_condition_notes": [
+      "Bladder cancer prior history: not mentioned",
+      "Kidney cancer prior history: not mentioned",
+      "Prostate cancer prior history: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "He presents with painless gross hematuria and CT urography showed a bladder wall mass. It is not stated whether any hematuria evaluation took place in the last 2 years before this presentation.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness to provide informed consent can only be determined when the patient is approached for the study.",
+    "sub_condition_notes": []
+  }
+]

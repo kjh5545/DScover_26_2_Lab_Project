@@ -1,0 +1,58 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "Patient is 7 years old (under 16) and male, with nephrotic-type presentation: \"heavy proteinuria without hematuria, and serum albumin is low.\" However, no formal nephrotic syndrome diagnosis is on record, and the description gives no information on glucocorticoid treatment, dose, or taper. Medications list is empty.",
+    "sub_condition_notes": [
+      "Under 16 years, either gender: age 7, male - met",
+      "Nephrotic patient: symptoms suggest it, but no formal diagnosis stated - unknown",
+      "Treated with GC for the first time: no treatment information given - unknown",
+      "Initiated at 2 mg/kg/day prednisolone with gradual reduction: not described - unknown"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Description gives only a 3-week symptom history; no mention of glucocorticoid therapy duration or vitamin D level.",
+    "sub_condition_notes": [
+      "On glucocorticoid therapy for more than 6 months: not stated - unknown",
+      "Vitamin D level 30 ng/ml or above: no value given - unknown"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No kidney function tests (creatinine, eGFR) are given; only heavy proteinuria and low albumin are reported.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "post_enrollment",
+    "evidence": "Compliance with medications or vitamin supplements is adherence-related and can only be assessed during the study; the patient has no medications listed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No mention of gallbladder/biliary disease, cystic fibrosis, celiac disease or other fat-soluble vitamin malabsorption conditions.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No mention of bleeding disorders, osteomalacia, or other vitamin K-related disorders in the history.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No information on prior bone fractures in the description.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No genetic testing or family history information is given; absence of a genetic cause cannot be confirmed from the description.",
+    "sub_condition_notes": []
+  }
+]

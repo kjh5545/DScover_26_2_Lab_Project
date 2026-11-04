@@ -1,0 +1,112 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "A 60-year-old woman",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "Diagnosed with IPF by her pulmonologist 14 months ago; HRCT shows UIP pattern with honeycombing, fibrosis predominating, only minimal emphysema, ANA negative.",
+    "sub_condition_notes": [
+      "Formal ATS/ERS criteria assessment is not explicitly stated, but the diagnosis and UIP pattern are documented."
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "fail",
+    "evidence": "She is followed in the outpatient clinic and has not been hospitalized for her lung disease; breathlessness has worsened gradually over 18 months without any sudden change.",
+    "sub_condition_notes": [
+      "Hospitalised with definite/suspected AE-IPF: not hospitalized.",
+      "Previous diagnosis of IPF: met.",
+      "Acute worsening of dyspnoea <1 month: not met; gradual worsening over 18 months without any sudden change.",
+      "CT with new bilateral ground-glass opacity/consolidation: not described; CT shows reticular opacities with honeycombing.",
+      "Deterioration not explained by cardiac failure: echo normal, but the other criteria are not met."
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "Ability to understand and sign informed consent is determined at enrollment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "No acute worsening described (gradual worsening over 18 months without any sudden change); echocardiogram last month showed normal left ventricular function.",
+    "sub_condition_notes": [
+      "Uncontrolled heart failure: normal LV function.",
+      "Pulmonary embolism: not mentioned, but there is no acute worsening to attribute to it."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No information on allergies or hypersensitivity to corticosteroids, IVIG or study treatment components.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "IgA level or IgA deficiency not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "pass",
+    "evidence": "Diagnosed with idiopathic pulmonary fibrosis by her pulmonologist 14 months ago; HRCT shows a UIP pattern, ANA negative.",
+    "sub_condition_notes": [
+      "Multidisciplinary discussion is not explicitly mentioned, but a definite IPF diagnosis is on record."
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No mention of malignancy or cancer treatment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Medications listed are nintedanib, omeprazole and levothyroxine; no corticosteroids or immunosuppressants are mentioned, but the list may not be exhaustive.",
+    "sub_condition_notes": [
+      "Prednisone >20 mg for >14 days in the last month: not mentioned.",
+      "Immunosuppressants in the last month: not mentioned.",
+      ">1 mg/kg/d for >7 days in the last 15 days: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No information on participation in another interventional trial.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "pass",
+    "evidence": "She is 60 years old and postmenopausal, so pregnancy is ruled out.",
+    "sub_condition_notes": [
+      "Pregnancy: ruled out by postmenopausal status.",
+      "Lactation: not mentioned; unlikely given age and postmenopausal status, but not stated."
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "No information on tutorship or curatorship.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "No information on deprivation of liberty or court protection.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness to participate and provide consent is determined at enrollment.",
+    "sub_condition_notes": []
+  }
+]

@@ -1,0 +1,178 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is completed and documented after the patient applies; nothing in the description addresses it.",
+    "sub_condition_notes": [
+      "Consent process: post_enrollment",
+      "Written documentation: post_enrollment"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "A 24-year-old man.",
+    "sub_condition_notes": [
+      "Age >= 18: yes (24)",
+      "Age <= 65: yes (24)"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "A pulmonologist diagnosed asthma when he was 8 years old; he is now 24.",
+    "sub_condition_notes": [
+      "Physician diagnosis of asthma: yes, by a pulmonologist",
+      "Duration > 1 year: diagnosed about 16 years ago"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "pass",
+    "evidence": "Spirometry two weeks ago met ATS quality criteria and showed an FEV1 of 68% of predicted.",
+    "sub_condition_notes": [
+      "Able to perform spirometry per ATS criteria: yes, it met ATS quality criteria",
+      "PFTs within previous 30 days: two weeks ago"
+    ]
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "pass",
+    "evidence": "The criterion places no restriction by race or ethnicity.",
+    "sub_condition_notes": [
+      "No restriction by race/ethnicity: satisfied"
+    ]
+  },
+  {
+    "criterion_id": "I6",
+    "verdict": "pass",
+    "evidence": "His blood eosinophil count is 450 cells/μL.",
+    "sub_condition_notes": [
+      "450 > 300: yes"
+    ]
+  },
+  {
+    "criterion_id": "I7",
+    "verdict": "pass",
+    "evidence": "He has never smoked cigarettes, vaped, or used cigars or marijuana.",
+    "sub_condition_notes": [
+      "Smoking < 10 pack-years: never smoked, so 0 pack-years"
+    ]
+  },
+  {
+    "criterion_id": "I8",
+    "verdict": "pass",
+    "evidence": "He has never smoked cigarettes, vaped, or used cigars or marijuana.",
+    "sub_condition_notes": [
+      "No cigarette smoking in last 3 months: yes",
+      "No vaping in last 3 months: yes",
+      "No cigar use in last 3 months: yes",
+      "No marijuana use in last 3 months: yes"
+    ]
+  },
+  {
+    "criterion_id": "I9",
+    "verdict": "pass",
+    "evidence": "His pulmonologist has scheduled his first dupilumab injection for next week as part of standard care.",
+    "sub_condition_notes": [
+      "About to initiate dupilumab: yes, first injection next week",
+      "Part of standard of care: yes, stated explicitly"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "He had no fever, his chest X-ray was normal, and he was treated with prednisone without antibiotics; the ED visit was attributed to cat exposure.",
+    "sub_condition_notes": [
+      "Respiratory tract infection within 4 weeks: no infection described; the recent exacerbation was an allergen-triggered attack with no fever, normal chest X-ray, and no antibiotics"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "His BMI is 24 kg/m².",
+    "sub_condition_notes": [
+      "BMI > 30: no (24). Visit 1 measurement will be confirmed at screening."
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No mention of one-time doses or intra-articular injections. Only the oral prednisone course and the planned dupilumab injection are described.",
+    "sub_condition_notes": [
+      "One-time doses within 4 weeks prior to Visit 1: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "fail",
+    "evidence": "Ten days ago he visited the emergency department for an asthma attack after exposure to a cat.",
+    "sub_condition_notes": [
+      "Asthma-related ER visit within 4 weeks before Visit 1: yes, 10 days ago",
+      "ER visit while on study: not yet applicable, and cannot be known before enrollment"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "post_enrollment",
+    "evidence": "The criterion is determined by the Investigator. The description states he has no other lung disease, but no other medical history is given.",
+    "sub_condition_notes": [
+      "Heart disease: not mentioned",
+      "Cancer: not mentioned",
+      "Uncontrolled diabetes: not mentioned",
+      "Other chronic lung diseases: none per description ('no other lung disease')",
+      "Other significant illness per Investigator: post_enrollment"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "His resting oxygen saturation is 97% on room air.",
+    "sub_condition_notes": [
+      "SpO2 < 90% despite maximum supplemental O2: no, 97% on room air"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "pass",
+    "evidence": "The patient is a 24-year-old man, so a positive pregnancy test is not possible.",
+    "sub_condition_notes": [
+      "Positive pregnancy test at Visit 1: not applicable (male)",
+      "At any time during study: not applicable (male)"
+    ]
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "No information is given on participation in intervention studies, investigational drug use, or plans to enroll in other trials.",
+    "sub_condition_notes": [
+      "Intervention study within 30 days: not stated",
+      "Investigational drugs within 30 days: not stated",
+      "Plans to enroll in other trial: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "post_enrollment",
+    "evidence": "This depends on the Investigator's opinion.",
+    "sub_condition_notes": [
+      "Investigator opinion: post_enrollment"
+    ]
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "post_enrollment",
+    "evidence": "This depends on the Investigator's opinion.",
+    "sub_condition_notes": [
+      "Investigator opinion: post_enrollment"
+    ]
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "This is determined by MRI safety screening done by the study team; no implant or device history is given.",
+    "sub_condition_notes": [
+      "MRI safety screening: post_enrollment"
+    ]
+  }
+]

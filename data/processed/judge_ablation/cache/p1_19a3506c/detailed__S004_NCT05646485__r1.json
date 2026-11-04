@@ -1,0 +1,48 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "A 68-year-old man; age 68 ≥ 50.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "\"He has smoked about one pack a day for 45 years and is still smoking.\" This is about 45 pack-years, which is ≥15.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "The description does not mention his occupation or any occupational exposure (textile worker, painter, dry cleaner). This could be obtained by asking the patient.",
+    "sub_condition_notes": [
+      "Occupation: not stated",
+      "Duration of ≥15 years of exposure: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "The current bladder tumor is only suspected, and \"No histopathological diagnosis has been established yet.\" The description does not mention any prior bladder, kidney, or prostate cancer, but an absence of mention for an exclusion criterion does not confirm it is absent.",
+    "sub_condition_notes": [
+      "Prior bladder cancer: none mentioned; the current tumor is a new, unconfirmed finding",
+      "Prior kidney cancer: not mentioned",
+      "Prior prostate cancer: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "The hematuria began three weeks ago, and the current workup (CT urography, cystoscopy) is part of this episode. The description does not say whether he had any hematuria evaluation in the prior 2 years. Whether the current workup counts as a \"prior evaluation\" is also unclear.",
+    "sub_condition_notes": [
+      "Micro hematuria evaluation in the last 2 years: not stated",
+      "Gross hematuria evaluation in the last 2 years: only the current episode is described, which began 3 weeks ago"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is given only when the patient is approached for enrollment. The description does not say whether he will consent.",
+    "sub_condition_notes": []
+  }
+]

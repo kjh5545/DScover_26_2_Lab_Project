@@ -1,0 +1,104 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "Patient has severe epigastric pain radiating to the back and markedly elevated lipase and amylase, but the INSPPIRE criteria are not defined here and no formal diagnosis of acute pancreatitis is on record (it is only a suspected diagnosis). No imaging is described.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "\"A 54-year-old man\" – outside the 3 to 18 years age range.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "Severe epigastric pain is described, but no NRS or FLACC score is given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "No information on analgesic use before presentation; medications list is empty but this does not confirm no analgesic was taken.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "post_enrollment",
+    "evidence": "Consent to participate is determined after applying/at enrollment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information about when or whether the patient last took paracetamol, ibuprofen or metamizole.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No allergy information is given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "Inflammatory bowel disease is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No mention of gastrointestinal or other active bleeding.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "Gastric/duodenal ulcer disease is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Medications list is empty, but chronic use of paracetamol/NSAIDs/metamizole is not explicitly excluded.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Liver failure is not mentioned; chronic alcohol use does not establish it.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Heart failure is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "Renal function and renal failure are not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "Cancer history is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Legal guardian consent is determined at enrollment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E12",
+    "verdict": "post_enrollment",
+    "evidence": "The patient's consent to participate is determined at enrollment.",
+    "sub_condition_notes": []
+  }
+]

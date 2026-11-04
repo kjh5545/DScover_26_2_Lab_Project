@@ -1,0 +1,115 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"A 60-year-old woman\"",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "\"diagnosed with idiopathic pulmonary fibrosis by her pulmonologist 14 months ago\"; HRCT \"shows a usual interstitial pneumonia pattern\" with honeycombing, ANA negative, former smoker. A formal IPF diagnosis on record with a UIP pattern is consistent with ATS/ERS criteria.",
+    "sub_condition_notes": [
+      "IPF diagnosis on record: yes",
+      "UIP pattern on HRCT: yes",
+      "Alternative causes (e.g., CTD): ANA negative, no other cause described"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "fail",
+    "evidence": "She \"has not been hospitalized for her lung disease\" and her breathlessness \"has worsened gradually over the past 18 months without any sudden change\". There is no acute worsening (<1 month) and no new bilateral ground-glass opacity or consolidation on CT, only basal reticular opacities with honeycombing.",
+    "sub_condition_notes": [
+      "Previous/concurrent IPF diagnosis: met",
+      "Acute worsening of dyspnoea <1 month: not met (gradual over 18 months)",
+      "New bilateral GGO/consolidation on UIP background: not met (no such finding reported)",
+      "Deterioration not explained by cardiac failure: echo normal, but the other criteria are not met",
+      "Hospitalised: not met"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "No information on her ability to understand and sign informed consent or on a legal representative. Nothing suggests incapacity.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "There is no acute worsening, and the \"echocardiogram last month showed normal left ventricular function\". No pulmonary embolism is described, and her course is gradual.",
+    "sub_condition_notes": [
+      "Uncontrolled heart failure: not present (normal LV function)",
+      "Pulmonary embolism: not suggested; no acute worsening to explain"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No information on allergies or hypersensitivity to corticosteroids, IVIG or their components.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "IgA level or IgA deficiency is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "pass",
+    "evidence": "\"diagnosed with idiopathic pulmonary fibrosis by her pulmonologist 14 months ago\" with a UIP pattern on HRCT and negative ANA, so a definite IPF diagnosis exists. Multidisciplinary discussion is not explicitly mentioned. AE-IPF is not present, but the criterion requires a definite diagnosis of IPF or AE-IPF.",
+    "sub_condition_notes": [
+      "Definite IPF diagnosis: yes (clinical, radiological, lab evidence)",
+      "Multidisciplinary discussion: not explicitly documented"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No malignancy or cancer treatment is mentioned. Absence of mention is not confirmation.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "Her medications are nintedanib, omeprazole and levothyroxine. No corticosteroids or immunosuppressants are listed. Nintedanib is an antifibrotic, not an immunosuppressant of the listed type.",
+    "sub_condition_notes": [
+      "Prednisone >20 mg for >14 days: none listed",
+      "Immunosuppressants in last month: none listed",
+      "Corticosteroid >1 mg/kg/d for >7 days: none listed"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No information on participation in another interventional trial.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "pass",
+    "evidence": "\"She is postmenopausal\", which makes pregnancy logically ruled out. Lactation is not mentioned, but is implausible in a 60-year-old postmenopausal woman.",
+    "sub_condition_notes": [
+      "Pregnancy: ruled out by postmenopausal status",
+      "Lactation: not mentioned, implausible"
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "No information on tutorship or curatorship.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "No information on deprivation of liberty or court protection.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "unknown",
+    "evidence": "Her willingness to participate or give consent is not stated.",
+    "sub_condition_notes": []
+  }
+]

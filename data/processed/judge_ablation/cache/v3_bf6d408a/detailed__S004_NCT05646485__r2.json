@@ -1,0 +1,50 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "A 68-year-old man; age 68 ≥ 50.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "He has smoked about one pack a day for 45 years and is still smoking, which is about 45 pack-years (≥15).",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No occupation or occupational exposure history (textile worker, painter, dry cleaner) is described.",
+    "sub_condition_notes": [
+      "Textile worker: not mentioned",
+      "Painter: not mentioned",
+      "Dry cleaner: not mentioned",
+      "Duration of ≥15 years: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "The description states no histopathological diagnosis has been established yet for the current bladder tumor. It does not mention any prior bladder, kidney, or prostate cancer, and absence of mention is not confirmation.",
+    "sub_condition_notes": [
+      "Prior bladder cancer: not mentioned",
+      "Prior kidney cancer: not mentioned",
+      "Prior prostate cancer: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "The current hematuria began three weeks ago and is being worked up now. There is no information on any evaluation of micro or gross hematuria in the previous 2 years.",
+    "sub_condition_notes": [
+      "Prior microhematuria evaluation within 2 years: not stated",
+      "Prior gross hematuria evaluation within 2 years: not stated; the current evaluation began within the past weeks and it is unclear whether it counts as 'prior'"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness and ability to provide informed consent is only determined when the patient is approached for enrollment.",
+    "sub_condition_notes": []
+  }
+]

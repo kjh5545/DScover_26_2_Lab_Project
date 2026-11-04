@@ -1,0 +1,51 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "Patient is a 7-year-old boy with suspected nephrotic syndrome (under 16, male), but the description lists no medications ('medications': []) and says nothing about glucocorticoid treatment, its starting dose, or a taper.",
+    "sub_condition_notes": [
+      "Nephrotic patient under 16, either gender: age 7 and a suspected nephrotic syndrome, so this part is met (diagnosis is only suspected).",
+      "First-time GC treatment: not stated.",
+      "Prednisolone 2 mg/kg/day with gradual taper: not stated."
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "No glucocorticoid therapy is described and the symptoms began 3 weeks ago; no vitamin D level is given. Judging from the timeline alone would be indirect inference.",
+    "sub_condition_notes": [
+      "On GC therapy for more than 6 months: not documented.",
+      "Vitamin D level of 30 ng/ml or above: no value given."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No creatinine, eGFR, or other kidney function results are given; only heavy proteinuria and low albumin are reported."
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "post_enrollment",
+    "evidence": "Compliance with medications or vitamin supplements is adherence behavior that is assessed after enrollment. The patient currently has no listed medications."
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No mention of gallbladder or biliary disease, cystic fibrosis, celiac disease, or other fat-soluble vitamin malabsorption."
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No mention of bleeding disorders, osteomalacia, or other vitamin K-related disorders."
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No mention of fracture history."
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No genetic testing or family history is reported. The suspected diagnosis is 'most likely minimal change disease', but no genetic cause has been confirmed or excluded."
+  }
+]

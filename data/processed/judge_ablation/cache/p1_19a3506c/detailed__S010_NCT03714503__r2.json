@@ -1,0 +1,95 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "No information on the patient's capacity to understand or willingness to sign consent is given.",
+    "sub_condition_notes": [
+      "Ability to understand: not stated",
+      "Willingness to sign: not stated"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "\"macula-off rhegmatogenous retinal detachment extending inferiorly from the 3 to 9 o'clock positions, with a single horseshoe tear at the 5 o'clock position\"; no prior retinal surgery, so it is primary.",
+    "sub_condition_notes": [
+      "Primary rhegmatogenous RD: yes, with no prior retinal surgery",
+      "Inferior breaks: the tear is at 5 o'clock, which is inferior"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "73-year-old man.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "pass",
+    "evidence": "The patient is a man, so this criterion about women of child-bearing potential does not apply.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "Age 73 years, not pediatric.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "The patient is a man, so pregnancy is ruled out.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "pass",
+    "evidence": "\"has never had retinal surgery or scleral buckling in either eye\"",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "pass",
+    "evidence": "\"never had retinal surgery or scleral buckling in either eye\"",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "\"he has had no injury to the eye or head\"",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "The detachment is symptomatic and acute: \"sudden onset of a painless, curtain-like loss of vision... The symptoms began two days ago\"",
+    "sub_condition_notes": [
+      "Asymptomatic: no, he is symptomatic",
+      "Longstanding: no, onset was two days ago"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Future compliance with post-operative treatment cannot be judged from the description.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "pass",
+    "evidence": "\"uncomplicated cataract surgery with an intraocular lens implant in the right eye two years ago\", so the study eye is pseudophakic, not phakic.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "pass",
+    "evidence": "\"no sign of an exudative detachment\"",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "pass",
+    "evidence": "\"There is no retinoschisis\"",
+    "sub_condition_notes": []
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"A 29-year-old woman\" – within 18 to 60 years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "\"An endocrinologist diagnosed Graves' disease last week; she has not yet started antithyroid medication\" – newly diagnosed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "\"she has not yet started antithyroid medication and has never received radioactive iodine or thyroid surgery\"; diagnosed last week, so this is a new diagnosis, not a relapse.",
+    "sub_condition_notes": [
+      "Treatment: none received (no antithyroid drugs, RAI, or surgery).",
+      "Relapse: newly diagnosed last week, no prior episode described."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "Ultrasound shows \"diffuse enlargement with increased blood flow and no nodules\" and TSH receptor antibodies are positive, which argues against toxic nodular disease. However, Hashimoto's thyroiditis, subacute thyroiditis and iodine-induced hyperthyroidism are not explicitly excluded in the description.",
+    "sub_condition_notes": [
+      "Toxic multinodular goiter / toxic adenoma: ultrasound reports no nodules.",
+      "Hashimoto's thyroiditis: not stated either way.",
+      "Subacute thyroiditis: gland described as non-tender, but not explicitly excluded.",
+      "Iodine-induced hyperthyroidism: no iodine exposure history given."
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "pass",
+    "evidence": "\"She has mild upper eyelid retraction but no eye pain, double vision, or bulging of the eyes.\" There is no moderate-to-severe thyroid eye disease requiring intervention.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "pass",
+    "evidence": "Ultrasound shows \"diffuse enlargement with increased blood flow and no nodules\", and no thyroid cancer or surgical need is described.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "Labs are \"ALT 28 U/L, AST 25 U/L, creatinine 62 µmol/L\". These are well below the thresholds (creatinine <110 µmol/L for females), but the upper limit of normal reference values is not given, so a >3× ULN comparison is not formally documented.",
+    "sub_condition_notes": [
+      "ALT/AST: 28 and 25 U/L, very likely normal, but ULN not stated.",
+      "Creatinine: 62 µmol/L, below the 110 µmol/L cutoff for females."
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "\"white blood cell count of 6.1 × 10⁹/L\" is above 3.0×10⁹/L.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Palpitations and tachycardia are described, but there is no mention of heart failure or NYHA class.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "\"hepatitis B surface antigen is negative\", but tuberculosis and other chronic or severe infections are not mentioned.",
+    "sub_condition_notes": [
+      "Hepatitis B: HBsAg negative.",
+      "Pulmonary tuberculosis: not mentioned.",
+      "Other chronic or severe infections: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "\"A urine pregnancy test is negative; she uses a copper intrauterine device and has no plans to become pregnant.\" Breastfeeding status is not stated, and compliance with contraception during the trial cannot be confirmed yet.",
+    "sub_condition_notes": [
+      "Pregnant: negative urine pregnancy test.",
+      "Planning pregnancy: no plans to become pregnant.",
+      "Breastfeeding: not stated.",
+      "Contraception compliance: she uses a copper IUD, but future compliance is not confirmable."
+    ]
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "No information about current or prior participation in other clinical studies.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness to participate and comply with follow-up is only determined after the patient applies.",
+    "sub_condition_notes": []
+  }
+]

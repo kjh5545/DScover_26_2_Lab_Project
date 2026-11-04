@@ -1,0 +1,70 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "No information on the patient's capacity to understand the trial, give written consent, or comply with the protocol. Nothing suggests an impairment.",
+    "sub_condition_notes": [
+      "Understanding the requirements: not stated",
+      "Written informed consent: not stated, would be obtained at enrollment",
+      "Compliance with protocol procedures: not stated"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "Patient is a 29-year-old woman, so she meets the age ≥ 18 requirement.",
+    "sub_condition_notes": [
+      "Male or female: female, acceptable",
+      "Age ≥ 18: 29 years, met"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "Graves' disease is only suspected, and the profile lists no confirmatory labs such as TSH, free T4/T3, or TRAb. No medications or history are recorded, so ATD treatment and persistent hyperthyroidism despite ATD cannot be confirmed. The patient appears to be newly presenting, which makes ATD exposure unlikely, but this has not been asked.",
+    "sub_condition_notes": [
+      "Confirmed GD diagnosis: not confirmed, only suspected",
+      "Currently on or previously treated with ATD: not documented, medications list empty",
+      "Hyperthyroid despite ATD: no labs or treatment history available"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "The more specific inclusion criteria are in the protocol and are not listed here. The study team must assess them at screening.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "The history is empty and the presentation is of a new, untreated hyperthyroid state. There is no indication of prior RAI therapy or total thyroidectomy, and the intact, enlarged thyroid gland on exam argues against thyroidectomy.",
+    "sub_condition_notes": [
+      "Prior successful RAI: no evidence",
+      "Total thyroidectomy: gland is present and enlarged, so not applicable"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "The history is empty, so other autoimmune diseases requiring treatment (e.g., type 1 diabetes, rheumatoid arthritis, lupus) are neither documented nor excluded. Medications are also empty.",
+    "sub_condition_notes": [
+      "Other autoimmune disease requiring treatment: not documented",
+      "Investigator judgment on undue risk: only the study team can make it"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "The exam findings do not mention eye involvement such as proptosis, diplopia, or periorbital edema. Thyroid eye disease status and any planned TED surgery, irradiation, or therapy have not been assessed.",
+    "sub_condition_notes": [
+      "Moderate-to-severe active TED: not assessed",
+      "Expected need for surgery, irradiation, or medical therapy for TED: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "post_enrollment",
+    "evidence": "The additional exclusion criteria are in the protocol and are not listed here. The study team must assess them at screening.",
+    "sub_condition_notes": []
+  }
+]

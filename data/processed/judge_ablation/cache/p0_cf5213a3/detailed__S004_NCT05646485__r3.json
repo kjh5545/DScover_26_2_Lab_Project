@@ -1,0 +1,47 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "68-year-old man, which is ≥ 50.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "Smoked about one pack a day for 45 years, which is about 45 pack-years and is ≥ 15.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "The patient's occupation and occupational exposure history are not described. Textile, painting, and dry cleaning work are not mentioned, and the duration of any such work is unknown. This can be obtained by asking the patient.",
+    "sub_condition_notes": [
+      "Occupation type (textile worker, painter, dry cleaner): not given",
+      "≥15 years of exposure: not given"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "No prior history of bladder, kidney, or prostate cancer is reported. The current bladder tumor is a new, suspected diagnosis and has no histopathological confirmation. The history lists only hypertension, hyperlipidemia, and smoking.",
+    "sub_condition_notes": [
+      "Prior bladder cancer: none reported; the current tumor is a new presentation",
+      "Prior kidney cancer: none reported",
+      "Prior prostate cancer: none reported"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "Hematuria began three weeks ago. The only evaluation described is the current workup (CT urography, cystoscopy, urinalysis, urine culture), and no hematuria evaluation within the prior 2 years is mentioned. The current workup is not a prior evaluation.",
+    "sub_condition_notes": [
+      "Whether any earlier hematuria evaluation happened in the past 2 years is not explicitly stated, but the hematuria is new (3 weeks)."
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is given only when the patient applies and is approached by the study team. Nothing suggests he would refuse.",
+    "sub_condition_notes": []
+  }
+]

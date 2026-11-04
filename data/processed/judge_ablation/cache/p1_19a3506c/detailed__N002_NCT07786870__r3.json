@@ -1,0 +1,93 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"A 24-year-old man\" - age 24 is >18, and there is no upper age limit.",
+    "sub_condition_notes": [
+      "age > 18 years: 24 years, pass",
+      "no upper age limit: not restrictive, pass"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "\"A pulmonologist diagnosed asthma when he was 8 years old\" - a formal asthma diagnosis is on record. The description does not say whether it followed GINA 2023 criteria. It does mention spirometry (FEV1 68% predicted), but no bronchodilator reversibility or variability testing.",
+    "sub_condition_notes": [
+      "diagnosis of asthma: pass, diagnosed by a pulmonologist",
+      "diagnosis made in accordance with GINA 2023 guidelines: unknown, the diagnostic method is not described, and the diagnosis was made at age 8, long before 2023"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "\"he has no other lung disease\"",
+    "sub_condition_notes": [
+      "other respiratory diseases besides asthma: none per the description",
+      "COPD: no other lung disease, and he is a 24-year-old never-smoker, so pass"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "\"He has never smoked cigarettes, vaped, or used cigars or marijuana.\"",
+    "sub_condition_notes": [
+      "active cigarette smoking: no, never smoked",
+      "smoking history of >10 pack-years: no, 0 pack-years"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No mention of malignancy or cancer history in the description.",
+    "sub_condition_notes": [
+      "active malignancy: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Ten days ago: \"he had no fever, his chest X-ray was normal, and he was treated... without antibiotics.\" This suggests no infection then, but there is no current assessment. He now has worsening wheeze, chest tightness and night cough, with no current infection status given. TB is not mentioned.",
+    "sub_condition_notes": [
+      "active pulmonary tuberculosis: not documented; normal chest X-ray makes it unlikely but does not exclude it",
+      "active respiratory tract infection: no fever and a normal chest X-ray ten days ago, but current status is not confirmed"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "Treated for the ED visit ten days ago \"with a 5-day course of oral prednisone without antibiotics.\" No other antibiotic use is mentioned.",
+    "sub_condition_notes": [
+      "antibiotic use within 4 weeks before enrollment: none reported; the only recent treatment documented was explicitly without antibiotics"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "\"his resting oxygen saturation is 97% on room air\"; no oxygen therapy appears in his medications.",
+    "sub_condition_notes": [
+      "current long-term home oxygen therapy: none, he is on room air",
+      "oxygen use >15 hours per day: not applicable"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "pass",
+    "evidence": "\"his pulmonologist has scheduled his first dupilumab injection for next week\" - he has not yet started any biologic. Current medications are budesonide-formoterol and recent prednisone only. Caveat: the first injection is imminent and would make him currently treated if given before enrollment.",
+    "sub_condition_notes": [
+      "omalizumab: not on it",
+      "mepolizumab: not on it",
+      "reslizumab: not on it",
+      "dupilumab: first injection is only scheduled for next week, so not currently treated",
+      "tezepelumab: not on it",
+      "other biologics: none reported"
+    ]
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "pass",
+    "evidence": "The patient is a 24-year-old man, so pregnancy is not possible.",
+    "sub_condition_notes": [
+      "pregnancy: not applicable, male"
+    ]
+  }
+]

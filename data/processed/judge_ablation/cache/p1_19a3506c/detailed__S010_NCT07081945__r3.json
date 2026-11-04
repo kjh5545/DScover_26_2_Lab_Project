@@ -1,0 +1,69 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is obtained only when the patient applies and is enrolled; nothing in the description addresses consent.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "The patient is 73 years old, which is outside the 18-70 range.",
+    "sub_condition_notes": [
+      "Age 73 > 70: not met"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "Macula-off rhegmatogenous retinal detachment with a \"single horseshoe tear at the 5 o'clock position inside the detached area\". This is a primary RRD with an inferior break between 4 and 8 o'clock within the detached area.",
+    "sub_condition_notes": [
+      "RRD (primary or recurrent): met, primary macula-off RRD",
+      "Inferior retinal break between 4 and 8 o'clock within the detached area: met, horseshoe tear at 5 o'clock inside the detachment",
+      "Retinotomy requirement: not needed, since only one of the two conditions is required"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "The only break is a horseshoe tear at 5 o'clock, which is not an anterior-only break or dialysis. The description gives no indication of scleral buckling being the indicated treatment. The criterion requires both conditions, and the first is not met.",
+    "sub_condition_notes": [
+      "Only anterior breaks or dialysis: not met, the tear is at 5 o'clock and is a horseshoe tear",
+      "Meets indications for scleral buckling: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "The 5 o'clock tear is \"inside the detached area\", so it is involved in the detachment and the exclusion does not apply.",
+    "sub_condition_notes": [
+      "Break between 4 and 8 o'clock: yes",
+      "Not involved in the detached area: not met, the break is inside the detachment"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "fail",
+    "evidence": "\"He has primary open-angle glaucoma in both eyes, controlled with latanoprost eye drops.\" Glaucoma is explicitly listed as an example of a pre-existing serious eye disease. Although it is controlled, the criterion lists glaucoma without qualification.",
+    "sub_condition_notes": [
+      "Glaucoma: present in both eyes",
+      "Corneal ulcer: not mentioned",
+      "Uveitis: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No mention of epilepsy or psychiatric disease in the description or profile.",
+    "sub_condition_notes": [
+      "Epilepsy: not documented",
+      "Serious psychiatric disease: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "post_enrollment",
+    "evidence": "Whether the researcher finds other conditions improper for inclusion can only be decided by the study team.",
+    "sub_condition_notes": []
+  }
+]

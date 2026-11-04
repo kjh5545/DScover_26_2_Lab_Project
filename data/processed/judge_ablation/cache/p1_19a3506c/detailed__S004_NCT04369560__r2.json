@@ -1,0 +1,99 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "A 68-year-old man; age 68 is within 18 to 90.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "The description does not mention his capacity to understand or his willingness to sign informed consent. Consent is obtained at enrollment.",
+    "sub_condition_notes": [
+      "Able to understand: not documented",
+      "Willing to sign written consent: not documented"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "Cystoscopy two days ago revealed a papillary bladder tumor on the left bladder wall, suspicious for urothelial carcinoma. TURBT is scheduled for next week.",
+    "sub_condition_notes": [
+      "Papillary tumor identified by cystoscopy and scheduled for TURBT: met",
+      "Histologically proven MIBC alternative: not applicable, since no histopathology exists yet. The first option is sufficient because the criterion is an OR."
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "pass",
+    "evidence": "He is fully active, walks about three miles most mornings, and has no restrictions in daily or strenuous activity. This corresponds to ECOG 0.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "pass",
+    "evidence": "Serum creatinine is 1.0 mg/dL (ULN 1.3 mg/dL). This is about 0.77 x ULN, below the 1.5 x ULN threshold.",
+    "sub_condition_notes": [
+      "Creatinine < 1.5 x ULN: met",
+      "Creatinine clearance alternative applies only if creatinine is >= 1.5 x ULN, so it is not needed"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information on allergies or prior reactions to gadobutrol or ferumoxytol. Absence of mention does not rule it out.",
+    "sub_condition_notes": [
+      "Gadobutrol hypersensitivity: not documented",
+      "Ferumoxytol hypersensitivity: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "Claustrophobia is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No implanted devices, prostheses or pacemaker are mentioned. Absence of mention does not rule them out.",
+    "sub_condition_notes": [
+      "Implanted device: not documented",
+      "Prosthetic: not documented",
+      "Pacemaker: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "pass",
+    "evidence": "CT of the chest, abdomen, and pelvis shows no enlarged lymph nodes or evidence of distant metastases.",
+    "sub_condition_notes": [
+      "Known metastatic disease: none",
+      "Suspected metastatic disease: none, since imaging is negative"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "The patient is a 68-year-old man, so pregnancy, lactation and plans to conceive do not apply.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "Urinalysis shows red blood cells but no white blood cells or nitrite, and a urine culture was negative. There is no evidence of urinary tract infection.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Urethral stricture disease is not mentioned. Cystoscopy was performed, which suggests urethral access, but stricture status for catheter placement is not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "post_enrollment",
+    "evidence": "Whether another condition poses an unacceptable risk is a judgment by the treating physician. Hypertension and hyperlipidemia are controlled on medication, but the physician's assessment is not documented.",
+    "sub_condition_notes": []
+  }
+]

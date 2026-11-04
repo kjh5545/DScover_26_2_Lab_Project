@@ -1,0 +1,57 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "The patient is a 7-year-old boy with suspected nephrotic syndrome, so he meets the age and sex requirements. No glucocorticoids are listed (medications: []), which suggests he is GC-naive. Treatment has not been documented as started at 2 mg/kg/day with a taper.",
+    "sub_condition_notes": [
+      "Under 16, nephrotic: met (age 7, nephrotic syndrome suspected)",
+      "First-time GC treatment: probably GC-naive, but treatment has not started or been confirmed",
+      "Prednisolone 2 mg/kg/day with taper: not yet documented; it can only be confirmed after treatment begins"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "post_enrollment",
+    "evidence": "The patient is not described as being on glucocorticoids, so more than 6 months of GC therapy cannot yet be confirmed. No vitamin D level is given. Both conditions depend on future treatment duration and future testing.",
+    "sub_condition_notes": [
+      "GC therapy for more than 6 months: cannot be met at presentation; it can only be determined later",
+      "Vitamin D of at least 30 ng/ml: no value available; it requires testing"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No creatinine or eGFR is reported. Heavy proteinuria and low albumin are present, but kidney function is not described.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "post_enrollment",
+    "evidence": "The patient takes no medications or supplements, and compliance can only be assessed during the study.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No gallbladder or biliary disease, cystic fibrosis, celiac disease, or other malabsorption is mentioned, but this has not been explicitly confirmed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No history of bleeding disorders, osteomalacia, or other vitamin K-related disorders is mentioned, but this has not been explicitly confirmed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "Fracture history is not mentioned in the description.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No genetic testing is reported. The suspected diagnosis is minimal change disease, and the presentation at age 7 is typical of idiopathic nephrotic syndrome, but genetic causes have not been excluded.",
+    "sub_condition_notes": []
+  }
+]

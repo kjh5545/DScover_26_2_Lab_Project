@@ -1,0 +1,59 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is given after the patient applies and is not described in the patient information.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "The patient is 73 years old (\"A 73-year-old man\"), which is outside the 18-70 range.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "RRD is only suspected (\"Rhegmatogenous retinal detachment of the right eye\" is a suspected diagnosis). No information is given on the location of retinal breaks or on any need for inferior retinotomy.",
+    "sub_condition_notes": [
+      "Inferior retinal breaks between 4 and 8 o'clock within the detached area: not described, unknown.",
+      "Requiring inferior retinotomy (severe inferior PVR or retinal shortening): not described, unknown."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information on break location, dialysis, or scleral buckling indication. The RRD itself is only suspected.",
+    "sub_condition_notes": [
+      "Only anterior breaks or dialysis: unknown.",
+      "Meets indications for scleral buckling: unknown, a clinician decides this."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "The location of retinal breaks relative to the detached area is not described.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "The history is empty. No pre-existing eye diseases such as corneal ulcer, glaucoma or uveitis are mentioned, but their absence is not confirmed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No history of epilepsy or psychiatric disease is mentioned. The history list is empty, so this is not confirmed.",
+    "sub_condition_notes": [
+      "Epilepsy: unknown.",
+      "Serious psychiatric disease: unknown."
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "post_enrollment",
+    "evidence": "This depends on the researcher's judgment of whether the patient is improper for inclusion, which is an open-ended criterion.",
+    "sub_condition_notes": []
+  }
+]

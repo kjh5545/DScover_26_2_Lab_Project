@@ -1,0 +1,97 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "A 29-year-old woman; age 29 is within 18 to 60 years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "An endocrinologist diagnosed Graves' disease last week; she has not yet started antithyroid medication.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "Diagnosed last week, has not yet started antithyroid medication and has never received radioactive iodine or thyroid surgery. This is a new diagnosis, so there is no treatment or relapse.",
+    "sub_condition_notes": [
+      "Treatment: none started, no RAI or surgery.",
+      "Relapse: newly diagnosed, so none."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "Graves' disease was diagnosed with positive TSH receptor antibodies, and ultrasound showed diffuse enlargement with no nodules. The description does not explicitly state that other causes (Hashimoto's, subacute thyroiditis, iodine-induced) are absent, and a coexisting condition is not excluded.",
+    "sub_condition_notes": [
+      "Toxic multinodular goiter / toxic adenoma: ultrasound shows 'no nodules'.",
+      "Hashimoto's thyroiditis, subacute thyroiditis, iodine-induced hyperthyroidism: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "pass",
+    "evidence": "She has mild upper eyelid retraction but no eye pain, double vision, or bulging of the eyes, so there is no moderate to severe thyroid eye disease needing intervention.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Thyroid ultrasound shows no nodules, but concurrent thyroid cancer is not explicitly addressed and no surgery need is stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "ALT 28 U/L, AST 25 U/L, creatinine 62 µmol/L. Creatinine is below 110 µmol/L for females. ALT and AST are not near 3 times the upper limit of normal.",
+    "sub_condition_notes": [
+      "ALT/AST: 28 and 25 U/L, within normal range.",
+      "Creatinine: 62 µmol/L, below 110 µmol/L."
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "White blood cell count of 6.1 × 10⁹/L, which is above 3.0×10⁹/L.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Palpitations and tachycardia are described, but heart failure or NYHA class is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Hepatitis B surface antigen is negative, but tuberculosis and other chronic or severe infections are not addressed.",
+    "sub_condition_notes": [
+      "Hepatitis B: HBsAg negative.",
+      "Pulmonary tuberculosis and other chronic or severe infections: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "pass",
+    "evidence": "A urine pregnancy test is negative; she uses a copper intrauterine device and has no plans to become pregnant.",
+    "sub_condition_notes": [
+      "Pregnant: negative urine test.",
+      "Planning pregnancy: no plans.",
+      "Contraception: copper IUD in place.",
+      "Breastfeeding: not mentioned, but no other criterion element is failed."
+    ]
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "Participation in other clinical studies, current or past, is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness to participate and comply with follow-up is determined after she applies and is not stated in the description.",
+    "sub_condition_notes": []
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "Ability to understand the trial, sign consent, and comply with the protocol can only be assessed by the study team after the patient applies.",
+    "sub_condition_notes": [
+      "Understanding requirements: post_enrollment",
+      "Written informed consent: post_enrollment",
+      "Compliance with procedures: post_enrollment"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "The patient is a 29-year-old woman, so she is 18 or older.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "fail",
+    "evidence": "Graves' disease was diagnosed last week by an endocrinologist, but she \"has not yet started antithyroid medication\". She is therefore not hyperthyroid despite ATD treatment.",
+    "sub_condition_notes": [
+      "Diagnosis of GD: met",
+      "Hyperthyroid despite ATD treatment: not met, because she has had no ATD treatment"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "The criterion is open-ended. Its specific content is only \"defined in the protocol\" and is not disclosed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "She \"has never received radioactive iodine or thyroid surgery\".",
+    "sub_condition_notes": [
+      "Prior successful RAI: no",
+      "Total thyroidectomy: no"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No other autoimmune disease is mentioned, and she takes no other regular medications. The description does not explicitly rule out other autoimmune disease. Whether any would put her at undue risk is also an investigator judgment.",
+    "sub_condition_notes": [
+      "Other autoimmune disease requiring treatment: not mentioned",
+      "Undue risk in the Investigator's judgment: post_enrollment"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "pass",
+    "evidence": "She has \"mild upper eyelid retraction but no eye pain, double vision, or bulging of the eyes\". This is not moderate-to-severe active TED, and no surgery, irradiation, or TED therapy is planned.",
+    "sub_condition_notes": [
+      "Moderate-to-severe active TED: no, only mild eyelid retraction",
+      "Expected to need surgery or planning TED treatment: no evidence of this"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "post_enrollment",
+    "evidence": "The criterion is open-ended. Its content is only \"defined in the protocol\" and is not disclosed.",
+    "sub_condition_notes": []
+  }
+]

@@ -1,0 +1,64 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is given after applying to the study; nothing in the description addresses it.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "The patient is 73 years old, which is outside the 18 to 70 age range.",
+    "sub_condition_notes": [
+      "Age 73 > 70"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "Macula-off rhegmatogenous retinal detachment with a \"single horseshoe tear at the 5 o'clock position inside the detached area\". This is an inferior break between 4 and 8 o'clock within the detached area. This is a primary RRD; he has had no previous retinal surgery.",
+    "sub_condition_notes": [
+      "RRD (primary or recurrent): met, macula-off RRD, no prior retinal surgery.",
+      "Inferior retinal break between 4 and 8 o'clock within the detached area: met (5 o'clock horseshoe tear inside the detachment).",
+      "Retinotomy requirement: not needed, since only one of the two conditions has to be met."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "The only break described is a horseshoe tear at 5 o'clock, but the description does not say whether it is anterior or whether the patient meets indications for scleral buckling. Deciding this would require a clinical judgment not stated in the description.",
+    "sub_condition_notes": [
+      "Only anterior breaks or dialysis: not stated.",
+      "Meets indications for scleral buckling: not stated."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "The 5 o'clock horseshoe tear is \"inside the detached area\", so it is involved in the detachment.",
+    "sub_condition_notes": [
+      "Break between 4 and 8 o'clock is involved in the detachment, so the exclusion does not apply."
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "fail",
+    "evidence": "\"He has primary open-angle glaucoma in both eyes, controlled with latanoprost eye drops.\" Glaucoma is explicitly named as a pre-existing serious eye disease.",
+    "sub_condition_notes": [
+      "Glaucoma: present in both eyes.",
+      "Corneal ulcers and uveitis: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No mention of epilepsy or serious psychiatric disease in the description.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "post_enrollment",
+    "evidence": "This depends on the researcher's judgment of whether the patient is suitable for inclusion.",
+    "sub_condition_notes": []
+  }
+]

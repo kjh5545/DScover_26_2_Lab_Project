@@ -1,0 +1,58 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "The patient is a 7-year-old boy with suspected nephrotic syndrome, so age and diagnosis fit. He takes no medications, so he has likely not had glucocorticoids yet, but treatment has not started or been documented. Whether he will receive GC at 2 mg/kg/day with tapering is not yet known.",
+    "sub_condition_notes": [
+      "Under 16 years, either gender: met (age 7, male).",
+      "Nephrotic syndrome: suspected from heavy proteinuria, low albumin and edema.",
+      "First-time GC treatment: no current medications listed, so treatment appears not yet started.",
+      "Prednisolone 2 mg/kg/day with gradual reduction: depends on the future treatment plan, determined after enrollment."
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "post_enrollment",
+    "evidence": "The patient has not started glucocorticoids, so he cannot yet have more than 6 months of therapy. Vitamin D level is not reported. Both conditions can only be assessed after enrollment and treatment.",
+    "sub_condition_notes": [
+      "GC therapy for more than 6 months: cannot be met at presentation, becomes known only after follow-up.",
+      "Vitamin D 30 ng/ml or above: no level provided."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No creatinine or eGFR is reported. Heavy proteinuria and edema are present, but kidney function is not described.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "post_enrollment",
+    "evidence": "He takes no medications or supplements at present, so compliance can only be judged during the study.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No gallbladder or biliary disease, cystic fibrosis, celiac disease or other malabsorption is mentioned, but the history does not explicitly rule these out.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No bleeding disorder, osteomalacia or other vitamin K-related disorder is documented, but it has not been explicitly confirmed absent.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "Fracture history is not mentioned in the description.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "The presentation suggests minimal change disease at age 7, which is typically non-genetic, but genetic testing and family history are not reported.",
+    "sub_condition_notes": []
+  }
+]

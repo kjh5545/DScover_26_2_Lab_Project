@@ -1,0 +1,80 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "A 60-year-old woman; age 60 ≥ 40.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "\"She was diagnosed with idiopathic pulmonary fibrosis by her pulmonologist 14 months ago\"; HRCT shows UIP pattern.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "\"She has taken nintedanib 150 mg twice daily at the same dose for the past eight months.\" This is a stable dose of an approved antifibrotic.",
+    "sub_condition_notes": [
+      "Receiving antifibrotic at stable dose: met",
+      "Alternative (not receiving standard of care): not needed"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "pass",
+    "evidence": "\"FVC 68% of predicted\" meets ≥45%.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "pass",
+    "evidence": "\"hemoglobin-corrected DLCO 42% of predicted\" meets ≥25%.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "IPF is diagnosed and ANA is negative, but the description does not state that no other coexisting ILD is present.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "\"HRCT shows a usual interstitial pneumonia pattern with fibrosis predominating and only minimal emphysema\"; emphysema extent is not greater than fibrosis.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "pass",
+    "evidence": "\"her breathlessness has worsened gradually over the past 18 months without any sudden change\" and she has not been hospitalized for her lung disease.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No mention of a lower respiratory tract infection or its treatment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No mention of acute coronary syndrome, MI, unstable angina, PCI or CABG.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "\"An echocardiogram last month showed normal left ventricular function.\" This does not establish that heart failure is absent (e.g., diastolic or right heart failure), and no heart failure diagnosis is stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No mention of prior organ transplantation or of lung transplant listing or plans.",
+    "sub_condition_notes": [
+      "History of organ transplantation: not mentioned",
+      "Likely to receive lung transplantation: not stated"
+    ]
+  }
+]

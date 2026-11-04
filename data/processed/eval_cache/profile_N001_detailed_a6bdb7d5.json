@@ -1,0 +1,37 @@
+{
+  "age": 58,
+  "age_unit": "years",
+  "sex": "F",
+  "suspected_diagnosis": "Type 2 diabetes mellitus, inadequately controlled on metformin monotherapy, with mild nonproliferative diabetic retinopathy",
+  "findings": [
+    "fatigue",
+    "increased thirst",
+    "HbA1c remains above target despite metformin",
+    "BMI is 31.2 kg/m²",
+    "blood pressure is 138/84 mmHg on lisinopril",
+    "mild nonproliferative diabetic retinopathy that does not need treatment"
+  ],
+  "history": [
+    "9-year history of type 2 diabetes",
+    "metformin 1000 mg twice daily at the same dose for the past two years",
+    "has never used any other glucose-lowering medication, including SGLT2 inhibitors, DPP-4 inhibitors, GLP-1 receptor agonists, or insulin",
+    "hypothyroidism",
+    "eye examination three months ago showed mild nonproliferative diabetic retinopathy",
+    "no history of pancreatitis, heart attack, or stroke",
+    "postmenopausal",
+    "works as an accountant"
+  ],
+  "medications": [
+    "metformin 1000 mg twice daily",
+    "lisinopril",
+    "levothyroxine (unchanged dose for the past two years)"
+  ],
+  "labs": [
+    "HbA1c 9.8% (measured at clinic last week)",
+    "fasting blood glucose 11.2 mmol/L",
+    "eGFR 78 mL/min/1.73 m²",
+    "BMI 31.2 kg/m²",
+    "blood pressure 138/84 mmHg"
+  ],
+  "id": "N001_detailed_a6bdb7d5"
+}

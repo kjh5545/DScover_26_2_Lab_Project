@@ -1,0 +1,98 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "fail",
+    "evidence": "Description gives a 3-month-old with a suspected diagnosis of infantile hypertrophic pyloric stenosis; no malignancy is mentioned or suggested.",
+    "sub_condition_notes": [
+      "Periampullary malignancy: none described, and the picture points to a non-malignant cause",
+      "Distal gastric cancer: none described"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "\"projectile non-bilious vomiting after feeding\" gives postprandial vomiting. Visible peristalsis and an olive-shaped mass suggest gastric outlet obstruction, but no imaging is described.",
+    "sub_condition_notes": [
+      "Post prandial vomiting: present",
+      "Abdominal pain: not mentioned",
+      "Inability to tolerate PO: not clearly stated",
+      "Imaging consistent with GOO: no imaging reported",
+      "Only 1 of 4 is clearly confirmed, so at least 2 of 4 is not established"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No GOOSS score or description of oral intake level is given beyond vomiting after feeding. The adult scoring system is not applicable to an infant.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "fail",
+    "evidence": "\"A 3-month-old infant\"; the criterion requires age >18 years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "unknown",
+    "evidence": "Life expectancy and any duodenal stenting history are not described.",
+    "sub_condition_notes": [
+      "Life expectancy >2 months: not stated",
+      "Failed duodenal stenting: no history, and not applicable"
+    ]
+  },
+  {
+    "criterion_id": "I6",
+    "verdict": "unknown",
+    "evidence": "Surgical candidacy and anesthesia tolerance are not assessed in the description.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I7",
+    "verdict": "fail",
+    "evidence": "No malignancy is described, so there is no unresectable or metastatic disease.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "fail",
+    "evidence": "\"A 3-month-old infant\"; this is under 18 years, so the patient is excluded.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "A 3-month-old infant cannot logically be pregnant.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "The findings localize to the pyloric or gastric outlet, but there is no imaging or evaluation excluding obstruction distal to the Ligament of Treitz.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No information on other luminal strictures of the GI tract.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "History is empty; previous gastric or periampullary surgery is not mentioned. It is unlikely in a 3-month-old but not confirmed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Ability to complete quality of life surveys is not described. An infant cannot self-complete them, but proxy completion is not addressed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Abdominal ascites is not mentioned in the description.",
+    "sub_condition_notes": []
+  }
+]

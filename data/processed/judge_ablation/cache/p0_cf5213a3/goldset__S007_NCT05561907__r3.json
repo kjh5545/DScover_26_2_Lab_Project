@@ -1,0 +1,94 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "fail",
+    "evidence": "The patient is a 3-month-old with suspected infantile hypertrophic pyloric stenosis, not a periampullary malignancy or distal gastric cancer.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "Post-prandial projectile vomiting is present, and the clinical picture (vomiting, visible peristalsis, olive mass) suggests gastric outlet obstruction. Imaging has not been reported, but at least one symptom is confirmed. The symptom count may be borderline, so this was treated as met on clinical features.",
+    "sub_condition_notes": [
+      "post prandial vomiting: present",
+      "abdominal pain: not reported",
+      "inability to tolerate PO: not clearly stated",
+      "imaging consistent with GOO: not reported"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No GOOSS score or description of oral intake is given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "fail",
+    "evidence": "The patient is 3 months old, so does not meet age >18 years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "unknown",
+    "evidence": "Life expectancy and prior duodenal stenting are not stated. There is no malignancy, so the criterion is not applicable in a meaningful way.",
+    "sub_condition_notes": [
+      "Life expectancy >2 months: not stated",
+      "failed duodenal stenting: no history of stenting"
+    ]
+  },
+  {
+    "criterion_id": "I6",
+    "verdict": "unknown",
+    "evidence": "Anesthesia fitness is not documented. Pyloromyotomy is the usual treatment, but candidacy for this study's procedure is not stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I7",
+    "verdict": "fail",
+    "evidence": "No malignancy is present, so there is no unresectable or metastatic disease.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "fail",
+    "evidence": "The patient is 3 months old (<18 years), so is excluded.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "The patient is a 3-month-old infant, so pregnancy is not applicable.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "pass",
+    "evidence": "The findings localize to the gastric outlet (non-bilious vomiting, epigastric olive mass). There is no evidence of obstruction distal to the Ligament of Treitz.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No imaging or endoscopy of other luminal strictures is reported.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "No surgical history is listed, and a 3-month-old with no history is unlikely to have had gastric or periampullary surgery.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "fail",
+    "evidence": "A 3-month-old infant cannot complete quality of life surveys.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Ascites is not mentioned; the description does not rule it out.",
+    "sub_condition_notes": []
+  }
+]

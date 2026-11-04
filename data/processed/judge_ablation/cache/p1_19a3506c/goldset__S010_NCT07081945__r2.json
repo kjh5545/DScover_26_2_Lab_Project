@@ -1,0 +1,62 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is obtained only when the patient is approached by the study team; nothing in the description mentions consent.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "The patient is 73 years old (\"A 73-year-old man\"), which is outside the required 18-70 range.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "The profile gives only a suspected rhegmatogenous retinal detachment of the right eye (flashes, floaters, curtain-like vision loss). There is no formal diagnosis, and no information on break location (4-8 o'clock) or retinotomy need.",
+    "sub_condition_notes": [
+      "RRD (primary or recurrent): suspected only, not confirmed by examination.",
+      "Inferior retinal breaks between 4 and 8 o'clock within the detached area: not documented.",
+      "Requiring inferior retinotomy between 4 and 8 o'clock: not documented; can only be determined at examination or surgery."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "Break location and the indication for scleral buckling are not described; no fundus examination findings are available.",
+    "sub_condition_notes": [
+      "Only anterior breaks or dialysis: unknown.",
+      "Meets indications for scleral buckling: unknown."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No information on the location of retinal breaks relative to the detached area.",
+    "sub_condition_notes": [
+      "Breaks between 4 and 8 o'clock not involved in the detached area: unknown."
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "The history is empty; no pre-existing eye diseases such as corneal ulcer, glaucoma or uveitis are mentioned or ruled out.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No history of epilepsy or psychiatric disease is mentioned; the history list is empty.",
+    "sub_condition_notes": [
+      "Epilepsy: not documented.",
+      "Serious psychiatric disease: not documented."
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "post_enrollment",
+    "evidence": "This is a discretionary judgment by the investigator, which only the study team can make.",
+    "sub_condition_notes": []
+  }
+]

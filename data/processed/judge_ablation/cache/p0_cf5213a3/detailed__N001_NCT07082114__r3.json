@@ -1,0 +1,327 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "58-year-old woman.",
+    "sub_condition_notes": [
+      "Age ≥18: yes",
+      "Age ≤75: yes",
+      "Female: yes"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "9-year history of type 2 diabetes.",
+    "sub_condition_notes": [
+      "T2DM diagnosis documented; WHO criteria formal confirmation not stated but long-standing diagnosis, HbA1c/FPG consistent",
+      "Duration 9 years ≥3 months"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "Metformin 1000 mg twice daily (2000 mg/day) at the same dose for past two years.",
+    "sub_condition_notes": [
+      "Stable ≥8 weeks: yes",
+      "2000 mg/day ≥1500: yes",
+      "Stable ≥12 weeks before randomization: yes (2 years stable)"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "pass",
+    "evidence": "HbA1c 9.8% at clinic last week.",
+    "sub_condition_notes": [
+      "≥7.5%: yes",
+      "≤11.0%: yes (clinic measurement; the formal local-lab screening value will be repeated at screening)"
+    ]
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "post_enrollment",
+    "evidence": "Central lab HbA1c prior to randomization occurs only after enrollment.",
+    "sub_condition_notes": [
+      "Pre-randomization HbA1c ≥7.5%: pending",
+      "≤11.0%: pending",
+      "Central lab: pending"
+    ]
+  },
+  {
+    "criterion_id": "I6",
+    "verdict": "pass",
+    "evidence": "BMI 31.2 kg/m².",
+    "sub_condition_notes": [
+      "≥19.0: yes",
+      "≤40.0: yes"
+    ]
+  },
+  {
+    "criterion_id": "I7",
+    "verdict": "pass",
+    "evidence": "Patient is postmenopausal, so not of childbearing potential; contraception requirement does not apply.",
+    "sub_condition_notes": [
+      "Not applicable to postmenopausal woman",
+      "Not applicable"
+    ]
+  },
+  {
+    "criterion_id": "I8",
+    "verdict": "unknown",
+    "evidence": "Willingness to maintain diet/exercise, comply with protocol, and consent not stated.",
+    "sub_condition_notes": [
+      "Ability to understand/comply: no indication of impairment, not confirmed",
+      "Willingness to maintain diet/exercise: not stated",
+      "Willingness to complete trial: not stated",
+      "Written informed consent: not yet given"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "Diagnosed with type 2 diabetes, 9-year history; no mention of T1DM/LADA/special types; postmenopausal so not gestational.",
+    "sub_condition_notes": [
+      "T1DM: no",
+      "LADA: no indication",
+      "Special types: no indication",
+      "Gestational: no"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No acute diabetic complications mentioned, but not explicitly stated within the past 6 months.",
+    "sub_condition_notes": [
+      "DKA: not stated",
+      "Lactic acidosis: not stated",
+      "HHS: not stated",
+      "Other acute complications: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "Personal/family history of MTC, C-cell hyperplasia, or MEN2 not mentioned.",
+    "sub_condition_notes": [
+      "MTC: unknown",
+      "C-cell hyperplasia: unknown",
+      "MEN2: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No history of pancreatitis stated; pancreatic injury and high-risk factors (e.g., hypertriglyceridemia, alcohol use) not addressed.",
+    "sub_condition_notes": [
+      "Acute pancreatitis: no",
+      "Chronic pancreatitis: no",
+      "Pancreatic injury: not stated",
+      "High-risk factors: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "Gallbladder disease not mentioned.",
+    "sub_condition_notes": [
+      "Symptomatic gallbladder disease: unknown",
+      "Cholecystectomy: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "GI conditions (dysphagia, GERD, IBS, gastric surgery) not mentioned.",
+    "sub_condition_notes": [
+      "Dysphagia: unknown",
+      "Gastric surgery: unknown",
+      "GERD: unknown",
+      "Pyloric obstruction: unknown",
+      "IBS: unknown",
+      "Other: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Unstable angina not mentioned (only no MI or stroke stated).",
+    "sub_condition_notes": [
+      "Unstable angina within 3 months: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Heart failure not mentioned.",
+    "sub_condition_notes": [
+      "HF NYHA III/IV: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "pass",
+    "evidence": "No history of heart attack.",
+    "sub_condition_notes": [
+      "No MI"
+    ]
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "CABG/PCI not mentioned.",
+    "sub_condition_notes": [
+      "CABG: not stated",
+      "PCI: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "unknown",
+    "evidence": "Arrhythmias not mentioned.",
+    "sub_condition_notes": [
+      "VT: unknown",
+      "VF: unknown",
+      "AF: unknown",
+      "AV block: unknown",
+      "Sick sinus: unknown",
+      "Pre-excitation: unknown",
+      "Other: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E12",
+    "verdict": "pass",
+    "evidence": "No history of stroke.",
+    "sub_condition_notes": [
+      "No CVA"
+    ]
+  },
+  {
+    "criterion_id": "E13",
+    "verdict": "pass",
+    "evidence": "Mild nonproliferative diabetic retinopathy that does not need treatment.",
+    "sub_condition_notes": [
+      "No proliferative DR",
+      "No maculopathy requiring treatment mentioned",
+      "No severe retinopathy requiring treatment"
+    ]
+  },
+  {
+    "criterion_id": "E14",
+    "verdict": "unknown",
+    "evidence": "Liver disease/hepatitis status not mentioned.",
+    "sub_condition_notes": [
+      "Chronic/acute liver disease: unknown",
+      "Hepatitis B: unknown",
+      "Hepatitis C: unknown",
+      "PBC: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E15",
+    "verdict": "pass",
+    "evidence": "Medications are metformin, lisinopril, levothyroxine; none are strong CYP3A4 or P-gp inhibitors.",
+    "sub_condition_notes": [
+      "No strong CYP3A4 inhibitor",
+      "No strong P-gp inhibitor"
+    ]
+  },
+  {
+    "criterion_id": "E16",
+    "verdict": "pass",
+    "evidence": "Current medications (metformin, lisinopril, levothyroxine) are not CYP3A4 inhibitors or strong P-gp inducers.",
+    "sub_condition_notes": [
+      "No CYP3A4 inhibitor",
+      "No strong P-gp inducer"
+    ]
+  },
+  {
+    "criterion_id": "E17",
+    "verdict": "unknown",
+    "evidence": "Full prior medication history for OATP1B1/1B3 inhibitors (e.g., rifampicin, cyclosporine) not provided; known meds are not such inhibitors.",
+    "sub_condition_notes": [
+      "OATP1B1: not confirmed",
+      "OATP1B3: not confirmed"
+    ]
+  },
+  {
+    "criterion_id": "E18",
+    "verdict": "pass",
+    "evidence": "Current meds metformin, lisinopril, levothyroxine are not narrow therapeutic index substrates of the listed enzymes/transporters.",
+    "sub_condition_notes": [
+      "CYP2C8: no",
+      "CYP3A4: no",
+      "UGT1A1: no",
+      "P-gp: no",
+      "OATP1B1/1B3: no",
+      "Discontinuation not needed"
+    ]
+  },
+  {
+    "criterion_id": "E19",
+    "verdict": "pass",
+    "evidence": "Only metformin used; has never used any other glucose-lowering medication including SGLT2i, DPP-4i, insulin.",
+    "sub_condition_notes": [
+      "α-glucosidase inhibitors: never",
+      "TZDs: never",
+      "DPP-4i: never",
+      "Glucokinase activators: never",
+      "SGLT2i: never",
+      "Other agents: none besides metformin",
+      "Insulin: never used"
+    ]
+  },
+  {
+    "criterion_id": "E20",
+    "verdict": "pass",
+    "evidence": "Never used GLP-1 receptor agonists.",
+    "sub_condition_notes": [
+      "No GLP-1 use"
+    ]
+  },
+  {
+    "criterion_id": "E21",
+    "verdict": "pass",
+    "evidence": "Never used GLP-1 analogues, so no prior discontinuation.",
+    "sub_condition_notes": [
+      "No discontinuation for safety/tolerability",
+      "No discontinuation for lack of efficacy"
+    ]
+  },
+  {
+    "criterion_id": "E22",
+    "verdict": "pass",
+    "evidence": "Postmenopausal 58-year-old; pregnancy not possible; lactation not expected.",
+    "sub_condition_notes": [
+      "Pregnancy: no",
+      "Lactation: not indicated"
+    ]
+  },
+  {
+    "criterion_id": "E23",
+    "verdict": "unknown",
+    "evidence": "Drug allergy history not stated; she has never used SGLT2i or GLP-1RA so no known hypersensitivity to them, but severe drug allergies not addressed.",
+    "sub_condition_notes": [
+      "SGLT2i hypersensitivity: none (never used)",
+      "GLP-1RA hypersensitivity: none (never used)",
+      "Severe drug allergies: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E24",
+    "verdict": "unknown",
+    "evidence": "Recent participation in other clinical studies not mentioned.",
+    "sub_condition_notes": [
+      "Other study within 3 months: unknown",
+      "Exception: not applicable/unknown"
+    ]
+  },
+  {
+    "criterion_id": "E25",
+    "verdict": "post_enrollment",
+    "evidence": "Investigator judgment of suitability is made by the study team.",
+    "sub_condition_notes": [
+      "Investigator judgment: determined by study team"
+    ]
+  }
+]

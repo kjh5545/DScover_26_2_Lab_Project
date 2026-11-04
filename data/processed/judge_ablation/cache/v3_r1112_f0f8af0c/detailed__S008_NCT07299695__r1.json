@@ -1,0 +1,105 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"A 60-year-old woman\"",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "She was diagnosed with IPF by her pulmonologist and HRCT shows a UIP pattern, but the description does not state that ATS/ERS consensus criteria were formally met.",
+    "sub_condition_notes": [
+      "A stated diagnosis alone is not enough to confirm that the ATS/ERS standard was met."
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "fail",
+    "evidence": "\"has not been hospitalized for her lung disease\"; \"her breathlessness has worsened gradually over the past 18 months without any sudden change\"",
+    "sub_condition_notes": [
+      "Hospitalised with definite/suspected AE-IPF: not hospitalized, so not met.",
+      "Previous or concurrent IPF diagnosis: present (diagnosed 14 months ago).",
+      "Acute worsening of dyspnoea typically <1 month: not met; the worsening is gradual over 18 months.",
+      "CT with new bilateral ground-glass opacity/consolidation: not described; CT shows reticular opacities with honeycombing and a UIP pattern.",
+      "Deterioration not fully explained by cardiac failure: echo showed normal LV function, but this is moot because the other criteria are not met."
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "Ability to understand and sign informed consent is determined at enrollment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "Echo last month showed normal left ventricular function, but there is no mention of pulmonary embolism, and no acute worsening is described.",
+    "sub_condition_notes": [
+      "Uncontrolled heart failure: not stated; normal LV function on echo, but heart failure is not explicitly excluded.",
+      "Pulmonary embolism: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No information on allergies or hypersensitivity to corticosteroids, IVIG or study treatment components.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "IgA level or IgA deficiency is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "IPF was diagnosed by her pulmonologist with a UIP pattern on HRCT and negative ANA, but multidisciplinary discussion is not stated.",
+    "sub_condition_notes": [
+      "Whether the multidisciplinary discussion standard was met is not on record."
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No mention of malignancy or cancer treatment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Her medications are nintedanib, omeprazole and levothyroxine; no corticosteroids or immunosuppressants are listed, but past use within the last month is not explicitly ruled out.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No information on participation in another interventional trial.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "pass",
+    "evidence": "\"She is postmenopausal\"; pregnancy is not plausible. Lactation is not mentioned, but postmenopausal status logically rules out documented pregnancy or lactation.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "Legal status (tutorship/curatorship) is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "Not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness to participate and give consent is determined after approach/enrollment.",
+    "sub_condition_notes": []
+  }
+]

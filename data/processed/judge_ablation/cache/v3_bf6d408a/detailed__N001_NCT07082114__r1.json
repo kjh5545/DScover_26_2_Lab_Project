@@ -1,0 +1,328 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "58-year-old woman.",
+    "sub_conditions_notes": [],
+    "sub_condition_notes": [
+      "Age ≥18: 58 passes",
+      "Age ≤75: 58 passes",
+      "Male or female: female passes"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Description states a \"9-year history of type 2 diabetes\", so the duration exceeds 3 months, but it does not say the diagnosis was made per WHO criteria.",
+    "sub_condition_notes": [
+      "Diagnosis of T2DM per WHO criteria: T2DM is documented, but the criteria used are not stated",
+      "Duration ≥3 months: 9-year history, met"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "\"metformin 1000 mg twice daily at the same dose for the past two years\" (2000 mg/day).",
+    "sub_condition_notes": [
+      "Stable ≥8 weeks before screening: same dose for 2 years, met",
+      "Dose ≥1500 mg/day: 2000 mg/day, met",
+      "Stable ≥12 weeks before randomization: same dose for 2 years, met as of now"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "pass",
+    "evidence": "\"Her HbA1c measured at her clinic last week was 9.8%\", which is within 7.5–11.0%. The formal screening value from the local laboratory will be measured later.",
+    "sub_condition_notes": [
+      "≥7.5%: 9.8% meets",
+      "≤11.0%: 9.8% meets"
+    ]
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "post_enrollment",
+    "evidence": "Requires a central laboratory HbA1c measured prior to randomization, which only exists after enrollment.",
+    "sub_condition_notes": [
+      "Pre-randomization HbA1c ≥7.5%: post-enrollment",
+      "≤11.0%: post-enrollment",
+      "Central laboratory assessment: post-enrollment"
+    ]
+  },
+  {
+    "criterion_id": "I6",
+    "verdict": "pass",
+    "evidence": "\"Her BMI is 31.2 kg/m²\".",
+    "sub_condition_notes": [
+      "≥19.0: met",
+      "≤40.0: met"
+    ]
+  },
+  {
+    "criterion_id": "I7",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness to use contraception is an agreement given after applying. She is postmenopausal, so she is likely not of childbearing potential, but the agreement itself is a post-enrollment matter.",
+    "sub_condition_notes": [
+      "Agree to use highly effective contraception: post-enrollment",
+      "Contraception duration after ICF: post-enrollment"
+    ]
+  },
+  {
+    "criterion_id": "I8",
+    "verdict": "post_enrollment",
+    "evidence": "Ability to comply, willingness to maintain diet and exercise, and providing written informed consent are determined after applying.",
+    "sub_condition_notes": [
+      "Understand and comply: post-enrollment",
+      "Maintain diet/exercise: post-enrollment",
+      "Complete trial per protocol: post-enrollment",
+      "Written informed consent: post-enrollment"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "Type 2 diabetes is described, but the description does not rule out LADA or special types of diabetes. Gestational diabetes is not applicable, though no explicit statement addresses it.",
+    "sub_condition_notes": [
+      "Type 1 diabetes: not stated; she has T2DM",
+      "LADA: not mentioned",
+      "Special types of diabetes: not mentioned",
+      "Gestational diabetes: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "Acute diabetic complications such as DKA, lactic acidosis or hyperosmolar coma are not mentioned.",
+    "sub_condition_notes": [
+      "DKA: not mentioned",
+      "Lactic acidosis: not mentioned",
+      "Hyperosmolar coma: not mentioned",
+      "Other acute complications: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No personal or family history of medullary thyroid carcinoma, C-cell hyperplasia or MEN2 is mentioned. Hypothyroidism is mentioned, which is not the same condition.",
+    "sub_condition_notes": [
+      "MTC: not mentioned",
+      "C-cell hyperplasia: not mentioned",
+      "MEN2: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "\"She has no history of pancreatitis\", but pancreatic injury and high-risk factors for pancreatitis (e.g., hypertriglyceridemia, alcohol use, gallstones) are not addressed.",
+    "sub_condition_notes": [
+      "Acute pancreatitis: no history stated",
+      "Chronic pancreatitis: no history stated",
+      "Pancreatic injury: not mentioned",
+      "High-risk factors for pancreatitis: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "Gallbladder disease and cholecystectomy are not mentioned.",
+    "sub_condition_notes": [
+      "Symptomatic gallbladder disease: not mentioned",
+      "Cholecystectomy exception: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "GI conditions, dysphagia and GI surgery are not mentioned.",
+    "sub_condition_notes": [
+      "Dysphagia: not mentioned",
+      "Gastric-emptying surgery: not mentioned",
+      "GERD: not mentioned",
+      "Pyloric obstruction: not mentioned",
+      "IBS: not mentioned",
+      "Other condition per investigator: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Unstable angina is not mentioned. She reports no heart attack or stroke, which does not cover angina.",
+    "sub_condition_notes": [
+      "Unstable angina within 3 months: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Heart failure is not mentioned.",
+    "sub_condition_notes": [
+      "NYHA III/IV heart failure within 3 months: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "pass",
+    "evidence": "\"She has no history of pancreatitis, heart attack, or stroke.\"",
+    "sub_condition_notes": [
+      "MI within 3 months: no history of heart attack"
+    ]
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "CABG/PCI history is not mentioned. Absence of a heart attack history does not exclude a revascularization procedure.",
+    "sub_condition_notes": [
+      "CABG: not mentioned",
+      "PCI: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "unknown",
+    "evidence": "Arrhythmias are not mentioned.",
+    "sub_condition_notes": [
+      "VT: not mentioned",
+      "VF: not mentioned",
+      "AF: not mentioned",
+      "AV block: not mentioned",
+      "Sick sinus syndrome: not mentioned",
+      "Pre-excitation: not mentioned",
+      "Other arrhythmia: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E12",
+    "verdict": "pass",
+    "evidence": "\"She has no history of pancreatitis, heart attack, or stroke.\"",
+    "sub_condition_notes": [
+      "Cerebrovascular accident within 3 months: no history of stroke"
+    ]
+  },
+  {
+    "criterion_id": "E13",
+    "verdict": "pass",
+    "evidence": "\"An eye examination three months ago showed mild nonproliferative diabetic retinopathy that does not need treatment.\"",
+    "sub_condition_notes": [
+      "Proliferative DR requiring treatment: mild nonproliferative only, no treatment needed",
+      "Maculopathy requiring treatment: not mentioned, but the exam showed only mild NPDR requiring no treatment",
+      "Other severe retinopathy requiring treatment: none described"
+    ]
+  },
+  {
+    "criterion_id": "E14",
+    "verdict": "unknown",
+    "evidence": "Liver disease and hepatitis status are not mentioned.",
+    "sub_condition_notes": [
+      "Active liver disease: not mentioned",
+      "Hepatitis B: not mentioned",
+      "Hepatitis C: not mentioned",
+      "PBC: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E15",
+    "verdict": "unknown",
+    "evidence": "Medications listed are metformin, lisinopril and levothyroxine, none of which is a strong CYP3A4 or P-gp inhibitor. The description does not state that she uses no other medications.",
+    "sub_condition_notes": [
+      "Strong CYP3A4 inhibitor: none listed, but full medication history is not confirmed",
+      "Strong P-gp inhibitor: none listed, but full medication history is not confirmed"
+    ]
+  },
+  {
+    "criterion_id": "E16",
+    "verdict": "unknown",
+    "evidence": "Current medications listed (metformin, lisinopril, levothyroxine) are not CYP3A4 inhibitors or P-gp inducers, but a complete medication list is not confirmed.",
+    "sub_condition_notes": [
+      "Strong/moderate CYP3A4 inhibitor: none listed",
+      "Strong P-gp inducer: none listed"
+    ]
+  },
+  {
+    "criterion_id": "E17",
+    "verdict": "unknown",
+    "evidence": "Prior use of OATP1B1/1B3 inhibitors (e.g., rifampicin, cyclosporine) is not addressed.",
+    "sub_condition_notes": [
+      "OATP1B1 inhibitors: not mentioned",
+      "OATP1B3 inhibitors: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E18",
+    "verdict": "unknown",
+    "evidence": "Levothyroxine is a narrow therapeutic index drug and is a current medication, but whether it is a substrate of the listed enzymes/transporters and whether it can be discontinued is not established by the description.",
+    "sub_condition_notes": [
+      "CYP2C8 substrate: not established",
+      "CYP3A4 substrate: not established",
+      "UGT1A1 substrate: not established",
+      "P-gp substrate: not established",
+      "OATP1B1/1B3 substrate: not established",
+      "Cannot be discontinued: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E19",
+    "verdict": "pass",
+    "evidence": "She \"has never used any other glucose-lowering medication, including SGLT2 inhibitors, DPP-4 inhibitors, GLP-1 receptor agonists, or insulin.\" Metformin is the protocol background therapy.",
+    "sub_condition_notes": [
+      "α-glucosidase inhibitors: never used other glucose-lowering drugs",
+      "Thiazolidinediones: never used",
+      "DPP-4 inhibitors: never used",
+      "Glucokinase activators: never used",
+      "SGLT-2 inhibitors: never used",
+      "Other glucose-lowering medication: none besides metformin",
+      "Insulin exception: not applicable, never used insulin"
+    ]
+  },
+  {
+    "criterion_id": "E20",
+    "verdict": "pass",
+    "evidence": "She \"has never used any other glucose-lowering medication, including ... GLP-1 receptor agonists\".",
+    "sub_condition_notes": [
+      "GLP-1 analogue within 3 months: never used"
+    ]
+  },
+  {
+    "criterion_id": "E21",
+    "verdict": "pass",
+    "evidence": "She \"has never used\" GLP-1 receptor agonists, so there can be no prior discontinuation.",
+    "sub_condition_notes": [
+      "Discontinuation due to safety/tolerability: never used",
+      "Discontinuation due to lack of efficacy: never used"
+    ]
+  },
+  {
+    "criterion_id": "E22",
+    "verdict": "pass",
+    "evidence": "\"She is postmenopausal\" at age 58; pregnancy is not plausible. Lactation is not mentioned, but a postmenopausal woman is not lactating.",
+    "sub_condition_notes": [
+      "Pregnancy: postmenopausal",
+      "Lactation: postmenopausal, not stated"
+    ]
+  },
+  {
+    "criterion_id": "E23",
+    "verdict": "unknown",
+    "evidence": "Allergy history is not mentioned. She has never used SGLT2 inhibitors or GLP-1RAs, so prior reactions to them are unlikely, but severe drug allergies are not addressed.",
+    "sub_condition_notes": [
+      "SGLT-2i hypersensitivity: never used, no allergy mentioned",
+      "GLP-1RA hypersensitivity: never used, no allergy mentioned",
+      "Severe drug allergies: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E24",
+    "verdict": "unknown",
+    "evidence": "Participation in other clinical studies is not mentioned.",
+    "sub_condition_notes": [
+      "Other drug/device study within 3 months: not mentioned",
+      "Exception for consent without intervention: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E25",
+    "verdict": "post_enrollment",
+    "evidence": "Depends on the investigator's judgment of suitability.",
+    "sub_condition_notes": [
+      "Investigator judgment: post-enrollment"
+    ]
+  }
+]

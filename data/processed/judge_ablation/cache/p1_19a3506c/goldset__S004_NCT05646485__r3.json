@@ -1,0 +1,50 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"A 68-year-old man\" meets age ≥ 50.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Description states \"a long smoking history\" but gives no pack-year quantity, so ≥15 pack-years cannot be confirmed.",
+    "sub_condition_notes": [
+      "Smoking history present but not quantified"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No occupation or occupational exposure is mentioned. Note this may be an alternative to the smoking criterion, but the text does not say so.",
+    "sub_condition_notes": [
+      "Occupation (textile worker, painter, dry cleaner) not documented",
+      "Duration of ≥15 years not documented"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No prior bladder, kidney, or prostate cancer is mentioned. The bladder mass is a current finding and the suspected diagnosis is not a confirmed prior history, but prior cancer history is not explicitly addressed.",
+    "sub_condition_notes": [
+      "Prior bladder cancer: not documented",
+      "Prior kidney cancer: not documented",
+      "Prior prostate cancer: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "Patient \"presents with painless gross hematuria\" and had CT urography, but it is not stated whether hematuria was evaluated before, within the last 2 years. The current presentation workup may or may not count as prior evaluation.",
+    "sub_condition_notes": [
+      "Microhematuria evaluation in last 2 years: not documented",
+      "Gross hematuria evaluation in last 2 years: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is only given or declined when the patient is approached by the study team; nothing in the description addresses it.",
+    "sub_condition_notes": []
+  }
+]

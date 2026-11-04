@@ -1,0 +1,57 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is given after the patient applies; the description does not mention it.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "The patient is 73 years old, which is outside the 18-70 range.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "The description gives no formal RRD diagnosis (only symptoms) and no information on break location (4-8 o'clock) or on any need for an inferior retinotomy.",
+    "sub_condition_notes": [
+      "RRD diagnosis (primary or recurrent): not formally on record; only symptoms are described (suspected diagnosis is an inference) - unknown",
+      "Inferior retinal breaks between 4 and 8 o'clock within the detached area: not stated - unknown",
+      "Requiring inferior retinotomy: not stated - unknown"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information on break location or on indications for scleral buckling.",
+    "sub_condition_notes": [
+      "Only anterior breaks or dialysis: not stated - unknown",
+      "Meets indications for scleral buckling: not stated - unknown"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No information on the location of retinal breaks or on whether they are in the detached area.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No history of corneal ulcers, glaucoma, uveitis or other serious eye disease is mentioned; the history list is empty.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No mention of epilepsy or psychiatric disease; the history list is empty.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "post_enrollment",
+    "evidence": "This depends on the researcher's judgment of whether the patient is suitable.",
+    "sub_condition_notes": []
+  }
+]

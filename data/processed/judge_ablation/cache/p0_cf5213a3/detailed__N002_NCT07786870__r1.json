@@ -1,0 +1,93 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "Patient is 24 years old, which is over 18; no upper age limit applies.",
+    "sub_condition_notes": [
+      "age > 18: 24 years, met",
+      "no upper age limit: not a restriction for the patient"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "Asthma diagnosed by a pulmonologist at age 8, with current symptoms (wheezing, chest tightness, night cough). Spirometry met ATS quality criteria. The pulmonologist's diagnosis is accepted as consistent with GINA 2023; the specific diagnostic tests used in childhood are not documented.",
+    "sub_condition_notes": [
+      "diagnosis of asthma: yes, pulmonologist-diagnosed",
+      "GINA 2023 conformity: not explicitly documented, but a pulmonologist diagnosis with typical symptoms is accepted as consistent"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "\"he has no other lung disease\"; chest X-ray normal; never smoker.",
+    "sub_condition_notes": [
+      "other respiratory diseases: none",
+      "COPD: none, never smoked"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "\"He has never smoked cigarettes, vaped, or used cigars or marijuana.\"",
+    "sub_condition_notes": [
+      "active smoking: no",
+      "pack-years: 0"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No malignancy is mentioned, but cancer history is not explicitly stated either.",
+    "sub_condition_notes": [
+      "active malignancy: not documented; can be confirmed by asking the patient"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "pass",
+    "evidence": "No fever, normal chest X-ray at ED visit, no antibiotics needed; the exacerbation was triggered by cat exposure, not infection.",
+    "sub_condition_notes": [
+      "active pulmonary TB: no evidence, normal CXR",
+      "active respiratory tract infection: no evidence; non-infectious allergic trigger"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "Treated with a 5-day course of oral prednisone \"without antibiotics\".",
+    "sub_condition_notes": [
+      "no antibiotic use documented within 4 weeks; the ED treatment explicitly excluded antibiotics"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "Resting oxygen saturation 97% on room air; no home oxygen therapy mentioned.",
+    "sub_condition_notes": [
+      "long-term home oxygen: none",
+      "oxygen >15 h/day: no"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "pass",
+    "evidence": "Dupilumab is only scheduled for next week; he has not yet received any injection, so he is not currently on a monoclonal antibody. Note that enrollment timing relative to starting dupilumab matters, because the exclusion would apply once he begins treatment.",
+    "sub_condition_notes": [
+      "omalizumab: not on",
+      "mepolizumab: not on",
+      "reslizumab: not on",
+      "dupilumab: planned, not yet started",
+      "tezepelumab: not on",
+      "other biologics: none"
+    ]
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "pass",
+    "evidence": "Patient is male, so pregnancy is not applicable.",
+    "sub_condition_notes": [
+      "pregnancy: not applicable (male)"
+    ]
+  }
+]

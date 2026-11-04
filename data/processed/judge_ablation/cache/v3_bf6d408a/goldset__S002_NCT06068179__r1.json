@@ -1,0 +1,97 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "29-year-old woman; age 29 is within 18 to 60 years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Symptoms and a diffusely enlarged thyroid suggest hyperthyroidism, but no formal Graves' disease diagnosis is on record. The suspected diagnosis is an inference only.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No history of prior treatment or relapse is mentioned. The profile lists no history and no medications, but this does not confirm that none occurred.",
+    "sub_condition_notes": [
+      "Prior treatment: not stated",
+      "Relapse: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No workup of the etiology is given. The description does not rule out other causes of hyperthyroidism.",
+    "sub_condition_notes": [
+      "Toxic multinodular goiter: not stated",
+      "Toxic adenoma: not stated",
+      "Hashimoto's thyroiditis: not stated",
+      "Subacute thyroiditis: not stated",
+      "Iodine-induced hyperthyroidism: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "Eye findings and thyroid eye disease are not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Concurrent thyroid cancer is not mentioned. The exam notes only a diffusely enlarged, non-tender thyroid.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No ALT, AST or creatinine values are given.",
+    "sub_condition_notes": [
+      "ALT/AST: not given",
+      "Creatinine: not given"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No WBC count is given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Palpitations and tachycardia are noted, but heart failure and NYHA class are not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Chronic or severe infections are not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "The patient is a woman of reproductive age, but pregnancy, breastfeeding, pregnancy plans and contraception are not mentioned.",
+    "sub_condition_notes": [
+      "Pregnant: not stated",
+      "Breastfeeding: not stated",
+      "Planning pregnancy: not stated",
+      "Contraception compliance: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "Participation in other clinical studies is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness to participate and to comply with follow-up is only established after the patient applies.",
+    "sub_condition_notes": []
+  }
+]

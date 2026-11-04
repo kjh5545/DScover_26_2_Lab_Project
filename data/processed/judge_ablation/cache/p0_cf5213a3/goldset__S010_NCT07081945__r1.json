@@ -1,0 +1,53 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "No information on consent; it is obtained at enrollment and can be asked of the patient.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "Patient is 73 years old, outside the 18-70 range.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "post_enrollment",
+    "evidence": "Suspected RRD is present, but the location of retinal breaks (inferior 4-8 o'clock) or need for inferior retinotomy requires dilated fundus examination and surgical findings by the study team.",
+    "sub_condition_notes": [
+      "Inferior retinal breaks between 4 and 8 o'clock within the detached area: not documented; requires exam.",
+      "Requiring inferior retinotomy: determined intraoperatively; not known."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "post_enrollment",
+    "evidence": "Location of retinal breaks and the surgical indication (scleral buckling vs vitrectomy) are not known and need clinical examination.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "post_enrollment",
+    "evidence": "Break location relative to the detached area is not documented; needs fundus examination by the study team.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No ocular history is recorded (history is empty); pre-existing glaucoma, uveitis, or corneal disease could be asked about.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No history of epilepsy or psychiatric disease documented; can be asked of the patient.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "post_enrollment",
+    "evidence": "Investigator discretion; can only be judged by the study team.",
+    "sub_condition_notes": []
+  }
+]

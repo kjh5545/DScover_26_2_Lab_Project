@@ -1,0 +1,64 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is obtained only when the patient is approached for enrollment; the description says nothing about consent.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "The patient is 73 years old (\"A 73-year-old man\"), which is outside the 18-70 range.",
+    "sub_condition_notes": [
+      "Age 73 > 70: not within the required range."
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "The suspected diagnosis is rhegmatogenous retinal detachment of the right eye, but no formal RRD diagnosis is confirmed. No information on break location (4-8 o'clock) or on the need for an inferior retinotomy or PVR grade is given.",
+    "sub_condition_notes": [
+      "RRD (primary or recurrent): only suspected from symptoms, not formally confirmed.",
+      "Inferior retinal breaks between 4 and 8 o'clock within the detached area: not described.",
+      "Requires inferior retinotomy between 4 and 8 o'clock: not described; this would be determined at surgery or by the study team."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information on the location of the retinal breaks or on whether scleral buckling is indicated.",
+    "sub_condition_notes": [
+      "Only anterior breaks or dialysis: unknown.",
+      "Meets indications for scleral buckling: unknown."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No information on the location of the retinal breaks relative to the detached area.",
+    "sub_condition_notes": [
+      "Breaks at 4-8 o'clock not involved in the detachment: unknown."
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No history of corneal ulcer, glaucoma, uveitis or other serious eye disease is documented; the profile's history is empty, and absence of mention does not rule it out.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No history of epilepsy or psychiatric disease is mentioned; the profile's history is empty.",
+    "sub_condition_notes": [
+      "Epilepsy: not mentioned.",
+      "Serious psychiatric disease: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "post_enrollment",
+    "evidence": "This depends on the investigator's judgment, which is made by the study team.",
+    "sub_condition_notes": []
+  }
+]

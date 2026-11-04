@@ -1,0 +1,92 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "A 29-year-old woman; age 29 years is within 18 to 60.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Profile lists only a 'suspected_diagnosis' of 'Hyperthyroidism, most likely Graves' disease'. No formal diagnosis of Graves' disease is on record (no labs such as TSH, TRAb, or imaging), and it is not stated whether this is a new diagnosis.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "History and medications are empty. The patient presents with symptoms, but there is no explicit statement of prior Graves' treatment or relapse.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "Exam shows a 'diffusely enlarged, non-tender thyroid gland', which suggests Graves' disease, but no labs or imaging are given to formally rule out other etiologies (toxic nodular goiter, adenoma, thyroiditis, iodine-induced).",
+    "sub_condition_notes": [
+      "Toxic multinodular goiter / toxic adenoma: not excluded by testing, unknown.",
+      "Hashimoto's / subacute thyroiditis: no workup given; non-tender gland is only suggestive.",
+      "Iodine-induced hyperthyroidism: no exposure history given."
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No eye findings or ophthalmologic assessment are mentioned in the description.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No mention of thyroid cancer or nodules; the diffusely enlarged gland does not by itself rule out concurrent cancer.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No ALT, AST, or creatinine values are given; labs are empty.",
+    "sub_condition_notes": [
+      "ALT/AST > 3x ULN: not given.",
+      "Creatinine > 110 umol/L for females: not given."
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No WBC count is given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Palpitations and tachycardia are noted, but there is no mention of heart failure or NYHA class.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "No information on tuberculosis, hepatitis B, or other chronic infections.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "The patient is a 29-year-old woman of childbearing age. Pregnancy, breastfeeding, pregnancy plans, and contraception compliance are not mentioned.",
+    "sub_condition_notes": [
+      "Pregnant: not stated.",
+      "Breastfeeding: not stated.",
+      "Planning pregnancy: not stated.",
+      "Unable to comply with contraception: not stated."
+    ]
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "No information on current or prior participation in clinical studies.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness to participate and comply with follow-up can only be determined after the patient applies and is consented.",
+    "sub_condition_notes": []
+  }
+]

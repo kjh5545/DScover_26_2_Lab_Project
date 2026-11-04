@@ -1,0 +1,91 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "Patient is 29 years old, within 18-60.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Suspected Graves' disease based on clinical findings, but no confirmatory labs (TSH, free T4/T3, TRAb) or formal diagnosis are given. Presentation suggests it is new, but this is not confirmed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "No history or medications listed; the presentation is of a first presentation with no prior treatment or relapse reported.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "Diffuse, non-tender goiter favors Graves' over toxic nodular goiter, adenoma or subacute thyroiditis, but no labs, antibodies or imaging are available to exclude other etiologies such as Hashimoto's or iodine-induced hyperthyroidism.",
+    "sub_condition_notes": [
+      "Toxic multinodular goiter/adenoma: diffuse gland suggests not, unconfirmed",
+      "Subacute thyroiditis: non-tender gland argues against, unconfirmed",
+      "Hashimoto's/iodine-induced: not assessed"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No eye examination or ophthalmic symptoms are described.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No information on thyroid nodules, cancer or planned surgery; the diffusely enlarged gland does not suggest it, but imaging is not given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No liver enzyme or creatinine results available.",
+    "sub_condition_notes": [
+      "ALT/AST >3x ULN: unknown",
+      "Creatinine >110 µmol/L (female): unknown"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No WBC count available.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Palpitations and tachycardia are noted, but there is no information on heart failure symptoms or NYHA class; no history of heart disease is listed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "No information on chronic infections such as TB or hepatitis B.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "A 29-year-old woman; pregnancy, breastfeeding, pregnancy plans and contraception compliance are not stated.",
+    "sub_condition_notes": [
+      "Pregnant/breastfeeding: unknown",
+      "Planning pregnancy: unknown",
+      "Able to comply with contraception: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "No information on current or prior participation in clinical studies.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "unknown",
+    "evidence": "Willingness and ability to follow up and to participate have not been stated.",
+    "sub_condition_notes": []
+  }
+]

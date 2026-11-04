@@ -1,0 +1,50 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"A 68-year-old man\" meets age ≥ 50.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "\"He has smoked about one pack a day for 45 years and is still smoking\" = about 45 pack-years, which is ≥15.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No occupation or occupational exposure is described (textile worker, painter, dry cleaner). It is unclear whether this is required in addition to the smoking criterion or as an alternative to it.",
+    "sub_condition_notes": [
+      "Textile worker: not mentioned",
+      "Painter: not mentioned",
+      "Dry cleaner: not mentioned",
+      "≥15 years duration: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "The bladder tumor is a current, newly found, suspected cancer: \"No histopathological diagnosis has been established yet.\" No prior bladder, kidney, or prostate cancer is mentioned. The history lists only smoking, hypertension, and hyperlipidemia. The current suspected bladder cancer is not a prior history.",
+    "sub_condition_notes": [
+      "Prior bladder cancer: none described; the current tumor is a new finding",
+      "Prior kidney cancer: none described",
+      "Prior prostate cancer: none described"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "The hematuria began three weeks ago and the workup (CT urography, cystoscopy, urinalysis, culture) is current. Whether any earlier hematuria evaluation occurred within the last 2 years is not stated. It is also unclear whether the current evaluation counts as 'prior' for this study.",
+    "sub_condition_notes": [
+      "Current evaluation started within the last 3 weeks",
+      "No mention of hematuria evaluation before this episode"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "The patient has not yet been asked about consent, and nothing in the description addresses it.",
+    "sub_condition_notes": []
+  }
+]

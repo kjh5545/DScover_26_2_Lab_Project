@@ -1,0 +1,83 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"A 68-year-old man\" falls within 18 to 90 years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "post_enrollment",
+    "evidence": "Ability and willingness to understand and sign informed consent can only be determined after the patient applies.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "CT urography shows \"a mass in the bladder wall\", but there is no mention of cystoscopy showing a papillary tumor, a scheduled TURBT, or histologically proven MIBC.",
+    "sub_condition_notes": [
+      "Papillary tumor on cystoscopy scheduled for TURBT: not stated",
+      "Histologically proven, clinically localized MIBC amenable to curative resection: not stated"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "No ECOG performance status is given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "unknown",
+    "evidence": "No creatinine or creatinine clearance values are given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information on allergies or hypersensitivity to gadobutrol or ferumoxytol.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "Claustrophobia is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No information on implanted devices, prosthetics, or pacemaker.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Metastatic disease is not mentioned; only a bladder wall mass on CT urography is described, and staging is not given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "The patient is a man, so pregnancy, lactation or plans to conceive do not apply.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Urinary tract infection status is not mentioned; only hematuria is described.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Urethral stricture disease is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "post_enrollment",
+    "evidence": "Unacceptable risk is judged by the treating physician.",
+    "sub_condition_notes": []
+  }
+]

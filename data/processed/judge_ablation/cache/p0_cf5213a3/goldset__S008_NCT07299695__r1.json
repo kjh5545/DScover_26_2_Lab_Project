@@ -1,0 +1,97 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "Patient is 60 years old.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Suspected IPF with UIP pattern on CT (bilateral basal reticular opacities with honeycombing), but a formal diagnosis meeting ATS/ERS criteria (exclusion of other causes, MDD) is not confirmed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "Presentation is progressive dyspnea with a UIP-pattern CT, but there is no mention of hospitalisation, acute worsening (<1 month), or new bilateral ground-glass opacity/consolidation. AE-IPF is not established.",
+    "sub_condition_notes": [
+      "Hospitalisation: not stated",
+      "Acute worsening <1 month: not stated (dyspnea described as progressive)",
+      "New GGO/consolidation on CT: not described",
+      "Exclusion of cardiac failure/fluid overload: not stated"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "Capacity and willingness to consent are not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information on heart failure or pulmonary embolism.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No allergy history provided.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "IgA level or IgA deficiency not reported.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Diagnosis is only suspected; the multidisciplinary discussion outcome is not given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No cancer history documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Medications list is empty; recent corticosteroid or immunosuppressant use not confirmed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Participation in other trials not stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Pregnancy/lactation status not stated; at 60 years pregnancy is unlikely, but it is not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "Legal guardianship status not stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "Not stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Consent or refusal is determined only when the study team approaches the patient.",
+    "sub_condition_notes": []
+  }
+]
