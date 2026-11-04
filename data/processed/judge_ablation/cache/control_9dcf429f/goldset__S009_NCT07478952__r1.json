@@ -1,0 +1,64 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "fail",
+    "evidence": "Patient presents with fever, sore throat, fatigue, lymphadenopathy, splenomegaly and a positive monospot (infectious mononucleosis). Medical evaluation documents an active illness, so the patient is not healthy.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "Patient is male (19-year-old male), so not assigned female at birth and cannot become pregnant or breastfeed. The criterion does not restrict him.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information on recent surgery or scheduled surgery; history is empty.",
+    "sub_condition_notes": [
+      "Surgery within 7 days prior to Day 1/Day 57: not documented.",
+      "Scheduled surgery within 28 days after intervention: not documented."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No reported history of immunodeficiency, asplenia, or recurrent severe infection is documented. Splenomegaly is present (spleen exists), but absence of other conditions is not explicitly stated.",
+    "sub_condition_notes": [
+      "Congenital/acquired immunodeficiency: not documented.",
+      "Immunosuppressive condition: not documented.",
+      "Asplenia: splenomegaly on exam implies a spleen is present, so not asplenic.",
+      "Recurrent severe infectious disease: not documented."
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "Medications list is empty, but no explicit statement that corticosteroids were not received or anticipated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No medications listed, but there is no explicit statement about prior systemic immunosuppressive therapy within 180 days or future plans.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "Vaccination history is not documented, and future vaccine plans are unknown.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "History is empty; there is no explicit statement about myocarditis, pericarditis, or myopericarditis.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No documentation on prior investigational EBV vaccine receipt.",
+    "sub_condition_notes": []
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "Patient is 7 years old (under 16) and male, and has nephrotic-range findings (heavy proteinuria, low albumin). Medications list is empty, so no prior GC is documented. However, whether he has been or will be treated with GC at 2 mg/kg/day prednisolone with gradual taper is not stated, and the diagnosis is only suspected.",
+    "sub_condition_notes": [
+      "Nephrotic patient under 16, either gender: met (age 7, male; nephrotic picture, diagnosis suspected).",
+      "Treated with GC for the first time: no GC documented; not confirmed that treatment has been given.",
+      "GC initiated at 2 mg/kg/day prednisolone with gradual reduction: not documented."
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "Patient has a 3-week history of symptoms and no medications listed, so he cannot have been on glucocorticoids for more than 6 months. Vitamin D level is also not documented.",
+    "sub_condition_notes": [
+      "On GC therapy for more than 6 months: not met; symptoms for only 3 weeks and no medications.",
+      "Vitamin D ≥30 ng/ml: not documented."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No creatinine, eGFR, or other kidney function results are provided; only proteinuria and low albumin.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No medications or supplements are listed and no compliance information is given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No mention of gallbladder/biliary disease, cystic fibrosis, celiac disease, or other fat-soluble vitamin malabsorption; silence does not confirm absence.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No history of bleeding disorders, osteomalacia, or other vitamin K-related disorders is documented either way.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "Fracture history is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No genetic testing is documented; the diagnosis is only suspected (most likely minimal change disease), so a genetic cause is not excluded.",
+    "sub_condition_notes": []
+  }
+]

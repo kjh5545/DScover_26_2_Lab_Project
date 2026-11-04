@@ -1,0 +1,54 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is formally obtained at the consent/screening visit; nothing in the record documents consent yet.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "Patient is 73 years old, which is outside the 18-70 range.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "The suspected diagnosis is rhegmatogenous retinal detachment of the right eye, but break location (inferior 4-8 o'clock) and any need for inferior retinotomy are not documented. The diagnosis is only suspected.",
+    "sub_condition_notes": [
+      "RRD (primary or recurrent): suspected only, not confirmed.",
+      "Inferior breaks between 4-8 o'clock within the detached area: not documented.",
+      "Requiring inferior retinotomy: not documented."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "Break location and the indication for scleral buckling are not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "Retinal break locations and their relation to the detached area are not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "History is empty; no statement about pre-existing eye diseases such as glaucoma, uveitis or corneal ulcer. Absence of information is not confirmation of absence.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No history is documented regarding epilepsy or serious psychiatric disease.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "post_enrollment",
+    "evidence": "Depends on the researcher's judgment of suitability, which only the study team can determine.",
+    "sub_condition_notes": []
+  }
+]

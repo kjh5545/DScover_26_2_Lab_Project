@@ -1,0 +1,54 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is formally obtained at the consent/screening visit. The record contains no information about consent.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "The patient is 73 years old, which is outside the required 18-70 range.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "Suspected rhegmatogenous retinal detachment of the right eye is documented, but the location of the breaks (inferior, 4-8 o'clock) and any need for inferior retinotomy are not documented.",
+    "sub_condition_notes": [
+      "RRD: suspected, consistent with the presentation, not confirmed.",
+      "Inferior breaks between 4-8 o'clock within the detached area: not documented, unknown.",
+      "Requiring inferior retinotomy: not documented, unknown."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "Break location and indication for scleral buckling are not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "Break locations and their relation to the detached area are not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No ocular history is given. The history is empty, and absence of serious eye diseases is not stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No history of epilepsy or psychiatric disease is stated. The history list is empty, which is not an explicit denial.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "post_enrollment",
+    "evidence": "This depends on the researcher's judgment of suitability.",
+    "sub_condition_notes": []
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "Patient is a 68-year-old man, which satisfies age ≥ 50.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Only 'long smoking history' is documented. Pack-years are not quantified, so ≥15 pack-years cannot be confirmed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No occupation or occupational exposure history is documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No prior bladder, kidney, or prostate cancer is mentioned, but silence does not confirm absence. The bladder mass is a current finding, and it is not stated whether this is a first diagnosis.",
+    "sub_condition_notes": [
+      "Prior bladder cancer: not documented",
+      "Prior kidney cancer: not documented",
+      "Prior prostate cancer: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "The patient presents with gross hematuria now, and CT urography was done. It is not stated whether any hematuria evaluation took place in the prior 2 years, nor whether this CT counts as the evaluation.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No information on whether the patient will provide informed consent. The patient could be asked.",
+    "sub_condition_notes": []
+  }
+]

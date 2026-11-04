@@ -2594,6 +2594,525 @@ v3_r1112,goldset,S010_NCT07081945,E2,3,모름,모름,True,No information on the 
 v3_r1112,goldset,S010_NCT07081945,E3,3,모름,모름,True,"No history of corneal ulcers, glaucoma, uveitis or other serious eye disease is mentioned; the history list is empty."
 v3_r1112,goldset,S010_NCT07081945,E4,3,모름,모름,True,No mention of epilepsy or psychiatric disease; the history list is empty.
 v3_r1112,goldset,S010_NCT07081945,E5,3,등록 후 확인,등록 후 확인,True,This depends on the researcher's judgment of whether the patient is suitable.
+control,goldset,S001_NCT04647097,I1,1,모름,모름,True,"Patient has severe epigastric pain radiating to the back, markedly elevated lipase and amylase, and chronic alcohol use, with a suspected diagnosis of alcohol-induced acute pancreatitis. Hospitalization is not explicitly stated, and other etiologies are not documented as excluded. The record has no "
+control,goldset,S001_NCT04647097,I2,1,모름,모름,True,Smoking status is not mentioned anywhere in the record.
+control,goldset,S001_NCT04647097,I3,1,통과,통과,True,"Patient is 54 years old, within 18-80."
+control,goldset,S001_NCT04647097,I4,1,등록 후 확인,등록 후 확인,True,Written informed consent is obtained formally at the consent or screening visit; none is documented yet.
+control,goldset,S001_NCT04647097,I5,1,등록 후 확인,모름,False,Willingness to take part in the intervention every three months is not documented. The patient could be asked.
+control,goldset,S001_NCT04647097,E1,1,모름,모름,True,"No information on gallstones, triglycerides, calcium, or viral infection. The absence of other etiologies is not documented."
+control,goldset,S001_NCT04647097,E2,1,모름,모름,True,No psychiatric history is mentioned. Silence does not confirm absence.
+control,goldset,S001_NCT04647097,E3,1,모름,모름,True,Participation in a smoking cessation program is not mentioned.
+control,goldset,S001_NCT04647097,E4,1,모름,모름,True,"No mention of malignancy or cancer treatment. Medications list is empty, but this does not explicitly confirm absence."
+control,goldset,S001_NCT04647097,E5,1,통과,통과,True,"Patient is a 54-year-old man, so pregnancy and breastfeeding do not apply."
+control,goldset,S001_NCT04647097,E6,1,등록 후 확인,등록 후 확인,True,Life expectancy requires clinician or investigator judgment. No documented prognosis is available.
+control,goldset,S001_NCT04647097,E7,1,등록 후 확인,모름,False,The patient's agreement to participate is not documented. The patient could be asked.
+control,goldset,S001_NCT04647097,E8,1,등록 후 확인,등록 후 확인,True,'Other' is a non-specific catch-all that only the study team can evaluate.
+control,goldset,S001_NCT04647097,I1,2,모름,모름,True,"Severe epigastric pain radiating to the back and markedly elevated lipase and amylase meet the Atlanta criteria for AP, and chronic alcohol use is documented. However, hospitalization is not explicitly stated, and the alcohol etiology is only 'suspected' (other causes not documented as excluded)."
+control,goldset,S001_NCT04647097,I2,2,모름,모름,True,No smoking history is documented in the description or profile.
+control,goldset,S001_NCT04647097,I3,2,통과,통과,True,"Patient is 54 years old, within 18-80."
+control,goldset,S001_NCT04647097,I4,2,등록 후 확인,등록 후 확인,True,Written informed consent is obtained formally at the consent/enrollment visit; nothing in the record addresses it.
+control,goldset,S001_NCT04647097,I5,2,등록 후 확인,모름,False,Willingness to take part in the intervention every three months is not documented; the patient could be asked.
+control,goldset,S001_NCT04647097,E1,2,모름,모름,True,"Triglycerides, calcium, gallstone imaging, and viral infection status are not documented, so other etiologies or combined etiologies cannot be ruled out."
+control,goldset,S001_NCT04647097,E2,2,모름,모름,True,No psychiatric history is mentioned; absence is not explicitly stated.
+control,goldset,S001_NCT04647097,E3,2,모름,모름,True,No information on participation in a smoking cessation program.
+control,goldset,S001_NCT04647097,E4,2,모름,모름,True,"No malignancy or cancer treatment is documented, but absence is not explicitly stated."
+control,goldset,S001_NCT04647097,E5,2,통과,통과,True,"Patient is a 54-year-old male, so pregnancy and breastfeeding do not apply."
+control,goldset,S001_NCT04647097,E6,2,등록 후 확인,등록 후 확인,True,Life expectancy requires clinician/investigator judgment; no documented prognosis in the record.
+control,goldset,S001_NCT04647097,E7,2,등록 후 확인,모름,False,Patient's agreement to participate is not documented; the patient could be asked.
+control,goldset,S001_NCT04647097,E8,2,등록 후 확인,등록 후 확인,True,Vague 'Other' criterion; it can only be judged by the study team/investigator.
+control,goldset,S001_NCT04647097,I1,3,모름,모름,True,"The record gives severe epigastric pain radiating to the back and markedly elevated lipase and amylase, which fits two revised Atlanta criteria (pain, enzymes >3x ULN). Hospitalization is not explicitly stated, and the diagnosis is only 'suspected'. Alcohol etiology is also not confirmed, because ot"
+control,goldset,S001_NCT04647097,I2,3,모름,모름,True,Smoking status is not mentioned anywhere in the record. Only chronic alcohol use is documented.
+control,goldset,S001_NCT04647097,I3,3,통과,통과,True,"Age is 54 years, within 18-80."
+control,goldset,S001_NCT04647097,I4,3,등록 후 확인,등록 후 확인,True,Written informed consent is formally obtained at the consent/screening visit. The record has no information on it.
+control,goldset,S001_NCT04647097,I5,3,등록 후 확인,모름,False,Willingness to take part in the intervention every three months is not documented. The patient could be asked.
+control,goldset,S001_NCT04647097,E1,3,모름,모름,True,"No information on gallstones, triglyceride level, calcium, or viral infection. Other etiologies are neither confirmed nor excluded."
+control,goldset,S001_NCT04647097,E2,3,모름,모름,True,No psychiatric history is mentioned. Silence does not confirm absence.
+control,goldset,S001_NCT04647097,E3,3,모름,모름,True,Participation in a smoking cessation program is not mentioned.
+control,goldset,S001_NCT04647097,E4,3,모름,모름,True,"No mention of malignancy or cancer treatment. The medication list is empty, but absence of malignancy is not explicitly stated."
+control,goldset,S001_NCT04647097,E5,3,통과,통과,True,"The patient is male, so pregnancy and breastfeeding are not applicable."
+control,goldset,S001_NCT04647097,E6,3,등록 후 확인,등록 후 확인,True,Life expectancy under two years requires clinician/investigator judgment. The record has no documented prognosis.
+control,goldset,S001_NCT04647097,E7,3,등록 후 확인,모름,False,The patient's agreement to participate is not documented. The patient could be asked.
+control,goldset,S001_NCT04647097,E8,3,등록 후 확인,등록 후 확인,True,The vague 'Other' exclusion depends on investigator judgment and cannot be assessed from the record.
+control,goldset,S001_NCT07024199,I1,1,모름,모름,True,"The patient has epigastric pain radiating to the back and markedly elevated lipase and amylase. These fit acute pancreatitis, but the INSPPIRE criteria are not specified, and the record gives no imaging and no numeric lab values. The criteria are meant for pediatric patients."
+control,goldset,S001_NCT07024199,I2,1,탈락,탈락,True,"The patient is 54 years old, outside the required range of 3 to 18 years."
+control,goldset,S001_NCT07024199,I3,1,모름,모름,True,"The pain is described as severe, but no NRS or FLACC score is recorded."
+control,goldset,S001_NCT07024199,I4,1,모름,모름,True,"The medication list is empty, but no statement says whether any analgesic was taken before presentation or when the last dose was."
+control,goldset,S001_NCT07024199,I5,1,등록 후 확인,모름,False,"No information on consent. The patient is an adult, so guardian consent would not apply, but the patient's own consent is not documented."
+control,goldset,S001_NCT07024199,E1,1,모름,모름,True,"The medication list is empty, but recent painkiller use (paracetamol, ibuprofen, metamizole) within 6 hours is not explicitly addressed."
+control,goldset,S001_NCT07024199,E2,1,모름,모름,True,No allergy information is documented.
+control,goldset,S001_NCT07024199,E3,1,모름,모름,True,Inflammatory bowel disease is not mentioned. The record does not state it is absent.
+control,goldset,S001_NCT07024199,E4,1,모름,모름,True,No mention of GI bleeding or other active bleeding. The record does not state it is absent.
+control,goldset,S001_NCT07024199,E5,1,모름,모름,True,Gastric or duodenal ulcer disease is not mentioned. The record does not state it is absent.
+control,goldset,S001_NCT07024199,E6,1,모름,모름,True,"The medication list is empty, but chronic use of paracetamol, NSAIDs or metamizole is not explicitly addressed."
+control,goldset,S001_NCT07024199,E7,1,모름,모름,True,"Liver failure is not documented either way. The patient has chronic alcohol use, but liver status is not given."
+control,goldset,S001_NCT07024199,E8,1,모름,모름,True,Heart failure is not mentioned. The record does not state it is absent.
+control,goldset,S001_NCT07024199,E9,1,모름,모름,True,Renal function and renal failure are not mentioned.
+control,goldset,S001_NCT07024199,E10,1,모름,모름,True,Cancer is not mentioned. The record does not state it is absent.
+control,goldset,S001_NCT07024199,E11,1,등록 후 확인,통과,False,"The patient is a 54-year-old adult, so legal guardian consent does not apply and guardians cannot have refused."
+control,goldset,S001_NCT07024199,E12,1,등록 후 확인,모름,False,"The patient is older than 16, so this criterion applies to him, but his consent or refusal is not documented."
+control,goldset,S001_NCT07024199,I1,2,모름,모름,True,"The patient has severe epigastric pain radiating to the back and markedly elevated lipase and amylase. The INSPPIRE criteria are not given in the record, and a pediatric trial's criteria may not be applicable to a 54-year-old. The record only states a suspected diagnosis of acute pancreatitis."
+control,goldset,S001_NCT07024199,I2,2,탈락,탈락,True,"The patient is 54 years old, outside the required range of 3 to 18 years."
+control,goldset,S001_NCT07024199,I3,2,모름,모름,True,"Severe epigastric pain is described, but no NRS or FLACC score is documented."
+control,goldset,S001_NCT07024199,I4,2,모름,모름,True,"The medication list is empty, but the record does not explicitly state that no analgesic was taken before enrolment."
+control,goldset,S001_NCT07024199,I5,2,등록 후 확인,등록 후 확인,True,"Consent from guardians and the patient is obtained formally at the consent or screening visit. Nothing in the record documents it. The patient is an adult, so the guardian element is also questionable."
+control,goldset,S001_NCT07024199,E1,2,모름,모름,True,"The medication list is empty, but recent painkiller use (paracetamol, ibuprofen, metamizole) within 6 hours is not explicitly addressed."
+control,goldset,S001_NCT07024199,E2,2,모름,모름,True,No allergy information is documented.
+control,goldset,S001_NCT07024199,E3,2,모름,모름,True,Inflammatory bowel disease is not mentioned. History is limited to chronic alcohol use.
+control,goldset,S001_NCT07024199,E4,2,모름,모름,True,"No mention of gastrointestinal or other active bleeding. Symptoms are pain, nausea and vomiting only."
+control,goldset,S001_NCT07024199,E5,2,모름,모름,True,Gastric or duodenal ulcer disease is not addressed in the record.
+control,goldset,S001_NCT07024199,E6,2,모름,모름,True,"The medication list is empty, but chronic use of paracetamol, NSAIDs or metamizole is not explicitly ruled out."
+control,goldset,S001_NCT07024199,E7,2,모름,모름,True,"Chronic alcohol use is documented, but liver failure is neither stated nor excluded, and no liver function data are given."
+control,goldset,S001_NCT07024199,E8,2,모름,모름,True,Heart failure is not mentioned in the record.
+control,goldset,S001_NCT07024199,E9,2,모름,모름,True,"Renal function is not documented, and renal failure is neither stated nor excluded."
+control,goldset,S001_NCT07024199,E10,2,모름,모름,True,"No cancer history is documented, but its absence is not explicitly stated."
+control,goldset,S001_NCT07024199,E11,2,등록 후 확인,등록 후 확인,True,"Guardian consent or refusal arises only at the study's consent process. Nothing is documented, and the patient is an adult."
+control,goldset,S001_NCT07024199,E12,2,등록 후 확인,등록 후 확인,True,The patient's own consent or refusal is obtained only at the study's consent process. No refusal is documented.
+control,goldset,S001_NCT07024199,I1,3,모름,모름,True,"The patient has severe epigastric pain radiating to the back and markedly elevated lipase and amylase, which fits acute pancreatitis. The INSPPIRE criteria are not given. Imaging is not documented, and the criteria are pediatric. Whether the patient meets them cannot be confirmed."
+control,goldset,S001_NCT07024199,I2,3,탈락,탈락,True,"The patient is 54 years old, outside the required range of 3 to 18 years."
+control,goldset,S001_NCT07024199,I3,3,모름,모름,True,"Pain is described as severe, but no NRS or FLACC score is documented."
+control,goldset,S001_NCT07024199,I4,3,모름,모름,True,"The medication list is empty, but the record does not explicitly state that no analgesics were taken before presentation."
+control,goldset,S001_NCT07024199,I5,3,등록 후 확인,등록 후 확인,True,Consent is obtained formally at the screening or consent visit. It is not documented in the record.
+control,goldset,S001_NCT07024199,E1,3,모름,모름,True,"The record does not say whether any painkiller was taken in the last 6 hours. The medication list is empty, but silence does not confirm absence."
+control,goldset,S001_NCT07024199,E2,3,모름,모름,True,No allergy information is documented.
+control,goldset,S001_NCT07024199,E3,3,모름,모름,True,Inflammatory bowel disease is not mentioned in the history.
+control,goldset,S001_NCT07024199,E4,3,모름,모름,True,"Gastrointestinal or other active bleeding is not mentioned. Vomiting is noted, but no hematemesis is described."
+control,goldset,S001_NCT07024199,E5,3,모름,모름,True,Gastric or duodenal ulcer disease is not mentioned. Chronic alcohol use alone does not establish or exclude it.
+control,goldset,S001_NCT07024199,E6,3,모름,모름,True,"The medication list is empty, but chronic use of paracetamol, NSAIDs or metamizole is not explicitly ruled out."
+control,goldset,S001_NCT07024199,E7,3,모름,모름,True,"Liver failure is not documented either way. Chronic alcohol use is noted, but no liver status is given."
+control,goldset,S001_NCT07024199,E8,3,모름,모름,True,Heart failure is not mentioned.
+control,goldset,S001_NCT07024199,E9,3,모름,모름,True,Renal function and renal failure are not documented.
+control,goldset,S001_NCT07024199,E10,3,모름,모름,True,Cancer history is not mentioned.
+control,goldset,S001_NCT07024199,E11,3,등록 후 확인,모름,False,"Guardian consent is not documented. The patient is an adult, so guardian consent would not normally apply, but this is not stated in the record."
+control,goldset,S001_NCT07024199,E12,3,등록 후 확인,등록 후 확인,True,Study consent is obtained formally at the consent visit. No refusal is documented.
+control,goldset,S002_NCT06068179,I1,1,통과,통과,True,"Patient is 29 years old, within 18 to 60."
+control,goldset,S002_NCT06068179,I2,1,모름,모름,True,"Only a suspected diagnosis of 'most likely Graves' disease' is documented, with no confirmatory labs (TSH, TRAb, free T4/T3). Presentation suggests it is new, but the diagnosis is not confirmed."
+control,goldset,S002_NCT06068179,E1,1,모름,모름,True,"History and medications are empty, and there is no explicit statement that she has had no prior Graves' treatment or relapse. The presentation suggests a first episode, but this is not confirmed."
+control,goldset,S002_NCT06068179,E2,1,모름,모름,True,"A diffusely enlarged thyroid favors Graves' disease, but no testing is documented to exclude other causes such as thyroiditis, toxic nodular goiter, or iodine-induced hyperthyroidism."
+control,goldset,S002_NCT06068179,E3,1,모름,모름,True,"No eye examination or thyroid eye disease findings are documented, so the absence of moderate to severe TED requiring intervention is not confirmed."
+control,goldset,S002_NCT06068179,E4,1,모름,모름,True,"No information on thyroid nodules, imaging, or cancer. Only a diffusely enlarged, non-tender gland is described."
+control,goldset,S002_NCT06068179,E5,1,모름,모름,True,"No liver or kidney labs (ALT, AST, creatinine) are provided; the labs list is empty."
+control,goldset,S002_NCT06068179,E6,1,모름,모름,True,No WBC count is documented.
+control,goldset,S002_NCT06068179,E7,1,모름,모름,True,"Tachycardia and palpitations are present, but no heart failure diagnosis or NYHA class is documented. Absence of heart failure is not stated."
+control,goldset,S002_NCT06068179,E8,1,모름,모름,True,"No infection history or screening (TB, hepatitis B) is documented."
+control,goldset,S002_NCT06068179,E9,1,모름,모름,True,"She is a 29-year-old woman, so childbearing potential is possible, but there is no information on pregnancy, lactation, pregnancy plans, or contraception compliance."
+control,goldset,S002_NCT06068179,E10,1,모름,모름,True,No information on current or prior participation in other clinical studies.
+control,goldset,S002_NCT06068179,E11,1,등록 후 확인,모름,False,Willingness and ability to comply with follow-up and to participate are not documented. The patient could be asked.
+control,goldset,S002_NCT06068179,I1,2,통과,통과,True,"Age 29 years, within 18–60."
+control,goldset,S002_NCT06068179,I2,2,모름,모름,True,"Graves' disease is only suspected (""most likely Graves' disease""); no confirmatory labs (TSH, TRAb, free T4/T3) documented, so a confirmed new diagnosis is not established."
+control,goldset,S002_NCT06068179,E1,2,모름,모름,True,"No history or medications are listed and the presentation suggests a first presentation, but prior treatment or relapse is not explicitly stated as absent."
+control,goldset,S002_NCT06068179,E2,2,모름,모름,True,"Diffusely enlarged, non-tender gland argues against nodular disease or subacute thyroiditis, but no workup (antibodies, uptake scan, iodine exposure history) is documented to exclude other etiologies."
+control,goldset,S002_NCT06068179,E3,2,모름,모름,True,No eye findings or ophthalmic assessment are documented.
+control,goldset,S002_NCT06068179,E4,2,모름,모름,True,No information on thyroid cancer or surgical need; no nodules or imaging documented.
+control,goldset,S002_NCT06068179,E5,2,모름,모름,True,"No ALT, AST or creatinine results are provided."
+control,goldset,S002_NCT06068179,E6,2,모름,모름,True,No WBC count is documented.
+control,goldset,S002_NCT06068179,E7,2,모름,모름,True,"Palpitations and tachycardia are noted, but there is no documented heart failure status or NYHA class."
+control,goldset,S002_NCT06068179,E8,2,모름,모름,True,"No infection history or screening (TB, hepatitis B) is documented."
+control,goldset,S002_NCT06068179,E9,2,모름,모름,True,"A 29-year-old woman, so childbearing potential is likely. No information on pregnancy, lactation, pregnancy plans or contraception."
+control,goldset,S002_NCT06068179,E10,2,모름,모름,True,No information on current or prior clinical study participation.
+control,goldset,S002_NCT06068179,E11,2,등록 후 확인,모름,False,Willingness and ability to follow up and participate are not documented; the patient could be asked.
+control,goldset,S002_NCT06068179,I1,3,통과,통과,True,"Patient is 29 years old, within 18 to 60."
+control,goldset,S002_NCT06068179,I2,3,모름,모름,True,"The diagnosis is only suspected (""most likely Graves' disease""). No confirmatory labs (TSH, free T4, TRAb) are documented, and no prior diagnosis or treatment is documented."
+control,goldset,S002_NCT06068179,E1,3,모름,모름,True,"The patient presents with symptoms and no treatment history or medications are listed. This suggests no prior treatment, but absence is not explicitly stated, and the diagnosis is unconfirmed."
+control,goldset,S002_NCT06068179,E2,3,모름,모름,True,"The diffusely enlarged, non-tender gland favors Graves' disease, but no workup (antibodies, uptake scan, ultrasound) excludes other etiologies such as toxic multinodular goiter or thyroiditis."
+control,goldset,S002_NCT06068179,E3,3,모름,모름,True,No eye findings or ophthalmic assessment are documented.
+control,goldset,S002_NCT06068179,E4,3,모름,모름,True,"No thyroid cancer is documented, but no nodule or cancer workup is available to confirm absence."
+control,goldset,S002_NCT06068179,E5,3,모름,모름,True,"No ALT, AST or creatinine values are recorded (labs list is empty)."
+control,goldset,S002_NCT06068179,E6,3,모름,모름,True,No WBC count is recorded.
+control,goldset,S002_NCT06068179,E7,3,모름,모름,True,"Palpitations and tachycardia are present, but no heart failure history or NYHA class is documented."
+control,goldset,S002_NCT06068179,E8,3,모름,모름,True,"No infection history or screening (TB, hepatitis B) is documented."
+control,goldset,S002_NCT06068179,E9,3,모름,모름,True,"The patient is a 29-year-old woman of childbearing age. Pregnancy, breastfeeding, pregnancy plans and contraception compliance are not documented."
+control,goldset,S002_NCT06068179,E10,3,모름,모름,True,Participation in other clinical studies is not documented.
+control,goldset,S002_NCT06068179,E11,3,등록 후 확인,모름,False,The patient's willingness and ability to follow up and participate are not documented. She could be asked.
+control,goldset,S002_NCT07018323,I1,1,등록 후 확인,모름,False,"No information on the patient's ability to understand the trial, consent in writing, or comply with the protocol. The patient could be asked, and consent is formally obtained at the consent visit."
+control,goldset,S002_NCT07018323,I2,1,통과,통과,True,"29-year-old female, which meets age ≥ 18 years."
+control,goldset,S002_NCT07018323,I3,1,모름,모름,True,"Only a suspected diagnosis of Graves' disease (""most likely""), not confirmed. No history of ATD treatment is recorded (medications and history are empty), and there are no labs showing persistent hyperthyroidism despite ATD."
+control,goldset,S002_NCT07018323,I4,1,등록 후 확인,등록 후 확인,True,Protocol-specific inclusion criteria are not specified here. The study team must assess them at screening.
+control,goldset,S002_NCT07018323,E1,1,모름,모름,True,"History is empty. No statement about prior RAI therapy or thyroidectomy, so absence cannot be confirmed."
+control,goldset,S002_NCT07018323,E2,1,등록 후 확인,모름,False,No information on other autoimmune diseases. Whether one puts the participant at undue risk is an investigator judgment.
+control,goldset,S002_NCT07018323,E3,1,모름,모름,True,"No eye findings or TED history are documented. The exam reports no ophthalmic assessment and no plans for TED surgery, irradiation, or therapy."
+control,goldset,S002_NCT07018323,E4,1,등록 후 확인,등록 후 확인,True,Additional protocol-defined exclusion criteria are not specified here. The study team must assess them at screening.
+control,goldset,S002_NCT07018323,I1,2,등록 후 확인,모름,False,"No information on the patient's ability to understand the trial, give written consent, or comply with the protocol. Consent is formally obtained only at enrollment, but the patient could be asked about willingness and ability now."
+control,goldset,S002_NCT07018323,I2,2,통과,통과,True,"Patient is a 29-year-old woman, so she meets the age ≥ 18 years requirement."
+control,goldset,S002_NCT07018323,I3,2,모름,모름,True,"Graves' disease is only suspected (""most likely Graves' disease""). No confirmed diagnosis, no labs, and no history of ATD treatment. Medications list is empty, so hyperthyroidism despite ATD therapy is not documented."
+control,goldset,S002_NCT07018323,I4,2,등록 후 확인,등록 후 확인,True,Protocol-specific inclusion criteria are not specified here and can only be assessed by the study team at screening.
+control,goldset,S002_NCT07018323,E1,2,모름,모름,True,"History is empty. No mention of prior RAI therapy or total thyroidectomy, and silence does not confirm absence."
+control,goldset,S002_NCT07018323,E2,2,등록 후 확인,모름,False,No information on other autoimmune diseases. The determination of undue risk is also an investigator judgment.
+control,goldset,S002_NCT07018323,E3,2,모름,모름,True,"No eye findings or thyroid eye disease are documented, and there is no information on planned TED surgery, irradiation, or therapy. Absence of eye findings was not explicitly stated."
+control,goldset,S002_NCT07018323,E4,2,등록 후 확인,등록 후 확인,True,Protocol-specific exclusion criteria are not specified here and can only be assessed by the study team at screening.
+control,goldset,S002_NCT07018323,I1,3,등록 후 확인,모름,False,"No information on the patient's ability to understand the trial, consent, or comply. Nothing in the record indicates impairment, but consent is not confirmed. It can be asked of the patient and is formally obtained at the consent visit."
+control,goldset,S002_NCT07018323,I2,3,통과,통과,True,"Patient is a 29-year-old woman (age 29 years), which meets age ≥ 18."
+control,goldset,S002_NCT07018323,I3,3,모름,모름,True,"The diagnosis is only suspected (""most likely Graves' disease""), with no confirmatory labs or antibodies. The record lists no ATD treatment (medications: []), so it is not documented that she is hyperthyroid despite ATD therapy."
+control,goldset,S002_NCT07018323,I4,3,등록 후 확인,등록 후 확인,True,Protocol-specific inclusion criteria are not specified here. The study team determines them at screening.
+control,goldset,S002_NCT07018323,E1,3,모름,모름,True,"History is empty and no prior RAI or thyroidectomy is mentioned. Silence does not confirm absence, though the presentation with active hyperthyroid symptoms and an intact enlarged thyroid makes total thyroidectomy unlikely. Prior RAI is not explicitly excluded."
+control,goldset,S002_NCT07018323,E2,3,등록 후 확인,모름,False,No information on other autoimmune diseases. This criterion also depends on the Investigator's judgment of undue risk.
+control,goldset,S002_NCT07018323,E3,3,모름,모름,True,"No eye findings or TED history are documented, so moderate-to-severe active TED and planned surgery or therapy cannot be ruled out."
+control,goldset,S002_NCT07018323,E4,3,등록 후 확인,등록 후 확인,True,Protocol-specific exclusion criteria are not specified here. The study team determines them at screening.
+control,goldset,S003_NCT07206537,I1,1,모름,모름,True,"Patient is 7 years old (under 16) and male, and has nephrotic-range findings (heavy proteinuria, low albumin). Medications list is empty, so no prior GC is documented. However, whether he has been or will be treated with GC at 2 mg/kg/day prednisolone with gradual taper is not stated, and the diagno"
+control,goldset,S003_NCT07206537,I2,1,모름,탈락,False,"Patient has a 3-week history of symptoms and no medications listed, so he cannot have been on glucocorticoids for more than 6 months. Vitamin D level is also not documented."
+control,goldset,S003_NCT07206537,E1,1,모름,모름,True,"No creatinine, eGFR, or other kidney function results are provided; only proteinuria and low albumin."
+control,goldset,S003_NCT07206537,E2,1,등록 후 확인,모름,False,No medications or supplements are listed and no compliance information is given.
+control,goldset,S003_NCT07206537,E3,1,모름,모름,True,"No mention of gallbladder/biliary disease, cystic fibrosis, celiac disease, or other fat-soluble vitamin malabsorption; silence does not confirm absence."
+control,goldset,S003_NCT07206537,E4,1,모름,모름,True,"No history of bleeding disorders, osteomalacia, or other vitamin K-related disorders is documented either way."
+control,goldset,S003_NCT07206537,E5,1,모름,모름,True,Fracture history is not mentioned.
+control,goldset,S003_NCT07206537,E6,1,모름,모름,True,"No genetic testing is documented; the diagnosis is only suspected (most likely minimal change disease), so a genetic cause is not excluded."
+control,goldset,S003_NCT07206537,I1,2,모름,모름,True,"The patient is a 7-year-old boy (under 16) with a suspected nephrotic syndrome, and no medications are listed, which suggests he has not had glucocorticoids yet. However, no GC treatment is documented, and the 2 mg/kg/day prednisolone regimen has not been confirmed. Nephrotic syndrome is only 'suspe"
+control,goldset,S003_NCT07206537,I2,2,모름,탈락,False,"The patient has a 3-week illness history and no medications listed, so he cannot have been on glucocorticoids for more than 6 months. Vitamin D level is not documented."
+control,goldset,S003_NCT07206537,E1,2,모름,모름,True,"No creatinine, eGFR or other kidney function results are given. Only proteinuria and low albumin are reported."
+control,goldset,S003_NCT07206537,E2,2,등록 후 확인,모름,False,"No medications or supplements are listed, and compliance cannot be assessed because treatment has not been documented."
+control,goldset,S003_NCT07206537,E3,2,모름,모름,True,"Gallbladder or biliary disease, cystic fibrosis, celiac disease and similar conditions are not mentioned. Their absence is not confirmed."
+control,goldset,S003_NCT07206537,E4,2,모름,모름,True,No history of bleeding disorders or osteomalacia is stated. Their absence is not confirmed.
+control,goldset,S003_NCT07206537,E5,2,모름,모름,True,Fracture history is not mentioned in the record.
+control,goldset,S003_NCT07206537,E6,2,모름,모름,True,"No genetic testing or family history is documented. The diagnosis is suspected minimal change disease, and a genetic cause has not been excluded."
+control,goldset,S003_NCT07206537,I1,3,모름,모름,True,"The patient is 7 years old (under 16) and male, and has presumed nephrotic syndrome. The profile lists no medications, which suggests no prior GC, but this is not explicit. Whether GC will be or was started at 2 mg/kg/day with taper is not documented."
+control,goldset,S003_NCT07206537,I2,3,모름,탈락,False,"Patient has a 3-week history of illness and no medications listed, so he cannot have been on glucocorticoid therapy for more than 6 months. Vitamin D level is not documented."
+control,goldset,S003_NCT07206537,E1,3,모름,모름,True,"No creatinine, eGFR, or other kidney function results are given. Only heavy proteinuria and low albumin are documented."
+control,goldset,S003_NCT07206537,E2,3,등록 후 확인,모름,False,No medications or supplements are listed and no compliance history is available.
+control,goldset,S003_NCT07206537,E3,3,모름,모름,True,"No information on gallbladder or biliary disease, cystic fibrosis, celiac disease, or other malabsorption conditions."
+control,goldset,S003_NCT07206537,E4,3,모름,모름,True,"No history of bleeding disorders, osteomalacia, or other vitamin K-related disorders is mentioned."
+control,goldset,S003_NCT07206537,E5,3,모름,모름,True,Fracture history is not mentioned in the description.
+control,goldset,S003_NCT07206537,E6,3,모름,모름,True,"No genetic testing is documented. The suspected diagnosis is minimal change disease, but genetic causes are not excluded by the record."
+control,goldset,S003_NCT07499700,I1,1,모름,탈락,False,"Patient has a new 3-week presentation with suspected (not biopsy-confirmed) nephrotic syndrome; no renal biopsy is documented and no prior corticosteroid response is documented (no medications, no prior history). The requirement for a biopsy-confirmed MCD/FSGS diagnosis and steroid responsiveness is"
+control,goldset,S003_NCT07499700,I2,1,모름,탈락,False,"The patient is at first presentation with active disease (heavy proteinuria, edema) and has had no corticosteroid therapy, so there is no complete remission within the last 8 weeks."
+control,goldset,S003_NCT07499700,E1,1,모름,모름,True,The work-up for secondary causes is not documented. Description says only 'suspected... most likely minimal change disease'.
+control,goldset,S003_NCT07499700,E2,1,모름,모름,True,No genetic testing or family history of nephrotic syndrome is documented.
+control,goldset,S003_NCT07499700,E3,1,모름,모름,True,"Medication list is empty, but prior B-cell therapy (e.g., rituximab) is not explicitly ruled out; silence does not confirm absence."
+control,goldset,S003_NCT07499700,E4,1,모름,모름,True,No information on monoclonal antibody allergy or allergic predisposition.
+control,goldset,S003_NCT07499700,E5,1,모름,모름,True,"Medications are listed as empty, but recent immunosuppressant use is not explicitly stated as absent."
+control,goldset,S003_NCT07499700,E6,1,모름,모름,True,"No explicit information on recent immunoglobulin or immunomodulator (e.g., thymosin) use."
+control,goldset,S003_NCT07499700,E7,1,모름,모름,True,No information on recent or planned participation in other investigational drug trials.
+control,goldset,S003_NCT07499700,E8,1,모름,모름,True,"No liver or kidney function values (creatinine, eGFR, liver enzymes) are given; only low albumin and proteinuria. What counts as 'marked' is also a judgment for the study team."
+control,goldset,S003_NCT07499700,E9,1,모름,모름,True,"No HBsAg, HCV, syphilis or HIV results or history are documented."
+control,goldset,S003_NCT07499700,I1,2,모름,탈락,False,"The patient has a new presentation (3-week history) with only a suspected diagnosis of nephrotic syndrome, 'most likely minimal change disease'. No renal biopsy is documented, and no corticosteroid response is documented, so the requirement for a biopsy-confirmed MCD/FSGS that is steroid-responsive "
+control,goldset,S003_NCT07499700,I2,2,모름,탈락,False,"The patient is in a first, untreated presentation with active disease (heavy proteinuria, edema). No corticosteroid therapy or complete remission is documented, so there is no remission within 8 weeks of baseline."
+control,goldset,S003_NCT07499700,E1,2,모름,모름,True,"The profile says 'most likely minimal change disease', which suggests primary NS, but no workup excluding secondary causes (infection, drugs, systemic disease) is documented."
+control,goldset,S003_NCT07499700,E2,2,모름,모름,True,No genetic testing or family history is documented.
+control,goldset,S003_NCT07499700,E3,2,모름,모름,True,"The medication list is empty, but prior B-cell depleting therapy (e.g., rituximab) is not explicitly stated to be absent."
+control,goldset,S003_NCT07499700,E4,2,모름,모름,True,No information on allergy history or atopic predisposition.
+control,goldset,S003_NCT07499700,E5,2,모름,모름,True,"The medication list is empty, but recent immunosuppressant use (including steroids) is not explicitly confirmed absent."
+control,goldset,S003_NCT07499700,E6,2,모름,모름,True,"No documentation of immunoglobulin or immunomodulator (e.g., thymosin) use; the empty medication list does not explicitly confirm absence."
+control,goldset,S003_NCT07499700,E7,2,모름,모름,True,No information on participation in other clinical trials or plans to join one.
+control,goldset,S003_NCT07499700,E8,2,모름,모름,True,Only urinalysis and a low serum albumin are reported. There are no creatinine/eGFR or liver enzyme values. Judgment of 'marked abnormality' would also need clinician assessment.
+control,goldset,S003_NCT07499700,E9,2,모름,모름,True,"No HBsAg, HCV, syphilis, or HIV results or history are documented."
+control,goldset,S003_NCT07499700,I1,3,모름,탈락,False,"Patient has a new 3-week presentation with only a suspected diagnosis ('most likely minimal change disease'). No renal biopsy is documented, and there is no documented prior corticosteroid response. The requirement of biopsy-confirmed MCD/FSGS and steroid responsiveness is not met."
+control,goldset,S003_NCT07499700,I2,3,모름,탈락,False,"Patient is newly presenting with active disease (3 weeks of symptoms, heavy proteinuria) and no medications or prior steroid therapy; no complete remission has been achieved."
+control,goldset,S003_NCT07499700,E1,3,모름,모름,True,Suspected minimal change disease (primary) but no workup documented to exclude secondary causes.
+control,goldset,S003_NCT07499700,E2,3,모름,모름,True,No genetic testing or family history information provided.
+control,goldset,S003_NCT07499700,E3,3,모름,통과,False,"Medications list is empty and this is a new presentation with no documented prior therapy; no B-cell therapy is documented. Only a weak implicit absence, but the record shows no medications."
+control,goldset,S003_NCT07499700,E4,3,모름,모름,True,No information on monoclonal antibody allergy or allergic predisposition.
+control,goldset,S003_NCT07499700,E5,3,모름,통과,False,Medications list is empty; new presentation with no documented immunosuppressant treatment.
+control,goldset,S003_NCT07499700,E6,3,모름,모름,True,"Medications list is empty, but immunoglobulin or thymosin use is not explicitly addressed."
+control,goldset,S003_NCT07499700,E7,3,모름,모름,True,No information about participation in other trials or plans to participate.
+control,goldset,S003_NCT07499700,E8,3,모름,모름,True,Only low albumin and proteinuria are reported; no creatinine/eGFR or liver enzyme values are given.
+control,goldset,S003_NCT07499700,E9,3,모름,모름,True,"No HBsAg, HCV, syphilis, or HIV results or history documented."
+control,goldset,S004_NCT04369560,I1,1,통과,통과,True,"Patient is 68 years old, within 18 to 90."
+control,goldset,S004_NCT04369560,I2,1,등록 후 확인,모름,False,No information on the patient's ability to understand or willingness to sign consent; it could be asked.
+control,goldset,S004_NCT04369560,I3,1,모름,모름,True,"CT urography shows a bladder wall mass, but there is no documentation of cystoscopy showing a papillary tumor scheduled for TURBT, or of histologically proven MIBC."
+control,goldset,S004_NCT04369560,I4,1,모름,모름,True,No ECOG performance status is documented.
+control,goldset,S004_NCT04369560,I5,1,모름,모름,True,No creatinine or creatinine clearance values are provided.
+control,goldset,S004_NCT04369560,E1,1,모름,모름,True,No information on allergy or hypersensitivity to gadobutrol or ferumoxytol.
+control,goldset,S004_NCT04369560,E2,1,모름,모름,True,Claustrophobia is not mentioned.
+control,goldset,S004_NCT04369560,E3,1,모름,모름,True,"No information on implanted devices, prostheses, or pacemakers; medications and history do not address this."
+control,goldset,S004_NCT04369560,E4,1,모름,모름,True,"No staging or metastasis workup is documented. The CT urography finding mentions only a bladder wall mass, so absence of metastasis is not confirmed."
+control,goldset,S004_NCT04369560,E5,1,통과,통과,True,"Patient is a 68-year-old male, so pregnancy, lactation, and plans to conceive do not apply."
+control,goldset,S004_NCT04369560,E6,1,모름,모름,True,No urinalysis or culture results or UTI history are documented; only hematuria is noted.
+control,goldset,S004_NCT04369560,E7,1,모름,모름,True,Urethral stricture disease is not mentioned.
+control,goldset,S004_NCT04369560,E8,1,등록 후 확인,등록 후 확인,True,"Depends on the treating physician's judgment of unacceptable risk, which is not documented."
+control,goldset,S004_NCT04369560,I1,2,통과,통과,True,"Patient is 68 years old, within 18–90."
+control,goldset,S004_NCT04369560,I2,2,등록 후 확인,모름,False,"No information about the patient's capacity or willingness to consent; he could be asked, and formal consent is obtained at enrollment."
+control,goldset,S004_NCT04369560,I3,2,모름,모름,True,"CT urography shows a bladder wall mass, but there is no documentation of a cystoscopy-identified papillary tumor scheduled for TURBT, nor of histologically proven MIBC."
+control,goldset,S004_NCT04369560,I4,2,모름,모름,True,No ECOG performance status documented.
+control,goldset,S004_NCT04369560,I5,2,모름,모름,True,No creatinine or creatinine clearance values provided.
+control,goldset,S004_NCT04369560,E1,2,모름,모름,True,No information on allergies or hypersensitivity to gadobutrol or ferumoxytol; no prior exposure documented.
+control,goldset,S004_NCT04369560,E2,2,모름,모름,True,Claustrophobia is not mentioned.
+control,goldset,S004_NCT04369560,E3,2,모름,모름,True,"No information on implanted devices, prostheses, or pacemaker; medications and history list none but do not address devices."
+control,goldset,S004_NCT04369560,E4,2,모름,모름,True,"Only a bladder wall mass is reported; no staging or metastatic workup is documented, so absence of known or suspected metastasis is not confirmed."
+control,goldset,S004_NCT04369560,E5,2,통과,통과,True,"Patient is a 68-year-old man, so pregnancy, lactation, and plans to conceive do not apply."
+control,goldset,S004_NCT04369560,E6,2,모름,모름,True,Urinalysis or urine culture is not documented; hematuria is present but UTI status is not stated.
+control,goldset,S004_NCT04369560,E7,2,모름,모름,True,No information on urethral stricture disease.
+control,goldset,S004_NCT04369560,E8,2,등록 후 확인,등록 후 확인,True,Requires the treating physician's judgment of unacceptable risk.
+control,goldset,S004_NCT04369560,I1,3,통과,통과,True,"Patient is 68 years old, within 18-90."
+control,goldset,S004_NCT04369560,I2,3,등록 후 확인,모름,False,"No information on capacity or willingness to consent; patient could be asked, and consent is formally obtained at enrollment."
+control,goldset,S004_NCT04369560,I3,3,모름,모름,True,"CT urography shows a bladder wall mass, but there is no documentation of cystoscopy showing a papillary tumor scheduled for TURBT, or histologically proven, clinically localized MIBC."
+control,goldset,S004_NCT04369560,I4,3,모름,모름,True,ECOG performance status is not documented.
+control,goldset,S004_NCT04369560,I5,3,모름,모름,True,No creatinine or creatinine clearance values are provided.
+control,goldset,S004_NCT04369560,E1,3,모름,모름,True,No information on allergies or prior reactions to gadobutrol or ferumoxytol.
+control,goldset,S004_NCT04369560,E2,3,모름,모름,True,Claustrophobia is not mentioned.
+control,goldset,S004_NCT04369560,E3,3,모름,모름,True,"No information on implanted devices, prosthetics or pacemaker."
+control,goldset,S004_NCT04369560,E4,3,모름,모름,True,"Staging is not documented; only a bladder wall mass on CT urography is reported, with no mention of metastasis, and the absence of metastatic disease is not confirmed."
+control,goldset,S004_NCT04369560,E5,3,통과,통과,True,"Patient is male, so pregnancy, lactation and plans to conceive do not apply."
+control,goldset,S004_NCT04369560,E6,3,모름,모름,True,"Urinary tract infection status is not documented; the patient has hematuria, but no UTI diagnosis or urinalysis is given."
+control,goldset,S004_NCT04369560,E7,3,모름,모름,True,No information on urethral stricture disease.
+control,goldset,S004_NCT04369560,E8,3,등록 후 확인,등록 후 확인,True,"Requires the treating physician's judgment of unacceptable risk, which is determined by the study or treating team."
+control,goldset,S004_NCT05646485,I1,1,통과,통과,True,"Patient is a 68-year-old man, which satisfies age ≥ 50."
+control,goldset,S004_NCT05646485,I2,1,모름,모름,True,"Only 'long smoking history' is documented. Pack-years are not quantified, so ≥15 pack-years cannot be confirmed."
+control,goldset,S004_NCT05646485,I3,1,모름,모름,True,No occupation or occupational exposure history is documented.
+control,goldset,S004_NCT05646485,E1,1,모름,모름,True,"No prior bladder, kidney, or prostate cancer is mentioned, but silence does not confirm absence. The bladder mass is a current finding, and it is not stated whether this is a first diagnosis."
+control,goldset,S004_NCT05646485,E2,1,모름,모름,True,"The patient presents with gross hematuria now, and CT urography was done. It is not stated whether any hematuria evaluation took place in the prior 2 years, nor whether this CT counts as the evaluation."
+control,goldset,S004_NCT05646485,E3,1,등록 후 확인,모름,False,No information on whether the patient will provide informed consent. The patient could be asked.
+control,goldset,S004_NCT05646485,I1,2,통과,통과,True,"Patient is 68 years old, which meets Age ≥ 50."
+control,goldset,S004_NCT05646485,I2,2,모름,모름,True,"Only 'long smoking history' is documented. Pack-years are not quantified, so ≥15 pack-years cannot be confirmed."
+control,goldset,S004_NCT05646485,I3,2,모름,모름,True,No occupation or occupational exposure history is documented. The ≥15 years of exposure cannot be assessed. Whether this is an alternative to I2 or an additional requirement is unclear in the wording.
+control,goldset,S004_NCT05646485,E1,2,모름,모름,True,"The record does not state whether the patient has a prior history of bladder, kidney, or prostate cancer. The bladder mass is a current suspected diagnosis, not a documented prior history. Silence does not confirm absence."
+control,goldset,S004_NCT05646485,E2,2,모름,모름,True,"The patient presents with painless gross hematuria and has had a CT urography. It is not documented whether hematuria was evaluated before, or whether this evaluation falls within the last 2 years. The timing of any prior evaluation is not given."
+control,goldset,S004_NCT05646485,E3,2,등록 후 확인,모름,False,"Informed consent status is not documented. The patient could be asked, and consent is formally obtained at enrollment."
+control,goldset,S004_NCT05646485,I1,3,통과,통과,True,"The patient is 68 years old, which is at least 50."
+control,goldset,S004_NCT05646485,I2,3,모름,모름,True,"The record states only a ""long smoking history"". No pack-year quantity is given, so ≥15 pack-years cannot be confirmed."
+control,goldset,S004_NCT05646485,I3,3,모름,모름,True,"The record does not mention the patient's occupation or occupational exposures (textile worker, painter, dry cleaner) or their duration."
+control,goldset,S004_NCT05646485,E1,3,모름,모름,True,"The record does not say whether the patient has had prior bladder, kidney, or prostate cancer. The current bladder mass is a new finding, and the suspected bladder cancer is not documented as a prior history."
+control,goldset,S004_NCT05646485,E2,3,모름,모름,True,"The patient presents with gross hematuria and has had CT urography. It is not stated whether a hematuria evaluation took place before this presentation, or whether this is the first evaluation within the last 2 years."
+control,goldset,S004_NCT05646485,E3,3,등록 후 확인,등록 후 확인,True,Informed consent is obtained formally at the consent or screening visit. The record gives no information on whether the patient would decline.
+control,goldset,S006_NCT07654647,I1,1,통과,통과,True,Age 45 years.
+control,goldset,S006_NCT07654647,I2,1,모름,모름,True,No documentation of facial bone defects from cystic or tumoral osteolytic lesions; presentation is suspected invasive fungal infection with necrotic eschar. Bony defects are not documented either way.
+control,goldset,S006_NCT07654647,I3,1,모름,모름,True,"No mention of facial deformity, bony defect or asymmetry; only periorbital swelling is described, which is not the same thing."
+control,goldset,S006_NCT07654647,I4,1,모름,모름,True,No documentation that the patient needs a patient-specific 3D-printed titanium implant; the current problem is an acute infection.
+control,goldset,S006_NCT07654647,I5,1,모름,모름,True,No aesthetic indication such as microgenia is documented; the patient has not been asked about this.
+control,goldset,S006_NCT07654647,I6,1,등록 후 확인,모름,False,"No information on capacity or ability to consent; the patient presents acutely ill with fever, which does not settle it."
+control,goldset,S006_NCT07654647,E1,1,모름,탈락,False,"Black necrotic eschar on the nasal mucosa with fever, facial pain and periorbital swelling (suspected rhino-orbital mucormycosis) is an active pathological lesion at presentation."
+control,goldset,S006_NCT07654647,E2,1,통과,통과,True,"Age 45 years, not below 18."
+control,goldset,S006_NCT07654647,E3,1,모름,모름,True,"No radiotherapy history is documented, and silence does not confirm absence."
+control,goldset,S006_NCT07654647,E4,1,모름,모름,True,No vitamin D status is documented; no labs are available.
+control,goldset,S006_NCT07654647,E5,1,탈락,탈락,True,"The description states 'poorly controlled type 2 diabetes', which matches uncontrolled diabetes mellitus."
+control,goldset,S006_NCT07654647,E6,1,등록 후 확인,모름,False,No information on ability or willingness to comply with follow-up; the patient could be asked.
+control,goldset,S006_NCT07654647,I1,2,통과,통과,True,Age 45 years.
+control,goldset,S006_NCT07654647,I2,2,모름,모름,True,"No documentation of facial bone defects from cystic or tumoral osteolytic lesions; the presentation is a suspected infectious necrotic process, and no imaging is given."
+control,goldset,S006_NCT07654647,I3,2,모름,모름,True,No acquired or congenital facial deformity with bony defect or asymmetry is documented. Periorbital swelling is not the same as a deformity.
+control,goldset,S006_NCT07654647,I4,2,모름,모름,True,No indication of a need for patient-specific 3D-printed titanium implants is documented. Whether he needs one is a clinical determination not yet made.
+control,goldset,S006_NCT07654647,I5,2,모름,모름,True,No aesthetic indication or microgenia is documented.
+control,goldset,S006_NCT07654647,I6,2,등록 후 확인,모름,False,Capacity and willingness to give consent are not documented. The patient is acutely ill with fever and a suspected invasive infection.
+control,goldset,S006_NCT07654647,E1,2,모름,탈락,False,"Black necrotic eschar on the nasal mucosa, fever, facial pain and periorbital swelling, with suspected rhino-orbital mucormycosis, indicate an active pathological lesion."
+control,goldset,S006_NCT07654647,E2,2,통과,통과,True,"Age 45, so not below 18."
+control,goldset,S006_NCT07654647,E3,2,모름,모름,True,No radiotherapy history is documented either way.
+control,goldset,S006_NCT07654647,E4,2,모름,모름,True,Vitamin D status is not documented.
+control,goldset,S006_NCT07654647,E5,2,탈락,탈락,True,"The description says 'poorly controlled type 2 diabetes', which is consistent with uncontrolled diabetes mellitus. No HbA1c is given."
+control,goldset,S006_NCT07654647,E6,2,등록 후 확인,모름,False,Ability and willingness to comply with follow-up are not documented.
+control,goldset,S006_NCT07654647,I1,3,통과,통과,True,Age 45 years.
+control,goldset,S006_NCT07654647,I2,3,모름,모름,True,"No facial bone defects from cystic or tumoral osteolytic lesions are documented; the findings are infectious/necrotic, and no imaging is given."
+control,goldset,S006_NCT07654647,I3,3,모름,모름,True,"No acquired or congenital facial deformity, bony defect, or facial asymmetry is documented. Periorbital swelling and nasal eschar are acute findings, not a documented deformity."
+control,goldset,S006_NCT07654647,I4,3,모름,모름,True,No documentation of a need for patient-specific 3D-printed titanium implants; the patient presents with an acute infection.
+control,goldset,S006_NCT07654647,I5,3,모름,모름,True,"No aesthetic indication such as microgenia is documented, and the patient could be asked."
+control,goldset,S006_NCT07654647,I6,3,등록 후 확인,모름,False,"Consent capacity and willingness are not documented. The patient is acutely ill, but no impairment is stated."
+control,goldset,S006_NCT07654647,E1,3,모름,탈락,False,"The patient has a black necrotic eschar on the nasal mucosa, fever, and periorbital swelling, with suspected invasive rhino-orbital mucormycosis. This is an active pathological lesion."
+control,goldset,S006_NCT07654647,E2,3,통과,통과,True,"Age 45 years, so not below 18."
+control,goldset,S006_NCT07654647,E3,3,모름,모름,True,Radiotherapy history is not documented.
+control,goldset,S006_NCT07654647,E4,3,모름,모름,True,Vitamin D status is not documented.
+control,goldset,S006_NCT07654647,E5,3,탈락,탈락,True,"The patient has 'poorly controlled type 2 diabetes', which meets the definition of uncontrolled diabetes mellitus."
+control,goldset,S006_NCT07654647,E6,3,등록 후 확인,모름,False,Ability and willingness to comply with follow-up are not documented.
+control,goldset,S007_NCT05561907,I1,1,모름,탈락,False,The infant's suspected diagnosis is infantile hypertrophic pyloric stenosis. No periampullary malignancy or gastric cancer is documented.
+control,goldset,S007_NCT05561907,I2,1,모름,통과,False,"The patient has projectile non-bilious vomiting after feeding (post-prandial vomiting). Abdominal pain, PO intolerance and imaging are not documented, so a second item is not confirmed. Whether at least 2 of 4 are met is therefore not established."
+control,goldset,S007_NCT05561907,I3,1,모름,모름,True,No GOOSS score or description of oral intake level is given.
+control,goldset,S007_NCT05561907,I4,1,탈락,탈락,True,"Age is 3 months, which is not >18 years."
+control,goldset,S007_NCT05561907,I5,1,등록 후 확인,모름,False,No information on life expectancy or on prior duodenal stenting.
+control,goldset,S007_NCT05561907,I6,1,등록 후 확인,등록 후 확인,True,"Surgical candidacy and anesthesia tolerance require clinician assessment, and none is documented."
+control,goldset,S007_NCT05561907,I7,1,모름,탈락,False,"No malignancy is documented. The suspected diagnosis is infantile hypertrophic pyloric stenosis, so there is no unresectable or metastatic disease."
+control,goldset,S007_NCT05561907,E1,1,탈락,탈락,True,"Age is 3 months, which is under 18 years."
+control,goldset,S007_NCT05561907,E2,1,통과,통과,True,"The patient is a 3-month-old infant, so pregnancy is logically excluded."
+control,goldset,S007_NCT05561907,E3,1,모름,모름,True,Obstruction distal to the Ligament of Treitz is not documented either way. The findings suggest a pyloric (proximal) obstruction.
+control,goldset,S007_NCT05561907,E4,1,모름,모름,True,No information on other GI luminal strictures.
+control,goldset,S007_NCT05561907,E5,1,모름,모름,True,Surgical history is empty and not explicitly stated as none.
+control,goldset,S007_NCT05561907,E6,1,모름,탈락,False,A 3-month-old infant cannot complete quality of life surveys.
+control,goldset,S007_NCT05561907,E7,1,모름,모름,True,Ascites is not mentioned in the findings.
+control,goldset,S007_NCT05561907,I1,2,모름,탈락,False,"The patient is a 3-month-old with suspected infantile hypertrophic pyloric stenosis. No malignancy is documented, so the requirement for a periampullary or distal gastric malignancy is not met."
+control,goldset,S007_NCT05561907,I2,2,모름,모름,True,"Postprandial vomiting is documented (projectile non-bilious vomiting after feeding). Abdominal pain, inability to tolerate PO and imaging consistent with GOO are not documented. Only 1 of the 4 items is confirmed, so whether at least 2 are present is unknown."
+control,goldset,S007_NCT05561907,I3,2,모름,모름,True,No GOOSS score or description of oral intake level is given.
+control,goldset,S007_NCT05561907,I4,2,탈락,탈락,True,"Age is 3 months, which is not >18 years."
+control,goldset,S007_NCT05561907,I5,2,등록 후 확인,모름,False,Life expectancy and any prior duodenal stenting are not documented. Life expectancy is a clinician judgment.
+control,goldset,S007_NCT05561907,I6,2,등록 후 확인,등록 후 확인,True,Surgical candidacy and fitness for anesthesia require clinician or anesthesia assessment. This is not documented.
+control,goldset,S007_NCT05561907,I7,2,모름,탈락,False,"No malignancy is documented, so there is no unresectable or metastatic disease."
+control,goldset,S007_NCT05561907,E1,2,탈락,탈락,True,"Age is 3 months, which is <18 years."
+control,goldset,S007_NCT05561907,E2,2,통과,통과,True,"A 3-month-old infant is not pregnant, which follows from the documented age."
+control,goldset,S007_NCT05561907,E3,2,모름,모름,True,"No imaging or other data are given on obstruction distal to the Ligament of Treitz. The findings suggest a gastric outlet (pyloric) process, but this is not confirmed."
+control,goldset,S007_NCT05561907,E4,2,모름,모름,True,No evaluation of other luminal GI strictures is documented.
+control,goldset,S007_NCT05561907,E5,2,모름,모름,True,The history is empty. Previous gastric or periampullary surgery is not explicitly stated to be absent.
+control,goldset,S007_NCT05561907,E6,2,모름,탈락,False,"A 3-month-old infant cannot complete quality of life surveys, which follows from the documented age."
+control,goldset,S007_NCT05561907,E7,2,모름,모름,True,Ascites is not mentioned in the description.
+control,goldset,S007_NCT05561907,I1,3,모름,탈락,False,Suspected infantile hypertrophic pyloric stenosis; no periampullary malignancy or gastric cancer is documented.
+control,goldset,S007_NCT05561907,I2,3,모름,모름,True,"Post-prandial vomiting is present (projectile non-bilious vomiting after feeding). Abdominal pain, inability to tolerate PO, and imaging are not documented. Only one of four criteria is confirmed, so the requirement of at least 2 cannot yet be judged."
+control,goldset,S007_NCT05561907,I3,3,모름,모름,True,No GOOSS score or description of oral intake is documented.
+control,goldset,S007_NCT05561907,I4,3,탈락,탈락,True,"Patient is 3 months old, so not >18 years."
+control,goldset,S007_NCT05561907,I5,3,등록 후 확인,등록 후 확인,True,Life expectancy is a clinician judgment and no prognosis is documented. Failed duodenal stenting is not documented.
+control,goldset,S007_NCT05561907,I6,3,등록 후 확인,등록 후 확인,True,"Surgical candidacy and anesthesia tolerance require clinician or anesthesia assessment, and none is documented."
+control,goldset,S007_NCT05561907,I7,3,모름,탈락,False,"No malignancy is documented, so there is no unresectable or metastatic disease. The findings suggest benign pyloric stenosis."
+control,goldset,S007_NCT05561907,E1,3,탈락,탈락,True,"Patient is 3 months old, which is under 18 years."
+control,goldset,S007_NCT05561907,E2,3,통과,통과,True,A 3-month-old infant cannot be pregnant.
+control,goldset,S007_NCT05561907,E3,3,모름,모름,True,"Obstruction distal to the ligament of Treitz is not documented either way. The findings point to gastric outlet obstruction, but no imaging is given."
+control,goldset,S007_NCT05561907,E4,3,모름,모름,True,No information on other GI luminal strictures.
+control,goldset,S007_NCT05561907,E5,3,모름,모름,True,"History is empty and no surgical history is stated for a 3-month-old, so previous gastric or periampullary surgery is not confirmed absent."
+control,goldset,S007_NCT05561907,E6,3,모름,탈락,False,A 3-month-old infant cannot complete quality of life surveys by themselves.
+control,goldset,S007_NCT05561907,E7,3,모름,모름,True,Presence of ascites is not documented.
+control,goldset,S008_NCT07652658,I1,1,통과,통과,True,"Patient is 60 years old, which meets ≥ 40 years."
+control,goldset,S008_NCT07652658,I2,1,모름,모름,True,"Only a suspected diagnosis of IPF (UIP pattern on CT: bilateral basal reticular opacities with honeycombing). No confirmed IPF diagnosis is documented, and other ILDs and causes have not been ruled out."
+control,goldset,S008_NCT07652658,I3,1,모름,모름,True,Medications list is empty. It is not stated whether she is on antifibrotics at a stable dose or is not receiving standard of care.
+control,goldset,S008_NCT07652658,I4,1,모름,모름,True,No FVC result is documented. Pulmonary function testing is not provided.
+control,goldset,S008_NCT07652658,I5,1,모름,모름,True,No DLCO or hemoglobin values are documented.
+control,goldset,S008_NCT07652658,E1,1,모름,모름,True,"Suspected IPF/UIP pattern, but no documentation that other ILD (e.g., connective tissue disease, hypersensitivity pneumonitis) has been excluded."
+control,goldset,S008_NCT07652658,E2,1,모름,모름,True,"CT describes reticular opacities with honeycombing; emphysema is not mentioned, so the relative extent is not documented."
+control,goldset,S008_NCT07652658,E3,1,모름,모름,True,Presentation is of progressive dyspnea and cough; no statement on whether an acute exacerbation is present or absent.
+control,goldset,S008_NCT07652658,E4,1,모름,모름,True,"No information about a lower respiratory tract infection, either present or absent."
+control,goldset,S008_NCT07652658,E5,1,모름,모름,True,"History is empty; cardiac history (ACS, MI, unstable angina, PCI, CABG) is not documented."
+control,goldset,S008_NCT07652658,E6,1,모름,모름,True,No documentation of heart failure being present or absent.
+control,goldset,S008_NCT07652658,E7,1,모름,모름,True,No information on prior organ transplantation or lung transplant listing/likelihood.
+control,goldset,S008_NCT07652658,I1,2,통과,통과,True,"Age 60 years, which is ≥ 40."
+control,goldset,S008_NCT07652658,I2,2,모름,모름,True,"Profile lists only a 'suspected' IPF diagnosis (UIP pattern on CT: bilateral basal reticular opacities with honeycombing). A confirmed IPF diagnosis (exclusion of other causes, multidisciplinary review) is not documented."
+control,goldset,S008_NCT07652658,I3,2,모름,모름,True,"No medications are listed and antifibrotic use or stable dose is not stated. Either arm could be satisfied, but the patient's treatment status is not documented."
+control,goldset,S008_NCT07652658,I4,2,모름,모름,True,No FVC result is provided. Spirometry is not in the record.
+control,goldset,S008_NCT07652658,I5,2,모름,모름,True,No DLCO or hemoglobin value is provided.
+control,goldset,S008_NCT07652658,E1,2,모름,모름,True,"The diagnosis is only suspected IPF. The record does not explicitly rule out other ILD (e.g., connective tissue disease, hypersensitivity pneumonitis, drug or exposure history)."
+control,goldset,S008_NCT07652658,E2,2,모름,모름,True,The CT describes basal reticular opacities with honeycombing and does not mention emphysema. The relative extent of emphysema versus fibrosis is not documented.
+control,goldset,S008_NCT07652658,E3,2,모름,모름,True,Presentation is progressive dyspnea and dry cough. Acute exacerbation is neither stated nor ruled out.
+control,goldset,S008_NCT07652658,E4,2,모름,모름,True,"No information on a current lower respiratory tract infection. Symptoms are dry cough and dyspnea only, and infection is not explicitly excluded."
+control,goldset,S008_NCT07652658,E5,2,모름,모름,True,History is empty and no cardiac events are documented. Absence is not explicitly stated.
+control,goldset,S008_NCT07652658,E6,2,모름,모름,True,"Heart failure is not mentioned. The record does not explicitly state it is absent, and dyspnea is non-specific."
+control,goldset,S008_NCT07652658,E7,2,모름,모름,True,"No transplant history or transplant plans are documented, and the lack of mention does not confirm absence."
+control,goldset,S008_NCT07652658,I1,3,통과,통과,True,"Age 60 years, which is ≥ 40."
+control,goldset,S008_NCT07652658,I2,3,모름,모름,True,"The profile lists only a suspected diagnosis of IPF (UIP pattern). CT shows bilateral basal reticular opacities with honeycombing, but a confirmed IPF diagnosis (exclusion of other causes, multidisciplinary confirmation) is not documented."
+control,goldset,S008_NCT07652658,I3,3,모름,모름,True,No medications are listed and antifibrotic therapy status is not stated. Stable-dose use or non-receipt of standard of care cannot be confirmed from the record.
+control,goldset,S008_NCT07652658,I4,3,모름,모름,True,No FVC value is provided. Pulmonary function testing is not documented.
+control,goldset,S008_NCT07652658,I5,3,모름,모름,True,No DLCO value is provided. Hemoglobin is also not documented.
+control,goldset,S008_NCT07652658,E1,3,모름,모름,True,"The suspected diagnosis is IPF, but no workup excluding other ILDs (e.g., connective tissue disease, hypersensitivity pneumonitis, exposures) is documented."
+control,goldset,S008_NCT07652658,E2,3,모름,모름,True,The CT describes reticular opacities with honeycombing and does not mention emphysema. The relative extent of emphysema versus fibrosis is not stated.
+control,goldset,S008_NCT07652658,E3,3,모름,모름,True,"The presentation is progressive dyspnea and dry cough. There is no explicit statement about acute exacerbation, so its absence is not confirmed."
+control,goldset,S008_NCT07652658,E4,3,모름,모름,True,No information on a current lower respiratory tract infection. Dry cough alone does not confirm or exclude one.
+control,goldset,S008_NCT07652658,E5,3,모름,모름,True,"History is empty. Absence of ACS, MI, unstable angina, PCI or CABG is not explicitly stated."
+control,goldset,S008_NCT07652658,E6,3,모름,모름,True,"Heart failure is not mentioned. Dyspnea has no documented cause, and the empty history does not explicitly rule it out."
+control,goldset,S008_NCT07652658,E7,3,모름,모름,True,No documentation of prior organ transplantation or of planned lung transplantation.
+control,goldset,S008_NCT07299695,I1,1,통과,통과,True,Patient is 60 years old.
+control,goldset,S008_NCT07299695,I2,1,모름,모름,True,"Profile lists only a suspected diagnosis of IPF (UIP pattern on CT: basal reticular opacities with honeycombing). No confirmed IPF diagnosis per ATS/ERS criteria is documented (exclusion of other causes, multidisciplinary discussion)."
+control,goldset,S008_NCT07299695,I3,1,모름,모름,True,"Patient has progressive dyspnea and a UIP-like CT, but there is no documentation of hospitalisation, acute worsening <1 month, new bilateral ground-glass opacity/consolidation, or exclusion of cardiac failure/fluid overload. Final AE-IPF ascertainment is by the PI."
+control,goldset,S008_NCT07299695,I4,1,등록 후 확인,모름,False,No information on the patient's capacity or willingness to sign informed consent; formal consent is obtained at enrollment.
+control,goldset,S008_NCT07299695,E1,1,모름,모름,True,No information on heart failure or pulmonary embolism evaluation; absence not documented.
+control,goldset,S008_NCT07299695,E2,1,모름,모름,True,No allergy or hypersensitivity history documented.
+control,goldset,S008_NCT07299695,E3,1,모름,모름,True,IgA level or IgA deficiency not documented.
+control,goldset,S008_NCT07299695,E4,1,모름,모름,True,Diagnosis is only 'suspected' IPF; no documented multidisciplinary discussion or definite diagnosis.
+control,goldset,S008_NCT07299695,E5,1,모름,모름,True,"No mention of malignancy or cancer treatment; history is empty, which is not confirmation of absence."
+control,goldset,S008_NCT07299695,E6,1,모름,모름,True,"Medications list is empty, but this does not explicitly confirm no recent corticosteroid or immunosuppressant use."
+control,goldset,S008_NCT07299695,E7,1,모름,모름,True,No information on participation in other interventional trials.
+control,goldset,S008_NCT07299695,E8,1,모름,모름,True,"60-year-old woman; pregnancy/lactation status not documented, and menopausal status not given."
+control,goldset,S008_NCT07299695,E9,1,모름,모름,True,No information on tutorship or curatorship.
+control,goldset,S008_NCT07299695,E10,1,모름,모름,True,No information on deprivation of liberty or court protection.
+control,goldset,S008_NCT07299695,E11,1,등록 후 확인,모름,False,No information on the patient's willingness to participate or consent.
+control,goldset,S008_NCT07299695,I1,2,통과,통과,True,Patient is 60 years old.
+control,goldset,S008_NCT07299695,I2,2,모름,모름,True,"Suspected IPF with a UIP-pattern CT (basal reticular opacities with honeycombing), but a formal IPF diagnosis meeting ATS/ERS criteria (exclusion of other causes, multidisciplinary discussion) is not documented."
+control,goldset,S008_NCT07299695,I3,2,모름,모름,True,"Progressive dyspnea and honeycombing are described, but there is no documentation of hospitalisation, acute worsening <1 month, new bilateral ground-glass opacity/consolidation, or exclusion of cardiac failure/fluid overload. Ascertainment by the Primary Investigator is also needed."
+control,goldset,S008_NCT07299695,I4,2,등록 후 확인,모름,False,No information on capacity or willingness to sign informed consent; formal consent is obtained only at enrollment.
+control,goldset,S008_NCT07299695,E1,2,모름,모름,True,No information on heart failure or pulmonary embolism evaluation.
+control,goldset,S008_NCT07299695,E2,2,모름,모름,True,No allergy or hypersensitivity history documented.
+control,goldset,S008_NCT07299695,E3,2,모름,모름,True,IgA level not documented.
+control,goldset,S008_NCT07299695,E4,2,모름,모름,True,Diagnosis is only 'suspected' IPF; no multidisciplinary discussion or definitive diagnosis documented.
+control,goldset,S008_NCT07299695,E5,2,모름,모름,True,"No mention of malignancy or cancer treatment; history is empty, which is not an explicit denial."
+control,goldset,S008_NCT07299695,E6,2,모름,모름,True,"Medications list is empty, but absence of steroid/immunosuppressant use is not explicitly stated."
+control,goldset,S008_NCT07299695,E7,2,모름,모름,True,No information on participation in other trials.
+control,goldset,S008_NCT07299695,E8,2,모름,모름,True,"60-year-old woman; pregnancy is unlikely but postmenopausal status is not documented, and lactation status is not stated."
+control,goldset,S008_NCT07299695,E9,2,모름,모름,True,No information on tutorship or curatorship.
+control,goldset,S008_NCT07299695,E10,2,모름,모름,True,No information on deprivation of liberty or court protection.
+control,goldset,S008_NCT07299695,E11,2,등록 후 확인,모름,False,Patient's willingness to participate and consent has not been documented.
+control,goldset,S008_NCT07299695,I1,3,통과,통과,True,Patient is 60 years old.
+control,goldset,S008_NCT07299695,I2,3,모름,모름,True,"Profile gives a suspected diagnosis of IPF (UIP pattern on CT: basal reticular opacities with honeycombing) but no confirmed ATS/ERS diagnosis, exclusion of other causes, or multidisciplinary confirmation is documented."
+control,goldset,S008_NCT07299695,I3,3,모름,모름,True,"Progressive dyspnea and UIP-like CT are described, but there is no documentation of hospitalisation, acute worsening <1 month, new bilateral ground-glass opacity/consolidation, or exclusion of cardiac failure/fluid overload. PI ascertainment is also needed."
+control,goldset,S008_NCT07299695,I4,3,등록 후 확인,모름,False,No information on capacity or consent; consent is not documented.
+control,goldset,S008_NCT07299695,E1,3,모름,모름,True,No information on heart failure or pulmonary embolism evaluation.
+control,goldset,S008_NCT07299695,E2,3,모름,모름,True,No allergy or hypersensitivity history documented.
+control,goldset,S008_NCT07299695,E3,3,모름,모름,True,IgA level or IgA deficiency not documented.
+control,goldset,S008_NCT07299695,E4,3,모름,모름,True,Diagnosis is only 'suspected' IPF; no multidisciplinary discussion or definitive diagnosis documented.
+control,goldset,S008_NCT07299695,E5,3,모름,모름,True,"No mention of malignancy or cancer treatment; history is empty, which does not confirm absence."
+control,goldset,S008_NCT07299695,E6,3,모름,모름,True,"Medications list is empty, but absence of steroid/immunosuppressant use in the past month is not explicitly stated."
+control,goldset,S008_NCT07299695,E7,3,모름,모름,True,No information on participation in other interventional trials.
+control,goldset,S008_NCT07299695,E8,3,모름,모름,True,60-year-old woman; pregnancy/lactation status and menopausal status not documented (pregnancy unlikely but not confirmed).
+control,goldset,S008_NCT07299695,E9,3,모름,모름,True,No information on tutorship or curatorship.
+control,goldset,S008_NCT07299695,E10,3,모름,모름,True,No information on deprivation of liberty or court protection.
+control,goldset,S008_NCT07299695,E11,3,등록 후 확인,모름,False,No information on the patient's willingness to participate or provide consent.
+control,goldset,S009_NCT07478952,I1,1,탈락,탈락,True,"Patient presents with fever, sore throat, fatigue, lymphadenopathy, splenomegaly and a positive monospot (infectious mononucleosis). Medical evaluation documents an active illness, so the patient is not healthy."
+control,goldset,S009_NCT07478952,I2,1,통과,통과,True,"Patient is male (19-year-old male), so not assigned female at birth and cannot become pregnant or breastfeed. The criterion does not restrict him."
+control,goldset,S009_NCT07478952,E1,1,모름,모름,True,No information on recent surgery or scheduled surgery; history is empty.
+control,goldset,S009_NCT07478952,E2,1,모름,모름,True,"No reported history of immunodeficiency, asplenia, or recurrent severe infection is documented. Splenomegaly is present (spleen exists), but absence of other conditions is not explicitly stated."
+control,goldset,S009_NCT07478952,E3,1,모름,모름,True,"Medications list is empty, but no explicit statement that corticosteroids were not received or anticipated."
+control,goldset,S009_NCT07478952,E4,1,모름,모름,True,"No medications listed, but there is no explicit statement about prior systemic immunosuppressive therapy within 180 days or future plans."
+control,goldset,S009_NCT07478952,E5,1,모름,모름,True,"Vaccination history is not documented, and future vaccine plans are unknown."
+control,goldset,S009_NCT07478952,E6,1,모름,모름,True,"History is empty; there is no explicit statement about myocarditis, pericarditis, or myopericarditis."
+control,goldset,S009_NCT07478952,E7,1,모름,모름,True,No documentation on prior investigational EBV vaccine receipt.
+control,goldset,S009_NCT07478952,I1,2,탈락,탈락,True,"Patient presents with fever, sore throat, fatigue, lymphadenopathy, splenomegaly, and a positive monospot (active infectious mononucleosis). This is a documented acute illness on exam, so he is not healthy by medical evaluation."
+control,goldset,S009_NCT07478952,I2,2,통과,통과,True,"Patient is male (sex M), so he cannot become pregnant or breast/chest feed in the sense the criterion restricts; the criterion does not exclude him."
+control,goldset,S009_NCT07478952,E1,2,모름,모름,True,No information on recent surgery or scheduled surgery; history is empty.
+control,goldset,S009_NCT07478952,E2,2,모름,모름,True,"Splenomegaly is present (not asplenia), but there is no explicit statement about immunodeficiency, immunosuppressive condition, or recurrent severe infections. History is empty."
+control,goldset,S009_NCT07478952,E3,2,모름,모름,True,"Medications list is empty, but absence of listed medications does not explicitly confirm no corticosteroid use or anticipated need."
+control,goldset,S009_NCT07478952,E4,2,모름,모름,True,No documentation of systemic immunosuppressive or biologic therapy within 180 days or future plans; medications list empty but not an explicit statement of absence.
+control,goldset,S009_NCT07478952,E5,2,모름,모름,True,No vaccine history or plans documented.
+control,goldset,S009_NCT07478952,E6,2,모름,모름,True,History of myocarditis/pericarditis/myopericarditis not documented; history field is empty.
+control,goldset,S009_NCT07478952,E7,2,모름,모름,True,No documentation regarding prior investigational EBV vaccine receipt.
+control,goldset,S009_NCT07478952,I1,3,탈락,탈락,True,"Patient presents with fever, sore throat, fatigue, lymphadenopathy, splenomegaly and a positive monospot (suspected infectious mononucleosis). This is an active illness on exam, so he is not healthy by medical evaluation."
+control,goldset,S009_NCT07478952,I2,3,통과,통과,True,"Patient is a 19-year-old male, so he cannot become pregnant or breast/chest feed. The criterion's restriction does not apply to him."
+control,goldset,S009_NCT07478952,E1,3,모름,모름,True,No information on recent surgery or planned surgical procedures; history is empty.
+control,goldset,S009_NCT07478952,E2,3,모름,모름,True,"Splenomegaly is documented, but there is no statement about immunodeficiency, asplenia, or recurrent severe infections. The history list is empty, which does not confirm absence. Splenomegaly means the spleen is present, but the other conditions are unaddressed."
+control,goldset,S009_NCT07478952,E3,3,모름,모름,True,"Medications list is empty, but absence of corticosteroid use is not explicitly stated, and future need is not addressed."
+control,goldset,S009_NCT07478952,E4,3,모름,모름,True,No explicit statement about systemic immunosuppressive or biologic therapy; the medication list is empty but silence is not confirmation.
+control,goldset,S009_NCT07478952,E5,3,모름,모름,True,Vaccination history and plans are not documented.
+control,goldset,S009_NCT07478952,E6,3,모름,모름,True,"No documented history of myocarditis, pericarditis, or myopericarditis; the history list is empty, which does not explicitly confirm absence."
+control,goldset,S009_NCT07478952,E7,3,모름,모름,True,Prior receipt of an investigational EBV vaccine is not documented either way.
+control,goldset,S010_NCT03714503,I1,1,등록 후 확인,모름,False,No information on the patient's capacity or willingness to sign consent; it would be formally obtained at the consent visit but the patient could be asked now.
+control,goldset,S010_NCT03714503,I2,1,모름,모름,True,"Suspected rhegmatogenous retinal detachment of the right eye, but it is not confirmed as primary, and the location of the breaks (inferior) is not documented."
+control,goldset,S010_NCT03714503,I3,1,통과,통과,True,"Age 73 years, which is ≥18."
+control,goldset,S010_NCT03714503,I4,1,통과,통과,True,"Patient is male, so this criterion about women of child-bearing potential does not apply."
+control,goldset,S010_NCT03714503,E1,1,통과,통과,True,"Age 73 years, not a pediatric patient."
+control,goldset,S010_NCT03714503,E2,1,통과,통과,True,"Patient is male, so not pregnant."
+control,goldset,S010_NCT03714503,E3,1,모름,모름,True,History is empty; no explicit statement about prior retinal detachment repair in the right eye.
+control,goldset,S010_NCT03714503,E4,1,모름,모름,True,"No documentation about prior scleral buckling; history is empty, which is not explicit absence."
+control,goldset,S010_NCT03714503,E5,1,모름,모름,True,"Description mentions sudden onset with no trauma stated, but absence of trauma is not explicitly documented."
+control,goldset,S010_NCT03714503,E6,1,모름,통과,False,"Sudden onset of symptoms (flashes, floaters, curtain-like vision loss) indicates a symptomatic, acute detachment, not asymptomatic longstanding."
+control,goldset,S010_NCT03714503,E7,1,등록 후 확인,등록 후 확인,True,Compliance with post-operative treatment can only be observed after surgery/enrollment.
+control,goldset,S010_NCT03714503,E8,1,모름,모름,True,Lens status (phakic vs pseudophakic) of the right eye is not documented.
+control,goldset,S010_NCT03714503,E9,1,모름,모름,True,"Suspected rhegmatogenous type, but exudative detachment is not formally excluded by examination in the record."
+control,goldset,S010_NCT03714503,E10,1,모름,모름,True,No documentation about retinoschisis; the suspected type is rhegmatogenous but this is not confirmed.
+control,goldset,S010_NCT03714503,I1,2,등록 후 확인,모름,False,"No information on the patient's ability to understand or willingness to sign consent; it could be asked, and formal consent is obtained at enrollment."
+control,goldset,S010_NCT03714503,I2,2,모름,모름,True,"Suspected rhegmatogenous retinal detachment of the right eye, but the location of breaks (inferior) is not documented and it is only suspected, not confirmed. Primary status is also not documented."
+control,goldset,S010_NCT03714503,I3,2,통과,통과,True,"Age 73 years, which is ≥18."
+control,goldset,S010_NCT03714503,I4,2,통과,통과,True,"Patient is male, so the pregnancy test requirement for women of child-bearing potential does not apply."
+control,goldset,S010_NCT03714503,E1,2,통과,통과,True,"Patient is 73 years old, not pediatric."
+control,goldset,S010_NCT03714503,E2,2,통과,통과,True,"Patient is male, so cannot be pregnant."
+control,goldset,S010_NCT03714503,E3,2,모름,모름,True,History is empty; no explicit statement about prior retinal detachment repair in the right eye.
+control,goldset,S010_NCT03714503,E4,2,모름,모름,True,"No documentation of prior scleral buckling; history is empty, which is not an explicit denial."
+control,goldset,S010_NCT03714503,E5,2,모름,모름,True,"Cause of detachment not stated; no trauma mentioned, but absence is not explicit confirmation."
+control,goldset,S010_NCT03714503,E6,2,모름,통과,False,"Detachment is symptomatic with sudden onset of curtain-like vision loss, so not asymptomatic longstanding."
+control,goldset,S010_NCT03714503,E7,2,등록 후 확인,등록 후 확인,True,Post-operative compliance can only be determined after surgery during the study.
+control,goldset,S010_NCT03714503,E8,2,모름,모름,True,Lens status (phakic vs pseudophakic) is not documented.
+control,goldset,S010_NCT03714503,E9,2,모름,모름,True,"Type is suspected rhegmatogenous, but exudative etiology has not been explicitly excluded by exam."
+control,goldset,S010_NCT03714503,E10,2,모름,모름,True,No information on retinoschisis; not documented either way.
+control,goldset,S010_NCT03714503,I1,3,등록 후 확인,모름,False,No information about the patient's capacity to understand or willingness to sign consent; it would be formally obtained at consent.
+control,goldset,S010_NCT03714503,I2,3,모름,모름,True,"Suspected rhegmatogenous retinal detachment of the right eye, but not confirmed. Whether it is primary and whether the breaks are inferior is not documented."
+control,goldset,S010_NCT03714503,I3,3,통과,통과,True,"Age 73 years, which is ≥18."
+control,goldset,S010_NCT03714503,I4,3,통과,통과,True,"Patient is male, so the pregnancy test requirement for women of child-bearing potential does not apply."
+control,goldset,S010_NCT03714503,E1,3,통과,통과,True,"Age 73 years, so not pediatric."
+control,goldset,S010_NCT03714503,E2,3,통과,통과,True,"Male patient, so cannot be pregnant."
+control,goldset,S010_NCT03714503,E3,3,모름,모름,True,History is empty; prior retinal detachment repair in the right eye is not explicitly ruled out.
+control,goldset,S010_NCT03714503,E4,3,모름,모름,True,No documented history; prior scleral buckling in the right eye is not explicitly excluded.
+control,goldset,S010_NCT03714503,E5,3,모름,모름,True,"Description gives sudden onset with no mention of trauma, but absence of trauma is not explicitly stated."
+control,goldset,S010_NCT03714503,E6,3,모름,통과,False,"Symptoms are of sudden onset (acute flashes, floaters, curtain-like vision loss), which indicates a symptomatic, recent detachment rather than an asymptomatic longstanding one."
+control,goldset,S010_NCT03714503,E7,3,등록 후 확인,모름,False,Post-operative compliance cannot be established from the record; it would be seen only after treatment.
+control,goldset,S010_NCT03714503,E8,3,모름,모름,True,Lens status (phakic vs pseudophakic) is not documented.
+control,goldset,S010_NCT03714503,E9,3,모름,모름,True,"Suspected rhegmatogenous type, but this is not confirmed by exam, so exudative RD is not definitively ruled out."
+control,goldset,S010_NCT03714503,E10,3,모름,모름,True,No documentation about retinoschisis; the exam is needed to rule it out.
+control,goldset,S010_NCT07081945,I1,1,등록 후 확인,등록 후 확인,True,Informed consent is formally obtained at the consent/screening visit; nothing in the record documents consent yet.
+control,goldset,S010_NCT07081945,I2,1,탈락,탈락,True,"Patient is 73 years old, which is outside the 18-70 range."
+control,goldset,S010_NCT07081945,I3,1,모름,모름,True,"The suspected diagnosis is rhegmatogenous retinal detachment of the right eye, but break location (inferior 4-8 o'clock) and any need for inferior retinotomy are not documented. The diagnosis is only suspected."
+control,goldset,S010_NCT07081945,E1,1,모름,모름,True,Break location and the indication for scleral buckling are not documented.
+control,goldset,S010_NCT07081945,E2,1,모름,모름,True,Retinal break locations and their relation to the detached area are not documented.
+control,goldset,S010_NCT07081945,E3,1,모름,모름,True,"History is empty; no statement about pre-existing eye diseases such as glaucoma, uveitis or corneal ulcer. Absence of information is not confirmation of absence."
+control,goldset,S010_NCT07081945,E4,1,모름,모름,True,No history is documented regarding epilepsy or serious psychiatric disease.
+control,goldset,S010_NCT07081945,E5,1,등록 후 확인,등록 후 확인,True,"Depends on the researcher's judgment of suitability, which only the study team can determine."
+control,goldset,S010_NCT07081945,I1,2,등록 후 확인,등록 후 확인,True,Informed consent is formally obtained at the consent/screening visit. The record has no information on it.
+control,goldset,S010_NCT07081945,I2,2,탈락,탈락,True,"Patient is 73 years old, which is outside the 18-70 range."
+control,goldset,S010_NCT07081945,I3,2,모름,모름,True,"RRD is only suspected (symptoms, suspected diagnosis). The record gives no break locations, no detachment extent, and no information on retinotomy need."
+control,goldset,S010_NCT07081945,E1,2,모름,모름,True,No information on break location or on indications for scleral buckling.
+control,goldset,S010_NCT07081945,E2,2,모름,모름,True,Break locations relative to the detached area are not documented.
+control,goldset,S010_NCT07081945,E3,2,모름,모름,True,"History is empty. There is no explicit statement about corneal ulcer, glaucoma, uveitis, or other eye disease."
+control,goldset,S010_NCT07081945,E4,2,모름,모름,True,No history of epilepsy or psychiatric disease is documented either way.
+control,goldset,S010_NCT07081945,E5,2,등록 후 확인,등록 후 확인,True,"This depends on the researcher's judgment of suitability, which only the study team can determine."
+control,goldset,S010_NCT07081945,I1,3,등록 후 확인,등록 후 확인,True,Informed consent is formally obtained at the consent/screening visit. The record contains no information about consent.
+control,goldset,S010_NCT07081945,I2,3,탈락,탈락,True,"The patient is 73 years old, which is outside the required 18-70 range."
+control,goldset,S010_NCT07081945,I3,3,모름,모름,True,"Suspected rhegmatogenous retinal detachment of the right eye is documented, but the location of the breaks (inferior, 4-8 o'clock) and any need for inferior retinotomy are not documented."
+control,goldset,S010_NCT07081945,E1,3,모름,모름,True,Break location and indication for scleral buckling are not documented.
+control,goldset,S010_NCT07081945,E2,3,모름,모름,True,Break locations and their relation to the detached area are not documented.
+control,goldset,S010_NCT07081945,E3,3,모름,모름,True,"No ocular history is given. The history is empty, and absence of serious eye diseases is not stated."
+control,goldset,S010_NCT07081945,E4,3,모름,모름,True,"No history of epilepsy or psychiatric disease is stated. The history list is empty, which is not an explicit denial."
+control,goldset,S010_NCT07081945,E5,3,등록 후 확인,등록 후 확인,True,This depends on the researcher's judgment of suitability.
 p0,detailed,S004_NCT04369560,I1,1,통과,통과,True,"Patient is 68 years old, within 18–90."
 p0,detailed,S004_NCT04369560,I2,1,등록 후 확인,모름,False,"Nothing in the description addresses his ability to understand or willingness to sign informed consent. No cognitive impairment is described, but consent has not been confirmed."
 p0,detailed,S004_NCT04369560,I3,1,통과,통과,True,"Cystoscopy revealed a papillary bladder tumor on the left bladder wall, and TURBT is scheduled for next week."
@@ -5414,3 +5933,553 @@ v3_r1112,detailed,S010_NCT07081945,E2,3,통과,통과,True,"The only tear is at 
 v3_r1112,detailed,S010_NCT07081945,E3,3,탈락,탈락,True,"""He has primary open-angle glaucoma in both eyes, controlled with latanoprost eye drops."" Glaucoma is listed as an example of a pre-existing serious eye disease."
 v3_r1112,detailed,S010_NCT07081945,E4,3,모름,모름,True,The description does not mention epilepsy or psychiatric disease.
 v3_r1112,detailed,S010_NCT07081945,E5,3,등록 후 확인,등록 후 확인,True,This depends on the researcher's judgment of whether the patient is suitable.
+control,detailed,S004_NCT04369560,I1,1,통과,통과,True,"Patient is 68 years old, within 18–90."
+control,detailed,S004_NCT04369560,I2,1,등록 후 확인,모름,False,"No information on ability or willingness to sign informed consent; it can be asked, and formal consent is obtained at the consent visit."
+control,detailed,S004_NCT04369560,I3,1,통과,통과,True,"Cystoscopy two days ago showed a papillary bladder tumor on the left wall, and TURBT is scheduled for next week. The first branch is met; the MIBC branch is not needed."
+control,detailed,S004_NCT04369560,I4,1,통과,통과,True,"Fully active, walks about three miles most mornings, no restrictions in daily or strenuous activity, which corresponds to ECOG 0."
+control,detailed,S004_NCT04369560,I5,1,통과,통과,True,"Creatinine 1.0 mg/dL with ULN 1.3 mg/dL (0.77 x ULN), which is below 1.5 x ULN. The Cockcroft-Gault alternative applies only to creatinine ≥1.5 x ULN."
+control,detailed,S004_NCT04369560,E1,1,모름,모름,True,No documentation of allergies or prior exposure to gadobutrol or ferumoxytol.
+control,detailed,S004_NCT04369560,E2,1,모름,모름,True,Claustrophobia is not mentioned.
+control,detailed,S004_NCT04369560,E3,1,모름,모름,True,"No mention of implanted devices, prostheses or pacemaker; medication list gives no indication either way."
+control,detailed,S004_NCT04369560,E4,1,통과,통과,True,"CT of chest, abdomen and pelvis shows no enlarged lymph nodes or evidence of distant metastases."
+control,detailed,S004_NCT04369560,E5,1,통과,통과,True,"Patient is male, so pregnancy, lactation or plans to conceive do not apply."
+control,detailed,S004_NCT04369560,E6,1,통과,통과,True,"Urinalysis shows no white blood cells or nitrite and urine culture was negative, so there is no urinary tract infection."
+control,detailed,S004_NCT04369560,E7,1,모름,모름,True,"Cystoscopy was performed, but urethral stricture history is not documented."
+control,detailed,S004_NCT04369560,E8,1,등록 후 확인,등록 후 확인,True,Requires the treating physician's judgment of unacceptable risk.
+control,detailed,S004_NCT04369560,I1,2,통과,통과,True,"Patient is 68 years old, within 18-90."
+control,detailed,S004_NCT04369560,I2,2,등록 후 확인,모름,False,No information on ability or willingness to sign consent; it would need to be asked or obtained at the consent visit.
+control,detailed,S004_NCT04369560,I3,2,통과,통과,True,"Cystoscopy showed a papillary bladder tumor on the left wall and TURBT is scheduled for next week; the first arm (papillary tumor scheduled for TURBT) is met, so the OR is satisfied."
+control,detailed,S004_NCT04369560,I4,2,통과,통과,True,"Fully active, walks about three miles most mornings, no restrictions in daily or strenuous activity, consistent with ECOG 0."
+control,detailed,S004_NCT04369560,I5,2,통과,통과,True,"Serum creatinine 1.0 mg/dL with ULN 1.3 mg/dL (about 0.77 x ULN), below 1.5 x ULN."
+control,detailed,S004_NCT04369560,E1,2,모름,모름,True,No information on prior reactions to gadobutrol or ferumoxytol or contrast allergies.
+control,detailed,S004_NCT04369560,E2,2,모름,모름,True,Claustrophobia is not mentioned.
+control,detailed,S004_NCT04369560,E3,2,모름,모름,True,"No implanted devices, prosthetics or pacemaker are documented, but their absence is not explicitly stated."
+control,detailed,S004_NCT04369560,E4,2,통과,통과,True,"CT of chest, abdomen and pelvis shows no enlarged lymph nodes or evidence of distant metastases."
+control,detailed,S004_NCT04369560,E5,2,통과,통과,True,"Patient is a 68-year-old man, so pregnancy, lactation and plans to conceive do not apply."
+control,detailed,S004_NCT04369560,E6,2,통과,통과,True,"Urinalysis shows no white blood cells or nitrite and urine culture was negative, so there is no UTI."
+control,detailed,S004_NCT04369560,E7,2,모름,모름,True,"Cystoscopy was done without mention of stricture, but urethral stricture disease and foley placement are not explicitly addressed."
+control,detailed,S004_NCT04369560,E8,2,등록 후 확인,등록 후 확인,True,Depends on the treating physician's judgment of unacceptable risk.
+control,detailed,S004_NCT04369560,I1,3,통과,통과,True,"Patient is 68 years old, within 18–90."
+control,detailed,S004_NCT04369560,I2,3,등록 후 확인,모름,False,"No information on ability to understand or willingness to sign consent; the patient could be asked, and consent is formally obtained at enrollment."
+control,detailed,S004_NCT04369560,I3,3,통과,통과,True,"Cystoscopy revealed a papillary bladder tumor on the left bladder wall, and TURBT is scheduled for next week. The first alternative (papillary tumor on cystoscopy scheduled for TURBT) is met; histologic MIBC is not required."
+control,detailed,S004_NCT04369560,I4,3,통과,통과,True,"Fully active, walks about three miles most mornings, no restrictions in daily or strenuous activity, consistent with ECOG 0."
+control,detailed,S004_NCT04369560,I5,3,통과,통과,True,"Serum creatinine 1.0 mg/dL with ULN 1.3 mg/dL, which is below 1.5 x ULN (1.95 mg/dL). The creatinine clearance alternative applies only if creatinine is ≥1.5 x ULN."
+control,detailed,S004_NCT04369560,E1,3,모름,모름,True,No documentation of allergies or prior exposure to gadobutrol or ferumoxytol.
+control,detailed,S004_NCT04369560,E2,3,모름,모름,True,Claustrophobia is not mentioned.
+control,detailed,S004_NCT04369560,E3,3,모름,모름,True,"No information on implanted devices, prostheses or pacemakers. Only hypertension and hyperlipidemia are listed."
+control,detailed,S004_NCT04369560,E4,3,통과,통과,True,"CT of the chest, abdomen, and pelvis shows no enlarged lymph nodes or evidence of distant metastases."
+control,detailed,S004_NCT04369560,E5,3,통과,통과,True,"Patient is male, so pregnancy, lactation and plans to conceive do not apply."
+control,detailed,S004_NCT04369560,E6,3,통과,통과,True,"Urinalysis shows no white blood cells or nitrite and urine culture was negative, so no urinary tract infection is present."
+control,detailed,S004_NCT04369560,E7,3,모름,모름,True,"Cystoscopy was done, but urethral stricture disease is not documented as absent."
+control,detailed,S004_NCT04369560,E8,3,등록 후 확인,등록 후 확인,True,"Depends on the treating physician's judgment of unacceptable risk, which is not documented."
+control,detailed,S004_NCT05646485,I1,1,통과,통과,True,"Patient is 68 years old, which meets the requirement of age ≥ 50."
+control,detailed,S004_NCT05646485,I2,1,통과,통과,True,"He has smoked about one pack a day for 45 years, which is about 45 pack-years and meets the ≥15 pack-year requirement."
+control,detailed,S004_NCT05646485,I3,1,모름,모름,True,"The record gives no occupational history. Exposure as a textile worker, painter, or dry cleaner for ≥15 years is neither confirmed nor excluded."
+control,detailed,S004_NCT05646485,E1,1,모름,모름,True,"The record documents no prior bladder, kidney, or prostate cancer. The current suspected bladder tumor has no histopathological diagnosis yet. Absence of prior cancer history is not explicitly stated."
+control,detailed,S004_NCT05646485,E2,1,모름,모름,True,"The hematuria began three weeks ago, and cystoscopy and CT urography were done recently as part of the current work-up. Whether he had any hematuria evaluation in the prior 2 years is not stated. Whether the current work-up counts as the excluded evaluation is unclear."
+control,detailed,S004_NCT05646485,E3,1,등록 후 확인,모름,False,"The record does not say whether the patient will give informed consent. Consent is formally obtained at enrollment, and nothing indicates he would refuse."
+control,detailed,S004_NCT05646485,I1,2,통과,통과,True,"The patient is 68 years old, which meets the age ≥ 50 requirement."
+control,detailed,S004_NCT05646485,I2,2,통과,통과,True,"He has smoked about one pack a day for 45 years, which is about 45 pack-years and meets the ≥15 pack-year requirement."
+control,detailed,S004_NCT05646485,I3,2,모름,모름,True,"No occupation or occupational exposure history is documented. It is not known whether he worked as a textile worker, painter, or dry cleaner for 15 or more years."
+control,detailed,S004_NCT05646485,E1,2,모름,모름,True,"The current bladder tumor is suspected but has no histopathological diagnosis. No prior bladder, kidney, or prostate cancer is mentioned, but the record does not explicitly say there is none."
+control,detailed,S004_NCT05646485,E2,2,모름,모름,True,"The current hematuria began three weeks ago and is being worked up now (CT urography, cystoscopy). The record does not say whether he had a hematuria evaluation in the past 2 years. Whether the current workup counts as the excluded 'prior evaluation' is also unclear."
+control,detailed,S004_NCT05646485,E3,2,등록 후 확인,등록 후 확인,True,No information on consent is given. Informed consent is obtained formally at the consent or screening visit.
+control,detailed,S004_NCT05646485,I1,3,통과,통과,True,"Patient is 68 years old, which is ≥ 50."
+control,detailed,S004_NCT05646485,I2,3,통과,통과,True,"Smoked about one pack a day for 45 years and is still smoking, which is about 45 pack-years (≥15)."
+control,detailed,S004_NCT05646485,I3,3,모름,모름,True,"The record does not state the patient's occupation or any occupational exposure (textile worker, painter, dry cleaner), so the ≥15-year requirement cannot be judged. This can be obtained by asking the patient. It may also be an either/or alternative to I2, but the criteria do not say so."
+control,detailed,S004_NCT05646485,E1,3,모름,모름,True,"The current bladder tumor is suspected but not histologically confirmed. The record lists no prior bladder, kidney, or prostate cancer in his history, but it does not explicitly say none exists."
+control,detailed,S004_NCT05646485,E2,3,모름,모름,True,"Hematuria began three weeks ago and he has had CT urography and cystoscopy for it. These are the current work-up. The record does not say whether he had any earlier evaluation of hematuria within the past 2 years, nor whether the current work-up counts as 'prior evaluation' for this study."
+control,detailed,S004_NCT05646485,E3,3,등록 후 확인,모름,False,"No information on whether the patient will provide informed consent. Consent is not documented, and he could be asked."
+control,detailed,S008_NCT07652658,I1,1,통과,통과,True,"Patient is 60 years old, which meets age ≥ 40."
+control,detailed,S008_NCT07652658,I2,1,통과,통과,True,Diagnosed with idiopathic pulmonary fibrosis by her pulmonologist 14 months ago; HRCT shows UIP pattern.
+control,detailed,S008_NCT07652658,I3,1,통과,통과,True,"Taking nintedanib 150 mg twice daily at the same dose for the past eight months, which is an approved antifibrotic at a stable dose."
+control,detailed,S008_NCT07652658,I4,1,통과,통과,True,"FVC 68% of predicted, which is ≥ 45%."
+control,detailed,S008_NCT07652658,I5,1,통과,통과,True,"Hemoglobin-corrected DLCO 42% of predicted, which is ≥ 25%."
+control,detailed,S008_NCT07652658,E1,1,모름,통과,False,Diagnosis is IPF with UIP pattern on HRCT and negative ANA; no other ILD is documented.
+control,detailed,S008_NCT07652658,E2,1,통과,통과,True,"HRCT shows fibrosis predominating with only minimal emphysema, so emphysema extent does not exceed fibrosis."
+control,detailed,S008_NCT07652658,E3,1,통과,통과,True,Breathlessness worsened gradually over 18 months 'without any sudden change'; no hospitalization for lung disease. Profile notes no acute exacerbation.
+control,detailed,S008_NCT07652658,E4,1,모름,모름,True,"No information about a current lower respiratory tract infection requiring treatment. Gradual symptoms and no antibiotics listed, but absence is not explicitly stated."
+control,detailed,S008_NCT07652658,E5,1,모름,모름,True,"No cardiac history of ACS, MI, unstable angina, PCI or CABG is documented, but absence is not explicitly stated (former smoker, 20 pack-years)."
+control,detailed,S008_NCT07652658,E6,1,모름,통과,False,"Echocardiogram last month showed normal left ventricular function, and no heart failure is documented."
+control,detailed,S008_NCT07652658,E7,1,모름,모름,True,"No organ transplantation history is documented, and lung transplant candidacy is not mentioned. This could be confirmed by asking the patient or checking records."
+control,detailed,S008_NCT07652658,I1,2,통과,통과,True,"Patient is 60 years old, which meets age ≥ 40."
+control,detailed,S008_NCT07652658,I2,2,통과,통과,True,Diagnosed with idiopathic pulmonary fibrosis by her pulmonologist 14 months ago; HRCT shows a UIP pattern.
+control,detailed,S008_NCT07652658,I3,2,통과,통과,True,"Taking nintedanib 150 mg twice daily at the same dose for the past eight months, i.e. an antifibrotic at a stable dose. Whether nintedanib is locally approved is not stated, but it is a standard approved IPF antifibrotic."
+control,detailed,S008_NCT07652658,I4,2,통과,통과,True,"FVC 68% of predicted, which is ≥ 45%."
+control,detailed,S008_NCT07652658,I5,2,통과,통과,True,"Hemoglobin-corrected DLCO 42% of predicted, which is ≥ 25%."
+control,detailed,S008_NCT07652658,E1,2,모름,통과,False,"Diagnosis is IPF with a UIP pattern and negative ANA. No other ILD is documented, and the record gives no sign of an alternative ILD."
+control,detailed,S008_NCT07652658,E2,2,통과,통과,True,"HRCT shows fibrosis predominating with only minimal emphysema, so emphysema is not greater than fibrosis."
+control,detailed,S008_NCT07652658,E3,2,통과,통과,True,"Stable chronic progression: breathlessness worsened gradually over 18 months without any sudden change, and she has not been hospitalized for her lung disease."
+control,detailed,S008_NCT07652658,E4,2,모름,모름,True,No information about a current lower respiratory tract infection or recent treatment for one. Her presentation is of chronic gradual progression only.
+control,detailed,S008_NCT07652658,E5,2,모름,모름,True,"No cardiac history of ACS, MI, unstable angina, PCI or CABG is documented, but absence is not explicitly stated. Only a normal echocardiogram is mentioned."
+control,detailed,S008_NCT07652658,E6,2,모름,통과,False,"Echocardiogram last month showed normal left ventricular function, and no heart failure is documented."
+control,detailed,S008_NCT07652658,E7,2,모름,모름,True,"No history of organ transplantation is documented, and no information is given on whether lung transplantation is planned or likely."
+control,detailed,S008_NCT07652658,I1,3,통과,통과,True,"Patient is 60 years old, which meets the requirement of age ≥ 40."
+control,detailed,S008_NCT07652658,I2,3,통과,통과,True,Diagnosed with idiopathic pulmonary fibrosis by her pulmonologist 14 months ago. HRCT shows a UIP pattern.
+control,detailed,S008_NCT07652658,I3,3,통과,통과,True,"She has taken nintedanib 150 mg twice daily at the same dose for the past eight months. Nintedanib is an approved antifibrotic, and the dose is stable."
+control,detailed,S008_NCT07652658,I4,3,통과,통과,True,"FVC is 68% of predicted, which is ≥ 45%."
+control,detailed,S008_NCT07652658,I5,3,통과,통과,True,"Hemoglobin-corrected DLCO is 42% of predicted, which is ≥ 25%."
+control,detailed,S008_NCT07652658,E1,3,모름,통과,False,"Diagnosis is IPF with a UIP pattern, and ANA is negative. No other ILD is documented."
+control,detailed,S008_NCT07652658,E2,3,통과,통과,True,"HRCT shows fibrosis predominating with only minimal emphysema, so emphysema extent does not exceed fibrosis."
+control,detailed,S008_NCT07652658,E3,3,통과,통과,True,Breathlessness worsened gradually over 18 months without any sudden change. She has not been hospitalized for her lung disease. The profile notes stable chronic progression without acute exacerbation.
+control,detailed,S008_NCT07652658,E4,3,모름,모름,True,No information is given on a current lower respiratory tract infection or its treatment. The record neither confirms nor excludes one.
+control,detailed,S008_NCT07652658,E5,3,모름,모름,True,"The record does not mention acute coronary syndrome, MI, unstable angina, PCI or CABG. Absence of mention does not confirm absence."
+control,detailed,S008_NCT07652658,E6,3,모름,모름,True,"Echocardiogram last month showed normal left ventricular function, but no explicit statement says she has no heart failure (for example, no mention of right heart or diastolic function or a clinical heart failure history)."
+control,detailed,S008_NCT07652658,E7,3,모름,모름,True,"No organ transplant history is documented, and no information is given on whether lung transplantation is planned or likely."
+control,detailed,S008_NCT07299695,I1,1,통과,통과,True,Patient is 60 years old.
+control,detailed,S008_NCT07299695,I2,1,모름,통과,False,"IPF diagnosed by pulmonologist 14 months ago; HRCT shows UIP pattern with honeycombing, ANA negative, former smoker, no alternative cause noted. This is consistent with ATS/ERS criteria, though formal MDD is not documented."
+control,detailed,S008_NCT07299695,I3,1,탈락,탈락,True,"Patient is an outpatient, 'has not been hospitalized for her lung disease'; dyspnea worsened gradually over 18 months 'without any sudden change' (not <1 month acute worsening); CT shows no new ground-glass opacity/consolidation. Does not have definite or suspected AE-IPF."
+control,detailed,S008_NCT07299695,I4,1,등록 후 확인,모름,False,No information on capacity or willingness to sign informed consent; consent is only formally obtained at enrollment. Nothing suggests incapacity.
+control,detailed,S008_NCT07299695,E1,1,통과,통과,True,No acute worsening; echo last month showed normal left ventricular function; no mention of heart failure or PE; worsening is gradual over 18 months.
+control,detailed,S008_NCT07299695,E2,1,모름,모름,True,"No information on allergies or hypersensitivity to corticosteroids, IVIG, or components."
+control,detailed,S008_NCT07299695,E3,1,모름,모름,True,IgA level / IgA deficiency not documented.
+control,detailed,S008_NCT07299695,E4,1,모름,통과,False,"IPF diagnosed by pulmonologist with HRCT UIP pattern, honeycombing, negative ANA; definite IPF diagnosis is documented. (AE-IPF not present, but criterion is satisfied by a definite IPF diagnosis.)"
+control,detailed,S008_NCT07299695,E5,1,모름,모름,True,No mention of malignancy or cancer treatment; absence not explicitly stated.
+control,detailed,S008_NCT07299695,E6,1,모름,통과,False,"Medication list is nintedanib, omeprazole, levothyroxine only; no corticosteroids or immunosuppressants listed. Nintedanib is an antifibrotic, not an immunosuppressant."
+control,detailed,S008_NCT07299695,E7,1,모름,모름,True,"No information on participation in another interventional trial; nintedanib is described as ongoing treatment, not as trial participation."
+control,detailed,S008_NCT07299695,E8,1,통과,통과,True,60-year-old postmenopausal woman; pregnancy not plausible/documented. Lactation not mentioned but implied absent by age/postmenopausal status.
+control,detailed,S008_NCT07299695,E9,1,모름,모름,True,No information on tutorship or curatorship.
+control,detailed,S008_NCT07299695,E10,1,모름,모름,True,No information on deprivation of liberty or court protection.
+control,detailed,S008_NCT07299695,E11,1,등록 후 확인,모름,False,No information on willingness to participate or consent.
+control,detailed,S008_NCT07299695,I1,2,통과,통과,True,Patient is 60 years old.
+control,detailed,S008_NCT07299695,I2,2,모름,통과,False,"IPF diagnosed by pulmonologist 14 months ago; HRCT shows UIP pattern with honeycombing, ANA negative, former smoker. This is consistent with ATS/ERS criteria. No explicit statement of formal criteria, but direct clinical inference supports it."
+control,detailed,S008_NCT07299695,I3,2,탈락,탈락,True,"Patient is outpatient, 'has not been hospitalized for her lung disease'; dyspnea worsened gradually over 18 months 'without any sudden change' (not <1 month acute worsening); no new ground-glass opacity/consolidation described. Not AE-IPF."
+control,detailed,S008_NCT07299695,I4,2,등록 후 확인,모름,False,No information on the patient's capacity or willingness to sign informed consent; formal consent is obtained at enrollment.
+control,detailed,S008_NCT07299695,E1,2,통과,통과,True,"No acute worsening; echocardiogram last month showed normal left ventricular function, so no uncontrolled heart failure. Worsening is gradual. No mention of pulmonary embolism, but no acute worsening is present."
+control,detailed,S008_NCT07299695,E2,2,모름,모름,True,"No information on allergies or hypersensitivity to corticosteroids, IVIG or components."
+control,detailed,S008_NCT07299695,E3,2,모름,모름,True,IgA level or IgA deficiency not documented.
+control,detailed,S008_NCT07299695,E4,2,모름,통과,False,"IPF diagnosed by pulmonologist with HRCT UIP pattern and negative ANA, so a definite IPF diagnosis appears established. Multidisciplinary discussion not explicitly documented."
+control,detailed,S008_NCT07299695,E5,2,모름,모름,True,No mention of malignancy or cancer treatment; absence not explicitly stated.
+control,detailed,S008_NCT07299695,E6,2,모름,모름,True,"Medication list (nintedanib, omeprazole, levothyroxine) includes no corticosteroids or immunosuppressants, but the list is not explicitly stated to be complete regarding the past month."
+control,detailed,S008_NCT07299695,E7,2,모름,모름,True,No information on participation in another interventional trial; nintedanib is described as standard therapy.
+control,detailed,S008_NCT07299695,E8,2,통과,통과,True,"60-year-old, postmenopausal woman, so not pregnant; lactation implausible given postmenopausal status and age."
+control,detailed,S008_NCT07299695,E9,2,모름,모름,True,No information on tutorship or curatorship.
+control,detailed,S008_NCT07299695,E10,2,모름,모름,True,No information on deprivation of liberty or court protection.
+control,detailed,S008_NCT07299695,E11,2,등록 후 확인,모름,False,Willingness to participate or consent is not documented.
+control,detailed,S008_NCT07299695,I1,3,통과,통과,True,Age 60 years.
+control,detailed,S008_NCT07299695,I2,3,모름,통과,False,"Diagnosed with IPF by pulmonologist 14 months ago; HRCT shows UIP pattern with honeycombing, ANA negative, former smoker. Consistent with ATS/ERS criteria."
+control,detailed,S008_NCT07299695,I3,3,탈락,탈락,True,Not hospitalized for lung disease; dyspnea worsened gradually over 18 months 'without any sudden change'; no new ground-glass opacity/consolidation on CT. No acute exacerbation present.
+control,detailed,S008_NCT07299695,I4,3,등록 후 확인,모름,False,No information on capacity or ability to understand and sign consent; formal consent is obtained at enrollment.
+control,detailed,S008_NCT07299695,E1,3,통과,통과,True,"Echocardiogram last month showed normal left ventricular function; no acute worsening described, so no acute worsening due to heart failure. Pulmonary embolism not mentioned, but no acute worsening occurred."
+control,detailed,S008_NCT07299695,E2,3,모름,모름,True,"No information on allergies or hypersensitivity to corticosteroids, IVIG or components."
+control,detailed,S008_NCT07299695,E3,3,모름,모름,True,IgA level / IgA deficiency not documented.
+control,detailed,S008_NCT07299695,E4,3,모름,통과,False,"Definite IPF diagnosis by pulmonologist with UIP pattern on HRCT, negative ANA, other causes considered; diagnosis is established."
+control,detailed,S008_NCT07299695,E5,3,모름,모름,True,No mention of malignancy or cancer treatment; absence not explicitly stated.
+control,detailed,S008_NCT07299695,E6,3,모름,모름,True,"Medication list (nintedanib, omeprazole, levothyroxine) includes no corticosteroids or immunosuppressants, but the list is not explicitly stated to be complete regarding recent steroid use."
+control,detailed,S008_NCT07299695,E7,3,모름,모름,True,Participation in other interventional trials not mentioned; nintedanib is described as a standard medication.
+control,detailed,S008_NCT07299695,E8,3,통과,통과,True,"60-year-old postmenopausal woman, so not pregnant; lactation implausible/not documented."
+control,detailed,S008_NCT07299695,E9,3,모름,모름,True,Legal status (tutorship/curatorship) not documented.
+control,detailed,S008_NCT07299695,E10,3,모름,모름,True,Not documented whether deprived of liberty or under court protection.
+control,detailed,S008_NCT07299695,E11,3,등록 후 확인,모름,False,No information on willingness to participate or consent.
+control,detailed,N001_NCT07082114,I1,1,통과,통과,True,58-year-old woman; within 18–75.
+control,detailed,N001_NCT07082114,I2,1,통과,모름,False,"9-year history of type 2 diabetes (duration well over 3 months), but whether diagnosis was based on WHO criteria is not documented."
+control,detailed,N001_NCT07082114,I3,1,통과,통과,True,Metformin 1000 mg twice daily (2000 mg/day) at the same dose for the past two years.
+control,detailed,N001_NCT07082114,I4,1,등록 후 확인,모름,False,"HbA1c 9.8% measured at her clinic last week is within 7.5–11.0%, but it is unclear whether it was a local laboratory screening value for this study; formal screening measurement not yet done."
+control,detailed,N001_NCT07082114,I5,1,등록 후 확인,등록 후 확인,True,"Requires central laboratory HbA1c prior to randomization, which only occurs during study screening."
+control,detailed,N001_NCT07082114,I6,1,통과,통과,True,"BMI 31.2 kg/m², within 19.0–40.0."
+control,detailed,N001_NCT07082114,I7,1,통과,통과,True,"Patient is a 58-year-old postmenopausal woman, so not of childbearing potential; she is neither a male nor a female of childbearing potential, so the contraception requirement does not apply."
+control,detailed,N001_NCT07082114,I8,1,등록 후 확인,등록 후 확인,True,"Willingness to maintain diet/exercise, protocol compliance, and written informed consent are obtained at the consent/screening visit; no record of these."
+control,detailed,N001_NCT07082114,E1,1,통과,통과,True,Documented as type 2 diabetes for 9 years; postmenopausal woman so not gestational. No indication of T1DM/LADA or special types.
+control,detailed,N001_NCT07082114,E2,1,모름,모름,True,"No mention of acute diabetic complications such as DKA, lactic acidosis, or hyperosmolar coma in the past 6 months; absence not explicitly stated."
+control,detailed,N001_NCT07082114,E3,1,모름,모름,True,"No information on personal or family history of medullary thyroid carcinoma, C-cell hyperplasia, or MEN2 (hypothyroidism on levothyroxine is different)."
+control,detailed,N001_NCT07082114,E4,1,통과,모름,False,"No history of pancreatitis stated, but pancreatic injury and other high-risk factors for pancreatitis (e.g., alcohol, hypertriglyceridemia, gallstones) are not addressed."
+control,detailed,N001_NCT07082114,E5,1,등록 후 확인,모름,False,No information about gallbladder disease or cholecystectomy.
+control,detailed,N001_NCT07082114,E6,1,등록 후 확인,모름,False,"No information on dysphagia, GERD, IBS, gastric surgery, or other GI conditions."
+control,detailed,N001_NCT07082114,E7,1,모름,모름,True,Unstable angina not mentioned; only heart attack and stroke denied.
+control,detailed,N001_NCT07082114,E8,1,모름,모름,True,Heart failure not mentioned.
+control,detailed,N001_NCT07082114,E9,1,통과,통과,True,"""No history of pancreatitis, heart attack, or stroke."""
+control,detailed,N001_NCT07082114,E10,1,모름,모름,True,No information on CABG or PCI.
+control,detailed,N001_NCT07082114,E11,1,모름,모름,True,No information about arrhythmias.
+control,detailed,N001_NCT07082114,E12,1,통과,통과,True,"""No history of pancreatitis, heart attack, or stroke."""
+control,detailed,N001_NCT07082114,E13,1,통과,통과,True,Eye exam three months ago showed mild nonproliferative diabetic retinopathy that does not need treatment; no proliferative retinopathy or maculopathy mentioned.
+control,detailed,N001_NCT07082114,E14,1,모름,모름,True,No information about liver disease or hepatitis status.
+control,detailed,N001_NCT07082114,E15,1,모름,통과,False,"Current medications are only metformin, lisinopril, and levothyroxine; none is a strong CYP3A4 or P-gp inhibitor."
+control,detailed,N001_NCT07082114,E16,1,모름,통과,False,"Medications are metformin, lisinopril, levothyroxine; none is a strong/moderate CYP3A4 inhibitor or strong P-gp inducer."
+control,detailed,N001_NCT07082114,E17,1,모름,모름,True,"Current medications do not include OATP1B1/1B3 inhibitors, but full lifetime medication history is not documented."
+control,detailed,N001_NCT07082114,E18,1,등록 후 확인,통과,False,"Current medications are metformin, lisinopril, levothyroxine; none is a narrow therapeutic index substrate of the listed enzymes/transporters."
+control,detailed,N001_NCT07082114,E19,1,통과,통과,True,"Has never used any other glucose-lowering medication including SGLT2 inhibitors, DPP-4 inhibitors, GLP-1 RAs, or insulin; metformin is the protocol background therapy."
+control,detailed,N001_NCT07082114,E20,1,통과,통과,True,Never used GLP-1 receptor agonists.
+control,detailed,N001_NCT07082114,E21,1,통과,통과,True,"Never used GLP-1 receptor agonists, so none discontinued."
+control,detailed,N001_NCT07082114,E22,1,통과,통과,True,"58-year-old postmenopausal woman, implying not pregnant; no indication of lactation at this age/status."
+control,detailed,N001_NCT07082114,E23,1,모름,모름,True,"Never used SGLT2i or GLP-1RA so no known hypersensitivity, but history of severe drug allergies is not documented."
+control,detailed,N001_NCT07082114,E24,1,모름,모름,True,No information about participation in other clinical studies in the past 3 months.
+control,detailed,N001_NCT07082114,E25,1,등록 후 확인,등록 후 확인,True,Requires investigator judgment of suitability.
+control,detailed,N001_NCT07082114,I1,2,통과,통과,True,58-year-old woman; within 18–75.
+control,detailed,N001_NCT07082114,I2,2,통과,통과,True,"9-year history of type 2 diabetes (>3 months). WHO criteria diagnosis not explicitly documented, but the long-standing T2DM diagnosis is reasonable to accept."
+control,detailed,N001_NCT07082114,I3,2,통과,통과,True,Metformin 1000 mg twice daily (2000 mg/day) at the same dose for the past two years.
+control,detailed,N001_NCT07082114,I4,2,등록 후 확인,통과,False,"HbA1c 9.8% measured at her clinic last week, within 7.5–11.0%. Formal screening local lab value will be obtained at screening, but existing value is in range."
+control,detailed,N001_NCT07082114,I5,2,등록 후 확인,등록 후 확인,True,Requires central laboratory HbA1c prior to randomization; only obtained during study screening.
+control,detailed,N001_NCT07082114,I6,2,통과,통과,True,"BMI 31.2 kg/m², within 19.0–40.0."
+control,detailed,N001_NCT07082114,I7,2,통과,통과,True,"Patient is postmenopausal, so not of childbearing potential; female contraception requirement does not apply."
+control,detailed,N001_NCT07082114,I8,2,등록 후 확인,등록 후 확인,True,"Willingness to maintain diet/exercise, comply with protocol and written informed consent are obtained at consent/screening; not documented."
+control,detailed,N001_NCT07082114,E1,2,통과,통과,True,"Diagnosed with type 2 diabetes; no indication of type 1, LADA, special types or gestational diabetes (postmenopausal, 9-year T2DM)."
+control,detailed,N001_NCT07082114,E2,2,모름,모름,True,"No statement about acute diabetic complications (DKA, lactic acidosis, HONK) in past 6 months."
+control,detailed,N001_NCT07082114,E3,2,모름,모름,True,"No information on personal/family history of medullary thyroid carcinoma, C-cell hyperplasia or MEN2 (hypothyroidism on levothyroxine only noted)."
+control,detailed,N001_NCT07082114,E4,2,통과,모름,False,"No history of pancreatitis is stated, but pancreatic injury and high-risk factors for pancreatitis (e.g., alcohol, hypertriglyceridemia, gallstones) are not documented."
+control,detailed,N001_NCT07082114,E5,2,등록 후 확인,모름,False,No information on gallbladder disease or cholecystectomy.
+control,detailed,N001_NCT07082114,E6,2,등록 후 확인,모름,False,"No GI history (dysphagia, GERD, IBS, gastric surgery) documented."
+control,detailed,N001_NCT07082114,E7,2,모름,모름,True,Unstable angina not mentioned (only no heart attack or stroke).
+control,detailed,N001_NCT07082114,E8,2,모름,모름,True,Heart failure not mentioned.
+control,detailed,N001_NCT07082114,E9,2,통과,통과,True,"""No history of ... heart attack""."
+control,detailed,N001_NCT07082114,E10,2,모름,모름,True,No information on CABG or PCI.
+control,detailed,N001_NCT07082114,E11,2,모름,모름,True,No arrhythmia history documented.
+control,detailed,N001_NCT07082114,E12,2,통과,통과,True,"""No history of ... stroke""."
+control,detailed,N001_NCT07082114,E13,2,통과,통과,True,"Mild nonproliferative diabetic retinopathy ""that does not need treatment""; no proliferative retinopathy or maculopathy mentioned."
+control,detailed,N001_NCT07082114,E14,2,모름,모름,True,No liver disease or hepatitis status documented.
+control,detailed,N001_NCT07082114,E15,2,모름,통과,False,"Current medications are metformin, lisinopril, levothyroxine; none are strong CYP3A4 or P-gp inhibitors."
+control,detailed,N001_NCT07082114,E16,2,모름,통과,False,"Medications metformin, lisinopril, levothyroxine; none are CYP3A4 inhibitors or strong P-gp inducers."
+control,detailed,N001_NCT07082114,E17,2,모름,모름,True,"Medication list is current only; lifetime prior use of OATP1B1/1B3 inhibitors (e.g., rifampin, cyclosporine) not documented."
+control,detailed,N001_NCT07082114,E18,2,등록 후 확인,통과,False,"Current meds metformin, lisinopril, levothyroxine; levothyroxine is narrow-therapeutic-index but not a recognized substrate of the listed enzymes/transporters, and no others listed."
+control,detailed,N001_NCT07082114,E19,2,통과,통과,True,"Only glucose-lowering drug is metformin; ""never used any other glucose-lowering medication, including SGLT2 inhibitors, DPP-4 inhibitors, GLP-1 receptor agonists, or insulin""."
+control,detailed,N001_NCT07082114,E20,2,통과,통과,True,Never used GLP-1 receptor agonists.
+control,detailed,N001_NCT07082114,E21,2,통과,통과,True,"Never used any GLP-1 receptor agonist, so no prior discontinuation."
+control,detailed,N001_NCT07082114,E22,2,통과,통과,True,58-year-old postmenopausal woman; pregnancy not possible. Lactation not documented but implausible at this age/status.
+control,detailed,N001_NCT07082114,E23,2,모름,모름,True,"No allergy history documented; she has never used SGLT2i or GLP-1RA, and severe drug allergy history is not stated."
+control,detailed,N001_NCT07082114,E24,2,모름,모름,True,No information on participation in other clinical studies in past 3 months.
+control,detailed,N001_NCT07082114,E25,2,등록 후 확인,등록 후 확인,True,Requires investigator judgment of suitability.
+control,detailed,N001_NCT07082114,I1,3,통과,통과,True,58-year-old woman; within 18–75.
+control,detailed,N001_NCT07082114,I2,3,통과,통과,True,"9-year history of type 2 diabetes (≥3 months). WHO-criteria basis not explicitly documented, but a established T2DM diagnosis with HbA1c 9.8% and fasting glucose 11.2 mmol/L is consistent."
+control,detailed,N001_NCT07082114,I3,3,통과,통과,True,Metformin 1000 mg twice daily (2000 mg/day) at the same dose for the past two years.
+control,detailed,N001_NCT07082114,I4,3,등록 후 확인,통과,False,"HbA1c 9.8% measured at her clinic last week, within 7.5–11.0%. Formal study screening value will be obtained later, but existing local result is in range."
+control,detailed,N001_NCT07082114,I5,3,등록 후 확인,등록 후 확인,True,"Requires pre-randomization HbA1c by the study's central laboratory, which exists only after enrollment."
+control,detailed,N001_NCT07082114,I6,3,통과,통과,True,"BMI 31.2 kg/m², within 19.0–40.0."
+control,detailed,N001_NCT07082114,I7,3,통과,통과,True,"Patient is postmenopausal, so not of childbearing potential; she is female, and the male requirement does not apply."
+control,detailed,N001_NCT07082114,I8,3,등록 후 확인,모름,False,"No information on willingness to maintain diet/exercise habits, comply with protocol, or consent; written consent is only obtained at enrollment."
+control,detailed,N001_NCT07082114,E1,3,통과,통과,True,"Diagnosed with type 2 diabetes; she is a postmenopausal woman, so gestational diabetes not applicable. No T1DM/LADA/special types documented."
+control,detailed,N001_NCT07082114,E2,3,모름,모름,True,"No mention of acute diabetic complications (DKA, lactic acidosis, hyperosmolar coma) in the past 6 months; symptoms are fatigue and thirst only."
+control,detailed,N001_NCT07082114,E3,3,모름,모름,True,"No information on personal or family history of medullary thyroid carcinoma, C-cell hyperplasia, or MEN2 (hypothyroidism on levothyroxine is documented but different)."
+control,detailed,N001_NCT07082114,E4,3,통과,모름,False,"'No history of pancreatitis' is documented, but pancreatic injury and high-risk factors for pancreatitis (e.g., hypertriglyceridemia, alcohol use, gallstones) are not addressed."
+control,detailed,N001_NCT07082114,E5,3,등록 후 확인,모름,False,No information on gallbladder disease or cholecystectomy.
+control,detailed,N001_NCT07082114,E6,3,등록 후 확인,모름,False,"No information on dysphagia, GERD, gastric surgery, pyloric obstruction, IBS, or other GI conditions."
+control,detailed,N001_NCT07082114,E7,3,모름,모름,True,Unstable angina not mentioned; only MI and stroke explicitly denied.
+control,detailed,N001_NCT07082114,E8,3,모름,모름,True,Heart failure not mentioned in the record.
+control,detailed,N001_NCT07082114,E9,3,통과,통과,True,'No history of ... heart attack'.
+control,detailed,N001_NCT07082114,E10,3,모름,모름,True,No information on CABG or PCI.
+control,detailed,N001_NCT07082114,E11,3,모름,모름,True,No information about arrhythmias.
+control,detailed,N001_NCT07082114,E12,3,통과,통과,True,'No history of ... stroke'.
+control,detailed,N001_NCT07082114,E13,3,통과,통과,True,Eye exam three months ago showed mild nonproliferative diabetic retinopathy that does not need treatment; no proliferative retinopathy or maculopathy documented.
+control,detailed,N001_NCT07082114,E14,3,모름,모름,True,No information on liver disease or hepatitis status.
+control,detailed,N001_NCT07082114,E15,3,모름,통과,False,"Current medications are metformin, lisinopril, levothyroxine; none are strong CYP3A4 or P-gp inhibitors."
+control,detailed,N001_NCT07082114,E16,3,모름,통과,False,"Medications are metformin, lisinopril, levothyroxine; none are CYP3A4 inhibitors or strong P-gp inducers."
+control,detailed,N001_NCT07082114,E17,3,모름,모름,True,"Medication list is current only; lifetime prior use of OATP1B1/1B3 inhibitors (e.g., rifampicin, cyclosporine) not documented."
+control,detailed,N001_NCT07082114,E18,3,등록 후 확인,통과,False,"Current meds metformin, lisinopril, levothyroxine; none are narrow-therapeutic-index substrates of the listed enzymes/transporters in the record."
+control,detailed,N001_NCT07082114,E19,3,통과,통과,True,"Never used any other glucose-lowering medication besides metformin (including SGLT2i, DPP-4i, GLP-1RA, insulin); metformin is the protocol background therapy."
+control,detailed,N001_NCT07082114,E20,3,통과,통과,True,Has never used GLP-1 receptor agonists.
+control,detailed,N001_NCT07082114,E21,3,통과,통과,True,"Never used a GLP-1 receptor agonist, so no prior discontinuation."
+control,detailed,N001_NCT07082114,E22,3,통과,통과,True,"Postmenopausal 58-year-old woman, implying not pregnant; lactation not plausible/documented."
+control,detailed,N001_NCT07082114,E23,3,모름,모름,True,"No allergy history documented; she has never used SGLT2i or GLP-1RA, but severe drug allergy history is not addressed."
+control,detailed,N001_NCT07082114,E24,3,모름,모름,True,No information on participation in other clinical studies in the past 3 months.
+control,detailed,N001_NCT07082114,E25,3,등록 후 확인,등록 후 확인,True,Requires investigator judgment of suitability.
+control,detailed,N001_NCT06863532,I1,1,등록 후 확인,모름,False,"No information on the patient's capacity or willingness to sign consent; she works as an accountant, but that is not confirmation."
+control,detailed,N001_NCT06863532,I2,1,통과,통과,True,58-year-old woman; within 18-74.
+control,detailed,N001_NCT06863532,I3,1,통과,통과,True,"9-year history of type 2 diabetes with HbA1c 9.8% and FBG 11.2 mmol/L, which meets diagnostic thresholds."
+control,detailed,N001_NCT06863532,I4,1,탈락,탈락,True,"She has never used any SGLT2 inhibitor; she is on metformin only, so she has not been on SGLT2i monotherapy for 8 weeks."
+control,detailed,N001_NCT06863532,I5,1,탈락,탈락,True,"Metformin 1000 mg twice daily = 2000 mg/day, exceeding the 500-1000 mg/day range, though she has taken it at a stable dose for 2 years."
+control,detailed,N001_NCT06863532,I6,1,탈락,탈락,True,HbA1c 9.8% measured last week is above the 9.5% upper limit.
+control,detailed,N001_NCT06863532,I7,1,통과,통과,True,"Fasting blood glucose 11.2 mmol/L, which is < 15. A pre-randomization value will be rechecked but current data meet the threshold."
+control,detailed,N001_NCT06863532,I8,1,통과,통과,True,"BMI 31.2 kg/m², which is ≤ 40."
+control,detailed,N001_NCT06863532,I9,1,모름,모름,True,No urine ketone result is documented.
+control,detailed,N001_NCT06863532,I10,1,통과,통과,True,"eGFR 78 mL/min/1.73 m², which is ≥ 60."
+control,detailed,N001_NCT06863532,I11,1,등록 후 확인,등록 후 확인,True,"Agreement to maintain diet and exercise, and willingness and ability to perform SMBG, are confirmed at the consent or screening visit; nothing in the record addresses them."
+control,detailed,N001_NCT06863532,E1,1,통과,통과,True,"Documented type 2 diabetes with a 9-year history managed on metformin, which implies it is not type 1."
+control,detailed,N001_NCT06863532,E2,1,통과,모름,False,"She is diagnosed with T2DM, but secondary causes are not explicitly excluded in the record."
+control,detailed,N001_NCT06863532,E3,1,모름,모름,True,No transplant history is mentioned.
+control,detailed,N001_NCT06863532,E4,1,모름,모름,True,"She has no history of pancreatitis, but pancreatic resection is not addressed."
+control,detailed,N001_NCT06863532,E5,1,모름,모름,True,No DKA or hyperosmolar coma history is documented.
+control,detailed,N001_NCT06863532,E6,1,등록 후 확인,모름,False,No liver enzyme results or liver disease history is provided.
+control,detailed,N001_NCT06863532,E7,1,모름,통과,False,"She has no history of heart attack or stroke. Unstable angina and TIA are not mentioned, but no history of heart attack or stroke supports no recent event."
+control,detailed,N001_NCT06863532,E8,1,통과,통과,True,"BP 138/84 mmHg on lisinopril, below 160 systolic and 90 diastolic."
+control,detailed,N001_NCT06863532,E9,1,모름,모름,True,No hemoglobin value is documented.
+control,detailed,N001_NCT06863532,E10,1,모름,모름,True,No genitourinary infection history is provided.
+control,detailed,N001_NCT06863532,E11,1,모름,모름,True,No surgical history is provided.
+control,detailed,N001_NCT06863532,E12,1,모름,모름,True,"No anti-obesity medication, radical diet or weight change history is mentioned."
+control,detailed,N001_NCT06863532,E13,1,모름,모름,True,Cancer history is not mentioned.
+control,detailed,N001_NCT06863532,E14,1,모름,모름,True,HIV status is not documented.
+control,detailed,N001_NCT06863532,E15,1,모름,모름,True,Peripheral vascular disease is not mentioned.
+control,detailed,N001_NCT06863532,E16,1,모름,모름,True,No hematologic history is documented.
+control,detailed,N001_NCT06863532,E17,1,모름,모름,True,"Her medications do not include systemic corticosteroids, but immune system diseases are not addressed. Hypothyroidism etiology is not given."
+control,detailed,N001_NCT06863532,E18,1,모름,모름,True,"Levothyroxine dose has been unchanged for 2 years, so there was no change in the past 6 weeks. Control of hypothyroidism and other endocrine or metabolic disorders is not documented."
+control,detailed,N001_NCT06863532,E19,1,등록 후 확인,등록 후 확인,True,This requires investigator judgment of compliance risk. Substance use history is not documented.
+control,detailed,N001_NCT06863532,E20,1,모름,모름,True,No allergy history is documented.
+control,detailed,N001_NCT06863532,E21,1,통과,통과,True,"58-year-old postmenopausal woman, so pregnancy and planned pregnancy are not expected. Lactation is not mentioned, but is implausible with postmenopausal status."
+control,detailed,N001_NCT06863532,E22,1,통과,모름,False,"Willingness to use contraception and contraceptive plans are not documented. Postmenopausal status may make this moot, but it is not confirmed."
+control,detailed,N001_NCT06863532,E23,1,통과,통과,True,"The patient is female, so this male-only criterion does not apply."
+control,detailed,N001_NCT06863532,E24,1,모름,모름,True,No information on recent participation in other clinical studies.
+control,detailed,N001_NCT06863532,E25,1,등록 후 확인,등록 후 확인,True,This depends on investigator judgment of suitability.
+control,detailed,N001_NCT06863532,I1,2,등록 후 확인,모름,False,No information on the patient's capacity or willingness to sign consent; she is a working accountant but this is not confirmation.
+control,detailed,N001_NCT06863532,I2,2,통과,통과,True,58-year-old woman; within 18-74.
+control,detailed,N001_NCT06863532,I3,2,통과,통과,True,"9-year history of type 2 diabetes, HbA1c 9.8%, fasting glucose 11.2 mmol/L."
+control,detailed,N001_NCT06863532,I4,2,탈락,탈락,True,"She 'has never used any other glucose-lowering medication, including SGLT2 inhibitors'; she is on metformin, not SGLT2i monotherapy."
+control,detailed,N001_NCT06863532,I5,2,탈락,탈락,True,Metformin 1000 mg twice daily (2000 mg/day) for two years at the same dose; this exceeds the 500-1000 mg/day range.
+control,detailed,N001_NCT06863532,I6,2,탈락,탈락,True,"HbA1c measured last week was 9.8%, above the 9.5% upper limit."
+control,detailed,N001_NCT06863532,I7,2,통과,통과,True,"Fasting blood glucose 11.2 mmol/L, which is <15 mmol/L (pre-randomization value to be reconfirmed at screening)."
+control,detailed,N001_NCT06863532,I8,2,통과,통과,True,"BMI 31.2 kg/m², ≤40."
+control,detailed,N001_NCT06863532,I9,2,모름,모름,True,No urine ketone result documented.
+control,detailed,N001_NCT06863532,I10,2,통과,통과,True,"eGFR 78 mL/min/1.73 m², ≥60."
+control,detailed,N001_NCT06863532,I11,2,등록 후 확인,등록 후 확인,True,Agreement to maintain diet/exercise and ability to use SMBG are assessed at consent/screening and during the trial; not documented.
+control,detailed,N001_NCT06863532,E1,2,통과,통과,True,"Documented type 2 diabetes for 9 years, managed with metformin; no indication of type 1."
+control,detailed,N001_NCT06863532,E2,2,통과,모름,False,"Diagnosis is T2DM, but secondary diabetes is not explicitly excluded in the record."
+control,detailed,N001_NCT06863532,E3,2,모름,모름,True,No transplant history mentioned.
+control,detailed,N001_NCT06863532,E4,2,모름,모름,True,No history of pancreatitis stated; pancreatic resection not mentioned.
+control,detailed,N001_NCT06863532,E5,2,모름,모름,True,No mention of DKA or hyperosmolar coma history.
+control,detailed,N001_NCT06863532,E6,2,등록 후 확인,모름,False,No liver enzyme results or liver disease information.
+control,detailed,N001_NCT06863532,E7,2,모름,통과,False,"'No history of pancreatitis, heart attack, or stroke' covers MI and stroke; no unstable angina or TIA mentioned."
+control,detailed,N001_NCT06863532,E8,2,통과,통과,True,BP 138/84 mmHg on lisinopril: SBP <160 and DBP <90.
+control,detailed,N001_NCT06863532,E9,2,모름,모름,True,No hemoglobin value documented.
+control,detailed,N001_NCT06863532,E10,2,모름,모름,True,No information on genitourinary infections.
+control,detailed,N001_NCT06863532,E11,2,모름,모름,True,No surgical history documented.
+control,detailed,N001_NCT06863532,E12,2,모름,모름,True,"No info on anti-obesity medication or weight-altering treatments; medication list does not include any, but history is incomplete."
+control,detailed,N001_NCT06863532,E13,2,모름,모름,True,No cancer history mentioned.
+control,detailed,N001_NCT06863532,E14,2,모름,모름,True,HIV status not documented.
+control,detailed,N001_NCT06863532,E15,2,모름,모름,True,No mention of peripheral vascular disease.
+control,detailed,N001_NCT06863532,E16,2,모름,모름,True,No hematologic history documented.
+control,detailed,N001_NCT06863532,E17,2,모름,모름,True,Hypothyroidism is documented (cause not stated); no mention of other immune diseases or systemic corticosteroids; medication list contains none.
+control,detailed,N001_NCT06863532,E18,2,모름,모름,True,Levothyroxine dose unchanged for the past two years (no change within 6 weeks). Control of hypothyroidism and other endocrine/metabolic disorders is not documented.
+control,detailed,N001_NCT06863532,E19,2,등록 후 확인,등록 후 확인,True,Depends on investigator judgment of compliance; substance use history not documented.
+control,detailed,N001_NCT06863532,E20,2,모름,모름,True,No allergy history documented.
+control,detailed,N001_NCT06863532,E21,2,통과,통과,True,"58-year-old postmenopausal woman, so not pregnant or planning pregnancy; lactation is not plausible."
+control,detailed,N001_NCT06863532,E22,2,통과,모름,False,Willingness to use contraception is not documented; postmenopausal status may make it moot but the study's requirement is not addressed.
+control,detailed,N001_NCT06863532,E23,2,통과,통과,True,"Patient is female, so the criterion for men does not apply."
+control,detailed,N001_NCT06863532,E24,2,모름,모름,True,No information on participation in other clinical studies.
+control,detailed,N001_NCT06863532,E25,2,등록 후 확인,등록 후 확인,True,Requires investigator judgment of suitability.
+control,detailed,N001_NCT06863532,I1,3,등록 후 확인,모름,False,No information on consent capacity or willingness to sign; could be asked.
+control,detailed,N001_NCT06863532,I2,3,통과,통과,True,58-year-old woman; within 18-74.
+control,detailed,N001_NCT06863532,I3,3,통과,통과,True,"9-year history of type 2 diabetes, HbA1c 9.8%, FBG 11.2 mmol/L."
+control,detailed,N001_NCT06863532,I4,3,탈락,탈락,True,Has never used any other glucose-lowering medication including SGLT2 inhibitors; not on SGLT2i monotherapy.
+control,detailed,N001_NCT06863532,I5,3,탈락,탈락,True,"Metformin 1000 mg twice daily = 2000 mg/day, outside 500-1000 mg/day range, though stable for two years."
+control,detailed,N001_NCT06863532,I6,3,탈락,탈락,True,"HbA1c 9.8% last week, above the 9.5% upper limit."
+control,detailed,N001_NCT06863532,I7,3,통과,통과,True,FBG 11.2 mmol/L is <15 (clinic measurement; pre-randomization value to be confirmed at screening).
+control,detailed,N001_NCT06863532,I8,3,통과,통과,True,BMI 31.2 kg/m² ≤ 40.
+control,detailed,N001_NCT06863532,I9,3,모름,모름,True,No urine ketone result documented.
+control,detailed,N001_NCT06863532,I10,3,통과,통과,True,eGFR 78 mL/min/1.73 m² ≥ 60.
+control,detailed,N001_NCT06863532,I11,3,등록 후 확인,모름,False,"No information on willingness to maintain diet/exercise, or ability to use a glucose meter and keep records; could be asked."
+control,detailed,N001_NCT06863532,E1,3,통과,통과,True,Diagnosed with type 2 diabetes with 9-year history; no indication of type 1.
+control,detailed,N001_NCT06863532,E2,3,통과,모름,False,"Diagnosed T2DM, but secondary diabetes not explicitly excluded."
+control,detailed,N001_NCT06863532,E3,3,모름,모름,True,No transplant history documented.
+control,detailed,N001_NCT06863532,E4,3,모름,모름,True,"No history of pancreatitis stated, but pancreatic resection not addressed."
+control,detailed,N001_NCT06863532,E5,3,모름,모름,True,No mention of DKA or hyperosmolar coma history.
+control,detailed,N001_NCT06863532,E6,3,등록 후 확인,모름,False,No liver enzyme results or liver disease history documented.
+control,detailed,N001_NCT06863532,E7,3,모름,통과,False,"No history of heart attack or stroke; eye exam only. Unstable angina and TIA not explicitly addressed, but no cardiovascular events reported."
+control,detailed,N001_NCT06863532,E8,3,통과,통과,True,BP 138/84 mmHg on lisinopril: SBP <160 and DBP <90.
+control,detailed,N001_NCT06863532,E9,3,모름,모름,True,No hemoglobin result documented.
+control,detailed,N001_NCT06863532,E10,3,모름,모름,True,No genitourinary infection history documented.
+control,detailed,N001_NCT06863532,E11,3,모름,모름,True,No surgical history documented.
+control,detailed,N001_NCT06863532,E12,3,모름,모름,True,"Medication list has no anti-obesity drugs, but weight stability and diet/surgery history not documented."
+control,detailed,N001_NCT06863532,E13,3,모름,모름,True,No cancer history documented.
+control,detailed,N001_NCT06863532,E14,3,모름,모름,True,HIV status not documented.
+control,detailed,N001_NCT06863532,E15,3,모름,모름,True,No peripheral vascular disease information.
+control,detailed,N001_NCT06863532,E16,3,모름,모름,True,No hematologic history documented.
+control,detailed,N001_NCT06863532,E17,3,모름,모름,True,Hypothyroidism on levothyroxine (cause not stated; could be autoimmune); no corticosteroid use listed but no explicit statement.
+control,detailed,N001_NCT06863532,E18,3,모름,모름,True,"Levothyroxine dose unchanged for two years (no change within 6 weeks), but control of hypothyroidism and other endocrine/metabolic disorders not documented."
+control,detailed,N001_NCT06863532,E19,3,등록 후 확인,등록 후 확인,True,Requires investigator judgment on compliance; no substance abuse documented.
+control,detailed,N001_NCT06863532,E20,3,모름,모름,True,No allergy history documented.
+control,detailed,N001_NCT06863532,E21,3,통과,통과,True,58-year-old postmenopausal woman; pregnancy and planning pregnancy are not plausible. Lactation not stated but implausible given postmenopausal status.
+control,detailed,N001_NCT06863532,E22,3,통과,모름,False,Willingness to use contraception not documented; postmenopausal status may make it moot but not confirmed by the record as to willingness/plans.
+control,detailed,N001_NCT06863532,E23,3,통과,통과,True,Patient is female.
+control,detailed,N001_NCT06863532,E24,3,모름,모름,True,No information on recent clinical trial participation.
+control,detailed,N001_NCT06863532,E25,3,등록 후 확인,등록 후 확인,True,Investigator judgment of suitability; determined by study team.
+control,detailed,N002_NCT07786870,I1,1,통과,통과,True,"The patient is 24 years old, which is over 18. There is no upper age limit."
+control,detailed,N002_NCT07786870,I2,1,모름,모름,True,"A pulmonologist diagnosed asthma at age 8, and the current ED visit and spirometry are consistent with it. The record does not say whether the diagnosis follows GINA 2023, for example through documented variable airflow limitation or reversibility testing."
+control,detailed,N002_NCT07786870,E1,1,통과,통과,True,The description states 'he has no other lung disease'. The chest X-ray was normal.
+control,detailed,N002_NCT07786870,E2,1,통과,통과,True,"'He has never smoked cigarettes, vaped, or used cigars or marijuana.'"
+control,detailed,N002_NCT07786870,E3,1,모름,모름,True,"The record does not mention malignancy, either present or absent."
+control,detailed,N002_NCT07786870,E4,1,통과,모름,False,"At the ED visit ten days ago he had no fever, a normal chest X-ray, and no antibiotics, which argues against infection then. The record does not state that there is currently no respiratory infection or tuberculosis. He now has worsening symptoms of wheezing, chest tightness and cough, so his curren"
+control,detailed,N002_NCT07786870,E5,1,통과,통과,True,"The ED treatment was 'a 5-day course of oral prednisone without antibiotics'. No other antibiotic use is mentioned, though the record does not cover the full 4 weeks."
+control,detailed,N002_NCT07786870,E6,1,모름,통과,False,"Resting oxygen saturation is 97% on room air. No home oxygen is mentioned among his treatments, which are budesonide-formoterol and prednisone."
+control,detailed,N002_NCT07786870,E7,1,탈락,통과,False,"The first dupilumab injection is only 'scheduled for next week', so he is not currently being treated. No other biologics are listed."
+control,detailed,N002_NCT07786870,E8,1,통과,통과,True,"The patient is a 24-year-old man, so pregnancy is not possible."
+control,detailed,N002_NCT07786870,I1,2,통과,통과,True,"Patient is 24 years old, which is >18 and the criterion has no upper age limit."
+control,detailed,N002_NCT07786870,I2,2,모름,모름,True,"Asthma was diagnosed by a pulmonologist at age 8 and is clearly present, but the record does not say whether the diagnosis follows GINA 2023 criteria (e.g., documented variable airflow limitation/reversibility). Spirometry shows FEV1 68% predicted, but no reversibility data are given."
+control,detailed,N002_NCT07786870,E1,2,통과,통과,True,"""he has no other lung disease""; chest X-ray normal."
+control,detailed,N002_NCT07786870,E2,2,통과,통과,True,"""He has never smoked cigarettes, vaped, or used cigars or marijuana."""
+control,detailed,N002_NCT07786870,E3,2,모름,모름,True,No mention of malignancy or oncology history in the record; absence is not confirmed.
+control,detailed,N002_NCT07786870,E4,2,통과,통과,True,"At the ED visit he had ""no fever,"" a normal chest X-ray, and was treated without antibiotics; the exacerbation was triggered by cat exposure. No TB or infection is documented. Resting SpO2 is 97%."
+control,detailed,N002_NCT07786870,E5,2,통과,통과,True,"Ten days ago he was treated with a 5-day oral prednisone course ""without antibiotics""; no other antibiotic use is documented."
+control,detailed,N002_NCT07786870,E6,2,모름,모름,True,"Resting SpO2 97% on room air, but home oxygen therapy is not explicitly addressed. The room-air saturation and medication list suggest no oxygen use, though this is not stated."
+control,detailed,N002_NCT07786870,E7,2,탈락,통과,False,The first dupilumab injection is only scheduled for next week; he is not currently receiving it. No other biologic is listed in his medications.
+control,detailed,N002_NCT07786870,E8,2,통과,통과,True,Patient is a 24-year-old man; pregnancy is not applicable.
+control,detailed,N002_NCT07786870,I1,3,통과,통과,True,"Patient is 24 years old, which is >18 and the criterion has no upper limit."
+control,detailed,N002_NCT07786870,I2,3,모름,모름,True,"Asthma was diagnosed by a pulmonologist at age 8, and the current presentation is consistent with asthma. The record does not say whether the diagnosis meets GINA 2023 criteria (e.g., documented variable expiratory airflow limitation or reversibility), so this cannot be confirmed."
+control,detailed,N002_NCT07786870,E1,3,통과,통과,True,Description states 'he has no other lung disease'. The chest X-ray was normal and he is a never-smoker.
+control,detailed,N002_NCT07786870,E2,3,통과,통과,True,"'He has never smoked cigarettes, vaped, or used cigars or marijuana.'"
+control,detailed,N002_NCT07786870,E3,3,모름,모름,True,"No malignancy is mentioned, but the record does not explicitly state its absence."
+control,detailed,N002_NCT07786870,E4,3,통과,통과,True,"At the ED visit he had no fever, a normal chest X-ray, and was treated without antibiotics. The exacerbation was triggered by cat exposure. No TB or respiratory infection is described, though the ED visit was ten days ago and current status is not explicitly stated."
+control,detailed,N002_NCT07786870,E5,3,통과,통과,True,The ED treatment was a 5-day oral prednisone course 'without antibiotics'. No other antibiotic use is documented.
+control,detailed,N002_NCT07786870,E6,3,모름,통과,False,"Resting oxygen saturation is 97% on room air, and no home oxygen therapy is listed among medications."
+control,detailed,N002_NCT07786870,E7,3,탈락,통과,False,"Dupilumab is only planned ('first dupilumab injection scheduled for next week'). He has not yet received it, and no other biologic is listed. Note that if the injection is given before enrollment, he would become excluded."
+control,detailed,N002_NCT07786870,E8,3,통과,통과,True,"Patient is male, so pregnancy is not possible."
+control,detailed,N002_NCT07139899,I1,1,등록 후 확인,등록 후 확인,True,Informed consent and written documentation are obtained formally at the consent/screening visit; nothing in the record yet.
+control,detailed,N002_NCT07139899,I2,1,통과,통과,True,"Age 24 years, within 18-65."
+control,detailed,N002_NCT07139899,I3,1,통과,통과,True,Asthma diagnosed by a pulmonologist at age 8 (about 16 years ago).
+control,detailed,N002_NCT07139899,I4,1,통과,통과,True,Spirometry two weeks ago met ATS quality criteria (FEV1 68% predicted); within 30 days of now.
+control,detailed,N002_NCT07139899,I5,1,통과,통과,True,Criterion places no restriction by race/ethnicity; the patient is not excluded.
+control,detailed,N002_NCT07139899,I6,1,통과,통과,True,"Blood eosinophil count 450 cells/μL, which is >300."
+control,detailed,N002_NCT07139899,I7,1,통과,통과,True,"Never smoked cigarettes, vaped, or used cigars or marijuana, so 0 pack-years."
+control,detailed,N002_NCT07139899,I8,1,통과,통과,True,"Never smoked cigarettes, vaped, or used cigars or marijuana."
+control,detailed,N002_NCT07139899,I9,1,통과,통과,True,Pulmonologist scheduled first dupilumab injection next week as part of standard care.
+control,detailed,N002_NCT07139899,E1,1,통과,통과,True,"ED visit 10 days ago was an asthma attack triggered by cat exposure; no fever, normal chest X-ray, treated without antibiotics, which indicates no respiratory infection."
+control,detailed,N002_NCT07139899,E2,1,통과,통과,True,"BMI is 24 kg/m², not >30."
+control,detailed,N002_NCT07139899,E3,1,모름,모름,True,Only a 5-day oral prednisone course is documented; no information on intra-articular or other one-time injections within 4 weeks. Oral prednisone is not a one-time dose.
+control,detailed,N002_NCT07139899,E4,1,탈락,탈락,True,"Visited the emergency department 10 days ago for an asthma attack, which is within 4 weeks before Visit 1."
+control,detailed,N002_NCT07139899,E5,1,등록 후 확인,등록 후 확인,True,"Determined by the Investigator. Record states 'no other lung disease' but does not address heart disease, cancer, or diabetes."
+control,detailed,N002_NCT07139899,E6,1,통과,통과,True,"Resting oxygen saturation 97% on room air, not <90%."
+control,detailed,N002_NCT07139899,E7,1,통과,통과,True,"Patient is male, so a positive pregnancy test is not possible."
+control,detailed,N002_NCT07139899,E8,1,모름,모름,True,"No information on participation in intervention studies, bronchoscopy, investigational drug use in past 30 days, or plans to enroll in other trials."
+control,detailed,N002_NCT07139899,E9,1,등록 후 확인,등록 후 확인,True,Requires Investigator opinion.
+control,detailed,N002_NCT07139899,E10,1,등록 후 확인,등록 후 확인,True,Requires Investigator opinion on undue risk.
+control,detailed,N002_NCT07139899,E11,1,등록 후 확인,등록 후 확인,True,"Determined by the study's MRI safety screening, not yet performed."
+control,detailed,N002_NCT07139899,I1,2,등록 후 확인,등록 후 확인,True,Informed consent and written documentation are obtained formally at the consent/screening visit; not yet available.
+control,detailed,N002_NCT07139899,I2,2,통과,통과,True,"Age 24 years, within 18–65."
+control,detailed,N002_NCT07139899,I3,2,통과,통과,True,"Asthma diagnosed by a pulmonologist at age 8; he is now 24, so well over 1 year."
+control,detailed,N002_NCT07139899,I4,2,통과,통과,True,Spirometry two weeks ago met ATS quality criteria (FEV1 68% predicted); within 30 days of now.
+control,detailed,N002_NCT07139899,I5,2,통과,통과,True,No restriction by race/ethnicity; all backgrounds may participate.
+control,detailed,N002_NCT07139899,I6,2,통과,통과,True,"Blood eosinophil count 450 cells/μL, which is > 300."
+control,detailed,N002_NCT07139899,I7,2,통과,통과,True,"Has never smoked cigarettes, vaped, or used cigars or marijuana, so 0 pack-years."
+control,detailed,N002_NCT07139899,I8,2,통과,통과,True,"Never smoked cigarettes, vaped, or used cigars or marijuana."
+control,detailed,N002_NCT07139899,I9,2,통과,통과,True,Pulmonologist has scheduled first dupilumab injection next week as part of standard care.
+control,detailed,N002_NCT07139899,E1,2,통과,통과,True,"At the ED visit 10 days ago he had no fever, a normal chest X-ray, and was treated without antibiotics; the episode was an allergen-triggered asthma attack, not an infection. No respiratory infection is documented."
+control,detailed,N002_NCT07139899,E2,2,통과,통과,True,"BMI is 24 kg/m², not > 30."
+control,detailed,N002_NCT07139899,E3,2,모름,모름,True,No information on intra-articular injections or other one-time doses in the past 4 weeks; only a 5-day oral prednisone course (not a one-time injection) is documented.
+control,detailed,N002_NCT07139899,E4,2,탈락,탈락,True,"Visited the ED for an asthma attack ten days ago, within the previous 4 weeks."
+control,detailed,N002_NCT07139899,E5,2,등록 후 확인,등록 후 확인,True,"Criterion is determined by the Investigator. Record states 'no other lung disease' but nothing on heart disease, cancer or diabetes."
+control,detailed,N002_NCT07139899,E6,2,통과,통과,True,"Resting oxygen saturation is 97% on room air, not < 90%."
+control,detailed,N002_NCT07139899,E7,2,통과,통과,True,"Patient is male, so a positive pregnancy test is not possible."
+control,detailed,N002_NCT07139899,E8,2,모름,모름,True,"No information on participation in intervention studies, investigational drug use in the past 30 days, or plans to enroll in other trials."
+control,detailed,N002_NCT07139899,E9,2,등록 후 확인,등록 후 확인,True,Requires Investigator opinion.
+control,detailed,N002_NCT07139899,E10,2,등록 후 확인,등록 후 확인,True,Requires Investigator opinion on undue risk.
+control,detailed,N002_NCT07139899,E11,2,등록 후 확인,등록 후 확인,True,Determined by study MRI safety screening; no implant/device history documented.
+control,detailed,N002_NCT07139899,I1,3,등록 후 확인,등록 후 확인,True,Informed consent is obtained formally at the study's consent/screening visit; no consent information in the record.
+control,detailed,N002_NCT07139899,I2,3,통과,통과,True,"Patient is 24 years old, within 18-65."
+control,detailed,N002_NCT07139899,I3,3,통과,통과,True,"A pulmonologist diagnosed asthma at age 8; he is now 24, so about 16 years."
+control,detailed,N002_NCT07139899,I4,3,통과,통과,True,Spirometry two weeks ago met ATS quality criteria (FEV1 68% predicted); two weeks is within 30 days.
+control,detailed,N002_NCT07139899,I5,3,통과,통과,True,No restriction by race/ethnicity; all may participate.
+control,detailed,N002_NCT07139899,I6,3,통과,통과,True,"Blood eosinophil count is 450 cells/μL, which is > 300."
+control,detailed,N002_NCT07139899,I7,3,통과,통과,True,"Has never smoked cigarettes, vaped, or used cigars or marijuana, so 0 pack-years."
+control,detailed,N002_NCT07139899,I8,3,통과,통과,True,"Never smoked cigarettes, vaped, or used cigars or marijuana."
+control,detailed,N002_NCT07139899,I9,3,통과,통과,True,Pulmonologist scheduled first dupilumab injection for next week as part of standard care.
+control,detailed,N002_NCT07139899,E1,3,통과,통과,True,"ED visit ten days ago was for an asthma attack after cat exposure; no fever, normal chest X-ray, treated without antibiotics, indicating no respiratory infection. No other infection is mentioned."
+control,detailed,N002_NCT07139899,E2,3,통과,통과,True,"BMI is 24 kg/m², not > 30."
+control,detailed,N002_NCT07139899,E3,3,모름,모름,True,Only a 5-day oral prednisone course is documented; no information about one-time doses such as intra-articular or depot injections within 4 weeks.
+control,detailed,N002_NCT07139899,E4,3,탈락,탈락,True,"Ten days ago he visited the emergency department for an asthma attack, within 4 weeks of any Visit 1 occurring soon."
+control,detailed,N002_NCT07139899,E5,3,등록 후 확인,등록 후 확인,True,"Determined by the Investigator. Record says 'no other lung disease' but does not address heart disease, cancer or diabetes."
+control,detailed,N002_NCT07139899,E6,3,통과,통과,True,"Resting oxygen saturation is 97% on room air, not < 90%."
+control,detailed,N002_NCT07139899,E7,3,통과,통과,True,"Patient is male, so a positive pregnancy test is not possible."
+control,detailed,N002_NCT07139899,E8,3,모름,모름,True,"No information on participation in intervention studies, investigational drug use, or plans to enroll in other trials."
+control,detailed,N002_NCT07139899,E9,3,등록 후 확인,등록 후 확인,True,Requires investigator opinion.
+control,detailed,N002_NCT07139899,E10,3,등록 후 확인,등록 후 확인,True,Requires investigator opinion on risk.
+control,detailed,N002_NCT07139899,E11,3,등록 후 확인,등록 후 확인,True,"Determined by the study's MRI safety screening, which has not been done."
+control,detailed,S002_NCT06068179,I1,1,통과,통과,True,"Patient is 29 years old, within the 18 to 60 range."
+control,detailed,S002_NCT06068179,I2,1,통과,통과,True,"Endocrinologist diagnosed Graves' disease last week, supported by suppressed TSH, elevated free T4, positive TRAb, and ultrasound findings."
+control,detailed,S002_NCT06068179,E1,1,통과,통과,True,"Diagnosed last week, has not yet started antithyroid medication, never had radioactive iodine or thyroid surgery. This is a new diagnosis, so no relapse."
+control,detailed,S002_NCT06068179,E2,1,통과,통과,True,"Positive TSH receptor antibodies and diffuse enlargement with increased blood flow and no nodules on ultrasound support Graves' disease, and no nodules argues against toxic nodular disease. The non-tender gland argues against subacute thyroiditis. No iodine exposure is mentioned, and Hashimoto's thy"
+control,detailed,S002_NCT06068179,E3,1,통과,통과,True,"Only mild upper eyelid retraction; no eye pain, double vision, or bulging of the eyes, so no moderate to severe thyroid eye disease requiring intervention."
+control,detailed,S002_NCT06068179,E4,1,모름,통과,False,"Ultrasound shows diffuse enlargement with no nodules, and no thyroid cancer is documented or suspected."
+control,detailed,S002_NCT06068179,E5,1,통과,통과,True,"ALT 28 U/L and AST 25 U/L are normal-range values, and creatinine 62 µmol/L is below the 110 µmol/L female threshold."
+control,detailed,S002_NCT06068179,E6,1,통과,통과,True,"WBC 6.1 × 10⁹/L, which is above 3.0 × 10⁹/L."
+control,detailed,S002_NCT06068179,E7,1,모름,모름,True,"Palpitations and tachycardia are documented, but heart failure status or NYHA class is not stated."
+control,detailed,S002_NCT06068179,E8,1,모름,모름,True,"Hepatitis B surface antigen is negative, but tuberculosis and other chronic or severe infections are not addressed."
+control,detailed,S002_NCT06068179,E9,1,모름,모름,True,"Negative urine pregnancy test, copper IUD, and no plans to become pregnant. Breastfeeding status is not stated, and willingness or ability to comply with contraception during the trial is not documented."
+control,detailed,S002_NCT06068179,E10,1,모름,모름,True,Participation in current or prior clinical studies is not mentioned.
+control,detailed,S002_NCT06068179,E11,1,등록 후 확인,모름,False,Willingness to participate and comply with follow-up is not documented. The patient could be asked.
+control,detailed,S002_NCT06068179,I1,2,통과,통과,True,"Patient is 29 years old, within 18-60."
+control,detailed,S002_NCT06068179,I2,2,통과,통과,True,"Graves' disease diagnosed by an endocrinologist last week, with suppressed TSH, elevated FT4, positive TRAb."
+control,detailed,S002_NCT06068179,E1,2,통과,통과,True,Newly diagnosed last week; has not started antithyroid medication and never had radioactive iodine or thyroid surgery; no relapse (first diagnosis).
+control,detailed,S002_NCT06068179,E2,2,통과,통과,True,"Positive TSH receptor antibodies, diffuse enlargement with increased blood flow and no nodules on ultrasound, diagnosed as Graves' disease, which argues against toxic nodular disease or adenoma. Non-tender gland argues against subacute thyroiditis. No iodine exposure is documented, and Hashimoto's i"
+control,detailed,S002_NCT06068179,E3,2,통과,통과,True,"Only mild upper eyelid retraction; no eye pain, double vision, or bulging of the eyes, so no moderate-to-severe TED requiring intervention."
+control,detailed,S002_NCT06068179,E4,2,모름,통과,False,Ultrasound shows diffuse enlargement with no nodules; no thyroid cancer documented and no surgery needed.
+control,detailed,S002_NCT06068179,E5,2,통과,통과,True,"ALT 28 U/L, AST 25 U/L (normal range not stated, but values are not near a 3x elevation). Creatinine 62 µmol/L, below the 110 µmol/L female threshold."
+control,detailed,S002_NCT06068179,E6,2,통과,통과,True,"WBC 6.1 × 10⁹/L, which is ≥ 3.0."
+control,detailed,S002_NCT06068179,E7,2,모름,모름,True,"Palpitations and tachycardia are noted, but heart failure status or NYHA class is not documented."
+control,detailed,S002_NCT06068179,E8,2,모름,모름,True,"Hepatitis B surface antigen is negative, but tuberculosis and other chronic or severe infections are not documented as absent."
+control,detailed,S002_NCT06068179,E9,2,모름,모름,True,"Urine pregnancy test negative, copper IUD in use, and no plans to become pregnant. Breastfeeding status is not stated."
+control,detailed,S002_NCT06068179,E10,2,모름,모름,True,No information on current or prior participation in other clinical studies.
+control,detailed,S002_NCT06068179,E11,2,등록 후 확인,모름,False,Willingness and ability to follow up and participate are not documented; the patient could be asked.
+control,detailed,S002_NCT06068179,I1,3,통과,통과,True,"Patient is 29 years old, within 18–60."
+control,detailed,S002_NCT06068179,I2,3,통과,통과,True,Graves' disease diagnosed by an endocrinologist last week; not yet on antithyroid medication.
+control,detailed,S002_NCT06068179,E1,3,통과,통과,True,"Newly diagnosed last week, has not started antithyroid medication, and never had radioactive iodine or surgery; no relapse (first diagnosis)."
+control,detailed,S002_NCT06068179,E2,3,통과,통과,True,"Positive TSH receptor antibodies, diffuse enlargement with increased blood flow and no nodules on ultrasound, diagnosed as Graves' disease; this argues against toxic nodular disease or thyroiditis. No iodine exposure is mentioned, though."
+control,detailed,S002_NCT06068179,E3,3,통과,통과,True,"Only mild upper eyelid retraction; no eye pain, double vision, or bulging of the eyes, so there is no moderate-to-severe thyroid eye disease requiring intervention."
+control,detailed,S002_NCT06068179,E4,3,모름,통과,False,Ultrasound shows diffuse enlargement with no nodules; no thyroid cancer mentioned and no surgery needed.
+control,detailed,S002_NCT06068179,E5,3,통과,통과,True,"ALT 28 and AST 25 U/L (normal, not >3x ULN); creatinine 62 µmol/L, below 110 µmol/L for females."
+control,detailed,S002_NCT06068179,E6,3,통과,통과,True,"WBC 6.1 × 10⁹/L, above 3.0."
+control,detailed,S002_NCT06068179,E7,3,모름,모름,True,"Palpitations and tachycardia are noted, but heart failure status/NYHA class is not documented."
+control,detailed,S002_NCT06068179,E8,3,모름,모름,True,"Hepatitis B surface antigen is negative, but tuberculosis and other chronic or severe infections are not addressed."
+control,detailed,S002_NCT06068179,E9,3,모름,모름,True,"Urine pregnancy test negative, copper IUD, and no plans for pregnancy. Breastfeeding status is not stated, and willingness to comply with contraception during the trial is not documented."
+control,detailed,S002_NCT06068179,E10,3,모름,모름,True,No information on current or previous participation in other clinical studies.
+control,detailed,S002_NCT06068179,E11,3,등록 후 확인,모름,False,Willingness and ability to follow up and participate are not documented; this can be confirmed with the patient at consent.
+control,detailed,S002_NCT07018323,I1,1,등록 후 확인,모름,False,"No information on her ability to understand the trial, consent, or comply. Nothing contradicts it, but consent is not confirmed by silence."
+control,detailed,S002_NCT07018323,I2,1,통과,통과,True,"29-year-old woman, so aged ≥ 18 years."
+control,detailed,S002_NCT07018323,I3,1,탈락,탈락,True,She has Graves' disease but 'has not yet started antithyroid medication'. She therefore cannot be hyperthyroid despite ATD treatment.
+control,detailed,S002_NCT07018323,I4,1,등록 후 확인,등록 후 확인,True,The specific protocol inclusion criteria are not listed. The study team assesses them at screening.
+control,detailed,S002_NCT07018323,E1,1,통과,통과,True,"She has 'never received radioactive iodine or thyroid surgery', so she has no prior successful RAI or total thyroidectomy."
+control,detailed,S002_NCT07018323,E2,1,등록 후 확인,모름,False,"No other autoimmune disease is documented, and she takes no regular medications. The record does not explicitly state that none exists, and the criterion needs investigator judgment about undue risk."
+control,detailed,S002_NCT07018323,E3,1,통과,통과,True,"She has only mild upper eyelid retraction, with no eye pain, double vision, or proptosis. She has no moderate-to-severe active TED, and no TED surgery or therapy is documented as planned."
+control,detailed,S002_NCT07018323,E4,1,등록 후 확인,등록 후 확인,True,The additional protocol exclusion criteria are not specified. The study team determines them at screening.
+control,detailed,S002_NCT07018323,I1,2,등록 후 확인,모름,False,"No information on her ability to understand the trial, give written consent, or comply with the protocol. Nothing contradicts it, but it is not documented."
+control,detailed,S002_NCT07018323,I2,2,통과,통과,True,"29-year-old woman, so aged ≥ 18 years."
+control,detailed,S002_NCT07018323,I3,2,탈락,탈락,True,Graves' disease was diagnosed last week and she 'has not yet started antithyroid medication'. She therefore cannot be hyperthyroid despite ATD treatment.
+control,detailed,S002_NCT07018323,I4,2,등록 후 확인,등록 후 확인,True,The protocol-specific inclusion criteria are not listed. The study team would assess them at screening.
+control,detailed,S002_NCT07018323,E1,2,통과,통과,True,"She 'has never received radioactive iodine or thyroid surgery', so she has no prior RAI treatment or total thyroidectomy."
+control,detailed,S002_NCT07018323,E2,2,등록 후 확인,모름,False,"No other autoimmune disease is documented, but the record does not explicitly say none is present. She takes no other regular medications. Whether a condition poses undue risk is an investigator judgment."
+control,detailed,S002_NCT07018323,E3,2,통과,통과,True,"She has only mild upper eyelid retraction, with 'no eye pain, double vision, or bulging of the eyes'. This does not amount to moderate-to-severe active TED, and no surgery or TED therapy is documented as planned."
+control,detailed,S002_NCT07018323,E4,2,등록 후 확인,등록 후 확인,True,The protocol-specific exclusion criteria are not listed. The study team would assess them at screening.
+control,detailed,S002_NCT07018323,I1,3,등록 후 확인,모름,False,"The record does not say whether she can understand the trial, give written consent, or comply with the protocol. Consent is not confirmed by the absence of contrary evidence. She could be asked, and formal consent happens at screening."
+control,detailed,S002_NCT07018323,I2,3,통과,통과,True,"She is a 29-year-old woman, so she meets the age ≥ 18 years requirement."
+control,detailed,S002_NCT07018323,I3,3,탈락,탈락,True,"She has Graves' disease, but she is newly diagnosed and ""has not yet started antithyroid medication"". She is therefore not hyperthyroid despite ATD treatment, which is the requirement."
+control,detailed,S002_NCT07018323,I4,3,등록 후 확인,등록 후 확인,True,The protocol-specific inclusion criteria are not listed. The study team determines them at screening.
+control,detailed,S002_NCT07018323,E1,3,통과,통과,True,"She has ""never received radioactive iodine or thyroid surgery"", so she has no prior successful RAI or total thyroidectomy."
+control,detailed,S002_NCT07018323,E2,3,등록 후 확인,모름,False,"No other autoimmune disease is mentioned, and she takes no regular medications. The record does not explicitly state that none is present, and the criterion requires investigator judgment of undue risk."
+control,detailed,S002_NCT07018323,E3,3,통과,통과,True,"She has only mild upper eyelid retraction, with ""no eye pain, double vision, or bulging of the eyes"". This is not moderate-to-severe active TED, and no surgery or TED therapy is described."
+control,detailed,S002_NCT07018323,E4,3,등록 후 확인,등록 후 확인,True,The additional protocol exclusion criteria are not specified. The study team assesses them at screening.
+control,detailed,S010_NCT03714503,I1,1,등록 후 확인,모름,False,No information on the patient's capacity to understand or willingness to sign consent; the patient could be asked.
+control,detailed,S010_NCT03714503,I2,1,통과,통과,True,"Macula-off rhegmatogenous retinal detachment extending inferiorly 3 to 9 o'clock, with a single horseshoe tear at 5 o'clock (inferior break). No prior retinal surgery, so it is primary."
+control,detailed,S010_NCT03714503,I3,1,통과,통과,True,Age 73 years.
+control,detailed,S010_NCT03714503,I4,1,통과,통과,True,"Patient is a 73-year-old man, so not a woman of child-bearing potential; the requirement does not apply."
+control,detailed,S010_NCT03714503,E1,1,통과,통과,True,"Age 73 years, not pediatric."
+control,detailed,S010_NCT03714503,E2,1,통과,통과,True,"Male patient, so not pregnant."
+control,detailed,S010_NCT03714503,E3,1,통과,통과,True,"""has never had retinal surgery or scleral buckling in either eye""."
+control,detailed,S010_NCT03714503,E4,1,통과,통과,True,Never had scleral buckling in either eye.
+control,detailed,S010_NCT03714503,E5,1,통과,통과,True,"""no injury to the eye or head""; RD is rhegmatogenous with a horseshoe tear."
+control,detailed,S010_NCT03714503,E6,1,통과,통과,True,"Symptomatic with acute onset two days ago (curtain-like vision loss, flashes, floaters); not asymptomatic or longstanding."
+control,detailed,S010_NCT03714503,E7,1,등록 후 확인,모름,False,No information on the patient's compliance with post-operative treatment; it cannot be confirmed from the record.
+control,detailed,S010_NCT03714503,E8,1,통과,통과,True,"Right eye is pseudophakic: cataract surgery with intraocular lens implant two years ago, so not phakic."
+control,detailed,S010_NCT03714503,E9,1,통과,통과,True,"""no sign of an exudative detachment""."
+control,detailed,S010_NCT03714503,E10,1,통과,통과,True,"""There is no retinoschisis""."
+control,detailed,S010_NCT03714503,I1,3,등록 후 확인,모름,False,No information on the patient's ability to understand or willingness to sign consent; consent is formally obtained at enrollment.
+control,detailed,S010_NCT03714503,I2,3,통과,탈락,False,"Patient has a primary rhegmatogenous RD, but the only break is a horseshoe tear at 5 o'clock, which is an inferior break (RD extends inferiorly from 3 to 9). On reflection this meets the criterion."
+control,detailed,S010_NCT03714503,I3,3,통과,통과,True,"Age 73 years, which is at least 18."
+control,detailed,S010_NCT03714503,I4,3,통과,통과,True,"Patient is male, so not a woman of child-bearing potential; criterion does not apply."
+control,detailed,S010_NCT03714503,E1,3,통과,통과,True,"Age 73, not pediatric."
+control,detailed,S010_NCT03714503,E2,3,통과,통과,True,"Male patient, so not pregnant."
+control,detailed,S010_NCT03714503,E3,3,통과,통과,True,"""has never had retinal surgery or scleral buckling in either eye""; no previous RD repair."
+control,detailed,S010_NCT03714503,E4,3,통과,통과,True,"""never had ... scleral buckling in either eye""."
+control,detailed,S010_NCT03714503,E5,3,통과,통과,True,"""no injury to the eye or head""; detachment is rhegmatogenous with a degenerative-type horseshoe tear."
+control,detailed,S010_NCT03714503,E6,3,통과,통과,True,"Symptomatic with sudden vision loss, flashes and floaters, onset two days ago; not asymptomatic or longstanding."
+control,detailed,S010_NCT03714503,E7,3,등록 후 확인,모름,False,"Future compliance with post-operative treatment (e.g., positioning, follow-up) is not documented and cannot be established now."
+control,detailed,S010_NCT03714503,E8,3,통과,통과,True,"Pseudophakic: cataract surgery with IOL implant in the right eye two years ago, so not phakic."
+control,detailed,S010_NCT03714503,E9,3,통과,통과,True,"""no sign of an exudative detachment""."
+control,detailed,S010_NCT03714503,E10,3,통과,통과,True,"""There is no retinoschisis""."
+control,detailed,S010_NCT07081945,I1,1,등록 후 확인,등록 후 확인,True,No information on consent. Informed consent is formally obtained at the consent/screening visit.
+control,detailed,S010_NCT07081945,I2,1,탈락,탈락,True,"Patient is 73 years old, outside the required 18-70 range."
+control,detailed,S010_NCT07081945,I3,1,통과,통과,True,Macula-off rhegmatogenous retinal detachment with a single horseshoe tear at 5 o'clock inside the detached area (between 4 and 8 o'clock); this is a primary RRD (no prior retinal surgery).
+control,detailed,S010_NCT07081945,E1,1,통과,통과,True,"The tear is a horseshoe tear at 5 o'clock, which is not described as only anterior breaks or dialysis. No scleral buckling indication is documented."
+control,detailed,S010_NCT07081945,E2,1,통과,통과,True,"The 5 o'clock break is explicitly 'inside the detached area', so it is involved in the detachment."
+control,detailed,S010_NCT07081945,E3,1,탈락,탈락,True,"Patient has 'primary open-angle glaucoma in both eyes, controlled with latanoprost'. Glaucoma is explicitly listed as a pre-existing serious eye disease in the exclusion criterion."
+control,detailed,S010_NCT07081945,E4,1,모름,모름,True,No mention of epilepsy or psychiatric disease in the record; absence is not confirmed.
+control,detailed,S010_NCT07081945,E5,1,등록 후 확인,등록 후 확인,True,"Depends on researcher/investigator judgment of suitability, which is determined by the study team."
+control,detailed,S010_NCT07081945,I1,2,등록 후 확인,등록 후 확인,True,Informed consent is formally obtained at the consent/screening visit; the record has no information on consent.
+control,detailed,S010_NCT07081945,I2,2,탈락,탈락,True,"Patient is 73 years old, outside the required 18–70 range."
+control,detailed,S010_NCT07081945,I3,2,통과,통과,True,"Primary macula-off RRD with a single horseshoe tear at the 5 o'clock position inside the detached area, which is an inferior break between 4 and 8 o'clock within the detached area."
+control,detailed,S010_NCT07081945,E1,2,통과,통과,True,"The break is a horseshoe tear at 5 o'clock, inferior and not an anterior-only break or dialysis. The exclusion for only anterior breaks or dialysis does not apply."
+control,detailed,S010_NCT07081945,E2,2,통과,통과,True,"The 5 o'clock tear is inside the detached area, so it is not a break between 4 and 8 o'clock outside the detachment."
+control,detailed,S010_NCT07081945,E3,2,탈락,탈락,True,"Patient has primary open-angle glaucoma in both eyes (controlled with latanoprost). Glaucoma is explicitly listed as a pre-existing serious eye disease. Whether controlled glaucoma counts as serious is the investigator's call, but the criterion names glaucoma directly."
+control,detailed,S010_NCT07081945,E4,2,모름,모름,True,No mention of epilepsy or serious psychiatric disease in the record; absence is not explicitly stated.
+control,detailed,S010_NCT07081945,E5,2,등록 후 확인,등록 후 확인,True,"Depends on the researcher's judgment of suitability, which only the study team can determine."
+control,detailed,S010_NCT07081945,I1,3,등록 후 확인,등록 후 확인,True,No consent information is recorded. Informed consent is formally obtained at the consent/screening visit.
+control,detailed,S010_NCT07081945,I2,3,탈락,탈락,True,"The patient is 73 years old, which is outside the required 18-70 range."
+control,detailed,S010_NCT07081945,I3,3,통과,통과,True,Macula-off rhegmatogenous retinal detachment (primary; no prior retinal surgery) with a single horseshoe tear at 5 o'clock inside the detached area. This is an inferior break between 4 and 8 o'clock within the detached area.
+control,detailed,S010_NCT07081945,E1,3,통과,통과,True,"The only break is a horseshoe tear at 5 o'clock, which is inferior, not anterior-only, and no dialysis is described. Because the break is not anterior-only, the exclusion does not apply."
+control,detailed,S010_NCT07081945,E2,3,통과,통과,True,"The 5 o'clock tear lies inside the detached area (3 to 9 o'clock inferior detachment), so it is involved in the detachment."
+control,detailed,S010_NCT07081945,E3,3,탈락,탈락,True,"The patient has primary open-angle glaucoma in both eyes, controlled with latanoprost. Glaucoma is explicitly listed as a pre-existing serious eye disease."
+control,detailed,S010_NCT07081945,E4,3,모름,모름,True,No mention of epilepsy or psychiatric disease in the record. Absence of information does not confirm absence of the condition.
+control,detailed,S010_NCT07081945,E5,3,등록 후 확인,등록 후 확인,True,"This depends on the investigator's judgment of suitability, which only the study team can determine."

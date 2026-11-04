@@ -1,0 +1,93 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "Patient is 24 years old, which is >18 and the criterion has no upper limit.",
+    "sub_condition_notes": [
+      "age > 18: 24 years, met",
+      "no upper age limit: no limit applies, so not a barrier"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Asthma was diagnosed by a pulmonologist at age 8, and the current presentation is consistent with asthma. The record does not say whether the diagnosis meets GINA 2023 criteria (e.g., documented variable expiratory airflow limitation or reversibility), so this cannot be confirmed.",
+    "sub_condition_notes": [
+      "diagnosis of asthma: confirmed by pulmonologist, met",
+      "in accordance with GINA 2023: not documented, unknown"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "Description states 'he has no other lung disease'. The chest X-ray was normal and he is a never-smoker.",
+    "sub_condition_notes": [
+      "other respiratory diseases besides asthma: explicitly none",
+      "COPD: no other lung disease, so not present"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "'He has never smoked cigarettes, vaped, or used cigars or marijuana.'",
+    "sub_condition_notes": [
+      "active cigarette smoking: never smoked, absent",
+      ">10 pack-years: never smoked, so 0 pack-years"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No malignancy is mentioned, but the record does not explicitly state its absence.",
+    "sub_condition_notes": [
+      "active malignancy: not documented either way"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "pass",
+    "evidence": "At the ED visit he had no fever, a normal chest X-ray, and was treated without antibiotics. The exacerbation was triggered by cat exposure. No TB or respiratory infection is described, though the ED visit was ten days ago and current status is not explicitly stated.",
+    "sub_condition_notes": [
+      "active pulmonary tuberculosis: no evidence, normal chest X-ray, not described",
+      "active respiratory tract infection: no fever, normal CXR, no antibiotics, allergen-triggered attack"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "The ED treatment was a 5-day oral prednisone course 'without antibiotics'. No other antibiotic use is documented.",
+    "sub_condition_notes": [
+      "antibiotic use within 4 weeks: ED treatment explicitly without antibiotics, no other antibiotic use reported"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "Resting oxygen saturation is 97% on room air, and no home oxygen therapy is listed among medications.",
+    "sub_condition_notes": [
+      "current long-term home oxygen therapy: not on oxygen, room air saturation 97%",
+      "oxygen use >15 h/day: not applicable"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "pass",
+    "evidence": "Dupilumab is only planned ('first dupilumab injection scheduled for next week'). He has not yet received it, and no other biologic is listed. Note that if the injection is given before enrollment, he would become excluded.",
+    "sub_condition_notes": [
+      "omalizumab: not used",
+      "mepolizumab: not used",
+      "reslizumab: not used",
+      "dupilumab: planned, not yet started, so not current",
+      "tezepelumab: not used",
+      "other biologics: none listed"
+    ]
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "pass",
+    "evidence": "Patient is male, so pregnancy is not possible.",
+    "sub_condition_notes": [
+      "pregnancy: male sex, not applicable"
+    ]
+  }
+]

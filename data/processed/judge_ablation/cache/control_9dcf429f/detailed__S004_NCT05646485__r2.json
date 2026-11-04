@@ -1,0 +1,38 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "The patient is 68 years old, which meets the age ≥ 50 requirement.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "He has smoked about one pack a day for 45 years, which is about 45 pack-years and meets the ≥15 pack-year requirement.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No occupation or occupational exposure history is documented. It is not known whether he worked as a textile worker, painter, or dry cleaner for 15 or more years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "The current bladder tumor is suspected but has no histopathological diagnosis. No prior bladder, kidney, or prostate cancer is mentioned, but the record does not explicitly say there is none.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "The current hematuria began three weeks ago and is being worked up now (CT urography, cystoscopy). The record does not say whether he had a hematuria evaluation in the past 2 years. Whether the current workup counts as the excluded 'prior evaluation' is also unclear.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "post_enrollment",
+    "evidence": "No information on consent is given. Informed consent is obtained formally at the consent or screening visit.",
+    "sub_condition_notes": []
+  }
+]

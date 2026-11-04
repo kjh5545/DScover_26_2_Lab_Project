@@ -1,0 +1,80 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "Patient is 60 years old, which meets age ≥ 40.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "Diagnosed with idiopathic pulmonary fibrosis by her pulmonologist 14 months ago; HRCT shows a UIP pattern.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "Taking nintedanib 150 mg twice daily at the same dose for the past eight months, i.e. an antifibrotic at a stable dose. Whether nintedanib is locally approved is not stated, but it is a standard approved IPF antifibrotic.",
+    "sub_condition_notes": [
+      "Antifibrotic at stable dose: nintedanib, same dose for 8 months",
+      "Alternative (not on standard of care): not applicable"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "pass",
+    "evidence": "FVC 68% of predicted, which is ≥ 45%.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "pass",
+    "evidence": "Hemoglobin-corrected DLCO 42% of predicted, which is ≥ 25%.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "Diagnosis is IPF with a UIP pattern and negative ANA. No other ILD is documented, and the record gives no sign of an alternative ILD.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "HRCT shows fibrosis predominating with only minimal emphysema, so emphysema is not greater than fibrosis.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "pass",
+    "evidence": "Stable chronic progression: breathlessness worsened gradually over 18 months without any sudden change, and she has not been hospitalized for her lung disease.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No information about a current lower respiratory tract infection or recent treatment for one. Her presentation is of chronic gradual progression only.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No cardiac history of ACS, MI, unstable angina, PCI or CABG is documented, but absence is not explicitly stated. Only a normal echocardiogram is mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "Echocardiogram last month showed normal left ventricular function, and no heart failure is documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No history of organ transplantation is documented, and no information is given on whether lung transplantation is planned or likely.",
+    "sub_condition_notes": [
+      "Prior organ transplantation: not documented",
+      "Likely to receive lung transplant: not stated"
+    ]
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "No consent information is recorded. Informed consent is formally obtained at the consent/screening visit.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "The patient is 73 years old, which is outside the required 18-70 range.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "Macula-off rhegmatogenous retinal detachment (primary; no prior retinal surgery) with a single horseshoe tear at 5 o'clock inside the detached area. This is an inferior break between 4 and 8 o'clock within the detached area.",
+    "sub_condition_notes": [
+      "Inferior retinal break between 4 and 8 o'clock within the detached area: met (horseshoe tear at 5 o'clock inside the detachment).",
+      "Requiring inferior retinotomy: not documented, but not needed because the first condition is met (OR logic)."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "The only break is a horseshoe tear at 5 o'clock, which is inferior, not anterior-only, and no dialysis is described. Because the break is not anterior-only, the exclusion does not apply.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "The 5 o'clock tear lies inside the detached area (3 to 9 o'clock inferior detachment), so it is involved in the detachment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "fail",
+    "evidence": "The patient has primary open-angle glaucoma in both eyes, controlled with latanoprost. Glaucoma is explicitly listed as a pre-existing serious eye disease.",
+    "sub_condition_notes": [
+      "Glaucoma: present (bilateral POAG).",
+      "Corneal ulcer, uveitis: not documented."
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No mention of epilepsy or psychiatric disease in the record. Absence of information does not confirm absence of the condition.",
+    "sub_condition_notes": [
+      "Epilepsy: not documented.",
+      "Serious psychiatric disease: not documented."
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "post_enrollment",
+    "evidence": "This depends on the investigator's judgment of suitability, which only the study team can determine.",
+    "sub_condition_notes": []
+  }
+]

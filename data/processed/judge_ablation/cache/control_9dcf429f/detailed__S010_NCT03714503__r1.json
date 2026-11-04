@@ -1,0 +1,90 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "No information on the patient's capacity to understand or willingness to sign consent; the patient could be asked.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "Macula-off rhegmatogenous retinal detachment extending inferiorly 3 to 9 o'clock, with a single horseshoe tear at 5 o'clock (inferior break). No prior retinal surgery, so it is primary.",
+    "sub_condition_notes": [
+      "Rhegmatogenous RD: confirmed",
+      "Primary (no previous retinal surgery): confirmed",
+      "Inferior break: 5 o'clock horseshoe tear"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "Age 73 years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "pass",
+    "evidence": "Patient is a 73-year-old man, so not a woman of child-bearing potential; the requirement does not apply.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "Age 73 years, not pediatric.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "Male patient, so not pregnant.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "pass",
+    "evidence": "\"has never had retinal surgery or scleral buckling in either eye\".",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "pass",
+    "evidence": "Never had scleral buckling in either eye.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "\"no injury to the eye or head\"; RD is rhegmatogenous with a horseshoe tear.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "Symptomatic with acute onset two days ago (curtain-like vision loss, flashes, floaters); not asymptomatic or longstanding.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No information on the patient's compliance with post-operative treatment; it cannot be confirmed from the record.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "pass",
+    "evidence": "Right eye is pseudophakic: cataract surgery with intraocular lens implant two years ago, so not phakic.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "pass",
+    "evidence": "\"no sign of an exudative detachment\".",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "pass",
+    "evidence": "\"There is no retinoschisis\".",
+    "sub_condition_notes": []
+  }
+]

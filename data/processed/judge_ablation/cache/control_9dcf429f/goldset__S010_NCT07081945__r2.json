@@ -1,0 +1,54 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is formally obtained at the consent/screening visit. The record has no information on it.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "Patient is 73 years old, which is outside the 18-70 range.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "RRD is only suspected (symptoms, suspected diagnosis). The record gives no break locations, no detachment extent, and no information on retinotomy need.",
+    "sub_condition_notes": [
+      "RRD diagnosis: suspected only, not confirmed.",
+      "Inferior breaks between 4 and 8 o'clock within the detached area: not documented.",
+      "Requiring inferior retinotomy: not documented."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information on break location or on indications for scleral buckling.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "Break locations relative to the detached area are not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "History is empty. There is no explicit statement about corneal ulcer, glaucoma, uveitis, or other eye disease.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No history of epilepsy or psychiatric disease is documented either way.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "post_enrollment",
+    "evidence": "This depends on the researcher's judgment of suitability, which only the study team can determine.",
+    "sub_condition_notes": []
+  }
+]

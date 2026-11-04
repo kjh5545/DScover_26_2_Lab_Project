@@ -1,0 +1,57 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "The patient is 7 years old (under 16) and male, and has presumed nephrotic syndrome. The profile lists no medications, which suggests no prior GC, but this is not explicit. Whether GC will be or was started at 2 mg/kg/day with taper is not documented.",
+    "sub_condition_notes": [
+      "Under 16, either gender, nephrotic: age 7, male, suspected nephrotic syndrome (diagnosis not yet confirmed) - met/likely",
+      "Treated with GC for the first time: no medications listed, but no explicit statement of GC-naive status or of treatment initiation - unknown",
+      "GC initiated at 2 mg/kg/day prednisolone with gradual taper: not documented - unknown"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "Patient has a 3-week history of illness and no medications listed, so he cannot have been on glucocorticoid therapy for more than 6 months. Vitamin D level is not documented.",
+    "sub_condition_notes": [
+      "GC therapy for more than 6 months: not met; symptoms began only 3 weeks ago and no medications are listed",
+      "Vitamin D ≥ 30 ng/ml: no level documented - unknown"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No creatinine, eGFR, or other kidney function results are given. Only heavy proteinuria and low albumin are documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No medications or supplements are listed and no compliance history is available.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No information on gallbladder or biliary disease, cystic fibrosis, celiac disease, or other malabsorption conditions.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No history of bleeding disorders, osteomalacia, or other vitamin K-related disorders is mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "Fracture history is not mentioned in the description.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No genetic testing is documented. The suspected diagnosis is minimal change disease, but genetic causes are not excluded by the record.",
+    "sub_condition_notes": []
+  }
+]
