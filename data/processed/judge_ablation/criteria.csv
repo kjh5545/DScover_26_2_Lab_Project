@@ -6445,6 +6445,20 @@ control,detailed,S010_NCT03714503,E7,1,등록 후 확인,모름,False,No informa
 control,detailed,S010_NCT03714503,E8,1,통과,통과,True,"Right eye is pseudophakic: cataract surgery with intraocular lens implant two years ago, so not phakic."
 control,detailed,S010_NCT03714503,E9,1,통과,통과,True,"""no sign of an exudative detachment""."
 control,detailed,S010_NCT03714503,E10,1,통과,통과,True,"""There is no retinoschisis""."
+control,detailed,S010_NCT03714503,I1,2,등록 후 확인,모름,False,No information on the patient's ability to understand or willingness to sign consent. Cognitive status and willingness are not documented.
+control,detailed,S010_NCT03714503,I2,2,통과,통과,True,"Macula-off rhegmatogenous retinal detachment with a single horseshoe tear at 5 o'clock (inferior), no prior retinal surgery, no trauma, so it is primary. The detachment extends inferiorly and the break is inferior."
+control,detailed,S010_NCT03714503,I3,2,통과,통과,True,Patient is 73 years old.
+control,detailed,S010_NCT03714503,I4,2,통과,통과,True,"Patient is male, so he is not a woman of child-bearing potential and the requirement does not apply."
+control,detailed,S010_NCT03714503,E1,2,통과,통과,True,"Patient is 73 years old, not pediatric."
+control,detailed,S010_NCT03714503,E2,2,통과,통과,True,"Patient is male, so he cannot be pregnant."
+control,detailed,S010_NCT03714503,E3,2,통과,통과,True,"""has never had retinal surgery or scleral buckling in either eye""; no previous RD repair."
+control,detailed,S010_NCT03714503,E4,2,통과,통과,True,"""never had retinal surgery or scleral buckling in either eye."""
+control,detailed,S010_NCT03714503,E5,2,통과,통과,True,"""he has had no injury to the eye or head""; no trauma as cause."
+control,detailed,S010_NCT03714503,E6,2,통과,통과,True,"The detachment is symptomatic with acute onset two days ago (curtain-like vision loss, flashes, floaters), so it is not asymptomatic or longstanding."
+control,detailed,S010_NCT03714503,E7,2,등록 후 확인,모름,False,No information on the patient's past or expected compliance with post-operative treatment; this is not documented.
+control,detailed,S010_NCT03714503,E8,2,통과,통과,True,"Right eye is pseudophakic: cataract surgery with intraocular lens implant two years ago, so not phakic."
+control,detailed,S010_NCT03714503,E9,2,통과,통과,True,"""no sign of an exudative detachment""; the detachment is rhegmatogenous."
+control,detailed,S010_NCT03714503,E10,2,통과,통과,True,"""There is no retinoschisis."""
 control,detailed,S010_NCT03714503,I1,3,등록 후 확인,모름,False,No information on the patient's ability to understand or willingness to sign consent; consent is formally obtained at enrollment.
 control,detailed,S010_NCT03714503,I2,3,통과,탈락,False,"Patient has a primary rhegmatogenous RD, but the only break is a horseshoe tear at 5 o'clock, which is an inferior break (RD extends inferiorly from 3 to 9). On reflection this meets the criterion."
 control,detailed,S010_NCT03714503,I3,3,통과,통과,True,"Age 73 years, which is at least 18."
