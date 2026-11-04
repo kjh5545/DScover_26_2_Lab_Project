@@ -90,8 +90,9 @@ def complete(sheet: dict) -> str | None:
     return f"판정 빈 칸 {empty}개" if empty else None
 
 
-def detailed_items(paths: list[Path], dry: bool) -> tuple[list[dict], int]:
+def detailed_items(paths: list[Path], dry: bool, offline: bool = False) -> tuple[list[dict], int]:
     """상세 환자: 상세 설명 + 그 설명의 프로필(eval_detailed와 같은 저장 위치) + 짧은 설명 단계의 기준.
+    offline(--report): API를 부르지 않고, 프로필이 아직 없는 환자(= 판정도 아직 안 돈 환자)는 뺌.
     반환: (항목, 프로필을 새로 만들어야 하는 환자 수)."""
     from src.pipeline import understand_patient
 
@@ -105,6 +106,9 @@ def detailed_items(paths: list[Path], dry: bool) -> tuple[list[dict], int]:
         pid = sheet["patient_id"]
         key = f"{pid}_detailed_{hashlib.sha1(sheet['detailed_text'].encode('utf-8')).hexdigest()[:8]}"
         cache = ROOT / "data" / "processed" / "eval_cache" / f"profile_{key}.json"
+        if offline and not cache.exists():
+            print(f"  상세 환자 제외: {path.relative_to(ROOT)} (아직 실행 안 함: 프로필 없음)")
+            continue
         if dry and not cache.exists():
             new_profiles += 1
             profile = {}
@@ -350,9 +354,9 @@ def main() -> int:
         for p in skipped:
             why = complete(parse_sheet(p)) or "같은 환자의 다른 시트를 씀"
             print(f"  상세 환자 제외: {p.relative_to(ROOT) if p.is_absolute() else p} ({why})")
-        d_items, new_profiles = detailed_items(list(by_pid.values()), dry=args.dry_run)
+        d_items, new_profiles = detailed_items(list(by_pid.values()), dry=args.dry_run, offline=args.report)
         items += d_items
-        print(f"상세 환자: {sorted(by_pid)}")
+        print(f"상세 환자: {sorted({it['case'].split('_')[0] for it in d_items})}")
 
     if args.dry_run:
         estimate(conds, items, args.repeats, not args.no_batch, new_profiles)
