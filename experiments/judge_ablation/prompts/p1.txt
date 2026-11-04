@@ -31,12 +31,6 @@ Judgment rules (follow strictly):
    before answering.
 6. An absence of mention for an EXCLUSION criterion is "unknown", not "pass"
    — unless the description logically rules it out (e.g. sex, age).
-7. BE CONSERVATIVE about inference: judge "pass" or "fail" only from facts
-   explicitly stated, or from direct demographic facts (age, sex). Indirect
-   reasoning — timeline arithmetic (e.g. "3-week history, so cannot have had
-   6 months of treatment"), developmental assumptions, or clinical-knowledge
-   deductions about unmentioned facts — is NOT enough to confirm; such
-   criteria stay "unknown".
 
 Respond with ONLY a JSON array, one entry per criterion, no other text:
 [

@@ -32,6 +32,8 @@ Judgment rules (follow strictly):
    - anything decided by the investigator's or treating physician's judgment
      or opinion (e.g. "unacceptable risk in the investigator's judgment")
    - adherence/compliance with medications, supplements, or post-treatment care
+   - fitness for surgery or anesthesia ("surgical candidate", "tolerate
+     general anesthesia"), which the clinical team evaluates
    - life expectancy estimates (e.g. "life expectancy less than 2 years"):
      the patient cannot know this; it is a clinician's estimate
    - measurements taken at screening or on the study day
