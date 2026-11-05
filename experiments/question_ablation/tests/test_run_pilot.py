@@ -9,6 +9,7 @@ import hashlib
 import http.server
 import json
 import os
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -38,8 +39,11 @@ class Base(unittest.TestCase):
         self.root = Path(self.tmp.name)
         self.ws = rp.Workspace(self.root / "exp", mock=True)
         self.prompts = rp.load_prompts()
+        self.real_root = mock.patch.object(rp, "REAL_ROOT", self.root / "real")   # 공용 비용 장부를 실제 폴더에 쓰지 않게
+        self.real_root.start()
 
     def tearDown(self):
+        self.real_root.stop()
         self.tmp.cleanup()
 
     def real_annotation(self, base: Path):
@@ -47,13 +51,20 @@ class Base(unittest.TestCase):
         base.mkdir(parents=True, exist_ok=True)
         for pid in rp.PATIENTS:
             b = rp.make_bundle(pid)
-            rows = [{"patient_id": pid, "trial_id": m["trial"], "criterion_id": m["criterion_id"],
-                     "final_askable": "NOT_OBTAINABLE" if i == 0 else "ASK_PATIENT", "final_tier": "H" if i < 4 else "L",
-                     "h_strict": "true" if 0 < i < 4 else "false", "h_any": "true" if 0 < i < 5 else "false",
-                     "adjudication_note": "테스트"}
-                    for i, m in enumerate(rp.qb.collect_materials(b))]
+            rows = []
+            for i, m in enumerate(rp.qb.collect_materials(b)):
+                cen = "2" if 0 < i < 4 else "1" if i == 0 else "0"
+                core = ("테스트 핵심 부분" if i == 1 else sc.WHOLE) if cen == "2" else ""
+                rows.append({"patient_id": pid, "trial_id": m["trial"], "criterion_id": m["criterion_id"],
+                             "final_askable": "NOT_OBTAINABLE" if i == 0 else "ASK_PATIENT",
+                             "final_centrality": cen,
+                             "final_centrality_evidence": "원문: 테스트" if cen == "2" else "",
+                             "final_core_part": core, "final_core_info": "테스트 정보" if core else "",
+                             "h_strict": str(cen == "2").lower(), "h_any": "true" if 0 < i < 5 else "false",
+                             "adjudication_note": "테스트"})
             sc.write_csv(base / f"{pid}_final.csv", sc.SCHEMA["preannotation_final_columns"], rows)
             sc.write_csv(base / f"{pid}_clusters.csv", sc.SCHEMA["cluster_columns"], [])
+        sc.write_csv(base / "safety_evidence.csv", sc.SCHEMA["safety_evidence_columns"], [])
         draft = base / "draft.json"
         draft.write_text(json.dumps({"m4a_definition_review": {"approved": True}, "judge_freeze_confirmed_by": ["테스트"],
                                      "people": [{"id": "R1", "gold_exposed": "none"}]}), encoding="utf-8")
@@ -363,7 +374,8 @@ class PaidGate(Base):
     def test_lock_passes_only_when_complete(self):
         base, draft = self.locked_env()
         rec = rp.lock_annotation(draft, base / "annotation_record.json")
-        self.assertEqual(len(rec["files"]), 4)
+        self.assertEqual(len(rec["files"]), 5)
+        self.assertIn("safety_evidence.csv", rec["files"])
         rp.annotation_gate(base / "annotation_record.json")
 
     def test_annotation_tamper_detected(self):
@@ -398,6 +410,94 @@ class PaidGate(Base):
         self.assertTrue(rp.check_annotation_population("S004", all_criteria))
         self.assertEqual(rp.check_annotation_population("S004", rows), [])
 
+    def test_h_flag_must_follow_centrality(self):
+        rows = sc.read_csv(self.real_annotation(self.root / "h").parent / "S004_final.csv")
+        bad = [dict(rows[1], h_strict="false")] + rows[2:] + rows[:1]
+        self.assertTrue(any("h_strict" in e for e in rp.check_annotation_population("S004", bad)))
+        old = [{k: v for k, v in r.items() if k != "final_core_part"} for r in rows]
+        self.assertTrue(any("열 없음" in e for e in rp.check_annotation_population("S004", old)))
+
+    def test_evidence_and_core_part_rules(self):
+        rows = sc.read_csv(self.real_annotation(self.root / "e").parent / "S004_final.csv")
+        check = lambda change, ids=None: rp.check_annotation_population(  # noqa: E731
+            "S004", [dict(rows[2], **change)] + rows[:2] + rows[3:], ids)
+        self.assertTrue(any("근거 없음" in e for e in check({"final_centrality_evidence": ""})))
+        self.assertTrue(any("핵심 부분" in e for e in check({"final_core_part": ""})))        # 표시 누락
+        self.assertTrue(any("핵심 부분" in e for e in check({"final_core_info": ""})))
+        self.assertEqual(check({"final_core_part": sc.WHOLE}), [])                            # '전체'는 정상
+        self.assertTrue(any("근거 목록" in e for e in check({"final_centrality_evidence": "EV01"}, set())))
+        self.assertEqual(check({"final_centrality_evidence": "EV01"}, {"EV01"}), [])
+        not_h = next(i for i, r in enumerate(rows) if r["final_centrality"] != "2")
+        bad = [dict(rows[not_h], final_core_part="x", final_core_info="y")] + rows[:not_h] + rows[not_h + 1:]
+        self.assertTrue(any("2점 기준에만" in e for e in rp.check_annotation_population("S004", bad)))
+
+    def test_zero_h_does_not_block_lock(self):
+        """M5-B: 환자의 H가 0개여도 잠금은 가능하다."""
+        base = self.root / "zeroh"
+        draft = self.real_annotation(base)
+        for pid in rp.PATIENTS:
+            rows = sc.read_csv(base / f"{pid}_final.csv")
+            for r in rows:
+                r.update(final_centrality="1", final_centrality_evidence="", final_core_part="", final_core_info="",
+                         h_strict="false")
+            sc.write_csv(base / f"{pid}_final.csv", sc.SCHEMA["preannotation_final_columns"], rows)
+        rp.lock_annotation(draft, base / "annotation_record.json")
+
+    def test_lock_requires_fixed_evidence_list(self):
+        base = self.root / "nolist"
+        draft = self.real_annotation(base)
+        (base / "safety_evidence.csv").unlink()
+        with self.assertRaisesRegex(rp.GateError, "safety_evidence"):
+            rp.lock_annotation(draft, base / "annotation_record.json")
+        cols = sc.SCHEMA["safety_evidence_columns"]
+        pending = {c: "x" for c in cols} | {"evidence_id": "EV01", "review_status": "작성·검토 대기"}
+        sc.write_csv(base / "safety_evidence.csv", cols, [pending])
+        with self.assertRaisesRegex(rp.GateError, "검토 대기"):
+            rp.lock_annotation(draft, base / "annotation_record.json")
+        sc.write_csv(base / "safety_evidence.csv", cols, [dict(pending, review_status="고정")])
+        rp.lock_annotation(draft, base / "annotation_record.json")
+
+    def ai_env(self, name: str):
+        """저장소의 AI 주석 버전 고정 파일을 임시 폴더로 복사하고, 사람 기록 칸만 테스트 값으로 채운다."""
+        real = rp.ANNOTATION_RECORD.parent
+        base = self.root / name
+        (base / "ai_draft" / "source").mkdir(parents=True)
+        for rel in rp.annotation_files() + [f"ai_draft/source/{p}_preannotation_AI_draft.csv" for p in rp.PATIENTS]:
+            shutil.copy(real / rel, base / rel)
+        rec = json.loads((real / "ai_draft" / "annotation_record_draft.json").read_text(encoding="utf-8"))
+        rec.update(m4a_definition_review={"approved": True}, judge_freeze_confirmed_by=["테스트"],
+                   people=[{"id": "R1", "gold_exposed": "none"}])
+        draft = base / "draft.json"
+        draft.write_text(json.dumps(rec, ensure_ascii=False), encoding="utf-8")
+        return base, draft, rec
+
+    def test_ai_annotation_path_locks_only_as_recorded(self):
+        base, draft, rec = self.ai_env("ai")
+        rp.lock_annotation(draft, base / "annotation_record.json")
+        for change, msg in ((lambda r: r["annotation_source"].update(human_item_review=True), "human_item_review"),
+                            (lambda r: r["annotation_source"].update(drafting_model=""), "drafting_model"),
+                            (lambda r: r["annotation_source"].update(status="사람 검수 완료"), "AI 주석 상태")):
+            b, d, r = self.ai_env(f"ai{msg}")
+            change(r)
+            d.write_text(json.dumps(r, ensure_ascii=False), encoding="utf-8")
+            with self.assertRaisesRegex(rp.GateError, msg):
+                rp.lock_annotation(d, b / "annotation_record.json")
+
+    def test_ai_final_must_match_ai_source(self):
+        base, draft, _ = self.ai_env("aitamper")
+        rows = sc.read_csv(base / "S004_final.csv")
+        i = next(i for i, r in enumerate(rows) if r["final_centrality"] == "UNSURE")
+        rows[i].update(final_centrality="1")                  # UNSURE를 조용히 1점으로 바꾸면 거부
+        sc.write_csv(base / "S004_final.csv", sc.SCHEMA["preannotation_final_columns"], rows)
+        with self.assertRaisesRegex(rp.GateError, "AI 원본과 다름"):
+            rp.lock_annotation(draft, base / "annotation_record.json")
+
+    def test_ai_path_not_for_confirm_patients(self):
+        base, _, rec = self.ai_env("aiconfirm")
+        with mock.patch.object(rp, "PATIENTS", ("S002",)):
+            self.assertTrue(any("파일럿 환자" in e for e in rp.ai_source_problems(rec, base)))
+        self.assertEqual(rp.ai_source_problems({}, base), [])     # 사람 주석 기록에는 적용하지 않음
+
     def test_gold_exposure_changes_blind_label(self):
         reg = self.root / "reg.csv"
         cols = sc.SCHEMA["rater_registry_columns"]
@@ -405,6 +505,7 @@ class PaidGate(Base):
         self.assertTrue(rp.blind_status(reg)["independent_gold_blind"])
         sc.write_csv(reg, cols, [{"rater_id": "R1", "role": "rater", "gold_exposed": "partial", "exposure_scope": "S004", "note": ""}])
         self.assertFalse(rp.blind_status(reg)["independent_gold_blind"])
+        self.assertIn("탐색적 채점", rp.blind_status(reg)["label"])
         self.assertFalse(rp.blind_status(None)["independent_gold_blind"])
 
 
@@ -420,6 +521,50 @@ class FakeReal:
         r = self.mock(system, user)
         return {**r, "model": self.model, "input_tokens": self.tokens[0], "output_tokens": self.tokens[1],
                 **({"text": self.text} if self.text is not None else {})}
+
+
+class Budget(Base):
+    """공용 예산 $10:smoke·파일럿 모든 단계·재시작·재시도가 한 장부에 합산된다."""
+
+    def test_default_is_shared_six_dollars(self):
+        t = rp.BudgetTransport(FakeReal(), "a")
+        self.assertEqual((t.budget, t.ledger), (10.00,self.root / "real" / "spend_ledger.jsonl"))
+
+    def test_labels_and_restarts_share_one_ledger(self):
+        rp.BudgetTransport(FakeReal(), "smoke1:smoke_questions")("s", "u")
+        rp.BudgetTransport(FakeReal(), "pilot1:questions")("s", "u")         # 다른 실험·단계·새 프로세스
+        t = rp.BudgetTransport(FakeReal(), "pilot1:downstream")
+        self.assertAlmostEqual(t.spent(), 2 * (1000 * 2 + 500 * 10) / 1e6)
+
+    def test_stops_before_call_and_keeps_completed_results(self):
+        ws = rp.Workspace(self.root / "b", mock=False)
+        fake = FakeReal()
+        t = rp.BudgetTransport(fake, "pilot1:questions")
+        rp.execute("questions", rp.make_plan()[:2], ws, t)
+        tight = t.spent() + 0.01                                              # 다음 호출의 최악 비용($0.16+)이 들어가지 않는 예산
+        for _ in range(2):                                                    # 재실행해도 추가 호출 없음
+            with self.assertRaises(rp.BudgetExhausted):
+                rp.execute("questions", rp.make_plan(), ws, rp.BudgetTransport(fake, "pilot1:questions", budget_usd=tight))
+        self.assertEqual(len(fake.mock.calls), 2)
+        self.assertEqual(len(list(ws.questions.glob("*.json"))), 2)          # 완료된 결과는 그대로
+
+    def test_failed_call_charged_as_worst_case(self):
+        t = rp.BudgetTransport(FakeReal(error=ConnectionError("x")), "p:q")
+        with self.assertRaises(ConnectionError):
+            t("s", "u")
+        rec = json.loads(t.ledger.read_text(encoding="utf-8"))
+        self.assertEqual(rec["kind"], "error_charged_as_worst")
+        self.assertGreaterEqual(rec["cost_usd"], 0.16)
+        self.assertNotIn("__", json.dumps(rec))                              # 실행 키(조건 이름)를 적지 않음
+
+    def test_unknown_model_price_stops(self):
+        with self.assertRaisesRegex(rp.GateError, "단가 없음"):
+            rp.BudgetTransport(FakeReal(model="other-model"), "p:q")("s", "u")
+
+    def test_sdk_retries_disabled(self):
+        import anthropic
+        client = anthropic.Anthropic(api_key="test-not-a-key")
+        self.assertEqual(rp.RealTransport(client).client.max_retries, 0)
 
 
 class StatusError(Exception):
@@ -524,6 +669,7 @@ class ScoringChain(Base):
                      overgroup="NA" if int(r["n_links"]) < 2 else "PASS")
         for r in l:
             r.update(preservation="PASS", coverage="FULL", rater_id=rater,
+                     core_coverage="FULL" if r["core_part"] else "NA",
                      group_validity="NA" if r["is_multi_link"] == "0" else "VALID")
         sc.write_csv(dst / "question_sheet.csv", sc.QC, q)
         sc.write_csv(dst / "link_sheet.csv", sc.LC, l)
@@ -590,6 +736,63 @@ class ScoringChain(Base):
             f.write("x")
         with self.assertRaises(PermissionError):
             rp.report(self.ws, self.root / "ann", None, None)
+
+    def test_core_part_reaches_packet_for_every_h(self):
+        """M2-B: 모든 H 기준의 핵심 부분('전체' 포함)과 필요한 정보가 채점표에 들어가고, H가 아니면 비어 있다.
+        핵심 부분의 범위는 사전 주석에서 잠근 값이며 채점 단계에서 정하지 않는다."""
+        base = self.root / "ann"
+        self.real_annotation(base)
+        rp.execute("questions", rp.make_plan()[:10], self.ws, rp.MockTransport())
+        rp.build_rater_packet(self.ws, seed=3, ann_base=base)
+        marked = rp.core_parts("S004", base)
+        self.assertEqual(sorted(p for p, _ in marked.values()), ["전체", "전체", "테스트 핵심 부분"])
+        links = [r for r in sc.read_csv(self.ws.packet / "link_sheet.csv") if r["patient_id"] == "S004"]
+        self.assertTrue(links)
+        for r in links:
+            part, info = marked.get(f"{r['trial_id']}|{r['criterion_id']}", ("", ""))
+            self.assertEqual((r["core_part"], r["core_info"]), (part, info))
+
+    def test_auto_seal_flow(self):
+        """방식 B: 채점표 생성 직후 봉인 → 채점 → 채점 잠금 → 봉인 해제 → 보고. 잠금 전에는 풀 수 없다."""
+        self.build()
+        out = rp.seal(self.ws)
+        self.assertGreater(out["sealed_files"], 0)
+        for part in rp.SEALED_PARTS:
+            self.assertFalse((self.ws.root / part).exists(), part)
+        self.assertTrue((self.ws.packet / "link_sheet.csv").exists())
+        rec = rp.read_json(self.ws.seal_record)
+        self.assertIn("실제 접근 차단 장치가 없", rec["limitation"])
+        self.assertNotIn("C_full", json.dumps(rec, ensure_ascii=False))
+        with self.assertRaisesRegex(rp.GateError, "이미 봉인"):
+            rp.seal(self.ws)
+        rp.merge_scores(self.root / "r1", self.root / "none.csv", self.ws.scores)
+        with self.assertRaisesRegex(rp.GateError, "채점 잠금 전"):
+            rp.unseal(self.ws)
+        finals = [self.ws.scores / "question_final.csv", self.ws.scores / "link_final.csv"]
+        sc.lock(self.ws.sealed, finals)
+        rp.unseal(self.ws)
+        self.assertTrue((self.ws.sealed / "blind_map.json").exists() and self.ws.questions.exists())
+        base = self.root / "ann"
+        self.real_annotation(base)
+        report = rp.report(self.ws, base, None, None)
+        self.assertIn("자기 관리 봉인", report["condition_mapping"])
+
+    def test_tampered_bundle_not_unsealed(self):
+        self.build()
+        rp.seal(self.ws)
+        rp.merge_scores(self.root / "r1", self.root / "none.csv", self.ws.scores)
+        sc.lock(self.ws.sealed, [self.ws.scores / "question_final.csv", self.ws.scores / "link_final.csv"])
+        with open(self.ws.bundle, "ab") as f:
+            f.write(b"x")
+        with self.assertRaisesRegex(rp.GateError, "봉인 후 바뀜"):
+            rp.unseal(self.ws)
+
+    def test_rater_id_must_be_registered(self):
+        rec = self.root / "rec.json"
+        rec.write_text(json.dumps({"people": [{"id": "SH01", "role": "rater (파일럿)", "gold_exposed": "full"}]}),
+                       encoding="utf-8")
+        self.assertEqual(rp.rater_id_problems([{"rater_id": "SH01"}], rec), [])
+        self.assertTrue(rp.rater_id_problems([{"rater_id": "SH01"}, {"rater_id": "R1"}], rec))
 
     def test_invalid_scores_cannot_be_merged(self):
         self.build()

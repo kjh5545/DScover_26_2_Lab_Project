@@ -1,0 +1,20 @@
+{
+  "status": "draft: 교차 검수·팀 승인 전. 버전 고정이 아니다. 고정은 검수 후 팀 승인으로 status를 바꾼다",
+  "recorded": "2026-11-04",
+  "source": "origin/main",
+  "commit": "9f4d6d7c6b5261eb4228ee32f21782b27dcf7de1",
+  "sheets": {
+    "S002": {"path": "screening/detailed/주희/S002_detailed_sheet.md", "blob": "a078f72967166f5873333f685d8157a1b123c416",
+             "last_commit": "887102bc564f05bbfd70c5e6c5045ec437907be3"},
+    "S010": {"path": "screening/detailed/주희/S010_detailed_sheet.md", "blob": "9c4ddc5be945ea9e430e5a10639222161bc44615",
+             "last_commit": "2c574f07b8b1f7e50666e75bb8826f847209357e"},
+    "N001": {"path": "screening/detailed/주희/N001_detailed_sheet.md", "blob": "98c1dab37cf8d97e87277b5cac50aedc28581c6f",
+             "last_commit": "e8b9c82c37c99521af8337c7ae2a351756e084f4"},
+    "N002": {"path": "screening/detailed/주희/N002_detailed_sheet.md", "blob": "9dfe10aa274a399ba5f77462a3389612043041c7",
+             "last_commit": "a888d211ce6e058147052eb58733367173de0c93"}
+  },
+  "inputs_same_as_branch_base": [
+    "data/handoff/N001.json", "data/handoff/N002.json", "data/processed/eval_cache/profile_*.json (4명)",
+    "data/processed/goldset_cache_v3_claude-sonnet-5-5/match_S002_*.json, match_S010_*.json", "goldset/goldset_v1.json"
+  ]
+}

@@ -1,0 +1,235 @@
+{
+ "protocolSection": {
+  "identificationModule": {
+   "nctId": "NCT07786870",
+   "orgStudyIdInfo": {
+    "id": "Medical University of Warsaw"
+   },
+   "secondaryIdInfos": [
+    {
+     "id": "31/M/MB/N/24",
+     "type": "OTHER_GRANT",
+     "domain": "Young Scientist Grant, Medical University of Warsaw"
+    }
+   ],
+   "organization": {
+    "fullName": "Medical University of Warsaw",
+    "class": "OTHER"
+   },
+   "briefTitle": "Expression of TSLP Isoforms in Asthma",
+   "officialTitle": "TSLP and Its Isoforms (Short and Long Form TSLP) in Different Asthma Phenotypes"
+  },
+  "statusModule": {
+   "statusVerifiedDate": "2026-01",
+   "overallStatus": "RECRUITING",
+   "expandedAccessInfo": {
+    "hasExpandedAccess": false
+   },
+   "startDateStruct": {
+    "date": "2024-04-30",
+    "type": "ACTUAL"
+   },
+   "primaryCompletionDateStruct": {
+    "date": "2026-11",
+    "type": "ESTIMATED"
+   },
+   "completionDateStruct": {
+    "date": "2026-11",
+    "type": "ESTIMATED"
+   },
+   "studyFirstSubmitDate": "2026-01-23",
+   "studyFirstSubmitQcDate": "2026-08-24",
+   "studyFirstPostDateStruct": {
+    "date": "2026-08-26",
+    "type": "ACTUAL"
+   },
+   "lastUpdateSubmitDate": "2026-08-24",
+   "lastUpdatePostDateStruct": {
+    "date": "2026-08-26",
+    "type": "ACTUAL"
+   }
+  },
+  "sponsorCollaboratorsModule": {
+   "responsibleParty": {
+    "type": "SPONSOR"
+   },
+   "leadSponsor": {
+    "name": "Medical University of Warsaw",
+    "class": "OTHER"
+   }
+  },
+  "oversightModule": {
+   "oversightHasDmc": false,
+   "isFdaRegulatedDrug": false,
+   "isFdaRegulatedDevice": false
+  },
+  "descriptionModule": {
+   "briefSummary": "Asthma is a heterogeneous disease characterized by chronic airway inflammation, leading to variable airflow obstruction, bronchial hyperresponsiveness, excessive mucus secretion, and, consequently, structural airway remodeling. Asthma is defined by the presence of symptoms such as wheezing, dyspnea, chest tightness, and cough, with variable intensity and frequency.\n\nThymic stromal lymphopoietin (TSLP) is a cytokine produced primarily by epithelial cells in the lungs. Two distinct isoforms of TSLP have been identified: a long form (lfTSLP) and a short form (sfTSLP). The long isoform is induced during inflammatory conditions and promotes a T2-dependent immune response. In contrast, the short isoform is believed to exert homeostatic and anti-inflammatory functions and exhibits antimicrobial properties.\n\nStudies have demonstrated an association between elevated serum and airway TSLP levels and increased disease severity, as well as reduced spirometric parameters. However, the literature contains limited data regarding the expression of TSLP isoforms across different asthma phenotypes and their relationship with the degree of disease control.\n\nThe goal of this study is:\n\n1. To assess the expression of TSLP protein and TSLP mRNA, including its isoforms (sfTSLP and lfTSLP), in serum and in airway-derived samples (nasal epithelial cells),\n2. To compare these levels among patients with different asthma phenotypes (allergic and non-allergic asthma; eosinophilic, neutrophilic, and paucigranulocytic asthma; early-onset and late-onset asthma; obesity-associated asthma; cough-variant asthma), as well as between patients with asthma and healthy controls.\n3. To analyze the correlations between the expression of TSLP isoforms (sfTSLP and lfTSLP) and asthma severity, level of disease control (as measured by the Asthma Control Questionnaire \\[ACQ\\]), pulmonary function parameters, blood eosinophil count and other clinical parameters."
+  },
+  "conditionsModule": {
+   "conditions": [
+    "Asthma Atopic",
+    "Asthma Severe Persistent Uncontrolled"
+   ],
+   "keywords": [
+    "TSLP",
+    "asthma",
+    "airway epithelium"
+   ]
+  },
+  "designModule": {
+   "studyType": "OBSERVATIONAL",
+   "patientRegistry": true,
+   "targetDuration": "1 Day",
+   "designInfo": {
+    "observationalModel": "CASE_CONTROL",
+    "timePerspective": "CROSS_SECTIONAL"
+   },
+   "enrollmentInfo": {
+    "count": 70,
+    "type": "ESTIMATED"
+   }
+  },
+  "armsInterventionsModule": {
+   "armGroups": [
+    {
+     "label": "Study group consists of patients with severe asthma (diagnosed according to GINA guidelines)",
+     "description": "1. Inclusion criteria Adults aged 18 years, without the upper age limit, diagnosed with asthma established in accordance with the GINA 2023 guidelines.\n2. Exclusion criteria Presence of other concomitant respiratory diseases (e.g., chronic obstructive pulmonary disease \\[COPD\\]); Current use of systemic glucocorticoids or immunosuppressive therapy, or use within 4 weeks prior to study enrollment; Active cigarette smoking or a smoking history of \\>10 pack-years; Active malignancy; Active pulmonary tuberculosis or active respiratory tract infection; Use of antibiotics within 4 weeks prior to study enrollment; Current long-term home oxygen therapy (\\>15 hours per day); Current treatment with monoclonal antibody therapies (e.g., omalizumab, mepolizumab, reslizumab, dupilumab, tezepelumab, or other biologics); Pregnancy.",
+     "interventionNames": [
+      "Diagnostic Test: No Intervention: Observational Cohort"
+     ]
+    },
+    {
+     "label": "Control group",
+     "description": "1. Inclusion criteria Age above 18 years old and without the upper age limit. Negative medical history for asthma and allergic diseases.\n2. Exclusion criteria Diagnosed asthma or any other respiratory disease; Atopic dermatitis, allergic rhinitis, or other allergic diseases; Autoimmune diseases; All other exclusion criteria identical to those applied to the asthma patient group.",
+     "interventionNames": [
+      "Diagnostic Test: No Intervention: Observational Cohort"
+     ]
+    }
+   ],
+   "interventions": [
+    {
+     "type": "DIAGNOSTIC_TEST",
+     "name": "No Intervention: Observational Cohort",
+     "description": "This study is designed as a cross-sectional, observational investigation. No therapeutic or diagnostic interventions beyond routine clinical care will be introduced as part of the study. All procedures performed are limited to standard, minimally invasive sample collection and data acquisition for research purposes. Clinical management of participants will remain unchanged and will be conducted entirely at the discretion of the treating physicians. Participation in the study will not influence treatment decisions or patient care.",
+     "armGroupLabels": [
+      "Control group",
+      "Study group consists of patients with severe asthma (diagnosed according to GINA guidelines)"
+     ]
+    }
+   ]
+  },
+  "outcomesModule": {
+   "primaryOutcomes": [
+    {
+     "measure": "TSLP mRNA expression, including the sfTSLP and lfTSLP isoforms in nasal epithelial cells and TSLP protein expression in blood and nasal epithelial cells",
+     "description": "The primary endpoint of the study is the quantitative assessment of TSLP protein expression and TSLP mRNA expression, including the sfTSLP and lfTSLP isoforms, in biological material obtained from serum and nasal epithelial cells.\n\nPeripheral venous blood samples will be collected and centrifuged to obtain serum, which will be aliquoted and stored at -80°C until analysis. Nasal epithelial cells will be collected using sterile cytology brushes. All biological samples will be processed promptly and stored under appropriate conditions prior to laboratory analysis.\n\nTSLP protein concentrations will be measured using commercially available enzyme-linked immunosorbent assay (ELISA) kits in accordance with the manufacturer's instructions. Measurements will be performed in duplicate, and optical density will be determined using a microplate reader. Concent",
+     "timeFrame": "This is cross-sectional studies; blood and nasal epithelial cells (nasal swab) will be taken from each study participant at one study point - through study completion, an average of 2 years"
+    }
+   ]
+  },
+  "eligibilityModule": {
+   "eligibilityCriteria": "1. Inclusion criteria\n\n   * age \\> 18 years, without the upper age limit,\n   * asthma (diagnosis in accordance with the GINA 2023 guidelines),\n2. Exclusion criteria\n\n   * other respiratory diseases (e.g., chronic obstructive pulmonary disease \\[COPD\\]);\n   * active cigarette smoking or a smoking history of \\>10 pack-years;\n   * active malignancy;\n   * active pulmonary tuberculosis or active respiratory tract infection;\n   * use of antibiotics within 4 weeks prior to study enrollment;\n   * current long-term home oxygen therapy (\\>15 hours per day);\n   * current treatment with monoclonal antibody therapies (e.g., omalizumab, mepolizumab, reslizumab, dupilumab, tezepelumab, or other biologics);\n   * pregnancy.",
+   "healthyVolunteers": true,
+   "sex": "ALL",
+   "minimumAge": "18 Years",
+   "stdAges": [
+    "ADULT",
+    "OLDER_ADULT"
+   ],
+   "studyPopulation": "Patients with severe asthma, with different asthma phenotypes (allergic and non-allergic asthma; eosinophilic, neutrophilic, and paucigranulocytic asthma; early-onset and late-onset asthma; obesity-associated asthma; cough-variant asthma).",
+   "samplingMethod": "NON_PROBABILITY_SAMPLE"
+  },
+  "contactsLocationsModule": {
+   "centralContacts": [
+    {
+     "name": "Izabela Orzołek, MD",
+     "role": "CONTACT",
+     "phone": "+48516223281",
+     "email": "izabela.orzolek@wum.edu.pl"
+    }
+   ],
+   "locations": [
+    {
+     "facility": "Department of Internal Medicine, Pulmonary Diseases and Allergy, Medical University of Warsaw, Warsaw, Poland,",
+     "status": "RECRUITING",
+     "city": "Warsaw",
+     "state": "Warsaw",
+     "zip": "02-097",
+     "country": "Poland",
+     "contacts": [
+      {
+       "name": "Izabela Orzołek, MD",
+       "role": "CONTACT",
+       "phone": "+48225991000",
+       "email": "kpa.csk@uckwum.pl"
+      },
+      {
+       "name": "Marta Dąbrowska, MD, PhD, Associate Professor",
+       "role": "PRINCIPAL_INVESTIGATOR"
+      },
+      {
+       "name": "Izabela Orzołek, MD",
+       "role": "SUB_INVESTIGATOR"
+      }
+     ],
+     "geoPoint": {
+      "lat": 52.22977,
+      "lon": 21.01178
+     }
+    }
+   ]
+  },
+  "ipdSharingStatementModule": {
+   "ipdSharing": "UNDECIDED"
+  }
+ },
+ "derivedSection": {
+  "miscInfoModule": {
+   "versionHolder": "2026-11-03"
+  },
+  "conditionBrowseModule": {
+   "meshes": [
+    {
+     "id": "D001249",
+     "term": "Asthma"
+    }
+   ],
+   "ancestors": [
+    {
+     "id": "D001982",
+     "term": "Bronchial Diseases"
+    },
+    {
+     "id": "D012140",
+     "term": "Respiratory Tract Diseases"
+    },
+    {
+     "id": "D008173",
+     "term": "Lung Diseases, Obstructive"
+    },
+    {
+     "id": "D008171",
+     "term": "Lung Diseases"
+    },
+    {
+     "id": "D012130",
+     "term": "Respiratory Hypersensitivity"
+    },
+    {
+     "id": "D006969",
+     "term": "Hypersensitivity, Immediate"
+    },
+    {
+     "id": "D006967",
+     "term": "Hypersensitivity"
+    },
+    {
+     "id": "D007154",
+     "term": "Immune System Diseases"
+    }
+   ]
+  }
+ },
+ "hasResults": false
+}

@@ -1,0 +1,49 @@
+{
+  "m4a_definition_review": {
+    "approved": true,
+    "reviewed_by": [
+      "정서현 (연구 담당자)"
+    ],
+    "date": "2026-11-04",
+    "note": "근거: M4a_approval_packet.md 6절 (연구 담당자 확정, 2026-11-04). M4a 정의(M1~M9) 확정에 관한 기록이며, AI 개별 주석의 정확성을 사람이 검증했다는 뜻이 아니다."
+  },
+  "judge_freeze_confirmed_by": [
+    "정서현 (2026-11-05: 현재 실험 계획에서 확정한 판정기 버전 유지에 동의)"
+  ],
+  "people": [
+    {
+      "id": "SH01",
+      "role": "rater (파일럿: 정답 노출 연구자의 탐색적 채점)",
+      "gold_exposed": "full",
+      "exposure_scope": "본인 신고 2026-11-04·05. gold:full(S004·S008, goldset 작성자); factsheet:봤음(S004·S008); prior_questions:조건 표시와 함께 봤음(S004·S008); prompts:none(자기신고 유지); repo_labels:holdout_readiness.md 4.1절 표기 있음(별도 보존, 친숙도 판단에 쓰지 않음); design:D1 승인(M4a 정의 설계·연구 문서 열람); 확인 실험 4명: gold·factsheet none(자기신고)"
+    }
+  ],
+  "annotation_source": {
+    "mode": "ai_unverified",
+    "status": "AI 주석 버전 고정",
+    "human_item_review": false,
+    "scope": "파일럿 S004·S008만. 확인 실험 네 환자에는 적용하지 않음",
+    "drafting_tool": "미확인",
+    "drafting_model": "미확인",
+    "drafting_inputs": "미확인 (환자 상세 정보·정답·생성 질문 사용 여부 기록 없음)",
+    "drafted_at": "미확인 (2026-11-05 대화 첨부로 받음)",
+    "received": "첨부 2개의 'CSV 작업 초안' 내용만 받음. '읽기 쉬운 검토본' 시트는 받지 못함",
+    "rater_id": "AI_DRAFT",
+    "needs_review": "모든 후보 행 Y 유지 (사람 검토 전)",
+    "modifications": [],
+    "clusters": "미주석 (머리글만 있는 군집표. 공유정보가 없다는 판단이 아님. M5b 값 없음)",
+    "review_log": "ai_draft/ai_annotation_log.md",
+    "source_files": {
+      "ai_draft/source/S004_preannotation_AI_draft.csv": "475cf731f5a6bdfa66e9cd8bd35444b7786aecf63e600d36d250ba0357c1df02",
+      "ai_draft/source/S008_preannotation_AI_draft.csv": "8adff60d64a344784c4e00bee432decaf3c61e6320f5ef6d43c00905b256eccd"
+    }
+  },
+  "files": {
+    "S004_final.csv": "af7dbec1a3cc02fc7743f14c4463d3f99a85933555d90c676e2c338ed4f0f5a1",
+    "S004_clusters.csv": "57663140450bf8684f030c8f1fa91a728c5d5c48c1c1bfed9bff541c22d50ccf",
+    "S008_final.csv": "9e42c12e37872bf37cacefaff1cb7ed1c7500b0991769ecacea62292fb837dc7",
+    "S008_clusters.csv": "57663140450bf8684f030c8f1fa91a728c5d5c48c1c1bfed9bff541c22d50ccf",
+    "safety_evidence.csv": "74e23aa2d90faf0c07115c6259d39a5645f592cdcf13c0ab6aaecf6cbd9e932a"
+  },
+  "locked_at": "2026-11-05T04:09:07"
+}

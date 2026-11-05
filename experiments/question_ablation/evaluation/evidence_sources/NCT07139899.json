@@ -1,0 +1,230 @@
+{
+ "protocolSection": {
+  "identificationModule": {
+   "nctId": "NCT07139899",
+   "orgStudyIdInfo": {
+    "id": "Pro00117680"
+   },
+   "organization": {
+    "fullName": "Duke University",
+    "class": "OTHER"
+   },
+   "briefTitle": "Downstream Effects of Airway Mucus Plugs on 129Xenon MRI in Severe Asthma",
+   "officialTitle": "Downstream Effects of Airway Mucus Plugs on 129Xenon MRI Following Biologic Therapy"
+  },
+  "statusModule": {
+   "statusVerifiedDate": "2025-11",
+   "overallStatus": "RECRUITING",
+   "expandedAccessInfo": {
+    "hasExpandedAccess": false
+   },
+   "startDateStruct": {
+    "date": "2025-11-17",
+    "type": "ACTUAL"
+   },
+   "primaryCompletionDateStruct": {
+    "date": "2026-11",
+    "type": "ESTIMATED"
+   },
+   "completionDateStruct": {
+    "date": "2027-09",
+    "type": "ESTIMATED"
+   },
+   "studyFirstSubmitDate": "2025-08-18",
+   "studyFirstSubmitQcDate": "2025-08-18",
+   "studyFirstPostDateStruct": {
+    "date": "2025-08-24",
+    "type": "ACTUAL"
+   },
+   "lastUpdateSubmitDate": "2025-11-17",
+   "lastUpdatePostDateStruct": {
+    "date": "2025-11-20",
+    "type": "ACTUAL"
+   }
+  },
+  "sponsorCollaboratorsModule": {
+   "responsibleParty": {
+    "type": "SPONSOR_INVESTIGATOR",
+    "investigatorFullName": "Bastiaan Driehuys",
+    "investigatorTitle": "Professor of Radiology",
+    "investigatorAffiliation": "Duke University"
+   },
+   "leadSponsor": {
+    "name": "Bastiaan Driehuys",
+    "class": "OTHER"
+   },
+   "collaborators": [
+    {
+     "name": "University of Kansas Medical Center",
+     "class": "OTHER"
+    },
+    {
+     "name": "Polarean, Inc.",
+     "class": "INDUSTRY"
+    }
+   ]
+  },
+  "oversightModule": {
+   "oversightHasDmc": true,
+   "isFdaRegulatedDrug": true,
+   "isFdaRegulatedDevice": false
+  },
+  "descriptionModule": {
+   "briefSummary": "In this study, xenon MRI will be used to evaluate regional functional consequences of mucus plugs in the lungs of patients with severe asthma. Mucus plugs will be identified using CT imaging, and xenon MRI will be used to evaluate ventilation and gas exchange impairments in regions of the lungs corresponding to the airways downstream of mucus plugs."
+  },
+  "conditionsModule": {
+   "conditions": [
+    "Severe Asthma"
+   ],
+   "keywords": [
+    "xenon",
+    "asthma",
+    "mucus"
+   ]
+  },
+  "designModule": {
+   "studyType": "OBSERVATIONAL",
+   "patientRegistry": false,
+   "designInfo": {
+    "observationalModel": "COHORT",
+    "timePerspective": "PROSPECTIVE"
+   },
+   "enrollmentInfo": {
+    "count": 5,
+    "type": "ESTIMATED"
+   }
+  },
+  "armsInterventionsModule": {
+   "interventions": [
+    {
+     "type": "COMBINATION_PRODUCT",
+     "name": "Hyperpolarized Xenon 129",
+     "description": "Pulmonary magnetic resonance imaging using hyperpolarized xenon-129 gas as an inhaled contrast agent"
+    }
+   ]
+  },
+  "outcomesModule": {
+   "primaryOutcomes": [
+    {
+     "measure": "Ventilation Defect in Mucus-blocked regions",
+     "description": "The primary endpoint of this study is the ventilation defect percent (VDP; measured by Xe-MRI) in regions of the lungs that are downstream of mucus plugs (identified on CT imaging).",
+     "timeFrame": "12 weeks"
+    }
+   ],
+   "secondaryOutcomes": [
+    {
+     "measure": "Change in VDP",
+     "description": "The change in VDP downstream of mucus plugs 4 weeks following initiation of biologic therapy.",
+     "timeFrame": "4 weeks"
+    },
+    {
+     "measure": "Long term change in VDP",
+     "description": "Change in VDP downstream of mucus plugs 12 weeks following initiation of biologic therapy",
+     "timeFrame": "12 weeks"
+    }
+   ]
+  },
+  "eligibilityModule": {
+   "eligibilityCriteria": "Inclusion Criteria:\n\n* Adequate completion of informed consent process with written documentation\n* Patients 18 - 65 years old\n* Physician diagnosis of asthma for \\> 1 year\n* Able to perform reproducible spirometry according to ATS criteria based on clinical PFTs within previous 30 days of enrollment\n* All racial/ethnic backgrounds may participate\n* Blood eosinophil count \\> 300 cells/μL\n* Smoking history \\<10 pack years\n* No smoking history (including vapes, cigar, or marijuana use) in the last 3 months\n* About to initiate asthma therapy with either dupilumab, tezepelumab, or benralizumab as part of their standard of care\n\nExclusion Criteria:\n\n* Respiratory tract infection within the 4 weeks prior to Visit 1\n* Body mass index (BMI) \\> 30 at Visit 1\n* One-time doses such as intra-articular injections require a 4-week washout prior to Visit 1\n* Asthma-related ER visit within the previous 4 weeks of Visit 1 or at any time while on the study\n* Significant concomitant medical illness, including (but not limited to) heart disease, cancer, uncontrolled diabetes, other chronic lung diseases (determined by the Investigator.)\n* Resting O2 saturation \\<90% with maximum supplemental O2 delivered by nasal cannula\n* Positive urine pregnancy test at Visit 1 or at any time while on the study\n* Participation in an intervention study (including bronchoscopy) or use of investigative drugs within the past 30 days or plans to enroll in such a trial during the study\n* Unable or unlikely to complete study assessments in the opinion of the Investigator\n* Study intervention poses undue risk to patient in the opinion of the Investigator\n* Conditions that will prohibit MRI scanning determined by the MRI safety screening.",
+   "healthyVolunteers": false,
+   "sex": "ALL",
+   "minimumAge": "18 Years",
+   "maximumAge": "65 Years",
+   "stdAges": [
+    "ADULT",
+    "OLDER_ADULT"
+   ],
+   "studyPopulation": "Patients with High T2 Severe Asthma",
+   "samplingMethod": "NON_PROBABILITY_SAMPLE"
+  },
+  "contactsLocationsModule": {
+   "centralContacts": [
+    {
+     "name": "David Mummy, PhD",
+     "role": "CONTACT",
+     "phone": "9846847783",
+     "email": "david.mummy@duke.edu"
+    },
+    {
+     "name": "Bastiaan Driehuys, PhD",
+     "role": "CONTACT",
+     "phone": "919-684-7786",
+     "email": "bastiaan.driehuys@duke.edu"
+    }
+   ],
+   "overallOfficials": [
+    {
+     "name": "David Mummy, PhD",
+     "affiliation": "Duke University",
+     "role": "PRINCIPAL_INVESTIGATOR"
+    }
+   ],
+   "locations": [
+    {
+     "facility": "Duke University Medical Center",
+     "status": "RECRUITING",
+     "city": "Durham",
+     "state": "North Carolina",
+     "zip": "27713",
+     "country": "United States",
+     "geoPoint": {
+      "lat": 35.99403,
+      "lon": -78.89862
+     }
+    }
+   ]
+  },
+  "ipdSharingStatementModule": {
+   "ipdSharing": "YES",
+   "description": "Images from participants will be shared, alongside pulmonary function testing data and basic demographics."
+  }
+ },
+ "derivedSection": {
+  "miscInfoModule": {
+   "versionHolder": "2026-11-03"
+  },
+  "conditionBrowseModule": {
+   "meshes": [
+    {
+     "id": "D001249",
+     "term": "Asthma"
+    }
+   ],
+   "ancestors": [
+    {
+     "id": "D001982",
+     "term": "Bronchial Diseases"
+    },
+    {
+     "id": "D012140",
+     "term": "Respiratory Tract Diseases"
+    },
+    {
+     "id": "D008173",
+     "term": "Lung Diseases, Obstructive"
+    },
+    {
+     "id": "D008171",
+     "term": "Lung Diseases"
+    },
+    {
+     "id": "D012130",
+     "term": "Respiratory Hypersensitivity"
+    },
+    {
+     "id": "D006969",
+     "term": "Hypersensitivity, Immediate"
+    },
+    {
+     "id": "D006967",
+     "term": "Hypersensitivity"
+    },
+    {
+     "id": "D007154",
+     "term": "Immune System Diseases"
+    }
+   ]
+  }
+ },
+ "hasResults": false
+}

@@ -1,1 +1,1 @@
-﻿patient_id,trial_id,criterion_id,final_askable,final_tier,h_strict,h_any,adjudication_note
+﻿patient_id,trial_id,criterion_id,final_askable,final_centrality,final_centrality_evidence,final_core_part,final_core_info,h_strict,h_any,adjudication_note

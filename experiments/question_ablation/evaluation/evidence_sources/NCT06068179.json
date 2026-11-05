@@ -1,0 +1,398 @@
+{
+ "protocolSection": {
+  "identificationModule": {
+   "nctId": "NCT06068179",
+   "orgStudyIdInfo": {
+    "id": "XMFHIIT-2023SL059"
+   },
+   "organization": {
+    "fullName": "The First Affiliated Hospital of Xiamen University",
+    "class": "OTHER"
+   },
+   "briefTitle": "Graves' Disease Remission Study: MycoMeth Combo",
+   "officialTitle": "The Efficacy and Safety of Combining Mycophenolate Mofetil With Methimazole on Remission of Newly Diagnosis Graves' Disease (3M-RGD Trial): an Open-label, Randomized Trial",
+   "acronym": "3M-RGD"
+  },
+  "statusModule": {
+   "statusVerifiedDate": "2023-09",
+   "overallStatus": "UNKNOWN",
+   "lastKnownStatus": "RECRUITING",
+   "expandedAccessInfo": {
+    "hasExpandedAccess": false
+   },
+   "startDateStruct": {
+    "date": "2023-10-16",
+    "type": "ACTUAL"
+   },
+   "primaryCompletionDateStruct": {
+    "date": "2025-10-08",
+    "type": "ESTIMATED"
+   },
+   "completionDateStruct": {
+    "date": "2026-10-08",
+    "type": "ESTIMATED"
+   },
+   "studyFirstSubmitDate": "2023-09-28",
+   "studyFirstSubmitQcDate": "2023-09-28",
+   "studyFirstPostDateStruct": {
+    "date": "2023-10-05",
+    "type": "ACTUAL"
+   },
+   "lastUpdateSubmitDate": "2024-02-27",
+   "lastUpdatePostDateStruct": {
+    "date": "2024-02-28",
+    "type": "ACTUAL"
+   }
+  },
+  "sponsorCollaboratorsModule": {
+   "responsibleParty": {
+    "type": "SPONSOR"
+   },
+   "leadSponsor": {
+    "name": "The First Affiliated Hospital of Xiamen University",
+    "class": "OTHER"
+   }
+  },
+  "oversightModule": {
+   "oversightHasDmc": false,
+   "isFdaRegulatedDrug": false,
+   "isFdaRegulatedDevice": false
+  },
+  "descriptionModule": {
+   "briefSummary": "A randomized study to evaluate the efficacy and safety of combining mycophenolate mofetil with methimazole in patients with newly diagnosed Graves' disease.",
+   "detailedDescription": "The remission rate of methimazole standard therapy in patients with newly diagnosed Graves' disease is only around 50%. Main reason for the low remission rate is methimazole therapy is not a drug targeting etiology of Graves' disease. The investigators hypothesize that adding mycophenolate mofetil, an immunosuppressor, to methimazole standard therapy will improve remission rate. The study will evaluate the efficacy and safety of combining mycophenolate mofetil with methimazole in patients with newly diagnosed Graves' disease. 205 eligible patients will be randomized to mycophenolate mofetil combined with methimazole therapy or methimazole standard therapy. The primary outcome is the remission rate at 12 months."
+  },
+  "conditionsModule": {
+   "conditions": [
+    "Graves' Disease"
+   ],
+   "keywords": [
+    "Newly Diagnosed Graves' Disease",
+    "Mycophenolate Mofetil",
+    "Methimazole",
+    "Remission"
+   ]
+  },
+  "designModule": {
+   "studyType": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2",
+    "PHASE3"
+   ],
+   "designInfo": {
+    "allocation": "RANDOMIZED",
+    "interventionModel": "PARALLEL",
+    "interventionModelDescription": "Eligible patients will be randomly assigned to intervention group (Mycophenolate Mofetil combine with methimazole) or control group (methimazole standard therapy) for 12 months.",
+    "primaryPurpose": "TREATMENT",
+    "maskingInfo": {
+     "masking": "SINGLE",
+     "maskingDescription": "The study grouping will be blinded to outcomes assessor.",
+     "whoMasked": [
+      "OUTCOMES_ASSESSOR"
+     ]
+    }
+   },
+   "enrollmentInfo": {
+    "count": 205,
+    "type": "ESTIMATED"
+   }
+  },
+  "armsInterventionsModule": {
+   "armGroups": [
+    {
+     "label": "intervention group",
+     "type": "EXPERIMENTAL",
+     "description": "Mycophenolate Mofetil 0.5 twice daily for 12 months added to methimazole standard therapy.",
+     "interventionNames": [
+      "Drug: Mycophenolate Mofetil, Oral, 250 Mg",
+      "Drug: methimazole, oral, 10mg"
+     ]
+    },
+    {
+     "label": "control group",
+     "type": "ACTIVE_COMPARATOR",
+     "description": "Methimazole 15-30mg daily initially, then titrate to maintenance dose. Beta-blocker used when necessary.",
+     "interventionNames": [
+      "Drug: methimazole, oral, 10mg"
+     ]
+    }
+   ],
+   "interventions": [
+    {
+     "type": "DRUG",
+     "name": "Mycophenolate Mofetil, Oral, 250 Mg",
+     "description": "Mycophenolate Mofetil, Oral, 500Mg twice daily for 12 months, combined with methimazole standard therapy",
+     "armGroupLabels": [
+      "intervention group"
+     ]
+    },
+    {
+     "type": "DRUG",
+     "name": "methimazole, oral, 10mg",
+     "description": "Methimazole 15-30mg daily initially then titrate to maintenance dose.",
+     "armGroupLabels": [
+      "control group",
+      "intervention group"
+     ]
+    }
+   ]
+  },
+  "outcomesModule": {
+   "primaryOutcomes": [
+    {
+     "measure": "Remission rate",
+     "description": "Remission is defined as normal thyroid function, TRAb level at methimazole maintenance dose",
+     "timeFrame": "12 months"
+    }
+   ]
+  },
+  "eligibilityModule": {
+   "eligibilityCriteria": "Inclusion Criteria:\n\n\\- 1. aged 18 to 60 years.\n\n2\\. Patients newly diagnosed with Graves' disease.\n\nExclusion Criteria:\n\n* 1\\. Patients with Graves' disease who have undergone treatment or experienced relapse.\n\n  2\\. Hyperthyroidism due to other etiologies (toxic multinodular goiter, toxic thyroid adenoma, Hashimoto's thyroiditis, subacute thyroiditis, iodine-induced hyperthyroidism, etc.).\n\n  3\\. Individuals requiring intervention for moderate to severe thyroid eye disease at the time of enrollment.\n\n  4\\. Patients with hyperthyroidism requiring surgery due to concurrent thyroid cancer.\n\n  5\\. Those with severe liver or kidney dysfunction (ALT or AST \\> 3 times the upper limit of normal reference values, blood creatinine \\> 135 mol/L for males, and 110 mol/L for females).\n\n  6\\. Individuals with leukopenia (WBC \\< 3.0×109/L).\n\n  7\\. Patients with severe heart failure (NYHA class III or IV).\n\n  8\\. Individuals with chronic or severe infections such as pulmonary tuberculosis, hepatitis B, etc.\n\n  9\\. Pregnant women, breastfeeding women, those planning pregnancy in the near future, or individuals who cannot comply with contraception during trial.\n\n  10\\. Participants in or previously involved in other clinical studies.\n\n  11\\. Individuals unwilling or unable to comply with follow-up or unwilling to participate.",
+   "healthyVolunteers": false,
+   "sex": "ALL",
+   "minimumAge": "18 Years",
+   "maximumAge": "60 Years",
+   "stdAges": [
+    "ADULT"
+   ]
+  },
+  "contactsLocationsModule": {
+   "centralContacts": [
+    {
+     "name": "Fangsen Xiao, MD",
+     "role": "CONTACT",
+     "phone": "+8613859955389",
+     "email": "xfs888@163.com"
+    },
+    {
+     "name": "Liyin Wang, MM",
+     "role": "CONTACT",
+     "phone": "+8613950139047",
+     "email": "wlywly1979@163.com"
+    }
+   ],
+   "overallOfficials": [
+    {
+     "name": "Fangsen Xiao, MD",
+     "affiliation": "The first affiliated hospital of Xiamen University Medical College",
+     "role": "PRINCIPAL_INVESTIGATOR"
+    }
+   ],
+   "locations": [
+    {
+     "facility": "Xiao Fangsen",
+     "status": "RECRUITING",
+     "city": "Xiamen",
+     "state": "Fujian",
+     "zip": "361003",
+     "country": "China",
+     "contacts": [
+      {
+       "name": "Fangsen Xiao, MD",
+       "role": "CONTACT",
+       "phone": "+8613859955389",
+       "email": "xfs888@163.com"
+      },
+      {
+       "name": "Liyin Wang, MM",
+       "role": "CONTACT",
+       "phone": "+8613950139047",
+       "email": "wlywly1979@163.com"
+      }
+     ],
+     "geoPoint": {
+      "lat": 24.47979,
+      "lon": 118.08187
+     }
+    }
+   ]
+  },
+  "referencesModule": {
+   "references": [
+    {
+     "pmid": "32616746",
+     "type": "RESULT",
+     "citation": "Davies TF, Andersen S, Latif R, Nagayama Y, Barbesino G, Brito M, Eckstein AK, Stagnaro-Green A, Kahaly GJ. Graves' disease. Nat Rev Dis Primers. 2020 Jul 2;6(1):52. doi: 10.1038/s41572-020-0184-y."
+    },
+    {
+     "pmid": "26670972",
+     "type": "RESULT",
+     "citation": "Burch HB, Cooper DS. Management of Graves Disease: A Review. JAMA. 2015 Dec 15;314(23):2544-54. doi: 10.1001/jama.2015.16535."
+    },
+    {
+     "pmid": "27797318",
+     "type": "RESULT",
+     "citation": "Smith TJ, Hegedus L. Graves' Disease. N Engl J Med. 2016 Oct 20;375(16):1552-1565. doi: 10.1056/NEJMra1510030. No abstract available."
+    },
+    {
+     "pmid": "32929476",
+     "type": "RESULT",
+     "citation": "Kahaly GJ. Management of Graves Thyroidal and Extrathyroidal Disease: An Update. J Clin Endocrinol Metab. 2020 Dec 1;105(12):3704-20. doi: 10.1210/clinem/dgaa646."
+    },
+    {
+     "pmid": "30912336",
+     "type": "RESULT",
+     "citation": "Wiersinga WM. Graves' Disease: Can It Be Cured? Endocrinol Metab (Seoul). 2019 Mar;34(1):29-38. doi: 10.3803/EnM.2019.34.1.29."
+    },
+    {
+     "pmid": "27521067",
+     "type": "RESULT",
+     "citation": "Ross DS, Burch HB, Cooper DS, Greenlee MC, Laurberg P, Maia AL, Rivkees SA, Samuels M, Sosa JA, Stan MN, Walter MA. 2016 American Thyroid Association Guidelines for Diagnosis and Management of Hyperthyroidism and Other Causes of Thyrotoxicosis. Thyroid. 2016 Oct;26(10):1343-1421. doi: 10.1089/thy.2016.0229."
+    },
+    {
+     "pmid": "34598995",
+     "type": "RESULT",
+     "citation": "Torlinska B, Hazlehurst JM, Nirantharakumar K, Thomas GN, Priestley JR, Finnikin SJ, Saunders P, Abrams KR, Boelaert K. wEight chanGes, caRdio-mEtabolic risks and morTality in patients with hyperthyroidism (EGRET): a protocol for a CPRD-HES linked cohort study. BMJ Open. 2021 Oct 1;11(10):e055219. doi: 10.1136/bmjopen-2021-055219."
+    },
+    {
+     "pmid": "32055040",
+     "type": "RESULT",
+     "citation": "Broen JCA, van Laar JM. Mycophenolate mofetil, azathioprine and tacrolimus: mechanisms in rheumatology. Nat Rev Rheumatol. 2020 Mar;16(3):167-178. doi: 10.1038/s41584-020-0374-8. Epub 2020 Feb 13."
+    },
+    {
+     "pmid": "27272078",
+     "type": "RESULT",
+     "citation": "Prussick L, Plotnikova N, Gottlieb A. Mycophenolate Mofetil in Severe Atopic Dermatitis: A Review. J Drugs Dermatol. 2016 Jun 1;15(6):715-8."
+    },
+    {
+     "pmid": "36346684",
+     "type": "RESULT",
+     "citation": "Barbesino G, Salvi M, Freitag SK. Future Projections in Thyroid Eye Disease. J Clin Endocrinol Metab. 2022 Aug 8;107(Suppl_1):S47-S56. doi: 10.1210/clinem/dgac252."
+    },
+    {
+     "pmid": "29396246",
+     "type": "RESULT",
+     "citation": "Kahaly GJ, Riedl M, Konig J, Pitz S, Ponto K, Diana T, Kampmann E, Kolbe E, Eckstein A, Moeller LC, Fuhrer D, Salvi M, Curro N, Campi I, Covelli D, Leo M, Marino M, Menconi F, Marcocci C, Bartalena L, Perros P, Wiersinga WM; European Group on Graves' Orbitopathy (EUGOGO). Mycophenolate plus methylprednisolone versus methylprednisolone alone in active, moderate-to-severe Graves' orbitopathy (MINGO): a randomised, observer-masked, multicentre trial. Lancet Diabetes Endocrinol. 2018 Apr;6(4):287-298. doi: 10.1016/S2213-8587(18)30020-2. Epub 2018 Jan 31."
+    },
+    {
+     "pmid": "35223896",
+     "type": "RESULT",
+     "citation": "Rajabi MT, Rafizadeh SM, Mohammadi A, Eshraghi B, Mohammadi N, Hosseini SS, Rajabi MB, Keshmirshekan MM, Shahriari M, Poursayed Lazarjani SZ, Parandin MM. Mycophenolate Mofetil (CellCept(R)) in Combination With Low Dose Prednisolone in Moderate to Severe Graves' Orbitopathy. Front Med (Lausanne). 2022 Feb 11;9:788228. doi: 10.3389/fmed.2022.788228. eCollection 2022."
+    },
+    {
+     "pmid": "35959915",
+     "type": "RESULT",
+     "citation": "Feng W, Hu Y, Zhang C, Shi H, Zhang P, Yang Y, Chen S, Cui W, Cui D. Efficacy and safety of mycophenolate mofetil in the treatment of moderate to severe Graves' orbitopathy: a meta-analysis. Bioengineered. 2022 Jun;13(6):14719-14729. doi: 10.1080/21655979.2022.2101191."
+    }
+   ]
+  },
+  "ipdSharingStatementModule": {
+   "ipdSharing": "NO",
+   "description": "No plan to share IPD"
+  }
+ },
+ "derivedSection": {
+  "miscInfoModule": {
+   "versionHolder": "2026-11-03"
+  },
+  "conditionBrowseModule": {
+   "meshes": [
+    {
+     "id": "D006111",
+     "term": "Graves Disease"
+    }
+   ],
+   "ancestors": [
+    {
+     "id": "D005094",
+     "term": "Exophthalmos"
+    },
+    {
+     "id": "D009916",
+     "term": "Orbital Diseases"
+    },
+    {
+     "id": "D005128",
+     "term": "Eye Diseases"
+    },
+    {
+     "id": "D006042",
+     "term": "Goiter"
+    },
+    {
+     "id": "D013959",
+     "term": "Thyroid Diseases"
+    },
+    {
+     "id": "D004700",
+     "term": "Endocrine System Diseases"
+    },
+    {
+     "id": "D006980",
+     "term": "Hyperthyroidism"
+    },
+    {
+     "id": "D001327",
+     "term": "Autoimmune Diseases"
+    },
+    {
+     "id": "D007154",
+     "term": "Immune System Diseases"
+    }
+   ]
+  },
+  "interventionBrowseModule": {
+   "meshes": [
+    {
+     "id": "D009173",
+     "term": "Mycophenolic Acid"
+    },
+    {
+     "id": "D008713",
+     "term": "Methimazole"
+    }
+   ],
+   "ancestors": [
+    {
+     "id": "D002208",
+     "term": "Caproates"
+    },
+    {
+     "id": "D000144",
+     "term": "Acids, Acyclic"
+    },
+    {
+     "id": "D002264",
+     "term": "Carboxylic Acids"
+    },
+    {
+     "id": "D009930",
+     "term": "Organic Chemicals"
+    },
+    {
+     "id": "D005227",
+     "term": "Fatty Acids"
+    },
+    {
+     "id": "D008055",
+     "term": "Lipids"
+    },
+    {
+     "id": "D013438",
+     "term": "Sulfhydryl Compounds"
+    },
+    {
+     "id": "D013457",
+     "term": "Sulfur Compounds"
+    },
+    {
+     "id": "D007093",
+     "term": "Imidazoles"
+    },
+    {
+     "id": "D001393",
+     "term": "Azoles"
+    },
+    {
+     "id": "D006573",
+     "term": "Heterocyclic Compounds, 1-Ring"
+    },
+    {
+     "id": "D006571",
+     "term": "Heterocyclic Compounds"
+    }
+   ]
+  }
+ },
+ "hasResults": false
+}

@@ -7,9 +7,9 @@
     "overgroup": ["PASS", "FAIL", "UNSURE", "NA"],
     "preservation": ["PASS", "FAIL", "UNSURE", "NA"],
     "coverage": ["FULL", "PARTIAL", "NONE", "UNSURE"],
+    "core_coverage": ["FULL", "PARTIAL", "NONE", "UNSURE", "NA"],
     "group_validity": ["VALID", "INVALID", "UNSURE", "NA"],
     "askable": ["ASK_PATIENT", "ASK_RECORD", "NOT_OBTAINABLE", "UNSURE"],
-    "decisiveness": ["0", "1", "2", "UNSURE"],
     "centrality": ["0", "1", "2", "UNSURE"],
     "simulator_code": ["S0", "S1", "S2", "S3", "S4"]
   },
@@ -51,18 +51,25 @@
   },
   "link_columns": {
     "given": ["blind_id", "patient_id", "question_no", "trial_id", "criterion_id", "criterion_type", "criterion_text",
-              "question_text", "needed_info", "is_multi_link"],
-    "rated": ["preservation", "coverage", "group_validity", "error_codes", "rationale", "unsure_reason", "rater_id",
-              "needs_review"]
+              "core_part", "core_info", "question_text", "needed_info", "is_multi_link"],
+    "rated": ["preservation", "coverage", "core_coverage", "group_validity", "error_codes", "rationale", "unsure_reason",
+              "rater_id", "needs_review"]
   },
   "preannotation_columns": {
     "given": ["annotation_id", "patient_id", "patient_text", "trial_id", "trial_status", "criterion_id",
               "criterion_type", "criterion_text", "initial_verdict", "is_candidate"],
-    "rated": ["askable", "decisiveness", "centrality", "rationale", "unsure_reason", "rater_id", "needs_review"]
+    "rated": ["askable", "centrality", "centrality_evidence", "core_part", "core_info", "rationale",
+              "unsure_reason", "rater_id", "needs_review"]
   },
+  "core_part_whole": "전체",
   "cluster_columns": ["cluster_id", "patient_id", "shared_fact", "trial_id", "criterion_id", "rationale", "rater_id"],
-  "preannotation_final_columns": ["patient_id", "trial_id", "criterion_id", "final_askable", "final_tier", "h_strict",
-                                  "h_any", "adjudication_note"],
+  "preannotation_final_columns": ["patient_id", "trial_id", "criterion_id", "final_askable", "final_centrality",
+                                  "final_centrality_evidence", "final_core_part", "final_core_info", "h_strict", "h_any",
+                                  "adjudication_note"],
+  "safety_evidence_columns": ["evidence_id", "trial_id", "criterion_ids", "intervention", "source",
+                              "source_version_or_accessed", "quoted_text", "relation_to_intervention", "reason_for_2",
+                              "prepared_by", "review_status", "reviewed_by", "fixed_date"],
+  "safety_evidence_status": ["작성·검토 대기", "고정", "제외"],
   "rater_registry_columns": ["rater_id", "role", "gold_exposed", "exposure_scope", "note"],
   "adjudication_columns": ["sheet", "item_key", "field", "rater1_id", "rater1_value", "rater2_id", "rater2_value",
                            "final_value", "reason", "adjudicator_id"],

@@ -39,12 +39,12 @@ def scored_rows(rater="R-SYN"):
                           "criterion_text": CASES["criteria"][x["c"]]["text"], "is_multi_link": int(len(q["links"]) > 1),
                           "preservation": x["preservation"], "coverage": x["coverage"],
                           "group_validity": x["group_validity"], "error_codes": x.get("error_codes", ""),
-                          "rationale": q.get("why", "근거") if need_why else ""})
+                          "rationale": q.get("why", "근거") if need_why else "", "core_coverage": "NA"})
     return qrows, lrows
 
 
 def annotation():
-    return {tuple(k.split("|")): {**v, "candidate": True, "tier": ""} for k, v in CASES["annotation"].items()}
+    return {tuple(k.split("|")): {**v, "candidate": True} for k, v in CASES["annotation"].items()}
 
 
 def clusters():
@@ -83,6 +83,100 @@ class Cases(unittest.TestCase):
         _, links = scored_rows()
         r = next(x for x in links if x["criterion_id"] == "E3" and x["trial_id"] == "NCT00000001")
         self.assertEqual((r["preservation"], r["coverage"]), ("PASS", "PARTIAL"))
+
+    def h_link(self):
+        """H 기준(NCT00000001 I1)의 연결 1건과 기준 지표."""
+        q, l = scored_rows()
+        r = next(x for x in l if (x["trial_id"], x["criterion_id"]) == ("NCT00000001", "I1"))
+        return q, l, r, sc.set_metrics(q, l, annotation(), clusters())
+
+    def test_whole_core_possession_only_counts_for_m3_not_m4a(self):
+        """M2-B: 기준 전체가 핵심 부분인 H도 평가자가 core_coverage를 판단한다. 보유 여부만 물으면 핵심 NONE,
+        원기준 coverage(M3)는 기존 정의대로 PARTIAL(C3)로 남는다. 별도의 C3 예외 규칙은 없다."""
+        q, l, r, base = self.h_link()
+        r.update(core_part=sc.WHOLE, coverage="PARTIAL", error_codes="C3", rationale="보유 여부만", core_coverage="NONE")
+        got = sc.set_metrics(q, l, annotation(), clusters())
+        self.assertEqual(sc.validate(q, l), [])
+        self.assertLess(got["M4a"], base["M4a"])
+        self.assertAlmostEqual(got["M3b"], base["M3b"])
+        r.update(core_coverage="PARTIAL")              # 평가자가 핵심 정보 일부 요청으로 판단하면 커버
+        self.assertAlmostEqual(sc.set_metrics(q, l, annotation(), clusters())["M4a"], base["M4a"])
+
+    def test_non_core_part_only_is_excluded_from_m4a(self):
+        """원안 5절 가상 예시: 핵심 부분이 일부인 H 기준에서 비핵심 부분만 물으면 M4a 제외, M3에는 포함."""
+        q, l, r, base = self.h_link()
+        r.update(core_part="질환 확진 조건", coverage="PARTIAL", error_codes="C2", rationale="방문 가능 여부만",
+                 core_coverage="NONE")
+        got = sc.set_metrics(q, l, annotation(), clusters())
+        self.assertEqual(sc.validate(q, l), [])
+        self.assertLess(got["M4a"], base["M4a"])
+        self.assertAlmostEqual(got["M3b"], base["M3b"])
+        r.update(core_coverage="PARTIAL")                     # 핵심 부분 일부 질문 → 포함
+        self.assertAlmostEqual(sc.set_metrics(q, l, annotation(), clusters())["M4a"], base["M4a"])
+        r.update(core_coverage="FULL")                        # 핵심 부분 전부, 원기준은 PARTIAL → 보조값 포함
+        got = sc.set_metrics(q, l, annotation(), clusters())
+        self.assertAlmostEqual(got["M4a_core_full"], base["M4a_core_full"])
+        self.assertAlmostEqual(got["M3c"], base["M3c"] - 1 / 10)   # 원기준 완전 커버(M3c)는 기존 정의대로 빠진다
+
+    def test_core_coverage_rules(self):
+        cases = [({"core_part": "x", "core_coverage": "NA"}, "core_coverage 필요"),
+                 ({"core_coverage": "FULL"}, "NA"),
+                 ({"core_part": "x", "core_coverage": "PARTIAL"}, "원기준 FULL"),
+                 ({"core_part": "x", "core_coverage": "UNSURE"}, "사유")]
+        for change, msg in cases:
+            q, l = scored_rows()
+            l[0].update(change)
+            self.assertTrue(any(msg in e for e in sc.validate(q, l)), change)
+        q, l, r, _ = self.h_link()
+        r.update(core_part=sc.WHOLE, coverage="PARTIAL", error_codes="C2", rationale="일부", core_coverage="FULL")
+        self.assertTrue(any("기준 전체가 핵심" in e for e in sc.validate(q, l)))
+
+    def test_unsure_core_coverage_is_lower_and_upper_bound(self):
+        """M1-A: 주 값은 확인된 커버의 하한, 상한은 미해소 UNSURE를 커버로 본 값. UNSURE를 미커버로 확정하지 않는다."""
+        q, l, r, base = self.h_link()
+        r.update(core_part="x", core_coverage="UNSURE", unsure_reason="대응 불명확")
+        got = sc.set_metrics(q, l, annotation(), clusters())
+        self.assertEqual(got["n_H_core_unsure"], 1)
+        self.assertLess(got["M4a"], base["M4a"])
+        self.assertAlmostEqual(got["M4a_unsure_upper"], base["M4a"])
+
+    def test_unsure_not_double_counted_when_another_link_covers(self):
+        """같은 기준의 다른 연결에서 커버가 확인되면 UNSURE 건수에 넣지 않고, 상한에서도 한 번만 센다."""
+        q, l, r, base = self.h_link()
+        r.update(core_part="x", core_coverage="PARTIAL", coverage="PARTIAL", error_codes="C2", rationale="일부")
+        twin = dict(r, question_no=2, core_coverage="UNSURE", unsure_reason="대응 불명확")
+        got = sc.set_metrics(q, l + [twin], annotation(), clusters())
+        self.assertEqual(got["n_H_core_unsure"], 0)
+        self.assertAlmostEqual(got["M4a"], got["M4a_unsure_upper"])
+        r.update(core_coverage="UNSURE", unsure_reason="대응 불명확")
+        got = sc.set_metrics(q, l + [twin], annotation(), clusters())
+        self.assertEqual(got["n_H_core_unsure"], 1)
+        self.assertAlmostEqual(got["M4a_unsure_upper"] - got["M4a"], 1 / got["n_H"])
+
+    def test_zero_h_gives_no_m4a_value_but_other_metrics(self):
+        """M5-B: H가 0개이면 M4a 계열은 값 없음, n_H=0. 다른 지표는 계산된다."""
+        ann = annotation()
+        for a in ann.values():
+            a.update(h_strict=False, h_any=False)
+        got = sc.set_metrics(*scored_rows(), ann, clusters())
+        self.assertEqual(got["n_H"], 0)
+        for key in ("M4a", "M4a_core_full", "M4a_unsure_upper", "M4a_any", "M4b"):
+            self.assertIsNone(got[key], key)
+        self.assertIsNotNone(got["M3b"])
+
+    def test_centrality_strata(self):
+        ann = annotation()
+        for a in ann.values():
+            a.update(centrality="2" if a["h_strict"] else "1")
+        got = sc.set_metrics(*scored_rows(), ann, clusters())
+        uv1 = [k for k, a in ann.items() if a["askable"] != "NOT_OBTAINABLE" and a["centrality"] == "1"]
+        self.assertEqual((got["n_H"], len(uv1)), (4, 6))
+        self.assertIsNotNone(got["M3b_c1"])
+        self.assertIsNone(got["M3b_c0"])
+        self.assertNotIn("M4a_v1", got)          # M7-B: v1 정의는 필수 분석에서 제외
+
+    def test_core_definition(self):
+        self.assertEqual([sc.is_core(c) for c in ("2", "1", "0", "UNSURE", "")], [True, False, False, False, False])
 
     def test_zero_denominator_is_none(self):
         q, l = scored_rows()
@@ -187,12 +281,6 @@ class Agreement(unittest.TestCase):
 
 
 class Metrics(unittest.TestCase):
-    def test_tier_rule(self):
-        self.assertEqual(sc.impact_tier("2", "1"), "H")
-        self.assertEqual(sc.impact_tier("1", "1"), "M")
-        self.assertEqual(sc.impact_tier("0", "1"), "L")
-        self.assertEqual(sc.impact_tier("UNSURE", "2"), "")
-
     def test_stability(self):
         self.assertAlmostEqual(sc.stability([[["a", "1"]], [["a", "1"]], [["a", "1"], ["a", "2"]]]), 2 / 3)
         self.assertIsNone(sc.stability([[], [], []]))

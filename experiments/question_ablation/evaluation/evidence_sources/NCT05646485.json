@@ -1,0 +1,355 @@
+{
+ "protocolSection": {
+  "identificationModule": {
+   "nctId": "NCT05646485",
+   "orgStudyIdInfo": {
+    "id": "STU-2022-1042"
+   },
+   "organization": {
+    "fullName": "University of Texas Southwestern Medical Center",
+    "class": "OTHER"
+   },
+   "briefTitle": "Bladder Cancer Screening Trial",
+   "officialTitle": "Optimal Screening Strategy for Bladder Cancer in at Risk Patients"
+  },
+  "statusModule": {
+   "statusVerifiedDate": "2026-04",
+   "overallStatus": "RECRUITING",
+   "expandedAccessInfo": {
+    "hasExpandedAccess": false
+   },
+   "startDateStruct": {
+    "date": "2023-05-05",
+    "type": "ACTUAL"
+   },
+   "primaryCompletionDateStruct": {
+    "date": "2027-04",
+    "type": "ESTIMATED"
+   },
+   "completionDateStruct": {
+    "date": "2028-04",
+    "type": "ESTIMATED"
+   },
+   "studyFirstSubmitDate": "2022-12-01",
+   "studyFirstSubmitQcDate": "2022-12-01",
+   "studyFirstPostDateStruct": {
+    "date": "2022-12-12",
+    "type": "ACTUAL"
+   },
+   "lastUpdateSubmitDate": "2026-04-27",
+   "lastUpdatePostDateStruct": {
+    "date": "2026-05-01",
+    "type": "ACTUAL"
+   }
+  },
+  "sponsorCollaboratorsModule": {
+   "responsibleParty": {
+    "type": "PRINCIPAL_INVESTIGATOR",
+    "investigatorFullName": "yair lotan",
+    "investigatorTitle": "Professor-Urology",
+    "investigatorAffiliation": "University of Texas Southwestern Medical Center"
+   },
+   "leadSponsor": {
+    "name": "University of Texas Southwestern Medical Center",
+    "class": "OTHER"
+   },
+   "collaborators": [
+    {
+     "name": "Wilson Charitable Foundation Trust",
+     "class": "UNKNOWN"
+    },
+    {
+     "name": "Pacific Edge Limited",
+     "class": "INDUSTRY"
+    }
+   ]
+  },
+  "oversightModule": {
+   "oversightHasDmc": false,
+   "isFdaRegulatedDrug": false,
+   "isFdaRegulatedDevice": true,
+   "isUsExport": true
+  },
+  "descriptionModule": {
+   "briefSummary": "There is currently no accepted screening strategy for patients at high risk of developing bladder cancer. This study will ask patients to complete a urine test every 6 months for 2 years to help assess if routine screening helps finding bladder cancer at an earlier stage.",
+   "detailedDescription": "Bladder cancer is the 4th most common cancer in men and 6th most common cancer overall with over 80,000 new cases in the US per year. The most common causes of bladder cancer are smoking and it is usually found in patients over the age of 50. By the time it is diagnosed, the disease is often advanced since there are few warning signs other than seeing blood in the urine.\n\nScreening is currently accepted practice for colon, cervical, and breast cancer. However, there is not an accepted screening methodology for bladder cancer. Bladder cancer is currently detected in 2-5% of patients who have microhematuria on routine urinalysis, a cheap, non-invasive test obtained by many primary care physicians. Bladder cancer diagnosed by microscopic blood on urinalysis is often lower stage than patients diagnosed with visible blood. Urine testing, therefore, offers a simple screening mechanism that can be tailored to patients at higher risk for bladder cancer based on age, tobacco exposure and other risk factors. In conjunction with routine traditional urinalysis testing, there are advances in urine molecular markers which utilize protein and genetic alterations resulting in a higher sensitivity and specificity for the detection of bladder cancer. Markers have not been evaluated for screening in high-risk populations, and there is a gap in knowledge of the most accurate screening method.\n\nEarly detection of bladder cancer has the potential to identify disease at an earlier stage resulting in a lower burden of treatment, improved quality of life, and improved survival.\n\nThis study will prospectively screen patients at high risk for the development of bladder cancer at bi-annual intervals with a commonly available urinalysis test that assess for microhematuria and urine based molecular markers.\n\nThis is a single arm study. The outcomes from the experimental arm will be compared to a historical control (bladder cancer detected by standard of care using SEER registries)."
+  },
+  "conditionsModule": {
+   "conditions": [
+    "Bladder Cancer",
+    "Urothelial Carcinoma",
+    "Hematuria",
+    "Smoking Cessation"
+   ]
+  },
+  "designModule": {
+   "studyType": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "designInfo": {
+    "allocation": "NON_RANDOMIZED",
+    "interventionModel": "SINGLE_GROUP",
+    "primaryPurpose": "SCREENING",
+    "maskingInfo": {
+     "masking": "NONE"
+    }
+   },
+   "enrollmentInfo": {
+    "count": 1000,
+    "type": "ESTIMATED"
+   }
+  },
+  "armsInterventionsModule": {
+   "armGroups": [
+    {
+     "label": "BCa Early Screening Group",
+     "type": "EXPERIMENTAL",
+     "description": "All participants undergo Urinalysis testing every 6 months for 2 years. Based on the RBC count, each participant will go through each of the screening procedures : \\[cystoscopy + Upper tract imaging\\] or \\[urine marker cancer testing with Cxbladder triage + Upper tract imaging\\] or \\[Repeat urinalysis\\]\n\nPatients with suspicious findings on cystoscopy or imaging will get treatment as per standard of care.\n\nTheir outcomes will be compared to a historical control (bladder cancer detected by standard of care using SEER registries).",
+     "interventionNames": [
+      "Diagnostic Test: Urinalysis"
+     ]
+    },
+    {
+     "label": "Historical Control Group",
+     "type": "NO_INTERVENTION",
+     "description": "This will include historical control (bladder cancer detected in patients by standard of care) using SEER registries)."
+    }
+   ],
+   "interventions": [
+    {
+     "type": "DIAGNOSTIC_TEST",
+     "name": "Urinalysis",
+     "description": "Urine analysis (every 6 months for 2 years); Patients with \\<3 red blood cells (RBCs) per high-powered field (HPF) will repeat screening at 6-month intervals for an average of 2 years.\n\nIf RBCs are 3-25 RBSc/HPF- subjects will undergo- \\[cystoscopy + Upper tract imaging\\] or \\[urine marker cancer testing with Cxbladder triage + Upper tract imaging\\].\n\nIf \\>25 RBCs, subjects will get - \\[cystoscopy + Upper tract imaging\\].",
+     "armGroupLabels": [
+      "BCa Early Screening Group"
+     ]
+    }
+   ]
+  },
+  "outcomesModule": {
+   "primaryOutcomes": [
+    {
+     "measure": "Incidence of Bladder cancer (BCa)",
+     "description": "Incidence of Bladder cancer is measured by the number of participants who were detected with BCa.",
+     "timeFrame": "5 years"
+    }
+   ],
+   "secondaryOutcomes": [
+    {
+     "measure": "Smoking cessation",
+     "description": "Smoking cessation is measured by number of participants who were referred to smoking cessation treatment",
+     "timeFrame": "3 years"
+    },
+    {
+     "measure": "Screening interval",
+     "description": "Screening interval is assessed by calculating the average screening interval from baseline until the timepoint when RBCs \\>3 are detected for each participant",
+     "timeFrame": "approx. every 6 months for up to 2 years"
+    },
+    {
+     "measure": "Screening interval",
+     "description": "Screening interval is assessed by calculating the average screening interval from baseline until the timepoint when RBCs \\>3 are detected for each participant",
+     "timeFrame": "approx. every 12 months for up to 2 years"
+    },
+    {
+     "measure": "Number of participants with positive/ negative markers and findings on cystoscopy",
+     "description": "Performance of urinalysis and molecular markers is assessed by the count of participants with positive/ negative markers and findings on cystoscopy",
+     "timeFrame": "2 years"
+    }
+   ]
+  },
+  "eligibilityModule": {
+   "eligibilityCriteria": "Inclusion Criteria:\n\n* Age ≥ 50\n* Smoking: ≥15 pack-year smoking history\n* Occupation:≥ 15 years of occupational exposures including: textile worker, painter, dry cleaners\n\nExclusion Criteria:\n\n* Prior history of bladder, kidney, or prostate cancer\n* Prior evaluation of micro or gross hematuria within the last 2 years\n* Do not provide informed consent",
+   "healthyVolunteers": false,
+   "sex": "ALL",
+   "minimumAge": "50 Years",
+   "stdAges": [
+    "ADULT",
+    "OLDER_ADULT"
+   ]
+  },
+  "contactsLocationsModule": {
+   "centralContacts": [
+    {
+     "name": "Yair Lotan, MD",
+     "role": "CONTACT",
+     "phone": "214-648-0389",
+     "email": "yair.lotan@UTsouthwestern.edu"
+    }
+   ],
+   "overallOfficials": [
+    {
+     "name": "Yair Lotan, MD",
+     "affiliation": "University of Texas Southwestern Medical Center",
+     "role": "PRINCIPAL_INVESTIGATOR"
+    }
+   ],
+   "locations": [
+    {
+     "facility": "University of Texas Southwestern Medical Center",
+     "status": "RECRUITING",
+     "city": "Dallas",
+     "state": "Texas",
+     "zip": "75390",
+     "country": "United States",
+     "contacts": [
+      {
+       "name": "Sonobia Garrett",
+       "role": "CONTACT",
+       "phone": "214-645-8787"
+      },
+      {
+       "name": "Yair Lotan, MD",
+       "role": "PRINCIPAL_INVESTIGATOR"
+      }
+     ],
+     "geoPoint": {
+      "lat": 32.78306,
+      "lon": -96.80667
+     }
+    }
+   ]
+  },
+  "ipdSharingStatementModule": {
+   "ipdSharing": "NO"
+  }
+ },
+ "derivedSection": {
+  "miscInfoModule": {
+   "versionHolder": "2026-11-03"
+  },
+  "conditionBrowseModule": {
+   "meshes": [
+    {
+     "id": "D001749",
+     "term": "Urinary Bladder Neoplasms"
+    },
+    {
+     "id": "D002295",
+     "term": "Carcinoma, Transitional Cell"
+    },
+    {
+     "id": "D006417",
+     "term": "Hematuria"
+    },
+    {
+     "id": "D016540",
+     "term": "Smoking Cessation"
+    }
+   ],
+   "ancestors": [
+    {
+     "id": "D014571",
+     "term": "Urologic Neoplasms"
+    },
+    {
+     "id": "D014565",
+     "term": "Urogenital Neoplasms"
+    },
+    {
+     "id": "D009371",
+     "term": "Neoplasms by Site"
+    },
+    {
+     "id": "D009369",
+     "term": "Neoplasms"
+    },
+    {
+     "id": "D052776",
+     "term": "Female Urogenital Diseases"
+    },
+    {
+     "id": "D005261",
+     "term": "Female Urogenital Diseases and Pregnancy Complications"
+    },
+    {
+     "id": "D000091642",
+     "term": "Urogenital Diseases"
+    },
+    {
+     "id": "D001745",
+     "term": "Urinary Bladder Diseases"
+    },
+    {
+     "id": "D014570",
+     "term": "Urologic Diseases"
+    },
+    {
+     "id": "D052801",
+     "term": "Male Urogenital Diseases"
+    },
+    {
+     "id": "D002277",
+     "term": "Carcinoma"
+    },
+    {
+     "id": "D009375",
+     "term": "Neoplasms, Glandular and Epithelial"
+    },
+    {
+     "id": "D009370",
+     "term": "Neoplasms by Histologic Type"
+    },
+    {
+     "id": "D014555",
+     "term": "Urination Disorders"
+    },
+    {
+     "id": "D006470",
+     "term": "Hemorrhage"
+    },
+    {
+     "id": "D010335",
+     "term": "Pathologic Processes"
+    },
+    {
+     "id": "D013568",
+     "term": "Pathological Conditions, Signs and Symptoms"
+    },
+    {
+     "id": "D015438",
+     "term": "Health Behavior"
+    },
+    {
+     "id": "D001519",
+     "term": "Behavior"
+    }
+   ]
+  },
+  "interventionBrowseModule": {
+   "meshes": [
+    {
+     "id": "D016482",
+     "term": "Urinalysis"
+    }
+   ],
+   "ancestors": [
+    {
+     "id": "D019963",
+     "term": "Clinical Chemistry Tests"
+    },
+    {
+     "id": "D019411",
+     "term": "Clinical Laboratory Techniques"
+    },
+    {
+     "id": "D019937",
+     "term": "Diagnostic Techniques and Procedures"
+    },
+    {
+     "id": "D003933",
+     "term": "Diagnosis"
+    },
+    {
+     "id": "D003950",
+     "term": "Diagnostic Techniques, Urological"
+    },
+    {
+     "id": "D008919",
+     "term": "Investigative Techniques"
+    }
+   ]
+  }
+ },
+ "hasResults": false
+}

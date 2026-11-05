@@ -1,0 +1,184 @@
+{
+ "protocolSection": {
+  "identificationModule": {
+   "nctId": "NCT07081945",
+   "orgStudyIdInfo": {
+    "id": "hAM for inferior RRD"
+   },
+   "organization": {
+    "fullName": "Eye & ENT Hospital of Fudan University",
+    "class": "OTHER"
+   },
+   "briefTitle": "hAM for Inferior RRD",
+   "officialTitle": "Prospective Study on the Use of Human Amniotic Membrane (hAM) in the Treatment of Inferior Rhegmatogenous Retinal Detachment (RRD)"
+  },
+  "statusModule": {
+   "statusVerifiedDate": "2025-07",
+   "overallStatus": "RECRUITING",
+   "expandedAccessInfo": {
+    "hasExpandedAccess": false
+   },
+   "startDateStruct": {
+    "date": "2025-08-01",
+    "type": "ESTIMATED"
+   },
+   "primaryCompletionDateStruct": {
+    "date": "2026-07-31",
+    "type": "ESTIMATED"
+   },
+   "completionDateStruct": {
+    "date": "2026-07-31",
+    "type": "ESTIMATED"
+   },
+   "studyFirstSubmitDate": "2025-07-22",
+   "studyFirstSubmitQcDate": "2025-07-22",
+   "studyFirstPostDateStruct": {
+    "date": "2025-07-24",
+    "type": "ACTUAL"
+   },
+   "lastUpdateSubmitDate": "2025-07-23",
+   "lastUpdatePostDateStruct": {
+    "date": "2025-07-28",
+    "type": "ACTUAL"
+   }
+  },
+  "sponsorCollaboratorsModule": {
+   "responsibleParty": {
+    "type": "SPONSOR"
+   },
+   "leadSponsor": {
+    "name": "Eye & ENT Hospital of Fudan University",
+    "class": "OTHER"
+   }
+  },
+  "oversightModule": {
+   "oversightHasDmc": false,
+   "isFdaRegulatedDrug": false,
+   "isFdaRegulatedDevice": false
+  },
+  "descriptionModule": {
+   "briefSummary": "The objective of the study is to evaluate the efficacy of using hAM patches over the retina to seal inferior retinal breaks. The researchers will evaluate whether hAM patch-assisted vitrectomy improves surgical success rate of retinal reattachment.",
+   "detailedDescription": "Rhegmatogenous retinal detachments (RRDs) with inferior retinal breaks (IRB-RRD) still remains a challenge with relatively high risk of primary surgical failure and recurrent RRDs. Actually, the single-operation success rate for inferior RRD ranges from 60 % to 90 % as reported. Human amniotic membrane (hAM) and has been reported to be safe for intraocular use, such as macular hole and ocular open globe injury.\n\nResearchers previously reported a 'sandwich' technique for flattening and positioning large-sized hAM patches over the retina, which allowed surgeons to select the optimal hAM size intraoperatively based on surgical need, and thus expanding the application of hAM in RRD. Researchers had demonstrated that covering the exposed retinal pigment epithelium (RPE) with a large-size hAM graft effectively prevented postoperative proliferative vitreoretinopathy (PVR) by the 'sandwich' technique.\n\nThis study will include 50 patients with IRB-RRD, who will be treated with hAM patch-assisted vitrectomy, in which hAM patches will be used to seal inferior retinal breaks over the retina after complete vitrectomy. Then researchers will conduct no less than 6 months follow-up and evaluate whether hAM patch-assisted vitrectomy improves surgical success rate of retinal reattachment."
+  },
+  "conditionsModule": {
+   "conditions": [
+    "Rhegmatogenous Retinal Detachment"
+   ]
+  },
+  "designModule": {
+   "studyType": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "designInfo": {
+    "allocation": "NA",
+    "interventionModel": "SINGLE_GROUP",
+    "primaryPurpose": "TREATMENT",
+    "maskingInfo": {
+     "masking": "NONE"
+    }
+   },
+   "enrollmentInfo": {
+    "count": 50,
+    "type": "ESTIMATED"
+   }
+  },
+  "armsInterventionsModule": {
+   "armGroups": [
+    {
+     "label": "hAM",
+     "type": "EXPERIMENTAL",
+     "description": "This is a single arm study using literature-reported postoperative outcomes of IRB-RRD patients as the comparator.",
+     "interventionNames": [
+      "Device: hAM"
+     ]
+    }
+   ],
+   "interventions": [
+    {
+     "type": "DEVICE",
+     "name": "hAM",
+     "description": "The hAM stands for human amniotic membrane, which was used to seal inferior retinal breaks after complete vitrectomy.",
+     "armGroupLabels": [
+      "hAM"
+     ]
+    }
+   ]
+  },
+  "outcomesModule": {
+   "primaryOutcomes": [
+    {
+     "measure": "Retinal reattachment rate",
+     "description": "The percentage of patients who achieved retinal reattachment after undergoing hAM patch-assisted vitrectomy during the 6-month follow-up period.",
+     "timeFrame": "From enrollment to the end of the 6-month follow-up period."
+    },
+    {
+     "measure": "Visual acuity improvement",
+     "description": "The visual acuity improvement 6 months after the surgical procedure measured by Snellen chart.",
+     "timeFrame": "From enrollment to the end of the 6-month follow-up period."
+    }
+   ]
+  },
+  "eligibilityModule": {
+   "eligibilityCriteria": "Inclusion Criteria:\n\n1. Subjects having given free and informed consent to take part in the study.\n2. Subjects between 18 and 70 years old.\n3. Subjects suffering RRD (both primary and recurrent RRDs) with at least one of these conditions:\n\n   1. inferior retinal breaks between 4- and 8-o'clock within the detached area regardless of PVR grade;\n   2. requiring retinotomy inferiorly between 4- and 8-o'clock (due to severe inferior PVR or inferior retinal shortening).\n\nExclusion Criteria:\n\n1. Subjects with RRD with only anterior retina breaks or dialysis and meet the indications for scleral buckling surgery.\n2. Subjects with RRD whose retinal breaks located between the 4- and 8-o'clock positions and are not involved in the detached area.\n3. Subjects with pre-existing serious eye diseases (corneal ulcers, glaucoma, uveitis, etc).\n4. History of epilepsy or serious psychiatric diseases.\n5. Other conditions that the researcher found improper to be included into this study.",
+   "healthyVolunteers": false,
+   "sex": "ALL",
+   "minimumAge": "18 Years",
+   "maximumAge": "70 Years",
+   "stdAges": [
+    "ADULT",
+    "OLDER_ADULT"
+   ]
+  },
+  "contactsLocationsModule": {
+   "centralContacts": [
+    {
+     "name": "Zhongcui Sun, PhD.",
+     "role": "CONTACT",
+     "phone": "+8621-64377134-2501",
+     "email": "zhongcui.sun@aliyun.com"
+    }
+   ],
+   "locations": [
+    {
+     "facility": "EyeEntFudan",
+     "status": "RECRUITING",
+     "city": "Shanghai",
+     "state": "Shanghai Municipality",
+     "zip": "200031",
+     "country": "China",
+     "contacts": [
+      {
+       "name": "Zhongcui Sun, PhD",
+       "role": "CONTACT",
+       "phone": "+8621-64377134-2501",
+       "email": "zhongcui.sun@aliyun.com"
+      },
+      {
+       "name": "Zhongcui Sun, PhD",
+       "role": "PRINCIPAL_INVESTIGATOR"
+      }
+     ],
+     "geoPoint": {
+      "lat": 31.22222,
+      "lon": 121.45806
+     }
+    }
+   ]
+  },
+  "ipdSharingStatementModule": {
+   "ipdSharing": "YES",
+   "description": "Utra-wide fundus image data of patients pre and postoperatively may be shared with other researchers.",
+   "infoTypes": [
+    "STUDY_PROTOCOL"
+   ],
+   "timeFrame": "After start of recruiting patients."
+  }
+ },
+ "derivedSection": {
+  "miscInfoModule": {
+   "versionHolder": "2026-11-03"
+  }
+ },
+ "hasResults": false
+}

@@ -1,0 +1,313 @@
+{
+ "protocolSection": {
+  "identificationModule": {
+   "nctId": "NCT07299695",
+   "orgStudyIdInfo": {
+    "id": "AT011225"
+   },
+   "organization": {
+    "fullName": "University General Hospital of Patras",
+    "class": "OTHER"
+   },
+   "briefTitle": "Intravenous Immunoglobulin for the Treatment of Acute Exacerbations of Idiopathic Pulmonary Fibrosis",
+   "officialTitle": "A Prospective, Multicenter, Randomized, Open-Label Clinical Trial Evaluating the Efficacy of Intravenous Immunoglobulin in Patients Hospitalized for Acute Exacerbations of Idiopathic Pulmonary Fibrosis.",
+   "acronym": "MERCURION-IPF"
+  },
+  "statusModule": {
+   "statusVerifiedDate": "2026-03",
+   "overallStatus": "RECRUITING",
+   "expandedAccessInfo": {
+    "hasExpandedAccess": false
+   },
+   "startDateStruct": {
+    "date": "2026-01-25",
+    "type": "ACTUAL"
+   },
+   "primaryCompletionDateStruct": {
+    "date": "2028-06",
+    "type": "ESTIMATED"
+   },
+   "completionDateStruct": {
+    "date": "2028-12",
+    "type": "ESTIMATED"
+   },
+   "studyFirstSubmitDate": "2025-11-26",
+   "studyFirstSubmitQcDate": "2025-12-09",
+   "studyFirstPostDateStruct": {
+    "date": "2025-12-23",
+    "type": "ACTUAL"
+   },
+   "lastUpdateSubmitDate": "2026-03-12",
+   "lastUpdatePostDateStruct": {
+    "date": "2026-03-16",
+    "type": "ACTUAL"
+   }
+  },
+  "sponsorCollaboratorsModule": {
+   "responsibleParty": {
+    "type": "SPONSOR_INVESTIGATOR",
+    "investigatorFullName": "Argyrios Tzouvelekis",
+    "investigatorTitle": "Professor of Internal and Respiratory Medicine, Head Department of Respiratory Medicine University of Patras, Greece - Associate Professor Adjunct, PCCSM, Yale School of Medicine, USA",
+    "investigatorAffiliation": "University General Hospital of Patras"
+   },
+   "leadSponsor": {
+    "name": "Argyrios Tzouvelekis",
+    "class": "OTHER"
+   }
+  },
+  "oversightModule": {
+   "isFdaRegulatedDrug": false,
+   "isFdaRegulatedDevice": false,
+   "isUsExport": false
+  },
+  "descriptionModule": {
+   "briefSummary": "Acute exacerbations of idiopathic pulmonary fibrosis (AE-IPF) are sudden and severe worsening episodes that can be life-threatening. Currently, no treatment has been proven to clearly improve outcomes during these events. Inflammation and immune system imbalance are thought to play an important role in causing AE-IPF. Early clinical experience suggests that intravenous immunoglobulin (IVIG) can be beneficial for patients suffering from AE-IPF. This clinical trial aims to determine whether adding IVIG to usual treatment can improve outcomes for patients hospitalized with AE-IPF.",
+   "detailedDescription": "Acute exacerbations of idiopathic pulmonary fibrosis (AE-IPF) are sudden, life-threatening deteriorations associated with high mortality. Despite their severe impact on a substantial subset of patients with IPF, no treatment has yet demonstrated clear, reproducible benefit, and standardized therapeutic strategies remain lacking.\n\nThis prospective, multicenter, randomized study aims to address this critical unmet need by evaluating the efficacy of IVIG in patients with AE-IPF.\n\nAberrant inflammation and dysregulated immune responses are believed to play a key role in the pathogenesis of AE-IPF. Patients with IPF often display impaired cellular and humoral immunity, further supporting the investigation of immunomodulatory therapies. Intravenous immunoglobulin (IVIG), which has established anti-inflammatory and immunomodulatory effects, is used in other rapidly progressive interstitial lung diseases and in various immune-mediated conditions. Preliminary retrospective data from investigators' center suggest that IVIG may improve gas exchange and survival in patients hospitalized with acute exacerbations of fibrotic interstitial lung disease, including IPF.\n\nInvestigators hypothesize that the addition of IVIG to usual treatment may improve clinically relevant outcomes during AE-IPF. In this study, IVIG will be administered as an adjunct to usual care. Usual care will include pulse corticosteroids, broad-spectrum antibiotics, prophylactic anticoagulation, and oxygen therapy. Although the effectiveness of corticosteroids in AE-IPF remains uncertain and is supported only by low-quality evidence, their use is endorsed by current treatment guidelines and remains widespread in clinical practice. In addition, corticosteroids are being evaluated in ongoing trials (e.g., EXAFIP2, NCT05674994). Considering the complex, multi-pathway biology of AE-IPF and the documented synergistic effects of IVIG and corticosteroids in other immune-mediated conditions (such as Kawasaki disease, idiopathic thrombocytopenic purpura, and toxic epidermal necrolysis/Stevens-Johnson syndrome), corticosteroids will be administered to both study arms to avoid withholding a potentially beneficial therapy.\n\nThe primary objective of this clinical trial is to evaluate whether IVIG, when added to usual care, improves outcomes compared to usual care alone in patients hospitalized with AE-IPF. The primary endpoint is a composite of all-cause in-hospital mortality or the need for endotracheal intubation. This composite measure was selected because AE-IPF is a rapidly progressive and life-threatening event, and these outcomes represent the most objective, clinically meaningful indicators of deterioration. The use of this endpoint enables a comprehensive assessment of treatment efficacy by capturing both fatal and near-fatal clinical events.\n\nInvestigators anticipate that the findings of this study will generate important evidence regarding the potential role of IVIG in the management of AE-IPF and may contribute to future treatment recommendations for this highly lethal condition."
+  },
+  "conditionsModule": {
+   "conditions": [
+    "Idiopathic Pulmonary Fibrosis",
+    "Acute Exacerbation of Idiopathic Pulmonary Fibrosis"
+   ],
+   "keywords": [
+    "Acute Exacerbations of Idiopathic Pulmonary Fibrosis",
+    "Idiopathic Pulmonary Fibrosis",
+    "Intravenous Immunoglobulin",
+    "Acute Exacerbation of Idiopathic Pulmonary Fibrosis"
+   ]
+  },
+  "designModule": {
+   "studyType": "INTERVENTIONAL",
+   "phases": [
+    "PHASE3"
+   ],
+   "designInfo": {
+    "allocation": "RANDOMIZED",
+    "interventionModel": "PARALLEL",
+    "primaryPurpose": "TREATMENT",
+    "maskingInfo": {
+     "masking": "NONE"
+    }
+   },
+   "enrollmentInfo": {
+    "count": 196,
+    "type": "ESTIMATED"
+   }
+  },
+  "armsInterventionsModule": {
+   "armGroups": [
+    {
+     "label": "Usual treatment",
+     "type": "ACTIVE_COMPARATOR",
+     "description": "Usual treatment will consist of broad-spectrum antibiotics, pulse methylprednisolone, prophylactic anticoagulation, and oxygen therapy with high-flow nasal cannula and will be provided to all participants, in both treatment arms.",
+     "interventionNames": [
+      "Drug: Usual treatment"
+     ]
+    },
+    {
+     "label": "Intravenous immunoglobulin plus Usual treatment",
+     "type": "EXPERIMENTAL",
+     "description": "Intravenous immunoglobulin will be administered along with usual treatment, as described.",
+     "interventionNames": [
+      "Drug: Intravenous immunoglobulin (IVIG)"
+     ]
+    }
+   ],
+   "interventions": [
+    {
+     "type": "DRUG",
+     "name": "Intravenous immunoglobulin (IVIG)",
+     "description": "Total dose of 1 g/kg, divided over three consecutive days. The infusion will start at a rate of 0.5 mg/kg/hour for the first 15 minutes and, if no adverse reaction occurs, the rate will then be gradually increased step-wise as tolerated. Premedication with acetaminophen and levocetirizine.\n\nUsual treatment will be co-administered, as described.",
+     "armGroupLabels": [
+      "Intravenous immunoglobulin plus Usual treatment"
+     ]
+    },
+    {
+     "type": "DRUG",
+     "name": "Usual treatment",
+     "description": "1. Corticosteroids:\n\n   A pulse regimen of IV methylprednisolone at 250 mg daily (days 1 to 3), with no additional corticosteroids thereafter.\n2. Antibiotics:\n\n   Empirical broad-spectrum antibiotics starting from the first 24 hours of hospitalization - respiratory quinolone and/or an antipseudomonal penicillin. Duration or escalation of antibiotics may be adjusted based on available antibiograms or treating physician's clinical judgment.\n3. Anticoagulation:\n\n   Prophylactic-dose anticoagulation - low molecular weight heparin or fondaparinux - throughout hospitalization. Patients with an established indication for therapeutic anticoagulation will be maintained on their therapeutic regimen.\n4. Antifibrotic therapy:\n\nAntifibrotics (nintedanib, pirfenidone, or nerandomilast) will be continued during hospitalization if already prescribed and not contraindicated. No new antifibrotic treatment will be initiated during the study period.",
+     "armGroupLabels": [
+      "Usual treatment"
+     ]
+    }
+   ]
+  },
+  "outcomesModule": {
+   "primaryOutcomes": [
+    {
+     "measure": "All-cause in-hospital mortality or intubation",
+     "description": "This outcome corresponds to the all-cause mortality or intubation rate throughout hospitalisation.",
+     "timeFrame": "From date of randomization until the outcome mesure - the date of death from any cause or the date of endotracheal intubation, whichever comes first - assessed up to 4 weeks during hospitalisation."
+    }
+   ],
+   "secondaryOutcomes": [
+    {
+     "measure": "All-cause 30-day mortality",
+     "description": "This outcome corresponds to all-cause mortality rate at Day 30",
+     "timeFrame": "30 days from hospital admission"
+    },
+    {
+     "measure": "All-cause 90-day mortality",
+     "description": "This outcome corresponds to all-cause mortality rate at Day 90",
+     "timeFrame": "90 days from hospital admission"
+    },
+    {
+     "measure": "Hospital readmissions",
+     "description": "This outcome corresponds to all-cause hospital readmission rates by Day 180",
+     "timeFrame": "180 days from hospital admission"
+    },
+    {
+     "measure": "New acute exacerbation IPF",
+     "description": "This outcome corresponds to occurence of new acute exacerbation of IPF by Day 180",
+     "timeFrame": "180 days from hospital admission"
+    },
+    {
+     "measure": "Change in PaO₂/FiO₂ Ratio",
+     "description": "This outcome corresponds to the change in the PaO₂/FiO₂ ratio from hospital admission to discharge and will be assessed only among survivors",
+     "timeFrame": "PaO₂/FiO₂ ratio will be assessed at the day of randomisation prior to therapeutic interventions (except oxygen therapy) and then at the day of hospital discharge - up to 4 weeks post randomisation."
+    },
+    {
+     "measure": "Adverse events",
+     "description": "This outcomes corresponds to the presence of adverse events attributable to the trial intervention",
+     "timeFrame": "Throughout study completion - an average of 1 year (from randomisation until day 365 of follow up, if feasible)"
+    }
+   ],
+   "otherOutcomes": [
+    {
+     "measure": "Change in FVC",
+     "description": "This outcome corresponds to the absolute and change in percent Forced Vital Capacity (FVC) before acute exacerbation (if available) and at Day 90.",
+     "timeFrame": "90 days from hospital admission"
+    },
+    {
+     "measure": "Change in DLCO",
+     "description": "This outcome corresponds to the absolute change in percent diffusing capacity for carbon monoxide (DLCO) before acute exacerbation (if available) and at Day 90.",
+     "timeFrame": "90 days from hospital admission"
+    }
+   ]
+  },
+  "eligibilityModule": {
+   "eligibilityCriteria": "Inclusion Criteria:\n\n1. Patients ≥ 18 years of age\n2. Patients with IPF diagnosis that fulfils ATS/ERS Consensus Criteria.\n3. Patients hospitalised with a definite or suspected AE-IPF diagnosis, as defined by the international working group criteria and as ascertained by the responsible Primary Investigator.\n\n   The criteria of IPF-AE are as follows:\n   * Previous or concurrent diagnosis of IPF\n   * Acute worsening or development of dyspnoea typically \\< 1 month duration\n   * Computed tomography with new bilateral ground-glass opacity and/or consolidation superimposed on a background pattern consistent with usual interstitial pneumonia pattern\n   * Deterioration not fully explained by cardiac failure or fluid overload Patients who fail to meet all 4 criteria due to missing computed tomography should be considered as having \"suspected Acute Exacerbation\".\n\n   A) If the diagnosis of IPF is not previously established, this criterion can be met by the presence of radiologic and/or histopathologic changes consistent with usual interstitial pneumonia pattern on the current evaluation.\n\n   B) If no previous computed tomography is available, the qualifier \"new\" can be dropped from the third AE-IPF criterion.\n4. Patient able to understand and sign a written informed consent form. In case of incapacity of the patient, the written informed consent form will be signed by the patients' legally authorized representative.\n\nExclusion Criteria:\n\n1. Patients with acute worsening due to uncontrolled heart failure or pulmonary embolism.\n2. Patients with known hypersensitivity to corticosteroids, IVIG or any component of the study treatment.\n3. Patients with known IgA deficiency (IgA level \\<7 mg/dL)- to preclude IVIG reactions.\n4. Patients without a definite diagnosis of IPF or AE-IPF based on clinical, radiological, laboratory evaluation, and multidisciplinary discussion.\n5. Patients with active malignancy or currently receiving cancer treatment, except for basal cell or squamous cell skin cancer or low-risk prostate cancer (T1 or T2a stage with PSA \\<10 ng/dL). These criteria are aligned with current guidelines.\n6. Patients that have received treatment for \\>14 days within the preceding month with \\>20mg daily prednisone (or equivalent) or any treatment during the last month with immunosuppressants (e.g., cyclophosphamide, mycophenolate etc.) according to already published therapeutic protocols or \\> 1 mg/kg/d from more than 7 days in the last 15 days.\n7. Patients participating to another interventional clinical trial.\n8. Patients with documented pregnancy or lactation.\n9. Patients under tutorship or curatorship.\n10. Patients deprived of liberty or under court protection.\n11. Patients who refuse to participate or decline to provide written informed consent.",
+   "healthyVolunteers": false,
+   "sex": "ALL",
+   "minimumAge": "18 Years",
+   "stdAges": [
+    "ADULT",
+    "OLDER_ADULT"
+   ]
+  },
+  "contactsLocationsModule": {
+   "locations": [
+    {
+     "facility": "Department of Respiratory Medicine, University Hospital of Patras",
+     "status": "RECRUITING",
+     "city": "Pátrai",
+     "zip": "26504",
+     "country": "Greece",
+     "contacts": [
+      {
+       "name": "Argyrios Tzouvelekis, MD, MSc, PhD, Professor of Respiratory Medicine",
+       "role": "CONTACT",
+       "phone": "+302613603524",
+       "email": "atzouvelekis@upatras.gr"
+      }
+     ],
+     "geoPoint": {
+      "lat": 38.2462,
+      "lon": 21.73508
+     }
+    }
+   ]
+  },
+  "referencesModule": {
+   "references": [
+    {
+     "pmid": "42164489",
+     "type": "DERIVED",
+     "citation": "Sotiropoulou V, Sampsonas F, Vasarmidi E, Antoniou K, Gogali A, Kostikas K, Drakopanagiotakis F, Steiropoulos P, Margaritopoulos G, Porpodis K, Daniil Z, Tomos I, Papanikolaou I, Tzilas V, Loukides S, Tzouvelekis A. Design of the MERCURION-IPF trial - intravenous immunoglobulin for the treatment of acute exacerbations of idiopathic pulmonary fibrosis. Front Immunol. 2026 May 5;17:1777564. doi: 10.3389/fimmu.2026.1777564. eCollection 2026."
+    }
+   ]
+  }
+ },
+ "derivedSection": {
+  "miscInfoModule": {
+   "versionHolder": "2026-11-03"
+  },
+  "conditionBrowseModule": {
+   "meshes": [
+    {
+     "id": "D054990",
+     "term": "Idiopathic Pulmonary Fibrosis"
+    }
+   ],
+   "ancestors": [
+    {
+     "id": "D011658",
+     "term": "Pulmonary Fibrosis"
+    },
+    {
+     "id": "D017563",
+     "term": "Lung Diseases, Interstitial"
+    },
+    {
+     "id": "D008171",
+     "term": "Lung Diseases"
+    },
+    {
+     "id": "D012140",
+     "term": "Respiratory Tract Diseases"
+    }
+   ]
+  },
+  "interventionBrowseModule": {
+   "meshes": [
+    {
+     "id": "D016756",
+     "term": "Immunoglobulins, Intravenous"
+    }
+   ],
+   "ancestors": [
+    {
+     "id": "D007074",
+     "term": "Immunoglobulin G"
+    },
+    {
+     "id": "D007132",
+     "term": "Immunoglobulin Isotypes"
+    },
+    {
+     "id": "D000906",
+     "term": "Antibodies"
+    },
+    {
+     "id": "D007136",
+     "term": "Immunoglobulins"
+    },
+    {
+     "id": "D007162",
+     "term": "Immunoproteins"
+    },
+    {
+     "id": "D001798",
+     "term": "Blood Proteins"
+    },
+    {
+     "id": "D011506",
+     "term": "Proteins"
+    },
+    {
+     "id": "D000602",
+     "term": "Amino Acids, Peptides, and Proteins"
+    },
+    {
+     "id": "D012712",
+     "term": "Serum Globulins"
+    },
+    {
+     "id": "D005916",
+     "term": "Globulins"
+    }
+   ]
+  }
+ },
+ "hasResults": false
+}

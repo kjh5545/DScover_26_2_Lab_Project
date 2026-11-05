@@ -1,0 +1,2 @@
+rater_id,role,gold_exposed,exposure_scope,note
+SH01,rater,full,"본인 신고 2026-11-04·05. gold:full(S004·S008, goldset 작성자); factsheet:봤음(S004·S008); prior_questions:조건 표시와 함께 봤음(S004·S008); prompts:none(자기신고 유지); repo_labels:holdout_readiness.md 4.1절 표기 있음(별도 보존, 친숙도 판단에 쓰지 않음); design:D1 승인; 확인 실험 4명: gold·factsheet none(자기신고)",파일럿 S004·S008 전용: 정답 노출 연구자의 탐색적 채점 (단일 평가자 · 설계 인지). 조건 매핑: 방식 B 자기 관리 봉인

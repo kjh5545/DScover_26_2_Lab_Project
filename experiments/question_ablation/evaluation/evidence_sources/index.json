@@ -1,0 +1,238 @@
+{
+ "NCT04369560": {
+  "accessed": "2026-11-04",
+  "last_update_post": "2025-12-17",
+  "version_holder": "2026-11-03",
+  "interventions": [
+   {
+    "type": "DIAGNOSTIC_TEST",
+    "name": "Magnetic Resonance Imaging",
+    "other_names": []
+   },
+   {
+    "type": "DRUG",
+    "name": "Gadobutrol intravesical administration (4mM)",
+    "other_names": [
+     "Image result for other names for Gadobutrol Gadavist"
+    ]
+   },
+   {
+    "type": "DRUG",
+    "name": "Ferumoxytol intravesical administration (5 mM)",
+    "other_names": [
+     "FERAHEME"
+    ]
+   }
+  ]
+ },
+ "NCT05646485": {
+  "accessed": "2026-11-04",
+  "last_update_post": "2026-05-01",
+  "version_holder": "2026-11-03",
+  "interventions": [
+   {
+    "type": "DIAGNOSTIC_TEST",
+    "name": "Urinalysis",
+    "other_names": []
+   }
+  ]
+ },
+ "NCT07652658": {
+  "accessed": "2026-11-04",
+  "last_update_post": "2026-10-29",
+  "version_holder": "2026-11-03",
+  "interventions": [
+   {
+    "type": "OTHER",
+    "name": "Placebo for AZD8965",
+    "other_names": []
+   },
+   {
+    "type": "DRUG",
+    "name": "AZD8965 low dose",
+    "other_names": []
+   },
+   {
+    "type": "DRUG",
+    "name": "AZD8965 medium dose",
+    "other_names": []
+   },
+   {
+    "type": "DRUG",
+    "name": "AZD8965 high dose",
+    "other_names": []
+   }
+  ]
+ },
+ "NCT07299695": {
+  "accessed": "2026-11-04",
+  "last_update_post": "2026-03-16",
+  "version_holder": "2026-11-03",
+  "interventions": [
+   {
+    "type": "DRUG",
+    "name": "Intravenous immunoglobulin (IVIG)",
+    "other_names": []
+   },
+   {
+    "type": "DRUG",
+    "name": "Usual treatment",
+    "other_names": []
+   }
+  ]
+ },
+ "NCT06068179": {
+  "accessed": "2026-11-04",
+  "last_update_post": "2024-02-28",
+  "version_holder": "2026-11-03",
+  "interventions": [
+   {
+    "type": "DRUG",
+    "name": "Mycophenolate Mofetil, Oral, 250 Mg",
+    "other_names": []
+   },
+   {
+    "type": "DRUG",
+    "name": "methimazole, oral, 10mg",
+    "other_names": []
+   }
+  ]
+ },
+ "NCT07018323": {
+  "accessed": "2026-11-04",
+  "last_update_post": "2026-10-30",
+  "version_holder": "2026-11-03",
+  "interventions": [
+   {
+    "type": "DRUG",
+    "name": "IMVT-1402",
+    "other_names": []
+   },
+   {
+    "type": "DRUG",
+    "name": "IMVT-1402",
+    "other_names": []
+   },
+   {
+    "type": "DRUG",
+    "name": "Placebo",
+    "other_names": []
+   }
+  ]
+ },
+ "NCT03714503": {
+  "accessed": "2026-11-04",
+  "last_update_post": "2026-05-05",
+  "version_holder": "2026-11-03",
+  "interventions": [
+   {
+    "type": "DEVICE",
+    "name": "Retina re-attachment repair using C3F8 gas tamponade",
+    "other_names": [
+     "pars plana vitrectomy"
+    ]
+   }
+  ]
+ },
+ "NCT07081945": {
+  "accessed": "2026-11-04",
+  "last_update_post": "2025-07-28",
+  "version_holder": "2026-11-03",
+  "interventions": [
+   {
+    "type": "DEVICE",
+    "name": "hAM",
+    "other_names": []
+   }
+  ]
+ },
+ "NCT07082114": {
+  "accessed": "2026-11-04",
+  "last_update_post": "2025-07-24",
+  "version_holder": "2026-11-03",
+  "interventions": [
+   {
+    "type": "DRUG",
+    "name": "HDM1002 100 mg",
+    "other_names": [
+     "HDM1002"
+    ]
+   },
+   {
+    "type": "DRUG",
+    "name": "HDM1002 200 mg",
+    "other_names": [
+     "HDM1002"
+    ]
+   },
+   {
+    "type": "DRUG",
+    "name": "HDM1002 400 mg",
+    "other_names": [
+     "HDM1002"
+    ]
+   },
+   {
+    "type": "DRUG",
+    "name": "Dapagliflozin (DAPA)",
+    "other_names": [
+     "Dapagliflozin"
+    ]
+   }
+  ]
+ },
+ "NCT06863532": {
+  "accessed": "2026-11-04",
+  "last_update_post": "2025-03-07",
+  "version_holder": "2026-11-03",
+  "interventions": [
+   {
+    "type": "DRUG",
+    "name": "Cofrogliptin+SGLT2i+Metformin",
+    "other_names": []
+   },
+   {
+    "type": "DRUG",
+    "name": "Metformin dose escalation",
+    "other_names": []
+   }
+  ]
+ },
+ "NCT07786870": {
+  "accessed": "2026-11-04",
+  "last_update_post": "2026-08-26",
+  "version_holder": "2026-11-03",
+  "interventions": [
+   {
+    "type": "DIAGNOSTIC_TEST",
+    "name": "No Intervention: Observational Cohort",
+    "other_names": []
+   }
+  ]
+ },
+ "NCT07139899": {
+  "accessed": "2026-11-04",
+  "last_update_post": "2025-11-20",
+  "version_holder": "2026-11-03",
+  "interventions": [
+   {
+    "type": "COMBINATION_PRODUCT",
+    "name": "Hyperpolarized Xenon 129",
+    "other_names": []
+   }
+  ]
+ },
+ "dailymed_72ad22ae-efe6-4cd6-a302-98aaee423d69": {
+  "accessed": "2026-11-05",
+  "drug": "FARXIGA (dapagliflozin) tablets",
+  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72ad22ae-efe6-4cd6-a302-98aaee423d69",
+  "revised": "6/2026 (페이지 표기)",
+  "spl_effective_time": "20260603",
+  "spl_version": "49",
+  "files": [
+   "dailymed_72ad22ae-efe6-4cd6-a302-98aaee423d69.xml",
+   "dailymed_72ad22ae-efe6-4cd6-a302-98aaee423d69_druginfo.html"
+  ],
+  "section_12_1_quote": "Dapagliflozin is an inhibitor of SGLT2."
+ }
+}

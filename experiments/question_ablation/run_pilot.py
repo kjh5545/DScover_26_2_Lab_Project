@@ -22,10 +22,13 @@ import os
 import platform
 import random
 import re
+import secrets
+import shutil
 import statistics
 import subprocess
 import sys
 import time
+import zipfile
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -201,13 +204,15 @@ def annotation_gate(record_path: Path | None = None) -> dict:
         f = base / rel
         if not f.exists() or sc.sha_file(f) != digest:
             problems.append(f"잠긴 파일 변경 또는 없음: {rel}")
-    for pid in PATIENTS:
-        for name in (f"{pid}_final.csv", f"{pid}_clusters.csv"):
-            if name not in rec.get("files", {}):
-                problems.append(f"잠금 목록에 없음: {name}")
+    for name in annotation_files():
+        if name not in rec.get("files", {}):
+            problems.append(f"잠금 목록에 없음: {name}")
     if not problems:
+        problems += evidence_problems(base / "safety_evidence.csv")
+        ids = evidence_ids(base / "safety_evidence.csv")
         for pid in PATIENTS:
-            problems += check_annotation_population(pid, sc.read_csv(base / f"{pid}_final.csv"))
+            problems += check_annotation_population(pid, sc.read_csv(base / f"{pid}_final.csv"), ids)
+        problems += ai_source_problems(rec, base)
     if problems:
         raise GateError("; ".join(problems))
     return rec
@@ -217,7 +222,7 @@ def lock_annotation(draft: Path, record_path: Path | None = None) -> dict:
     """담당자·검토 기록(draft)에 주석 파일 해시를 더해 잠근다. 조건을 못 채우면 잠기지 않는다."""
     record_path = record_path or ANNOTATION_RECORD
     rec = read_json(draft)
-    names = [f"{p}_{kind}.csv" for p in PATIENTS for kind in ("final", "clusters")]
+    names = annotation_files()
     missing = [n for n in names if not (record_path.parent / n).exists()]
     if missing:
         raise GateError(f"주석 파일 없음: {missing}")
@@ -235,18 +240,110 @@ def lock_annotation(draft: Path, record_path: Path | None = None) -> dict:
     return rec
 
 
-def check_annotation_population(pid: str, rows: list[dict]) -> list[str]:
-    """확정 주석의 모집단이 질문 후보(U)와 정확히 같은지."""
+AI_MODE = "ai_unverified"
+AI_LABEL = "AI 주석 버전 고정"
+AI_PATIENTS = ("S004", "S008")      # 확인 실험 설정(use_cohort)이 바꾸지 않는 상수
+AI_PROVENANCE = ("drafting_tool", "drafting_model", "drafting_inputs", "drafted_at")
+
+
+def ai_source_problems(rec: dict, base: Path) -> list[str]:
+    """파일럿 전용 미검증 AI 사전 주석 (annotation_workflow.md 6절). 사람 주석 기록이면 검사하지 않는다.
+
+    AI 주석 경로를 허용하되 조용히 통과시키지 않는다: 파일럿 환자만, 사람 검토 없음 명시, 작성 이력(모르면 "미확인"),
+    AI 원본 해시, 확정표가 AI 원본에서 조정 없이 옮겨졌는지 (h_any = h_strict, 표시 문구).
+    """
+    src = rec.get("annotation_source", {})
+    if src.get("mode") != AI_MODE:
+        return []
+    if set(PATIENTS) - set(AI_PATIENTS):
+        return [f"AI 주석 경로는 파일럿 환자 {AI_PATIENTS}에만 쓸 수 있음"]
+    out = []
+    if src.get("status") != AI_LABEL:
+        out.append(f"AI 주석 상태는 '{AI_LABEL}'로 기록")
+    if src.get("human_item_review") is not False:
+        out.append("사람 항목별 검토 여부(human_item_review)를 false로 명시")
+    out += [f"AI 작성 이력 {k} 없음 (모르면 '미확인')" for k in AI_PROVENANCE if not str(src.get(k, "")).strip()]
+    files = src.get("source_files", {})
+    if sorted(files) != sorted(f"ai_draft/source/{p}_preannotation_AI_draft.csv" for p in PATIENTS):
+        out.append("AI 원본 파일 목록이 환자와 다름")
+    for rel, digest in files.items():
+        if not (base / rel).exists() or sc.sha_file(base / rel) != digest:
+            out.append(f"AI 원본 변경 또는 없음: {rel}")
+    norm = lambda s: " ".join(str(s).split())  # noqa: E731
+    pairs = [("askable", "final_askable"), ("centrality", "final_centrality"),
+             ("centrality_evidence", "final_centrality_evidence"), ("core_part", "final_core_part"),
+             ("core_info", "final_core_info")]
+    for pid in PATIENTS:
+        rows = sc.read_csv(base / f"{pid}_final.csv")
+        source = base / "ai_draft" / "source" / f"{pid}_preannotation_AI_draft.csv"
+        ai = {(r["trial_id"], r["criterion_id"]): r for r in (sc.read_csv(source) if source.exists() else [])
+              if r["is_candidate"] == "1"}
+        if any(r["h_any"] != r["h_strict"] or not r["adjudication_note"].startswith(AI_LABEL) for r in rows):
+            out.append(f"{pid}: 확정표가 AI 주석에서 조정 없이 옮겨진 형태가 아님")
+        changed = [f"{r['trial_id']} {r['criterion_id']}" for r in rows
+                   if (r["trial_id"], r["criterion_id"]) not in ai
+                   or any(norm(ai[(r["trial_id"], r["criterion_id"])][a]) != norm(r[b]) for a, b in pairs)]
+        if changed:
+            out.append(f"{pid}: 확정표 값이 AI 원본과 다름 {changed[:3]} (수정은 수정 이력과 함께 별도 버전으로)")
+    return out
+
+
+def annotation_files() -> list[str]:
+    """잠금 대상. 안전 조건 근거 목록은 비어 있어도(머리글만) 함께 잠근다."""
+    return [f"{p}_{kind}.csv" for p in PATIENTS for kind in ("final", "clusters")] + ["safety_evidence.csv"]
+
+
+def evidence_ids(path: Path) -> set | None:
+    """인용할 수 있는 근거 ID: 모든 열이 채워지고 review_status가 "고정"인 행."""
+    if not path.exists():
+        return None
+    rows = sc.read_csv(path)
+    return {r["evidence_id"] for r in rows if all(r.get(c, "").strip() for c in sc.SCHEMA["safety_evidence_columns"])
+            and r["review_status"] == "고정" and re.fullmatch(r"EV[\w-]+", r["evidence_id"])}
+
+
+def evidence_problems(path: Path) -> list[str]:
+    """잠금 시 근거 목록에 검토 대기 행이 남아 있으면 안 된다 (고정 또는 제외만)."""
+    rows = sc.read_csv(path) if path.exists() else []
+    if rows and list(rows[0]) != sc.SCHEMA["safety_evidence_columns"]:
+        return ["safety_evidence.csv 열이 양식과 다름"]
+    pending = [r["evidence_id"] for r in rows if r.get("review_status") not in ("고정", "제외")]
+    return [f"근거 목록 검토 대기 {len(pending)}건"] if pending else []
+
+
+def check_annotation_population(pid: str, rows: list[dict], evidence: set | None = None) -> list[str]:
+    """확정 주석의 모집단이 질문 후보(U)와 정확히 같은지, 계산 열이 확정 점수와 맞는지.
+
+    evidence: 고정된 근거 목록 ID. None이면 근거 ID 대조를 건너뛴다.
+    H가 0개여도 거부하지 않는다 (M5-B: M4a는 값 없음으로 두고 n_H를 보고).
+    """
     bundle = make_bundle(pid)
     cand = {(m["trial"], m["criterion_id"]) for m in qb.collect_materials(bundle)}
     got = {(r["trial_id"], r["criterion_id"]) for r in rows}
     out = []
     if got != cand:
         out.append(f"{pid}: 주석 모집단이 후보와 다름 (빠짐 {len(cand - got)}, 초과 {len(got - cand)})")
+    missing = [c for c in sc.SCHEMA["preannotation_final_columns"] if rows and c not in rows[0]]
+    if missing:
+        out.append(f"{pid}: 확정표 열 없음 {missing}")
+        return out
     if any(r.get("final_askable") not in sc.SCHEMA["values"]["askable"][:3] for r in rows):
         out.append(f"{pid}: final_askable 미확정")
-    if not any(r.get("h_strict", "").lower() == "true" for r in rows):
-        out.append(f"{pid}: 고영향 기준 없음")
+    if any((str(r["h_strict"]).lower() == "true") != sc.is_core(r["final_centrality"]) for r in rows):
+        out.append(f"{pid}: h_strict가 확정 핵심성과 맞지 않음")
+    for r in rows:
+        key = f"{pid} {r['trial_id']} {r['criterion_id']}"
+        core, info = r["final_core_part"].strip(), r["final_core_info"].strip()
+        if r["final_centrality"] == "2":
+            if not r["final_centrality_evidence"].strip():
+                out.append(f"{key}: 핵심성 2점의 근거 없음")
+            if not core or not info:
+                out.append(f"{key}: 핵심성 2점 기준은 핵심 부분(또는 '{sc.WHOLE}')과 필요한 정보가 필요")
+        elif core or info:
+            out.append(f"{key}: 핵심 부분은 핵심성 2점 기준에만 적는다")
+        cited = set(re.findall(r"\bEV[\w-]+", r["final_centrality_evidence"]))
+        if evidence is not None and cited - evidence:
+            out.append(f"{key}: 근거 목록에 없거나 고정되지 않은 근거 {sorted(cited - evidence)}")
     return out
 
 
@@ -308,6 +405,7 @@ class Workspace:
         self.packet, self.sealed = self.root / "rater_packet", self.root / "sealed"
         self.scores = self.root / "scores"
         self.errors = self.root / "errors.jsonl"
+        self.bundle, self.seal_record = self.root / "sealed_bundle.zip", self.root / "seal_record.json"
 
     @classmethod
     def existing(cls, root: Path) -> "Workspace":
@@ -342,11 +440,12 @@ class RealTransport:
     """실제 API. src.llm._params로 파이프라인과 같은 요청을 만든다.
 
     fallbacks는 넣지 않는다: 거부 시 다른 모델로 넘어가면 모델 고정이 깨진다. refusal은 그대로 기록한다.
-    SDK 자동 재시도(기본 2회: 연결 오류, 408·409·429·5xx)는 응답을 받기 전의 전송 재시도라 그대로 둔다.
+    SDK 자동 재시도는 끈다 (max_retries=0, 2026-11-05 결정). 재시도는 실행기가 예산 검사(BudgetTransport) 안에서 한다:
+    API 오류 실행은 결과를 남기지 않으므로 같은 명령을 다시 실행하면 그 실행만 다시 시도한다.
     """
 
     def __init__(self, client=None):
-        self.client = client or llm.get_client()
+        self.client = (client or llm.get_client()).with_options(max_retries=0)
 
     def __call__(self, system: str, user: str) -> dict:
         start = time.monotonic()
@@ -687,6 +786,8 @@ def paid_gate(args) -> tuple[Workspace, list[dict], dict]:
     if not (os.environ.get("ANTHROPIC_API_KEY") or (ROOT / ".env").exists() or (ROOT / "eval" / ".env").exists()):
         raise GateError("API 키 없음")
     ws = Workspace(REAL_ROOT / args.experiment, mock=False)
+    if ws.seal_record.exists():
+        raise GateError("봉인된 실험 폴더: 채점표 생성 후에는 질문 생성·후속 실행을 하지 않음")
     plan = make_plan()
     ws.prepare(plan, versions)
     return ws, plan, versions
@@ -747,6 +848,63 @@ class SmokeTransport:
         return reply
 
 
+TOTAL_BUDGET_USD = 10.00    # 연구 담당자 결정 (2026-11-05, $6에서 상향): smoke + 파일럿 모든 유료 단계 합계
+LEDGER_NAME = "spend_ledger.jsonl"   # REAL_ROOT 아래 공용 장부. 실험 폴더·단계·재시작과 무관하게 합산
+
+
+class BudgetExhausted(GateError):
+    """예산 부족. 완료된 결과는 그대로 두고 추가 호출을 하지 않는다."""
+
+
+class BudgetTransport:
+    """공용 예산 검사. 호출 전에 '장부 누계 + 이번 호출의 최악 비용'이 예산을 넘으면 호출하지 않고 멈춘다.
+
+    최악 비용 = 입력 UTF-8 바이트 수(토큰 수의 상한)×입력 단가 + MAX_TOKENS×출력 단가.
+    응답 없이 실패한 호출(연결 오류·시간 초과 등)도 청구됐을 수 있으므로 최악 비용으로 장부에 적는다 (보수적 집계).
+    SDK 내부 재시도는 RealTransport에서 끈다. 형식 실패 재시도와 재실행은 모두 이 검사를 다시 거친다.
+    보장하지 못하는 것: 단가표(llm.PRICE)가 실제 청구 단가와 다를 때.
+    장부에는 실험 ID와 단계만 적는다 (실행 키에는 조건 이름이 들어 있으므로 적지 않는다).
+    """
+
+    def __init__(self, inner, label: str, ledger: Path | None = None, budget_usd: float = TOTAL_BUDGET_USD):
+        self.inner, self.label, self.budget = inner, label, budget_usd
+        self.ledger = ledger or REAL_ROOT / LEDGER_NAME
+        self.price = llm.PRICE.get(llm.MODEL)
+        if not self.price:
+            raise GateError(f"고정 모델 단가 없음: {llm.MODEL}")
+
+    def spent(self) -> float:
+        if not self.ledger.exists():
+            return 0.0
+        return sum(json.loads(l)["cost_usd"] for l in self.ledger.read_text(encoding="utf-8").splitlines() if l.strip())
+
+    def _write(self, cost: float, kind: str, **extra) -> None:
+        self.ledger.parent.mkdir(parents=True, exist_ok=True)
+        with open(self.ledger, "a", encoding="utf-8") as f:
+            f.write(json.dumps({"time": time.strftime("%Y-%m-%dT%H:%M:%S"), "label": self.label, "kind": kind,
+                                "cost_usd": cost, **extra}, ensure_ascii=False) + "\n")
+
+    def __call__(self, system: str, user: str) -> dict:
+        worst = (len((system + user).encode("utf-8")) * self.price[0] + MAX_TOKENS * self.price[1]) / 1e6
+        spent = self.spent()
+        if spent + worst > self.budget:
+            raise BudgetExhausted(f"예산 부족으로 중단: 누계 ${spent:.2f} + 다음 호출 최악 ${worst:.2f} > 예산 ${self.budget:.2f}. "
+                                  "완료된 결과는 보존됨")
+        try:
+            reply = self.inner(system, user)
+        except Exception as e:  # noqa: BLE001  청구 여부를 알 수 없으므로 최악 비용으로 적고 그대로 올린다
+            self._write(worst, "error_charged_as_worst", error=type(e).__name__)
+            raise
+        price = llm.PRICE.get(reply["model"])
+        if not price:
+            self._write(worst, "unknown_price_charged_as_worst", model=reply["model"])
+            raise GateError(f"응답 모델 단가 없음: {reply['model']} (비용 집계 불가)")
+        cost = (reply["input_tokens"] * price[0] + reply["output_tokens"] * price[1]) / 1e6
+        self._write(cost, "ok", model=reply["model"], input_tokens=reply["input_tokens"],
+                    output_tokens=reply["output_tokens"])
+        return reply
+
+
 def smoke_gate(args, step: str) -> tuple[Workspace, dict]:
     """6A-0(ping)은 실험 데이터를 쓰지 않아 사전 주석 잠금 없이 열린다. 6A-1·2는 파일럿과 같은 조건."""
     if args.paid != args.experiment:
@@ -789,7 +947,8 @@ def smoke_ping(client, transport: SmokeTransport, model_id: str) -> dict:
 
 def run_smoke(step: str, ws: Workspace, versions: dict, client) -> dict:
     """질문 텍스트는 출력하지 않는다. 결과 파일은 관리자만 본다."""
-    transport = SmokeTransport(RealTransport(client), ws, versions["model_id"])
+    budget = BudgetTransport(RealTransport(client), f"{ws.root.name}:smoke_{step}")
+    transport = SmokeTransport(budget, ws, versions["model_id"])
     if step == "ping":
         result = smoke_ping(client, transport, versions["model_id"])
     else:
@@ -806,7 +965,8 @@ def run_smoke(step: str, ws: Workspace, versions: dict, client) -> dict:
                     "d9_below_heuristic": r.get("d9_below_heuristic"), "not_asked_report": r.get("not_asked_report"),
                     "calls": r["calls"]}
     result.update(step=step, analysis="제외 (연동 테스트)", spent_usd=round(transport.spent, 4),
-                  budget_usd=SMOKE_BUDGET_USD)
+                  budget_usd=SMOKE_BUDGET_USD, total_spent_usd=round(budget.spent(), 4),
+                  total_budget_usd=TOTAL_BUDGET_USD)
     n = 1
     while (ws.root / f"smoke_{step}_{n:03d}.json").exists():
         n += 1
@@ -816,8 +976,25 @@ def run_smoke(step: str, ws: Workspace, versions: dict, client) -> dict:
 
 # ── 채점 연결 (STEP 4 scoring.py 재사용) ───────────────────
 
-def build_rater_packet(ws: Workspace, seed: int) -> dict:
+def core_parts(pid: str, base: Path | None = None) -> dict:
+    """확정 주석의 H 기준별 (핵심 부분 또는 "전체", 필요한 정보). 확정표가 없으면(잠금 전 dry-run) 비어 있다.
+
+    핵심 부분의 범위는 사전 주석 단계에서 정해 잠근 값이다. 채점 단계에서는 바꾸지 않는다.
+    """
+    f = (base or ANNOTATION_RECORD.parent) / f"{pid}_final.csv"
+    if not f.exists():
+        return {}
+    return {f"{r['trial_id']}|{r['criterion_id']}": (r["final_core_part"].strip(), r["final_core_info"].strip())
+            for r in sc.read_csv(f) if r["h_strict"].lower() == "true"}
+
+
+def build_rater_packet(ws: Workspace, seed: int, ann_base: Path | None = None) -> dict:
     runs = [r for r in map(read_json, sorted(ws.questions.glob("*.json"))) if r["status"] == "ok"]
+    parts = {pid: core_parts(pid, ann_base) for pid in PATIENTS}
+    for r in runs:
+        mine = parts.get(r["patient_id"], {})
+        r["criteria"] = {k: {**v, "core_part": mine.get(k, ("", ""))[0], "core_info": mine.get(k, ("", ""))[1]}
+                         for k, v in r["criteria"].items()}
     mapping = sc.build_packet(runs, ws.packet, ws.sealed, seed)
     (ws.sealed / "double_score_sets.json").write_text(
         json.dumps(sc.double_score_sample(mapping, seed), indent=2) + "\n", encoding="utf-8")
@@ -825,7 +1002,7 @@ def build_rater_packet(ws: Workspace, seed: int) -> dict:
 
 
 Q_FIELDS = ["assumption", "redundancy", "single_topic", "overgroup"]
-L_FIELDS = ["preservation", "coverage", "group_validity"]
+L_FIELDS = ["preservation", "coverage", "core_coverage", "group_validity"]
 Q_KEYS = ("blind_id", "question_no")
 L_KEYS = ("blind_id", "question_no", "trial_id", "criterion_id")
 
@@ -859,12 +1036,77 @@ def merge_scores(primary: Path, adjudication: Path, out: Path) -> None:
     sc.write_csv(out / "link_final.csv", sc.LC, l)
 
 
+# ── 조건 매핑 자동 봉인 (방식 B, 2026-11-05 결정) ───────────
+# 자기 관리 봉인이다: 같은 계정에서 묶음을 열 수 있으며 실제 접근 차단 장치가 없다.
+# 해시는 봉인 후 변경을 드러낼 뿐 열람 여부를 증명하지 않는다. 결과 보고에 이 한계를 적는다.
+
+SEALED_PARTS = ("questions", "attempts", "answers", "downstream", "errors.jsonl", "sealed")
+SEAL_LIMITATION = ("자기 관리 봉인 (방식 B: 자동 봉인·로그 가림). 같은 계정에서 열 수 있으며 실제 접근 차단 장치가 없다. "
+                   "해시는 봉인 후 변경만 드러내고 열람 여부를 증명하지 않는다.")
+
+
+def seal(ws: Workspace) -> dict:
+    """채점표 생성 직후 조건이 드러나는 실행 기록과 sealed/를 묶음 하나로 옮긴다. 화면에는 건수만 낸다."""
+    if ws.seal_record.exists():
+        raise GateError("이미 봉인됨")
+    if not (ws.sealed / "blind_map.json").exists() or not (ws.packet / "question_sheet.csv").exists():
+        raise GateError("채점표 생성 후에 봉인한다")
+    parts = [ws.root / p for p in SEALED_PARTS if (ws.root / p).exists()]
+    files = [f for p in parts for f in ([p] if p.is_file() else sorted(x for x in p.rglob("*") if x.is_file()))]
+    with zipfile.ZipFile(ws.bundle, "x", zipfile.ZIP_DEFLATED) as z:
+        for f in files:
+            z.write(f, f.relative_to(ws.root).as_posix())
+    with zipfile.ZipFile(ws.bundle) as z:
+        if z.testzip() is not None or len(z.namelist()) != len(files):
+            ws.bundle.unlink()
+            raise GateError("봉인 묶음 검증 실패 (원본은 그대로 둠)")
+    digest = sc.sha_file(ws.bundle)
+    for p in parts:
+        shutil.rmtree(p) if p.is_dir() else p.unlink()
+    write_new(ws.seal_record, {"sealed_at": time.strftime("%Y-%m-%dT%H:%M:%S"), "bundle_sha256": digest,
+                               "files": len(files), "limitation": SEAL_LIMITATION})
+    return {"sealed_files": len(files)}
+
+
+def unseal(ws: Workspace) -> dict:
+    """채점 잠금(sealed/lock.json)이 있고 채점 확정표가 그대로일 때만 묶음을 푼다."""
+    if not ws.seal_record.exists():
+        raise GateError("봉인 기록 없음")
+    finals = [ws.scores / "question_final.csv", ws.scores / "link_final.csv"]
+    lock = ws.sealed / "lock.json"
+    if not lock.exists():
+        raise GateError("채점 잠금 전에는 봉인을 풀 수 없음")
+    if read_json(lock)["files"] != {f.name: sc.sha_file(f) for f in finals if f.exists()}:
+        raise GateError("잠금 후 채점 파일이 바뀜")
+    if sc.sha_file(ws.bundle) != read_json(ws.seal_record)["bundle_sha256"]:
+        raise GateError("봉인 묶음이 봉인 후 바뀜")
+    with zipfile.ZipFile(ws.bundle) as z:
+        names = z.namelist()
+        clash = [n for n in names if (ws.root / n).exists()]
+        if clash:
+            raise GateError(f"풀 위치에 같은 파일이 있음 ({len(clash)}건)")
+        z.extractall(ws.root)
+    write_new(ws.root / "unseal_record.json", {"unsealed_at": time.strftime("%Y-%m-%dT%H:%M:%S"), "files": len(names)})
+    return {"unsealed_files": len(names)}
+
+
+def rater_id_problems(rows: list[dict], record: Path | None = None) -> list[str]:
+    """채점표의 rater_id가 잠금 기록에 등록된 채점자 ID(role이 rater로 시작)인지."""
+    record = record or ANNOTATION_RECORD
+    if not record.exists():
+        return ["사전 주석 잠금 기록 없음"]
+    ids = {p.get("id") for p in read_json(record).get("people", []) if str(p.get("role", "")).startswith("rater")}
+    bad = sorted({r.get("rater_id", "") for r in rows} - ids)
+    return [f"등록되지 않은 rater_id {bad} (등록: {sorted(ids)})"] if bad else []
+
+
 def load_final_annotation(pid: str, base: Path) -> tuple[dict, dict]:
     ann = {}
     for r in sc.read_csv(base / f"{pid}_final.csv"):
         ann[(r["trial_id"], r["criterion_id"])] = {
-            "askable": r["final_askable"], "tier": r["final_tier"], "candidate": True,
-            "h_strict": r["h_strict"].lower() == "true", "h_any": r["h_any"].lower() == "true"}
+            "askable": r["final_askable"], "candidate": True,
+            "centrality": r["final_centrality"], "h_strict": r["h_strict"].lower() == "true",
+            "h_any": r["h_any"].lower() == "true"}
     clusters = defaultdict(set)
     for r in sc.read_csv(base / f"{pid}_clusters.csv"):
         clusters[r["cluster_id"]].add((r["trial_id"], r["criterion_id"]))
@@ -875,7 +1117,9 @@ def blind_status(registry: Path | None) -> dict:
     """정답 노출자가 있으면 독립적인 정답 블라인드 평가로 표시하지 않는다."""
     rows = sc.read_csv(registry) if registry and registry.exists() else []
     exposed = [r for r in rows if r["gold_exposed"] != "none"]
-    return {"registered": len(rows), "gold_exposed": exposed,
+    label = ("정답 노출 연구자의 탐색적 채점: 독립 평가로 보고하지 않음" if exposed
+             else "정답 비노출 평가자" if rows else "평가자 기록 없음")
+    return {"registered": len(rows), "gold_exposed": exposed, "label": label,
             "independent_gold_blind": bool(rows) and not exposed, "condition_blind": True}
 
 
@@ -939,7 +1183,17 @@ def report(ws: Workspace, ann_base: Path, registry: Path | None, audit: Path | N
         cell = {n: summarize([s[n] for s in sets]) for n in names}
         cell["M7a"] = sc.stability([s["covered_set"] for s in sets])
         table["|".join(key)] = cell
+    record = ann_base / "annotation_record.json"
+    src = read_json(record).get("annotation_source", {}) if record.exists() else {}
+    raters = sorted({r["rater_id"] for r in q_rows + l_rows})
     result = {"mock": ws.mock, "scope": "개발 데이터 탐색 결과. 환자를 합산하지 않음",
+              "preannotation": ("미검증 AI 주석 (AI 주석 버전 고정, 사람 항목별 검토 없음). "
+                                "M4a는 AI가 핵심으로 분류한 기준의 커버리지" if src.get("mode") == AI_MODE
+                                else "사람 주석 (지침 2절 절차)"),
+              "scoring_raters": {"n": len(raters),
+                                 "note": "단일 평가자: 평가자 간 일치도·κ 없음" if len(raters) == 1 else ""},
+              "condition_mapping": (read_json(ws.seal_record)["limitation"] if ws.seal_record.exists()
+                                    else "봉인 기록 없음 (방식 A 또는 mock)"),
               "blinding": blind_status(registry), "question_metrics": table,
               "downstream_metrics": downstream_metrics(ws, mapping, audit)}
     write_new(ws.scores / "report.json", result)
@@ -1044,11 +1298,12 @@ def main() -> int:
     p.add_argument("step", choices=["ping", "questions", "downstream"])
     p.add_argument("--experiment", required=True, help=f"'{SMOKE_PREFIX}'로 시작")
     p.add_argument("--paid", required=True, help="실험 ID를 다시 적는다")
-    for name, extra in (("packet", ["--seed"]), ("lock-scores", []), ("sim-audit", [])):
+    for name, extra in (("packet", ["--seed"]), ("lock-scores", []), ("sim-audit", []), ("unseal", [])):
         p = sub.add_parser(name)
         p.add_argument("--workspace", type=Path, required=True)
         if extra:
-            p.add_argument("--seed", type=int, required=True)
+            p.add_argument("--seed", type=int, help="생략 권장: 비밀 난수를 쓰고 sealed/에만 저장한다. "
+                                                    "시드를 알면 실행 목록만으로 조건 매핑을 다시 계산할 수 있다")
     p = sub.add_parser("compare-raters")
     p.add_argument("rater1", type=Path)
     p.add_argument("rater2", type=Path)
@@ -1079,22 +1334,44 @@ def main() -> int:
         print(json.dumps(cmd_dry_run(args.out), ensure_ascii=False, indent=2))
     elif args.cmd in ("questions", "downstream"):
         ws, plan, _ = paid_gate(args)
-        print(dict(execute(args.cmd, plan, ws, RealTransport())))
+        transport = BudgetTransport(RealTransport(), f"{args.experiment}:{args.cmd}")
+        try:
+            print(dict(execute(args.cmd, plan, ws, transport)))
+        except Exception as e:  # noqa: BLE001  상세(실행 키 = 조건 이름 포함)는 화면에 내지 않고 errors.jsonl에만 남긴다
+            ws.log_error("-", args.cmd, "stopped", f"{type(e).__name__}: {e}")
+            note = "예산 부족: 완료된 결과는 보존, 추가 호출 없음" if isinstance(e, BudgetExhausted) else \
+                "상세는 실행 폴더 errors.jsonl (채점자는 열지 않음)"
+            print(f"[중단] {type(e).__name__}. {note}", file=sys.stderr)
+            print(f"누계 비용 ${transport.spent():.2f} / 예산 ${TOTAL_BUDGET_USD:.2f}", file=sys.stderr)
+            return 2
+        print(f"누계 비용 ${transport.spent():.2f} / 예산 ${TOTAL_BUDGET_USD:.2f}")
     elif args.cmd == "smoke":
         client = smoke_client()   # 키가 없으면 결과 폴더를 만들기 전에 멈춘다
         ws, versions = smoke_gate(args, args.step)
         print(json.dumps(run_smoke(args.step, ws, versions, client), ensure_ascii=False, indent=2))
     elif args.cmd == "packet":
         ws = Workspace.existing(args.workspace)
-        print(f"blind 세트 {len(build_rater_packet(ws, args.seed))}개")
+        seed = args.seed if args.seed is not None else secrets.randbits(48)   # 출력하지 않는다
+        n = len(build_rater_packet(ws, seed))
+        print(json.dumps({"blind_sets": n, **seal(ws), "note": SEAL_LIMITATION}, ensure_ascii=False))
+    elif args.cmd == "unseal":
+        print(json.dumps(unseal(Workspace.existing(args.workspace)), ensure_ascii=False))
     elif args.cmd == "compare-raters":
         print(json.dumps(compare_raters(args.rater1, args.rater2, args.out), ensure_ascii=False, indent=2))
     elif args.cmd == "merge":
         ws = Workspace.existing(args.workspace)
+        problems = rater_id_problems(sc.read_csv(args.primary / "question_sheet.csv") +
+                                     sc.read_csv(args.primary / "link_sheet.csv"))
+        if problems:
+            raise GateError("; ".join(problems))
         merge_scores(args.primary, args.adjudication, ws.scores)
     elif args.cmd == "lock-scores":
         ws = Workspace.existing(args.workspace)
-        sc.lock(ws.sealed, [ws.scores / "question_final.csv", ws.scores / "link_final.csv"])
+        finals = [ws.scores / "question_final.csv", ws.scores / "link_final.csv"]
+        problems = rater_id_problems(sc.read_csv(finals[0]) + sc.read_csv(finals[1]))
+        if problems:
+            raise GateError("; ".join(problems))
+        sc.lock(ws.sealed, finals)
     elif args.cmd == "sim-audit":
         print(sim_audit_sheet(Workspace.existing(args.workspace)))
     elif args.cmd == "report":

@@ -1,0 +1,280 @@
+{
+ "protocolSection": {
+  "identificationModule": {
+   "nctId": "NCT06863532",
+   "orgStudyIdInfo": {
+    "id": "2024-0986"
+   },
+   "organization": {
+    "fullName": "Second Affiliated Hospital, Zhejiang University, School of Medicine",
+    "class": "OTHER"
+   },
+   "briefTitle": "Efficacy and Safety Comparison of Cofrogliptin Add-on Versus Metformin Dose-escalation in Type 2 Diabetes Patients Inadequately Controlled With SGLT-2 Inhibitors Plus Low-Dose Metformin:A Multicenter, Open-Label Trial",
+   "officialTitle": "Efficacy and Safety Comparison of Cofrogliptin Add-on Versus Metformin Dose-escalation in Type 2 Diabetes Patients Inadequately Controlled With SGLT-2 Inhibitors Plus Low-Dose Metformin:A Multicenter, Open-Label Trial"
+  },
+  "statusModule": {
+   "statusVerifiedDate": "2025-02",
+   "overallStatus": "RECRUITING",
+   "expandedAccessInfo": {
+    "hasExpandedAccess": false
+   },
+   "startDateStruct": {
+    "date": "2025-03-30",
+    "type": "ESTIMATED"
+   },
+   "primaryCompletionDateStruct": {
+    "date": "2026-06-30",
+    "type": "ESTIMATED"
+   },
+   "completionDateStruct": {
+    "date": "2026-09-01",
+    "type": "ESTIMATED"
+   },
+   "studyFirstSubmitDate": "2025-03-03",
+   "studyFirstSubmitQcDate": "2025-03-03",
+   "studyFirstPostDateStruct": {
+    "date": "2025-03-07",
+    "type": "ACTUAL"
+   },
+   "lastUpdateSubmitDate": "2025-03-03",
+   "lastUpdatePostDateStruct": {
+    "date": "2025-03-07",
+    "type": "ACTUAL"
+   }
+  },
+  "sponsorCollaboratorsModule": {
+   "responsibleParty": {
+    "type": "SPONSOR"
+   },
+   "leadSponsor": {
+    "name": "Second Affiliated Hospital, Zhejiang University, School of Medicine",
+    "class": "OTHER"
+   },
+   "collaborators": [
+    {
+     "name": "Ningbo Medical Center Lihuili Hospital",
+     "class": "OTHER_GOV"
+    },
+    {
+     "name": "Hangzhou Hospital of Traditional Chinese Medicine",
+     "class": "OTHER"
+    },
+    {
+     "name": "Wenzhou Central Hospital",
+     "class": "OTHER"
+    },
+    {
+     "name": "The Second Affiliated Hospital of Dalian Medical University",
+     "class": "OTHER"
+    }
+   ]
+  },
+  "oversightModule": {
+   "oversightHasDmc": true,
+   "isFdaRegulatedDrug": false,
+   "isFdaRegulatedDevice": false
+  },
+  "descriptionModule": {
+   "briefSummary": "The aim of this study is to evaluate the change in glycated hemoglobin (HbA1c) levels of adding cofrogliptin compared to escalation of metformin dose after 24 weeks in type 2 diabetes patients who have failed to achieve adequate glycemic control despite receiving combination therapy with SGLT2i and metformin. Participants will be asked to use either cofrogliptin combined with SGLT2i and metformin or SGLT2i combined with increased dose of metformin.",
+   "detailedDescription": "The primary objective of this study is to evaluate the change in glycated hemoglobin (HbA1c) levels of adding cofrogliptin compared to escalation of metformin dose after 24 weeks in type 2 diabetes patients who have failed to achieve adequate glycemic control despite receiving combination therapy with SGLT2i and metformin.\n\nThe secondary objectives of this study are to evaluate the changes in the following parameters (for indicators requiring pre-post comparison, the baseline level during the baseline treatment period is used for comparison):of adding cofrogliptin compared to escalation of metformin dose after 24 weeks in type 2 diabetes patients who have failed to achieve adequate glycemic control despite receiving combination therapy with SGLT2i and metformin:\n\n1. The proportion of subjects with HbA1c \\< 7.0% and \\< 6.5% after 24 weeks of treatment.\n2. Changes in 2-hour postprandial plasma glucose (2h-PPG) and fasting plasma glucose (FPG) from baseline at 12 and 24 weeks of treatment.\n3. Change in HbA1c levels from baseline after 12 weeks of treatment.\n4. Changes in body weight, fasting C-peptide, insulin sensitivity, and β-cell function from baseline after 24 weeks of treatment.\n5. The proportion of subjects who withdrew due to the need for rescue therapy for hyperglycemia.\n6. The safety profile of triple therapy with cofrogliptin."
+  },
+  "conditionsModule": {
+   "conditions": [
+    "Type 2 Diabetes"
+   ],
+   "keywords": [
+    "t2dm"
+   ]
+  },
+  "designModule": {
+   "studyType": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "designInfo": {
+    "allocation": "RANDOMIZED",
+    "interventionModel": "PARALLEL",
+    "primaryPurpose": "TREATMENT",
+    "maskingInfo": {
+     "masking": "NONE"
+    }
+   },
+   "enrollmentInfo": {
+    "count": 80,
+    "type": "ESTIMATED"
+   }
+  },
+  "armsInterventionsModule": {
+   "armGroups": [
+    {
+     "label": "cofrogliptin add-on group",
+     "type": "EXPERIMENTAL",
+     "description": "The cofrogliptin add-on group will continue their existing SGLT2i plus metformin regimen and dosing, with the add-on of cofrogliptin over 24 weeks of triple combined therapy.",
+     "interventionNames": [
+      "Drug: Metformin dose escalation"
+     ]
+    },
+    {
+     "label": "Metformin dose escalation group",
+     "type": "ACTIVE_COMPARATOR",
+     "description": "The metformin dose escalation group will have their metformin dose gradually increased to the target dose",
+     "interventionNames": [
+      "Drug: Cofrogliptin+SGLT2i+Metformin"
+     ]
+    }
+   ],
+   "interventions": [
+    {
+     "type": "DRUG",
+     "name": "Cofrogliptin+SGLT2i+Metformin",
+     "description": "The cofrogliptin add-on group will continue their existing SGLT2i plus metformin regimen and dosing, with the add-on of cofrogliptin over 24 weeks of triple combined therapy.",
+     "armGroupLabels": [
+      "Metformin dose escalation group"
+     ]
+    },
+    {
+     "type": "DRUG",
+     "name": "Metformin dose escalation",
+     "description": "The metformin dose escalation group will have their metformin dose gradually increased to the target dose.",
+     "armGroupLabels": [
+      "cofrogliptin add-on group"
+     ]
+    }
+   ]
+  },
+  "outcomesModule": {
+   "primaryOutcomes": [
+    {
+     "measure": "the change in glycated hemoglobin (HbA1c) levels",
+     "description": "the change in glycated hemoglobin (HbA1c) levels of adding cofrogliptin compared to escalation of metformin dose after 24 weeks in type 2 diabetes patients who have failed to achieve adequate glycemic control despite receiving combination therap",
+     "timeFrame": "throughout the study, about 1 year"
+    }
+   ],
+   "secondaryOutcomes": [
+    {
+     "measure": "The proportion of subjects with HbA1c < 7.0% and < 6.5%",
+     "description": "The proportion of subjects with HbA1c \\< 7.0% and \\< 6.5% after 24 weeks of treatment.",
+     "timeFrame": "throughout the study, about 1 year"
+    },
+    {
+     "measure": "2h-PPG and FPG",
+     "description": "Changes in 2-hour postprandial plasma glucose (2h-PPG) and fasting plasma glucose (FPG) from baseline at 12 and 24 weeks of treatment.",
+     "timeFrame": "throughout the study, about 1 year"
+    },
+    {
+     "measure": "Change in HbA1c levels",
+     "description": "Change in HbA1c levels from baseline after 12 weeks of treatment.",
+     "timeFrame": "throughout the study, about 1 year"
+    },
+    {
+     "measure": "Changes in body weight, fasting C-peptide, insulin sensitivity, and β-cell function",
+     "description": "Changes in body weight, fasting C-peptide, insulin sensitivity, and β-cell function from baseline after 24 weeks of treatment.",
+     "timeFrame": "throughout the study, about 1 year"
+    },
+    {
+     "measure": "proportion of subjects who withdrew",
+     "description": "The proportion of subjects who withdrew due to the need for rescue therapy for hyperglycemia.",
+     "timeFrame": "throughout the study, about 1 year"
+    },
+    {
+     "measure": "The safety profile",
+     "description": "The safety profile of triple therapy with cofrogliptin.",
+     "timeFrame": "throughout the study, about 1 year"
+    }
+   ]
+  },
+  "eligibilityModule": {
+   "eligibilityCriteria": "Inclusion Criteria:\n\n* Able to understand and voluntarily sign a written informed consent form.\n* Male or female aged 18-74 years (inclusive).\n* Meet the diagnostic criteria for type 2 diabetes mellitus (T2DM).\n* Have initiated treatment with any one of the SGLT2i monotherapy (dapagliflozin 10mg/d, canagliflozin 100mg/d, empagliflozin 10mg/d, ertugliflozin 5mg/day, or henagliflozin 10mg/day) for at least 8 weeks.\n* Have received 500-1000mg/day metformin treatment for at least 8 weeks with a stable, unchanged dose maintained during the screening period.\n* HbA1c level within the range of 7.5% to 9.5% inclusive.\n* Fasting blood glucose (FBG) level less than 15 mmol/L before randomization.\n* Body mass index (BMI) less than or equal to 40 kg/m2 before randomization.\n* Urine ketone test negative before randomization.\n* Estimated glomerular filtration rate (eGFR) of 60 ml/min/1.73m2 or higher before randomization.\n* Agree to maintain the same diet and exercise habits throughout the trial, and be willing and able to correctly use a home blood glucose meter for self-monitoring of blood glucose (SMBG) and keep records.\n\nExclusion Criteria:\n\n* Type 1 diabetes mellitus.\n* Various types of secondary diabetes.\n* Pending or having undergone pancreatic or β-cell transplantation.\n* History of pancreatitis or pancreatic resection.\n* Complicated with diabetic ketoacidosis or hyperosmolar coma.\n* Moderate or severe liver insufficiency of any cause, defined as ALT (SGPT), AST (SGOT), or alkaline phosphatase serum levels greater than 3 times the upper limit of normal (ULN) during the screening period.\n* Acute coronary syndrome (ST-segment elevation myocardial infarction, non-ST-segment elevation myocardial infarction, unstable angina), stroke, or transient ischemic attack (TIA) within the past 3 months.\n* Uncontrolled hypertension: systolic blood pressure ≥ 160 mmHg or diastolic blood pressure ≥ 90 mmHg.\n* Hemoglobin level less than 10 g/l or 100 mg/dl.\n* Recurrent genitourinary infections more than twice within the past 3 months.\n* History of bariatric surgery or other gastrointestinal surgeries causing chronic malabsorption within the past 2 years.\n* Received anti-obesity medication within the past 3 months or any other treatment (e.g., surgery, radical diet plans) that led to unstable body weight at the time of screening.\n* History of cancer (except basal cell carcinoma) and/or cancer treatment within the past 5 years.\n* Human immunodeficiency virus (HIV) positivity.\n* Severe peripheral vascular disease.\n* Hematological malignancies or any diseases causing hemolysis or erythrocyte instability (e.g., malaria, babesiosis, hemolytic anemia).\n* Coexisting immune system diseases or currently receiving systemic corticosteroid therapy.\n* Changes in thyroid hormone dosage within the past 6 weeks, or any other uncontrolled endocrine or metabolic disorders outside of T2DM.\n* Alcohol or drug abuse within the past 3 months that may reduce trial compliance, or any chronic illnesses that the investigator believes may lead to reduced trial compliance or reduced use of the study drug.\n* Known allergies to components of the study medication or other drugs with similar chemical structures or excipients.\n* Pregnant women, women planning to become pregnant during the study, or lactating women. Subjects unwilling to use reliable contraception (including condoms, spermicides, or intrauterine devices) from the time of signing the informed consent form until 28 days after the last administration of the study medication, or women planning to use progesterone-containing contraceptives during this period. Men with fertility plans during the study.\n* Participation in any other clinical study within the past 30 days.\n* Any other condition deemed unsuitable for participation in this study by the investigator.",
+   "healthyVolunteers": false,
+   "sex": "ALL",
+   "minimumAge": "18 Years",
+   "maximumAge": "74 Years",
+   "stdAges": [
+    "ADULT",
+    "OLDER_ADULT"
+   ]
+  },
+  "contactsLocationsModule": {
+   "centralContacts": [
+    {
+     "name": "Wenheng Zeng, Doctor",
+     "role": "CONTACT",
+     "phone": "+86 137 5711 8319",
+     "email": "42590910@qq.com"
+    }
+   ],
+   "overallOfficials": [
+    {
+     "name": "Chao Zheng, Doctor",
+     "affiliation": "Second Affiliated Hospital, Zhejiang University, School of Medicine",
+     "role": "PRINCIPAL_INVESTIGATOR"
+    }
+   ],
+   "locations": [
+    {
+     "facility": "Second Affiliated Hospital, School of Medicine, Zhejiang University",
+     "status": "RECRUITING",
+     "city": "Hangzhou",
+     "state": "Zhejiang",
+     "country": "China",
+     "contacts": [
+      {
+       "name": "Wenheng Zeng, Doctor",
+       "role": "CONTACT",
+       "phone": "+86 137 5711 8319",
+       "email": "42590910@qq.com"
+      },
+      {
+       "name": "Chao Zheng, Doctor",
+       "role": "PRINCIPAL_INVESTIGATOR"
+      }
+     ],
+     "geoPoint": {
+      "lat": 30.29365,
+      "lon": 120.16142
+     }
+    }
+   ]
+  },
+  "ipdSharingStatementModule": {
+   "ipdSharing": "NO",
+   "description": "medical data should be analyzed before sharing to avoind misunderstanding"
+  }
+ },
+ "derivedSection": {
+  "miscInfoModule": {
+   "versionHolder": "2026-11-03"
+  },
+  "conditionBrowseModule": {
+   "meshes": [
+    {
+     "id": "D003924",
+     "term": "Diabetes Mellitus, Type 2"
+    }
+   ],
+   "ancestors": [
+    {
+     "id": "D003920",
+     "term": "Diabetes Mellitus"
+    },
+    {
+     "id": "D044882",
+     "term": "Glucose Metabolism Disorders"
+    },
+    {
+     "id": "D008659",
+     "term": "Metabolic Diseases"
+    },
+    {
+     "id": "D009750",
+     "term": "Nutritional and Metabolic Diseases"
+    },
+    {
+     "id": "D004700",
+     "term": "Endocrine System Diseases"
+    }
+   ]
+  }
+ },
+ "hasResults": false
+}

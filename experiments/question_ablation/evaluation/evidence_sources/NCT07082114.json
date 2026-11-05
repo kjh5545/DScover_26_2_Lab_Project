@@ -1,0 +1,348 @@
+{
+ "protocolSection": {
+  "identificationModule": {
+   "nctId": "NCT07082114",
+   "orgStudyIdInfo": {
+    "id": "HDM1002-303"
+   },
+   "organization": {
+    "fullName": "Hangzhou Zhongmei Huadong Pharmaceutical Co., Ltd.",
+    "class": "INDUSTRY"
+   },
+   "briefTitle": "A Phase 3 Study to Evaluate Efficacy and Safety of HDM1002 Tablets in Adults With Type 2 Diabetes Mellitus",
+   "officialTitle": "A Phase 3, Randomized, Double-blind, Active-Controlled, Parallel-Group Study to Evaluate the Efficacy and Safety of HDM1002 Tablets Compared With Dapagliflozin in Subjects With Type 2 Diabetes Mellitus Inadequately Controlled on Metformin"
+  },
+  "statusModule": {
+   "statusVerifiedDate": "2025-07",
+   "overallStatus": "RECRUITING",
+   "expandedAccessInfo": {
+    "hasExpandedAccess": false
+   },
+   "startDateStruct": {
+    "date": "2025-07-14",
+    "type": "ACTUAL"
+   },
+   "primaryCompletionDateStruct": {
+    "date": "2027-02-16",
+    "type": "ESTIMATED"
+   },
+   "completionDateStruct": {
+    "date": "2027-05-17",
+    "type": "ESTIMATED"
+   },
+   "studyFirstSubmitDate": "2025-07-10",
+   "studyFirstSubmitQcDate": "2025-07-23",
+   "studyFirstPostDateStruct": {
+    "date": "2025-07-24",
+    "type": "ACTUAL"
+   },
+   "lastUpdateSubmitDate": "2025-07-23",
+   "lastUpdatePostDateStruct": {
+    "date": "2025-07-24",
+    "type": "ACTUAL"
+   }
+  },
+  "sponsorCollaboratorsModule": {
+   "responsibleParty": {
+    "type": "SPONSOR"
+   },
+   "leadSponsor": {
+    "name": "Hangzhou Zhongmei Huadong Pharmaceutical Co., Ltd.",
+    "class": "INDUSTRY"
+   }
+  },
+  "oversightModule": {
+   "oversightHasDmc": false,
+   "isFdaRegulatedDrug": true,
+   "isFdaRegulatedDevice": false
+  },
+  "descriptionModule": {
+   "briefSummary": "This is a multicenter, randomized, double-blind, active-controlled, parallel-group study, which aims to provide data on the efficacy and safety of HDM1002 tablets compared with dapagliflozin in adults with type 2 diabetes mellitus (T2DM) inadequately controlled on metformin.",
+   "detailedDescription": "This phase 3, multi-center, randomized, double-blind, active-controlled, parallel group study aims to assess the efficacy and safety of HDM1002 tablets in adult participants with T2DM inadequately controlled on metformin monotherapy. A total of 800 participants will be randomized in this study, and will be stratified according to baseline glycated hemoglobin (HbA1c) (≤ 8.5% or \\> 8.5%). Following the screening period to confirm eligibility up to 2-weeks, the study will consist of a 4-week metformin run-in period prior to randomization on Day 1. Eligible participants will be randomized in a 1:1:1:1 ratio to receive different doses of HDM1002 or dapagliflozin once daily for 52 weeks, followed by an approximate 4-week follow-up. During the treatment period, dose escalation will occur every 4 weeks until the target dose is reached. The evaluation of the primary endpoint will be conducted at Week 40."
+  },
+  "conditionsModule": {
+   "conditions": [
+    "Type 2 Diabetes"
+   ],
+   "keywords": [
+    "Glucagon-Like Peptide-1 Receptor Agonists",
+    "HDM1002 tablet",
+    "type 2 diabetes"
+   ]
+  },
+  "designModule": {
+   "studyType": "INTERVENTIONAL",
+   "phases": [
+    "PHASE3"
+   ],
+   "designInfo": {
+    "allocation": "RANDOMIZED",
+    "interventionModel": "PARALLEL",
+    "primaryPurpose": "TREATMENT",
+    "maskingInfo": {
+     "masking": "QUADRUPLE",
+     "whoMasked": [
+      "PARTICIPANT",
+      "CARE_PROVIDER",
+      "INVESTIGATOR",
+      "OUTCOMES_ASSESSOR"
+     ]
+    }
+   },
+   "enrollmentInfo": {
+    "count": 800,
+    "type": "ESTIMATED"
+   }
+  },
+  "armsInterventionsModule": {
+   "armGroups": [
+    {
+     "label": "HDM1002 100mg",
+     "type": "EXPERIMENTAL",
+     "description": "Participants received maintenance dose of 100 mg with dose escalation starting from 50 mg HDM1002 administered orally once daily (QD)",
+     "interventionNames": [
+      "Drug: HDM1002 100 mg"
+     ]
+    },
+    {
+     "label": "HDM1002 200mg",
+     "type": "EXPERIMENTAL",
+     "description": "Participants received maintenance dose 200 mg with dose escalation starting from 50 mg, 100 mg and then 200 mg HDM1002 administered orally QD",
+     "interventionNames": [
+      "Drug: HDM1002 200 mg"
+     ]
+    },
+    {
+     "label": "HDM1002 400mg",
+     "type": "EXPERIMENTAL",
+     "description": "Participants received maintenance dose 400 mg with dose escalation starting from 50 mg, 100 mg, 200 mg and then 400 mg HDM1002 administered orally QD",
+     "interventionNames": [
+      "Drug: HDM1002 400 mg"
+     ]
+    },
+    {
+     "label": "Dapagliflozin",
+     "type": "ACTIVE_COMPARATOR",
+     "description": "Participants received dapagliflozin 10 mg administered orally QD",
+     "interventionNames": [
+      "Drug: Dapagliflozin (DAPA)"
+     ]
+    }
+   ],
+   "interventions": [
+    {
+     "type": "DRUG",
+     "name": "HDM1002 100 mg",
+     "description": "HDM1002 tablets, 100 mg once daily, 52 weeks",
+     "armGroupLabels": [
+      "HDM1002 100mg"
+     ],
+     "otherNames": [
+      "HDM1002"
+     ]
+    },
+    {
+     "type": "DRUG",
+     "name": "HDM1002 200 mg",
+     "description": "HDM1002 tablets, 200 mg once daily, 52 weeks",
+     "armGroupLabels": [
+      "HDM1002 200mg"
+     ],
+     "otherNames": [
+      "HDM1002"
+     ]
+    },
+    {
+     "type": "DRUG",
+     "name": "HDM1002 400 mg",
+     "description": "HDM1002 tablets, 400 mg once daily, 52 weeks",
+     "armGroupLabels": [
+      "HDM1002 400mg"
+     ],
+     "otherNames": [
+      "HDM1002"
+     ]
+    },
+    {
+     "type": "DRUG",
+     "name": "Dapagliflozin (DAPA)",
+     "description": "dapagliflozin 10mg will be provided",
+     "armGroupLabels": [
+      "Dapagliflozin"
+     ],
+     "otherNames": [
+      "Dapagliflozin"
+     ]
+    }
+   ]
+  },
+  "outcomesModule": {
+   "primaryOutcomes": [
+    {
+     "measure": "Change From Baseline in HbA1c at Week 40",
+     "description": "HbA1c can be used as a diagnostic test for diabetes and is a widely recognized objective measure of glycemic control",
+     "timeFrame": "Baseline, Week 40"
+    }
+   ],
+   "secondaryOutcomes": [
+    {
+     "measure": "Change From Baseline in HbA1c at Week 52",
+     "description": "HbA1c can be used as a diagnostic test for diabetes and is a widely recognized objective measure of glycemic control",
+     "timeFrame": "Baseline, Week 52"
+    },
+    {
+     "measure": "Percentage of Participants With an HbA1c target value of < 7.0% or ≤ 6.5% with or without confirmed (plasma glucose <3.9 mmol/L) symptomatic hypoglycemia",
+     "description": "The target HbA1c level for people with diabetes is usually less than 7%.",
+     "timeFrame": "Baseline, Week 40, Week 52"
+    },
+    {
+     "measure": "Change From Baseline in Fasting plasma Glucose",
+     "description": "The fasting plasma glucose measures the levels of glucose in the blood, with a normal range of 70 mg/dL to 99 mg/dL",
+     "timeFrame": "Baseline, Weeks 40, Week 52"
+    },
+    {
+     "measure": "Change from baseline in fasting C-peptide and fasting insulin",
+     "description": "C-Peptide and Fasting Insulin were measured at planned time points",
+     "timeFrame": "Baseline, Weeks 40, Week 52"
+    },
+    {
+     "measure": "Change from baseline in homeostasis model assessment of β-cell function (HOMA-β) and insulin resistance (HOMA-IR)",
+     "description": "HOMA-IR and HOMA-β are commonly used to estimate insulin resistance and beta cell function",
+     "timeFrame": "Baseline, Weeks 40, Week 52"
+    },
+    {
+     "measure": "Change From Baseline in Postprandial 2-hour Glucose (PPG2h), Area Under the Curve of Plasma Glucose (AUC0-2h, Glucose), C-Peptide (AUC0-2h, C-peptide), Insulin (AUC0-2h, Insulin)",
+     "description": "These indicators were assessed using the mixed-meal tolerance test",
+     "timeFrame": "Baseline, Weeks 40, Week 52"
+    },
+    {
+     "measure": "Change from baseline in daily average levels of 7-point self-monitored blood glucose (SMBG) and mean postprandial glucose increment (all meals)",
+     "description": "7-point SMBG was used to assess glycemic variability and the efficacy of treatment",
+     "timeFrame": "Baseline, Weeks 40, Week 52"
+    },
+    {
+     "measure": "Change from baseline in body weight, body mass index (BMI), and waist circumference",
+     "description": "Weight was recorded in kilograms (kg), and accuracy to the nearest 0.1 kg.",
+     "timeFrame": "Baseline, Weeks 40, Week 52"
+    },
+    {
+     "measure": "Percentage change from baseline in body weight",
+     "description": "Weight was recorded in kilograms (kg), and accuracy to the nearest 0.1 kg",
+     "timeFrame": "Baseline, Weeks 40, Week 52"
+    },
+    {
+     "measure": "Percentage of Participants Achieving Weight Loss ≥ 5% and ≥ 10%",
+     "description": "Weight was recorded in kilograms (kg), and accuracy to the nearest 0.1 kg",
+     "timeFrame": "Baseline, Weeks 40, Week 52"
+    },
+    {
+     "measure": "Change From Baseline in Fasting Lipid Profiles, including: Low-density Lipoprotein Cholesterol (LDL-C), High-density Lipoprotein Cholesterol (HDL-C), Triglycerides (TG), Total Cholesterol (TC), Non-HDL-C and Lipoprotein (a) [Lp(a)]",
+     "description": "Fasting Lipid Profiles were measured at planned time points",
+     "timeFrame": "Baseline, Weeks 40, Week 52"
+    },
+    {
+     "measure": "Change From Baseline in Systolic and Diastolic Blood Pressure",
+     "description": "Blood Pressure was measured using an automated device",
+     "timeFrame": "Baseline, Weeks 40, Week 52"
+    },
+    {
+     "measure": "Change from baseline in Diabetes Treatment Satisfaction Questionnaire status version (DTSQs) score",
+     "description": "DTSQs is a validated, patient-reported outcome measure designed to assess current treatment satisfaction in people with diabetes",
+     "timeFrame": "Baseline, Weeks 40, Week 52"
+    },
+    {
+     "measure": "Number of Participants With Treatment Emergent Adverse Events (Adverse Events [AEs] and Serious Adverse Events [SAEs]), Adverse Events of Special Interest (AESI), Incidence and Severity of Hypoglycaemic Events, etc.",
+     "description": "A serious AE (SAE) was an AE resulting in any of the following outcomes or deemed significant for any other reason: death; life-threatening; initial or prolonged inpatient hospitalization; persistent or significant disability/incapacity; congenital anomaly/birth defect",
+     "timeFrame": "Baseline through Week 56"
+    },
+    {
+     "measure": "Number of Participants with Clinical Laboratory Abnormalities, and Abnormalities in Vital Signs, Physical Examination, Electrocardiogram and clinical laboratory evaluations",
+     "description": "Vital signs (blood pressure, pulse rate), physical examination, ECG and clinical laboratory evaluations (hematology, clinical chemistry, coagulation, urinalysis, calcitonin, serum amylase and lipase) and diabetic retinopathy assessments",
+     "timeFrame": "Baseline through Week 56"
+    }
+   ]
+  },
+  "eligibilityModule": {
+   "eligibilityCriteria": "Inclusion Criteria:\n\n1. Male or female subjects between 18 and 75 years of age (inclusive).\n2. Have been diagnosed with type 2 diabetes mellitus (T2DM) for at least 3 months based on the World Health Organization, and participants treated with a stable dose of metformin (with maintenance dose of at least 1500 mg/day or a maximally tolerated dose not less than 1000 mg) for at least 8 weeks prior to screening; and must be stable for at least 12 weeks prior to randomization.\n3. HbA1c ≥7.5% and ≤11.0% at screening as assessed by the local laboratory, and HbA1c ≥7.5% and ≤11.0% prior to randomization as assessed by the specified central laboratory.\n4. Having a body mass index (BMI) of 19.0 to 40.0 kg/m2, inclusive.\n5. Female participants of childbearing potential and male participants must agree to use highly effective contraception method from the day of signing the ICF and until 30 days (female) or 90 days (male) after the final dose administration.\n6. Able to understand and comply with protocol requirements, agree to maintain the same dietary and exercise habits throughout the trial, be willing to complete the trial in strict compliance with the clinical trial protocol and provide written informed consent.\n\nExclusion Criteria:\n\n1. Diagnosed with type 1 diabetes mellitus (including latent autoimmune diabetes in adults), special types of diabetes or gestational diabetes mellitus\n2. Evidence of acute complications of diabetes (e.g., diabetic ketoacidosis, diabetic lactosidosis, or hyperosmolar nonketotic coma) within 6 months prior to signing the informed consent form (ICF).\n3. Have a known self or family history of medullary thyroid carcinoma, thyroid C-cell hyperplasia or multiple endocrine neoplasia type II (MEN2)\n4. History of acute or chronic pancreatitis or pancreatic injury, or any high-risk factor which may lead to pancreatitis; or have symptomatic gallbladder disease that requires treatment during the trial (subjects with prior cholecystectomy can be enrolled if deemed eligible by the investigator)\n5. Have had dysphagia, or any condition or disease possibly affecting gastric emptying or nutrients absorption in the opinion of the investigator, such as history of surgery affecting gastric emptying, gastroesophageal reflux disease, pyloric obstruction, irritable bowel syndrome, etc.\n6. Have had any of the following within 3 months prior to screening:\n\n   * Unstable angina；\n   * Heart failure (New York Heart Association, class III or IV);\n   * Myocardial infarction (MI)；\n   * Coronary artery bypass grafting or percutaneous coronary intervention；\n   * Uncontrolled severe arrhythmias (including: ventricular tachycardia, ventricular fibrillation, atrial fibrillation, second to third degree atrioventricular block, sick sinus node syndrome, pre-excitation syndrome, etc.)；\n   * Cerebrovascular accident\n7. Have a history of proliferative diabetic retinopathy and/or diabetic maculopathy that requires treatment, or evidence of other severe retinopathy that requires treatment during the study.\n8. Have a known history of liver disease, including: acute or chronic active liver disease (except non-alcoholic steatohepatitis) such as active hepatitis B, hepatitis C; or primary biliary cholangitis.\n9. Used strong CYP3A4 or P-gp inhibitors within 14 days prior to randomization or 5 half-lives (whichever is longer); current use with strong/moderate CYP3A4 inhibitors or strong P-gp inducers that cannot be discontinued during the trial; any prior use OATP1B1/OATP1B3 inhibitors; current use with narrow therapeutic index drugs that are substrates of CYP2C8, CYP3A4, UGT1A1, P-gp, or OATP1B1/OATP1B3 and cannot be discontinued during the trial.\n10. Use of any glucose-lowering medication within 4 weeks prior to signing the ICF, including but not limited to: α-glucosidase inhibitors (e.g., acarbose), thiazolidinediones, and dipeptidyl peptidase-4 inhibitors (DPP-4i) inhibitors, glucose kinase activators, sodium-glucose cotransporter-2 inhibitors (SGLT-2i) ,with the exception of short-term insulin therapy due to a concomitant illness, stress, or perioperative period (cumulative duration ≤ 7 days).\n11. Having used a Glucagon-like peptide-1 (GLP-1) analogue within 3 months prior to signing the ICF; or previous discontinuation of a GLP-1 analogue due to safety/tolerability or lack of efficacy.\n12. Pregnancy or lactation.\n13. Subjects with a known hypersensitivity to SGLT-2i or GLP-1 receptor agonists (GLP-1RA), or a history of severe drug allergies.\n14. Enrolled in or participated in any other clinical study of drugs or medical devices within 3 months (or within 5 half-lives, whichever is longer) prior to signing the ICF (except for subjects who signed written informed consent without any intervention of investigational product or medical devices).\n15. Any other condition considered by the investigator which is not suitable for participating in this study.",
+   "healthyVolunteers": false,
+   "sex": "ALL",
+   "minimumAge": "18 Years",
+   "maximumAge": "75 Years",
+   "stdAges": [
+    "ADULT",
+    "OLDER_ADULT"
+   ]
+  },
+  "contactsLocationsModule": {
+   "locations": [
+    {
+     "facility": "Yueyang People's Hospital",
+     "status": "RECRUITING",
+     "city": "Yueyang",
+     "state": "Hunan",
+     "zip": "414000",
+     "country": "China",
+     "contacts": [
+      {
+       "name": "Dijun Zhou",
+       "role": "CONTACT",
+       "phone": "+8613607307010",
+       "email": "Z121300@126.com"
+      }
+     ],
+     "geoPoint": {
+      "lat": 29.37455,
+      "lon": 113.09481
+     }
+    }
+   ]
+  },
+  "ipdSharingStatementModule": {
+   "ipdSharing": "NO"
+  }
+ },
+ "derivedSection": {
+  "miscInfoModule": {
+   "versionHolder": "2026-11-03"
+  },
+  "conditionBrowseModule": {
+   "meshes": [
+    {
+     "id": "D003924",
+     "term": "Diabetes Mellitus, Type 2"
+    }
+   ],
+   "ancestors": [
+    {
+     "id": "D003920",
+     "term": "Diabetes Mellitus"
+    },
+    {
+     "id": "D044882",
+     "term": "Glucose Metabolism Disorders"
+    },
+    {
+     "id": "D008659",
+     "term": "Metabolic Diseases"
+    },
+    {
+     "id": "D009750",
+     "term": "Nutritional and Metabolic Diseases"
+    },
+    {
+     "id": "D004700",
+     "term": "Endocrine System Diseases"
+    }
+   ]
+  },
+  "interventionBrowseModule": {
+   "meshes": [
+    {
+     "id": "C529054",
+     "term": "dapagliflozin"
+    }
+   ]
+  }
+ },
+ "hasResults": false
+}

@@ -27,7 +27,7 @@ SCHEMA = json.loads((HERE / "scoring_schema.json").read_text(encoding="utf-8"))
 QC = SCHEMA["question_columns"]["given"] + SCHEMA["question_columns"]["rated"]
 LC = SCHEMA["link_columns"]["given"] + SCHEMA["link_columns"]["rated"]
 PC = SCHEMA["preannotation_columns"]["given"] + SCHEMA["preannotation_columns"]["rated"]
-TIERS = {"H": 3, "M": 2}
+WHOLE = SCHEMA["core_part_whole"]   # 사전 주석에서 "기준 전체가 핵심 부분"이라고 명시한 값
 HANGUL_MIN = 0.5    # 저장된 v2.3.3 질문 47개의 최솟값 0.556. 이보다 낮으면 출력 언어 이탈로 표시
 
 
@@ -55,7 +55,8 @@ def write_templates(out: Path = HERE / "templates") -> None:
               "preannotation_final_template": SCHEMA["preannotation_final_columns"],
               "adjudication_template": SCHEMA["adjudication_columns"],
               "simulator_audit_template": SCHEMA["simulator_audit_columns"],
-              "rater_registry_template": SCHEMA["rater_registry_columns"]}
+              "rater_registry_template": SCHEMA["rater_registry_columns"],
+              "safety_evidence_template": SCHEMA["safety_evidence_columns"]}
     for name, cols in sheets.items():
         write_csv(out / f"{name}.csv", cols, [])
     (out / "question_sheet_template.json").write_text(
@@ -111,20 +112,19 @@ def preannotation_rows(pid: str) -> list[dict]:
     return rows
 
 
-def impact_tier(decisiveness: str, centrality: str) -> str:
-    """판정 직접성 + 시험 대상 핵심성 → H(3 이상) / M(2) / L(1 이하). 판단 불가면 빈 값."""
-    if not (str(decisiveness).isdigit() and str(centrality).isdigit()):
-        return ""
-    total = int(decisiveness) + int(centrality)
-    return "H" if total >= TIERS["H"] else "M" if total == TIERS["M"] else "L"
+def is_core(centrality: str) -> bool:
+    """H (M4a v2): 확정 핵심성이 2점인 기준. 판단 불가는 H가 아니다."""
+    return str(centrality) == "2"
 
 
 def build_packet(runs: list[dict], out: Path, sealed: Path, seed: int) -> dict:
     """실행 기록 → 채점표. 실행마다 무작위 blind_id를 주고 ID 순으로 정렬해 조건·회차 순서를 지운다.
 
-    runs: [{"run_key", "arm", "patient_id", "rep", "criteria": {"시험|기준": {"text", "type"}},
+    runs: [{"run_key", "arm", "patient_id", "rep", "criteria": {"시험|기준": {"text", "type", "core_part"}},
             "final_questions": [{"text", "needed_info", "resolves": [{"trial", "criteria"}]}]}]
     질문 순서(question_no)는 M4b에 필요하므로 세트 안에서 유지한다.
+    core_part·core_info는 사전 주석에서 정해 잠근 H 기준의 핵심 부분(또는 "전체")과 필요한 정보이다.
+    H가 아닌 기준은 비어 있다. 평가자는 이 칸으로 어떤 기준이 H인지 알 수 있다 (M6-A, 기록 대상).
     """
     rng = random.Random(seed)
     ids = rng.sample(range(16 ** 6), len(runs))
@@ -144,6 +144,7 @@ def build_packet(runs: list[dict], out: Path, sealed: Path, seed: int) -> dict:
                 c = run["criteria"][f"{trial}|{cid}"]
                 lrows.append({**{k: "" for k in LC}, **base, "trial_id": trial, "criterion_id": cid,
                               "criterion_type": c.get("type", ""), "criterion_text": c["text"],
+                              "core_part": c.get("core_part", ""), "core_info": c.get("core_info", ""),
                               "is_multi_link": int(len(links) > 1)})
     qrows.sort(key=lambda r: (r["patient_id"], r["blind_id"], r["question_no"]))
     lrows.sort(key=lambda r: (r["patient_id"], r["blind_id"], r["question_no"], r["trial_id"], r["criterion_id"]))
@@ -239,6 +240,20 @@ def validate(qrows: list[dict], lrows: list[dict]) -> list[str]:
         if (r.get("preservation") == "FAIL" or r.get("coverage") in ("NONE", "PARTIAL")
                 or r.get("group_validity") == "INVALID") and not r.get("rationale"):
             errs.append(f"{w}: 판단 근거 필요")
+        need(r, w, "core_coverage")
+        core, cc = r.get("core_part", "").strip(), r.get("core_coverage")
+        if core and cc == "NA":
+            errs.append(f"{w}: 핵심 부분이 표시된 기준은 core_coverage 필요")
+        if not core and cc not in ("NA", None):
+            errs.append(f"{w}: 핵심 부분이 없으면 core_coverage는 NA")
+        if core and r.get("coverage") == "NONE" and cc in ("FULL", "PARTIAL"):
+            errs.append(f"{w}: coverage=NONE이면 core_coverage도 NONE")
+        if core and r.get("coverage") == "FULL" and cc in ("PARTIAL", "NONE"):
+            errs.append(f"{w}: 원기준 FULL이면 핵심 부분도 FULL")
+        if core == WHOLE and cc == "FULL" and r.get("coverage") != "FULL":
+            errs.append(f"{w}: 기준 전체가 핵심 부분이면 core_coverage=FULL은 원기준 FULL일 때만")
+        if cc == "UNSURE" and not r.get("unsure_reason"):
+            errs.append(f"{w}: UNSURE에는 판단 불가 사유 필요")
         if not r.get("rater_id"):
             errs.append(f"{w}: rater_id 없음")
     return errs
@@ -298,20 +313,40 @@ def _ratio(num: int, den: int):
     return None if den == 0 else num / den
 
 
+def core_cov(row: dict) -> str:
+    """M4a용 핵심 부분 커버. 모든 H 기준은 사전 주석에서 핵심 부분(또는 "전체")이 정해져 채점표에 들어가고,
+    평가자가 core_coverage를 판단한다.
+
+    핵심 부분이 없는 연결은 H가 아닌 기준이다. h_any에만 해당하는 기준(M4a_any)은 원기준 coverage로 대신한다.
+    """
+    if row.get("core_part", "").strip():
+        return row.get("core_coverage", "")
+    return row["coverage"]
+
+
 def set_metrics(qrows: list[dict], lrows: list[dict], final_ann: dict, clusters: dict) -> dict:
     """세트 1개의 M1~M6.
 
-    final_ann: {(시험, 기준): {"askable", "tier", "h_strict", "h_any", "candidate"}}
+    final_ann: {(시험, 기준): {"askable", "h_strict", "h_any", "candidate", "centrality"}}
     clusters: {cluster_id: {(시험, 기준), ...}}  공유정보 군집
-    분모가 0이면 None (0으로 채우지 않음).
+    분모가 0이면 None (0으로 채우지 않음). H가 0개이면 M4a 계열은 None이고 n_H=0을 함께 돌려준다.
+
+    M4a는 확인된 커버율의 하한이다. 핵심 부분 UNSURE는 커버로 확인되지 않았을 뿐 미커버로 확정한 것이 아니며,
+    M4a_unsure_upper(UNSURE를 커버로 본 상한)와 n_H_core_unsure를 함께 보고한다.
+    한 기준은 세트에서 한 번만 센다: 다른 연결에서 이미 커버가 확인된 기준은 UNSURE 건수에 넣지 않는다.
     """
     uv = {k for k, a in final_ann.items() if a["candidate"] and a["askable"] != "NOT_OBTAINABLE"}
     h = {k for k in uv if final_ann[k]["h_strict"]}
     h_any = {k for k in uv if final_ann[k]["h_any"]}
+    strata = {c: {k for k in uv if final_ann[k].get("centrality") == c} for c in ("1", "0")}
     pair = lambda r: (r["trial_id"], r["criterion_id"])  # noqa: E731
     linked = {pair(r) for r in lrows} & uv
     sub = {pair(r) for r in lrows if r["coverage"] in ("FULL", "PARTIAL")} & uv
     full = {pair(r) for r in lrows if r["coverage"] == "FULL"} & uv
+    # 핵심 부분 커버 (M4a). 여러 질문에 나뉘면 한 연결이라도 FULL·PARTIAL이면 커버, FULL은 한 연결이 FULL일 때만
+    core_sub = {pair(r) for r in lrows if core_cov(r) in ("FULL", "PARTIAL")} & uv
+    core_full = {pair(r) for r in lrows if core_cov(r) == "FULL"} & uv
+    core_unsure = ({pair(r) for r in lrows if core_cov(r) == "UNSURE"} & h) - core_sub
     # 같은 기준이 여러 질문에 연결되면 FULL이 하나라도 있을 때만 완전 커버로 본다 (합쳐서 완전해지는 경우는 판정하지 않음)
 
     ev = [r for r in lrows if r["preservation"] in ("PASS", "FAIL")]
@@ -327,7 +362,7 @@ def set_metrics(qrows: list[dict], lrows: list[dict], final_ann: dict, clusters:
     red = [r for r in qrows if r["redundancy"] in ("PASS", "FAIL")]
     topic = [r for r in qrows if r["single_topic"] in ("PASS", "FAIL")]
 
-    in_top2 = {pair(r) for r in lrows if r["coverage"] in ("FULL", "PARTIAL") and int(r["question_no"]) <= 2} & h
+    in_top2 = {pair(r) for r in lrows if core_cov(r) in ("FULL", "PARTIAL") and int(r["question_no"]) <= 2} & h
     cl_cov = cl_one = 0
     for members in clusters.values():
         got = [r for r in lrows if pair(r) in members and r["coverage"] in ("FULL", "PARTIAL")]
@@ -343,8 +378,12 @@ def set_metrics(qrows: list[dict], lrows: list[dict], final_ann: dict, clusters:
         "M2": _ratio(sum(r["assumption"] == "FAIL" for r in q_ev), len(q_ev)),
         "M3a": _ratio(len(linked), len(uv)), "M3b": _ratio(len(sub), len(uv)), "M3c": _ratio(len(full), len(uv)),
         "M3d": _ratio(len(sub), len(qrows)),
-        "M4a": _ratio(len(sub & h), len(h)), "M4a_any": _ratio(len(sub & h_any), len(h_any)),
-        "M4b": _ratio(len(in_top2), len(sub & h)), "M4c": dict(by_trial),
+        "M3b_c1": _ratio(len(sub & strata["1"]), len(strata["1"])), "M3b_c0": _ratio(len(sub & strata["0"]), len(strata["0"])),
+        "M4a": _ratio(len(core_sub & h), len(h)), "M4a_any": _ratio(len(core_sub & h_any), len(h_any)),
+        "M4a_core_full": _ratio(len(core_full & h), len(h)),
+        "M4a_unsure_upper": _ratio(len((core_sub | core_unsure) & h), len(h)),
+        "n_H": len(h), "n_H_any": len(h_any), "n_H_core_unsure": len(core_unsure),
+        "M4b": _ratio(len(in_top2), len(core_sub & h)), "M4c": dict(by_trial),
         "M5a": _ratio(sum(r["group_validity"] == "VALID" for r in multi_ev), len(multi_ev)),
         "M5b": _ratio(cl_one, cl_cov),
         "M5c": _ratio(sum(r["preservation"] == "PASS" and r["coverage"] == "FULL" for r in kept), len(kept)),

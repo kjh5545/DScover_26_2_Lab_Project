@@ -36,10 +36,13 @@ py -3.11 -m venv ../.venv-question-ablation
 
 ```bash
 $PY experiments/question_ablation/build_prompts.py --check        # 프롬프트 검증 53건
-$PY experiments/question_ablation/evaluation/tests/test_scoring.py # 채점 도구 28건
-$PY experiments/question_ablation/tests/test_run_pilot.py          # 실행기 55건
-$PY experiments/question_ablation/evaluation/tests/test_annotation_tools.py  # 주석 보조 10건
-$PY experiments/question_ablation/evaluation/annotation_tools.py check|compare|finalize ...  # 사전 주석 검사·일치도·확정표
+$PY experiments/question_ablation/evaluation/tests/test_scoring.py # 채점 도구 35건
+$PY experiments/question_ablation/tests/test_run_pilot.py          # 실행기 60건
+$PY experiments/question_ablation/evaluation/tests/test_annotation_tools.py  # 주석 보조 14건
+$PY experiments/question_ablation/evaluation/annotation_tools.py evidence|check|compare|finalize ...  # 근거 목록·사전 주석 검사·일치도·확정표
+$PY experiments/question_ablation/evaluation/draft_safety_evidence.py --out <파일>  # 안전 조건 근거 목록 초안 (등록 기록 스냅숏: evaluation/evidence_sources/)
+$PY experiments/question_ablation/holdout.py check|mock-dry-run   # 확인 실험 후보 입력 점검 (개수·여부만 출력). holdout_readiness.md
+$PY experiments/question_ablation/tests/test_holdout.py           # 확인 실험 입력 경로 12건
 $PY experiments/question_ablation/run_pilot.py check               # 평가 분모, 고정 값, 유료 실행 조건
 $PY experiments/question_ablation/run_pilot.py plan                # 실행 순서 30건
 $PY experiments/question_ablation/run_pilot.py estimate            # 호출 수·비용
