@@ -11,6 +11,7 @@
 import json
 import os
 import re
+import threading
 from pathlib import Path
 
 import anthropic
@@ -64,6 +65,7 @@ PRICE = {"claude-sonnet-5-5": (2.0, 10.0), "claude-opus-5": (5.0, 25.0), "claude
 
 # 이 프로세스에서 ask()로 쓴 비용 누계 (달러). 스크립트 끝에 출력해 실제 비용을 확인한다.
 spent = {"calls": 0, "usd": 0.0}
+_spent_lock = threading.Lock()
 
 
 def ask(system: str, user: str, max_tokens: int = 16000, model: str | None = None) -> str:
@@ -72,8 +74,9 @@ def ask(system: str, user: str, max_tokens: int = 16000, model: str | None = Non
     model: 이 호출만 다른 모델로 (예: 가벼운 분류는 Haiku). 없으면 MODEL."""
     response = get_client().messages.create(**_params(system, user, max_tokens, model))
     in_price, out_price = PRICE.get(model or MODEL, (0.0, 0.0))
-    spent["calls"] += 1
-    spent["usd"] += (response.usage.input_tokens * in_price + response.usage.output_tokens * out_price) / 1e6
+    with _spent_lock:  # 병렬 호출(랭킹 등)에서 비용 집계가 꼬이지 않게
+        spent["calls"] += 1
+        spent["usd"] += (response.usage.input_tokens * in_price + response.usage.output_tokens * out_price) / 1e6
     return next((b.text for b in response.content if b.type == "text"), "")
 
 
