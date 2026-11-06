@@ -1,0 +1,59 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "No information on her ability to understand the trial, consent, or comply. Nothing contradicts it, but consent is not confirmed by silence.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "29-year-old woman, so aged ≥ 18 years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "fail",
+    "evidence": "She has Graves' disease but 'has not yet started antithyroid medication'. She therefore cannot be hyperthyroid despite ATD treatment.",
+    "sub_condition_notes": [
+      "GD diagnosis: met (positive TRAb, suppressed TSH, diffuse goiter, endocrinologist diagnosis).",
+      "Hyperthyroid despite ATD treatment: not met, because she is ATD-naive."
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "The specific protocol inclusion criteria are not listed. The study team assesses them at screening.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "She has 'never received radioactive iodine or thyroid surgery', so she has no prior successful RAI or total thyroidectomy.",
+    "sub_condition_notes": [
+      "Prior successful RAI: no.",
+      "Total thyroidectomy: no."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No other autoimmune disease is documented, and she takes no regular medications. The record does not explicitly state that none exists, and the criterion needs investigator judgment about undue risk.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "pass",
+    "evidence": "She has only mild upper eyelid retraction, with no eye pain, double vision, or proptosis. She has no moderate-to-severe active TED, and no TED surgery or therapy is documented as planned.",
+    "sub_condition_notes": [
+      "Moderate-to-severe active TED: not present.",
+      "Expected need for surgery, irradiation, or medical therapy for TED: not documented."
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "post_enrollment",
+    "evidence": "The additional protocol exclusion criteria are not specified. The study team determines them at screening.",
+    "sub_condition_notes": []
+  }
+]

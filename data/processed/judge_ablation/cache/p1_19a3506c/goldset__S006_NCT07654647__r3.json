@@ -1,0 +1,74 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "A 45-year-old man; age 45 years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "No mention of facial bone defects from cystic or tumoral osteolytic lesions. The description lists a necrotic eschar of the nasal mucosa and periorbital swelling, but no imaging or bone findings are given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No facial deformity, bony defect or facial asymmetry is described. Only periorbital swelling is mentioned, which is an acute finding.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "No mention of a need for patient-specific 3D-printed titanium implants or maxillofacial reconstruction.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "unknown",
+    "evidence": "No aesthetic indication or microgenia is described.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I6",
+    "verdict": "unknown",
+    "evidence": "Consent capacity is not stated. The patient is acutely ill, but nothing indicates incapacity.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "fail",
+    "evidence": "The patient has a 'black necrotic eschar on the nasal mucosa', fever, facial pain and periorbital swelling, with a suspected diagnosis of invasive fungal rhinosinusitis. This is an active pathological lesion.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "The patient is 45 years old, so he is not below 18.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No radiotherapy history is mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No vitamin D status is given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "fail",
+    "evidence": "The description states 'poorly controlled type 2 diabetes', which matches uncontrolled diabetes mellitus.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Willingness and ability to comply with follow-up are not stated.",
+    "sub_condition_notes": []
+  }
+]

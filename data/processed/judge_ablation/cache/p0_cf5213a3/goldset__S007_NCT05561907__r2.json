@@ -1,0 +1,94 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "fail",
+    "evidence": "Patient is a 3-month-old with suspected infantile hypertrophic pyloric stenosis, not a periampullary or distal gastric malignancy.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "Postprandial projectile vomiting is present, and the palpable olive mass and visible peristalsis suggest gastric outlet obstruction. Abdominal pain, PO tolerance and imaging are not documented, so a second criterion is not confirmed. Even so, this is moot given the other inclusion failures.",
+    "sub_condition_notes": [
+      "post prandial vomiting: present",
+      "abdominal pain: not stated",
+      "inability to tolerate PO: not clearly stated",
+      "imaging consistent with GOO: not performed or reported"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "GOOSS score or oral intake level is not provided. The scoring is designed for adults with malignant GOO.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "fail",
+    "evidence": "Patient is 3 months old; the criterion requires age >18 years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "unknown",
+    "evidence": "Life expectancy and prior duodenal stenting are not mentioned. Not applicable to an infant without malignancy.",
+    "sub_condition_notes": [
+      "Life expectancy >2 months: not stated",
+      "failed duodenal stenting: no history"
+    ]
+  },
+  {
+    "criterion_id": "I6",
+    "verdict": "unknown",
+    "evidence": "Anesthesia fitness is not documented. Pyloromyotomy is typically tolerated, but this has not been assessed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I7",
+    "verdict": "fail",
+    "evidence": "There is no malignancy; the suspected diagnosis is infantile hypertrophic pyloric stenosis, so there is no unresectable or metastatic disease.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "fail",
+    "evidence": "Patient is 3 months old (<18 years), which meets the exclusion.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "A 3-month-old infant cannot be pregnant.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No imaging or findings are given regarding obstruction distal to the ligament of Treitz. The presentation points to pyloric obstruction.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Other GI luminal strictures are not documented. The pyloric narrowing itself is the suspected lesion.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "No surgical history is recorded (history is empty), and the infant is presenting with a first-time suspected diagnosis.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "fail",
+    "evidence": "A 3-month-old infant cannot complete quality of life surveys.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Ascites is not mentioned. It is unlikely, but there is no explicit exam or imaging statement.",
+    "sub_condition_notes": []
+  }
+]

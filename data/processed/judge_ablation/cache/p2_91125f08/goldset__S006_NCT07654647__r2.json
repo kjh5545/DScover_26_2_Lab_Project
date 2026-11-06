@@ -1,0 +1,74 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"A 45-year-old man\" – age 45 years, which is 18 or older.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "No facial bone defects from cystic or tumoral osteolytic lesions are described. The patient has nasal necrotic eschar and periorbital swelling, but imaging or bone findings are not given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No acquired or congenital facial deformity, bony defect, or facial asymmetry is described. Only periorbital swelling and nasal eschar are mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "No mention of a need for a patient-specific 3D-printed titanium implant or maxillofacial reconstruction. Whether reconstruction will be needed later is not stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "unknown",
+    "evidence": "No aesthetic indication or microgenia is mentioned in the description.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I6",
+    "verdict": "post_enrollment",
+    "evidence": "Ability to provide written informed consent is determined at enrollment. The description gives no information on capacity.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "fail",
+    "evidence": "\"fever, facial pain, black necrotic eschar on the nasal mucosa, and periorbital swelling\" – a presenting active pathological lesion (suspected invasive fungal rhinosinusitis).",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "\"A 45-year-old man\" – not below 18 years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No radiotherapy history is mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Vitamin D status is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "fail",
+    "evidence": "\"poorly controlled type 2 diabetes\" – this matches uncontrolled diabetes mellitus.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness and ability to comply with follow-up can only be established after the patient applies. Nothing in the description addresses it.",
+    "sub_condition_notes": []
+  }
+]

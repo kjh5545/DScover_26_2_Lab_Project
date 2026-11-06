@@ -1,0 +1,50 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "A 68-year-old man; age 68 is ≥ 50.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "He has smoked about one pack a day for 45 years and is still smoking, which is about 45 pack-years and meets the ≥15 threshold.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No occupation or occupational exposure history is described (textile worker, painter, dry cleaner).",
+    "sub_condition_notes": [
+      "Textile worker: not mentioned",
+      "Painter: not mentioned",
+      "Dry cleaner: not mentioned",
+      "Duration ≥15 years: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No prior cancer history is mentioned. The current suspected bladder tumor has no histopathological diagnosis ('No histopathological diagnosis has been established yet'), and a prior history of bladder, kidney or prostate cancer is not stated either way.",
+    "sub_condition_notes": [
+      "Prior bladder cancer: not mentioned",
+      "Prior kidney cancer: not mentioned",
+      "Prior prostate cancer: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "The current hematuria began three weeks ago and cystoscopy was done two days ago, but whether he had any evaluation of micro or gross hematuria in the prior 2 years is not stated. The current workup may itself count as a hematuria evaluation, which the study team must clarify.",
+    "sub_condition_notes": [
+      "Evaluation of microscopic hematuria within 2 years: not mentioned",
+      "Evaluation of gross hematuria within 2 years: only the current evaluation is described"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness and ability to provide informed consent is determined at enrollment.",
+    "sub_condition_notes": []
+  }
+]

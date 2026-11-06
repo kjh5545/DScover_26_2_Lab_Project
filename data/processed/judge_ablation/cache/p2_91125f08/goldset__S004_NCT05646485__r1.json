@@ -1,0 +1,44 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"A 68-year-old man\" meets the age ≥ 50 requirement.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "The description says only \"a long smoking history\". The number of pack-years is not given, so ≥15 pack-years cannot be confirmed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No occupation or occupational exposure history (textile worker, painter, dry cleaner) is mentioned.",
+    "sub_condition_notes": [
+      "It is unclear whether this is required in addition to the smoking criterion or as an alternative. Either way, the occupational history is not given."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "The patient has a bladder mass and suspected bladder cancer, but no prior history of bladder, kidney, or prostate cancer is stated either way.",
+    "sub_condition_notes": [
+      "Prior bladder cancer: not mentioned",
+      "Prior kidney cancer: not mentioned",
+      "Prior prostate cancer: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "The patient presents with painless gross hematuria, but it is not stated whether hematuria was evaluated in the past 2 years. The current presentation may be the first evaluation.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness to provide informed consent can only be determined when the patient is approached for enrollment.",
+    "sub_condition_notes": []
+  }
+]

@@ -1,0 +1,70 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "No information about the patient's capacity to understand the trial, give written consent, or comply with the protocol is in the description.",
+    "sub_condition_notes": [
+      "Understanding requirements: not given",
+      "Written informed consent: not given",
+      "Compliance with procedures: not given"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "\"A 29-year-old woman\" – the patient is female and aged ≥ 18 years.",
+    "sub_condition_notes": [
+      "Male or female: female, meets",
+      "Age ≥ 18: 29 years, meets"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "Graves' disease is only suspected (\"Hyperthyroidism, most likely Graves' disease\"). No confirmed diagnosis, no labs, and no ATD treatment is on record (medications: []). Whether she is hyperthyroid despite ATD treatment cannot be determined.",
+    "sub_condition_notes": [
+      "Diagnosis of GD: suspected only, no formal diagnosis on record",
+      "On ATD treatment: no medications recorded",
+      "Hyperthyroid despite ATD: not established"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "The more specific inclusion criteria are in the protocol and are not provided here; the study team must assess them.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "The description does not mention prior RAI therapy or thyroidectomy. The history is empty, but absence of mention is not confirmation.",
+    "sub_condition_notes": [
+      "Prior successful RAI: not mentioned",
+      "Total thyroidectomy: not mentioned. The presence of an enlarged thyroid gland on exam makes total thyroidectomy unlikely but this is not stated explicitly."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No information about other autoimmune diseases is given (history: []).",
+    "sub_condition_notes": [
+      "Other autoimmune disease requiring treatment: not mentioned",
+      "Undue risk per Investigator judgment: only the investigator can determine"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No eye findings or thyroid eye disease are described, and no plans for TED surgery, irradiation, or therapy are mentioned.",
+    "sub_condition_notes": [
+      "Moderate-to-severe active TED: not assessed or mentioned",
+      "Expected need for immediate surgery or planned TED treatment during the study: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "post_enrollment",
+    "evidence": "The additional exclusion criteria are in the protocol and are not provided here; the study team must assess them.",
+    "sub_condition_notes": []
+  }
+]

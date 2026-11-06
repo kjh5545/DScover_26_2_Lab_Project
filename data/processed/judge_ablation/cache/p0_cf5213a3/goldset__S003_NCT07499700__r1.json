@@ -1,0 +1,78 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "fail",
+    "evidence": "The patient has a new 3-week presentation with suspected minimal change disease. No renal biopsy is documented, and he has not yet received corticosteroids, so steroid responsiveness is unestablished.",
+    "sub_condition_notes": [
+      "Clinical NS diagnosis: consistent (edema, heavy proteinuria, low albumin), but still suspected.",
+      "Biopsy-confirmed MCD/FSGS within 7/10 years: not met, no biopsy documented.",
+      "Corticosteroid responsiveness: not established, no steroid therapy yet."
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "The patient is newly presenting with active disease and has had no corticosteroid therapy, so he has not achieved complete remission.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "The suspected diagnosis is primary (minimal change) NS, but no workup for secondary causes (infection, drugs, lupus, etc.) is described.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "Genetic testing and family history of nephrotic syndrome are not provided.",
+    "sub_condition_notes": [
+      "Known genetic defects: not provided.",
+      "Family history of NS: not provided."
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "pass",
+    "evidence": "The medication list is empty and the history is a new 3-week presentation, so no prior B-cell therapy is evident.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Allergy history and any predisposition to allergies are not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "No medications are listed, and this is a new presentation with no recorded immunosuppressant use.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "No medications are listed, and no immunoglobulin or immunomodulator use is recorded.",
+    "sub_condition_notes": [
+      "Immunoglobulin within 90 days: none recorded.",
+      "Immunomodulators within 4 weeks: none recorded."
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Participation in other trials, and plans to participate, are not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Only urinalysis and a low albumin are reported. Serum creatinine, eGFR and liver enzymes are not provided.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "HBsAg, HCV, syphilis and HIV serologies are not reported.",
+    "sub_condition_notes": []
+  }
+]

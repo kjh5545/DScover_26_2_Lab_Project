@@ -1,0 +1,38 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "Patient is 68 years old, which is ≥ 50.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "Smoked about one pack a day for 45 years and is still smoking, which is about 45 pack-years (≥15).",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "The record does not state the patient's occupation or any occupational exposure (textile worker, painter, dry cleaner), so the ≥15-year requirement cannot be judged. This can be obtained by asking the patient. It may also be an either/or alternative to I2, but the criteria do not say so.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "The current bladder tumor is suspected but not histologically confirmed. The record lists no prior bladder, kidney, or prostate cancer in his history, but it does not explicitly say none exists.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "Hematuria began three weeks ago and he has had CT urography and cystoscopy for it. These are the current work-up. The record does not say whether he had any earlier evaluation of hematuria within the past 2 years, nor whether the current work-up counts as 'prior evaluation' for this study.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No information on whether the patient will provide informed consent. Consent is not documented, and he could be asked.",
+    "sub_condition_notes": []
+  }
+]

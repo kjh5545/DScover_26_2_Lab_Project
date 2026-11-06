@@ -1,0 +1,58 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "Patient is 7 years old (under 16) and male, but the description says only 'a 3-week history of periorbital edema and frothy urine' with heavy proteinuria and low albumin. No formal nephrotic syndrome diagnosis is on record, and there is no information on glucocorticoid treatment, dose, or taper. The medications list is empty.",
+    "sub_condition_notes": [
+      "Under 16 years, either gender: age 7, male - met.",
+      "Nephrotic syndrome diagnosis: symptoms and labs suggest it, but no formal diagnosis is stated - unknown.",
+      "Treated with GC for the first time: not stated - unknown.",
+      "Initial dose 2 mg/kg/day prednisolone with gradual reduction: not stated - unknown."
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "No glucocorticoid therapy is mentioned (medications list empty), so duration is unknown. No vitamin D level is given. The 3-week symptom history does not establish treatment duration.",
+    "sub_condition_notes": [
+      "On glucocorticoid therapy for more than 6 months: not stated - unknown.",
+      "Vitamin D level 30 ng/ml or above: no value given - unknown."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No kidney function measures (creatinine, eGFR) are given. Only heavy proteinuria without hematuria and low serum albumin are reported.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "post_enrollment",
+    "evidence": "Medication and supplement compliance can only be assessed during the study. The patient currently has no listed medications.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No mention of gallbladder or biliary disease, cystic fibrosis, celiac disease, or other fat-soluble vitamin malabsorption conditions.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No mention of bleeding disorders, osteomalacia, or other vitamin K-related disorders in the history.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No history of bone fracture is mentioned or ruled out.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No genetic testing or genetic cause of nephrotic syndrome is mentioned. The suspected diagnosis is an inference and cannot rule this out.",
+    "sub_condition_notes": []
+  }
+]

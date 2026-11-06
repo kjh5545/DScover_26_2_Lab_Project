@@ -1,0 +1,99 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"A 29-year-old woman\" – within 18 to 60 years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "\"An endocrinologist diagnosed Graves' disease last week; she has not yet started antithyroid medication\" – newly diagnosed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "Diagnosed last week, \"has not yet started antithyroid medication and has never received radioactive iodine or thyroid surgery\"; newly diagnosed so no relapse.",
+    "sub_condition_notes": [
+      "Prior treatment: none",
+      "Relapse: not applicable, first diagnosis last week"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "Positive TSH receptor antibodies, diffuse enlargement with increased blood flow and \"no nodules\" on ultrasound, non-tender gland; endocrinologist diagnosed Graves' disease, which argues against toxic nodular disease, adenoma, and subacute thyroiditis.",
+    "sub_condition_notes": [
+      "Toxic multinodular goiter/adenoma: ruled out by no nodules",
+      "Subacute thyroiditis: gland non-tender, increased blood flow, TRAb positive",
+      "Hashimoto's thyroiditis: not documented; Graves' diagnosis made",
+      "Iodine-induced: no iodine exposure mentioned, but Graves' diagnosis established"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "pass",
+    "evidence": "\"mild upper eyelid retraction but no eye pain, double vision, or bulging of the eyes\" – no moderate to severe thyroid eye disease requiring intervention.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "pass",
+    "evidence": "Ultrasound shows \"diffuse enlargement with increased blood flow and no nodules\"; no thyroid cancer and no surgery needed is described.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "ALT 28 U/L, AST 25 U/L, creatinine 62 µmol/L – not above 3× ULN and below 110 µmol/L for females.",
+    "sub_condition_notes": [
+      "ALT/AST: normal-range values",
+      "Creatinine 62 < 110 µmol/L (female)"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "\"white blood cell count of 6.1 × 10⁹/L\" – above 3.0.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Tachycardia and palpitations are noted, but there is no mention of heart failure or NYHA class.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Hepatitis B surface antigen is negative, but there is no information about tuberculosis or other chronic or severe infections.",
+    "sub_condition_notes": [
+      "Hepatitis B: HBsAg negative",
+      "Tuberculosis/other chronic infections: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "pass",
+    "evidence": "\"A urine pregnancy test is negative; she uses a copper intrauterine device and has no plans to become pregnant.\"",
+    "sub_condition_notes": [
+      "Pregnant: negative test",
+      "Planning pregnancy: no plans",
+      "Contraception compliance: copper IUD in place",
+      "Breastfeeding: not mentioned, but no indication"
+    ]
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "No information about current or previous participation in other clinical studies.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "unknown",
+    "evidence": "Willingness and ability to follow up and participate are not stated.",
+    "sub_condition_notes": []
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "age": 29,
+  "age_unit": "years",
+  "sex": "F",
+  "suspected_diagnosis": "Graves' disease (autoimmune hyperthyroidism)",
+  "findings": [
+    "intermittent palpitations",
+    "heat intolerance",
+    "unintentional weight loss",
+    "fine tremor",
+    "tachycardia",
+    "diffusely enlarged, non-tender thyroid gland",
+    "mild upper eyelid retraction",
+    "no eye pain, double vision, or bulging of the eyes"
+  ],
+  "history": [
+    "Graves' disease diagnosed by an endocrinologist last week",
+    "has not yet started antithyroid medication",
+    "never received radioactive iodine or thyroid surgery",
+    "uses a copper intrauterine device",
+    "no plans to become pregnant",
+    "works as an elementary school teacher"
+  ],
+  "medications": [],
+  "labs": [
+    "TSH suppressed (<0.01 mIU/L)",
+    "free T4 elevated",
+    "TSH receptor antibodies positive",
+    "thyroid ultrasound: diffuse enlargement with increased blood flow and no nodules",
+    "ALT 28 U/L",
+    "AST 25 U/L",
+    "creatinine 62 µmol/L",
+    "white blood cell count 6.1 × 10⁹/L",
+    "hepatitis B surface antigen negative",
+    "urine pregnancy test negative"
+  ],
+  "id": "S002_detailed_e4535ae6"
+}

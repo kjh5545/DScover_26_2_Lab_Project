@@ -1,0 +1,48 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"A 68-year-old man\" meets the age ≥ 50 requirement.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "\"He has smoked about one pack a day for 45 years and is still smoking.\" This is about 45 pack-years, which is ≥ 15.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "The description gives no occupational history. Textile work, painting, and dry cleaning are not mentioned. The wording of the criterion is also unclear on whether it is required alongside smoking or as an alternative to it, so it is not clear that this criterion would exclude him.",
+    "sub_condition_notes": [
+      "Occupation not described",
+      "Duration of occupational exposure (≥15 years) not described"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No prior bladder, kidney, or prostate cancer is mentioned. The current bladder tumor is only suspected: \"No histopathological diagnosis has been established yet.\" Absence of mention for an exclusion criterion means it is not confirmed.",
+    "sub_condition_notes": [
+      "Prior bladder cancer: not mentioned; the current tumor is a new suspected finding",
+      "Prior kidney cancer: not mentioned",
+      "Prior prostate cancer: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "The hematuria began three weeks ago, and the current workup (CT urography, cystoscopy, urinalysis, urine culture) is part of this episode. It is not stated whether any hematuria evaluation took place in the prior 2 years. The criterion may also be intended to exclude the current evaluation, which cannot be determined from the description.",
+    "sub_condition_notes": [
+      "Evaluation for the current episode is recent, but its relation to the exclusion window is unclear",
+      "No information on any earlier hematuria evaluation within the last 2 years"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is obtained only when the patient is approached for the study. Nothing in the description addresses it.",
+    "sub_condition_notes": []
+  }
+]

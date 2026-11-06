@@ -1,0 +1,93 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"A 24-year-old man\" – age 24 is >18, and there is no upper age limit.",
+    "sub_condition_notes": [
+      "age > 18 years: 24 years, met",
+      "no upper age limit: not an exclusion for him, met"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "A pulmonologist diagnosed asthma at age 8, and spirometry showed FEV1 68% of predicted. The description does not say the diagnosis followed GINA 2023 criteria (e.g., documented variable airflow limitation or reversibility).",
+    "sub_condition_notes": [
+      "diagnosis of asthma: met, \"A pulmonologist diagnosed asthma when he was 8 years old\"",
+      "diagnosis made per GINA 2023: not stated, unknown"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "\"he has no other lung disease.\"",
+    "sub_condition_notes": [
+      "other respiratory diseases besides asthma: none stated",
+      "COPD: none; he has no other lung disease"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "\"He has never smoked cigarettes, vaped, or used cigars or marijuana.\"",
+    "sub_condition_notes": [
+      "active cigarette smoking: no, never smoked",
+      "smoking history >10 pack-years: no, never smoked"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "The description does not mention any malignancy or oncology history.",
+    "sub_condition_notes": [
+      "active malignancy: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Chest X-ray was normal and he had no fever at the ED visit ten days ago, but current infection status is not stated and tuberculosis is not addressed.",
+    "sub_condition_notes": [
+      "active pulmonary tuberculosis: not mentioned",
+      "active respiratory tract infection: no fever and normal chest X-ray at the ED visit ten days ago, but current status is not stated"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "He was \"treated with a 5-day course of oral prednisone without antibiotics\" at the ED visit ten days ago.",
+    "sub_condition_notes": [
+      "antibiotic use within 4 weeks before enrollment: the only recent treatment described was explicitly without antibiotics; no other antibiotic use is mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Resting oxygen saturation is 97% on room air, but home oxygen therapy is not mentioned.",
+    "sub_condition_notes": [
+      "current long-term home oxygen therapy: not mentioned",
+      "oxygen use >15 hours per day: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "pass",
+    "evidence": "\"his pulmonologist has scheduled his first dupilumab injection for next week\" – he is not currently receiving it. His current medication is budesonide-formoterol, and no prior biologic is mentioned.",
+    "sub_condition_notes": [
+      "omalizumab: not mentioned",
+      "mepolizumab: not mentioned",
+      "reslizumab: not mentioned",
+      "dupilumab: scheduled for next week, not yet started, so not current",
+      "tezepelumab: not mentioned",
+      "other biologics: none listed among current medications"
+    ]
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "pass",
+    "evidence": "The patient is a 24-year-old man, so pregnancy is not possible.",
+    "sub_condition_notes": [
+      "pregnancy: male patient"
+    ]
+  }
+]

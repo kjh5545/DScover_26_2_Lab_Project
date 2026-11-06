@@ -1,0 +1,103 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "Age 60 years: \"A 60-year-old woman\".",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "No formal IPF diagnosis is on record; CT findings (honeycombing) and symptoms are described, but meeting ATS/ERS criteria is not stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "Hospitalisation, acute worsening of dyspnoea (<1 month), new bilateral ground-glass opacity/consolidation on CT, and exclusion of cardiac failure are not described. Only 'progressive dyspnea' and basal reticular opacities with honeycombing are given.",
+    "sub_condition_notes": [
+      "Previous/concurrent IPF diagnosis: not established on record",
+      "Acute worsening <1 month: not stated",
+      "CT with new bilateral GGO/consolidation: not described",
+      "Not explained by cardiac failure/fluid overload: not stated",
+      "Hospitalised: not stated",
+      "Definition as ascertained by PI: investigator determination"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "Ability to understand and sign informed consent is determined at enrollment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information on heart failure or pulmonary embolism.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No allergies or hypersensitivities mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "IgA level or deficiency not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No definite diagnosis or multidisciplinary discussion is stated in the description.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No mention of malignancy or cancer treatment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Medication list is empty; no statement on corticosteroid or immunosuppressant use.",
+    "sub_condition_notes": [
+      "Prednisone >20 mg for >14 days: not stated",
+      "Immunosuppressants in last month: not stated",
+      "High-dose >1 mg/kg/d: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No information on participation in other trials.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Pregnancy/lactation not mentioned; a 60-year-old woman is likely postmenopausal, but this is not stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "No information on tutorship or curatorship.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "No information on deprivation of liberty or court protection.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness to participate and consent is determined at enrollment.",
+    "sub_condition_notes": []
+  }
+]

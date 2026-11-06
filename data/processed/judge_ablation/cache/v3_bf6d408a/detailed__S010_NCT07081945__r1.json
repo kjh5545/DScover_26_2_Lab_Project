@@ -1,0 +1,62 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "Giving free and informed consent happens after the patient applies and is decided at enrollment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "The patient is 73 years old, outside the 18-70 range.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "Macula-off rhegmatogenous retinal detachment with 'a single horseshoe tear at the 5 o'clock position inside the detached area', which is an inferior break between 4 and 8 o'clock within the detached area.",
+    "sub_condition_notes": [
+      "Inferior retinal breaks between 4 and 8 o'clock within detached area: met (tear at 5 o'clock inside detached area).",
+      "Retinotomy requirement: not stated, but not needed because the first condition is met (at least one condition is required)."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "The break is a horseshoe tear at 5 o'clock, which is not an anterior-only break or dialysis. No scleral buckling indication is described, and he has 'never had retinal surgery or scleral buckling'.",
+    "sub_condition_notes": [
+      "Only anterior breaks or dialysis: not described. The single tear is at 5 o'clock, a location that is not stated to be anterior.",
+      "Meets indications for scleral buckling: not stated."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "The tear at 5 o'clock is 'inside the detached area', so it is involved in the detachment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "fail",
+    "evidence": "'He has primary open-angle glaucoma in both eyes, controlled with latanoprost eye drops.' Glaucoma is explicitly listed as a pre-existing serious eye disease.",
+    "sub_condition_notes": [
+      "Glaucoma: present in both eyes.",
+      "Corneal ulcers, uveitis: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No mention of epilepsy or psychiatric disease in the description.",
+    "sub_condition_notes": [
+      "Epilepsy: not mentioned.",
+      "Serious psychiatric disease: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "post_enrollment",
+    "evidence": "Depends on the researcher's judgment of whether inclusion is appropriate.",
+    "sub_condition_notes": []
+  }
+]

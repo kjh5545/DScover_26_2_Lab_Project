@@ -1,0 +1,64 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "Patient is a 7-year-old boy with suspected nephrotic syndrome (under 16, male), but the description says nothing about glucocorticoid treatment: medications list is empty and no steroid initiation or dose is recorded.",
+    "sub_condition_notes": [
+      "Nephrotic, under 16, either gender: met (7-year-old boy with nephrotic-range findings; the diagnosis is suspected, not formally confirmed)",
+      "First-time GC treatment: no information; medications list is empty",
+      "Initial dose 2 mg/kg/day prednisolone with gradual taper: not documented; it can only be determined if treatment is started per protocol"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "No glucocorticoid therapy is recorded (medications empty, only a 3-week symptom history), and no vitamin D level is given.",
+    "sub_condition_notes": [
+      "GC therapy for more than 6 months: not met by current records (no therapy recorded); this may be established only after enrollment and follow-up",
+      "Vitamin D level of at least 30 ng/ml: no vitamin D measurement is available"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "Only 'heavy proteinuria without hematuria' and 'serum albumin is low' are reported. No creatinine, eGFR or other kidney function results are given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No medications are recorded and nothing is said about adherence to medications or supplements.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No mention of gallbladder or biliary disease, cystic fibrosis, celiac disease or other fat-soluble vitamin malabsorption.",
+    "sub_condition_notes": [
+      "Gallbladder/biliary disease: not mentioned",
+      "Cystic fibrosis: not mentioned",
+      "Celiac disease: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No history of bleeding disorders, osteomalacia or other vitamin K-related disorders is mentioned.",
+    "sub_condition_notes": [
+      "Bleeding disorders: not mentioned",
+      "Osteomalacia: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "Fracture history is not mentioned in the description.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No genetic testing is reported. The profile lists only a suspected diagnosis of 'Nephrotic syndrome, most likely minimal change disease', so a genetic cause has been neither identified nor ruled out.",
+    "sub_condition_notes": []
+  }
+]

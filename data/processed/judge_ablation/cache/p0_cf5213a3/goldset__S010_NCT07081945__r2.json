@@ -1,0 +1,56 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is obtained only when the patient applies/enrolls; not yet given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "Patient is 73 years old; inclusion requires age 18-70.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "Suspected RRD, but the location of breaks (inferior 4-8 o'clock) and need for inferior retinotomy are not documented; requires fundus exam.",
+    "sub_condition_notes": [
+      "Inferior retinal breaks between 4 and 8 o'clock within detached area: not given",
+      "Requiring inferior retinotomy: determined intraoperatively/by surgeon, not given"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "Break location/type (anterior only or dialysis) and indication for scleral buckling not documented.",
+    "sub_condition_notes": [
+      "Only anterior breaks or dialysis: unknown",
+      "Meets indications for scleral buckling: unknown"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "Location of retinal breaks relative to the detached area is not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No history of ocular disease listed (history empty), but not explicitly confirmed absence of glaucoma, uveitis, corneal ulcers, etc.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "History is empty; absence of epilepsy or serious psychiatric disease not explicitly confirmed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "post_enrollment",
+    "evidence": "Depends on the investigator's judgment, which only the study team can determine.",
+    "sub_condition_notes": []
+  }
+]

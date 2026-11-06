@@ -1,0 +1,115 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "The patient has severe epigastric pain radiating to the back and markedly elevated lipase and amylase, which suggest acute pancreatitis. However, the INSPPIRE criteria are not specified here, and no formal diagnosis is on record (only a 'suspected_diagnosis'). Imaging is not mentioned. INSPPIRE is a pediatric criteria set, so applying it to an adult is questionable.",
+    "sub_condition_notes": [
+      "Abdominal pain suggestive of AP: present (severe epigastric pain radiating to the back)",
+      "Enzyme elevation ≥3x ULN: 'markedly elevated' lipase/amylase, but exact values are not given",
+      "Imaging findings: not described",
+      "Formal diagnosis per INSPPIRE: not on record"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "The patient is 'A 54-year-old man', which is outside the 3 to 18 year range.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "The patient has 'severe epigastric pain', but no NRS or FLACC score is recorded.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "The description does not mention any analgesic use before presentation, and the medications list is empty. This is not confirmation that none was taken.",
+    "sub_condition_notes": [
+      "No analgesic before enrolment: not documented",
+      "Last dose ≥6 hours before enrolment: not documented"
+    ]
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "post_enrollment",
+    "evidence": "Consent is obtained only when the patient is approached for the study. The patient is 54, so consent of legal guardians would not apply, and the patient's own consent is not documented.",
+    "sub_condition_notes": [
+      "Guardian consent: not applicable to an adult",
+      "Patient consent: not yet obtained"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "There is no information on painkiller use before presentation. The medications list is empty, which does not exclude recent analgesic use.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No allergy information is given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "Inflammatory bowel disease is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Nausea and vomiting are described, but there is no mention of GI or other active bleeding.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "Gastric or duodenal ulcer disease is not mentioned. Chronic alcohol use and epigastric pain do not establish or exclude it.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "The medications list is empty, but chronic use of paracetamol, NSAIDs or metamizole is not explicitly addressed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "There is a history of chronic alcohol use, but liver failure is not mentioned and no liver function data are given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Heart failure is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "Renal failure is not mentioned and no renal function labs are given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "Cancer is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Guardian consent is determined only when the study team approaches the patient. The patient is an adult, so guardian consent is likely not applicable.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E12",
+    "verdict": "post_enrollment",
+    "evidence": "The patient's own consent is determined only when the study team approaches him. No refusal is documented.",
+    "sub_condition_notes": []
+  }
+]

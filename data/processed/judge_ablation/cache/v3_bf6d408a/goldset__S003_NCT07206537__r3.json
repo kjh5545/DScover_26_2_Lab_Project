@@ -1,0 +1,62 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "Age 7 (<16) and male satisfy the age and gender parts. The description says 'heavy proteinuria... serum albumin is low' and the profile lists 'medications': [], but it does not state a formal nephrotic diagnosis or whether GC treatment has been started, at what dose, or with what taper.",
+    "sub_condition_notes": [
+      "Under 16 years, either gender: pass (age 7, male).",
+      "Nephrotic syndrome: findings are consistent, but no formal diagnosis is on record.",
+      "Treated with GC for the first time: not stated; no medications are listed.",
+      "Initial dose of 2 mg/kg/day prednisolone with gradual reduction: not stated."
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "The description gives a 3-week history of symptoms, with no glucocorticoid therapy mentioned and the medication list empty. Duration of GC therapy and vitamin D level are not given.",
+    "sub_condition_notes": [
+      "On glucocorticoid therapy for more than 6 months: not stated; no GC use is documented.",
+      "Vitamin D level of 30 ng/ml or above: not provided."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No creatinine, eGFR or other kidney function results are given. Only heavy proteinuria without hematuria and low albumin are reported.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "post_enrollment",
+    "evidence": "Compliance with medications or vitamin supplements is assessed during the study. The patient is not described as taking any medications.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "The description does not mention gallbladder or biliary disease, cystic fibrosis, celiac disease or other fat-soluble vitamin malabsorption.",
+    "sub_condition_notes": [
+      "Gallbladder or biliary disease: not mentioned.",
+      "Cystic fibrosis: not mentioned.",
+      "Celiac disease: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "The description does not mention bleeding disorders, osteomalacia or other vitamin K-related disorders.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "Fracture history is not mentioned in the description.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No genetic testing or genetic cause is described. The suspected diagnosis is only an inference and cannot rule out a genetic cause.",
+    "sub_condition_notes": []
+  }
+]

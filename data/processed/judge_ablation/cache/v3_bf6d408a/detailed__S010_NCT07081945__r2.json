@@ -1,0 +1,62 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is given after the patient applies; it cannot be determined from the description.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "The patient is 73 years old, outside the 18-70 range.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "Primary rhegmatogenous retinal detachment with 'a single horseshoe tear at the 5 o'clock position inside the detached area', which falls within 4-8 o'clock and is inside the detached area.",
+    "sub_condition_notes": [
+      "Inferior retinal break between 4 and 8 o'clock within the detached area: met (horseshoe tear at 5 o'clock inside the detachment).",
+      "Retinotomy requirement: not stated, but not needed because the first condition is met."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "The detachment has a horseshoe tear at 5 o'clock, which is not described as anterior only, and no dialysis is mentioned. The description does not state that scleral buckling is indicated, but the exclusion requires only anterior breaks or dialysis, and the tear is described as a single horseshoe tear at 5 o'clock.",
+    "sub_condition_notes": [
+      "Only anterior breaks or dialysis: not stated; a single horseshoe tear at 5 o'clock is described.",
+      "Meets indications for scleral buckling: not stated."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "The break at 5 o'clock lies 'inside the detached area', so it is involved in the detachment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "fail",
+    "evidence": "'He has primary open-angle glaucoma in both eyes, controlled with latanoprost eye drops.' Glaucoma is explicitly listed as a pre-existing serious eye disease.",
+    "sub_condition_notes": [
+      "Glaucoma: present in both eyes.",
+      "Corneal ulcers, uveitis: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No mention of epilepsy or serious psychiatric disease in the description.",
+    "sub_condition_notes": [
+      "Epilepsy: not mentioned.",
+      "Serious psychiatric disease: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "post_enrollment",
+    "evidence": "Depends on the researcher's judgment of suitability.",
+    "sub_condition_notes": []
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "A 68-year-old man; within 18 to 90 years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "No information on the patient's ability to understand or willingness to sign informed consent. Nothing suggests cognitive impairment, but it is not documented.",
+    "sub_condition_notes": [
+      "Able to understand: not stated",
+      "Willing to sign: not stated"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "\"Cystoscopy two days ago revealed a papillary bladder tumor on the left bladder wall\" and \"Transurethral resection of bladder tumor (TURBT) is scheduled for next week.\" The first arm (papillary tumor on cystoscopy scheduled for TURBT) is met; the histologically proven MIBC arm is not needed because the criterion is an OR.",
+    "sub_condition_notes": [
+      "Papillary tumor identified by cystoscopy: met",
+      "Scheduled for TURBT: met (next week)",
+      "Histologically proven MIBC arm: not applicable (no histology yet), but the OR is satisfied by the first arm"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "pass",
+    "evidence": "\"He is fully active, walks about three miles most mornings, and has no restrictions in daily or strenuous activity.\" This is consistent with ECOG 0. No formal ECOG score is recorded, but the description supports ECOG 0.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "pass",
+    "evidence": "\"Serum creatinine is 1.0 mg/dL (institutional upper limit of normal: 1.3 mg/dL)\"; 1.0 is below 1.5 x 1.3 = 1.95 mg/dL, so the creatinine clearance alternative is not required.",
+    "sub_condition_notes": [
+      "Creatinine < 1.5 x ULN: met (1.0 vs 1.95 threshold)",
+      "Cockcroft-Gault alternative: only applies if creatinine is >= 1.5 x ULN, so not applicable"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information on allergies or prior exposure to gadobutrol or ferumoxytol.",
+    "sub_condition_notes": [
+      "Gadobutrol hypersensitivity: not stated",
+      "Ferumoxytol hypersensitivity: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No mention of claustrophobia.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No mention of implanted devices, prostheses, or pacemakers. The medication list (amlodipine, atorvastatin) does not rule them out.",
+    "sub_condition_notes": [
+      "MRI-incompatible implanted device: not stated",
+      "Prosthetic: not stated",
+      "Pacemaker: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "pass",
+    "evidence": "\"CT of the chest, abdomen, and pelvis shows no enlarged lymph nodes or evidence of distant metastases.\" Nothing in the description suggests metastatic disease.",
+    "sub_condition_notes": [
+      "Known metastatic disease: none per CT",
+      "Suspected metastatic disease: no suspicion described; imaging negative"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "Patient is a 68-year-old man, so pregnancy, lactation, and plans to conceive do not apply.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "\"Urinalysis shows red blood cells but no white blood cells or nitrite, and a urine culture was negative.\" There is no evidence of a urinary tract infection.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No mention of urethral stricture disease. Cystoscopy was performed, but whether any stricture was found is not stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "post_enrollment",
+    "evidence": "This depends on the treating physician's judgment of unacceptable risk, which only the study team or treating physician can determine.",
+    "sub_condition_notes": []
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "A 68-year-old man; age 68 ≥ 50.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "He has smoked about one pack a day for 45 years and is still smoking, which is about 45 pack-years and meets ≥15.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No occupation or occupational exposure history (textile worker, painter, dry cleaner) is mentioned.",
+    "sub_condition_notes": [
+      "Textile worker: not stated",
+      "Painter: not stated",
+      "Dry cleaner: not stated",
+      "≥15 years of exposure: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No prior history of bladder, kidney, or prostate cancer is mentioned. The current bladder tumor is suspected but not histologically diagnosed ('No histopathological diagnosis has been established yet'). Absence of mention is not confirmation.",
+    "sub_condition_notes": [
+      "Prior bladder cancer: not mentioned",
+      "Prior kidney cancer: not mentioned",
+      "Prior prostate cancer: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "The hematuria began three weeks ago and has been evaluated with CT urography and cystoscopy, which are the current work-up. Any earlier evaluation of hematuria within the last 2 years is not mentioned.",
+    "sub_condition_notes": [
+      "Microscopic hematuria evaluation in last 2 years: not stated",
+      "Gross hematuria evaluation in last 2 years: only the current work-up is described, and whether it counts as a prior evaluation is unclear"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness to provide informed consent can only be determined when the patient is approached for the study.",
+    "sub_condition_notes": []
+  }
+]

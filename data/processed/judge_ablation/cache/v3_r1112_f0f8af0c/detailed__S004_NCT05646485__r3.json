@@ -1,0 +1,47 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "A 68-year-old man; age 68 is ≥ 50.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "He has smoked about one pack a day for 45 years and is still smoking, which is about 45 pack-years and meets the ≥15 pack-year requirement.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "The description gives no occupational history. It does not say whether he was a textile worker, painter, or dry cleaner, or for how long.",
+    "sub_condition_notes": [
+      "Textile worker, painter, or dry cleaner: not stated",
+      "≥15 years of exposure: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No prior bladder, kidney, or prostate cancer is mentioned, but the description does not explicitly rule it out. The current bladder tumor is suspected but has no histopathological diagnosis ('No histopathological diagnosis has been established yet').",
+    "sub_condition_notes": [
+      "Prior bladder cancer: not stated",
+      "Prior kidney cancer: not stated",
+      "Prior prostate cancer: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "The current hematuria began three weeks ago and he has had CT urography and cystoscopy for it. The description does not say whether any evaluation of hematuria took place in the prior 2 years, so this cannot be confirmed from the text. Whether the current workup counts toward the exclusion is a protocol matter.",
+    "sub_condition_notes": [
+      "Prior micro- or gross hematuria evaluation within 2 years: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is given only when the patient is approached for enrollment. It is not stated in the description.",
+    "sub_condition_notes": []
+  }
+]

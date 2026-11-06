@@ -1,0 +1,86 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "A 68-year-old man; age 68 is within 18 to 90.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "post_enrollment",
+    "evidence": "Ability and willingness to understand and sign informed consent is determined after the patient applies.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "\"Cystoscopy two days ago revealed a papillary bladder tumor on the left bladder wall\" and \"Transurethral resection of bladder tumor (TURBT) is scheduled for next week.\" The first arm (papillary tumor on cystoscopy scheduled for TURBT) is met. The histologically proven MIBC arm is not needed.",
+    "sub_condition_notes": [
+      "Papillary tumor identified by cystoscopy and scheduled for TURBT: met.",
+      "Histologically proven MIBC: not applicable because no histology exists yet, but the criterion is an OR."
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "pass",
+    "evidence": "\"He is fully active, walks about three miles most mornings, and has no restrictions in daily or strenuous activity.\" This describes fully active function with no restrictions, consistent with ECOG 0.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "pass",
+    "evidence": "\"Serum creatinine is 1.0 mg/dL (institutional upper limit of normal: 1.3 mg/dL)\" is about 0.77 x ULN, which is below 1.5 x ULN.",
+    "sub_condition_notes": [
+      "Creatinine < 1.5 x ULN: met.",
+      "Creatinine clearance alternative applies only if creatinine >= 1.5 x ULN, so it is not needed."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No mention of allergies or prior exposure to gadobutrol or ferumoxytol.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No mention of claustrophobia.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No mention of implanted devices, prostheses, or a pacemaker.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "pass",
+    "evidence": "\"CT of the chest, abdomen, and pelvis shows no enlarged lymph nodes or evidence of distant metastases.\" There is no known or suspected metastatic disease.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "The patient is a 68-year-old man, so pregnancy, lactation, and plans to conceive are not applicable.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "\"Urinalysis shows red blood cells but no white blood cells or nitrite, and a urine culture was negative.\" There is no urinary tract infection.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No mention of urethral stricture disease. Cystoscopy was performed, but nothing is stated about a stricture.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "post_enrollment",
+    "evidence": "This depends on the treating physician's judgment of unacceptable risk.",
+    "sub_condition_notes": []
+  }
+]

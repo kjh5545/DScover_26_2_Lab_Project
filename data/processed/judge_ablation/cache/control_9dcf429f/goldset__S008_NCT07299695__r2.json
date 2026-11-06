@@ -1,0 +1,100 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "Patient is 60 years old.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Suspected IPF with a UIP-pattern CT (basal reticular opacities with honeycombing), but a formal IPF diagnosis meeting ATS/ERS criteria (exclusion of other causes, multidisciplinary discussion) is not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "Progressive dyspnea and honeycombing are described, but there is no documentation of hospitalisation, acute worsening <1 month, new bilateral ground-glass opacity/consolidation, or exclusion of cardiac failure/fluid overload. Ascertainment by the Primary Investigator is also needed.",
+    "sub_condition_notes": [
+      "Hospitalised: not documented",
+      "Acute worsening <1 month: not documented (only 'progressive dyspnea')",
+      "New bilateral GGO/consolidation on UIP background: CT shows only reticular opacities with honeycombing",
+      "Not explained by cardiac failure/fluid overload: not documented"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "No information on capacity or willingness to sign informed consent; formal consent is obtained only at enrollment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information on heart failure or pulmonary embolism evaluation.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No allergy or hypersensitivity history documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "IgA level not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Diagnosis is only 'suspected' IPF; no multidisciplinary discussion or definitive diagnosis documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No mention of malignancy or cancer treatment; history is empty, which is not an explicit denial.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Medications list is empty, but absence of steroid/immunosuppressant use is not explicitly stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No information on participation in other trials.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "60-year-old woman; pregnancy is unlikely but postmenopausal status is not documented, and lactation status is not stated.",
+    "sub_condition_notes": [
+      "Pregnancy: not documented",
+      "Lactation: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "No information on tutorship or curatorship.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "No information on deprivation of liberty or court protection.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "unknown",
+    "evidence": "Patient's willingness to participate and consent has not been documented.",
+    "sub_condition_notes": []
+  }
+]

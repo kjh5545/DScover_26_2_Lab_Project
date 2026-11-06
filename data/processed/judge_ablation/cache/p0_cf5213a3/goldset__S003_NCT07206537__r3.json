@@ -1,0 +1,57 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "The patient is 7 years old with suspected nephrotic syndrome, and no medications are listed, which suggests he is steroid-naive. Treatment has not yet been documented as started at 2 mg/kg/day prednisolone with taper.",
+    "sub_condition_notes": [
+      "Under 16 years, either gender: met (7-year-old male).",
+      "Nephrotic syndrome: suspected and clinically consistent, but not formally confirmed.",
+      "First-time GC treatment at 2 mg/kg/day with taper: the regimen would be given after enrollment, and it is not yet documented."
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "post_enrollment",
+    "evidence": "The patient has not yet received glucocorticoids (no medications), so more than 6 months of GC therapy cannot yet apply. Vitamin D level is not reported.",
+    "sub_condition_notes": [
+      "GC therapy >6 months: can only be known after a future treatment period.",
+      "Vitamin D >= 30 ng/ml: not measured or reported; it can be determined by testing."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "Serum creatinine/eGFR are not given. Presentation (no hematuria, isolated nephrotic features) suggests preserved function but this is not confirmed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "post_enrollment",
+    "evidence": "The patient is not on any medications or supplements yet, so compliance cannot be assessed until after treatment begins.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No fat-soluble vitamin malabsorption conditions (biliary disease, cystic fibrosis, celiac disease) are mentioned, but this was not explicitly addressed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No bleeding disorder or osteomalacia history is mentioned in the description; it has not been explicitly confirmed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "Fracture history is not reported in the description.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Genetic testing is not reported. A 7-year-old with probable minimal change disease is unlikely to have a genetic cause, but this is not confirmed.",
+    "sub_condition_notes": []
+  }
+]

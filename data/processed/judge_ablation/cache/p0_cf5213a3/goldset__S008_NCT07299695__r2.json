@@ -1,0 +1,98 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "Patient is 60 years old.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "The CT shows bilateral basal reticular opacities with honeycombing, consistent with a UIP pattern, and the suspected diagnosis is IPF. However, a confirmed IPF diagnosis meeting ATS/ERS criteria (exclusion of other causes, multidisciplinary review) is not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "Progressive dyspnea and a UIP-pattern CT are present. Not documented: hospitalisation, acute worsening within <1 month, new bilateral ground-glass opacity or consolidation on CT, and exclusion of cardiac failure or fluid overload. The presentation reads as chronic progressive disease rather than a documented acute exacerbation.",
+    "sub_condition_notes": [
+      "IPF diagnosis/UIP pattern: supported by CT honeycombing",
+      "Acute worsening <1 month: not stated",
+      "New ground-glass opacity/consolidation: not described",
+      "Not explained by cardiac failure or fluid overload: not assessed",
+      "Hospitalisation: not stated"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "No information on the patient's capacity to consent, or on a legally authorized representative.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "Heart failure and pulmonary embolism are not mentioned or evaluated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "Allergy history is not provided.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "IgA level or known IgA deficiency is not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "The diagnosis is only 'suspected' IPF with a UIP pattern on CT. Whether a definite diagnosis has been made by multidisciplinary discussion is not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "Cancer history and treatment are not documented; history is empty.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "The medication list is empty, but recent steroid or immunosuppressant use is not explicitly confirmed as absent.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Participation in other trials is not stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Pregnancy and lactation status is not documented. At 60 years pregnancy is unlikely, but lactation status is not stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "Legal guardianship status is not stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "Deprivation of liberty or court protection is not stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness to consent is determined only when the patient is approached for consent.",
+    "sub_condition_notes": []
+  }
+]

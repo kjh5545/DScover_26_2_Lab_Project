@@ -1,0 +1,66 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "No information on the patient's ability to understand the trial, consent in writing, or comply with the protocol. The patient could be asked, and consent is formally obtained at the consent visit.",
+    "sub_condition_notes": [
+      "Ability to understand requirements: not documented",
+      "Written informed consent: not documented",
+      "Compliance with protocol: not documented"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "29-year-old female, which meets age ≥ 18 years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "Only a suspected diagnosis of Graves' disease (\"most likely\"), not confirmed. No history of ATD treatment is recorded (medications and history are empty), and there are no labs showing persistent hyperthyroidism despite ATD.",
+    "sub_condition_notes": [
+      "Confirmed GD diagnosis: only suspected, not confirmed",
+      "Hyperthyroid despite ATD treatment: no ATD treatment documented, no thyroid labs"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "Protocol-specific inclusion criteria are not specified here. The study team must assess them at screening.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "History is empty. No statement about prior RAI therapy or thyroidectomy, so absence cannot be confirmed.",
+    "sub_condition_notes": [
+      "Prior successful RAI: not documented",
+      "Total thyroidectomy: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No information on other autoimmune diseases. Whether one puts the participant at undue risk is an investigator judgment.",
+    "sub_condition_notes": [
+      "Other autoimmune disease requiring treatment: not documented",
+      "Undue risk per Investigator's judgment: determined by the study team"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No eye findings or TED history are documented. The exam reports no ophthalmic assessment and no plans for TED surgery, irradiation, or therapy.",
+    "sub_condition_notes": [
+      "Moderate-to-severe active TED: not documented",
+      "Expected need for surgery or planned TED therapy: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "post_enrollment",
+    "evidence": "Additional protocol-defined exclusion criteria are not specified here. The study team must assess them at screening.",
+    "sub_condition_notes": []
+  }
+]

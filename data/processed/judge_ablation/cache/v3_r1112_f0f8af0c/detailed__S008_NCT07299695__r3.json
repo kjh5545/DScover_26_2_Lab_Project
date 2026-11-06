@@ -1,0 +1,112 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"A 60-year-old woman\"",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "She was diagnosed with IPF by her pulmonologist and HRCT shows a UIP pattern, but the description does not state that ATS/ERS consensus criteria were formally met.",
+    "sub_condition_notes": [
+      "Stated diagnosis alone is not enough to confirm the standard was met"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "fail",
+    "evidence": "\"has not been hospitalized for her lung disease\"; breathlessness \"worsened gradually over the past 18 months without any sudden change\" (not an acute worsening of <1 month).",
+    "sub_condition_notes": [
+      "Hospitalised with definite/suspected AE-IPF: no, not hospitalized",
+      "Previous diagnosis of IPF: yes, diagnosed 14 months ago",
+      "Acute worsening of dyspnoea <1 month: no, gradual over 18 months",
+      "New bilateral ground-glass opacity/consolidation on CT: not described, only reticular opacities with honeycombing",
+      "Deterioration not explained by cardiac failure: normal LV function on echo, but this does not rescue the other failed sub-conditions"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "Ability to understand and sign informed consent is determined at enrollment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No acute worsening is described. The echocardiogram showed normal left ventricular function, but pulmonary embolism is not mentioned and uncontrolled heart failure is not explicitly excluded.",
+    "sub_condition_notes": [
+      "Uncontrolled heart failure: not stated; normal LV function on echo last month",
+      "Pulmonary embolism: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No information on allergies or hypersensitivity to corticosteroids, IVIG or their components.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "IgA level or IgA deficiency is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "IPF was diagnosed by her pulmonologist, but the description does not state whether a multidisciplinary discussion was held.",
+    "sub_condition_notes": [
+      "Whether the multidisciplinary discussion occurred is not stated"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No mention of malignancy or cancer treatment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Medications listed are nintedanib, omeprazole and levothyroxine; no corticosteroids or immunosuppressants are mentioned, but their absence is not explicitly stated.",
+    "sub_condition_notes": [
+      "Prednisone >20 mg for >14 days: not mentioned",
+      "Immunosuppressants in the last month: not mentioned",
+      "Corticosteroids >1 mg/kg/d for >7 days in the last 15 days: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Participation in another interventional trial is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "pass",
+    "evidence": "\"She is postmenopausal\", so documented pregnancy is not plausible; lactation is not mentioned but is not relevant for a postmenopausal 60-year-old.",
+    "sub_condition_notes": [
+      "Pregnancy: ruled out by postmenopausal status",
+      "Lactation: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "Legal status (tutorship/curatorship) is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "Deprivation of liberty or court protection is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness to participate and provide consent is determined after approach.",
+    "sub_condition_notes": []
+  }
+]

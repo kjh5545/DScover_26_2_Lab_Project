@@ -1,0 +1,67 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "fail",
+    "evidence": "Patient presents with \"fever, sore throat, fatigue, and posterior cervical lymphadenopathy\", \"splenomegaly\", and a positive monospot test, indicating an active acute illness (suspected infectious mononucleosis), so he is not healthy on medical evaluation.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "Patient is a 19-year-old male (sex: M), so he cannot become pregnant or breastfeed; the criterion does not exclude him.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information on recent or planned surgical procedures in the description.",
+    "sub_condition_notes": [
+      "Surgery within 7 days before Day 1 or Day 57: not mentioned",
+      "Scheduled surgery within 28 days after intervention: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "History is empty; no mention of immunodeficiency, immunosuppression, asplenia, or recurrent severe infections. Splenomegaly is present (so not asplenia by exam), but other conditions are not addressed.",
+    "sub_condition_notes": [
+      "Congenital or acquired immunodeficiency: not mentioned",
+      "Immunosuppressive condition: not mentioned",
+      "Asplenia: splenomegaly on exam suggests a spleen is present, but no history stated",
+      "Recurrent severe infectious disease: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "Medications list is empty, but no explicit statement about corticosteroid use or anticipated need.",
+    "sub_condition_notes": [
+      "Corticosteroids ≥10 mg/day prednisone equivalent for >14 days within 90 days: not stated",
+      "Anticipated corticosteroid need during study: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No explicit information on systemic immunosuppressive or biologic therapy within 180 days or plans for it.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No information on recent or planned nonstudy vaccinations.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "History is empty; no mention of myocarditis, pericarditis, or myopericarditis.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No information on prior investigational EBV vaccine receipt.",
+    "sub_condition_notes": []
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "Ability to understand and sign informed consent and comply with the protocol can only be determined after the patient applies.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "A 29-year-old woman; age ≥ 18 years.",
+    "sub_condition_notes": [
+      "Age 29 years meets ≥18.",
+      "Sex female is allowed (male or female)."
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "Only a suspected diagnosis of Graves' disease is recorded (\"Hyperthyroidism, most likely Graves' disease\"). No formal GD diagnosis is on record. The medications list is empty, with no mention of ATD treatment, so it is unknown whether she is hyperthyroid despite ATD.",
+    "sub_condition_notes": [
+      "Diagnosis of GD: suspected only, not confirmed. Unknown.",
+      "Hyperthyroid despite ATD treatment: no ATD treatment mentioned. Unknown."
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "Open-ended criterion whose content is not disclosed (\"Other, more specific inclusion criteria are defined in the protocol\").",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No history is documented (history: []). Prior RAI therapy or total thyroidectomy is neither stated nor ruled out.",
+    "sub_condition_notes": [
+      "Previously successfully treated with RAI: not mentioned. Unknown.",
+      "Total thyroidectomy: not mentioned. Unknown."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "post_enrollment",
+    "evidence": "Depends on the Investigator's judgment of undue risk. No other autoimmune disease is mentioned in the description.",
+    "sub_condition_notes": [
+      "Other autoimmune disease requiring treatment: not mentioned.",
+      "Undue risk in the Investigator's judgment: determined by the investigator."
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "The description does not mention eye symptoms, thyroid eye disease, or planned surgery, irradiation, or medical therapy for TED.",
+    "sub_condition_notes": [
+      "Moderate-to-severe active TED: not documented. Unknown.",
+      "Expected need of or planned TED surgery, irradiation, or medical therapy: not documented. Unknown."
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "post_enrollment",
+    "evidence": "Open-ended criterion whose content is not disclosed (\"Additional exclusion criteria are defined in the protocol\").",
+    "sub_condition_notes": []
+  }
+]

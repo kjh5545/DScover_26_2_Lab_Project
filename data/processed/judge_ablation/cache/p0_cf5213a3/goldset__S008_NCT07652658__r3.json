@@ -1,0 +1,77 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "Patient is 60 years old, which meets the age ≥ 40 requirement.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "The presentation (dyspnea, dry cough, clubbing, basal reticular opacities with honeycombing) suggests IPF/UIP, but a formal IPF diagnosis (exclusion of other causes, multidisciplinary confirmation) is not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "No medications are listed, so the patient is not on antifibrotics. The criterion allows participants with IPF who are not receiving local standard of care.",
+    "sub_condition_notes": [
+      "Option A (stable-dose approved antifibrotic): not applicable, no antifibrotic listed.",
+      "Option B (not receiving standard of care): satisfied, no medications listed."
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "No pulmonary function testing (FVC % predicted) is provided.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "unknown",
+    "evidence": "No DLCO or hemoglobin values are provided.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "The CT pattern is consistent with UIP/IPF, but other ILDs (e.g., connective tissue disease-ILD, hypersensitivity pneumonitis) have not been documented as ruled out.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "The CT description mentions fibrosis (reticulation, honeycombing) but does not mention emphysema. Relative extent is not stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "The presentation is described as progressive dyspnea, with no mention of acute worsening. An acute exacerbation is not documented, but this is not explicitly excluded.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No information is given on current lower respiratory tract infection.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "The history is empty. Cardiac events (ACS, MI, unstable angina, PCI, CABG) are not documented either way.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Heart failure is not mentioned. Dyspnea has other plausible causes, but heart failure has not been ruled out.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No history of transplantation or transplant listing is documented. Likelihood of lung transplant has not been assessed.",
+    "sub_condition_notes": []
+  }
+]

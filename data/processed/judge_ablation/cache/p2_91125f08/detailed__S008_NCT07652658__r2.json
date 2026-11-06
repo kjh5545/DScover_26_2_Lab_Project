@@ -1,0 +1,80 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "A 60-year-old woman; age 60 meets the requirement of ≥ 40 years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "She was diagnosed with idiopathic pulmonary fibrosis by her pulmonologist 14 months ago; HRCT shows a usual interstitial pneumonia pattern.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "She has taken nintedanib 150 mg twice daily at the same dose for the past eight months. Nintedanib is an approved antifibrotic, and the dose has been stable.",
+    "sub_condition_notes": [
+      "Receiving an approved antifibrotic (nintedanib) at a stable dose: met.",
+      "The alternative (not receiving standard of care) is not needed."
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "pass",
+    "evidence": "Pulmonary function tests show FVC 68% of predicted, which is ≥ 45%.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "pass",
+    "evidence": "Hemoglobin-corrected DLCO 42% of predicted, which is ≥ 25%.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "She has a diagnosis of IPF with a UIP pattern on HRCT, and her ANA is negative. No other ILD is described.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "HRCT shows a usual interstitial pneumonia pattern with fibrosis predominating and only minimal emphysema, so emphysema is not greater than fibrosis.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "pass",
+    "evidence": "Her breathlessness has worsened gradually over the past 18 months without any sudden change, and she has not been hospitalized for her lung disease. No acute exacerbation is described.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No lower respiratory tract infection is mentioned, but the description does not explicitly rule one out. She has a dry cough, with no mention of an infection.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "The description has no mention of acute coronary syndrome, myocardial infarction, unstable angina, PCI, or CABG.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Echocardiogram last month showed normal left ventricular function, but heart failure is not explicitly excluded. Heart failure with preserved ejection fraction or right heart failure is not addressed, and no heart failure diagnosis is mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No history of organ transplantation or lung transplant listing is mentioned.",
+    "sub_condition_notes": [
+      "History of organ transplantation: not mentioned.",
+      "Likely to receive lung transplantation: not stated, and a clinician's judgment."
+    ]
+  }
+]

@@ -1,0 +1,64 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "Patient is a 7-year-old boy with suspected nephrotic syndrome (under 16, male), but no GC treatment is recorded: medications list is empty. Whether he will be treated with prednisolone 2 mg/kg/day for the first time is not stated.",
+    "sub_condition_notes": [
+      "Nephrotic, under 16, either gender: age 7, nephrotic syndrome suspected (not formally diagnosed) - met",
+      "First-time GC treatment: no medications on record, treatment not described - unknown",
+      "Initiated at 2 mg/kg/day prednisolone with gradual reduction: not stated - unknown"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Medications empty; no mention of glucocorticoid therapy duration or vitamin D level. The 3-week history suggests he has not been on GC for >6 months, but this is an indirect inference.",
+    "sub_condition_notes": [
+      "GC therapy >6 months: not stated - unknown",
+      "Vitamin D level >=30 ng/ml: no value given - unknown"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No kidney function tests (creatinine/eGFR) given; only heavy proteinuria, no hematuria, and low albumin.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No medications on record; compliance not described. Adherence is also assessed during the study.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No mention of gallbladder/biliary disease, cystic fibrosis, celiac disease or other fat-soluble vitamin malabsorption conditions.",
+    "sub_condition_notes": [
+      "Gallbladder or biliary disease: not mentioned - unknown",
+      "Cystic fibrosis: not mentioned - unknown",
+      "Celiac disease: not mentioned - unknown"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No history of bleeding disorders, osteomalacia, or other vitamin K-related disorders is mentioned.",
+    "sub_condition_notes": [
+      "Bleeding disorders: not mentioned - unknown",
+      "Osteomalacia: not mentioned - unknown"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No fracture history is mentioned in the description.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Suspected diagnosis is 'most likely minimal change disease' but no genetic testing is reported; genetic cause neither identified nor excluded.",
+    "sub_condition_notes": []
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"A 60-year-old woman\"",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "She was diagnosed with IPF by her pulmonologist and HRCT shows a UIP pattern, but the description does not state that ATS/ERS consensus criteria were formally met.",
+    "sub_condition_notes": [
+      "Stated diagnosis alone is not enough to confirm the ATS/ERS standard was met."
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "fail",
+    "evidence": "\"followed in the outpatient clinic and has not been hospitalized for her lung disease\"; dyspnea \"worsened gradually over the past 18 months without any sudden change\".",
+    "sub_condition_notes": [
+      "Hospitalised with AE-IPF: not hospitalized.",
+      "Acute worsening of dyspnoea, typically <1 month: not present, gradual over 18 months.",
+      "New bilateral ground-glass opacity/consolidation on CT: not described (only reticular opacities with honeycombing).",
+      "Deterioration not fully explained by cardiac failure: normal left ventricular function, but the other criteria are not met."
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "Ability to understand and sign informed consent is determined at enrollment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No acute worsening is described, and the echocardiogram showed normal left ventricular function, but pulmonary embolism and uncontrolled heart failure are not explicitly addressed.",
+    "sub_condition_notes": [
+      "Uncontrolled heart failure: echo shows normal LV function, but heart failure is not explicitly excluded.",
+      "Pulmonary embolism: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No information on hypersensitivity to corticosteroids, IVIG or study treatment components.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "IgA level or IgA deficiency not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Diagnosed with IPF by her pulmonologist, but multidisciplinary discussion is not mentioned.",
+    "sub_condition_notes": [
+      "Whether a definite diagnosis via multidisciplinary discussion exists is not stated."
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No mention of malignancy or cancer treatment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Medications listed are nintedanib, omeprazole and levothyroxine; no corticosteroids or immunosuppressants are mentioned, but absence is not explicitly stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Participation in another interventional trial is not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "pass",
+    "evidence": "\"She is postmenopausal\"; pregnancy is not plausible at this stage.",
+    "sub_condition_notes": [
+      "Pregnancy: postmenopausal.",
+      "Lactation: not explicitly stated, but postmenopausal status makes it logically ruled out."
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "Tutorship or curatorship status not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "Deprivation of liberty or court protection not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Refusal to participate or consent is determined at enrollment.",
+    "sub_condition_notes": []
+  }
+]

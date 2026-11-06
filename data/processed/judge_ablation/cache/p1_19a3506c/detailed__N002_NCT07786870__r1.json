@@ -1,0 +1,94 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"A 24-year-old man\" – age 24 > 18; the criterion has no upper age limit.",
+    "sub_conditions_notes": [],
+    "sub_condition_notes": [
+      "age > 18 years: 24 years, met",
+      "no upper age limit: not applicable to a 24-year-old, no restriction"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Asthma is diagnosed: \"A pulmonologist diagnosed asthma when he was 8 years old.\" However, the description does not say whether the diagnosis followed GINA 2023 criteria (e.g., documented variable expiratory airflow limitation, reversibility testing). Spirometry showing FEV1 68% is on record, but no reversibility or variability data are given.",
+    "sub_condition_notes": [
+      "diagnosis of asthma: met (pulmonologist diagnosis at age 8)",
+      "diagnosis made in accordance with GINA 2023 guidelines: not documented; the diagnosis was made in childhood and the criteria used are unknown"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "\"he has no other lung disease.\"",
+    "sub_condition_notes": [
+      "other respiratory diseases besides asthma: none per description",
+      "COPD: no other lung disease; also a 24-year-old never-smoker"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "\"He has never smoked cigarettes, vaped, or used cigars or marijuana.\"",
+    "sub_condition_notes": [
+      "active cigarette smoking: no, never smoked",
+      "smoking history >10 pack-years: no, 0 pack-years"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No mention of malignancy or cancer history in the description.",
+    "sub_condition_notes": [
+      "active malignancy: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Ten days ago in the ED: \"he had no fever, his chest X-ray was normal, and he was treated ... without antibiotics\"; this suggests no infection then, but there is no information on current status. He currently has worsening wheezing, chest tightness and night-time cough, which are attributed to asthma, and current infection or tuberculosis status is not stated.",
+    "sub_condition_notes": [
+      "active pulmonary tuberculosis: not mentioned; normal chest X-ray ten days ago makes it less likely but is not a formal exclusion",
+      "active respiratory tract infection: no fever and normal X-ray at ED ten days ago; current status not confirmed"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "ED treatment was \"a 5-day course of oral prednisone without antibiotics.\" No other antibiotic use is mentioned, but the medication list contains none.",
+    "sub_condition_notes": [
+      "antibiotic use within 4 weeks before enrollment: none during the ED visit 10 days ago; no antibiotics in medication list"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "\"his resting oxygen saturation is 97% on room air\"; no home oxygen in the medication list.",
+    "sub_condition_notes": [
+      "current long-term home oxygen therapy: none described; saturation normal on room air",
+      "oxygen use >15 hours per day: not applicable"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "pass",
+    "evidence": "\"his pulmonologist has scheduled his first dupilumab injection for next week\" – he has not yet received dupilumab; the current medication is high-dose budesonide-formoterol. No biologic is currently used.",
+    "sub_condition_notes": [
+      "omalizumab: not mentioned, not on it",
+      "mepolizumab: not mentioned, not on it",
+      "reslizumab: not mentioned, not on it",
+      "dupilumab: planned, first injection next week, not yet current treatment (enrollment timing relative to the first injection matters)",
+      "tezepelumab: not mentioned, not on it",
+      "other biologics: none listed"
+    ]
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "pass",
+    "evidence": "The patient is a 24-year-old man, so pregnancy is logically excluded.",
+    "sub_condition_notes": [
+      "pregnancy: not applicable, male"
+    ]
+  }
+]

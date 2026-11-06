@@ -1,0 +1,84 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "A 60-year-old woman; age 60 years meets ≥ 40.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Only a suspected diagnosis of IPF (UIP pattern) is recorded; the description gives symptoms and CT findings but no formal IPF diagnosis.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No medications listed and no mention of antifibrotic therapy or standard-of-care status. Either arm of this criterion could qualify, but current treatment status is not stated.",
+    "sub_condition_notes": [
+      "Receiving stable-dose antifibrotics: not stated",
+      "Not receiving local standard of care: not stated"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "No FVC value is given; a prior pulmonary function test may exist in records.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "unknown",
+    "evidence": "No DLCO value is given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No formal diagnosis is on record and no ILD other than the suspected IPF is mentioned. Other causes (e.g., connective tissue disease, hypersensitivity pneumonitis) have not been documented as excluded.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "CT describes 'bilateral basal reticular opacities with honeycombing' but does not mention emphysema or compare its extent with fibrosis.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "Presentation is 'progressive dyspnea' with no statement about acute worsening or exacerbation.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No mention of a lower respiratory tract infection.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No cardiac history is documented ('history': []).",
+    "sub_condition_notes": [
+      "ACS/MI: not mentioned",
+      "Unstable angina: not mentioned",
+      "PCI/CABG: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Heart failure is not mentioned; the dyspnea is not attributed to any cause beyond the suspected IPF.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No mention of organ transplantation history or lung transplant listing.",
+    "sub_condition_notes": [
+      "History of organ transplantation: not mentioned",
+      "Likely to receive lung transplantation: not mentioned"
+    ]
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "fail",
+    "evidence": "Patient presents with \"fever, sore throat, fatigue, and posterior cervical lymphadenopathy\", with \"splenomegaly, and a monospot test is positive\" — an active acute illness (suspected infectious mononucleosis), so he is not healthy on medical evaluation.",
+    "sub_condition_notes": [
+      "Medical history: none recorded, but the current presentation shows active illness.",
+      "Physical examination: splenomegaly and lymphadenopathy are abnormal findings."
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "Patient is a 19-year-old male (sex: M), so he was not assigned female at birth and cannot become pregnant or breastfeed; the criterion does not apply and does not exclude him.",
+    "sub_condition_notes": [
+      "Assigned female at birth / could become pregnant: no (male).",
+      "Pregnant or breast/chest feeding: not applicable."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information on recent or scheduled surgical procedures; history is empty.",
+    "sub_condition_notes": [
+      "Surgery within 7 days prior to Day 1 or Day 57: not mentioned.",
+      "Scheduled surgery within 28 days after study intervention: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "History is empty; no mention of immunodeficiency, immunosuppressive condition, or recurrent severe infections. Splenomegaly is present, but asplenia is not described.",
+    "sub_condition_notes": [
+      "Congenital or acquired immunodeficiency: not mentioned.",
+      "Immunosuppressive condition: not mentioned.",
+      "Asplenia: not described (splenomegaly present, which argues against asplenia, but no explicit statement).",
+      "Recurrent severe infectious disease: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "Medications list is empty; corticosteroid use not explicitly addressed, and future need for steroids cannot be determined.",
+    "sub_condition_notes": [
+      "Corticosteroids ≥10 mg/day prednisone for >14 days within 90 days: not documented.",
+      "Anticipating need for corticosteroids during study: not documented."
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Medications list is empty; no explicit information about systemic immunosuppressive or biologic therapy within 180 days or future plans.",
+    "sub_condition_notes": [
+      "Immunosuppressive treatment within 180 days: not documented.",
+      "Plans for such treatment during study: not documented."
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No vaccination history or future vaccine plans provided.",
+    "sub_condition_notes": [
+      "Nonstudy vaccine within 28 days prior to Day 1: not documented.",
+      "Plans for nonstudy vaccine through 28 days after Day 57: not documented."
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "History is empty; no mention of myocarditis, pericarditis, or myopericarditis.",
+    "sub_condition_notes": [
+      "Myocarditis: not mentioned.",
+      "Pericarditis: not mentioned.",
+      "Myopericarditis: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No information on prior investigational EBV vaccine receipt.",
+    "sub_condition_notes": []
+  }
+]

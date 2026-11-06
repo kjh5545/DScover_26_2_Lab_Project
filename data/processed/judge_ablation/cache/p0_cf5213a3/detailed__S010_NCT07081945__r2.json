@@ -1,0 +1,63 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "Informed consent is not mentioned in the patient description. It can only be obtained from the patient when he is asked to enroll.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "The patient is 73 years old, which is outside the required 18-70 range.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "Primary macula-off RRD with a single horseshoe tear at the 5 o'clock position, inside the detached area. This meets the criterion of an inferior break between 4 and 8 o'clock within the detached area.",
+    "sub_condition_notes": [
+      "Inferior retinal break between 4 and 8 o'clock within the detached area: met (tear at 5 o'clock, inside the detachment).",
+      "Retinotomy requirement: not applicable and not needed, since the first condition is already met."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "The tear is a single horseshoe tear at 5 o'clock. It is not described as only anterior breaks or dialysis, and there is no stated indication for scleral buckling. The patient has had no prior scleral buckling.",
+    "sub_condition_notes": [
+      "Only anterior breaks or dialysis: not described.",
+      "Meets indications for scleral buckling: not indicated."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "The 5 o'clock break is inside the detached area, so it is not a break outside the detachment between 4 and 8 o'clock.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "fail",
+    "evidence": "The patient has primary open-angle glaucoma in both eyes, controlled with latanoprost. Glaucoma is explicitly listed as an exclusionary pre-existing serious eye disease. The criterion does not specify severity, and the patient's glaucoma is controlled, so the study team might judge it differently. As written, it is an exclusion.",
+    "sub_condition_notes": [
+      "Glaucoma: present (bilateral POAG).",
+      "Corneal ulcers: none reported.",
+      "Uveitis: none reported."
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No history of epilepsy or serious psychiatric disease is mentioned in the description, but it is also not explicitly denied.",
+    "sub_condition_notes": [
+      "Epilepsy: not documented.",
+      "Serious psychiatric disease: not documented."
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "post_enrollment",
+    "evidence": "This depends on the researcher's judgment, which only the study team can make.",
+    "sub_condition_notes": []
+  }
+]

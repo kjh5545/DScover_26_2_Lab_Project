@@ -1,0 +1,101 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "Patient is 60 years old.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "Diagnosed with IPF by pulmonologist; HRCT shows UIP pattern with honeycombing, ANA negative, former smoker with minimal emphysema, consistent with ATS/ERS criteria.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "fail",
+    "evidence": "Not hospitalized for her lung disease; outpatient. Dyspnea worsened gradually over 18 months without sudden change (not <1 month); no new bilateral ground-glass opacity/consolidation reported. No AE-IPF.",
+    "sub_condition_notes": [
+      "Previous IPF diagnosis: met",
+      "Acute worsening <1 month: not met",
+      "New bilateral GGO/consolidation on UIP: not met",
+      "Not explained by cardiac failure: normal LV function, but other criteria not met",
+      "Hospitalized: not met"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "No information about capacity to understand and sign consent; no indication of incapacity.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "No acute worsening; echocardiogram showed normal left ventricular function; no evidence of pulmonary embolism or uncontrolled heart failure.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No allergy history provided regarding corticosteroids or IVIG.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "IgA level/deficiency not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "pass",
+    "evidence": "Definite IPF diagnosis by pulmonologist with UIP pattern on HRCT and negative ANA.",
+    "sub_condition_notes": [
+      "Definite IPF: yes",
+      "AE-IPF: not present, but criterion concerns IPF or AE-IPF"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No malignancy or cancer treatment mentioned, but not explicitly confirmed absent.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "Medications are nintedanib, omeprazole, levothyroxine; no corticosteroids or immunosuppressants.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Participation in another interventional trial not stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "pass",
+    "evidence": "60-year-old postmenopausal woman; pregnancy highly unlikely. Lactation not mentioned but implausible.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "Legal guardianship status not mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "Not mentioned whether deprived of liberty or under court protection.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "unknown",
+    "evidence": "Willingness to participate not stated.",
+    "sub_condition_notes": []
+  }
+]

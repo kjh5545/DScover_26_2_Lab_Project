@@ -1,0 +1,74 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "Age 45 years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "No documentation of facial bone defects from cystic or tumoral osteolytic lesions; the presentation is a suspected infectious necrotic process, and no imaging is given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No acquired or congenital facial deformity with bony defect or asymmetry is documented. Periorbital swelling is not the same as a deformity.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "No indication of a need for patient-specific 3D-printed titanium implants is documented. Whether he needs one is a clinical determination not yet made.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "unknown",
+    "evidence": "No aesthetic indication or microgenia is documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I6",
+    "verdict": "unknown",
+    "evidence": "Capacity and willingness to give consent are not documented. The patient is acutely ill with fever and a suspected invasive infection.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "fail",
+    "evidence": "Black necrotic eschar on the nasal mucosa, fever, facial pain and periorbital swelling, with suspected rhino-orbital mucormycosis, indicate an active pathological lesion.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "Age 45, so not below 18.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No radiotherapy history is documented either way.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Vitamin D status is not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "fail",
+    "evidence": "The description says 'poorly controlled type 2 diabetes', which is consistent with uncontrolled diabetes mellitus. No HbA1c is given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Ability and willingness to comply with follow-up are not documented.",
+    "sub_condition_notes": []
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "The patient is a 7-year-old boy (under 16) with a suspected nephrotic syndrome, and no medications are listed, which suggests he has not had glucocorticoids yet. However, no GC treatment is documented, and the 2 mg/kg/day prednisolone regimen has not been confirmed. Nephrotic syndrome is only 'suspected'.",
+    "sub_condition_notes": [
+      "Age under 16, either gender: met (age 7, male).",
+      "Nephrotic syndrome: suspected, with heavy proteinuria and low albumin; not formally confirmed.",
+      "First-time GC treatment: no GC treatment documented; unknown whether he has started or will start.",
+      "Prednisolone 2 mg/kg/day with gradual taper: not documented."
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "fail",
+    "evidence": "The patient has a 3-week illness history and no medications listed, so he cannot have been on glucocorticoids for more than 6 months. Vitamin D level is not documented.",
+    "sub_condition_notes": [
+      "GC therapy for more than 6 months: not met; the illness began 3 weeks ago and no medications are listed.",
+      "Vitamin D level of 30 ng/ml or above: not documented."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No creatinine, eGFR or other kidney function results are given. Only proteinuria and low albumin are reported.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No medications or supplements are listed, and compliance cannot be assessed because treatment has not been documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "Gallbladder or biliary disease, cystic fibrosis, celiac disease and similar conditions are not mentioned. Their absence is not confirmed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No history of bleeding disorders or osteomalacia is stated. Their absence is not confirmed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "Fracture history is not mentioned in the record.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No genetic testing or family history is documented. The diagnosis is suspected minimal change disease, and a genetic cause has not been excluded.",
+    "sub_condition_notes": []
+  }
+]

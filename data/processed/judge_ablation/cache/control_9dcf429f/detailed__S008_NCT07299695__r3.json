@@ -1,0 +1,105 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "Age 60 years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "Diagnosed with IPF by pulmonologist 14 months ago; HRCT shows UIP pattern with honeycombing, ANA negative, former smoker. Consistent with ATS/ERS criteria.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "fail",
+    "evidence": "Not hospitalized for lung disease; dyspnea worsened gradually over 18 months 'without any sudden change'; no new ground-glass opacity/consolidation on CT. No acute exacerbation present.",
+    "sub_condition_notes": [
+      "Hospitalized with definite/suspected AE-IPF: no, outpatient, not hospitalized",
+      "Previous IPF diagnosis: met",
+      "Acute worsening <1 month: not met, gradual over 18 months",
+      "New bilateral GGO/consolidation on CT: not met, CT shows UIP with fibrosis predominating",
+      "Not explained by cardiac failure: echo normal LV function"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "No information on capacity or ability to understand and sign consent; formal consent is obtained at enrollment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "Echocardiogram last month showed normal left ventricular function; no acute worsening described, so no acute worsening due to heart failure. Pulmonary embolism not mentioned, but no acute worsening occurred.",
+    "sub_condition_notes": [
+      "Uncontrolled heart failure: not present (normal LV function)",
+      "Pulmonary embolism: no acute worsening and no mention of PE"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No information on allergies or hypersensitivity to corticosteroids, IVIG or components.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "IgA level / IgA deficiency not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "pass",
+    "evidence": "Definite IPF diagnosis by pulmonologist with UIP pattern on HRCT, negative ANA, other causes considered; diagnosis is established.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No mention of malignancy or cancer treatment; absence not explicitly stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Medication list (nintedanib, omeprazole, levothyroxine) includes no corticosteroids or immunosuppressants, but the list is not explicitly stated to be complete regarding recent steroid use.",
+    "sub_condition_notes": [
+      "Prednisone >20 mg >14 days in past month: not documented",
+      "Immunosuppressants in last month: none listed",
+      "High-dose >1 mg/kg/d >7 days in last 15 days: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "Participation in other interventional trials not mentioned; nintedanib is described as a standard medication.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "pass",
+    "evidence": "60-year-old postmenopausal woman, so not pregnant; lactation implausible/not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "Legal status (tutorship/curatorship) not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "Not documented whether deprived of liberty or under court protection.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "unknown",
+    "evidence": "No information on willingness to participate or consent.",
+    "sub_condition_notes": []
+  }
+]

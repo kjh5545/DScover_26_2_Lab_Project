@@ -1,0 +1,32 @@
+{
+  "age": 73,
+  "age_unit": "years",
+  "sex": "M",
+  "suspected_diagnosis": "Macula-off rhegmatogenous retinal detachment of the right eye with horseshoe tear at 5 o'clock",
+  "findings": [
+    "sudden onset of a painless, curtain-like loss of vision in the right eye",
+    "preceded by flashes of light and floaters",
+    "symptoms began two days ago",
+    "no injury to the eye or head",
+    "macula-off rhegmatogenous retinal detachment extending inferiorly from the 3 to 9 o'clock positions",
+    "single horseshoe tear at the 5 o'clock position inside the detached area",
+    "no retinoschisis",
+    "no sign of an exudative detachment",
+    "best-corrected visual acuity in the right eye is counting fingers"
+  ],
+  "history": [
+    "uncomplicated cataract surgery with an intraocular lens implant in the right eye two years ago",
+    "never had retinal surgery or scleral buckling in either eye",
+    "primary open-angle glaucoma in both eyes",
+    "hypertension"
+  ],
+  "medications": [
+    "latanoprost eye drops",
+    "amlodipine"
+  ],
+  "labs": [
+    "Dilated fundus examination of the right eye: macula-off rhegmatogenous retinal detachment from 3 to 9 o'clock inferiorly, single horseshoe tear at 5 o'clock",
+    "Best-corrected visual acuity right eye: counting fingers"
+  ],
+  "id": "S010_detailed_37fad456"
+}

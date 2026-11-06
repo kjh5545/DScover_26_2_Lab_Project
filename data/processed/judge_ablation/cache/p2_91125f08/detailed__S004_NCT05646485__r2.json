@@ -1,0 +1,50 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "A 68-year-old man; age 68 is ≥ 50.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "He has smoked about one pack a day for 45 years and is still smoking, which is about 45 pack-years and meets the ≥15 pack-year threshold.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No occupation or occupational exposure history (textile worker, painter, dry cleaner) is mentioned in the description.",
+    "sub_condition_notes": [
+      "Textile worker: not stated",
+      "Painter: not stated",
+      "Dry cleaner: not stated",
+      "Duration of 15 or more years: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "The description says 'No histopathological diagnosis has been established yet', and the current bladder tumor is only suspected. It does not mention a prior history of bladder, kidney, or prostate cancer, and absence of mention is not confirmation that none exists.",
+    "sub_condition_notes": [
+      "Bladder cancer: current lesion is suspected and unconfirmed; no prior history is stated",
+      "Kidney cancer: not mentioned",
+      "Prostate cancer: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "Hematuria began three weeks ago and cystoscopy was done two days ago. The description does not say whether there was any earlier evaluation of micro or gross hematuria in the last 2 years, and the current work-up may or may not count under this criterion.",
+    "sub_condition_notes": [
+      "Microhematuria evaluation in the last 2 years: not stated",
+      "Gross hematuria evaluation in the last 2 years: only the current work-up is described"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness to provide informed consent can only be determined when the patient is approached for enrollment.",
+    "sub_condition_notes": []
+  }
+]

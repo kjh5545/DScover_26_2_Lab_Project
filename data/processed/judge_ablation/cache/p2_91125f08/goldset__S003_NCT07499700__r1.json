@@ -1,0 +1,92 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "Profile lists only a 'suspected_diagnosis' of 'Nephrotic syndrome, most likely minimal change disease'. No renal biopsy, formal pathological diagnosis, or corticosteroid response is documented.",
+    "sub_condition_notes": [
+      "Clinical NS diagnosis: features are consistent (edema, heavy proteinuria, low albumin) but no formal diagnosis on record.",
+      "Biopsy-confirmed MCD/FSGS within 7/10 years: not documented.",
+      "Corticosteroid responsiveness: no steroid treatment mentioned (medications empty); not determinable."
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Patient has a 3-week history of active symptoms; no mention of corticosteroid therapy or complete remission.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information about secondary causes (e.g., infection, drugs, systemic disease) in the description.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No genetic testing or family history information provided.",
+    "sub_condition_notes": [
+      "Known genetic defects: not mentioned.",
+      "Family history of NS: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "Medications list is empty, but no explicit statement about prior B-cell depleting therapy (e.g., rituximab).",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No allergy history documented.",
+    "sub_condition_notes": [
+      "Allergy to monoclonal antibodies: not mentioned.",
+      "Predisposition to allergies: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "Medications list is empty, but there is no explicit statement that no immunosuppressants were received in the past 60 days.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No information on immunoglobulin or immunomodulator (e.g., thymosin) receipt.",
+    "sub_condition_notes": [
+      "Immunoglobulin within 90 days: not mentioned.",
+      "Immunomodulators within 4 weeks: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No information on participation in other clinical trials.",
+    "sub_condition_notes": [
+      "Prior investigational drug participation within 90 days / 5 half-lives: not mentioned.",
+      "Plans for other trial participation: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Liver and kidney function tests (e.g., creatinine, eGFR, transaminases) are not provided; only urinalysis and low albumin are given.",
+    "sub_condition_notes": [
+      "Liver function: not given.",
+      "Kidney function: not given."
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "No hepatitis B, hepatitis C, syphilis, or HIV results or history provided.",
+    "sub_condition_notes": [
+      "HBsAg: not given.",
+      "HCV antibodies: not given.",
+      "Treponema pallidum antibodies: not given.",
+      "HIV history/antibodies: not given."
+    ]
+  }
+]

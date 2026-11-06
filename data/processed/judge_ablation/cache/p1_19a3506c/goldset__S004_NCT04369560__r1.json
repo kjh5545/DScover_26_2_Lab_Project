@@ -1,0 +1,93 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"A 68-year-old man\" falls within 18 to 90 years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "No information on the patient's capacity to understand or willingness to sign consent.",
+    "sub_condition_notes": [
+      "Understanding: not given",
+      "Willingness to sign: not given"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "Only \"CT urography reveals a mass in the bladder wall\" is described. No cystoscopy, papillary tumor, TURBT scheduling, or histologic proof of MIBC is on record, and no assessment of clinical localization or resectability.",
+    "sub_condition_notes": [
+      "Papillary tumor on cystoscopy scheduled for TURBT: not documented",
+      "Histologically proven MIBC: no histology on record",
+      "Clinically localized and amenable to curative resection: not documented"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "No ECOG performance status is given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "unknown",
+    "evidence": "No creatinine or creatinine clearance values are given.",
+    "sub_condition_notes": [
+      "Creatinine < 1.5 x ULN: not given",
+      "CrCl >= 50 mL/min/1.73 m2 if creatinine >= 1.5 x ULN: not given"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No information on allergies or prior exposure to gadobutrol or ferumoxytol.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No mention of claustrophobia.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No mention of implanted devices, prostheses, or a pacemaker.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "CT urography is described only as showing a bladder wall mass. Staging and the presence or absence of metastases are not reported, so metastatic disease is neither confirmed nor excluded.",
+    "sub_condition_notes": [
+      "Known metastatic disease: none reported",
+      "Suspected metastatic disease: not assessed in the description"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "Patient is a male (\"68-year-old man\"), so pregnancy, lactation, or plans to conceive do not apply.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Hematuria is present, but no urinalysis or culture or any UTI diagnosis is reported.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No mention of urethral stricture disease.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "post_enrollment",
+    "evidence": "Whether other conditions pose unacceptable risk is a judgment by the treating physician and cannot be determined from the description.",
+    "sub_condition_notes": []
+  }
+]

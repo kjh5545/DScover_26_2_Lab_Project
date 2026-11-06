@@ -1,0 +1,69 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "The description gives no information on her ability to understand the trial, give written consent, or comply with the protocol. She works as an elementary school teacher, which does not establish this.",
+    "sub_condition_notes": [
+      "Understanding trial requirements: not stated",
+      "Written informed consent: not stated",
+      "Compliance with protocol procedures: not stated"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "A 29-year-old woman, so she is aged ≥ 18 years.",
+    "sub_condition_notes": [
+      "Male or female: she is female, which is acceptable",
+      "Age ≥ 18: 29 years"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "fail",
+    "evidence": "She has a Graves' disease diagnosis (\"An endocrinologist diagnosed Graves' disease last week\"), but \"she has not yet started antithyroid medication\". She therefore cannot be hyperthyroid despite ATD treatment.",
+    "sub_condition_notes": [
+      "Diagnosis of GD: met",
+      "Hyperthyroid despite ATD treatment: not met, because she has had no ATD treatment"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "The specific protocol-defined inclusion criteria are not listed, so only the study team can assess them.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "She \"has never received radioactive iodine or thyroid surgery\", so there has been no prior successful RAI treatment and no total thyroidectomy.",
+    "sub_condition_notes": [
+      "Prior successful RAI: no, she has never received RAI",
+      "Total thyroidectomy: no, she has never had thyroid surgery"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No other autoimmune disease is mentioned, and she \"takes no other regular medications\". The description does not explicitly rule out another autoimmune disease, and the criterion depends on the Investigator's judgment.",
+    "sub_condition_notes": [
+      "Other autoimmune disease requiring treatment: none documented, but not explicitly excluded",
+      "Undue risk in the Investigator's judgment: can only be determined by the investigator"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "pass",
+    "evidence": "She has only \"mild upper eyelid retraction but no eye pain, double vision, or bulging of the eyes\". This is not moderate-to-severe active TED, and no surgery, irradiation or medical therapy for TED is described as needed or planned.",
+    "sub_condition_notes": [
+      "Moderate-to-severe active TED: no, findings are mild",
+      "Expected to need immediate surgery or planning corrective surgery, irradiation or medical therapy for TED: no evidence of this"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "post_enrollment",
+    "evidence": "The additional protocol-defined exclusion criteria are not listed, so only the study team can assess them.",
+    "sub_condition_notes": []
+  }
+]

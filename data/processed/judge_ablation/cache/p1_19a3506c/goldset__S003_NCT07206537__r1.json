@@ -1,0 +1,58 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "The patient is a 7-year-old boy with suspected nephrotic syndrome ('3-week history of periorbital edema and frothy urine', heavy proteinuria, low albumin), so age and sex fit. The profile lists no medications, which hints he has not yet had glucocorticoids, but there is no record that GC treatment has started or what dose will be used (2 mg/kg/day prednisolone with taper).",
+    "sub_condition_notes": [
+      "Under 16 years, either gender: met (7-year-old male).",
+      "Nephrotic patient: suspected (formal diagnosis not confirmed, 'most likely minimal change disease').",
+      "First-time GC treatment: not documented; medications list is empty, which suggests no prior GC but does not confirm it.",
+      "GC initiated at 2 mg/kg/day prednisolone with gradual taper: not documented; it would be determined by the study or treating team."
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "post_enrollment",
+    "evidence": "No GC therapy is on record (medications empty). Having been on GC for more than 6 months is a future condition that can only be assessed during the study. Vitamin D level is not reported.",
+    "sub_condition_notes": [
+      "GC therapy for more than 6 months: cannot be met at present, since there is no documented GC therapy; this can only be determined during follow-up.",
+      "Vitamin D level of 30 ng/ml or above: no vitamin D measurement is given; it would be obtained through testing."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No creatinine, eGFR or other kidney function results are given. Only proteinuria without hematuria and low albumin are described.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "The patient takes no medications or supplements per the profile, and there is no information on compliance. Compliance can only be judged once treatment begins.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No mention of gallbladder or biliary disease, cystic fibrosis, celiac disease or other fat-soluble vitamin malabsorption.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No history of bleeding disorders, osteomalacia or other vitamin K-related disorders is mentioned.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "Fracture history is not mentioned in the description.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No genetic testing is reported. The suspected diagnosis is 'most likely minimal change disease', and a genetic cause has not been identified or excluded.",
+    "sub_condition_notes": []
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "A 68-year-old man; age 68 ≥ 50.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "He has smoked about one pack a day for 45 years and is still smoking, which is about 45 pack-years and meets the ≥15 threshold.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "No occupation or occupational exposure is described. The criterion may be an alternative to the smoking criterion, but this cannot be confirmed from the description.",
+    "sub_condition_notes": [
+      "Textile worker: not mentioned",
+      "Painter: not mentioned",
+      "Dry cleaner: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "The current bladder tumor is suspected but not histologically diagnosed. No prior history of bladder, kidney, or prostate cancer is mentioned, but its absence is not explicitly stated.",
+    "sub_condition_notes": [
+      "Bladder cancer prior history: not mentioned",
+      "Kidney cancer prior history: not mentioned",
+      "Prostate cancer prior history: not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "Hematuria began three weeks ago, and cystoscopy and CT urography were done for the current episode. Whether there was any evaluation of hematuria in the last 2 years is not stated. The current workup might count as prior evaluation, depending on the study's definition.",
+    "sub_condition_notes": [
+      "Microhematuria evaluation within 2 years: not stated",
+      "Gross hematuria evaluation within 2 years: not stated; the current evaluation is within the last 3 weeks"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "post_enrollment",
+    "evidence": "Willingness to provide informed consent is determined at enrollment.",
+    "sub_condition_notes": []
+  }
+]

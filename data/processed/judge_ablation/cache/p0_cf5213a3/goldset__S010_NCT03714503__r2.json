@@ -1,0 +1,92 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "Capacity and willingness to consent are not described; this can be confirmed by asking the patient.",
+    "sub_condition_notes": [
+      "Ability to understand: not stated",
+      "Willingness to sign: not stated"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "post_enrollment",
+    "evidence": "Presentation suggests rhegmatogenous RD, but the diagnosis and the location of breaks (inferior) require a dilated fundus exam by the study team.",
+    "sub_condition_notes": [
+      "Primary rhegmatogenous RD: suspected, not confirmed",
+      "Inferior breaks: not determined; needs exam"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "Age 73 years.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "pass",
+    "evidence": "Patient is male, so the pregnancy test requirement does not apply.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "Patient is 73 years old, not pediatric.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "Patient is male.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No history of prior retinal detachment repair is documented (history empty), but this was not explicitly stated; it can be asked.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Prior scleral buckling history is not documented; it can be asked or checked in records.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No trauma is mentioned in the presentation, but absence of trauma history was not explicitly confirmed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "Sudden symptomatic onset with flashes, floaters and curtain-like vision loss indicates an acute symptomatic detachment, not an asymptomatic longstanding one.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "post_enrollment",
+    "evidence": "Compliance with post-operative treatment can only be observed after surgery.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Lens status (phakic vs pseudophakic) is not given. A 73-year-old may be either; this can be determined by asking about cataract surgery or by exam.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "post_enrollment",
+    "evidence": "Presentation suggests rhegmatogenous rather than exudative RD (flashes, floaters, painless), but the type must be confirmed by clinical exam.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "post_enrollment",
+    "evidence": "Whether the detachment is related to retinoschisis requires clinical exam and imaging by the study team.",
+    "sub_condition_notes": []
+  }
+]

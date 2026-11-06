@@ -1,0 +1,322 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "unknown",
+    "evidence": "Nothing in the description about consent capacity or willingness; she works as an accountant, but this is not documented.",
+    "sub_condition_notes": [
+      "Ability to understand: not stated",
+      "Willingness to sign: not stated"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "58-year-old woman, within 18-74.",
+    "sub_condition_notes": [
+      "Female",
+      "Age 58 within range"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "9-year history of type 2 diabetes, HbA1c 9.8%, FBG 11.2 mmol/L.",
+    "sub_condition_notes": [
+      "Meets T2DM criteria"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "fail",
+    "evidence": "She has never used any SGLT2 inhibitor; she is on metformin only.",
+    "sub_condition_notes": [
+      "Not on any SGLT2i monotherapy",
+      "Duration of 8 weeks cannot be met without SGLT2i use"
+    ]
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "fail",
+    "evidence": "Metformin 1000 mg twice daily (2000 mg/day) for two years, above the 500-1000 mg/day range. Dose is stable and duration is long enough.",
+    "sub_condition_notes": [
+      "Dose 2000 mg/day exceeds 500-1000 mg/day",
+      "Duration 2 years meets at least 8 weeks",
+      "Dose stable for 2 years"
+    ]
+  },
+  {
+    "criterion_id": "I6",
+    "verdict": "fail",
+    "evidence": "HbA1c 9.8% last week, above the 9.5% upper limit.",
+    "sub_condition_notes": [
+      "9.8% is outside 7.5-9.5%"
+    ]
+  },
+  {
+    "criterion_id": "I7",
+    "verdict": "pass",
+    "evidence": "Fasting blood glucose 11.2 mmol/L, below 15.",
+    "sub_condition_notes": [
+      "11.2 < 15 mmol/L"
+    ]
+  },
+  {
+    "criterion_id": "I8",
+    "verdict": "pass",
+    "evidence": "BMI 31.2 kg/m², at or below 40.",
+    "sub_condition_notes": [
+      "31.2 ≤ 40"
+    ]
+  },
+  {
+    "criterion_id": "I9",
+    "verdict": "unknown",
+    "evidence": "No urine ketone result is provided.",
+    "sub_condition_notes": [
+      "Urine ketone test not reported"
+    ]
+  },
+  {
+    "criterion_id": "I10",
+    "verdict": "pass",
+    "evidence": "eGFR 78 mL/min/1.73 m², at or above 60.",
+    "sub_condition_notes": [
+      "78 ≥ 60"
+    ]
+  },
+  {
+    "criterion_id": "I11",
+    "verdict": "post_enrollment",
+    "evidence": "Agreement to maintain diet and exercise and to use an SMBG meter is assessed after enrollment or at study start.",
+    "sub_condition_notes": [
+      "Diet agreement: post-enrollment",
+      "Exercise agreement: post-enrollment",
+      "SMBG ability: post-enrollment",
+      "Record keeping: post-enrollment"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "Documented as type 2 diabetes with a 9-year course managed with metformin, so not type 1.",
+    "sub_condition_notes": [
+      "Not type 1 diabetes"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "Diagnosis is type 2 diabetes. No secondary cause is described.",
+    "sub_condition_notes": [
+      "No secondary diabetes indicated"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "Transplant history is not mentioned.",
+    "sub_condition_notes": [
+      "Pending pancreatic transplant: not stated",
+      "Pending β-cell transplant: not stated",
+      "Prior pancreatic transplant: not stated",
+      "Prior β-cell transplant: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "She has no history of pancreatitis, but pancreatic resection is not addressed.",
+    "sub_condition_notes": [
+      "No pancreatitis history: pass",
+      "Pancreatic resection: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "DKA or hyperosmolar coma is not mentioned, although she has fatigue and thirst.",
+    "sub_condition_notes": [
+      "DKA: not stated",
+      "Hyperosmolar coma: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "No liver enzyme results or liver disease history are provided.",
+    "sub_condition_notes": [
+      "ALT: not provided",
+      "AST: not provided",
+      "ALP: not provided",
+      "Liver insufficiency: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "pass",
+    "evidence": "No history of heart attack or stroke. Unstable angina and TIA are not explicitly mentioned.",
+    "sub_condition_notes": [
+      "No MI (STEMI/NSTEMI)",
+      "Unstable angina not mentioned",
+      "No stroke",
+      "TIA not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "pass",
+    "evidence": "BP 138/84 mmHg on lisinopril, below 160/90.",
+    "sub_condition_notes": [
+      "Systolic 138 < 160",
+      "Diastolic 84 < 90"
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "No hemoglobin result is provided.",
+    "sub_condition_notes": [
+      "Hemoglobin not reported"
+    ]
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "Genitourinary infection history is not mentioned.",
+    "sub_condition_notes": [
+      "Infection count in past 3 months not stated"
+    ]
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "unknown",
+    "evidence": "Bariatric or GI surgery history is not mentioned.",
+    "sub_condition_notes": [
+      "Bariatric surgery: not stated",
+      "GI surgery with malabsorption: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E12",
+    "verdict": "unknown",
+    "evidence": "Her medication list has no anti-obesity drugs, but weight stability and diet history are not described.",
+    "sub_condition_notes": [
+      "No anti-obesity medication listed",
+      "Weight stability/radical diet: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E13",
+    "verdict": "unknown",
+    "evidence": "Cancer history is not mentioned.",
+    "sub_condition_notes": [
+      "Cancer history: not stated",
+      "Cancer treatment in past 5 years: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E14",
+    "verdict": "unknown",
+    "evidence": "HIV status is not given.",
+    "sub_condition_notes": [
+      "HIV status not stated"
+    ]
+  },
+  {
+    "criterion_id": "E15",
+    "verdict": "unknown",
+    "evidence": "Peripheral vascular disease is not mentioned.",
+    "sub_condition_notes": [
+      "Severe PVD: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E16",
+    "verdict": "unknown",
+    "evidence": "No hematological disease or hemolytic condition is mentioned.",
+    "sub_condition_notes": [
+      "Hematological malignancy: not stated",
+      "Hemolytic disease: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E17",
+    "verdict": "unknown",
+    "evidence": "Hypothyroidism is on levothyroxine, with no cause given (it could be autoimmune, such as Hashimoto's). Her medication list has no corticosteroids.",
+    "sub_condition_notes": [
+      "Immune disease: cause of hypothyroidism unclear",
+      "No systemic corticosteroid in medication list"
+    ]
+  },
+  {
+    "criterion_id": "E18",
+    "verdict": "pass",
+    "evidence": "Levothyroxine dose unchanged for two years, so no change in the past 6 weeks. No other uncontrolled endocrine or metabolic disorder is described.",
+    "sub_condition_notes": [
+      "No thyroid dose change in 6 weeks",
+      "No other uncontrolled endocrine disorder described",
+      "No other uncontrolled metabolic disorder described"
+    ]
+  },
+  {
+    "criterion_id": "E19",
+    "verdict": "post_enrollment",
+    "evidence": "Depends on investigator judgment of compliance. Substance use history is not given.",
+    "sub_condition_notes": [
+      "Alcohol abuse: not stated",
+      "Drug abuse: not stated",
+      "Investigator judgment: post-enrollment"
+    ]
+  },
+  {
+    "criterion_id": "E20",
+    "verdict": "unknown",
+    "evidence": "Allergy history is not mentioned.",
+    "sub_condition_notes": [
+      "Allergy to study drug, similar structures, excipients: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E21",
+    "verdict": "pass",
+    "evidence": "58-year-old postmenopausal woman, so not pregnant, planning pregnancy, or likely lactating.",
+    "sub_condition_notes": [
+      "Not pregnant (postmenopausal)",
+      "No pregnancy plans expected",
+      "Lactation not expected"
+    ]
+  },
+  {
+    "criterion_id": "E22",
+    "verdict": "unknown",
+    "evidence": "Willingness to use contraception is not stated. Being postmenopausal likely makes this not applicable.",
+    "sub_condition_notes": [
+      "Contraception willingness: not stated",
+      "Progesterone contraceptive plans: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E23",
+    "verdict": "pass",
+    "evidence": "Patient is female, so this criterion does not apply.",
+    "sub_condition_notes": [
+      "Not male"
+    ]
+  },
+  {
+    "criterion_id": "E24",
+    "verdict": "unknown",
+    "evidence": "Participation in other clinical studies is not mentioned.",
+    "sub_condition_notes": [
+      "Recent trial participation not stated"
+    ]
+  },
+  {
+    "criterion_id": "E25",
+    "verdict": "post_enrollment",
+    "evidence": "Investigator judgment is made by the study team.",
+    "sub_condition_notes": [
+      "Investigator judgment of suitability"
+    ]
+  }
+]

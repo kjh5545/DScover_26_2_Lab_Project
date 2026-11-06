@@ -1,0 +1,178 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is completed after the patient applies to the study.",
+    "sub_condition_notes": [
+      "Consent process: post_enrollment",
+      "Written documentation: post_enrollment"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "\"A 24-year-old man\"",
+    "sub_condition_notes": [
+      "Age >= 18: yes (24)",
+      "Age <= 65: yes (24)"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "\"A pulmonologist diagnosed asthma when he was 8 years old\"; he is now 24, so the diagnosis is far longer than 1 year old.",
+    "sub_condition_notes": [
+      "Physician diagnosis of asthma: yes, by a pulmonologist",
+      "Duration > 1 year: diagnosed at age 8, now 24"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "pass",
+    "evidence": "\"Spirometry two weeks ago met ATS quality criteria and showed an FEV1 of 68% of predicted\"",
+    "sub_condition_notes": [
+      "Reproducible spirometry per ATS: met ATS quality criteria",
+      "PFTs within 30 days: two weeks ago, which is within 30 days of now. Visit 1 may fall at a later date, but there is no indication it would fall outside the window."
+    ]
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "pass",
+    "evidence": "The criterion places no restriction on race or ethnicity, so no patient is excluded by it.",
+    "sub_condition_notes": [
+      "No restriction by race/ethnicity: satisfied"
+    ]
+  },
+  {
+    "criterion_id": "I6",
+    "verdict": "pass",
+    "evidence": "\"his blood eosinophil count is 450 cells/μL\"",
+    "sub_condition_notes": [
+      "450 > 300: yes"
+    ]
+  },
+  {
+    "criterion_id": "I7",
+    "verdict": "pass",
+    "evidence": "\"He has never smoked cigarettes, vaped, or used cigars or marijuana.\"",
+    "sub_condition_notes": [
+      "Never smoked, so 0 pack-years (< 10)"
+    ]
+  },
+  {
+    "criterion_id": "I8",
+    "verdict": "pass",
+    "evidence": "\"He has never smoked cigarettes, vaped, or used cigars or marijuana.\"",
+    "sub_condition_notes": [
+      "No cigarette smoking: never",
+      "No vaping: never",
+      "No cigar use: never",
+      "No marijuana use: never"
+    ]
+  },
+  {
+    "criterion_id": "I9",
+    "verdict": "pass",
+    "evidence": "\"his pulmonologist has scheduled his first dupilumab injection for next week as part of standard care\"",
+    "sub_condition_notes": [
+      "About to initiate dupilumab: yes",
+      "Part of standard of care: yes"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "At the ED visit ten days ago: \"he had no fever, his chest X-ray was normal, and he was treated with a 5-day course of oral prednisone without antibiotics.\" The patient was treated for an asthma attack triggered by cat exposure, not for an infection.",
+    "sub_condition_notes": [
+      "Respiratory tract infection within 4 weeks: none described; no fever, normal CXR, no antibiotics"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "\"His BMI is 24 kg/m²\"",
+    "sub_condition_notes": [
+      "BMI 24, not > 30"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No one-time doses or intra-articular injections are mentioned. The only recent medication described is an oral prednisone course.",
+    "sub_condition_notes": [
+      "One-time doses within 4 weeks: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "fail",
+    "evidence": "\"Ten days ago he visited the emergency department for an asthma attack after exposure to a cat\"",
+    "sub_condition_notes": [
+      "ER visit within 4 weeks before Visit 1: yes, 10 days ago",
+      "ER visit while on study: post_enrollment, cannot yet be known"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "post_enrollment",
+    "evidence": "This is determined by the Investigator. The description states \"he has no other lung disease\", but no other history of heart disease, cancer or diabetes is given.",
+    "sub_condition_notes": [
+      "Heart disease: not mentioned",
+      "Cancer: not mentioned",
+      "Uncontrolled diabetes: not mentioned",
+      "Other chronic lung diseases: none per description",
+      "Other significant illness: Investigator judgment"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "\"resting oxygen saturation is 97% on room air\"",
+    "sub_condition_notes": [
+      "SpO2 97% on room air, not < 90%"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "pass",
+    "evidence": "The patient is a 24-year-old man, so a positive pregnancy test is not possible.",
+    "sub_condition_notes": [
+      "Visit 1 pregnancy test: not applicable to a male patient",
+      "During study: not applicable to a male patient"
+    ]
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "No clinical trial participation, investigational drug use, or plans to enroll in another trial are mentioned. Dupilumab is described as standard care.",
+    "sub_condition_notes": [
+      "Intervention study in past 30 days: not stated",
+      "Investigational drugs in past 30 days: not stated",
+      "Plans to enroll in another trial: not stated"
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "post_enrollment",
+    "evidence": "This depends on the Investigator's opinion.",
+    "sub_condition_notes": [
+      "Investigator opinion"
+    ]
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "post_enrollment",
+    "evidence": "This depends on the Investigator's opinion.",
+    "sub_condition_notes": [
+      "Investigator opinion"
+    ]
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "This is determined by MRI safety screening, which is done by the study team. No implants or devices are mentioned.",
+    "sub_condition_notes": [
+      "MRI safety screening: post_enrollment"
+    ]
+  }
+]

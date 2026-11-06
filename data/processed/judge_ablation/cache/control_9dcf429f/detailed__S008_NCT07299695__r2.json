@@ -1,0 +1,105 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "Patient is 60 years old.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "IPF diagnosed by pulmonologist 14 months ago; HRCT shows UIP pattern with honeycombing, ANA negative, former smoker. This is consistent with ATS/ERS criteria. No explicit statement of formal criteria, but direct clinical inference supports it.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "fail",
+    "evidence": "Patient is outpatient, 'has not been hospitalized for her lung disease'; dyspnea worsened gradually over 18 months 'without any sudden change' (not <1 month acute worsening); no new ground-glass opacity/consolidation described. Not AE-IPF.",
+    "sub_condition_notes": [
+      "Hospitalised: no, outpatient",
+      "Previous IPF diagnosis: yes",
+      "Acute worsening <1 month: no, gradual over 18 months",
+      "New bilateral GGO/consolidation on CT: not present",
+      "Not explained by cardiac failure: normal LV function, but other criteria not met"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "No information on the patient's capacity or willingness to sign informed consent; formal consent is obtained at enrollment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "No acute worsening; echocardiogram last month showed normal left ventricular function, so no uncontrolled heart failure. Worsening is gradual. No mention of pulmonary embolism, but no acute worsening is present.",
+    "sub_condition_notes": [
+      "Uncontrolled heart failure: normal LV function, not present",
+      "Pulmonary embolism: no acute worsening or evidence documented"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No information on allergies or hypersensitivity to corticosteroids, IVIG or components.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "IgA level or IgA deficiency not documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "pass",
+    "evidence": "IPF diagnosed by pulmonologist with HRCT UIP pattern and negative ANA, so a definite IPF diagnosis appears established. Multidisciplinary discussion not explicitly documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No mention of malignancy or cancer treatment; absence not explicitly stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "Medication list (nintedanib, omeprazole, levothyroxine) includes no corticosteroids or immunosuppressants, but the list is not explicitly stated to be complete regarding the past month.",
+    "sub_condition_notes": [
+      "Prednisone >20mg for >14 days in last month: not documented",
+      "Immunosuppressants in last month: none listed",
+      "High-dose >1 mg/kg/d >7 days in last 15 days: not documented"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No information on participation in another interventional trial; nintedanib is described as standard therapy.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "pass",
+    "evidence": "60-year-old, postmenopausal woman, so not pregnant; lactation implausible given postmenopausal status and age.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "No information on tutorship or curatorship.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "No information on deprivation of liberty or court protection.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "unknown",
+    "evidence": "Willingness to participate or consent is not documented.",
+    "sub_condition_notes": []
+  }
+]

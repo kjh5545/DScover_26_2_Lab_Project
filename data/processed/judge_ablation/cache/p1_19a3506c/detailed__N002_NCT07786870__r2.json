@@ -1,0 +1,93 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"A 24-year-old man\"; 24 > 18 and there is no upper age limit.",
+    "sub_condition_notes": [
+      "age > 18 years: pass (24)",
+      "no upper age limit: pass, not restrictive"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Asthma is diagnosed: \"A pulmonologist diagnosed asthma when he was 8 years old.\" The description does not say whether the diagnosis followed GINA 2023 criteria (e.g., documented variable expiratory airflow limitation or reversibility testing). The recent spirometry showed only FEV1 68% predicted, with no reversibility data.",
+    "sub_condition_notes": [
+      "diagnosis of asthma: pass, pulmonologist-diagnosed asthma since age 8",
+      "diagnosis made in accordance with GINA 2023 guidelines: unknown, the diagnostic basis is not described"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "\"he has no other lung disease.\"",
+    "sub_condition_notes": [
+      "other respiratory diseases besides asthma: pass, none per the description",
+      "COPD: pass, no other lung disease, and he is a 24-year-old never-smoker"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "\"He has never smoked cigarettes, vaped, or used cigars or marijuana.\"",
+    "sub_condition_notes": [
+      "active cigarette smoking: pass, never smoked",
+      "smoking history >10 pack-years: pass, 0 pack-years"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No malignancy or oncology history is mentioned. Absence of mention does not rule it out.",
+    "sub_condition_notes": [
+      "active malignancy: unknown, not mentioned"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Findings argue against infection: \"he had no fever, his chest X-ray was normal, and he was treated ... without antibiotics.\" However, the exacerbation was attributed to cat exposure, and current infection status and tuberculosis status are not stated. Current worsening symptoms (cough, wheeze) are not explicitly attributed to a non-infectious cause.",
+    "sub_condition_notes": [
+      "active pulmonary tuberculosis: unknown, not explicitly addressed (normal chest X-ray and no fever make it unlikely)",
+      "active respiratory tract infection: unknown, no evidence of infection at the ED visit but current status not stated"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "pass",
+    "evidence": "Ten days ago he was \"treated with a 5-day course of oral prednisone without antibiotics.\"",
+    "sub_condition_notes": [
+      "antibiotic use within 4 weeks before enrollment: pass, no antibiotics were given at the ED visit 10 days ago; other antibiotic use is not mentioned, but the recent exacerbation treatment was explicitly antibiotic-free"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "\"his resting oxygen saturation is 97% on room air\"; no home oxygen therapy is mentioned in the medication list.",
+    "sub_condition_notes": [
+      "current long-term home oxygen therapy: pass, normal saturation on room air and no oxygen in his treatments",
+      "oxygen use >15 hours per day: pass, no oxygen use described"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "pass",
+    "evidence": "\"his pulmonologist has scheduled his first dupilumab injection for next week as part of standard care\", so he is not currently receiving dupilumab. Current medications are only budesonide-formoterol and recent prednisone. Enrollment would need to precede the first injection.",
+    "sub_condition_notes": [
+      "omalizumab: pass, not mentioned in his treatments",
+      "mepolizumab: pass, not mentioned in his treatments",
+      "reslizumab: pass, not mentioned in his treatments",
+      "dupilumab: pass, not yet started (planned next week); the study team should note the timing",
+      "tezepelumab: pass, not mentioned in his treatments",
+      "other biologics: pass, none listed"
+    ]
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "pass",
+    "evidence": "The patient is a 24-year-old man, so pregnancy is logically ruled out.",
+    "sub_condition_notes": [
+      "pregnancy: pass, male sex"
+    ]
+  }
+]

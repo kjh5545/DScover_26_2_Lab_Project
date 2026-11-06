@@ -1,0 +1,62 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "Ability to understand requirements, provide written consent, and comply with the protocol can only be determined after the patient applies.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "The patient is a 29-year-old woman, which meets the age ≥ 18 years requirement.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "fail",
+    "evidence": "She has a Graves' disease diagnosis but \"has not yet started antithyroid medication\". She is therefore not hyperthyroid despite ATD treatment.",
+    "sub_condition_notes": [
+      "Diagnosis of GD: met (diagnosed by an endocrinologist last week).",
+      "Hyperthyroid despite ATD treatment: not met, since she has had no ATD treatment."
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "post_enrollment",
+    "evidence": "The criterion is open-ended and its content is not disclosed (\"defined in the protocol\").",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "She \"has never received radioactive iodine or thyroid surgery\".",
+    "sub_condition_notes": [
+      "Prior successful RAI: no, she has never received RAI.",
+      "Total thyroidectomy: no, she has never had thyroid surgery."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "post_enrollment",
+    "evidence": "This depends on the Investigator's judgment of undue risk. The description also mentions no other autoimmune disease, and she takes no other regular medications.",
+    "sub_condition_notes": [
+      "Another autoimmune disease requiring treatment: none mentioned.",
+      "Undue risk in the Investigator's judgment: only the investigator can decide."
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "pass",
+    "evidence": "She has \"mild upper eyelid retraction but no eye pain, double vision, or bulging of the eyes\". This is not moderate-to-severe active TED, and no surgery or TED therapy is described.",
+    "sub_condition_notes": [
+      "Moderate-to-severe active TED: not present, since only mild eyelid retraction is described.",
+      "Expected to need immediate surgery or planning TED surgery, irradiation, or medical therapy: none described."
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "post_enrollment",
+    "evidence": "The criterion is open-ended and its content is not disclosed (\"defined in the protocol\").",
+    "sub_condition_notes": []
+  }
+]

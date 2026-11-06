@@ -1,0 +1,46 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "68-year-old man, which is at least 50.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "Smoked about one pack a day for 45 years, which is about 45 pack-years and meets the ≥15 threshold.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "The description does not mention his occupation or any occupational exposure (textile worker, painter, dry cleaner). This could be obtained by asking the patient.",
+    "sub_condition_notes": [
+      "Whether he has ≥15 years in a qualifying occupation is not stated."
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "The current bladder tumor is suspected but not yet confirmed. No prior bladder, kidney, or prostate cancer is mentioned, and his history lists only hypertension, hyperlipidemia, and smoking.",
+    "sub_condition_notes": [
+      "No prior bladder cancer is documented.",
+      "No prior kidney cancer is documented.",
+      "No prior prostate cancer is documented."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "Hematuria began three weeks ago and the current workup (CT urography, cystoscopy) is the first evaluation. No evaluation within the prior 2 years is described.",
+    "sub_condition_notes": [
+      "The current evaluation is of the present episode. No earlier hematuria evaluation is reported."
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "Informed consent has not been documented. The patient would have to be asked.",
+    "sub_condition_notes": []
+  }
+]

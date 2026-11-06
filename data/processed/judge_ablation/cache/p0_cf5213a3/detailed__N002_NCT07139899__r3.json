@@ -1,0 +1,178 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "post_enrollment",
+    "evidence": "Informed consent is obtained during the enrollment process, after the patient applies; no consent status is given.",
+    "sub_condition_notes": [
+      "Consent process occurs at enrollment",
+      "Written documentation occurs at enrollment"
+    ]
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "Patient is 24 years old.",
+    "sub_condition_notes": [
+      "24 >= 18",
+      "24 <= 65"
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "Asthma diagnosed by a pulmonologist at age 8 (about 16 years ago).",
+    "sub_condition_notes": [
+      "Physician diagnosis present",
+      "Duration well over 1 year"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "pass",
+    "evidence": "Spirometry two weeks ago met ATS quality criteria (FEV1 68% predicted), within 30 days.",
+    "sub_condition_notes": [
+      "Met ATS quality criteria",
+      "Performed 2 weeks ago, within 30 days"
+    ]
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "pass",
+    "evidence": "No restriction by race/ethnicity.",
+    "sub_condition_notes": [
+      "No restriction applies"
+    ]
+  },
+  {
+    "criterion_id": "I6",
+    "verdict": "pass",
+    "evidence": "Blood eosinophil count 450 cells/μL > 300.",
+    "sub_condition_notes": [
+      "450 > 300"
+    ]
+  },
+  {
+    "criterion_id": "I7",
+    "verdict": "pass",
+    "evidence": "Has never smoked cigarettes, so 0 pack-years.",
+    "sub_condition_notes": [
+      "0 pack-years < 10"
+    ]
+  },
+  {
+    "criterion_id": "I8",
+    "verdict": "pass",
+    "evidence": "Never smoked cigarettes, vaped, or used cigars or marijuana.",
+    "sub_condition_notes": [
+      "No cigarettes",
+      "No vaping",
+      "No cigars",
+      "No marijuana"
+    ]
+  },
+  {
+    "criterion_id": "I9",
+    "verdict": "pass",
+    "evidence": "First dupilumab injection scheduled for next week as part of standard care.",
+    "sub_condition_notes": [
+      "About to start dupilumab",
+      "Part of standard care"
+    ]
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "At the ED visit 10 days ago he had no fever, a normal chest X-ray, and was treated without antibiotics; the attack was triggered by cat exposure, with no respiratory infection indicated.",
+    "sub_condition_notes": [
+      "No respiratory tract infection within 4 weeks"
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "BMI is 24 kg/m², which is not > 30.",
+    "sub_condition_notes": [
+      "24 is not > 30"
+    ]
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No information on one-time doses such as intra-articular injections. The 5-day oral prednisone course is not a one-time injection, and the dupilumab injection is not yet given.",
+    "sub_condition_notes": [
+      "No record of one-time doses in the last 4 weeks; needs confirmation from the patient"
+    ]
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "fail",
+    "evidence": "Visited the ED 10 days ago for an asthma attack, which is within 4 weeks before Visit 1.",
+    "sub_condition_notes": [
+      "ER visit 10 days ago is within 4 weeks",
+      "Future ER visits during study cannot be assessed yet"
+    ]
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "post_enrollment",
+    "evidence": "Determined by the Investigator. The patient reports no other lung disease and no other illnesses are listed, but the investigator makes the final determination.",
+    "sub_condition_notes": [
+      "No heart disease reported",
+      "No cancer reported",
+      "No diabetes reported",
+      "No other chronic lung disease",
+      "Investigator determination pending"
+    ]
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "Resting oxygen saturation is 97% on room air.",
+    "sub_condition_notes": [
+      "97% is not < 90%, no supplemental O2 needed"
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "pass",
+    "evidence": "Patient is male, so a positive urine pregnancy test is not possible.",
+    "sub_condition_notes": [
+      "Male, not applicable",
+      "Male, not applicable during study"
+    ]
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "No information on recent intervention studies, investigational drugs, or plans to enroll in other trials; dupilumab is standard care, not investigational.",
+    "sub_condition_notes": [
+      "Recent study participation not stated",
+      "Investigational drug use not stated",
+      "Plans for other trials not stated"
+    ]
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "post_enrollment",
+    "evidence": "Depends on the Investigator's opinion.",
+    "sub_condition_notes": [
+      "Investigator judgment"
+    ]
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "post_enrollment",
+    "evidence": "Depends on the Investigator's opinion.",
+    "sub_condition_notes": [
+      "Investigator judgment"
+    ]
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "post_enrollment",
+    "evidence": "Determined by the formal MRI safety screening at the study, not available now.",
+    "sub_condition_notes": [
+      "MRI safety screening not yet performed"
+    ]
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "Patient is 60 years old.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "pass",
+    "evidence": "Diagnosed with IPF by pulmonologist 14 months ago; HRCT shows UIP pattern with honeycombing.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "pass",
+    "evidence": "On nintedanib 150 mg BID at the same dose for the past eight months (stable dose of approved antifibrotic).",
+    "sub_condition_notes": [
+      "Stable dose of locally approved antifibrotic: met",
+      "Alternative (not receiving standard of care) not needed"
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "pass",
+    "evidence": "FVC 68% predicted (≥45%).",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I5",
+    "verdict": "pass",
+    "evidence": "Hemoglobin-corrected DLCO 42% predicted (≥25%).",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "pass",
+    "evidence": "Diagnosis is idiopathic; ANA negative, UIP pattern, no other ILD identified.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "pass",
+    "evidence": "HRCT shows fibrosis predominating with only minimal emphysema.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "pass",
+    "evidence": "Gradual worsening over 18 months without any sudden change; not hospitalized for lung disease.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "No mention of a current lower respiratory tract infection requiring treatment; not explicitly stated.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No cardiac history of ACS/MI, unstable angina, PCI or CABG is documented; not explicitly confirmed.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "pass",
+    "evidence": "Echocardiogram last month showed normal left ventricular function; no heart failure history or medications.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No transplant history mentioned, and no information on whether lung transplantation is planned or likely.",
+    "sub_condition_notes": [
+      "History of organ transplantation: none documented",
+      "Likelihood of lung transplantation: not stated"
+    ]
+  }
+]

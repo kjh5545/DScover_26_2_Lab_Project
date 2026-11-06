@@ -1,0 +1,107 @@
+[
+  {
+    "criterion_id": "I1",
+    "verdict": "pass",
+    "evidence": "\"A 60-year-old woman\" – age 60 years, which is ≥18.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "I2",
+    "verdict": "unknown",
+    "evidence": "Clinical picture (progressive dyspnea, dry cough, clubbing) and CT with \"bilateral basal reticular opacities with honeycombing\" are consistent with IPF/UIP, but only a suspected diagnosis is on record. No formal IPF diagnosis fulfilling ATS/ERS criteria is documented (no exclusion of other causes, no multidisciplinary discussion).",
+    "sub_condition_notes": [
+      "Suspected diagnosis of IPF (UIP pattern) only; formal diagnosis not on record."
+    ]
+  },
+  {
+    "criterion_id": "I3",
+    "verdict": "unknown",
+    "evidence": "The description mentions progressive dyspnea and a UIP-like CT, but there is no mention of hospitalisation, acute worsening within <1 month, or new bilateral ground-glass opacity/consolidation on CT. No cardiac failure/fluid overload assessment is given.",
+    "sub_condition_notes": [
+      "Hospitalised: not stated.",
+      "Previous/concurrent IPF diagnosis, or UIP-consistent radiology on current evaluation: honeycombing with basal reticular opacities is consistent with UIP (met via the radiologic route).",
+      "Acute worsening of dyspnea <1 month: only \"progressive dyspnea\" with no time course given.",
+      "CT with new bilateral ground-glass opacity/consolidation: not described.",
+      "Deterioration not explained by cardiac failure/fluid overload: not described."
+    ]
+  },
+  {
+    "criterion_id": "I4",
+    "verdict": "unknown",
+    "evidence": "No information on the patient's capacity to understand and sign consent or on a legal representative.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E1",
+    "verdict": "unknown",
+    "evidence": "No mention of heart failure or pulmonary embolism evaluation as the cause of the symptoms.",
+    "sub_condition_notes": [
+      "Uncontrolled heart failure: not mentioned.",
+      "Pulmonary embolism: not mentioned."
+    ]
+  },
+  {
+    "criterion_id": "E2",
+    "verdict": "unknown",
+    "evidence": "No allergy or hypersensitivity history is documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E3",
+    "verdict": "unknown",
+    "evidence": "No IgA level or IgA deficiency information is given.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E4",
+    "verdict": "unknown",
+    "evidence": "Only a suspected diagnosis of IPF is recorded (\"Idiopathic pulmonary fibrosis (usual interstitial pneumonia pattern)\" as suspected_diagnosis); no multidisciplinary discussion or definite diagnosis is documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E5",
+    "verdict": "unknown",
+    "evidence": "No mention of malignancy or cancer treatment.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E6",
+    "verdict": "unknown",
+    "evidence": "The medication list is empty, but absence of medications in the profile does not confirm no recent corticosteroid or immunosuppressant use.",
+    "sub_condition_notes": [
+      "Prednisone >20 mg/day for >14 days in the last month: not documented.",
+      "Any immunosuppressant in the last month: not documented.",
+      ">1 mg/kg/d for >7 days in the last 15 days: not documented."
+    ]
+  },
+  {
+    "criterion_id": "E7",
+    "verdict": "unknown",
+    "evidence": "No information on participation in another interventional trial.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E8",
+    "verdict": "unknown",
+    "evidence": "Patient is a 60-year-old woman; pregnancy is very unlikely at this age but no pregnancy or lactation status is documented.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E9",
+    "verdict": "unknown",
+    "evidence": "No information on tutorship or curatorship.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E10",
+    "verdict": "unknown",
+    "evidence": "No information on deprivation of liberty or court protection.",
+    "sub_condition_notes": []
+  },
+  {
+    "criterion_id": "E11",
+    "verdict": "unknown",
+    "evidence": "No information on the patient's willingness to participate or consent.",
+    "sub_condition_notes": []
+  }
+]
