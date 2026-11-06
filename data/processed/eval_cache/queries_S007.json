@@ -1,0 +1,8 @@
+{
+  "queries": [
+    "infantile hypertrophic pyloric stenosis",
+    "pyloric stenosis",
+    "projectile vomiting in infants"
+  ],
+  "rationale": "The patient's projectile non-bilious vomiting, visible peristalsis, olive-shaped epigastric mass, and hypochloremic hypokalemic metabolic alkalosis point to infantile hypertrophic pyloric stenosis, so queries run from the specific diagnosis to broader terms."
+}

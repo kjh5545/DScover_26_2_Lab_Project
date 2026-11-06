@@ -44,7 +44,7 @@ def understand_patient(case_text: str, patient_id: str | None = None) -> dict:
     return profile
 
 
-def find_candidates(profile: dict, max_candidates: int = 3) -> dict:
+def find_candidates(profile: dict, max_candidates: int = 5) -> dict:
     """[2] 프로필 → 검색어 결정(LLM) → ClinicalTrials.gov 검색 → 나이·성별 하드 필터."""
     return search_candidates(profile, max_candidates=max_candidates)
 
@@ -70,7 +70,7 @@ def screen(profile: dict, criteria: list[dict], case_text: str | None = None) ->
 # ── 단일 진입점 ─────────────────────────────────────────────
 
 def run_intake(case_text: str, patient_id: str = "CUSTOM",
-               max_candidates: int = 3, do_screen: bool = True,
+               max_candidates: int = 5, do_screen: bool = True,
                save: bool = True, on_step=None) -> dict:
     """1→2→3(→4) 전체 실행 후 전달 형식(bundle)을 반환·저장한다.
 

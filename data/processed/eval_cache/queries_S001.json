@@ -1,0 +1,8 @@
+{
+  "queries": [
+    "alcohol-induced acute pancreatitis",
+    "acute pancreatitis",
+    "pancreatitis"
+  ],
+  "rationale": "The patient's presentation (epigastric pain radiating to the back, vomiting, markedly elevated lipase and amylase) with chronic alcohol use points to alcohol-induced acute pancreatitis, so queries move from the specific etiology to the broader condition."
+}

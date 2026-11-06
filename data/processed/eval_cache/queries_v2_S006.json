@@ -1,0 +1,13 @@
+{
+  "queries": [
+    "rhino-orbital mucormycosis",
+    "invasive fungal rhinosinusitis",
+    "mucormycosis",
+    "rhino-orbital-cerebral mucormycosis",
+    "zygomycosis",
+    "mucormycosis diabetes",
+    "nasal necrotic eschar",
+    "periorbital swelling fungal infection"
+  ],
+  "rationale": "The profile of fever, facial pain, necrotic nasal eschar and periorbital swelling in a poorly controlled diabetic supports rhino-orbital mucormycosis, so queries cover the specific diagnosis, synonyms such as zygomycosis and invasive fungal rhinosinusitis, the diabetic context, and key findings."
+}

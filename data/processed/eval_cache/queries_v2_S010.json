@@ -1,0 +1,12 @@
+{
+  "queries": [
+    "rhegmatogenous retinal detachment",
+    "retinal detachment",
+    "retinal detachment repair",
+    "vitrectomy for retinal detachment",
+    "pneumatic retinopexy",
+    "scleral buckle",
+    "photopsia floaters visual field loss"
+  ],
+  "rationale": "The profile describes painless curtain-like vision loss preceded by flashes and floaters, which supports rhegmatogenous retinal detachment, so queries cover the diagnosis, its general term, common surgical treatments, and key symptoms."
+}

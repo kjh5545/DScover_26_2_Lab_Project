@@ -1,0 +1,13 @@
+{
+  "queries": [
+    "idiopathic pulmonary fibrosis",
+    "usual interstitial pneumonia",
+    "pulmonary fibrosis",
+    "interstitial lung disease",
+    "fibrosing interstitial lung disease",
+    "cryptogenic fibrosing alveolitis",
+    "progressive dyspnea dry cough",
+    "honeycombing"
+  ],
+  "rationale": "The profile (progressive dyspnea, dry cough, clubbing, and basal reticular opacities with honeycombing on CT) supports idiopathic pulmonary fibrosis with a UIP pattern, so queries cover the specific diagnosis, synonyms and broader ILD terms, and key symptoms/findings."
+}
