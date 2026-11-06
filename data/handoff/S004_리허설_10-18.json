@@ -1,0 +1,1020 @@
+{
+  "patient_id": "S004",
+  "case_text": "A 68-year-old man with a long smoking history presents with painless gross hematuria. CT urography reveals a mass in the bladder wall.",
+  "profile": {
+    "age": 68,
+    "age_unit": "years",
+    "sex": "M",
+    "suspected_diagnosis": "Bladder cancer (urothelial/transitional cell carcinoma of the bladder)",
+    "findings": [
+      "painless gross hematuria",
+      "mass in the bladder wall"
+    ],
+    "history": [
+      "long smoking history"
+    ],
+    "medications": [],
+    "labs": [
+      "CT urography reveals a mass in the bladder wall"
+    ],
+    "id": "S004"
+  },
+  "trials": [
+    {
+      "nct_id": "NCT07589413",
+      "title": "방광암 혈액(cfDNA) 검사 연구 — TURBT 예정 환자 대상",
+      "criteria": [
+        {
+          "id": "I1",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Age 18 years or older.",
+          "sub_conditions": [
+            "age >= 18 years"
+          ],
+          "needed_info": [
+            "age"
+          ]
+        },
+        {
+          "id": "I2",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Suspected or histologically confirmed urothelial carcinoma of the bladder.",
+          "sub_conditions": [
+            "suspected urothelial carcinoma of the bladder",
+            "OR histologically confirmed urothelial carcinoma of the bladder"
+          ],
+          "needed_info": [
+            "diagnosis",
+            "histology/pathology report",
+            "clinical suspicion of bladder cancer"
+          ]
+        },
+        {
+          "id": "I3",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Scheduled to undergo TURBT.",
+          "sub_conditions": [
+            "scheduled for transurethral resection of bladder tumor (TURBT)"
+          ],
+          "needed_info": [
+            "planned procedures",
+            "surgical schedule"
+          ]
+        },
+        {
+          "id": "I4",
+          "type": "inclusion",
+          "category": "post_enrollment",
+          "text": "Availability of sufficient peripheral blood samples for cfDNA extraction and mutation analysis.",
+          "sub_conditions": [
+            "sufficient peripheral blood sample available for cfDNA extraction",
+            "sufficient peripheral blood sample available for mutation analysis"
+          ],
+          "needed_info": [
+            "blood sample collection/availability",
+            "sample volume"
+          ]
+        },
+        {
+          "id": "I5",
+          "type": "inclusion",
+          "category": "post_enrollment",
+          "text": "Availability of complete clinicopathological and perioperative data.",
+          "sub_conditions": [
+            "complete clinicopathological data available",
+            "complete perioperative data available"
+          ],
+          "needed_info": [
+            "clinicopathological records",
+            "perioperative records"
+          ]
+        },
+        {
+          "id": "I6",
+          "type": "inclusion",
+          "category": "administrative",
+          "text": "Ability to provide informed consent and comply with study follow-up.",
+          "sub_conditions": [
+            "able to provide informed consent",
+            "able to comply with study follow-up"
+          ],
+          "needed_info": [
+            "capacity to consent",
+            "ability/willingness to attend follow-up"
+          ]
+        },
+        {
+          "id": "E1",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Non-urothelial bladder malignancy confirmed by pathology.",
+          "sub_conditions": [
+            "non-urothelial bladder malignancy",
+            "confirmed by pathology"
+          ],
+          "needed_info": [
+            "histology/pathology report",
+            "tumor histologic type"
+          ]
+        },
+        {
+          "id": "E2",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "History of other malignant tumors within the past 5 years, except adequately treated non-melanoma skin cancer or carcinoma in situ of the cervix.",
+          "sub_conditions": [
+            "other malignant tumor within the past 5 years",
+            "exception: adequately treated non-melanoma skin cancer",
+            "exception: carcinoma in situ of the cervix"
+          ],
+          "needed_info": [
+            "cancer history",
+            "dates of prior malignancies",
+            "treatment history of prior malignancies"
+          ]
+        },
+        {
+          "id": "E3",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Previous radical cystectomy or systemic antitumor therapy before enrollment.",
+          "sub_conditions": [
+            "previous radical cystectomy",
+            "previous systemic antitumor therapy before enrollment"
+          ],
+          "needed_info": [
+            "surgical history",
+            "oncologic treatment history",
+            "medication history"
+          ]
+        },
+        {
+          "id": "E4",
+          "type": "exclusion",
+          "category": "post_enrollment",
+          "text": "Inadequate blood sample quality or insufficient DNA yield for mutation analysis.",
+          "sub_conditions": [
+            "inadequate blood sample quality",
+            "OR insufficient DNA yield for mutation analysis"
+          ],
+          "needed_info": [
+            "blood sample quality assessment",
+            "DNA yield from lab processing"
+          ]
+        },
+        {
+          "id": "E5",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Pregnancy or breastfeeding.",
+          "sub_conditions": [
+            "pregnant",
+            "breastfeeding"
+          ],
+          "needed_info": [
+            "pregnancy status",
+            "lactation status"
+          ]
+        },
+        {
+          "id": "E6",
+          "type": "exclusion",
+          "category": "post_enrollment",
+          "text": "Serious uncontrolled intercurrent illness that may interfere with study participation, follow-up, or compliance, including active infection, symptomatic congestive heart failure, unstable angina, clinically significant arrhythmia, severe psychiatric illness, or other conditions judged by the investigator to make participation unsuitable.",
+          "sub_conditions": [
+            "active infection",
+            "symptomatic congestive heart failure",
+            "unstable angina",
+            "clinically significant arrhythmia",
+            "severe psychiatric illness",
+            "other serious uncontrolled intercurrent illness judged by the investigator to make participation unsuitable"
+          ],
+          "needed_info": [
+            "infection status",
+            "cardiac history",
+            "psychiatric history",
+            "comorbidities",
+            "investigator judgment"
+          ]
+        }
+      ],
+      "judgments": [
+        {
+          "criterion_id": "I1",
+          "verdict": "pass",
+          "evidence": "환자 나이 68세, 기준 18세 이상 → 해당 (코드 판정)"
+        },
+        {
+          "criterion_id": "I2",
+          "verdict": "pass",
+          "evidence": "Suspected bladder urothelial carcinoma is enough. The description reports \"painless gross hematuria. CT urography reveal"
+        },
+        {
+          "criterion_id": "I3",
+          "verdict": "pass",
+          "evidence": "Q4 answer: \"방광 종양을 내시경으로 제거하는 수술이 다음주로 예정되어 있어요.\" (endoscopic tumor removal surgery is scheduled for next week). Q1 also"
+        },
+        {
+          "criterion_id": "I4",
+          "verdict": "post_enrollment",
+          "evidence": "Blood sample availability and volume are determined at collection after enrollment."
+        },
+        {
+          "criterion_id": "I5",
+          "verdict": "post_enrollment",
+          "evidence": "Completeness of clinicopathological and perioperative data can only be determined by the study team after surgery and fo"
+        },
+        {
+          "criterion_id": "I6",
+          "verdict": "post_enrollment",
+          "evidence": "Ability to consent and comply with follow-up is assessed at enrollment and afterward."
+        },
+        {
+          "criterion_id": "E1",
+          "verdict": "pass",
+          "evidence": "Q1 answer: \"아직 조직검사 결과는 없어요.\" (no biopsy result yet). Pathology confirmation of a non-urothelial malignancy does not exi"
+        },
+        {
+          "criterion_id": "E2",
+          "verdict": "pass",
+          "evidence": "Q3 answer: \"아니요, 암 진단을 받은 적은 이번이 처음이에요.\" (no prior cancer diagnosis; this is the first)."
+        },
+        {
+          "criterion_id": "E3",
+          "verdict": "pass",
+          "evidence": "Q2 answer: \"아니요, 방광 수술이나 항암치료, 방사선치료를 받은 적은 없어요.\" (no prior bladder surgery, chemotherapy, or radiotherapy)."
+        },
+        {
+          "criterion_id": "E4",
+          "verdict": "post_enrollment",
+          "evidence": "Sample quality and DNA yield are known only after laboratory processing following enrollment."
+        },
+        {
+          "criterion_id": "E5",
+          "verdict": "pass",
+          "evidence": "환자가 남성라 임신·수유 기준에 해당하지 않음 (코드 판정)"
+        },
+        {
+          "criterion_id": "E6",
+          "verdict": "post_enrollment",
+          "evidence": "The criterion includes investigator judgment about unsuitability, and no comorbidities are described."
+        }
+      ],
+      "final_judgment": "probably_eligible"
+    },
+    {
+      "nct_id": "NCT07029256",
+      "title": "방광 전체 절제 환자 영상 연구",
+      "criteria": [
+        {
+          "id": "I1",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Undergoing radical cystectomy for confirmed or suspected urothelial carcinoma of the bladder",
+          "sub_conditions": [
+            "Undergoing radical cystectomy",
+            "Indication is confirmed urothelial carcinoma of the bladder OR suspected urothelial carcinoma of the bladder"
+          ],
+          "needed_info": [
+            "planned or scheduled procedures (radical cystectomy)",
+            "diagnosis (confirmed or suspected urothelial carcinoma of the bladder)"
+          ]
+        },
+        {
+          "id": "I2",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Prior abdominal imaging",
+          "sub_conditions": [
+            "Has undergone abdominal imaging prior to enrollment"
+          ],
+          "needed_info": [
+            "imaging history (abdominal imaging)"
+          ]
+        },
+        {
+          "id": "E1",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "History of partial cystectomy or complex bladder reconstruction or substitution (i.e. bladder augment or urothelial recurrence in a neobladder)",
+          "sub_conditions": [
+            "History of partial cystectomy",
+            "History of complex bladder reconstruction",
+            "History of bladder substitution",
+            "Examples: bladder augmentation or urothelial recurrence in a neobladder"
+          ],
+          "needed_info": [
+            "surgical history (partial cystectomy)",
+            "surgical history (bladder reconstruction, augmentation, substitution, neobladder)"
+          ]
+        }
+      ],
+      "judgments": [
+        {
+          "criterion_id": "I1",
+          "verdict": "unknown",
+          "evidence": "Q4 answer: \"방광 종양을 내시경으로 제거하는 수술이 다음주로 예정되어 있어요. 방광 전체를 떼는 수술은 잘 모르겠어요.\" The scheduled procedure is endoscopic tumor res"
+        },
+        {
+          "criterion_id": "I2",
+          "verdict": "pass",
+          "evidence": "Description: \"CT urography reveals a mass in the bladder wall.\" Q5 answer: \"가슴, 배, 골반 CT에서 림프절이 커지거나 다른 곳으로 퍼진 소견은 없다고 들"
+        },
+        {
+          "criterion_id": "E1",
+          "verdict": "pass",
+          "evidence": "Q2 answer: \"아니요, 방광 수술이나 항암치료, 방사선치료를 받은 적은 없어요.\" The patient reports no prior bladder surgery. Q3 answer: \"암 진단을 받은 적은"
+        }
+      ],
+      "final_judgment": "insufficient_info"
+    },
+    {
+      "nct_id": "NCT07413523",
+      "title": "전이성(4기) 방광암 연구",
+      "criteria": [
+        {
+          "id": "I1",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Age > 18 years",
+          "sub_conditions": [
+            "Age greater than 18 years"
+          ],
+          "needed_info": [
+            "age"
+          ]
+        },
+        {
+          "id": "I2",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "WHO performance status ≤ 2",
+          "sub_conditions": [
+            "WHO performance status 0, 1, or 2"
+          ],
+          "needed_info": [
+            "WHO performance status"
+          ]
+        },
+        {
+          "id": "I3",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Pathological proven urothelial carcinoma",
+          "sub_conditions": [
+            "Urothelial carcinoma confirmed by pathology"
+          ],
+          "needed_info": [
+            "diagnosis",
+            "pathology report"
+          ]
+        },
+        {
+          "id": "I4",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Stage IV disease at imaging",
+          "sub_conditions": [
+            "Stage IV disease",
+            "Staging established by imaging"
+          ],
+          "needed_info": [
+            "disease stage",
+            "imaging reports"
+          ]
+        },
+        {
+          "id": "I5",
+          "type": "inclusion",
+          "category": "temporal_numeric",
+          "text": "Maximum of 3 extracranial metastases",
+          "sub_conditions": [
+            "Number of extracranial metastases ≤ 3"
+          ],
+          "needed_info": [
+            "imaging reports",
+            "number and location of metastases"
+          ]
+        },
+        {
+          "id": "I6",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Indication to receive I or II line of standard systemic therapy",
+          "sub_conditions": [
+            "Indication for first-line standard systemic therapy",
+            "OR indication for second-line standard systemic therapy"
+          ],
+          "needed_info": [
+            "treatment history",
+            "line of therapy",
+            "treatment plan"
+          ]
+        },
+        {
+          "id": "I7",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Adequate liver function",
+          "sub_conditions": [
+            "Adequate liver function"
+          ],
+          "needed_info": [
+            "lab: liver function tests (bilirubin, AST, ALT)"
+          ]
+        },
+        {
+          "id": "I8",
+          "type": "inclusion",
+          "category": "medical",
+          "text": "Adequate bone marrow function",
+          "sub_conditions": [
+            "Adequate bone marrow function"
+          ],
+          "needed_info": [
+            "lab: complete blood count (hemoglobin, neutrophils, platelets)"
+          ]
+        },
+        {
+          "id": "I9",
+          "type": "inclusion",
+          "category": "administrative",
+          "text": "Written informed consent",
+          "sub_conditions": [
+            "Patient provides written informed consent"
+          ],
+          "needed_info": [
+            "informed consent status"
+          ]
+        },
+        {
+          "id": "E1",
+          "type": "exclusion",
+          "category": "administrative",
+          "text": "Inability to provide informed consent",
+          "sub_conditions": [
+            "Unable to provide informed consent"
+          ],
+          "needed_info": [
+            "consent capability"
+          ]
+        },
+        {
+          "id": "E2",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Previous radiation therapy on the same target lesions",
+          "sub_conditions": [
+            "Prior radiation therapy to the same target lesions"
+          ],
+          "needed_info": [
+            "radiation therapy history",
+            "target lesion locations"
+          ]
+        },
+        {
+          "id": "E3",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Pregnant or breastfeeding patients",
+          "sub_conditions": [
+            "Pregnant",
+            "Breastfeeding"
+          ],
+          "needed_info": [
+            "pregnancy status",
+            "breastfeeding status"
+          ]
+        },
+        {
+          "id": "E4",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "Prior malignancy within the last five years (except adequately treated basal cell carcinoma of the skin or in situ carcinoma of the skin or in situ carcinoma of the cervix, surgically cured, or localized prostate cancer without evidence of biochemical progression)",
+          "sub_conditions": [
+            "Prior malignancy within the last five years",
+            "Exception: adequately treated basal cell carcinoma of the skin",
+            "Exception: in situ carcinoma of the skin",
+            "Exception: surgically cured in situ carcinoma of the cervix",
+            "Exception: localized prostate cancer without evidence of biochemical progression"
+          ],
+          "needed_info": [
+            "cancer history",
+            "dates of prior malignancies",
+            "type of prior malignancy",
+            "treatment of prior malignancy",
+            "PSA/biochemical progression status"
+          ]
+        },
+        {
+          "id": "E5",
+          "type": "exclusion",
+          "category": "post_enrollment",
+          "text": "Mental conditions rendering the patient incapable to understand the nature, scope, and consequences of the study",
+          "sub_conditions": [
+            "Mental condition present",
+            "Resulting incapacity to understand the nature, scope, and consequences of the study"
+          ],
+          "needed_info": [
+            "psychiatric/mental history",
+            "investigator assessment of understanding"
+          ]
+        },
+        {
+          "id": "E6",
+          "type": "exclusion",
+          "category": "medical",
+          "text": "WHO PS >=3",
+          "sub_conditions": [
+            "WHO performance status 3 or higher"
+          ],
+          "needed_info": [
+            "WHO performance status"
+          ]
+        }
+      ],
+      "judgments": [
+        {
+          "criterion_id": "I1",
+          "verdict": "pass",
+          "evidence": "환자 나이 68세, 기준 18세 초과 → 해당 (코드 판정)"
+        },
+        {
+          "criterion_id": "I2",
+          "verdict": "unknown",
+          "evidence": "No WHO performance status is given in the description or in the answers."
+        },
+        {
+          "criterion_id": "I3",
+          "verdict": "fail",
+          "evidence": "Q1 answer: \"아직 조직검사 결과는 없어요. 이틀 전 방광내시경에서 종양이 보였고, 조직검사는 다음주 수술때 하기로 했어요.\" There is no pathology confirmation yet."
+        },
+        {
+          "criterion_id": "I4",
+          "verdict": "fail",
+          "evidence": "Q5 answer: \"가슴, 배, 골반 CT에서 림프절이 커지거나 다른 곳으로 퍼진 소견은 없다고 들었어요.\" Imaging shows no lymph node enlargement or spread, so the"
+        },
+        {
+          "criterion_id": "I5",
+          "verdict": "unknown",
+          "evidence": "Q5 answer reports no spread on CT, but the patient has not reported a formal count of metastases and the report is held"
+        },
+        {
+          "criterion_id": "I6",
+          "verdict": "unknown",
+          "evidence": "Q2 answer: no prior systemic therapy. Q4 answer: transurethral resection is planned next week. No systemic therapy plan"
+        },
+        {
+          "criterion_id": "I7",
+          "verdict": "unknown",
+          "evidence": "No liver function tests are given."
+        },
+        {
+          "criterion_id": "I8",
+          "verdict": "unknown",
+          "evidence": "No complete blood count is given."
+        },
+        {
+          "criterion_id": "I9",
+          "verdict": "post_enrollment",
+          "evidence": "Written informed consent is only given after the patient applies."
+        },
+        {
+          "criterion_id": "E1",
+          "verdict": "post_enrollment",
+          "evidence": "Capacity to provide informed consent is assessed at enrollment."
+        },
+        {
+          "criterion_id": "E2",
+          "verdict": "pass",
+          "evidence": "Q2 answer: \"아니요, 방광 수술이나 항암치료, 방사선치료를 받은 적은 없어요.\""
+        },
+        {
+          "criterion_id": "E3",
+          "verdict": "pass",
+          "evidence": "환자가 남성라 임신·수유 기준에 해당하지 않음 (코드 판정)"
+        },
+        {
+          "criterion_id": "E4",
+          "verdict": "pass",
+          "evidence": "Q3 answer: \"아니요, 암 진단을 받은 적은 이번이 처음이에요.\" The patient reports no prior cancer diagnosis, and the current bladder tumor is"
+        },
+        {
+          "criterion_id": "E5",
+          "verdict": "post_enrollment",
+          "evidence": "Whether a mental condition impairs understanding of the study is an investigator assessment. No mental condition is ment"
+        },
+        {
+          "criterion_id": "E6",
+          "verdict": "unknown",
+          "evidence": "No WHO performance status is given."
+        }
+      ],
+      "final_judgment": "ineligible"
+    }
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "questions": [
+        {
+          "id": "Q1",
+          "text": "방광 종양 조직검사를 받은 적이 있나요?",
+          "needed_info": "",
+          "resolves": [
+            {
+              "trial": "NCT07413523",
+              "criteria": [
+                "I3"
+              ]
+            }
+          ],
+          "priority": 1
+        },
+        {
+          "id": "Q2",
+          "text": "방광 수술, 항암 약물치료, 방사선치료를 받은 적이 있나요?",
+          "needed_info": "",
+          "resolves": [
+            {
+              "trial": "NCT07589413",
+              "criteria": [
+                "E3"
+              ]
+            }
+          ],
+          "priority": 2
+        },
+        {
+          "id": "Q3",
+          "text": "최근 5년 안에 암으로 진단받거나 치료받은 적이 있나요?",
+          "needed_info": "",
+          "resolves": [
+            {
+              "trial": "NCT07589413",
+              "criteria": [
+                "E2"
+              ]
+            }
+          ],
+          "priority": 3
+        },
+        {
+          "id": "Q4",
+          "text": "경요도 방광종양 절제술이나 방광절제술 날짜가 잡혀 있나요?",
+          "needed_info": "",
+          "resolves": [
+            {
+              "trial": "NCT07589413",
+              "criteria": [
+                "I3"
+              ]
+            }
+          ],
+          "priority": 4
+        },
+        {
+          "id": "Q5",
+          "text": "영상검사에서 방광 밖으로 퍼졌다는 설명을 들은 적이 있나요?",
+          "needed_info": "",
+          "resolves": [
+            {
+              "trial": "NCT07413523",
+              "criteria": [
+                "I4"
+              ]
+            }
+          ],
+          "priority": 5
+        }
+      ],
+      "answers": [
+        {
+          "question_id": "Q1",
+          "answer": "아직 조직검사 결과는 없어요. 이틀 전 방광내시경에서 종양이 보였고, 조직검사는 다음주 수술때 하기로 했어요."
+        },
+        {
+          "question_id": "Q2",
+          "answer": "아니요, 방광 수술이나 항암치료, 방사선치료를 받은 적은 없어요."
+        },
+        {
+          "question_id": "Q3",
+          "answer": "아니요, 암 진단을 받은 적은 이번이 처음이에요."
+        },
+        {
+          "question_id": "Q4",
+          "answer": "방광 종양을 내시경으로 제거하는 수술이 다음주로 예정되어 있어요. 방광 전체를 떼는 수술은 잘 모르겠어요."
+        },
+        {
+          "question_id": "Q5",
+          "answer": "가슴, 배, 골반 CT에서 림프절이 커지거나 다른 곳으로 퍼진 소견은 없다고 들었어요."
+        }
+      ],
+      "changed": [
+        {
+          "trial": "NCT07413523",
+          "criterion_id": "I3",
+          "from": "unknown",
+          "to": "fail",
+          "source": [
+            "Q1"
+          ]
+        },
+        {
+          "trial": "NCT07589413",
+          "criterion_id": "I3",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "Q4"
+          ]
+        },
+        {
+          "trial": "NCT07589413",
+          "criterion_id": "E2",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "Q3"
+          ]
+        },
+        {
+          "trial": "NCT07589413",
+          "criterion_id": "E3",
+          "from": "unknown",
+          "to": "pass",
+          "source": [
+            "Q2"
+          ]
+        },
+        {
+          "trial": "NCT07413523",
+          "criterion_id": "I4",
+          "from": "unknown",
+          "to": "fail",
+          "source": [
+            "Q5"
+          ]
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "source": "10/18 데모 리허설(주희) CSV·기록 재구성 — data/processed/demo_runs/10-18_S004/",
+    "note": "실측 기록을 미리보기용으로 변환한 번들. 새 판정 아님",
+    "prompt_version": "v3",
+    "created": "2026-10-24"
+  },
+  "_preview_state": {
+    "prev_judgments": {
+      "NCT07589413": [
+        {
+          "criterion_id": "I1",
+          "verdict": "pass"
+        },
+        {
+          "criterion_id": "I2",
+          "verdict": "pass"
+        },
+        {
+          "criterion_id": "I3",
+          "verdict": "unknown"
+        },
+        {
+          "criterion_id": "I4",
+          "verdict": "post_enrollment"
+        },
+        {
+          "criterion_id": "I5",
+          "verdict": "post_enrollment"
+        },
+        {
+          "criterion_id": "I6",
+          "verdict": "post_enrollment"
+        },
+        {
+          "criterion_id": "E1",
+          "verdict": "pass"
+        },
+        {
+          "criterion_id": "E2",
+          "verdict": "unknown"
+        },
+        {
+          "criterion_id": "E3",
+          "verdict": "unknown"
+        },
+        {
+          "criterion_id": "E4",
+          "verdict": "post_enrollment"
+        },
+        {
+          "criterion_id": "E5",
+          "verdict": "pass"
+        },
+        {
+          "criterion_id": "E6",
+          "verdict": "post_enrollment"
+        }
+      ],
+      "NCT07029256": [
+        {
+          "criterion_id": "I1",
+          "verdict": "unknown"
+        },
+        {
+          "criterion_id": "I2",
+          "verdict": "pass"
+        },
+        {
+          "criterion_id": "E1",
+          "verdict": "pass"
+        }
+      ],
+      "NCT07413523": [
+        {
+          "criterion_id": "I1",
+          "verdict": "pass"
+        },
+        {
+          "criterion_id": "I2",
+          "verdict": "unknown"
+        },
+        {
+          "criterion_id": "I3",
+          "verdict": "unknown"
+        },
+        {
+          "criterion_id": "I4",
+          "verdict": "unknown"
+        },
+        {
+          "criterion_id": "I5",
+          "verdict": "unknown"
+        },
+        {
+          "criterion_id": "I6",
+          "verdict": "unknown"
+        },
+        {
+          "criterion_id": "I7",
+          "verdict": "unknown"
+        },
+        {
+          "criterion_id": "I8",
+          "verdict": "unknown"
+        },
+        {
+          "criterion_id": "I9",
+          "verdict": "post_enrollment"
+        },
+        {
+          "criterion_id": "E1",
+          "verdict": "post_enrollment"
+        },
+        {
+          "criterion_id": "E2",
+          "verdict": "pass"
+        },
+        {
+          "criterion_id": "E3",
+          "verdict": "pass"
+        },
+        {
+          "criterion_id": "E4",
+          "verdict": "pass"
+        },
+        {
+          "criterion_id": "E5",
+          "verdict": "post_enrollment"
+        },
+        {
+          "criterion_id": "E6",
+          "verdict": "unknown"
+        }
+      ]
+    },
+    "last_changed": [
+      {
+        "trial": "NCT07413523",
+        "criterion_id": "I3",
+        "from": "unknown",
+        "to": "fail",
+        "source": [
+          "Q1"
+        ]
+      },
+      {
+        "trial": "NCT07413523",
+        "criterion_id": "I4",
+        "from": "unknown",
+        "to": "fail",
+        "source": [
+          "Q5"
+        ]
+      },
+      {
+        "trial": "NCT07589413",
+        "criterion_id": "E2",
+        "from": "unknown",
+        "to": "pass",
+        "source": [
+          "Q3"
+        ]
+      },
+      {
+        "trial": "NCT07589413",
+        "criterion_id": "E3",
+        "from": "unknown",
+        "to": "pass",
+        "source": [
+          "Q2"
+        ]
+      },
+      {
+        "trial": "NCT07589413",
+        "criterion_id": "I3",
+        "from": "unknown",
+        "to": "pass",
+        "source": [
+          "Q4"
+        ]
+      }
+    ],
+    "pending": [
+      {
+        "id": "Q1",
+        "text": "방광 종양 조직검사를 받은 적이 있나요?",
+        "needed_info": "",
+        "resolves": [
+          {
+            "trial": "NCT07413523",
+            "criteria": [
+              "I3"
+            ]
+          }
+        ],
+        "priority": 1
+      },
+      {
+        "id": "Q2",
+        "text": "방광 수술, 항암 약물치료, 방사선치료를 받은 적이 있나요?",
+        "needed_info": "",
+        "resolves": [
+          {
+            "trial": "NCT07589413",
+            "criteria": [
+              "E3"
+            ]
+          }
+        ],
+        "priority": 2
+      },
+      {
+        "id": "Q3",
+        "text": "최근 5년 안에 암으로 진단받거나 치료받은 적이 있나요?",
+        "needed_info": "",
+        "resolves": [
+          {
+            "trial": "NCT07589413",
+            "criteria": [
+              "E2"
+            ]
+          }
+        ],
+        "priority": 3
+      },
+      {
+        "id": "Q4",
+        "text": "경요도 방광종양 절제술이나 방광절제술 날짜가 잡혀 있나요?",
+        "needed_info": "",
+        "resolves": [
+          {
+            "trial": "NCT07589413",
+            "criteria": [
+              "I3"
+            ]
+          }
+        ],
+        "priority": 4
+      },
+      {
+        "id": "Q5",
+        "text": "영상검사에서 방광 밖으로 퍼졌다는 설명을 들은 적이 있나요?",
+        "needed_info": "",
+        "resolves": [
+          {
+            "trial": "NCT07413523",
+            "criteria": [
+              "I4"
+            ]
+          }
+        ],
+        "priority": 5
+      }
+    ]
+  }
+}
