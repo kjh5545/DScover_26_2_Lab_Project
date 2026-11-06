@@ -93,11 +93,11 @@ def collect_pool(queries: list[str], per_query: int = 200, pool_cap: int | None 
 
 
 def search_candidates(profile: dict, max_candidates: int = 3, relevance: bool = False,
-                      rank: bool = False) -> dict:
+                      rank: bool = True) -> dict:
     """프로필 → 검색어 결정(LLM) → API 검색 → 하드 필터 → (옵션) 관련성 거르기/랭킹 → 후보.
 
     relevance=True: 제목·질환명만 보고 확신 있는 무관만 거른다 (keep/drop).
-    rank=True: 같은 입력으로 관련도 0~10점을 매겨 점수순 정렬, 0점만 제외 (실험 3).
+    rank=True(기본, 11/6 결정): 관련도 0~100점 랭킹으로 정렬, 0점만 제외 (실험 3).
       풀이 커져도(검색어 5~8개 × 200건) 정답이 상위 N에 들 수 있게 하는 핵심.
       둘 다 켜면 rank가 우선. 어느 쪽도 Haiku라 비용은 거의 같다.
     """

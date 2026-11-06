@@ -75,7 +75,7 @@ with st.sidebar:
         # run_intake는 환자 ID별로 프로필을 저장해 다시 쓴다 → 직접 입력은 설명 내용별로 ID를 달리해서
         # 다른 환자의 저장된 프로필을 가져다 쓰지 않게
         pid = "CUSTOM_" + hashlib.sha1(case_text.strip().encode("utf-8")).hexdigest()[:8]
-    max_candidates = st.slider("스크리닝할 후보 시험 수", 1, 5, 3,
+    max_candidates = st.slider("스크리닝할 후보 시험 수", 1, 10, 5,
                                help="많을수록 정확하지만 LLM 비용과 시간이 늘어납니다")
     st.divider()
     start = st.button("분석 시작", type="primary", icon=":material/search:",
