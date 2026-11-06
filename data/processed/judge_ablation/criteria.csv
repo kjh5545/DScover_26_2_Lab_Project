@@ -3252,14 +3252,14 @@ p0,detailed,S008_NCT07299695,E9,3,모름,모름,True,Tutorship/curatorship statu
 p0,detailed,S008_NCT07299695,E10,3,모름,모름,True,Deprivation of liberty or court protection not stated; she is followed as an outpatient.
 p0,detailed,S008_NCT07299695,E11,3,등록 후 확인,등록 후 확인,True,Willingness to consent is determined only when approached by the study team.
 p0,detailed,N001_NCT07082114,I1,1,통과,통과,True,58-year-old woman; within 18–75.
-p0,detailed,N001_NCT07082114,I2,1,통과,통과,True,9-year history of type 2 diabetes; HbA1c 9.8% and FBG 11.2 mmol/L are consistent with WHO criteria.
+p0,detailed,N001_NCT07082114,I2,1,모름,통과,False,9-year history of type 2 diabetes; HbA1c 9.8% and FBG 11.2 mmol/L are consistent with WHO criteria.
 p0,detailed,N001_NCT07082114,I3,1,통과,통과,True,Metformin 1000 mg twice daily (2000 mg/day) at the same dose for the past two years.
 p0,detailed,N001_NCT07082114,I4,1,등록 후 확인,통과,False,"HbA1c 9.8% at clinic last week, within 7.5–11.0%. The result is from a clinic lab; the protocol's local-lab screening value will be confirmed at screening."
 p0,detailed,N001_NCT07082114,I5,1,등록 후 확인,등록 후 확인,True,Central laboratory HbA1c before randomization can only be measured after enrollment.
 p0,detailed,N001_NCT07082114,I6,1,통과,통과,True,"BMI 31.2 kg/m², within 19.0–40.0."
 p0,detailed,N001_NCT07082114,I7,1,통과,통과,True,"Postmenopausal, so not of childbearing potential. The contraception requirement does not apply to her."
 p0,detailed,N001_NCT07082114,I8,1,등록 후 확인,모름,False,"Willingness to maintain diet and exercise habits, comply with the protocol, and give written consent is not stated. She works as an accountant, with no indication of impaired understanding."
-p0,detailed,N001_NCT07082114,E1,1,통과,통과,True,"Long-standing type 2 diabetes; no mention of type 1, LADA, special types, or gestational diabetes. She is postmenopausal."
+p0,detailed,N001_NCT07082114,E1,1,모름,통과,False,"Long-standing type 2 diabetes; no mention of type 1, LADA, special types, or gestational diabetes. She is postmenopausal."
 p0,detailed,N001_NCT07082114,E2,1,모름,모름,True,Acute diabetic complications such as DKA or hyperosmolar coma in the last 6 months are not mentioned. She reports only fatigue and thirst.
 p0,detailed,N001_NCT07082114,E3,1,모름,모름,True,"Personal or family history of medullary thyroid carcinoma, C-cell hyperplasia, or MEN2 is not stated. She has hypothyroidism on levothyroxine, which does not answer this."
 p0,detailed,N001_NCT07082114,E4,1,통과,모름,False,"No history of pancreatitis is stated. Pancreatic injury and high-risk factors for pancreatitis, such as alcohol use, hypertriglyceridemia, or gallstones, are not addressed."
@@ -3285,14 +3285,14 @@ p0,detailed,N001_NCT07082114,E23,1,모름,모름,True,"Allergy history is not st
 p0,detailed,N001_NCT07082114,E24,1,모름,모름,True,Participation in other clinical studies within 3 months is not mentioned.
 p0,detailed,N001_NCT07082114,E25,1,등록 후 확인,등록 후 확인,True,Investigator judgment of suitability is made by the study team.
 p0,detailed,N001_NCT07082114,I1,2,통과,통과,True,58-year-old woman; within 18-75.
-p0,detailed,N001_NCT07082114,I2,2,통과,통과,True,"9-year history of type 2 diabetes, well beyond 3 months. Diagnosis presumed per standard criteria."
+p0,detailed,N001_NCT07082114,I2,2,모름,통과,False,"9-year history of type 2 diabetes, well beyond 3 months. Diagnosis presumed per standard criteria."
 p0,detailed,N001_NCT07082114,I3,2,통과,통과,True,Metformin 1000 mg twice daily (2000 mg/day) at the same dose for the past two years.
 p0,detailed,N001_NCT07082114,I4,2,등록 후 확인,통과,False,"HbA1c 9.8% at clinic last week, within 7.5-11.0%."
 p0,detailed,N001_NCT07082114,I5,2,등록 후 확인,등록 후 확인,True,Central laboratory HbA1c prior to randomization is only obtained after enrollment.
 p0,detailed,N001_NCT07082114,I6,2,통과,통과,True,"BMI 31.2 kg/m², within 19.0-40.0."
 p0,detailed,N001_NCT07082114,I7,2,통과,통과,True,"Patient is postmenopausal, so not of childbearing potential; contraception requirement does not apply."
 p0,detailed,N001_NCT07082114,I8,2,등록 후 확인,모름,False,"Willingness to maintain diet/exercise, comply with protocol and provide consent not stated."
-p0,detailed,N001_NCT07082114,E1,2,통과,통과,True,Diagnosed with type 2 diabetes; 9-year history with response to metformin; no indication of T1DM/LADA/special types.
+p0,detailed,N001_NCT07082114,E1,2,모름,통과,False,Diagnosed with type 2 diabetes; 9-year history with response to metformin; no indication of T1DM/LADA/special types.
 p0,detailed,N001_NCT07082114,E2,2,모름,모름,True,No mention of acute diabetic complications such as DKA or HHS in the past 6 months; not explicitly stated.
 p0,detailed,N001_NCT07082114,E3,2,모름,모름,True,"Personal/family history of medullary thyroid carcinoma, C-cell hyperplasia or MEN2 not reported (hypothyroidism on levothyroxine noted only)."
 p0,detailed,N001_NCT07082114,E4,2,통과,모름,False,"No history of pancreatitis stated, but pancreatic injury and high-risk factors (e.g., hypertriglyceridemia, heavy alcohol, gallstones) not addressed."
@@ -3318,14 +3318,14 @@ p0,detailed,N001_NCT07082114,E23,2,모름,모름,True,"Allergy history not provi
 p0,detailed,N001_NCT07082114,E24,2,모름,모름,True,Participation in other clinical studies in the past 3 months not mentioned.
 p0,detailed,N001_NCT07082114,E25,2,등록 후 확인,등록 후 확인,True,Investigator judgment of suitability is determined by the study team.
 p0,detailed,N001_NCT07082114,I1,3,통과,통과,True,58-year-old woman.
-p0,detailed,N001_NCT07082114,I2,3,통과,통과,True,9-year history of type 2 diabetes.
+p0,detailed,N001_NCT07082114,I2,3,모름,통과,False,9-year history of type 2 diabetes.
 p0,detailed,N001_NCT07082114,I3,3,통과,통과,True,Metformin 1000 mg twice daily (2000 mg/day) at the same dose for past two years.
 p0,detailed,N001_NCT07082114,I4,3,등록 후 확인,통과,False,HbA1c 9.8% at clinic last week.
 p0,detailed,N001_NCT07082114,I5,3,등록 후 확인,등록 후 확인,True,Central lab HbA1c prior to randomization occurs only after enrollment.
 p0,detailed,N001_NCT07082114,I6,3,통과,통과,True,BMI 31.2 kg/m².
 p0,detailed,N001_NCT07082114,I7,3,통과,통과,True,"Patient is postmenopausal, so not of childbearing potential; contraception requirement does not apply."
 p0,detailed,N001_NCT07082114,I8,3,등록 후 확인,모름,False,"Willingness to maintain diet/exercise, comply with protocol, and consent not stated."
-p0,detailed,N001_NCT07082114,E1,3,통과,통과,True,"Diagnosed with type 2 diabetes, 9-year history; no mention of T1DM/LADA/special types; postmenopausal so not gestational."
+p0,detailed,N001_NCT07082114,E1,3,모름,통과,False,"Diagnosed with type 2 diabetes, 9-year history; no mention of T1DM/LADA/special types; postmenopausal so not gestational."
 p0,detailed,N001_NCT07082114,E2,3,모름,모름,True,"No acute diabetic complications mentioned, but not explicitly stated within the past 6 months."
 p0,detailed,N001_NCT07082114,E3,3,모름,모름,True,"Personal/family history of MTC, C-cell hyperplasia, or MEN2 not mentioned."
 p0,detailed,N001_NCT07082114,E4,3,통과,모름,False,"No history of pancreatitis stated; pancreatic injury and high-risk factors (e.g., hypertriglyceridemia, alcohol use) not addressed."
@@ -3352,7 +3352,7 @@ p0,detailed,N001_NCT07082114,E24,3,모름,모름,True,Recent participation in ot
 p0,detailed,N001_NCT07082114,E25,3,등록 후 확인,등록 후 확인,True,Investigator judgment of suitability is made by the study team.
 p0,detailed,N001_NCT06863532,I1,1,등록 후 확인,모름,False,No information on consent capacity or willingness to sign; nothing suggests impairment.
 p0,detailed,N001_NCT06863532,I2,1,통과,통과,True,58-year-old female; within 18-74.
-p0,detailed,N001_NCT06863532,I3,1,통과,통과,True,"9-year history of type 2 diabetes, HbA1c 9.8%, FBG 11.2 mmol/L."
+p0,detailed,N001_NCT06863532,I3,1,모름,통과,False,"9-year history of type 2 diabetes, HbA1c 9.8%, FBG 11.2 mmol/L."
 p0,detailed,N001_NCT06863532,I4,1,탈락,탈락,True,"She has never used any other glucose-lowering medication, including SGLT2 inhibitors; she is not on SGLT2i monotherapy for 8 weeks."
 p0,detailed,N001_NCT06863532,I5,1,탈락,탈락,True,"Metformin 1000 mg twice daily (2000 mg/day) exceeds the 500-1000 mg/day range, though stable for two years."
 p0,detailed,N001_NCT06863532,I6,1,탈락,탈락,True,HbA1c 9.8% is above 9.5% upper limit.
@@ -3361,8 +3361,8 @@ p0,detailed,N001_NCT06863532,I8,1,통과,통과,True,BMI 31.2 kg/m² ≤ 40.
 p0,detailed,N001_NCT06863532,I9,1,모름,모름,True,Urine ketone result not provided.
 p0,detailed,N001_NCT06863532,I10,1,통과,통과,True,eGFR 78 mL/min/1.73 m² ≥ 60.
 p0,detailed,N001_NCT06863532,I11,1,등록 후 확인,등록 후 확인,True,Agreement to maintain habits and ability to use SMBG are determined after enrollment/by study team.
-p0,detailed,N001_NCT06863532,E1,1,통과,통과,True,Diagnosed with type 2 diabetes with 9-year course; no indication of type 1.
-p0,detailed,N001_NCT06863532,E2,1,통과,통과,True,Type 2 diabetes; no secondary cause described.
+p0,detailed,N001_NCT06863532,E1,1,모름,통과,False,Diagnosed with type 2 diabetes with 9-year course; no indication of type 1.
+p0,detailed,N001_NCT06863532,E2,1,모름,통과,False,Type 2 diabetes; no secondary cause described.
 p0,detailed,N001_NCT06863532,E3,1,모름,모름,True,Transplant history not mentioned.
 p0,detailed,N001_NCT06863532,E4,1,모름,모름,True,No history of pancreatitis stated; pancreatic resection not addressed.
 p0,detailed,N001_NCT06863532,E5,1,모름,모름,True,No mention of DKA or hyperosmolar coma history.
@@ -3388,7 +3388,7 @@ p0,detailed,N001_NCT06863532,E24,1,모름,모름,True,Recent clinical trial part
 p0,detailed,N001_NCT06863532,E25,1,등록 후 확인,등록 후 확인,True,Investigator judgment only determined by study team.
 p0,detailed,N001_NCT06863532,I1,2,등록 후 확인,모름,False,"Nothing in the description about consent capacity or willingness; she works as an accountant, but this is not documented."
 p0,detailed,N001_NCT06863532,I2,2,통과,통과,True,"58-year-old woman, within 18-74."
-p0,detailed,N001_NCT06863532,I3,2,통과,통과,True,"9-year history of type 2 diabetes, HbA1c 9.8%, FBG 11.2 mmol/L."
+p0,detailed,N001_NCT06863532,I3,2,모름,통과,False,"9-year history of type 2 diabetes, HbA1c 9.8%, FBG 11.2 mmol/L."
 p0,detailed,N001_NCT06863532,I4,2,탈락,탈락,True,She has never used any SGLT2 inhibitor; she is on metformin only.
 p0,detailed,N001_NCT06863532,I5,2,탈락,탈락,True,"Metformin 1000 mg twice daily (2000 mg/day) for two years, above the 500-1000 mg/day range. Dose is stable and duration is long enough."
 p0,detailed,N001_NCT06863532,I6,2,탈락,탈락,True,"HbA1c 9.8% last week, above the 9.5% upper limit."
@@ -3397,8 +3397,8 @@ p0,detailed,N001_NCT06863532,I8,2,통과,통과,True,"BMI 31.2 kg/m², at or bel
 p0,detailed,N001_NCT06863532,I9,2,모름,모름,True,No urine ketone result is provided.
 p0,detailed,N001_NCT06863532,I10,2,통과,통과,True,"eGFR 78 mL/min/1.73 m², at or above 60."
 p0,detailed,N001_NCT06863532,I11,2,등록 후 확인,등록 후 확인,True,Agreement to maintain diet and exercise and to use an SMBG meter is assessed after enrollment or at study start.
-p0,detailed,N001_NCT06863532,E1,2,통과,통과,True,"Documented as type 2 diabetes with a 9-year course managed with metformin, so not type 1."
-p0,detailed,N001_NCT06863532,E2,2,통과,통과,True,Diagnosis is type 2 diabetes. No secondary cause is described.
+p0,detailed,N001_NCT06863532,E1,2,모름,통과,False,"Documented as type 2 diabetes with a 9-year course managed with metformin, so not type 1."
+p0,detailed,N001_NCT06863532,E2,2,모름,통과,False,Diagnosis is type 2 diabetes. No secondary cause is described.
 p0,detailed,N001_NCT06863532,E3,2,모름,모름,True,Transplant history is not mentioned.
 p0,detailed,N001_NCT06863532,E4,2,모름,모름,True,"She has no history of pancreatitis, but pancreatic resection is not addressed."
 p0,detailed,N001_NCT06863532,E5,2,모름,모름,True,"DKA or hyperosmolar coma is not mentioned, although she has fatigue and thirst."
@@ -3424,7 +3424,7 @@ p0,detailed,N001_NCT06863532,E24,2,모름,모름,True,Participation in other cli
 p0,detailed,N001_NCT06863532,E25,2,등록 후 확인,등록 후 확인,True,Investigator judgment is made by the study team.
 p0,detailed,N001_NCT06863532,I1,3,등록 후 확인,모름,False,No information on the patient's capacity or willingness to sign informed consent.
 p0,detailed,N001_NCT06863532,I2,3,통과,통과,True,58-year-old woman; within 18-74.
-p0,detailed,N001_NCT06863532,I3,3,통과,통과,True,"9-year history of type 2 diabetes, HbA1c 9.8%, FBG 11.2 mmol/L."
+p0,detailed,N001_NCT06863532,I3,3,모름,통과,False,"9-year history of type 2 diabetes, HbA1c 9.8%, FBG 11.2 mmol/L."
 p0,detailed,N001_NCT06863532,I4,3,탈락,탈락,True,Patient has never used any SGLT2 inhibitor or other glucose-lowering medication besides metformin.
 p0,detailed,N001_NCT06863532,I5,3,탈락,탈락,True,"Metformin 1000 mg twice daily (2000 mg/day) for two years, which exceeds the 500-1000 mg/day range."
 p0,detailed,N001_NCT06863532,I6,3,탈락,탈락,True,"HbA1c 9.8% measured last week, above the 9.5% upper limit."
@@ -3433,8 +3433,8 @@ p0,detailed,N001_NCT06863532,I8,3,통과,통과,True,"BMI 31.2 kg/m², ≤ 40."
 p0,detailed,N001_NCT06863532,I9,3,모름,모름,True,Urine ketone result not provided.
 p0,detailed,N001_NCT06863532,I10,3,통과,통과,True,"eGFR 78 mL/min/1.73 m², ≥ 60."
 p0,detailed,N001_NCT06863532,I11,3,등록 후 확인,등록 후 확인,True,Agreement to maintain lifestyle and ability to use a glucose meter for the trial can only be confirmed after enrollment.
-p0,detailed,N001_NCT06863532,E1,3,통과,통과,True,Diagnosed with type 2 diabetes with a 9-year history managed on metformin.
-p0,detailed,N001_NCT06863532,E2,3,통과,통과,True,Type 2 diabetes with no indication of secondary diabetes.
+p0,detailed,N001_NCT06863532,E1,3,모름,통과,False,Diagnosed with type 2 diabetes with a 9-year history managed on metformin.
+p0,detailed,N001_NCT06863532,E2,3,모름,통과,False,Type 2 diabetes with no indication of secondary diabetes.
 p0,detailed,N001_NCT06863532,E3,3,모름,모름,True,Transplant history not explicitly stated; none suggested.
 p0,detailed,N001_NCT06863532,E4,3,모름,모름,True,"No history of pancreatitis stated, but pancreatic resection history is not mentioned."
 p0,detailed,N001_NCT06863532,E5,3,모름,모름,True,No mention of DKA or hyperosmolar coma history.
@@ -3466,7 +3466,7 @@ p0,detailed,N002_NCT07786870,E3,1,모름,모름,True,"No malignancy is mentioned
 p0,detailed,N002_NCT07786870,E4,1,통과,통과,True,"No fever, normal chest X-ray at ED visit, no antibiotics needed; the exacerbation was triggered by cat exposure, not infection."
 p0,detailed,N002_NCT07786870,E5,1,통과,통과,True,"Treated with a 5-day course of oral prednisone ""without antibiotics""."
 p0,detailed,N002_NCT07786870,E6,1,모름,통과,False,Resting oxygen saturation 97% on room air; no home oxygen therapy mentioned.
-p0,detailed,N002_NCT07786870,E7,1,탈락,통과,False,"Dupilumab is only scheduled for next week; he has not yet received any injection, so he is not currently on a monoclonal antibody. Note that enrollment timing relative to starting dupilumab matters, because the exclusion would apply once he begins treatment."
+p0,detailed,N002_NCT07786870,E7,1,통과,통과,True,"Dupilumab is only scheduled for next week; he has not yet received any injection, so he is not currently on a monoclonal antibody. Note that enrollment timing relative to starting dupilumab matters, because the exclusion would apply once he begins treatment."
 p0,detailed,N002_NCT07786870,E8,1,통과,통과,True,"Patient is male, so pregnancy is not applicable."
 p0,detailed,N002_NCT07786870,I1,2,통과,통과,True,"Patient is a 24-year-old man, which is over 18 years; there is no upper age limit."
 p0,detailed,N002_NCT07786870,I2,2,모름,통과,False,Asthma diagnosed by a pulmonologist at age 8; current symptoms with FEV1 68% predicted and eosinophils 450. Diagnosis is clinical and well established.
@@ -3476,7 +3476,7 @@ p0,detailed,N002_NCT07786870,E3,2,모름,모름,True,No mention of malignancy or
 p0,detailed,N002_NCT07786870,E4,2,통과,통과,True,"No fever, normal chest X-ray, treated without antibiotics; the exacerbation was triggered by cat exposure, not infection. No indication of TB."
 p0,detailed,N002_NCT07786870,E5,2,통과,통과,True,"Recent ED visit treated with oral prednisone ""without antibiotics""."
 p0,detailed,N002_NCT07786870,E6,2,모름,통과,False,Resting oxygen saturation 97% on room air; no home oxygen mentioned in medications.
-p0,detailed,N002_NCT07786870,E7,2,탈락,통과,False,Dupilumab is only scheduled for next week; he is not currently on any monoclonal antibody therapy. Note that enrollment timing relative to the first injection matters.
+p0,detailed,N002_NCT07786870,E7,2,통과,통과,True,Dupilumab is only scheduled for next week; he is not currently on any monoclonal antibody therapy. Note that enrollment timing relative to the first injection matters.
 p0,detailed,N002_NCT07786870,E8,2,통과,통과,True,"Patient is male, so pregnancy is not applicable."
 p0,detailed,N002_NCT07786870,I1,3,통과,통과,True,"Patient is a 24-year-old man, which is over 18; no upper age limit applies."
 p0,detailed,N002_NCT07786870,I2,3,모름,통과,False,"Asthma diagnosed by a pulmonologist at age 8, with current symptoms (wheezing, chest tightness, night cough) and spirometry meeting ATS quality criteria (FEV1 68% predicted). Diagnosis is consistent with GINA 2023; the exact diagnostic method used at age 8 is not specified, but the clinical diagnosi"
@@ -3486,7 +3486,7 @@ p0,detailed,N002_NCT07786870,E3,3,모름,모름,True,"No malignancy is mentioned
 p0,detailed,N002_NCT07786870,E4,3,통과,통과,True,"At the ED visit he had no fever, chest X-ray was normal, and he was treated without antibiotics; the exacerbation was triggered by cat exposure. Oxygen saturation 97% on room air."
 p0,detailed,N002_NCT07786870,E5,3,통과,통과,True,"Treated with a 5-day course of oral prednisone ""without antibiotics"" ten days ago."
 p0,detailed,N002_NCT07786870,E6,3,모름,통과,False,Resting oxygen saturation is 97% on room air; no home oxygen therapy mentioned.
-p0,detailed,N002_NCT07786870,E7,3,탈락,통과,False,Dupilumab is only scheduled for next week (first injection not yet given); no current biologic treatment. Medications listed are budesonide-formoterol and recent prednisone.
+p0,detailed,N002_NCT07786870,E7,3,통과,통과,True,Dupilumab is only scheduled for next week (first injection not yet given); no current biologic treatment. Medications listed are budesonide-formoterol and recent prednisone.
 p0,detailed,N002_NCT07786870,E8,3,통과,통과,True,"Patient is male, so pregnancy is not applicable."
 p0,detailed,N002_NCT07139899,I1,1,등록 후 확인,등록 후 확인,True,"Informed consent is obtained at enrollment, after the patient applies; no consent status is given."
 p0,detailed,N002_NCT07139899,I2,1,통과,통과,True,Patient is 24 years old.
@@ -3551,7 +3551,7 @@ p0,detailed,N002_NCT07139899,E11,3,등록 후 확인,등록 후 확인,True,"Det
 p0,detailed,S002_NCT06068179,I1,1,통과,통과,True,"Patient is 29 years old, within 18-60."
 p0,detailed,S002_NCT06068179,I2,1,통과,통과,True,"Graves' disease diagnosed by an endocrinologist last week; TRAb positive, suppressed TSH, elevated FT4."
 p0,detailed,S002_NCT06068179,E1,1,통과,통과,True,"Newly diagnosed, has not started antithyroid medication, never had radioactive iodine or surgery; no relapse."
-p0,detailed,S002_NCT06068179,E2,1,통과,통과,True,"Positive TRAb, diffuse enlargement with increased blood flow and no nodules on ultrasound, non-tender gland; consistent with Graves' rather than other etiologies."
+p0,detailed,S002_NCT06068179,E2,1,모름,통과,False,"Positive TRAb, diffuse enlargement with increased blood flow and no nodules on ultrasound, non-tender gland; consistent with Graves' rather than other etiologies."
 p0,detailed,S002_NCT06068179,E3,1,통과,통과,True,"Only mild upper eyelid retraction; no eye pain, diplopia, or proptosis, so no intervention needed for moderate-to-severe TED."
 p0,detailed,S002_NCT06068179,E4,1,모름,통과,False,Ultrasound shows no nodules; no thyroid cancer indicated and no surgery needed.
 p0,detailed,S002_NCT06068179,E5,1,통과,통과,True,"ALT 28 U/L, AST 25 U/L (normal), creatinine 62 µmol/L (<110 for females)."
@@ -3564,7 +3564,7 @@ p0,detailed,S002_NCT06068179,E11,1,등록 후 확인,모름,False,Willingness an
 p0,detailed,S002_NCT06068179,I1,2,통과,통과,True,"Patient is 29 years old, within 18 to 60."
 p0,detailed,S002_NCT06068179,I2,2,통과,통과,True,"Graves' disease diagnosed by an endocrinologist last week, based on suppressed TSH, elevated free T4, positive TRAb and ultrasound."
 p0,detailed,S002_NCT06068179,E1,2,통과,통과,True,"She has not yet started antithyroid medication and has never had radioactive iodine or surgery. Diagnosis is new, so no relapse."
-p0,detailed,S002_NCT06068179,E2,2,통과,통과,True,"Positive TRAb and diffuse enlargement with increased blood flow and no nodules on ultrasound. This is consistent with Graves' disease and argues against toxic nodular disease. The thyroid is non-tender, which argues against subacute thyroiditis."
+p0,detailed,S002_NCT06068179,E2,2,모름,통과,False,"Positive TRAb and diffuse enlargement with increased blood flow and no nodules on ultrasound. This is consistent with Graves' disease and argues against toxic nodular disease. The thyroid is non-tender, which argues against subacute thyroiditis."
 p0,detailed,S002_NCT06068179,E3,2,통과,통과,True,"Mild upper eyelid retraction only, with no eye pain, double vision or proptosis. This does not indicate moderate-to-severe thyroid eye disease requiring intervention."
 p0,detailed,S002_NCT06068179,E4,2,모름,통과,False,"Ultrasound shows no nodules, with no suggestion of thyroid cancer or need for surgery."
 p0,detailed,S002_NCT06068179,E5,2,통과,통과,True,ALT 28 U/L and AST 25 U/L are normal. Creatinine 62 µmol/L is below 110 µmol/L for females.
@@ -3577,7 +3577,7 @@ p0,detailed,S002_NCT06068179,E11,2,등록 후 확인,모름,False,Willingness an
 p0,detailed,S002_NCT06068179,I1,3,통과,통과,True,"Patient is 29 years old, within 18 to 60."
 p0,detailed,S002_NCT06068179,I2,3,통과,통과,True,"Graves' disease diagnosed by an endocrinologist last week (suppressed TSH, elevated FT4, positive TRAb, diffuse goiter with increased flow)."
 p0,detailed,S002_NCT06068179,E1,3,통과,통과,True,"Not yet started antithyroid medication; never had radioactive iodine or surgery; newly diagnosed, so no relapse."
-p0,detailed,S002_NCT06068179,E2,3,통과,통과,True,"Positive TRAb and ultrasound with diffuse enlargement, increased blood flow, no nodules, consistent with Graves' rather than toxic nodular disease. Non-tender gland argues against subacute thyroiditis."
+p0,detailed,S002_NCT06068179,E2,3,모름,통과,False,"Positive TRAb and ultrasound with diffuse enlargement, increased blood flow, no nodules, consistent with Graves' rather than toxic nodular disease. Non-tender gland argues against subacute thyroiditis."
 p0,detailed,S002_NCT06068179,E3,3,통과,통과,True,"Only mild upper eyelid retraction; no eye pain, diplopia, or proptosis, so no moderate-to-severe thyroid eye disease needing intervention."
 p0,detailed,S002_NCT06068179,E4,3,모름,통과,False,Ultrasound shows no nodules; no thyroid cancer indicated.
 p0,detailed,S002_NCT06068179,E5,3,통과,통과,True,ALT 28 and AST 25 U/L are normal; creatinine 62 µmol/L is below 110 µmol/L for females.
@@ -3816,14 +3816,14 @@ p1,detailed,S008_NCT07299695,E9,3,모름,모름,True,No information on tutorship
 p1,detailed,S008_NCT07299695,E10,3,모름,모름,True,No information on deprivation of liberty or court protection.
 p1,detailed,S008_NCT07299695,E11,3,등록 후 확인,모름,False,Her willingness to participate or give consent is not stated.
 p1,detailed,N001_NCT07082114,I1,1,통과,통과,True,"""A 58-year-old woman"" – within 18–75 years and female."
-p1,detailed,N001_NCT07082114,I2,1,통과,통과,True,"""9-year history of type 2 diabetes""; fasting glucose 11.2 mmol/L and HbA1c 9.8% are consistent with WHO diabetes thresholds."
+p1,detailed,N001_NCT07082114,I2,1,모름,통과,False,"""9-year history of type 2 diabetes""; fasting glucose 11.2 mmol/L and HbA1c 9.8% are consistent with WHO diabetes thresholds."
 p1,detailed,N001_NCT07082114,I3,1,통과,통과,True,"""metformin 1000 mg twice daily at the same dose for the past two years"" (2000 mg/day)."
 p1,detailed,N001_NCT07082114,I4,1,등록 후 확인,통과,False,"""Her HbA1c measured at her clinic last week was 9.8%"" – within 7.5–11.0%. The formal screening local-lab value will be confirmed at screening."
 p1,detailed,N001_NCT07082114,I5,1,등록 후 확인,등록 후 확인,True,"Requires a central-laboratory HbA1c measured before randomization, which only exists after enrollment."
 p1,detailed,N001_NCT07082114,I6,1,통과,통과,True,"""Her BMI is 31.2 kg/m²"""
 p1,detailed,N001_NCT07082114,I7,1,통과,통과,True,"""She is postmenopausal"" – not of childbearing potential, so the contraception requirement does not apply."
 p1,detailed,N001_NCT07082114,I8,1,등록 후 확인,모름,False,"No information on her willingness to maintain diet and exercise habits, comply with the protocol, or give written consent."
-p1,detailed,N001_NCT07082114,E1,1,통과,통과,True,"Diagnosis on record is type 2 diabetes with a 9-year history, no insulin ever used; no mention of type 1, LADA, special types or gestational diabetes."
+p1,detailed,N001_NCT07082114,E1,1,모름,통과,False,"Diagnosis on record is type 2 diabetes with a 9-year history, no insulin ever used; no mention of type 1, LADA, special types or gestational diabetes."
 p1,detailed,N001_NCT07082114,E2,1,모름,모름,True,"No mention of ketoacidosis, lactic acidosis, hyperosmolar coma or other acute diabetic complications in the past 6 months."
 p1,detailed,N001_NCT07082114,E3,1,모름,모름,True,"No information on personal or family history of medullary thyroid carcinoma, C-cell hyperplasia or MEN2 (she has hypothyroidism on levothyroxine, with no cause given)."
 p1,detailed,N001_NCT07082114,E4,1,통과,모름,False,"""She has no history of pancreatitis"" rules out pancreatitis, but pancreatic injury and other high-risk factors for pancreatitis are not addressed."
@@ -3849,14 +3849,14 @@ p1,detailed,N001_NCT07082114,E23,1,모름,모름,True,"She has never used SGLT2 
 p1,detailed,N001_NCT07082114,E24,1,모름,모름,True,No information on participation in other clinical studies.
 p1,detailed,N001_NCT07082114,E25,1,등록 후 확인,등록 후 확인,True,Depends on investigator judgment made by the study team.
 p1,detailed,N001_NCT07082114,I1,2,통과,통과,True,"""A 58-year-old woman"" – within 18–75 years and female."
-p1,detailed,N001_NCT07082114,I2,2,통과,통과,True,"""A 58-year-old woman with a 9-year history of type 2 diabetes"" – diagnosis duration far exceeds 3 months. The specific WHO criteria are not described, but a T2DM diagnosis is on record."
+p1,detailed,N001_NCT07082114,I2,2,모름,통과,False,"""A 58-year-old woman with a 9-year history of type 2 diabetes"" – diagnosis duration far exceeds 3 months. The specific WHO criteria are not described, but a T2DM diagnosis is on record."
 p1,detailed,N001_NCT07082114,I3,2,통과,통과,True,"""metformin 1000 mg twice daily at the same dose for the past two years"" – 2000 mg/day, stable for 2 years."
 p1,detailed,N001_NCT07082114,I4,2,등록 후 확인,통과,False,"""Her HbA1c measured at her clinic last week was 9.8%"" – within 7.5–11.0%. This is a recent clinic value, not a formal screening measurement; the screening value will be confirmed by the study."
 p1,detailed,N001_NCT07082114,I5,2,등록 후 확인,등록 후 확인,True,"Requires a central laboratory HbA1c measured prior to randomization, which only exists after enrollment."
 p1,detailed,N001_NCT07082114,I6,2,통과,통과,True,"""Her BMI is 31.2 kg/m²"" – within 19.0–40.0."
 p1,detailed,N001_NCT07082114,I7,2,통과,통과,True,"""She is postmenopausal"" – not of childbearing potential, so the contraception requirement does not apply."
 p1,detailed,N001_NCT07082114,I8,2,등록 후 확인,모름,False,"No information on her willingness to maintain diet/exercise habits, comply with the protocol, or give consent."
-p1,detailed,N001_NCT07082114,E1,2,통과,통과,True,"Described as having ""type 2 diabetes"" for 9 years; she is postmenopausal, so gestational diabetes is not applicable. No type 1, LADA or special-type diagnosis is mentioned."
+p1,detailed,N001_NCT07082114,E1,2,모름,통과,False,"Described as having ""type 2 diabetes"" for 9 years; she is postmenopausal, so gestational diabetes is not applicable. No type 1, LADA or special-type diagnosis is mentioned."
 p1,detailed,N001_NCT07082114,E2,2,모름,모름,True,"No mention of DKA, lactic acidosis, hyperosmolar coma or other acute diabetic complications in the past 6 months."
 p1,detailed,N001_NCT07082114,E3,2,모름,모름,True,"No personal or family history of medullary thyroid carcinoma, C-cell hyperplasia or MEN2 is described (hypothyroidism is mentioned but not its cause)."
 p1,detailed,N001_NCT07082114,E4,2,통과,모름,False,"""She has no history of pancreatitis"", but pancreatic injury and other pancreatitis risk factors (e.g., hypertriglyceridemia, alcohol use) are not addressed."
@@ -3882,14 +3882,14 @@ p1,detailed,N001_NCT07082114,E23,2,모름,모름,True,"She has never used SGLT2 
 p1,detailed,N001_NCT07082114,E24,2,모름,모름,True,No information on participation in other drug/device trials in the past 3 months.
 p1,detailed,N001_NCT07082114,E25,2,등록 후 확인,등록 후 확인,True,Depends on investigator judgment after the patient applies.
 p1,detailed,N001_NCT07082114,I1,3,통과,통과,True,"""A 58-year-old woman"""
-p1,detailed,N001_NCT07082114,I2,3,통과,통과,True,"""A 58-year-old woman with a 9-year history of type 2 diabetes"""
+p1,detailed,N001_NCT07082114,I2,3,모름,통과,False,"""A 58-year-old woman with a 9-year history of type 2 diabetes"""
 p1,detailed,N001_NCT07082114,I3,3,통과,통과,True,"""metformin 1000 mg twice daily at the same dose for the past two years"""
 p1,detailed,N001_NCT07082114,I4,3,등록 후 확인,통과,False,"""Her HbA1c measured at her clinic last week was 9.8%"""
 p1,detailed,N001_NCT07082114,I5,3,등록 후 확인,등록 후 확인,True,The central laboratory HbA1c before randomization can only be obtained after the patient enters the study.
 p1,detailed,N001_NCT07082114,I6,3,통과,통과,True,"""Her BMI is 31.2 kg/m²"""
 p1,detailed,N001_NCT07082114,I7,3,통과,통과,True,"""She is postmenopausal"", so she is not of childbearing potential and the contraception requirement does not apply."
 p1,detailed,N001_NCT07082114,I8,3,등록 후 확인,모름,False,"Nothing in the description covers willingness to maintain diet and exercise, protocol compliance or consent."
-p1,detailed,N001_NCT07082114,E1,3,통과,통과,True,"""9-year history of type 2 diabetes""; she has had no insulin and has been managed on metformin alone."
+p1,detailed,N001_NCT07082114,E1,3,모름,통과,False,"""9-year history of type 2 diabetes""; she has had no insulin and has been managed on metformin alone."
 p1,detailed,N001_NCT07082114,E2,3,모름,모름,True,No mention of acute diabetic complications in the last 6 months.
 p1,detailed,N001_NCT07082114,E3,3,모름,모름,True,"No information on personal or family history of medullary thyroid carcinoma, C-cell hyperplasia or MEN2. Hypothyroidism on levothyroxine is mentioned but does not answer this."
 p1,detailed,N001_NCT07082114,E4,3,통과,모름,False,"""She has no history of pancreatitis"", but pancreatic injury and risk factors are not addressed."
@@ -3916,7 +3916,7 @@ p1,detailed,N001_NCT07082114,E24,3,모름,모름,True,No information on particip
 p1,detailed,N001_NCT07082114,E25,3,등록 후 확인,등록 후 확인,True,Investigator judgment of suitability can only be made by the study team.
 p1,detailed,N001_NCT06863532,I1,1,등록 후 확인,모름,False,No information about consent capability or willingness to sign.
 p1,detailed,N001_NCT06863532,I2,1,통과,통과,True,"""A 58-year-old woman"" – within 18-74."
-p1,detailed,N001_NCT06863532,I3,1,통과,통과,True,"""9-year history of type 2 diabetes""; HbA1c 9.8%, FBG 11.2 mmol/L, on metformin."
+p1,detailed,N001_NCT06863532,I3,1,모름,통과,False,"""9-year history of type 2 diabetes""; HbA1c 9.8%, FBG 11.2 mmol/L, on metformin."
 p1,detailed,N001_NCT06863532,I4,1,탈락,탈락,True,"""has never used any other glucose-lowering medication, including SGLT2 inhibitors"" – she is not on SGLT2i monotherapy."
 p1,detailed,N001_NCT06863532,I5,1,탈락,탈락,True,"""metformin 1000 mg twice daily"" = 2000 mg/day, exceeding 500-1000 mg/day, though stable for two years."
 p1,detailed,N001_NCT06863532,I6,1,탈락,탈락,True,"""HbA1c measured at her clinic last week was 9.8%"" – above 9.5%."
@@ -3925,8 +3925,8 @@ p1,detailed,N001_NCT06863532,I8,1,통과,통과,True,"""Her BMI is 31.2 kg/m²""
 p1,detailed,N001_NCT06863532,I9,1,모름,모름,True,No urine ketone result reported.
 p1,detailed,N001_NCT06863532,I10,1,통과,통과,True,"""her eGFR is 78 mL/min/1.73 m²"" – ≥ 60."
 p1,detailed,N001_NCT06863532,I11,1,등록 후 확인,등록 후 확인,True,Agreement to maintain habits and ability to use SMBG/keep records can only be confirmed at enrollment/during the trial.
-p1,detailed,N001_NCT06863532,E1,1,통과,통과,True,"Documented ""9-year history of type 2 diabetes""; no type 1 indicated."
-p1,detailed,N001_NCT06863532,E2,1,통과,모름,False,"No mention of secondary diabetes; diagnosis is type 2 diabetes, but secondary causes are not explicitly excluded."
+p1,detailed,N001_NCT06863532,E1,1,모름,통과,False,"Documented ""9-year history of type 2 diabetes""; no type 1 indicated."
+p1,detailed,N001_NCT06863532,E2,1,모름,모름,True,"No mention of secondary diabetes; diagnosis is type 2 diabetes, but secondary causes are not explicitly excluded."
 p1,detailed,N001_NCT06863532,E3,1,모름,모름,True,No information on transplant history or plans.
 p1,detailed,N001_NCT06863532,E4,1,모름,모름,True,"""She has no history of pancreatitis""; pancreatic resection not mentioned."
 p1,detailed,N001_NCT06863532,E5,1,모름,모름,True,No mention of DKA or hyperosmolar coma history.
@@ -3952,7 +3952,7 @@ p1,detailed,N001_NCT06863532,E24,1,모름,모름,True,No information on recent c
 p1,detailed,N001_NCT06863532,E25,1,등록 후 확인,등록 후 확인,True,Investigator judgment only determined by study team.
 p1,detailed,N001_NCT06863532,I1,2,등록 후 확인,모름,False,No information on consent capacity or willingness to sign is given.
 p1,detailed,N001_NCT06863532,I2,2,통과,통과,True,"""A 58-year-old woman"" – within 18-74 years."
-p1,detailed,N001_NCT06863532,I3,2,통과,통과,True,"""9-year history of type 2 diabetes"" with HbA1c 9.8% and FBG 11.2 mmol/L on metformin; a T2DM diagnosis is on record."
+p1,detailed,N001_NCT06863532,I3,2,모름,통과,False,"""9-year history of type 2 diabetes"" with HbA1c 9.8% and FBG 11.2 mmol/L on metformin; a T2DM diagnosis is on record."
 p1,detailed,N001_NCT06863532,I4,2,탈락,탈락,True,"""has never used any other glucose-lowering medication, including SGLT2 inhibitors"" – she is on metformin only, not SGLT2i monotherapy."
 p1,detailed,N001_NCT06863532,I5,2,탈락,탈락,True,"""metformin 1000 mg twice daily"" = 2000 mg/day, exceeding the 500-1000 mg/day range, although stable for two years."
 p1,detailed,N001_NCT06863532,I6,2,탈락,탈락,True,"""HbA1c measured at her clinic last week was 9.8%"" – above 9.5%."
@@ -3961,8 +3961,8 @@ p1,detailed,N001_NCT06863532,I8,2,통과,통과,True,"""Her BMI is 31.2 kg/m²""
 p1,detailed,N001_NCT06863532,I9,2,모름,모름,True,No urine ketone result is given.
 p1,detailed,N001_NCT06863532,I10,2,통과,통과,True,"""her eGFR is 78 mL/min/1.73 m²"" – at least 60."
 p1,detailed,N001_NCT06863532,I11,2,등록 후 확인,등록 후 확인,True,Agreement to maintain diet and exercise and to use an SMBG meter can only be established after the patient applies and is counseled.
-p1,detailed,N001_NCT06863532,E1,2,통과,통과,True,Described as type 2 diabetes with a 9-year history managed on metformin alone; no indication of type 1.
-p1,detailed,N001_NCT06863532,E2,2,통과,모름,False,"No mention of secondary diabetes; the diagnosis is given as type 2 diabetes, but secondary causes are not explicitly excluded."
+p1,detailed,N001_NCT06863532,E1,2,모름,통과,False,Described as type 2 diabetes with a 9-year history managed on metformin alone; no indication of type 1.
+p1,detailed,N001_NCT06863532,E2,2,모름,모름,True,"No mention of secondary diabetes; the diagnosis is given as type 2 diabetes, but secondary causes are not explicitly excluded."
 p1,detailed,N001_NCT06863532,E3,2,모름,모름,True,No transplant history is mentioned.
 p1,detailed,N001_NCT06863532,E4,2,모름,모름,True,"""She has no history of pancreatitis"" – pancreatitis is ruled out, but pancreatic resection is not mentioned."
 p1,detailed,N001_NCT06863532,E5,2,모름,모름,True,No history of DKA or hyperosmolar coma is mentioned.
@@ -3988,7 +3988,7 @@ p1,detailed,N001_NCT06863532,E24,2,모름,모름,True,No information on recent p
 p1,detailed,N001_NCT06863532,E25,2,등록 후 확인,등록 후 확인,True,Investigator judgment of overall suitability can only be made by the study team.
 p1,detailed,N001_NCT06863532,I1,3,등록 후 확인,모름,False,No information on consent capability or willingness to sign.
 p1,detailed,N001_NCT06863532,I2,3,통과,통과,True,"""A 58-year-old woman"" — within 18-74 and female."
-p1,detailed,N001_NCT06863532,I3,3,통과,통과,True,"""A 58-year-old woman with a 9-year history of type 2 diabetes""; HbA1c 9.8%, FBG 11.2 mmol/L."
+p1,detailed,N001_NCT06863532,I3,3,모름,통과,False,"""A 58-year-old woman with a 9-year history of type 2 diabetes""; HbA1c 9.8%, FBG 11.2 mmol/L."
 p1,detailed,N001_NCT06863532,I4,3,탈락,탈락,True,"""has never used any other glucose-lowering medication, including SGLT2 inhibitors"" — she is on metformin only, not SGLT2i monotherapy."
 p1,detailed,N001_NCT06863532,I5,3,탈락,탈락,True,"""metformin 1000 mg twice daily"" = 2000 mg/day, exceeds 500-1000 mg/day range, though stable for two years."
 p1,detailed,N001_NCT06863532,I6,3,탈락,탈락,True,"""HbA1c measured at her clinic last week was 9.8%"" — above 9.5%."
@@ -3997,8 +3997,8 @@ p1,detailed,N001_NCT06863532,I8,3,통과,통과,True,"""Her BMI is 31.2 kg/m²""
 p1,detailed,N001_NCT06863532,I9,3,모름,모름,True,No urine ketone result given.
 p1,detailed,N001_NCT06863532,I10,3,통과,통과,True,"""her eGFR is 78 mL/min/1.73 m²"" — ≥ 60."
 p1,detailed,N001_NCT06863532,I11,3,등록 후 확인,등록 후 확인,True,Agreement to maintain diet/exercise and SMBG ability/willingness are established at enrollment; not described.
-p1,detailed,N001_NCT06863532,E1,3,통과,통과,True,"Documented as type 2 diabetes with 9-year history, treated with metformin only, never insulin; no suggestion of T1DM."
-p1,detailed,N001_NCT06863532,E2,3,통과,모름,False,"Described as type 2 diabetes; no mention of secondary diabetes, though not explicitly excluded."
+p1,detailed,N001_NCT06863532,E1,3,모름,통과,False,"Documented as type 2 diabetes with 9-year history, treated with metformin only, never insulin; no suggestion of T1DM."
+p1,detailed,N001_NCT06863532,E2,3,모름,모름,True,"Described as type 2 diabetes; no mention of secondary diabetes, though not explicitly excluded."
 p1,detailed,N001_NCT06863532,E3,3,모름,모름,True,No mention of transplantation history or plans.
 p1,detailed,N001_NCT06863532,E4,3,모름,모름,True,"""She has no history of pancreatitis"" — pancreatitis excluded, but pancreatic resection not mentioned."
 p1,detailed,N001_NCT06863532,E5,3,모름,모름,True,No mention of DKA or hyperosmolar coma history.
@@ -4030,7 +4030,7 @@ p1,detailed,N002_NCT07786870,E3,1,모름,모름,True,No mention of malignancy or
 p1,detailed,N002_NCT07786870,E4,1,통과,모름,False,"Ten days ago in the ED: ""he had no fever, his chest X-ray was normal, and he was treated ... without antibiotics""; this suggests no infection then, but there is no information on current status. He currently has worsening wheezing, chest tightness and night-time cough, which are attributed to asthma"
 p1,detailed,N002_NCT07786870,E5,1,통과,통과,True,"ED treatment was ""a 5-day course of oral prednisone without antibiotics."" No other antibiotic use is mentioned, but the medication list contains none."
 p1,detailed,N002_NCT07786870,E6,1,모름,통과,False,"""his resting oxygen saturation is 97% on room air""; no home oxygen in the medication list."
-p1,detailed,N002_NCT07786870,E7,1,탈락,통과,False,"""his pulmonologist has scheduled his first dupilumab injection for next week"" – he has not yet received dupilumab; the current medication is high-dose budesonide-formoterol. No biologic is currently used."
+p1,detailed,N002_NCT07786870,E7,1,통과,통과,True,"""his pulmonologist has scheduled his first dupilumab injection for next week"" – he has not yet received dupilumab; the current medication is high-dose budesonide-formoterol. No biologic is currently used."
 p1,detailed,N002_NCT07786870,E8,1,통과,통과,True,"The patient is a 24-year-old man, so pregnancy is logically excluded."
 p1,detailed,N002_NCT07786870,I1,2,통과,통과,True,"""A 24-year-old man""; 24 > 18 and there is no upper age limit."
 p1,detailed,N002_NCT07786870,I2,2,모름,모름,True,"Asthma is diagnosed: ""A pulmonologist diagnosed asthma when he was 8 years old."" The description does not say whether the diagnosis followed GINA 2023 criteria (e.g., documented variable expiratory airflow limitation or reversibility testing). The recent spirometry showed only FEV1 68% predicted, wi"
@@ -4040,7 +4040,7 @@ p1,detailed,N002_NCT07786870,E3,2,모름,모름,True,No malignancy or oncology h
 p1,detailed,N002_NCT07786870,E4,2,통과,모름,False,"Findings argue against infection: ""he had no fever, his chest X-ray was normal, and he was treated ... without antibiotics."" However, the exacerbation was attributed to cat exposure, and current infection status and tuberculosis status are not stated. Current worsening symptoms (cough, wheeze) are n"
 p1,detailed,N002_NCT07786870,E5,2,통과,통과,True,"Ten days ago he was ""treated with a 5-day course of oral prednisone without antibiotics."""
 p1,detailed,N002_NCT07786870,E6,2,모름,통과,False,"""his resting oxygen saturation is 97% on room air""; no home oxygen therapy is mentioned in the medication list."
-p1,detailed,N002_NCT07786870,E7,2,탈락,통과,False,"""his pulmonologist has scheduled his first dupilumab injection for next week as part of standard care"", so he is not currently receiving dupilumab. Current medications are only budesonide-formoterol and recent prednisone. Enrollment would need to precede the first injection."
+p1,detailed,N002_NCT07786870,E7,2,통과,통과,True,"""his pulmonologist has scheduled his first dupilumab injection for next week as part of standard care"", so he is not currently receiving dupilumab. Current medications are only budesonide-formoterol and recent prednisone. Enrollment would need to precede the first injection."
 p1,detailed,N002_NCT07786870,E8,2,통과,통과,True,"The patient is a 24-year-old man, so pregnancy is logically ruled out."
 p1,detailed,N002_NCT07786870,I1,3,통과,통과,True,"""A 24-year-old man"" - age 24 is >18, and there is no upper age limit."
 p1,detailed,N002_NCT07786870,I2,3,모름,모름,True,"""A pulmonologist diagnosed asthma when he was 8 years old"" - a formal asthma diagnosis is on record. The description does not say whether it followed GINA 2023 criteria. It does mention spirometry (FEV1 68% predicted), but no bronchodilator reversibility or variability testing."
@@ -4050,7 +4050,7 @@ p1,detailed,N002_NCT07786870,E3,3,모름,모름,True,No mention of malignancy or
 p1,detailed,N002_NCT07786870,E4,3,통과,모름,False,"Ten days ago: ""he had no fever, his chest X-ray was normal, and he was treated... without antibiotics."" This suggests no infection then, but there is no current assessment. He now has worsening wheeze, chest tightness and night cough, with no current infection status given. TB is not mentioned."
 p1,detailed,N002_NCT07786870,E5,3,통과,통과,True,"Treated for the ED visit ten days ago ""with a 5-day course of oral prednisone without antibiotics."" No other antibiotic use is mentioned."
 p1,detailed,N002_NCT07786870,E6,3,모름,통과,False,"""his resting oxygen saturation is 97% on room air""; no oxygen therapy appears in his medications."
-p1,detailed,N002_NCT07786870,E7,3,탈락,통과,False,"""his pulmonologist has scheduled his first dupilumab injection for next week"" - he has not yet started any biologic. Current medications are budesonide-formoterol and recent prednisone only. Caveat: the first injection is imminent and would make him currently treated if given before enrollment."
+p1,detailed,N002_NCT07786870,E7,3,통과,통과,True,"""his pulmonologist has scheduled his first dupilumab injection for next week"" - he has not yet started any biologic. Current medications are budesonide-formoterol and recent prednisone only. Caveat: the first injection is imminent and would make him currently treated if given before enrollment."
 p1,detailed,N002_NCT07786870,E8,3,통과,통과,True,"The patient is a 24-year-old man, so pregnancy is not possible."
 p1,detailed,N002_NCT07139899,I1,1,등록 후 확인,등록 후 확인,True,Informed consent is obtained only when the patient applies and is enrolled; nothing in the description addresses it.
 p1,detailed,N002_NCT07139899,I2,1,통과,통과,True,"""A 24-year-old man"""
@@ -4115,7 +4115,7 @@ p1,detailed,N002_NCT07139899,E11,3,등록 후 확인,등록 후 확인,True,This
 p1,detailed,S002_NCT06068179,I1,1,통과,통과,True,A 29-year-old woman; within 18 to 60 years.
 p1,detailed,S002_NCT06068179,I2,1,통과,통과,True,An endocrinologist diagnosed Graves' disease last week; TSH receptor antibodies positive.
 p1,detailed,S002_NCT06068179,E1,1,통과,통과,True,"She has not yet started antithyroid medication and has never received radioactive iodine or thyroid surgery; diagnosis was last week, so no relapse."
-p1,detailed,S002_NCT06068179,E2,1,통과,통과,True,"Positive TSH receptor antibodies, ultrasound shows diffuse enlargement with increased blood flow and no nodules, and the thyroid is non-tender, which supports Graves' disease and argues against toxic nodular disease, adenoma, and subacute thyroiditis. Hashimoto's and iodine-induced hyperthyroidism a"
+p1,detailed,S002_NCT06068179,E2,1,모름,통과,False,"Positive TSH receptor antibodies, ultrasound shows diffuse enlargement with increased blood flow and no nodules, and the thyroid is non-tender, which supports Graves' disease and argues against toxic nodular disease, adenoma, and subacute thyroiditis. Hashimoto's and iodine-induced hyperthyroidism a"
 p1,detailed,S002_NCT06068179,E3,1,통과,통과,True,"She has mild upper eyelid retraction but no eye pain, double vision, or bulging of the eyes, so no moderate to severe thyroid eye disease requiring intervention."
 p1,detailed,S002_NCT06068179,E4,1,모름,통과,False,"Ultrasound shows diffuse enlargement with no nodules, and no thyroid cancer is mentioned. No surgery is required."
 p1,detailed,S002_NCT06068179,E5,1,통과,통과,True,"ALT 28 U/L, AST 25 U/L, and creatinine 62 µmol/L (below 110 µmol/L for females); none is near the threshold."
@@ -4128,7 +4128,7 @@ p1,detailed,S002_NCT06068179,E11,1,등록 후 확인,모름,False,Willingness an
 p1,detailed,S002_NCT06068179,I1,2,통과,통과,True,"""A 29-year-old woman"" – within 18 to 60 years."
 p1,detailed,S002_NCT06068179,I2,2,통과,통과,True,"""An endocrinologist diagnosed Graves' disease last week; she has not yet started antithyroid medication"" – newly diagnosed."
 p1,detailed,S002_NCT06068179,E1,2,통과,통과,True,"Diagnosed last week, ""has not yet started antithyroid medication and has never received radioactive iodine or thyroid surgery""; newly diagnosed so no relapse."
-p1,detailed,S002_NCT06068179,E2,2,통과,통과,True,"Positive TSH receptor antibodies, diffuse enlargement with increased blood flow and ""no nodules"" on ultrasound, non-tender gland; endocrinologist diagnosed Graves' disease, which argues against toxic nodular disease, adenoma, and subacute thyroiditis."
+p1,detailed,S002_NCT06068179,E2,2,모름,통과,False,"Positive TSH receptor antibodies, diffuse enlargement with increased blood flow and ""no nodules"" on ultrasound, non-tender gland; endocrinologist diagnosed Graves' disease, which argues against toxic nodular disease, adenoma, and subacute thyroiditis."
 p1,detailed,S002_NCT06068179,E3,2,통과,통과,True,"""mild upper eyelid retraction but no eye pain, double vision, or bulging of the eyes"" – no moderate to severe thyroid eye disease requiring intervention."
 p1,detailed,S002_NCT06068179,E4,2,모름,통과,False,"Ultrasound shows ""diffuse enlargement with increased blood flow and no nodules""; no thyroid cancer and no surgery needed is described."
 p1,detailed,S002_NCT06068179,E5,2,통과,통과,True,"ALT 28 U/L, AST 25 U/L, creatinine 62 µmol/L – not above 3× ULN and below 110 µmol/L for females."
@@ -4141,7 +4141,7 @@ p1,detailed,S002_NCT06068179,E11,2,등록 후 확인,모름,False,Willingness an
 p1,detailed,S002_NCT06068179,I1,3,통과,통과,True,"""A 29-year-old woman"" – within 18 to 60 years."
 p1,detailed,S002_NCT06068179,I2,3,통과,통과,True,"""An endocrinologist diagnosed Graves' disease last week; she has not yet started antithyroid medication"" – newly diagnosed."
 p1,detailed,S002_NCT06068179,E1,3,통과,통과,True,"Diagnosed last week, ""has not yet started antithyroid medication and has never received radioactive iodine or thyroid surgery""; newly diagnosed so no relapse."
-p1,detailed,S002_NCT06068179,E2,3,통과,통과,True,"Positive TSH receptor antibodies, ultrasound shows ""diffuse enlargement with increased blood flow and no nodules"" – excludes toxic nodular goiter/adenoma; non-tender gland argues against subacute thyroiditis; diagnosis is Graves'."
+p1,detailed,S002_NCT06068179,E2,3,모름,통과,False,"Positive TSH receptor antibodies, ultrasound shows ""diffuse enlargement with increased blood flow and no nodules"" – excludes toxic nodular goiter/adenoma; non-tender gland argues against subacute thyroiditis; diagnosis is Graves'."
 p1,detailed,S002_NCT06068179,E3,3,통과,통과,True,"""mild upper eyelid retraction but no eye pain, double vision, or bulging of the eyes"" – no moderate to severe thyroid eye disease requiring intervention."
 p1,detailed,S002_NCT06068179,E4,3,모름,통과,False,"Ultrasound shows diffuse enlargement ""and no nodules""; no thyroid cancer described and no surgery needed."
 p1,detailed,S002_NCT06068179,E5,3,통과,통과,True,"ALT 28 U/L, AST 25 U/L (not >3x ULN); creatinine 62 µmol/L (<110 µmol/L for females)."
@@ -4380,14 +4380,14 @@ p2,detailed,S008_NCT07299695,E9,3,모름,모름,True,No information on tutorship
 p2,detailed,S008_NCT07299695,E10,3,모름,모름,True,No information on deprivation of liberty or court protection.
 p2,detailed,S008_NCT07299695,E11,3,등록 후 확인,등록 후 확인,True,Willingness to participate and provide consent is determined at enrollment.
 p2,detailed,N001_NCT07082114,I1,1,통과,통과,True,58-year-old woman; within 18–75 and female.
-p2,detailed,N001_NCT07082114,I2,1,통과,모름,False,"'9-year history of type 2 diabetes' gives duration well over 3 months, but whether the diagnosis was made per WHO criteria is not stated."
+p2,detailed,N001_NCT07082114,I2,1,모름,모름,True,"'9-year history of type 2 diabetes' gives duration well over 3 months, but whether the diagnosis was made per WHO criteria is not stated."
 p2,detailed,N001_NCT07082114,I3,1,통과,통과,True,'metformin 1000 mg twice daily at the same dose for the past two years' (2000 mg/day).
 p2,detailed,N001_NCT07082114,I4,1,등록 후 확인,모름,False,"HbA1c 9.8% at clinic last week (within range), but the screening local lab value is not yet measured."
 p2,detailed,N001_NCT07082114,I5,1,등록 후 확인,등록 후 확인,True,"Requires central laboratory HbA1c prior to randomization, which occurs after enrollment."
 p2,detailed,N001_NCT07082114,I6,1,통과,통과,True,'Her BMI is 31.2 kg/m²'
 p2,detailed,N001_NCT07082114,I7,1,통과,통과,True,"'She is postmenopausal' – not of childbearing potential, so contraception requirement does not apply; she is female."
 p2,detailed,N001_NCT07082114,I8,1,등록 후 확인,등록 후 확인,True,"Ability/willingness to comply, maintain habits, and give written informed consent is determined after applying."
-p2,detailed,N001_NCT07082114,E1,1,통과,통과,True,"Described as 'type 2 diabetes' with a 9-year history; no mention of type 1, LADA, special types, and she is not described as having gestational diabetes (postmenopausal, 58)."
+p2,detailed,N001_NCT07082114,E1,1,모름,통과,False,"Described as 'type 2 diabetes' with a 9-year history; no mention of type 1, LADA, special types, and she is not described as having gestational diabetes (postmenopausal, 58)."
 p2,detailed,N001_NCT07082114,E2,1,모름,모름,True,"No information on DKA, lactic acidosis, or hyperosmolar coma in the past 6 months; she reports fatigue and thirst only."
 p2,detailed,N001_NCT07082114,E3,1,모름,모름,True,"No mention of personal or family history of medullary thyroid carcinoma, C-cell hyperplasia, or MEN2 (hypothyroidism on levothyroxine only)."
 p2,detailed,N001_NCT07082114,E4,1,통과,모름,False,"'She has no history of pancreatitis' but pancreatic injury and high-risk factors for pancreatitis (e.g., alcohol, hypertriglyceridemia, gallstones) are not addressed."
@@ -4413,14 +4413,14 @@ p2,detailed,N001_NCT07082114,E23,1,모름,모름,True,"No allergy history is giv
 p2,detailed,N001_NCT07082114,E24,1,모름,모름,True,No information on participation in other clinical studies.
 p2,detailed,N001_NCT07082114,E25,1,등록 후 확인,등록 후 확인,True,Investigator judgment of suitability is determined by the study team.
 p2,detailed,N001_NCT07082114,I1,2,통과,통과,True,"58-year-old woman: within 18–75, female."
-p2,detailed,N001_NCT07082114,I2,2,통과,모름,False,"Described as 'a 9-year history of type 2 diabetes' (duration ≥3 months), but no explicit record that the diagnosis meets WHO criteria."
+p2,detailed,N001_NCT07082114,I2,2,모름,모름,True,"Described as 'a 9-year history of type 2 diabetes' (duration ≥3 months), but no explicit record that the diagnosis meets WHO criteria."
 p2,detailed,N001_NCT07082114,I3,2,통과,통과,True,"'taken metformin 1000 mg twice daily at the same dose for the past two years' = 2000 mg/day, stable for ~2 years."
 p2,detailed,N001_NCT07082114,I4,2,등록 후 확인,모름,False,"HbA1c 9.8% measured at her clinic last week, within 7.5–11.0%, but the screening value from the local laboratory for this trial has not been measured yet."
 p2,detailed,N001_NCT07082114,I5,2,등록 후 확인,등록 후 확인,True,"Requires HbA1c by the specified central laboratory prior to randomization, which occurs after enrollment."
 p2,detailed,N001_NCT07082114,I6,2,통과,통과,True,'Her BMI is 31.2 kg/m²' – within 19.0–40.0.
 p2,detailed,N001_NCT07082114,I7,2,통과,등록 후 확인,False,"Agreement to use contraception is a willingness matter. She is postmenopausal, so childbearing potential is likely absent, but willingness is determined at consent."
 p2,detailed,N001_NCT07082114,I8,2,등록 후 확인,등록 후 확인,True,"Ability to comply, willingness to maintain habits, and written informed consent are determined at/after enrollment."
-p2,detailed,N001_NCT07082114,E1,2,통과,모름,False,"Described as type 2 diabetes; no mention of type 1, LADA, special types, or gestational diabetes, though a formal exclusion of LADA/special types is not recorded. Gestational diabetes is not relevant to her described history."
+p2,detailed,N001_NCT07082114,E1,2,모름,모름,True,"Described as type 2 diabetes; no mention of type 1, LADA, special types, or gestational diabetes, though a formal exclusion of LADA/special types is not recorded. Gestational diabetes is not relevant to her described history."
 p2,detailed,N001_NCT07082114,E2,2,모름,모름,True,"No mention of DKA, lactic acidosis, or hyperosmolar coma in the last 6 months."
 p2,detailed,N001_NCT07082114,E3,2,모름,모름,True,"No information on personal or family history of medullary thyroid carcinoma, C-cell hyperplasia, or MEN2 (hypothyroidism is mentioned but not these)."
 p2,detailed,N001_NCT07082114,E4,2,통과,모름,False,'She has no history of pancreatitis' but pancreatic injury and high-risk factors for pancreatitis are not addressed.
@@ -4446,14 +4446,14 @@ p2,detailed,N001_NCT07082114,E23,2,모름,모름,True,"No information on allergi
 p2,detailed,N001_NCT07082114,E24,2,모름,모름,True,No information on participation in other clinical studies.
 p2,detailed,N001_NCT07082114,E25,2,등록 후 확인,등록 후 확인,True,Depends on investigator judgment of suitability.
 p2,detailed,N001_NCT07082114,I1,3,통과,통과,True,58-year-old woman: within 18–75 and female.
-p2,detailed,N001_NCT07082114,I2,3,통과,통과,True,"""9-year history of type 2 diabetes"" – diagnosis on record, duration well over 3 months. Whether it was formally per WHO criteria is not stated but T2DM diagnosis is documented."
+p2,detailed,N001_NCT07082114,I2,3,모름,통과,False,"""9-year history of type 2 diabetes"" – diagnosis on record, duration well over 3 months. Whether it was formally per WHO criteria is not stated but T2DM diagnosis is documented."
 p2,detailed,N001_NCT07082114,I3,3,통과,모름,False,"""metformin 1000 mg twice daily at the same dose for the past two years"" = 2000 mg/day, stable for 2 years, which exceeds 8 and 12 weeks. However, timing relative to screening/randomization is in the future, but stability is already established."
 p2,detailed,N001_NCT07082114,I4,3,등록 후 확인,모름,False,"HbA1c 9.8% measured at her clinic last week, within 7.5–11.0%, but the criterion requires screening HbA1c by the trial's local laboratory, which has not been done yet."
 p2,detailed,N001_NCT07082114,I5,3,등록 후 확인,등록 후 확인,True,"Requires central laboratory HbA1c prior to randomization, which only occurs after enrollment."
 p2,detailed,N001_NCT07082114,I6,3,통과,통과,True,"""Her BMI is 31.2 kg/m²"" – within 19.0–40.0."
 p2,detailed,N001_NCT07082114,I7,3,통과,통과,True,"""She is postmenopausal"" – not of childbearing potential, and she is female, so the contraception requirement does not apply."
 p2,detailed,N001_NCT07082114,I8,3,등록 후 확인,등록 후 확인,True,"Ability/willingness to comply, maintain diet/exercise and provide written informed consent are determined after applying."
-p2,detailed,N001_NCT07082114,E1,3,통과,모름,False,"Diagnosis is type 2 diabetes, but no explicit statement ruling out LADA, special types of diabetes, or gestational diabetes; she is 58 with a 9-year history, no mention of these."
+p2,detailed,N001_NCT07082114,E1,3,모름,모름,True,"Diagnosis is type 2 diabetes, but no explicit statement ruling out LADA, special types of diabetes, or gestational diabetes; she is 58 with a 9-year history, no mention of these."
 p2,detailed,N001_NCT07082114,E2,3,모름,모름,True,"No mention of DKA, lactic acidosis, hyperosmolar coma or other acute complications in the past 6 months."
 p2,detailed,N001_NCT07082114,E3,3,모름,모름,True,"No information on personal or family history of medullary thyroid carcinoma, C-cell hyperplasia or MEN2 (she has hypothyroidism on levothyroxine, but nothing about these)."
 p2,detailed,N001_NCT07082114,E4,3,통과,모름,False,"""She has no history of pancreatitis"" rules out pancreatitis, but pancreatic injury and other high-risk factors for pancreatitis (e.g., hypertriglyceridemia, heavy alcohol use, gallstones) are not addressed."
@@ -4480,7 +4480,7 @@ p2,detailed,N001_NCT07082114,E24,3,모름,모름,True,No information on particip
 p2,detailed,N001_NCT07082114,E25,3,등록 후 확인,등록 후 확인,True,Investigator judgment of suitability is determined by the study team.
 p2,detailed,N001_NCT06863532,I1,1,등록 후 확인,등록 후 확인,True,Ability and willingness to understand and sign informed consent is not described and is determined at enrollment.
 p2,detailed,N001_NCT06863532,I2,1,통과,통과,True,58-year-old woman; within 18-74 years.
-p2,detailed,N001_NCT06863532,I3,1,통과,통과,True,"""A 58-year-old woman with a 9-year history of type 2 diabetes""; HbA1c 9.8%, fasting glucose 11.2 mmol/L."
+p2,detailed,N001_NCT06863532,I3,1,모름,통과,False,"""A 58-year-old woman with a 9-year history of type 2 diabetes""; HbA1c 9.8%, fasting glucose 11.2 mmol/L."
 p2,detailed,N001_NCT06863532,I4,1,탈락,탈락,True,"""has never used any other glucose-lowering medication, including SGLT2 inhibitors""; she is on metformin, not SGLT2i monotherapy."
 p2,detailed,N001_NCT06863532,I5,1,탈락,탈락,True,"""metformin 1000 mg twice daily"" = 2000 mg/day, which is outside 500-1000 mg/day, though taken at the same dose for two years."
 p2,detailed,N001_NCT06863532,I6,1,탈락,탈락,True,"""HbA1c measured at her clinic last week was 9.8%"", above the 9.5% upper limit."
@@ -4489,8 +4489,8 @@ p2,detailed,N001_NCT06863532,I8,1,통과,통과,True,"""Her BMI is 31.2 kg/m²""
 p2,detailed,N001_NCT06863532,I9,1,모름,모름,True,No urine ketone result is given.
 p2,detailed,N001_NCT06863532,I10,1,통과,통과,True,"""her eGFR is 78 mL/min/1.73 m²"" (≥60)."
 p2,detailed,N001_NCT06863532,I11,1,등록 후 확인,등록 후 확인,True,Agreement to maintain diet and exercise and to use a glucose meter and keep records is about willingness and future compliance.
-p2,detailed,N001_NCT06863532,E1,1,통과,모름,False,Described as type 2 diabetes with a 9-year history; type 1 is not explicitly excluded.
-p2,detailed,N001_NCT06863532,E2,1,통과,모름,False,No mention of secondary diabetes.
+p2,detailed,N001_NCT06863532,E1,1,모름,모름,True,Described as type 2 diabetes with a 9-year history; type 1 is not explicitly excluded.
+p2,detailed,N001_NCT06863532,E2,1,모름,모름,True,No mention of secondary diabetes.
 p2,detailed,N001_NCT06863532,E3,1,모름,모름,True,No transplant history is mentioned.
 p2,detailed,N001_NCT06863532,E4,1,모름,모름,True,"""no history of pancreatitis"" is stated, but pancreatic resection is not mentioned."
 p2,detailed,N001_NCT06863532,E5,1,모름,모름,True,No mention of DKA or hyperosmolar coma.
@@ -4516,7 +4516,7 @@ p2,detailed,N001_NCT06863532,E24,1,모름,모름,True,No clinical trial particip
 p2,detailed,N001_NCT06863532,E25,1,등록 후 확인,등록 후 확인,True,Determined by investigator judgment.
 p2,detailed,N001_NCT06863532,I1,2,등록 후 확인,등록 후 확인,True,Ability and willingness to understand and sign informed consent is determined at enrollment; not described.
 p2,detailed,N001_NCT06863532,I2,2,통과,통과,True,"""A 58-year-old woman"" – female, age within 18-74."
-p2,detailed,N001_NCT06863532,I3,2,통과,통과,True,"""9-year history of type 2 diabetes""; HbA1c 9.8%, fasting glucose 11.2 mmol/L, consistent with diagnostic criteria."
+p2,detailed,N001_NCT06863532,I3,2,모름,통과,False,"""9-year history of type 2 diabetes""; HbA1c 9.8%, fasting glucose 11.2 mmol/L, consistent with diagnostic criteria."
 p2,detailed,N001_NCT06863532,I4,2,탈락,탈락,True,"""has never used any other glucose-lowering medication, including SGLT2 inhibitors""; she is on metformin only, not SGLT2i monotherapy."
 p2,detailed,N001_NCT06863532,I5,2,탈락,탈락,True,"""metformin 1000 mg twice daily"" = 2000 mg/day, exceeding the 500-1000 mg/day range, at the same dose for two years."
 p2,detailed,N001_NCT06863532,I6,2,탈락,탈락,True,"""Her HbA1c measured at her clinic last week was 9.8%"" – above 9.5%."
@@ -4525,8 +4525,8 @@ p2,detailed,N001_NCT06863532,I8,2,통과,통과,True,"""Her BMI is 31.2 kg/m²""
 p2,detailed,N001_NCT06863532,I9,2,모름,모름,True,No urine ketone result provided.
 p2,detailed,N001_NCT06863532,I10,2,통과,통과,True,"""her eGFR is 78 mL/min/1.73 m²"" – ≥60."
 p2,detailed,N001_NCT06863532,I11,2,등록 후 확인,등록 후 확인,True,Agreement to maintain diet/exercise and willingness/ability to use SMBG and keep records are future commitments assessed at enrollment.
-p2,detailed,N001_NCT06863532,E1,2,통과,통과,True,Documented as type 2 diabetes with a 9-year history; no type 1 diabetes mentioned.
-p2,detailed,N001_NCT06863532,E2,2,통과,모름,False,"Diagnosis is type 2 diabetes; no mention of secondary diabetes, but not explicitly excluded."
+p2,detailed,N001_NCT06863532,E1,2,모름,통과,False,Documented as type 2 diabetes with a 9-year history; no type 1 diabetes mentioned.
+p2,detailed,N001_NCT06863532,E2,2,모름,모름,True,"Diagnosis is type 2 diabetes; no mention of secondary diabetes, but not explicitly excluded."
 p2,detailed,N001_NCT06863532,E3,2,모름,모름,True,No transplant history mentioned.
 p2,detailed,N001_NCT06863532,E4,2,모름,모름,True,"""She has no history of pancreatitis"" – but pancreatic resection is not mentioned."
 p2,detailed,N001_NCT06863532,E5,2,모름,모름,True,No mention of DKA or hyperosmolar coma history.
@@ -4552,7 +4552,7 @@ p2,detailed,N001_NCT06863532,E24,2,모름,모름,True,No clinical trial particip
 p2,detailed,N001_NCT06863532,E25,2,등록 후 확인,등록 후 확인,True,Determined by investigator judgment.
 p2,detailed,N001_NCT06863532,I1,3,등록 후 확인,등록 후 확인,True,Ability and willingness to understand and sign informed consent is not stated and is determined at enrollment.
 p2,detailed,N001_NCT06863532,I2,3,통과,통과,True,58-year-old woman; within 18-74 years.
-p2,detailed,N001_NCT06863532,I3,3,통과,통과,True,"9-year history of type 2 diabetes, HbA1c 9.8%, fasting glucose 11.2 mmol/L."
+p2,detailed,N001_NCT06863532,I3,3,모름,통과,False,"9-year history of type 2 diabetes, HbA1c 9.8%, fasting glucose 11.2 mmol/L."
 p2,detailed,N001_NCT06863532,I4,3,탈락,탈락,True,"""has never used any other glucose-lowering medication, including SGLT2 inhibitors"" - she is not on SGLT2i monotherapy for 8 weeks."
 p2,detailed,N001_NCT06863532,I5,3,탈락,탈락,True,"Metformin 1000 mg twice daily (2000 mg/day), exceeding the 500-1000 mg/day range, though stable for two years."
 p2,detailed,N001_NCT06863532,I6,3,탈락,탈락,True,"""HbA1c measured at her clinic last week was 9.8%"" - above 9.5%."
@@ -4561,8 +4561,8 @@ p2,detailed,N001_NCT06863532,I8,3,통과,통과,True,"BMI is 31.2 kg/m², which 
 p2,detailed,N001_NCT06863532,I9,3,모름,모름,True,No urine ketone test result is given.
 p2,detailed,N001_NCT06863532,I10,3,통과,통과,True,"eGFR 78 mL/min/1.73 m², which is at least 60."
 p2,detailed,N001_NCT06863532,I11,3,등록 후 확인,등록 후 확인,True,Agreement to maintain diet/exercise and ability and willingness to use a glucose meter and keep records are future commitments.
-p2,detailed,N001_NCT06863532,E1,3,통과,모름,False,"Described as type 2 diabetes with a 9-year history; type 1 is not explicitly ruled out, but T2DM is the stated diagnosis."
-p2,detailed,N001_NCT06863532,E2,3,통과,모름,False,No mention of secondary diabetes.
+p2,detailed,N001_NCT06863532,E1,3,모름,모름,True,"Described as type 2 diabetes with a 9-year history; type 1 is not explicitly ruled out, but T2DM is the stated diagnosis."
+p2,detailed,N001_NCT06863532,E2,3,모름,모름,True,No mention of secondary diabetes.
 p2,detailed,N001_NCT06863532,E3,3,모름,모름,True,No transplant history mentioned.
 p2,detailed,N001_NCT06863532,E4,3,모름,모름,True,"""She has no history of pancreatitis""; pancreatic resection is not mentioned."
 p2,detailed,N001_NCT06863532,E5,3,모름,모름,True,No mention of diabetic ketoacidosis or hyperosmolar coma.
@@ -4594,7 +4594,7 @@ p2,detailed,N002_NCT07786870,E3,1,모름,모름,True,No mention of malignancy or
 p2,detailed,N002_NCT07786870,E4,1,통과,모름,False,"ED visit ten days ago: ""he had no fever, his chest X-ray was normal, and he was treated ... without antibiotics."" This suggests no infection then, but current status and TB are not stated; no formal confirmation of absence of active infection now."
 p2,detailed,N002_NCT07786870,E5,1,통과,통과,True,"Treated with a 5-day course of oral prednisone ""without antibiotics"" at the ED visit ten days ago; no other antibiotic use is mentioned. Medications listed contain no antibiotics."
 p2,detailed,N002_NCT07786870,E6,1,모름,모름,True,"Resting oxygen saturation is 97% on room air, but home oxygen therapy is not explicitly addressed."
-p2,detailed,N002_NCT07786870,E7,1,탈락,통과,False,"""his pulmonologist has scheduled his first dupilumab injection for next week"" - he is not currently on a biologic; the first injection has not yet been given. No other biologics are mentioned."
+p2,detailed,N002_NCT07786870,E7,1,통과,통과,True,"""his pulmonologist has scheduled his first dupilumab injection for next week"" - he is not currently on a biologic; the first injection has not yet been given. No other biologics are mentioned."
 p2,detailed,N002_NCT07786870,E8,1,통과,통과,True,Patient is a 24-year-old man; pregnancy is not possible.
 p2,detailed,N002_NCT07786870,I1,2,통과,통과,True,A 24-year-old man
 p2,detailed,N002_NCT07786870,I2,2,모름,통과,False,"A pulmonologist diagnosed asthma when he was 8 years old; current symptoms of wheezing, chest tightness, night cough; FEV1 68% predicted with ATS-quality spirometry."
@@ -4604,7 +4604,7 @@ p2,detailed,N002_NCT07786870,E3,2,모름,모름,True,No mention of malignancy or
 p2,detailed,N002_NCT07786870,E4,2,통과,모름,False,"ED visit ten days ago: ""he had no fever, his chest X-ray was normal""; no current infection is documented, but TB and current respiratory infection status are not explicitly stated."
 p2,detailed,N002_NCT07786870,E5,2,통과,통과,True,"Treated with ""a 5-day course of oral prednisone without antibiotics."""
 p2,detailed,N002_NCT07786870,E6,2,모름,통과,False,"""resting oxygen saturation is 97% on room air""; medications listed do not include home oxygen."
-p2,detailed,N002_NCT07786870,E7,2,탈락,통과,False,"""his pulmonologist has scheduled his first dupilumab injection for next week"" — he is not currently receiving it, and no other biologic is mentioned."
+p2,detailed,N002_NCT07786870,E7,2,통과,통과,True,"""his pulmonologist has scheduled his first dupilumab injection for next week"" — he is not currently receiving it, and no other biologic is mentioned."
 p2,detailed,N002_NCT07786870,E8,2,통과,통과,True,Patient is a 24-year-old man.
 p2,detailed,N002_NCT07786870,I1,3,통과,통과,True,"""A 24-year-old man""; age 24 > 18."
 p2,detailed,N002_NCT07786870,I2,3,모름,모름,True,"""A pulmonologist diagnosed asthma when he was 8 years old"". The description does not say whether the diagnosis followed GINA 2023 criteria."
@@ -4614,7 +4614,7 @@ p2,detailed,N002_NCT07786870,E3,3,모름,모름,True,No mention of malignancy or
 p2,detailed,N002_NCT07786870,E4,3,통과,모름,False,"The description notes ""he had no fever, his chest X-ray was normal"" at the ED visit ten days ago, but it does not say whether he currently has a respiratory infection or tuberculosis. He had a recent asthma exacerbation."
 p2,detailed,N002_NCT07786870,E5,3,통과,통과,True,"""treated with a 5-day course of oral prednisone without antibiotics."""
 p2,detailed,N002_NCT07786870,E6,3,모름,모름,True,"No home oxygen therapy is mentioned. His oxygen saturation is 97% on room air, but the description does not say whether he uses home oxygen."
-p2,detailed,N002_NCT07786870,E7,3,탈락,통과,False,"""his pulmonologist has scheduled his first dupilumab injection for next week"". He has not yet started dupilumab, so he is not currently being treated with it."
+p2,detailed,N002_NCT07786870,E7,3,통과,통과,True,"""his pulmonologist has scheduled his first dupilumab injection for next week"". He has not yet started dupilumab, so he is not currently being treated with it."
 p2,detailed,N002_NCT07786870,E8,3,통과,통과,True,"The patient is a 24-year-old man, so pregnancy is not possible."
 p2,detailed,N002_NCT07139899,I1,1,등록 후 확인,등록 후 확인,True,Informed consent is completed after the patient applies; nothing in the description addresses it.
 p2,detailed,N002_NCT07139899,I2,1,통과,통과,True,"""A 24-year-old man"""
@@ -4679,7 +4679,7 @@ p2,detailed,N002_NCT07139899,E11,3,등록 후 확인,등록 후 확인,True,This
 p2,detailed,S002_NCT06068179,I1,1,통과,통과,True,A 29-year-old woman; age 29 is within 18 to 60 years.
 p2,detailed,S002_NCT06068179,I2,1,통과,통과,True,An endocrinologist diagnosed Graves' disease last week; she has not yet started antithyroid medication.
 p2,detailed,S002_NCT06068179,E1,1,통과,통과,True,Newly diagnosed last week; she has not yet started antithyroid medication and has never received radioactive iodine or thyroid surgery. No relapse is described.
-p2,detailed,S002_NCT06068179,E2,1,통과,통과,True,"Positive TSH receptor antibodies, ultrasound shows diffuse enlargement with increased blood flow and no nodules, and a Graves' diagnosis was made by an endocrinologist. Thyroid is non-tender."
+p2,detailed,S002_NCT06068179,E2,1,모름,통과,False,"Positive TSH receptor antibodies, ultrasound shows diffuse enlargement with increased blood flow and no nodules, and a Graves' diagnosis was made by an endocrinologist. Thyroid is non-tender."
 p2,detailed,S002_NCT06068179,E3,1,통과,통과,True,"Mild upper eyelid retraction but no eye pain, double vision, or bulging of the eyes."
 p2,detailed,S002_NCT06068179,E4,1,모름,통과,False,Ultrasound shows diffuse enlargement with no nodules; no thyroid cancer or surgery need is described.
 p2,detailed,S002_NCT06068179,E5,1,통과,통과,True,"ALT 28 U/L, AST 25 U/L, creatinine 62 µmol/L (below the 110 µmol/L female threshold)."
@@ -4692,7 +4692,7 @@ p2,detailed,S002_NCT06068179,E11,1,등록 후 확인,등록 후 확인,True,Will
 p2,detailed,S002_NCT06068179,I1,2,통과,통과,True,A 29-year-old woman; age 29 is within 18 to 60 years.
 p2,detailed,S002_NCT06068179,I2,2,통과,통과,True,An endocrinologist diagnosed Graves' disease last week; she has not yet started antithyroid medication.
 p2,detailed,S002_NCT06068179,E1,2,통과,통과,True,"Diagnosed last week, has not yet started antithyroid medication and has never received radioactive iodine or thyroid surgery. A new diagnosis means no relapse."
-p2,detailed,S002_NCT06068179,E2,2,통과,통과,True,"Positive TSH receptor antibodies and ultrasound with diffuse enlargement, increased blood flow, and no nodules; diagnosed as Graves' disease. The thyroid is described as non-tender."
+p2,detailed,S002_NCT06068179,E2,2,모름,통과,False,"Positive TSH receptor antibodies and ultrasound with diffuse enlargement, increased blood flow, and no nodules; diagnosed as Graves' disease. The thyroid is described as non-tender."
 p2,detailed,S002_NCT06068179,E3,2,통과,통과,True,"Mild upper eyelid retraction but no eye pain, double vision, or bulging of the eyes, so no moderate to severe thyroid eye disease requiring intervention."
 p2,detailed,S002_NCT06068179,E4,2,모름,모름,True,"The ultrasound shows no nodules, but thyroid cancer is not explicitly mentioned and no surgery is described as planned."
 p2,detailed,S002_NCT06068179,E5,2,통과,통과,True,"ALT 28 U/L, AST 25 U/L, creatinine 62 µmol/L. Creatinine is below the 110 µmol/L female threshold, and the transaminases are within the normal range and not above 3 times the upper limit."
@@ -4705,7 +4705,7 @@ p2,detailed,S002_NCT06068179,E11,2,등록 후 확인,등록 후 확인,True,Will
 p2,detailed,S002_NCT06068179,I1,3,통과,통과,True,A 29-year-old woman; age 29 is within 18 to 60 years.
 p2,detailed,S002_NCT06068179,I2,3,통과,통과,True,An endocrinologist diagnosed Graves' disease last week; she has not yet started antithyroid medication.
 p2,detailed,S002_NCT06068179,E1,3,통과,통과,True,"Diagnosed last week, has not yet started antithyroid medication and has never received radioactive iodine or thyroid surgery. A new diagnosis cannot be a relapse."
-p2,detailed,S002_NCT06068179,E2,3,통과,통과,True,"Positive TSH receptor antibodies, diffuse enlargement with increased blood flow and no nodules on ultrasound, and a non-tender gland; an endocrinologist diagnosed Graves' disease."
+p2,detailed,S002_NCT06068179,E2,3,모름,통과,False,"Positive TSH receptor antibodies, diffuse enlargement with increased blood flow and no nodules on ultrasound, and a non-tender gland; an endocrinologist diagnosed Graves' disease."
 p2,detailed,S002_NCT06068179,E3,3,통과,통과,True,"Mild upper eyelid retraction but no eye pain, double vision, or bulging of the eyes, so there is no moderate to severe thyroid eye disease needing intervention."
 p2,detailed,S002_NCT06068179,E4,3,모름,통과,False,"Thyroid ultrasound shows diffuse enlargement with no nodules. She has not had surgery, and no thyroid cancer is described."
 p2,detailed,S002_NCT06068179,E5,3,통과,통과,True,"ALT 28 U/L, AST 25 U/L, creatinine 62 µmol/L (below the 110 µmol/L female threshold). ALT and AST are within normal range, so they are not above 3 times the upper limit."
@@ -4944,14 +4944,14 @@ v3,detailed,S008_NCT07299695,E9,3,모름,모름,True,No information on tutorship
 v3,detailed,S008_NCT07299695,E10,3,모름,모름,True,No information on deprivation of liberty or court protection.
 v3,detailed,S008_NCT07299695,E11,3,등록 후 확인,등록 후 확인,True,Willingness to participate and provide consent is determined at enrollment.
 v3,detailed,N001_NCT07082114,I1,1,통과,통과,True,58-year-old woman.
-v3,detailed,N001_NCT07082114,I2,1,통과,모름,False,"Description states a ""9-year history of type 2 diabetes"", so the duration exceeds 3 months, but it does not say the diagnosis was made per WHO criteria."
+v3,detailed,N001_NCT07082114,I2,1,모름,모름,True,"Description states a ""9-year history of type 2 diabetes"", so the duration exceeds 3 months, but it does not say the diagnosis was made per WHO criteria."
 v3,detailed,N001_NCT07082114,I3,1,통과,통과,True,"""metformin 1000 mg twice daily at the same dose for the past two years"" (2000 mg/day)."
 v3,detailed,N001_NCT07082114,I4,1,등록 후 확인,통과,False,"""Her HbA1c measured at her clinic last week was 9.8%"", which is within 7.5–11.0%. The formal screening value from the local laboratory will be measured later."
 v3,detailed,N001_NCT07082114,I5,1,등록 후 확인,등록 후 확인,True,"Requires a central laboratory HbA1c measured prior to randomization, which only exists after enrollment."
 v3,detailed,N001_NCT07082114,I6,1,통과,통과,True,"""Her BMI is 31.2 kg/m²""."
 v3,detailed,N001_NCT07082114,I7,1,통과,등록 후 확인,False,"Willingness to use contraception is an agreement given after applying. She is postmenopausal, so she is likely not of childbearing potential, but the agreement itself is a post-enrollment matter."
 v3,detailed,N001_NCT07082114,I8,1,등록 후 확인,등록 후 확인,True,"Ability to comply, willingness to maintain diet and exercise, and providing written informed consent are determined after applying."
-v3,detailed,N001_NCT07082114,E1,1,통과,모름,False,"Type 2 diabetes is described, but the description does not rule out LADA or special types of diabetes. Gestational diabetes is not applicable, though no explicit statement addresses it."
+v3,detailed,N001_NCT07082114,E1,1,모름,모름,True,"Type 2 diabetes is described, but the description does not rule out LADA or special types of diabetes. Gestational diabetes is not applicable, though no explicit statement addresses it."
 v3,detailed,N001_NCT07082114,E2,1,모름,모름,True,"Acute diabetic complications such as DKA, lactic acidosis or hyperosmolar coma are not mentioned."
 v3,detailed,N001_NCT07082114,E3,1,모름,모름,True,"No personal or family history of medullary thyroid carcinoma, C-cell hyperplasia or MEN2 is mentioned. Hypothyroidism is mentioned, which is not the same condition."
 v3,detailed,N001_NCT07082114,E4,1,통과,모름,False,"""She has no history of pancreatitis"", but pancreatic injury and high-risk factors for pancreatitis (e.g., hypertriglyceridemia, alcohol use, gallstones) are not addressed."
@@ -4977,14 +4977,14 @@ v3,detailed,N001_NCT07082114,E23,1,모름,모름,True,"Allergy history is not me
 v3,detailed,N001_NCT07082114,E24,1,모름,모름,True,Participation in other clinical studies is not mentioned.
 v3,detailed,N001_NCT07082114,E25,1,등록 후 확인,등록 후 확인,True,Depends on the investigator's judgment of suitability.
 v3,detailed,N001_NCT07082114,I1,2,통과,통과,True,58-year-old woman.
-v3,detailed,N001_NCT07082114,I2,2,통과,모름,False,"'9-year history of type 2 diabetes' is described (duration ≥3 months), but no statement that the diagnosis was made per WHO criteria."
+v3,detailed,N001_NCT07082114,I2,2,모름,모름,True,"'9-year history of type 2 diabetes' is described (duration ≥3 months), but no statement that the diagnosis was made per WHO criteria."
 v3,detailed,N001_NCT07082114,I3,2,통과,통과,True,'metformin 1000 mg twice daily at the same dose for the past two years' (2000 mg/day).
 v3,detailed,N001_NCT07082114,I4,2,등록 후 확인,모름,False,"'HbA1c measured at her clinic last week was 9.8%' is within 7.5–11.0%, but the criterion requires screening HbA1c by the local lab, which has not yet occurred."
 v3,detailed,N001_NCT07082114,I5,2,등록 후 확인,등록 후 확인,True,Requires central laboratory HbA1c measurement prior to randomization.
 v3,detailed,N001_NCT07082114,I6,2,통과,통과,True,'Her BMI is 31.2 kg/m²'.
 v3,detailed,N001_NCT07082114,I7,2,통과,통과,True,"'She is postmenopausal', so not of childbearing potential, and she is female, so the male contraception requirement does not apply."
 v3,detailed,N001_NCT07082114,I8,2,등록 후 확인,등록 후 확인,True,"Ability and willingness to comply, maintain diet/exercise, and provide written informed consent are determined after applying."
-v3,detailed,N001_NCT07082114,E1,2,통과,모름,False,"Described as type 2 diabetes, but no explicit statement ruling out T1DM/LADA, special types, or gestational diabetes."
+v3,detailed,N001_NCT07082114,E1,2,모름,모름,True,"Described as type 2 diabetes, but no explicit statement ruling out T1DM/LADA, special types, or gestational diabetes."
 v3,detailed,N001_NCT07082114,E2,2,모름,모름,True,"No mention of acute diabetic complications such as DKA, lactic acidosis, or hyperosmolar coma in the past 6 months."
 v3,detailed,N001_NCT07082114,E3,2,모름,모름,True,"No information on personal or family history of medullary thyroid carcinoma, C-cell hyperplasia, or MEN2 (only hypothyroidism on levothyroxine is mentioned)."
 v3,detailed,N001_NCT07082114,E4,2,통과,모름,False,"'She has no history of pancreatitis', but pancreatic injury and high-risk factors for pancreatitis are not addressed."
@@ -5010,14 +5010,14 @@ v3,detailed,N001_NCT07082114,E23,2,모름,모름,True,"Allergy history is not de
 v3,detailed,N001_NCT07082114,E24,2,모름,모름,True,No information on participation in other clinical studies.
 v3,detailed,N001_NCT07082114,E25,2,등록 후 확인,등록 후 확인,True,Depends on investigator judgment.
 v3,detailed,N001_NCT07082114,I1,3,통과,통과,True,58-year-old woman.
-v3,detailed,N001_NCT07082114,I2,3,통과,모름,False,"Description states a ""9-year history of type 2 diabetes"", which meets the duration, but it does not say the diagnosis was made by WHO criteria."
+v3,detailed,N001_NCT07082114,I2,3,모름,모름,True,"Description states a ""9-year history of type 2 diabetes"", which meets the duration, but it does not say the diagnosis was made by WHO criteria."
 v3,detailed,N001_NCT07082114,I3,3,통과,통과,True,"""metformin 1000 mg twice daily at the same dose for the past two years"" = 2000 mg/day, stable."
 v3,detailed,N001_NCT07082114,I4,3,등록 후 확인,모름,False,"HbA1c 9.8% was measured at her clinic last week, which is within 7.5–11.0%. The formal screening local-lab value is not yet available."
 v3,detailed,N001_NCT07082114,I5,3,등록 후 확인,등록 후 확인,True,"Requires a central laboratory HbA1c measured prior to randomization, after enrollment."
 v3,detailed,N001_NCT07082114,I6,3,통과,통과,True,"""Her BMI is 31.2 kg/m²"", which is within 19.0–40.0."
 v3,detailed,N001_NCT07082114,I7,3,통과,등록 후 확인,False,"Willingness to use contraception is a future agreement. She is postmenopausal, so childbearing potential is likely absent, but this criterion concerns agreement at consent."
 v3,detailed,N001_NCT07082114,I8,3,등록 후 확인,등록 후 확인,True,"Ability to comply, willingness to maintain habits, and informed consent are determined after applying."
-v3,detailed,N001_NCT07082114,E1,3,통과,모름,False,"She has type 2 diabetes with a 9-year history, but the description does not explicitly rule out LADA, special types, or gestational diabetes."
+v3,detailed,N001_NCT07082114,E1,3,모름,모름,True,"She has type 2 diabetes with a 9-year history, but the description does not explicitly rule out LADA, special types, or gestational diabetes."
 v3,detailed,N001_NCT07082114,E2,3,모름,모름,True,No mention of acute diabetic complications such as DKA or hyperosmolar coma in the last 6 months.
 v3,detailed,N001_NCT07082114,E3,3,모름,모름,True,"No information on personal or family history of medullary thyroid carcinoma, C-cell hyperplasia, or MEN2. Hypothyroidism is noted, but this does not address these conditions."
 v3,detailed,N001_NCT07082114,E4,3,통과,모름,False,"""She has no history of pancreatitis"", but pancreatic injury and other high-risk factors for pancreatitis (e.g., hypertriglyceridemia, alcohol use, gallstones) are not addressed."
@@ -5044,7 +5044,7 @@ v3,detailed,N001_NCT07082114,E24,3,모름,모름,True,Participation in other cli
 v3,detailed,N001_NCT07082114,E25,3,등록 후 확인,등록 후 확인,True,Depends on the investigator's judgment of suitability.
 v3,detailed,N001_NCT06863532,I1,1,등록 후 확인,등록 후 확인,True,Ability and willingness to sign informed consent is determined at enrollment; not described.
 v3,detailed,N001_NCT06863532,I2,1,통과,통과,True,58-year-old woman; within 18-74.
-v3,detailed,N001_NCT06863532,I3,1,통과,통과,True,"""9-year history of type 2 diabetes"" with HbA1c 9.8% and fasting glucose 11.2 mmol/L."
+v3,detailed,N001_NCT06863532,I3,1,모름,통과,False,"""9-year history of type 2 diabetes"" with HbA1c 9.8% and fasting glucose 11.2 mmol/L."
 v3,detailed,N001_NCT06863532,I4,1,탈락,탈락,True,"""has never used any other glucose-lowering medication, including SGLT2 inhibitors""; she is on metformin only, not SGLT2i monotherapy."
 v3,detailed,N001_NCT06863532,I5,1,탈락,탈락,True,"""metformin 1000 mg twice daily"" = 2000 mg/day, exceeding 500-1000 mg/day; duration 2 years and unchanged dose."
 v3,detailed,N001_NCT06863532,I6,1,탈락,탈락,True,"""HbA1c measured at her clinic last week was 9.8%"", above 9.5%."
@@ -5053,8 +5053,8 @@ v3,detailed,N001_NCT06863532,I8,1,통과,통과,True,"""Her BMI is 31.2 kg/m²""
 v3,detailed,N001_NCT06863532,I9,1,모름,모름,True,No urine ketone result given.
 v3,detailed,N001_NCT06863532,I10,1,통과,통과,True,"""her eGFR is 78 mL/min/1.73 m²""."
 v3,detailed,N001_NCT06863532,I11,1,등록 후 확인,등록 후 확인,True,Agreement to maintain habits and willingness/ability to use SMBG and keep records is determined after enrollment.
-v3,detailed,N001_NCT06863532,E1,1,통과,모름,False,Described as type 2 diabetes with a 9-year history; type 1 is not explicitly excluded.
-v3,detailed,N001_NCT06863532,E2,1,통과,모름,False,No mention of secondary diabetes.
+v3,detailed,N001_NCT06863532,E1,1,모름,모름,True,Described as type 2 diabetes with a 9-year history; type 1 is not explicitly excluded.
+v3,detailed,N001_NCT06863532,E2,1,모름,모름,True,No mention of secondary diabetes.
 v3,detailed,N001_NCT06863532,E3,1,모름,모름,True,No transplant history mentioned.
 v3,detailed,N001_NCT06863532,E4,1,모름,모름,True,"""She has no history of pancreatitis""; pancreatic resection not mentioned."
 v3,detailed,N001_NCT06863532,E5,1,모름,모름,True,No mention of DKA or hyperosmolar coma.
@@ -5080,7 +5080,7 @@ v3,detailed,N001_NCT06863532,E24,1,모름,모름,True,No clinical trial particip
 v3,detailed,N001_NCT06863532,E25,1,등록 후 확인,등록 후 확인,True,Investigator's judgment of suitability.
 v3,detailed,N001_NCT06863532,I1,2,등록 후 확인,등록 후 확인,True,Consent capability and willingness are determined at enrollment; nothing in the description addresses this.
 v3,detailed,N001_NCT06863532,I2,2,통과,통과,True,58-year-old woman: 'A 58-year-old woman'.
-v3,detailed,N001_NCT06863532,I3,2,통과,모름,False,"Described as having a '9-year history of type 2 diabetes' with HbA1c 9.8% and FBG 11.2 mmol/L, but whether a formal diagnosis meeting criteria is on record is not explicitly stated."
+v3,detailed,N001_NCT06863532,I3,2,모름,모름,True,"Described as having a '9-year history of type 2 diabetes' with HbA1c 9.8% and FBG 11.2 mmol/L, but whether a formal diagnosis meeting criteria is on record is not explicitly stated."
 v3,detailed,N001_NCT06863532,I4,2,탈락,탈락,True,"'has never used any other glucose-lowering medication, including SGLT2 inhibitors' - she is on metformin only, not SGLT2i monotherapy."
 v3,detailed,N001_NCT06863532,I5,2,탈락,탈락,True,"'metformin 1000 mg twice daily' = 2000 mg/day, outside the 500-1000 mg/day range, at the same dose for two years."
 v3,detailed,N001_NCT06863532,I6,2,탈락,탈락,True,"'Her HbA1c measured at her clinic last week was 9.8%', above 9.5%."
@@ -5089,8 +5089,8 @@ v3,detailed,N001_NCT06863532,I8,2,통과,통과,True,"'Her BMI is 31.2 kg/m²', 
 v3,detailed,N001_NCT06863532,I9,2,모름,모름,True,No urine ketone result given.
 v3,detailed,N001_NCT06863532,I10,2,통과,통과,True,"'her eGFR is 78 mL/min/1.73 m²', ≥ 60."
 v3,detailed,N001_NCT06863532,I11,2,등록 후 확인,등록 후 확인,True,Agreement to maintain habits and willingness/ability to use a glucose meter and keep records are determined after application.
-v3,detailed,N001_NCT06863532,E1,2,통과,모름,False,Described as type 2 diabetes; type 1 is not explicitly excluded in the description.
-v3,detailed,N001_NCT06863532,E2,2,통과,모름,False,No mention of secondary diabetes.
+v3,detailed,N001_NCT06863532,E1,2,모름,모름,True,Described as type 2 diabetes; type 1 is not explicitly excluded in the description.
+v3,detailed,N001_NCT06863532,E2,2,모름,모름,True,No mention of secondary diabetes.
 v3,detailed,N001_NCT06863532,E3,2,모름,모름,True,No transplant history mentioned.
 v3,detailed,N001_NCT06863532,E4,2,모름,모름,True,'She has no history of pancreatitis' but pancreatic resection is not mentioned.
 v3,detailed,N001_NCT06863532,E5,2,모름,모름,True,No mention of DKA or hyperosmolar coma.
@@ -5116,7 +5116,7 @@ v3,detailed,N001_NCT06863532,E24,2,모름,모름,True,No information on recent c
 v3,detailed,N001_NCT06863532,E25,2,등록 후 확인,등록 후 확인,True,Investigator judgment of unsuitability.
 v3,detailed,N001_NCT06863532,I1,3,등록 후 확인,등록 후 확인,True,Ability and willingness to sign informed consent is determined at enrollment; not described.
 v3,detailed,N001_NCT06863532,I2,3,통과,통과,True,58-year-old woman; within 18-74.
-v3,detailed,N001_NCT06863532,I3,3,통과,통과,True,"""A 58-year-old woman with a 9-year history of type 2 diabetes""; HbA1c 9.8%, fasting glucose 11.2 mmol/L."
+v3,detailed,N001_NCT06863532,I3,3,모름,통과,False,"""A 58-year-old woman with a 9-year history of type 2 diabetes""; HbA1c 9.8%, fasting glucose 11.2 mmol/L."
 v3,detailed,N001_NCT06863532,I4,3,탈락,탈락,True,"""has never used any other glucose-lowering medication, including SGLT2 inhibitors""; she is on metformin only, not SGLT2i monotherapy."
 v3,detailed,N001_NCT06863532,I5,3,탈락,탈락,True,"""metformin 1000 mg twice daily"" = 2000 mg/day, exceeding the 500-1000 mg/day range, at the same dose for two years."
 v3,detailed,N001_NCT06863532,I6,3,탈락,탈락,True,"""Her HbA1c measured at her clinic last week was 9.8%"", above 9.5%."
@@ -5125,8 +5125,8 @@ v3,detailed,N001_NCT06863532,I8,3,통과,통과,True,"""Her BMI is 31.2 kg/m²""
 v3,detailed,N001_NCT06863532,I9,3,모름,모름,True,No urine ketone result given.
 v3,detailed,N001_NCT06863532,I10,3,통과,통과,True,"""her eGFR is 78 mL/min/1.73 m²""."
 v3,detailed,N001_NCT06863532,I11,3,등록 후 확인,등록 후 확인,True,Agreement/willingness to maintain habits and use SMBG is determined after enrollment.
-v3,detailed,N001_NCT06863532,E1,3,통과,모름,False,Described as type 2 diabetes; no explicit statement ruling out type 1.
-v3,detailed,N001_NCT06863532,E2,3,통과,모름,False,No mention of secondary diabetes.
+v3,detailed,N001_NCT06863532,E1,3,모름,모름,True,Described as type 2 diabetes; no explicit statement ruling out type 1.
+v3,detailed,N001_NCT06863532,E2,3,모름,모름,True,No mention of secondary diabetes.
 v3,detailed,N001_NCT06863532,E3,3,모름,모름,True,No transplant history mentioned.
 v3,detailed,N001_NCT06863532,E4,3,모름,모름,True,"""She has no history of pancreatitis""; pancreatic resection not mentioned."
 v3,detailed,N001_NCT06863532,E5,3,모름,모름,True,No mention of DKA or hyperosmolar coma.
@@ -5158,7 +5158,7 @@ v3,detailed,N002_NCT07786870,E3,1,모름,모름,True,No mention of malignancy or
 v3,detailed,N002_NCT07786870,E4,1,통과,통과,True,"At ED visit ""he had no fever, his chest X-ray was normal, and he was treated ... without antibiotics""; the exacerbation was attributed to cat exposure."
 v3,detailed,N002_NCT07786870,E5,1,통과,통과,True,"Ten days ago ED visit: ""treated with a 5-day course of oral prednisone without antibiotics""."
 v3,detailed,N002_NCT07786870,E6,1,모름,모름,True,"Resting oxygen saturation is 97% on room air, but home oxygen therapy is not explicitly addressed."
-v3,detailed,N002_NCT07786870,E7,1,탈락,통과,False,"""his pulmonologist has scheduled his first dupilumab injection for next week"" – not yet started; medications listed include only budesonide-formoterol and recent prednisone."
+v3,detailed,N002_NCT07786870,E7,1,통과,통과,True,"""his pulmonologist has scheduled his first dupilumab injection for next week"" – not yet started; medications listed include only budesonide-formoterol and recent prednisone."
 v3,detailed,N002_NCT07786870,E8,1,통과,통과,True,"Patient is a 24-year-old man, so pregnancy is not possible."
 v3,detailed,N002_NCT07786870,I1,2,통과,통과,True,"""A 24-year-old man"" – age 24 is >18, and there is no upper age limit."
 v3,detailed,N002_NCT07786870,I2,2,모름,모름,True,"A pulmonologist diagnosed asthma at age 8, and spirometry showed FEV1 68% of predicted. The description does not say the diagnosis followed GINA 2023 criteria (e.g., documented variable airflow limitation or reversibility)."
@@ -5168,7 +5168,7 @@ v3,detailed,N002_NCT07786870,E3,2,모름,모름,True,The description does not me
 v3,detailed,N002_NCT07786870,E4,2,통과,모름,False,"Chest X-ray was normal and he had no fever at the ED visit ten days ago, but current infection status is not stated and tuberculosis is not addressed."
 v3,detailed,N002_NCT07786870,E5,2,통과,통과,True,"He was ""treated with a 5-day course of oral prednisone without antibiotics"" at the ED visit ten days ago."
 v3,detailed,N002_NCT07786870,E6,2,모름,모름,True,"Resting oxygen saturation is 97% on room air, but home oxygen therapy is not mentioned."
-v3,detailed,N002_NCT07786870,E7,2,탈락,통과,False,"""his pulmonologist has scheduled his first dupilumab injection for next week"" – he is not currently receiving it. His current medication is budesonide-formoterol, and no prior biologic is mentioned."
+v3,detailed,N002_NCT07786870,E7,2,통과,통과,True,"""his pulmonologist has scheduled his first dupilumab injection for next week"" – he is not currently receiving it. His current medication is budesonide-formoterol, and no prior biologic is mentioned."
 v3,detailed,N002_NCT07786870,E8,2,통과,통과,True,"The patient is a 24-year-old man, so pregnancy is not possible."
 v3,detailed,N002_NCT07786870,I1,3,통과,통과,True,"""A 24-year-old man"" - age 24 is > 18, and there is no upper age limit."
 v3,detailed,N002_NCT07786870,I2,3,모름,모름,True,"Asthma was diagnosed by a pulmonologist at age 8 (""A pulmonologist diagnosed asthma when he was 8 years old""), and spirometry shows FEV1 68% predicted. However, the description does not state that the diagnosis followed GINA 2023 criteria (e.g., documented variable airflow limitation, reversibility "
@@ -5178,7 +5178,7 @@ v3,detailed,N002_NCT07786870,E3,3,모름,모름,True,No mention of malignancy or
 v3,detailed,N002_NCT07786870,E4,3,통과,모름,False,"The patient had ""no fever"", a normal chest X-ray, and received no antibiotics at the ED visit, but active tuberculosis or a current respiratory infection is not explicitly addressed. Current symptoms are attributed to asthma exacerbation."
 v3,detailed,N002_NCT07786870,E5,3,통과,통과,True,"Ten days ago he was ""treated with a 5-day course of oral prednisone without antibiotics."""
 v3,detailed,N002_NCT07786870,E6,3,모름,모름,True,"No mention of home oxygen therapy. Resting oxygen saturation is 97% on room air, but this does not confirm that he does not use long-term oxygen."
-v3,detailed,N002_NCT07786870,E7,3,탈락,통과,False,"""his pulmonologist has scheduled his first dupilumab injection for next week"" - he is not yet receiving it; the medication list contains only budesonide-formoterol and a prednisone course."
+v3,detailed,N002_NCT07786870,E7,3,통과,통과,True,"""his pulmonologist has scheduled his first dupilumab injection for next week"" - he is not yet receiving it; the medication list contains only budesonide-formoterol and a prednisone course."
 v3,detailed,N002_NCT07786870,E8,3,통과,통과,True,"Patient is a 24-year-old man, so pregnancy is not possible."
 v3,detailed,N002_NCT07139899,I1,1,등록 후 확인,등록 후 확인,True,Informed consent is completed and documented only after the patient applies to the study.
 v3,detailed,N002_NCT07139899,I2,1,통과,통과,True,"""A 24-year-old man"""
@@ -5243,7 +5243,7 @@ v3,detailed,N002_NCT07139899,E11,3,등록 후 확인,등록 후 확인,True,"Thi
 v3,detailed,S002_NCT06068179,I1,1,통과,통과,True,A 29-year-old woman; within 18 to 60 years.
 v3,detailed,S002_NCT06068179,I2,1,통과,통과,True,An endocrinologist diagnosed Graves' disease last week; she has not yet started antithyroid medication.
 v3,detailed,S002_NCT06068179,E1,1,통과,통과,True,"Diagnosed last week; ""has not yet started antithyroid medication and has never received radioactive iodine or thyroid surgery."" Newly diagnosed, so no relapse or prior treatment."
-v3,detailed,S002_NCT06068179,E2,1,통과,통과,True,"Positive TSH receptor antibodies, diffuse enlargement with increased blood flow, and ""no nodules"" on ultrasound; the thyroid is described as non-tender. The endocrinologist diagnosed Graves' disease. No other etiology is described."
+v3,detailed,S002_NCT06068179,E2,1,모름,통과,False,"Positive TSH receptor antibodies, diffuse enlargement with increased blood flow, and ""no nodules"" on ultrasound; the thyroid is described as non-tender. The endocrinologist diagnosed Graves' disease. No other etiology is described."
 v3,detailed,S002_NCT06068179,E3,1,통과,통과,True,"""mild upper eyelid retraction but no eye pain, double vision, or bulging of the eyes."" Eye findings are mild, with no moderate-to-severe thyroid eye disease described."
 v3,detailed,S002_NCT06068179,E4,1,모름,통과,False,"Ultrasound shows diffuse enlargement with ""no nodules""; no thyroid cancer is mentioned and no surgery is planned."
 v3,detailed,S002_NCT06068179,E5,1,통과,통과,True,"ALT 28 U/L, AST 25 U/L, creatinine 62 µmol/L. Creatinine is below 110 µmol/L for females. ALT and AST are within typical normal ranges and nowhere near 3 times the upper limit of normal."
@@ -5256,7 +5256,7 @@ v3,detailed,S002_NCT06068179,E11,1,등록 후 확인,등록 후 확인,True,Will
 v3,detailed,S002_NCT06068179,I1,2,통과,통과,True,"""A 29-year-old woman"" – within 18 to 60 years."
 v3,detailed,S002_NCT06068179,I2,2,통과,통과,True,"""An endocrinologist diagnosed Graves' disease last week; she has not yet started antithyroid medication"" – newly diagnosed."
 v3,detailed,S002_NCT06068179,E1,2,통과,통과,True,"""she has not yet started antithyroid medication and has never received radioactive iodine or thyroid surgery""; diagnosed last week, so this is a new diagnosis, not a relapse."
-v3,detailed,S002_NCT06068179,E2,2,통과,모름,False,"Ultrasound shows ""diffuse enlargement with increased blood flow and no nodules"" and TSH receptor antibodies are positive, which argues against toxic nodular disease. However, Hashimoto's thyroiditis, subacute thyroiditis and iodine-induced hyperthyroidism are not explicitly excluded in the descripti"
+v3,detailed,S002_NCT06068179,E2,2,모름,모름,True,"Ultrasound shows ""diffuse enlargement with increased blood flow and no nodules"" and TSH receptor antibodies are positive, which argues against toxic nodular disease. However, Hashimoto's thyroiditis, subacute thyroiditis and iodine-induced hyperthyroidism are not explicitly excluded in the descripti"
 v3,detailed,S002_NCT06068179,E3,2,통과,통과,True,"""She has mild upper eyelid retraction but no eye pain, double vision, or bulging of the eyes."" There is no moderate-to-severe thyroid eye disease requiring intervention."
 v3,detailed,S002_NCT06068179,E4,2,모름,통과,False,"Ultrasound shows ""diffuse enlargement with increased blood flow and no nodules"", and no thyroid cancer or surgical need is described."
 v3,detailed,S002_NCT06068179,E5,2,통과,모름,False,"Labs are ""ALT 28 U/L, AST 25 U/L, creatinine 62 µmol/L"". These are well below the thresholds (creatinine <110 µmol/L for females), but the upper limit of normal reference values is not given, so a >3× ULN comparison is not formally documented."
@@ -5269,7 +5269,7 @@ v3,detailed,S002_NCT06068179,E11,2,등록 후 확인,등록 후 확인,True,Will
 v3,detailed,S002_NCT06068179,I1,3,통과,통과,True,A 29-year-old woman; within 18 to 60 years.
 v3,detailed,S002_NCT06068179,I2,3,통과,통과,True,"""An endocrinologist diagnosed Graves' disease last week; she has not yet started antithyroid medication."""
 v3,detailed,S002_NCT06068179,E1,3,통과,통과,True,"Diagnosed last week, ""has not yet started antithyroid medication and has never received radioactive iodine or thyroid surgery."" Being newly diagnosed, no relapse is described."
-v3,detailed,S002_NCT06068179,E2,3,통과,모름,False,"Graves' disease was diagnosed by an endocrinologist, with positive TSH receptor antibodies and ultrasound showing ""no nodules"". However, other etiologies such as Hashimoto's thyroiditis, subacute thyroiditis or iodine-induced hyperthyroidism are not explicitly addressed (e.g., iodine exposure is not"
+v3,detailed,S002_NCT06068179,E2,3,모름,모름,True,"Graves' disease was diagnosed by an endocrinologist, with positive TSH receptor antibodies and ultrasound showing ""no nodules"". However, other etiologies such as Hashimoto's thyroiditis, subacute thyroiditis or iodine-induced hyperthyroidism are not explicitly addressed (e.g., iodine exposure is not"
 v3,detailed,S002_NCT06068179,E3,3,통과,통과,True,"""She has mild upper eyelid retraction but no eye pain, double vision, or bulging of the eyes."" Only mild signs are described and no eye intervention is mentioned."
 v3,detailed,S002_NCT06068179,E4,3,모름,모름,True,"Ultrasound shows diffuse enlargement with no nodules, but concurrent thyroid cancer is not explicitly addressed and no surgery is described as needed."
 v3,detailed,S002_NCT06068179,E5,3,통과,모름,False,"ALT 28 U/L and AST 25 U/L and creatinine 62 µmol/L (below the 110 µmol/L threshold for females) are given. ALT and AST upper limits of normal are not stated, though 28 and 25 are very likely not > 3×ULN."
@@ -5508,14 +5508,14 @@ v3_r1112,detailed,S008_NCT07299695,E9,3,모름,모름,True,Legal status (tutorsh
 v3_r1112,detailed,S008_NCT07299695,E10,3,모름,모름,True,Deprivation of liberty or court protection is not mentioned.
 v3_r1112,detailed,S008_NCT07299695,E11,3,등록 후 확인,등록 후 확인,True,Willingness to participate and provide consent is determined after approach.
 v3_r1112,detailed,N001_NCT07082114,I1,1,통과,통과,True,58-year-old woman.
-v3_r1112,detailed,N001_NCT07082114,I2,1,통과,모름,False,"'9-year history of type 2 diabetes' is stated, so duration ≥3 months is met, but the description does not say the diagnosis was made by WHO criteria."
+v3_r1112,detailed,N001_NCT07082114,I2,1,모름,모름,True,"'9-year history of type 2 diabetes' is stated, so duration ≥3 months is met, but the description does not say the diagnosis was made by WHO criteria."
 v3_r1112,detailed,N001_NCT07082114,I3,1,통과,모름,False,"'metformin 1000 mg twice daily at the same dose for the past two years' means 2000 mg/day, stable for about 2 years. The screening and randomization dates are not known, but the stable period appears to exceed both windows."
 v3_r1112,detailed,N001_NCT07082114,I4,1,등록 후 확인,모름,False,"HbA1c was 9.8% at her clinic last week, which is within 7.5–11.0%. The criterion requires a screening value from the local laboratory, which has not been done."
 v3_r1112,detailed,N001_NCT07082114,I5,1,등록 후 확인,등록 후 확인,True,"Requires a central laboratory HbA1c measured before randomization, which only exists after enrollment."
 v3_r1112,detailed,N001_NCT07082114,I6,1,통과,통과,True,'Her BMI is 31.2 kg/m²'
 v3_r1112,detailed,N001_NCT07082114,I7,1,통과,모름,False,"She is 'postmenopausal', which suggests no childbearing potential, but this is not explicitly confirmed. Willingness to use contraception is not stated."
 v3_r1112,detailed,N001_NCT07082114,I8,1,등록 후 확인,등록 후 확인,True,"Ability and willingness to comply, to keep diet and exercise habits, and to provide written informed consent are determined after application."
-v3_r1112,detailed,N001_NCT07082114,E1,1,통과,모름,False,"Type 2 diabetes is stated. This does not rule out coexisting LADA or a special type of diabetes, and gestational diabetes is not mentioned."
+v3_r1112,detailed,N001_NCT07082114,E1,1,모름,모름,True,"Type 2 diabetes is stated. This does not rule out coexisting LADA or a special type of diabetes, and gestational diabetes is not mentioned."
 v3_r1112,detailed,N001_NCT07082114,E2,1,모름,모름,True,"No acute diabetic complications are mentioned, and absence of mention is not confirmation."
 v3_r1112,detailed,N001_NCT07082114,E3,1,모름,모름,True,"Hypothyroidism is mentioned, but personal or family history of medullary thyroid carcinoma, C-cell hyperplasia or MEN2 is not stated."
 v3_r1112,detailed,N001_NCT07082114,E4,1,통과,모름,False,"'She has no history of pancreatitis', but pancreatic injury and high-risk factors for pancreatitis (e.g., alcohol use, hypertriglyceridemia, gallstones) are not addressed."
@@ -5541,14 +5541,14 @@ v3_r1112,detailed,N001_NCT07082114,E23,1,모름,모름,True,"Allergy history is 
 v3_r1112,detailed,N001_NCT07082114,E24,1,모름,모름,True,Clinical trial participation history is not mentioned.
 v3_r1112,detailed,N001_NCT07082114,E25,1,등록 후 확인,등록 후 확인,True,Depends on investigator judgment.
 v3_r1112,detailed,N001_NCT07082114,I1,2,통과,통과,True,58-year-old woman.
-v3_r1112,detailed,N001_NCT07082114,I2,2,통과,모름,False,"Description states a ""9-year history of type 2 diabetes"" (duration ≥3 months), but does not state the diagnosis was made per WHO criteria."
+v3_r1112,detailed,N001_NCT07082114,I2,2,모름,모름,True,"Description states a ""9-year history of type 2 diabetes"" (duration ≥3 months), but does not state the diagnosis was made per WHO criteria."
 v3_r1112,detailed,N001_NCT07082114,I3,2,통과,모름,False,"""metformin 1000 mg twice daily at the same dose for the past two years"" (2000 mg/day, stable well over 12 weeks). Whether this holds at the future screening/randomization dates is not yet determinable."
 v3_r1112,detailed,N001_NCT07082114,I4,2,등록 후 확인,모름,False,"""HbA1c measured at her clinic last week was 9.8%"" is within range, but the criterion refers to a screening HbA1c from the local laboratory, which has not been done yet."
 v3_r1112,detailed,N001_NCT07082114,I5,2,등록 후 확인,등록 후 확인,True,"Requires central laboratory HbA1c measured prior to randomization, which occurs after enrollment."
 v3_r1112,detailed,N001_NCT07082114,I6,2,통과,통과,True,"""Her BMI is 31.2 kg/m²""."
 v3_r1112,detailed,N001_NCT07082114,I7,2,통과,등록 후 확인,False,"Patient is postmenopausal (likely not of childbearing potential), but agreement to use contraception is a willingness/commitment given at consent and not stated."
 v3_r1112,detailed,N001_NCT07082114,I8,2,등록 후 확인,등록 후 확인,True,"Ability to comply, willingness to maintain habits and provide written consent are determined at enrollment."
-v3_r1112,detailed,N001_NCT07082114,E1,2,통과,모름,False,"Described as type 2 diabetes, but absence of LADA, special types of diabetes or gestational diabetes is not explicitly stated."
+v3_r1112,detailed,N001_NCT07082114,E1,2,모름,모름,True,"Described as type 2 diabetes, but absence of LADA, special types of diabetes or gestational diabetes is not explicitly stated."
 v3_r1112,detailed,N001_NCT07082114,E2,2,모름,모름,True,No mention of acute diabetic complications such as DKA or hyperosmolar coma in the past 6 months.
 v3_r1112,detailed,N001_NCT07082114,E3,2,모름,모름,True,"No information on personal or family history of medullary thyroid carcinoma, C-cell hyperplasia or MEN2 (only hypothyroidism on levothyroxine is mentioned)."
 v3_r1112,detailed,N001_NCT07082114,E4,2,통과,모름,False,"""She has no history of pancreatitis"", but pancreatic injury and high-risk factors for pancreatitis are not addressed."
@@ -5574,14 +5574,14 @@ v3_r1112,detailed,N001_NCT07082114,E23,2,모름,모름,True,"Has never used SGLT
 v3_r1112,detailed,N001_NCT07082114,E24,2,모름,모름,True,No information on participation in other clinical trials.
 v3_r1112,detailed,N001_NCT07082114,E25,2,등록 후 확인,등록 후 확인,True,Depends on the investigator's judgment.
 v3_r1112,detailed,N001_NCT07082114,I1,3,통과,통과,True,58-year-old woman.
-v3_r1112,detailed,N001_NCT07082114,I2,3,통과,모름,False,"""9-year history of type 2 diabetes"" is stated, so duration ≥3 months is met, but it is not stated that the diagnosis was made by WHO criteria."
+v3_r1112,detailed,N001_NCT07082114,I2,3,모름,모름,True,"""9-year history of type 2 diabetes"" is stated, so duration ≥3 months is met, but it is not stated that the diagnosis was made by WHO criteria."
 v3_r1112,detailed,N001_NCT07082114,I3,3,통과,탈락,False,"""metformin 1000 mg twice daily at the same dose for the past two years"" = 2000 mg/day, stable for 2 years (>8 weeks and >12 weeks)."
 v3_r1112,detailed,N001_NCT07082114,I4,3,등록 후 확인,모름,False,"HbA1c 9.8% at her clinic last week lies within 7.5–11.0%, but the criterion requires screening HbA1c by the local laboratory, which has not been done yet."
 v3_r1112,detailed,N001_NCT07082114,I5,3,등록 후 확인,등록 후 확인,True,"Requires central laboratory HbA1c measured prior to randomization, which occurs after enrollment."
 v3_r1112,detailed,N001_NCT07082114,I6,3,통과,통과,True,"""Her BMI is 31.2 kg/m²"""
 v3_r1112,detailed,N001_NCT07082114,I7,3,통과,통과,True,"""She is postmenopausal"", so she is not of childbearing potential and the contraception requirement does not apply to her."
 v3_r1112,detailed,N001_NCT07082114,I8,3,등록 후 확인,등록 후 확인,True,"Ability and willingness to comply, maintain diet and exercise, and sign informed consent are determined after applying."
-v3_r1112,detailed,N001_NCT07082114,E1,3,통과,모름,False,"Described as type 2 diabetes, but absence of LADA or special types of diabetes is not explicitly stated; gestational diabetes is not applicable at age 58 postmenopausal."
+v3_r1112,detailed,N001_NCT07082114,E1,3,모름,모름,True,"Described as type 2 diabetes, but absence of LADA or special types of diabetes is not explicitly stated; gestational diabetes is not applicable at age 58 postmenopausal."
 v3_r1112,detailed,N001_NCT07082114,E2,3,모름,모름,True,No mention of acute diabetic complications such as DKA or hyperosmolar coma.
 v3_r1112,detailed,N001_NCT07082114,E3,3,모름,모름,True,"No information on personal or family history of medullary thyroid carcinoma, C-cell hyperplasia, or MEN2 (hypothyroidism only is mentioned)."
 v3_r1112,detailed,N001_NCT07082114,E4,3,통과,모름,False,"""She has no history of pancreatitis"", but pancreatic injury and high-risk factors for pancreatitis (e.g., hypertriglyceridemia, alcohol use, gallstones) are not addressed."
@@ -5608,7 +5608,7 @@ v3_r1112,detailed,N001_NCT07082114,E24,3,모름,모름,True,No information on pa
 v3_r1112,detailed,N001_NCT07082114,E25,3,등록 후 확인,등록 후 확인,True,Depends on the investigator's judgment.
 v3_r1112,detailed,N001_NCT06863532,I1,1,등록 후 확인,등록 후 확인,True,Ability and willingness to sign informed consent is determined after the patient applies.
 v3_r1112,detailed,N001_NCT06863532,I2,1,통과,통과,True,58-year-old woman; age within 18-74.
-v3_r1112,detailed,N001_NCT06863532,I3,1,통과,모름,False,Description states a '9-year history of type 2 diabetes' but does not say that formal diagnostic criteria were met.
+v3_r1112,detailed,N001_NCT06863532,I3,1,모름,모름,True,Description states a '9-year history of type 2 diabetes' but does not say that formal diagnostic criteria were met.
 v3_r1112,detailed,N001_NCT06863532,I4,1,탈락,탈락,True,"'has never used any other glucose-lowering medication, including SGLT2 inhibitors' – she is on metformin only, not SGLT2i monotherapy."
 v3_r1112,detailed,N001_NCT06863532,I5,1,탈락,탈락,True,"'metformin 1000 mg twice daily' = 2000 mg/day, above the 500-1000 mg/day range."
 v3_r1112,detailed,N001_NCT06863532,I6,1,탈락,탈락,True,"'Her HbA1c measured at her clinic last week was 9.8%', above 9.5%."
@@ -5617,8 +5617,8 @@ v3_r1112,detailed,N001_NCT06863532,I8,1,통과,통과,True,"'Her BMI is 31.2 kg/
 v3_r1112,detailed,N001_NCT06863532,I9,1,모름,모름,True,No urine ketone result is given.
 v3_r1112,detailed,N001_NCT06863532,I10,1,통과,통과,True,"'her eGFR is 78 mL/min/1.73 m²', at least 60."
 v3_r1112,detailed,N001_NCT06863532,I11,1,등록 후 확인,등록 후 확인,True,Agreement to maintain diet/exercise and willingness/ability to use a glucose meter and keep records is decided after applying.
-v3_r1112,detailed,N001_NCT06863532,E1,1,통과,모름,False,"Described as type 2 diabetes with a 9-year history, but type 1 is not explicitly ruled out."
-v3_r1112,detailed,N001_NCT06863532,E2,1,통과,모름,False,No mention of secondary diabetes.
+v3_r1112,detailed,N001_NCT06863532,E1,1,모름,모름,True,"Described as type 2 diabetes with a 9-year history, but type 1 is not explicitly ruled out."
+v3_r1112,detailed,N001_NCT06863532,E2,1,모름,모름,True,No mention of secondary diabetes.
 v3_r1112,detailed,N001_NCT06863532,E3,1,모름,모름,True,No transplant history mentioned.
 v3_r1112,detailed,N001_NCT06863532,E4,1,모름,모름,True,'She has no history of pancreatitis' but pancreatic resection is not mentioned.
 v3_r1112,detailed,N001_NCT06863532,E5,1,모름,모름,True,No mention of diabetic ketoacidosis or hyperosmolar coma.
@@ -5644,7 +5644,7 @@ v3_r1112,detailed,N001_NCT06863532,E24,1,모름,모름,True,No clinical trial pa
 v3_r1112,detailed,N001_NCT06863532,E25,1,등록 후 확인,등록 후 확인,True,Determined by investigator judgment.
 v3_r1112,detailed,N001_NCT06863532,I1,2,등록 후 확인,등록 후 확인,True,Ability and willingness to understand and sign informed consent is determined at enrollment.
 v3_r1112,detailed,N001_NCT06863532,I2,2,통과,통과,True,58-year-old woman; age within 18-74.
-v3_r1112,detailed,N001_NCT06863532,I3,2,통과,모름,False,"She has a '9-year history of type 2 diabetes', but the description does not state that formal diagnostic criteria were met."
+v3_r1112,detailed,N001_NCT06863532,I3,2,모름,모름,True,"She has a '9-year history of type 2 diabetes', but the description does not state that formal diagnostic criteria were met."
 v3_r1112,detailed,N001_NCT06863532,I4,2,탈락,탈락,True,"'has never used any other glucose-lowering medication, including SGLT2 inhibitors...' so she is not on SGLT2i monotherapy for 8 weeks."
 v3_r1112,detailed,N001_NCT06863532,I5,2,탈락,탈락,True,"'metformin 1000 mg twice daily' = 2000 mg/day, outside the 500-1000 mg/day range, although the dose has been stable for two years."
 v3_r1112,detailed,N001_NCT06863532,I6,2,탈락,탈락,True,"'Her HbA1c measured at her clinic last week was 9.8%', above the 9.5% upper limit."
@@ -5653,8 +5653,8 @@ v3_r1112,detailed,N001_NCT06863532,I8,2,통과,통과,True,"'Her BMI is 31.2 kg/
 v3_r1112,detailed,N001_NCT06863532,I9,2,모름,모름,True,No urine ketone result is given.
 v3_r1112,detailed,N001_NCT06863532,I10,2,통과,통과,True,"'her eGFR is 78 mL/min/1.73 m²', which is at least 60."
 v3_r1112,detailed,N001_NCT06863532,I11,2,등록 후 확인,등록 후 확인,True,Agreement to maintain diet and exercise and willingness and ability to use a glucose meter and keep records concern future behavior and compliance.
-v3_r1112,detailed,N001_NCT06863532,E1,2,통과,모름,False,"The description gives 'type 2 diabetes' with a 9-year history, but does not explicitly rule out type 1."
-v3_r1112,detailed,N001_NCT06863532,E2,2,통과,모름,False,No statement about secondary diabetes.
+v3_r1112,detailed,N001_NCT06863532,E1,2,모름,모름,True,"The description gives 'type 2 diabetes' with a 9-year history, but does not explicitly rule out type 1."
+v3_r1112,detailed,N001_NCT06863532,E2,2,모름,모름,True,No statement about secondary diabetes.
 v3_r1112,detailed,N001_NCT06863532,E3,2,모름,모름,True,No transplant history mentioned.
 v3_r1112,detailed,N001_NCT06863532,E4,2,모름,모름,True,"'She has no history of pancreatitis' rules out pancreatitis, but pancreatic resection is not mentioned."
 v3_r1112,detailed,N001_NCT06863532,E5,2,모름,모름,True,No mention of diabetic ketoacidosis or hyperosmolar coma.
@@ -5680,7 +5680,7 @@ v3_r1112,detailed,N001_NCT06863532,E24,2,모름,모름,True,No information on re
 v3_r1112,detailed,N001_NCT06863532,E25,2,등록 후 확인,등록 후 확인,True,Determined by the investigator's judgment.
 v3_r1112,detailed,N001_NCT06863532,I1,3,등록 후 확인,등록 후 확인,True,Consent capability and willingness are determined at enrollment; not described.
 v3_r1112,detailed,N001_NCT06863532,I2,3,통과,통과,True,58-year-old woman.
-v3_r1112,detailed,N001_NCT06863532,I3,3,통과,모름,False,"She has a '9-year history of type 2 diabetes', but whether it meets formal diagnostic criteria is not stated."
+v3_r1112,detailed,N001_NCT06863532,I3,3,모름,모름,True,"She has a '9-year history of type 2 diabetes', but whether it meets formal diagnostic criteria is not stated."
 v3_r1112,detailed,N001_NCT06863532,I4,3,탈락,탈락,True,"She 'has never used any other glucose-lowering medication, including SGLT2 inhibitors'; she is on metformin only, not SGLT2i monotherapy."
 v3_r1112,detailed,N001_NCT06863532,I5,3,탈락,탈락,True,"She takes 'metformin 1000 mg twice daily' (2000 mg/day), above the 500-1000 mg/day range."
 v3_r1112,detailed,N001_NCT06863532,I6,3,탈락,탈락,True,"'HbA1c measured at her clinic last week was 9.8%', above 9.5%."
@@ -5689,8 +5689,8 @@ v3_r1112,detailed,N001_NCT06863532,I8,3,통과,통과,True,'Her BMI is 31.2 kg/m
 v3_r1112,detailed,N001_NCT06863532,I9,3,모름,모름,True,No urine ketone result is given.
 v3_r1112,detailed,N001_NCT06863532,I10,3,통과,통과,True,'her eGFR is 78 mL/min/1.73 m²'.
 v3_r1112,detailed,N001_NCT06863532,I11,3,등록 후 확인,등록 후 확인,True,Agreement and willingness to maintain lifestyle and perform SMBG are not described and are determined at enrollment.
-v3_r1112,detailed,N001_NCT06863532,E1,3,통과,모름,False,Described as type 2 diabetes with a 9-year history; type 1 is not explicitly excluded.
-v3_r1112,detailed,N001_NCT06863532,E2,3,통과,모름,False,No mention of secondary diabetes.
+v3_r1112,detailed,N001_NCT06863532,E1,3,모름,모름,True,Described as type 2 diabetes with a 9-year history; type 1 is not explicitly excluded.
+v3_r1112,detailed,N001_NCT06863532,E2,3,모름,모름,True,No mention of secondary diabetes.
 v3_r1112,detailed,N001_NCT06863532,E3,3,모름,모름,True,No transplant history mentioned.
 v3_r1112,detailed,N001_NCT06863532,E4,3,모름,모름,True,"'She has no history of pancreatitis', but pancreatic resection is not mentioned."
 v3_r1112,detailed,N001_NCT06863532,E5,3,모름,모름,True,No mention of ketoacidosis or hyperosmolar coma.
@@ -5722,7 +5722,7 @@ v3_r1112,detailed,N002_NCT07786870,E3,1,모름,모름,True,No mention of maligna
 v3_r1112,detailed,N002_NCT07786870,E4,1,통과,모름,False,The description says he had 'no fever' and a 'normal' chest X-ray at the ED visit ten days ago. It does not explicitly state that there is no current tuberculosis or respiratory infection.
 v3_r1112,detailed,N002_NCT07786870,E5,1,통과,통과,True,The ED treatment was 'a 5-day course of oral prednisone without antibiotics.' No other antibiotic use is described.
 v3_r1112,detailed,N002_NCT07786870,E6,1,모름,모름,True,"Resting oxygen saturation is 97% on room air, but home oxygen therapy is not mentioned."
-v3_r1112,detailed,N002_NCT07786870,E7,1,탈락,통과,False,'his pulmonologist has scheduled his first dupilumab injection for next week' means he is not currently receiving a biologic. His current medication is high-dose budesonide-formoterol.
+v3_r1112,detailed,N002_NCT07786870,E7,1,통과,통과,True,'his pulmonologist has scheduled his first dupilumab injection for next week' means he is not currently receiving a biologic. His current medication is high-dose budesonide-formoterol.
 v3_r1112,detailed,N002_NCT07786870,E8,1,통과,통과,True,"The patient is a 24-year-old man, so pregnancy is logically ruled out."
 v3_r1112,detailed,N002_NCT07786870,I1,2,통과,통과,True,A 24-year-old man; age is over 18 and the criterion has no upper age limit.
 v3_r1112,detailed,N002_NCT07786870,I2,2,모름,모름,True,Asthma is diagnosed: 'A pulmonologist diagnosed asthma when he was 8 years old.' The description does not say the diagnosis followed GINA 2023 guidelines.
@@ -5732,7 +5732,7 @@ v3_r1112,detailed,N002_NCT07786870,E3,2,모름,모름,True,No mention of maligna
 v3_r1112,detailed,N002_NCT07786870,E4,2,통과,모름,False,"At the ED visit 'he had no fever, his chest X-ray was normal' and he was treated 'without antibiotics', but active TB or a current respiratory infection is not explicitly addressed for the present time."
 v3_r1112,detailed,N002_NCT07786870,E5,2,통과,통과,True,Ten days ago he was 'treated with a 5-day course of oral prednisone without antibiotics.'
 v3_r1112,detailed,N002_NCT07786870,E6,2,모름,모름,True,"Resting oxygen saturation is 97% on room air, but home oxygen therapy is not explicitly mentioned."
-v3_r1112,detailed,N002_NCT07786870,E7,2,탈락,통과,False,'his pulmonologist has scheduled his first dupilumab injection for next week'; he has not yet started a biologic and none are listed among current medications.
+v3_r1112,detailed,N002_NCT07786870,E7,2,통과,통과,True,'his pulmonologist has scheduled his first dupilumab injection for next week'; he has not yet started a biologic and none are listed among current medications.
 v3_r1112,detailed,N002_NCT07786870,E8,2,통과,통과,True,"The patient is a man, so pregnancy is not possible."
 v3_r1112,detailed,N002_NCT07786870,I1,3,통과,통과,True,A 24-year-old man; age is over 18 and there is no upper age limit.
 v3_r1112,detailed,N002_NCT07786870,I2,3,모름,모름,True,Asthma is diagnosed: 'A pulmonologist diagnosed asthma when he was 8 years old'. The description does not state that the diagnosis followed GINA 2023 guidelines.
@@ -5742,7 +5742,7 @@ v3_r1112,detailed,N002_NCT07786870,E3,3,모름,모름,True,No mention of maligna
 v3_r1112,detailed,N002_NCT07786870,E4,3,통과,모름,False,"At the ED visit 'he had no fever, his chest X-ray was normal', and he was treated without antibiotics. However, current infection status and tuberculosis are not explicitly stated."
 v3_r1112,detailed,N002_NCT07786870,E5,3,통과,통과,True,"'treated with a 5-day course of oral prednisone without antibiotics'. Other antibiotic use in the past 4 weeks is not mentioned, but the recent exacerbation was treated without antibiotics."
 v3_r1112,detailed,N002_NCT07786870,E6,3,모름,모름,True,"Resting oxygen saturation is 97% on room air, but home oxygen therapy is not explicitly mentioned."
-v3_r1112,detailed,N002_NCT07786870,E7,3,탈락,통과,False,"'his pulmonologist has scheduled his first dupilumab injection for next week' - he is not yet receiving it, and the medication list shows no current biologic."
+v3_r1112,detailed,N002_NCT07786870,E7,3,통과,통과,True,"'his pulmonologist has scheduled his first dupilumab injection for next week' - he is not yet receiving it, and the medication list shows no current biologic."
 v3_r1112,detailed,N002_NCT07786870,E8,3,통과,통과,True,"The patient is a 24-year-old man, so pregnancy is not possible."
 v3_r1112,detailed,N002_NCT07139899,I1,1,등록 후 확인,등록 후 확인,True,Informed consent is signed after applying; not determinable from the description.
 v3_r1112,detailed,N002_NCT07139899,I2,1,통과,통과,True,"""A 24-year-old man"""
@@ -5807,7 +5807,7 @@ v3_r1112,detailed,N002_NCT07139899,E11,3,등록 후 확인,등록 후 확인,Tru
 v3_r1112,detailed,S002_NCT06068179,I1,1,통과,통과,True,A 29-year-old woman; within 18 to 60 years.
 v3_r1112,detailed,S002_NCT06068179,I2,1,통과,통과,True,"An endocrinologist diagnosed Graves' disease last week; labs show suppressed TSH, elevated free T4, and positive TSH receptor antibodies."
 v3_r1112,detailed,S002_NCT06068179,E1,1,통과,통과,True,"She has not yet started antithyroid medication and has never received radioactive iodine or thyroid surgery; diagnosed last week, so this is a new diagnosis."
-v3_r1112,detailed,S002_NCT06068179,E2,1,통과,모름,False,"Graves' disease was diagnosed, with ultrasound showing diffuse enlargement and no nodules. The description does not explicitly state that other etiologies (Hashimoto's, subacute thyroiditis, iodine-induced) are absent, and a coexisting cause is not ruled out."
+v3_r1112,detailed,S002_NCT06068179,E2,1,모름,모름,True,"Graves' disease was diagnosed, with ultrasound showing diffuse enlargement and no nodules. The description does not explicitly state that other etiologies (Hashimoto's, subacute thyroiditis, iodine-induced) are absent, and a coexisting cause is not ruled out."
 v3_r1112,detailed,S002_NCT06068179,E3,1,통과,통과,True,"She has mild upper eyelid retraction but no eye pain, double vision, or bulging of the eyes; no thyroid eye disease intervention is described."
 v3_r1112,detailed,S002_NCT06068179,E4,1,모름,모름,True,"No thyroid cancer is mentioned. The ultrasound shows no nodules, but the absence of cancer is not explicitly stated and no surgery is described."
 v3_r1112,detailed,S002_NCT06068179,E5,1,통과,통과,True,"ALT 28 U/L, AST 25 U/L, creatinine 62 µmol/L; creatinine is below 110 µmol/L for females, and the transaminases are within normal range, not >3x ULN."
@@ -5820,7 +5820,7 @@ v3_r1112,detailed,S002_NCT06068179,E11,1,등록 후 확인,등록 후 확인,Tru
 v3_r1112,detailed,S002_NCT06068179,I1,2,통과,통과,True,A 29-year-old woman; age 29 falls within 18 to 60 years.
 v3_r1112,detailed,S002_NCT06068179,I2,2,통과,통과,True,An endocrinologist diagnosed Graves' disease last week; she has not yet started antithyroid medication.
 v3_r1112,detailed,S002_NCT06068179,E1,2,통과,통과,True,"Diagnosed last week; she has not yet started antithyroid medication and has never received radioactive iodine or thyroid surgery. Newly diagnosed, so no relapse is described."
-v3_r1112,detailed,S002_NCT06068179,E2,2,통과,모름,False,"Positive TSH receptor antibodies and ultrasound with diffuse enlargement, increased blood flow and no nodules support Graves', but the description does not explicitly state that other etiologies (e.g., Hashimoto's, thyroiditis, iodine-induced) are absent; a coexisting cause is not ruled out."
+v3_r1112,detailed,S002_NCT06068179,E2,2,모름,모름,True,"Positive TSH receptor antibodies and ultrasound with diffuse enlargement, increased blood flow and no nodules support Graves', but the description does not explicitly state that other etiologies (e.g., Hashimoto's, thyroiditis, iodine-induced) are absent; a coexisting cause is not ruled out."
 v3_r1112,detailed,S002_NCT06068179,E3,2,통과,통과,True,"She has mild upper eyelid retraction but no eye pain, double vision, or bulging of the eyes; no moderate to severe thyroid eye disease requiring intervention is described."
 v3_r1112,detailed,S002_NCT06068179,E4,2,모름,모름,True,"Ultrasound shows no nodules, but thyroid cancer is not explicitly addressed and no surgery requirement is described."
 v3_r1112,detailed,S002_NCT06068179,E5,2,통과,통과,True,"ALT 28 U/L, AST 25 U/L, creatinine 62 µmol/L (below the 110 µmol/L female threshold). The ALT and AST values are within the usual normal range, so not >3× the upper limit."
@@ -5833,7 +5833,7 @@ v3_r1112,detailed,S002_NCT06068179,E11,2,등록 후 확인,등록 후 확인,Tru
 v3_r1112,detailed,S002_NCT06068179,I1,3,통과,통과,True,A 29-year-old woman; age 29 is within 18 to 60 years.
 v3_r1112,detailed,S002_NCT06068179,I2,3,통과,통과,True,An endocrinologist diagnosed Graves' disease last week; she has not yet started antithyroid medication.
 v3_r1112,detailed,S002_NCT06068179,E1,3,통과,통과,True,"Diagnosed last week, has not yet started antithyroid medication and has never received radioactive iodine or thyroid surgery. This is a new diagnosis, so there is no treatment or relapse."
-v3_r1112,detailed,S002_NCT06068179,E2,3,통과,모름,False,"Graves' disease was diagnosed with positive TSH receptor antibodies, and ultrasound showed diffuse enlargement with no nodules. The description does not explicitly state that other causes (Hashimoto's, subacute thyroiditis, iodine-induced) are absent, and a coexisting condition is not excluded."
+v3_r1112,detailed,S002_NCT06068179,E2,3,모름,모름,True,"Graves' disease was diagnosed with positive TSH receptor antibodies, and ultrasound showed diffuse enlargement with no nodules. The description does not explicitly state that other causes (Hashimoto's, subacute thyroiditis, iodine-induced) are absent, and a coexisting condition is not excluded."
 v3_r1112,detailed,S002_NCT06068179,E3,3,통과,통과,True,"She has mild upper eyelid retraction but no eye pain, double vision, or bulging of the eyes, so there is no moderate to severe thyroid eye disease needing intervention."
 v3_r1112,detailed,S002_NCT06068179,E4,3,모름,모름,True,"Thyroid ultrasound shows no nodules, but concurrent thyroid cancer is not explicitly addressed and no surgery need is stated."
 v3_r1112,detailed,S002_NCT06068179,E5,3,통과,통과,True,"ALT 28 U/L, AST 25 U/L, creatinine 62 µmol/L. Creatinine is below 110 µmol/L for females. ALT and AST are not near 3 times the upper limit of normal."
@@ -6072,14 +6072,14 @@ control,detailed,S008_NCT07299695,E9,3,모름,모름,True,Legal status (tutorshi
 control,detailed,S008_NCT07299695,E10,3,모름,모름,True,Not documented whether deprived of liberty or under court protection.
 control,detailed,S008_NCT07299695,E11,3,등록 후 확인,모름,False,No information on willingness to participate or consent.
 control,detailed,N001_NCT07082114,I1,1,통과,통과,True,58-year-old woman; within 18–75.
-control,detailed,N001_NCT07082114,I2,1,통과,모름,False,"9-year history of type 2 diabetes (duration well over 3 months), but whether diagnosis was based on WHO criteria is not documented."
+control,detailed,N001_NCT07082114,I2,1,모름,모름,True,"9-year history of type 2 diabetes (duration well over 3 months), but whether diagnosis was based on WHO criteria is not documented."
 control,detailed,N001_NCT07082114,I3,1,통과,통과,True,Metformin 1000 mg twice daily (2000 mg/day) at the same dose for the past two years.
 control,detailed,N001_NCT07082114,I4,1,등록 후 확인,모름,False,"HbA1c 9.8% measured at her clinic last week is within 7.5–11.0%, but it is unclear whether it was a local laboratory screening value for this study; formal screening measurement not yet done."
 control,detailed,N001_NCT07082114,I5,1,등록 후 확인,등록 후 확인,True,"Requires central laboratory HbA1c prior to randomization, which only occurs during study screening."
 control,detailed,N001_NCT07082114,I6,1,통과,통과,True,"BMI 31.2 kg/m², within 19.0–40.0."
 control,detailed,N001_NCT07082114,I7,1,통과,통과,True,"Patient is a 58-year-old postmenopausal woman, so not of childbearing potential; she is neither a male nor a female of childbearing potential, so the contraception requirement does not apply."
 control,detailed,N001_NCT07082114,I8,1,등록 후 확인,등록 후 확인,True,"Willingness to maintain diet/exercise, protocol compliance, and written informed consent are obtained at the consent/screening visit; no record of these."
-control,detailed,N001_NCT07082114,E1,1,통과,통과,True,Documented as type 2 diabetes for 9 years; postmenopausal woman so not gestational. No indication of T1DM/LADA or special types.
+control,detailed,N001_NCT07082114,E1,1,모름,통과,False,Documented as type 2 diabetes for 9 years; postmenopausal woman so not gestational. No indication of T1DM/LADA or special types.
 control,detailed,N001_NCT07082114,E2,1,모름,모름,True,"No mention of acute diabetic complications such as DKA, lactic acidosis, or hyperosmolar coma in the past 6 months; absence not explicitly stated."
 control,detailed,N001_NCT07082114,E3,1,모름,모름,True,"No information on personal or family history of medullary thyroid carcinoma, C-cell hyperplasia, or MEN2 (hypothyroidism on levothyroxine is different)."
 control,detailed,N001_NCT07082114,E4,1,통과,모름,False,"No history of pancreatitis stated, but pancreatic injury and other high-risk factors for pancreatitis (e.g., alcohol, hypertriglyceridemia, gallstones) are not addressed."
@@ -6105,14 +6105,14 @@ control,detailed,N001_NCT07082114,E23,1,모름,모름,True,"Never used SGLT2i or
 control,detailed,N001_NCT07082114,E24,1,모름,모름,True,No information about participation in other clinical studies in the past 3 months.
 control,detailed,N001_NCT07082114,E25,1,등록 후 확인,등록 후 확인,True,Requires investigator judgment of suitability.
 control,detailed,N001_NCT07082114,I1,2,통과,통과,True,58-year-old woman; within 18–75.
-control,detailed,N001_NCT07082114,I2,2,통과,통과,True,"9-year history of type 2 diabetes (>3 months). WHO criteria diagnosis not explicitly documented, but the long-standing T2DM diagnosis is reasonable to accept."
+control,detailed,N001_NCT07082114,I2,2,모름,통과,False,"9-year history of type 2 diabetes (>3 months). WHO criteria diagnosis not explicitly documented, but the long-standing T2DM diagnosis is reasonable to accept."
 control,detailed,N001_NCT07082114,I3,2,통과,통과,True,Metformin 1000 mg twice daily (2000 mg/day) at the same dose for the past two years.
 control,detailed,N001_NCT07082114,I4,2,등록 후 확인,통과,False,"HbA1c 9.8% measured at her clinic last week, within 7.5–11.0%. Formal screening local lab value will be obtained at screening, but existing value is in range."
 control,detailed,N001_NCT07082114,I5,2,등록 후 확인,등록 후 확인,True,Requires central laboratory HbA1c prior to randomization; only obtained during study screening.
 control,detailed,N001_NCT07082114,I6,2,통과,통과,True,"BMI 31.2 kg/m², within 19.0–40.0."
 control,detailed,N001_NCT07082114,I7,2,통과,통과,True,"Patient is postmenopausal, so not of childbearing potential; female contraception requirement does not apply."
 control,detailed,N001_NCT07082114,I8,2,등록 후 확인,등록 후 확인,True,"Willingness to maintain diet/exercise, comply with protocol and written informed consent are obtained at consent/screening; not documented."
-control,detailed,N001_NCT07082114,E1,2,통과,통과,True,"Diagnosed with type 2 diabetes; no indication of type 1, LADA, special types or gestational diabetes (postmenopausal, 9-year T2DM)."
+control,detailed,N001_NCT07082114,E1,2,모름,통과,False,"Diagnosed with type 2 diabetes; no indication of type 1, LADA, special types or gestational diabetes (postmenopausal, 9-year T2DM)."
 control,detailed,N001_NCT07082114,E2,2,모름,모름,True,"No statement about acute diabetic complications (DKA, lactic acidosis, HONK) in past 6 months."
 control,detailed,N001_NCT07082114,E3,2,모름,모름,True,"No information on personal/family history of medullary thyroid carcinoma, C-cell hyperplasia or MEN2 (hypothyroidism on levothyroxine only noted)."
 control,detailed,N001_NCT07082114,E4,2,통과,모름,False,"No history of pancreatitis is stated, but pancreatic injury and high-risk factors for pancreatitis (e.g., alcohol, hypertriglyceridemia, gallstones) are not documented."
@@ -6138,14 +6138,14 @@ control,detailed,N001_NCT07082114,E23,2,모름,모름,True,"No allergy history d
 control,detailed,N001_NCT07082114,E24,2,모름,모름,True,No information on participation in other clinical studies in past 3 months.
 control,detailed,N001_NCT07082114,E25,2,등록 후 확인,등록 후 확인,True,Requires investigator judgment of suitability.
 control,detailed,N001_NCT07082114,I1,3,통과,통과,True,58-year-old woman; within 18–75.
-control,detailed,N001_NCT07082114,I2,3,통과,통과,True,"9-year history of type 2 diabetes (≥3 months). WHO-criteria basis not explicitly documented, but a established T2DM diagnosis with HbA1c 9.8% and fasting glucose 11.2 mmol/L is consistent."
+control,detailed,N001_NCT07082114,I2,3,모름,통과,False,"9-year history of type 2 diabetes (≥3 months). WHO-criteria basis not explicitly documented, but a established T2DM diagnosis with HbA1c 9.8% and fasting glucose 11.2 mmol/L is consistent."
 control,detailed,N001_NCT07082114,I3,3,통과,통과,True,Metformin 1000 mg twice daily (2000 mg/day) at the same dose for the past two years.
 control,detailed,N001_NCT07082114,I4,3,등록 후 확인,통과,False,"HbA1c 9.8% measured at her clinic last week, within 7.5–11.0%. Formal study screening value will be obtained later, but existing local result is in range."
 control,detailed,N001_NCT07082114,I5,3,등록 후 확인,등록 후 확인,True,"Requires pre-randomization HbA1c by the study's central laboratory, which exists only after enrollment."
 control,detailed,N001_NCT07082114,I6,3,통과,통과,True,"BMI 31.2 kg/m², within 19.0–40.0."
 control,detailed,N001_NCT07082114,I7,3,통과,통과,True,"Patient is postmenopausal, so not of childbearing potential; she is female, and the male requirement does not apply."
 control,detailed,N001_NCT07082114,I8,3,등록 후 확인,모름,False,"No information on willingness to maintain diet/exercise habits, comply with protocol, or consent; written consent is only obtained at enrollment."
-control,detailed,N001_NCT07082114,E1,3,통과,통과,True,"Diagnosed with type 2 diabetes; she is a postmenopausal woman, so gestational diabetes not applicable. No T1DM/LADA/special types documented."
+control,detailed,N001_NCT07082114,E1,3,모름,통과,False,"Diagnosed with type 2 diabetes; she is a postmenopausal woman, so gestational diabetes not applicable. No T1DM/LADA/special types documented."
 control,detailed,N001_NCT07082114,E2,3,모름,모름,True,"No mention of acute diabetic complications (DKA, lactic acidosis, hyperosmolar coma) in the past 6 months; symptoms are fatigue and thirst only."
 control,detailed,N001_NCT07082114,E3,3,모름,모름,True,"No information on personal or family history of medullary thyroid carcinoma, C-cell hyperplasia, or MEN2 (hypothyroidism on levothyroxine is documented but different)."
 control,detailed,N001_NCT07082114,E4,3,통과,모름,False,"'No history of pancreatitis' is documented, but pancreatic injury and high-risk factors for pancreatitis (e.g., hypertriglyceridemia, alcohol use, gallstones) are not addressed."
@@ -6172,7 +6172,7 @@ control,detailed,N001_NCT07082114,E24,3,모름,모름,True,No information on par
 control,detailed,N001_NCT07082114,E25,3,등록 후 확인,등록 후 확인,True,Requires investigator judgment of suitability.
 control,detailed,N001_NCT06863532,I1,1,등록 후 확인,모름,False,"No information on the patient's capacity or willingness to sign consent; she works as an accountant, but that is not confirmation."
 control,detailed,N001_NCT06863532,I2,1,통과,통과,True,58-year-old woman; within 18-74.
-control,detailed,N001_NCT06863532,I3,1,통과,통과,True,"9-year history of type 2 diabetes with HbA1c 9.8% and FBG 11.2 mmol/L, which meets diagnostic thresholds."
+control,detailed,N001_NCT06863532,I3,1,모름,통과,False,"9-year history of type 2 diabetes with HbA1c 9.8% and FBG 11.2 mmol/L, which meets diagnostic thresholds."
 control,detailed,N001_NCT06863532,I4,1,탈락,탈락,True,"She has never used any SGLT2 inhibitor; she is on metformin only, so she has not been on SGLT2i monotherapy for 8 weeks."
 control,detailed,N001_NCT06863532,I5,1,탈락,탈락,True,"Metformin 1000 mg twice daily = 2000 mg/day, exceeding the 500-1000 mg/day range, though she has taken it at a stable dose for 2 years."
 control,detailed,N001_NCT06863532,I6,1,탈락,탈락,True,HbA1c 9.8% measured last week is above the 9.5% upper limit.
@@ -6181,8 +6181,8 @@ control,detailed,N001_NCT06863532,I8,1,통과,통과,True,"BMI 31.2 kg/m², whic
 control,detailed,N001_NCT06863532,I9,1,모름,모름,True,No urine ketone result is documented.
 control,detailed,N001_NCT06863532,I10,1,통과,통과,True,"eGFR 78 mL/min/1.73 m², which is ≥ 60."
 control,detailed,N001_NCT06863532,I11,1,등록 후 확인,등록 후 확인,True,"Agreement to maintain diet and exercise, and willingness and ability to perform SMBG, are confirmed at the consent or screening visit; nothing in the record addresses them."
-control,detailed,N001_NCT06863532,E1,1,통과,통과,True,"Documented type 2 diabetes with a 9-year history managed on metformin, which implies it is not type 1."
-control,detailed,N001_NCT06863532,E2,1,통과,모름,False,"She is diagnosed with T2DM, but secondary causes are not explicitly excluded in the record."
+control,detailed,N001_NCT06863532,E1,1,모름,통과,False,"Documented type 2 diabetes with a 9-year history managed on metformin, which implies it is not type 1."
+control,detailed,N001_NCT06863532,E2,1,모름,모름,True,"She is diagnosed with T2DM, but secondary causes are not explicitly excluded in the record."
 control,detailed,N001_NCT06863532,E3,1,모름,모름,True,No transplant history is mentioned.
 control,detailed,N001_NCT06863532,E4,1,모름,모름,True,"She has no history of pancreatitis, but pancreatic resection is not addressed."
 control,detailed,N001_NCT06863532,E5,1,모름,모름,True,No DKA or hyperosmolar coma history is documented.
@@ -6208,7 +6208,7 @@ control,detailed,N001_NCT06863532,E24,1,모름,모름,True,No information on rec
 control,detailed,N001_NCT06863532,E25,1,등록 후 확인,등록 후 확인,True,This depends on investigator judgment of suitability.
 control,detailed,N001_NCT06863532,I1,2,등록 후 확인,모름,False,No information on the patient's capacity or willingness to sign consent; she is a working accountant but this is not confirmation.
 control,detailed,N001_NCT06863532,I2,2,통과,통과,True,58-year-old woman; within 18-74.
-control,detailed,N001_NCT06863532,I3,2,통과,통과,True,"9-year history of type 2 diabetes, HbA1c 9.8%, fasting glucose 11.2 mmol/L."
+control,detailed,N001_NCT06863532,I3,2,모름,통과,False,"9-year history of type 2 diabetes, HbA1c 9.8%, fasting glucose 11.2 mmol/L."
 control,detailed,N001_NCT06863532,I4,2,탈락,탈락,True,"She 'has never used any other glucose-lowering medication, including SGLT2 inhibitors'; she is on metformin, not SGLT2i monotherapy."
 control,detailed,N001_NCT06863532,I5,2,탈락,탈락,True,Metformin 1000 mg twice daily (2000 mg/day) for two years at the same dose; this exceeds the 500-1000 mg/day range.
 control,detailed,N001_NCT06863532,I6,2,탈락,탈락,True,"HbA1c measured last week was 9.8%, above the 9.5% upper limit."
@@ -6217,8 +6217,8 @@ control,detailed,N001_NCT06863532,I8,2,통과,통과,True,"BMI 31.2 kg/m², ≤4
 control,detailed,N001_NCT06863532,I9,2,모름,모름,True,No urine ketone result documented.
 control,detailed,N001_NCT06863532,I10,2,통과,통과,True,"eGFR 78 mL/min/1.73 m², ≥60."
 control,detailed,N001_NCT06863532,I11,2,등록 후 확인,등록 후 확인,True,Agreement to maintain diet/exercise and ability to use SMBG are assessed at consent/screening and during the trial; not documented.
-control,detailed,N001_NCT06863532,E1,2,통과,통과,True,"Documented type 2 diabetes for 9 years, managed with metformin; no indication of type 1."
-control,detailed,N001_NCT06863532,E2,2,통과,모름,False,"Diagnosis is T2DM, but secondary diabetes is not explicitly excluded in the record."
+control,detailed,N001_NCT06863532,E1,2,모름,통과,False,"Documented type 2 diabetes for 9 years, managed with metformin; no indication of type 1."
+control,detailed,N001_NCT06863532,E2,2,모름,모름,True,"Diagnosis is T2DM, but secondary diabetes is not explicitly excluded in the record."
 control,detailed,N001_NCT06863532,E3,2,모름,모름,True,No transplant history mentioned.
 control,detailed,N001_NCT06863532,E4,2,모름,모름,True,No history of pancreatitis stated; pancreatic resection not mentioned.
 control,detailed,N001_NCT06863532,E5,2,모름,모름,True,No mention of DKA or hyperosmolar coma history.
@@ -6244,7 +6244,7 @@ control,detailed,N001_NCT06863532,E24,2,모름,모름,True,No information on par
 control,detailed,N001_NCT06863532,E25,2,등록 후 확인,등록 후 확인,True,Requires investigator judgment of suitability.
 control,detailed,N001_NCT06863532,I1,3,등록 후 확인,모름,False,No information on consent capacity or willingness to sign; could be asked.
 control,detailed,N001_NCT06863532,I2,3,통과,통과,True,58-year-old woman; within 18-74.
-control,detailed,N001_NCT06863532,I3,3,통과,통과,True,"9-year history of type 2 diabetes, HbA1c 9.8%, FBG 11.2 mmol/L."
+control,detailed,N001_NCT06863532,I3,3,모름,통과,False,"9-year history of type 2 diabetes, HbA1c 9.8%, FBG 11.2 mmol/L."
 control,detailed,N001_NCT06863532,I4,3,탈락,탈락,True,Has never used any other glucose-lowering medication including SGLT2 inhibitors; not on SGLT2i monotherapy.
 control,detailed,N001_NCT06863532,I5,3,탈락,탈락,True,"Metformin 1000 mg twice daily = 2000 mg/day, outside 500-1000 mg/day range, though stable for two years."
 control,detailed,N001_NCT06863532,I6,3,탈락,탈락,True,"HbA1c 9.8% last week, above the 9.5% upper limit."
@@ -6253,8 +6253,8 @@ control,detailed,N001_NCT06863532,I8,3,통과,통과,True,BMI 31.2 kg/m² ≤ 40
 control,detailed,N001_NCT06863532,I9,3,모름,모름,True,No urine ketone result documented.
 control,detailed,N001_NCT06863532,I10,3,통과,통과,True,eGFR 78 mL/min/1.73 m² ≥ 60.
 control,detailed,N001_NCT06863532,I11,3,등록 후 확인,모름,False,"No information on willingness to maintain diet/exercise, or ability to use a glucose meter and keep records; could be asked."
-control,detailed,N001_NCT06863532,E1,3,통과,통과,True,Diagnosed with type 2 diabetes with 9-year history; no indication of type 1.
-control,detailed,N001_NCT06863532,E2,3,통과,모름,False,"Diagnosed T2DM, but secondary diabetes not explicitly excluded."
+control,detailed,N001_NCT06863532,E1,3,모름,통과,False,Diagnosed with type 2 diabetes with 9-year history; no indication of type 1.
+control,detailed,N001_NCT06863532,E2,3,모름,모름,True,"Diagnosed T2DM, but secondary diabetes not explicitly excluded."
 control,detailed,N001_NCT06863532,E3,3,모름,모름,True,No transplant history documented.
 control,detailed,N001_NCT06863532,E4,3,모름,모름,True,"No history of pancreatitis stated, but pancreatic resection not addressed."
 control,detailed,N001_NCT06863532,E5,3,모름,모름,True,No mention of DKA or hyperosmolar coma history.
@@ -6286,7 +6286,7 @@ control,detailed,N002_NCT07786870,E3,1,모름,모름,True,"The record does not m
 control,detailed,N002_NCT07786870,E4,1,통과,모름,False,"At the ED visit ten days ago he had no fever, a normal chest X-ray, and no antibiotics, which argues against infection then. The record does not state that there is currently no respiratory infection or tuberculosis. He now has worsening symptoms of wheezing, chest tightness and cough, so his curren"
 control,detailed,N002_NCT07786870,E5,1,통과,통과,True,"The ED treatment was 'a 5-day course of oral prednisone without antibiotics'. No other antibiotic use is mentioned, though the record does not cover the full 4 weeks."
 control,detailed,N002_NCT07786870,E6,1,모름,통과,False,"Resting oxygen saturation is 97% on room air. No home oxygen is mentioned among his treatments, which are budesonide-formoterol and prednisone."
-control,detailed,N002_NCT07786870,E7,1,탈락,통과,False,"The first dupilumab injection is only 'scheduled for next week', so he is not currently being treated. No other biologics are listed."
+control,detailed,N002_NCT07786870,E7,1,통과,통과,True,"The first dupilumab injection is only 'scheduled for next week', so he is not currently being treated. No other biologics are listed."
 control,detailed,N002_NCT07786870,E8,1,통과,통과,True,"The patient is a 24-year-old man, so pregnancy is not possible."
 control,detailed,N002_NCT07786870,I1,2,통과,통과,True,"Patient is 24 years old, which is >18 and the criterion has no upper age limit."
 control,detailed,N002_NCT07786870,I2,2,모름,모름,True,"Asthma was diagnosed by a pulmonologist at age 8 and is clearly present, but the record does not say whether the diagnosis follows GINA 2023 criteria (e.g., documented variable airflow limitation/reversibility). Spirometry shows FEV1 68% predicted, but no reversibility data are given."
@@ -6296,7 +6296,7 @@ control,detailed,N002_NCT07786870,E3,2,모름,모름,True,No mention of malignan
 control,detailed,N002_NCT07786870,E4,2,통과,통과,True,"At the ED visit he had ""no fever,"" a normal chest X-ray, and was treated without antibiotics; the exacerbation was triggered by cat exposure. No TB or infection is documented. Resting SpO2 is 97%."
 control,detailed,N002_NCT07786870,E5,2,통과,통과,True,"Ten days ago he was treated with a 5-day oral prednisone course ""without antibiotics""; no other antibiotic use is documented."
 control,detailed,N002_NCT07786870,E6,2,모름,모름,True,"Resting SpO2 97% on room air, but home oxygen therapy is not explicitly addressed. The room-air saturation and medication list suggest no oxygen use, though this is not stated."
-control,detailed,N002_NCT07786870,E7,2,탈락,통과,False,The first dupilumab injection is only scheduled for next week; he is not currently receiving it. No other biologic is listed in his medications.
+control,detailed,N002_NCT07786870,E7,2,통과,통과,True,The first dupilumab injection is only scheduled for next week; he is not currently receiving it. No other biologic is listed in his medications.
 control,detailed,N002_NCT07786870,E8,2,통과,통과,True,Patient is a 24-year-old man; pregnancy is not applicable.
 control,detailed,N002_NCT07786870,I1,3,통과,통과,True,"Patient is 24 years old, which is >18 and the criterion has no upper limit."
 control,detailed,N002_NCT07786870,I2,3,모름,모름,True,"Asthma was diagnosed by a pulmonologist at age 8, and the current presentation is consistent with asthma. The record does not say whether the diagnosis meets GINA 2023 criteria (e.g., documented variable expiratory airflow limitation or reversibility), so this cannot be confirmed."
@@ -6306,7 +6306,7 @@ control,detailed,N002_NCT07786870,E3,3,모름,모름,True,"No malignancy is ment
 control,detailed,N002_NCT07786870,E4,3,통과,통과,True,"At the ED visit he had no fever, a normal chest X-ray, and was treated without antibiotics. The exacerbation was triggered by cat exposure. No TB or respiratory infection is described, though the ED visit was ten days ago and current status is not explicitly stated."
 control,detailed,N002_NCT07786870,E5,3,통과,통과,True,The ED treatment was a 5-day oral prednisone course 'without antibiotics'. No other antibiotic use is documented.
 control,detailed,N002_NCT07786870,E6,3,모름,통과,False,"Resting oxygen saturation is 97% on room air, and no home oxygen therapy is listed among medications."
-control,detailed,N002_NCT07786870,E7,3,탈락,통과,False,"Dupilumab is only planned ('first dupilumab injection scheduled for next week'). He has not yet received it, and no other biologic is listed. Note that if the injection is given before enrollment, he would become excluded."
+control,detailed,N002_NCT07786870,E7,3,통과,통과,True,"Dupilumab is only planned ('first dupilumab injection scheduled for next week'). He has not yet received it, and no other biologic is listed. Note that if the injection is given before enrollment, he would become excluded."
 control,detailed,N002_NCT07786870,E8,3,통과,통과,True,"Patient is male, so pregnancy is not possible."
 control,detailed,N002_NCT07139899,I1,1,등록 후 확인,등록 후 확인,True,Informed consent and written documentation are obtained formally at the consent/screening visit; nothing in the record yet.
 control,detailed,N002_NCT07139899,I2,1,통과,통과,True,"Age 24 years, within 18-65."
@@ -6371,7 +6371,7 @@ control,detailed,N002_NCT07139899,E11,3,등록 후 확인,등록 후 확인,True
 control,detailed,S002_NCT06068179,I1,1,통과,통과,True,"Patient is 29 years old, within the 18 to 60 range."
 control,detailed,S002_NCT06068179,I2,1,통과,통과,True,"Endocrinologist diagnosed Graves' disease last week, supported by suppressed TSH, elevated free T4, positive TRAb, and ultrasound findings."
 control,detailed,S002_NCT06068179,E1,1,통과,통과,True,"Diagnosed last week, has not yet started antithyroid medication, never had radioactive iodine or thyroid surgery. This is a new diagnosis, so no relapse."
-control,detailed,S002_NCT06068179,E2,1,통과,통과,True,"Positive TSH receptor antibodies and diffuse enlargement with increased blood flow and no nodules on ultrasound support Graves' disease, and no nodules argues against toxic nodular disease. The non-tender gland argues against subacute thyroiditis. No iodine exposure is mentioned, and Hashimoto's thy"
+control,detailed,S002_NCT06068179,E2,1,모름,통과,False,"Positive TSH receptor antibodies and diffuse enlargement with increased blood flow and no nodules on ultrasound support Graves' disease, and no nodules argues against toxic nodular disease. The non-tender gland argues against subacute thyroiditis. No iodine exposure is mentioned, and Hashimoto's thy"
 control,detailed,S002_NCT06068179,E3,1,통과,통과,True,"Only mild upper eyelid retraction; no eye pain, double vision, or bulging of the eyes, so no moderate to severe thyroid eye disease requiring intervention."
 control,detailed,S002_NCT06068179,E4,1,모름,통과,False,"Ultrasound shows diffuse enlargement with no nodules, and no thyroid cancer is documented or suspected."
 control,detailed,S002_NCT06068179,E5,1,통과,통과,True,"ALT 28 U/L and AST 25 U/L are normal-range values, and creatinine 62 µmol/L is below the 110 µmol/L female threshold."
@@ -6384,7 +6384,7 @@ control,detailed,S002_NCT06068179,E11,1,등록 후 확인,모름,False,Willingne
 control,detailed,S002_NCT06068179,I1,2,통과,통과,True,"Patient is 29 years old, within 18-60."
 control,detailed,S002_NCT06068179,I2,2,통과,통과,True,"Graves' disease diagnosed by an endocrinologist last week, with suppressed TSH, elevated FT4, positive TRAb."
 control,detailed,S002_NCT06068179,E1,2,통과,통과,True,Newly diagnosed last week; has not started antithyroid medication and never had radioactive iodine or thyroid surgery; no relapse (first diagnosis).
-control,detailed,S002_NCT06068179,E2,2,통과,통과,True,"Positive TSH receptor antibodies, diffuse enlargement with increased blood flow and no nodules on ultrasound, diagnosed as Graves' disease, which argues against toxic nodular disease or adenoma. Non-tender gland argues against subacute thyroiditis. No iodine exposure is documented, and Hashimoto's i"
+control,detailed,S002_NCT06068179,E2,2,모름,통과,False,"Positive TSH receptor antibodies, diffuse enlargement with increased blood flow and no nodules on ultrasound, diagnosed as Graves' disease, which argues against toxic nodular disease or adenoma. Non-tender gland argues against subacute thyroiditis. No iodine exposure is documented, and Hashimoto's i"
 control,detailed,S002_NCT06068179,E3,2,통과,통과,True,"Only mild upper eyelid retraction; no eye pain, double vision, or bulging of the eyes, so no moderate-to-severe TED requiring intervention."
 control,detailed,S002_NCT06068179,E4,2,모름,통과,False,Ultrasound shows diffuse enlargement with no nodules; no thyroid cancer documented and no surgery needed.
 control,detailed,S002_NCT06068179,E5,2,통과,통과,True,"ALT 28 U/L, AST 25 U/L (normal range not stated, but values are not near a 3x elevation). Creatinine 62 µmol/L, below the 110 µmol/L female threshold."
@@ -6397,7 +6397,7 @@ control,detailed,S002_NCT06068179,E11,2,등록 후 확인,모름,False,Willingne
 control,detailed,S002_NCT06068179,I1,3,통과,통과,True,"Patient is 29 years old, within 18–60."
 control,detailed,S002_NCT06068179,I2,3,통과,통과,True,Graves' disease diagnosed by an endocrinologist last week; not yet on antithyroid medication.
 control,detailed,S002_NCT06068179,E1,3,통과,통과,True,"Newly diagnosed last week, has not started antithyroid medication, and never had radioactive iodine or surgery; no relapse (first diagnosis)."
-control,detailed,S002_NCT06068179,E2,3,통과,통과,True,"Positive TSH receptor antibodies, diffuse enlargement with increased blood flow and no nodules on ultrasound, diagnosed as Graves' disease; this argues against toxic nodular disease or thyroiditis. No iodine exposure is mentioned, though."
+control,detailed,S002_NCT06068179,E2,3,모름,통과,False,"Positive TSH receptor antibodies, diffuse enlargement with increased blood flow and no nodules on ultrasound, diagnosed as Graves' disease; this argues against toxic nodular disease or thyroiditis. No iodine exposure is mentioned, though."
 control,detailed,S002_NCT06068179,E3,3,통과,통과,True,"Only mild upper eyelid retraction; no eye pain, double vision, or bulging of the eyes, so there is no moderate-to-severe thyroid eye disease requiring intervention."
 control,detailed,S002_NCT06068179,E4,3,모름,통과,False,Ultrasound shows diffuse enlargement with no nodules; no thyroid cancer mentioned and no surgery needed.
 control,detailed,S002_NCT06068179,E5,3,통과,통과,True,"ALT 28 and AST 25 U/L (normal, not >3x ULN); creatinine 62 µmol/L, below 110 µmol/L for females."

@@ -1,0 +1,148 @@
+﻿from,to,dataset,case,criterion,gold,before,after,kind
+p0,p1,goldset,S001_NCT04647097,E7,등록 후 확인,등록 후 확인,모름,망가짐
+p0,p1,goldset,S002_NCT06068179,E1,모름,통과,모름,고쳐짐
+p0,p1,goldset,S002_NCT07018323,E1,모름,통과,모름,고쳐짐
+p0,p1,goldset,S003_NCT07206537,I2,모름,등록 후 확인,모름,고쳐짐
+p0,p1,goldset,S003_NCT07206537,E2,등록 후 확인,등록 후 확인,모름,망가짐
+p0,p1,goldset,S003_NCT07499700,E3,모름,통과,모름,고쳐짐
+p0,p1,goldset,S003_NCT07499700,E5,모름,통과,모름,고쳐짐
+p0,p1,goldset,S003_NCT07499700,E6,모름,통과,모름,고쳐짐
+p0,p1,goldset,S007_NCT05561907,E5,모름,통과,모름,고쳐짐
+p0,p1,goldset,S009_NCT07478952,E3,모름,통과,모름,고쳐짐
+p0,p1,goldset,S009_NCT07478952,E4,모름,통과,모름,고쳐짐
+p0,p1,goldset,S010_NCT07081945,I1,등록 후 확인,모름,등록 후 확인,고쳐짐
+p0,p1,goldset,S010_NCT07081945,I3,모름,등록 후 확인,모름,고쳐짐
+p0,p1,detailed,S004_NCT05646485,E1,모름,통과,모름,고쳐짐
+p0,p1,detailed,S004_NCT05646485,E2,모름,통과,모름,고쳐짐
+p0,p1,detailed,S008_NCT07652658,E6,모름,통과,모름,고쳐짐
+p0,p1,detailed,S008_NCT07299695,E6,모름,통과,모름,고쳐짐
+p0,p1,detailed,N001_NCT07082114,E18,등록 후 확인,통과,모름,바뀜(둘 다 틀림)
+p0,p1,detailed,N001_NCT06863532,E2,통과,통과,모름,망가짐
+p0,p1,detailed,N002_NCT07786870,I2,모름,통과,모름,고쳐짐
+p0,p1,detailed,N002_NCT07786870,E4,통과,통과,모름,망가짐
+p0,p1,detailed,S002_NCT06068179,E8,모름,통과,모름,고쳐짐
+p0,p1,detailed,S010_NCT03714503,E7,등록 후 확인,등록 후 확인,모름,망가짐
+p0,p1,detailed,S010_NCT07081945,I1,등록 후 확인,모름,등록 후 확인,고쳐짐
+p1,p2,goldset,S001_NCT04647097,I5,등록 후 확인,모름,등록 후 확인,고쳐짐
+p1,p2,goldset,S001_NCT04647097,E6,등록 후 확인,모름,등록 후 확인,고쳐짐
+p1,p2,goldset,S001_NCT04647097,E7,등록 후 확인,모름,등록 후 확인,고쳐짐
+p1,p2,goldset,S002_NCT06068179,E11,등록 후 확인,모름,등록 후 확인,고쳐짐
+p1,p2,goldset,S002_NCT07018323,I1,등록 후 확인,모름,등록 후 확인,고쳐짐
+p1,p2,goldset,S002_NCT07018323,E2,등록 후 확인,모름,등록 후 확인,고쳐짐
+p1,p2,goldset,S003_NCT07206537,E2,등록 후 확인,모름,등록 후 확인,고쳐짐
+p1,p2,goldset,S003_NCT07499700,I1,모름,탈락,모름,고쳐짐
+p1,p2,goldset,S003_NCT07499700,I2,모름,탈락,모름,고쳐짐
+p1,p2,goldset,S004_NCT04369560,I2,등록 후 확인,모름,등록 후 확인,고쳐짐
+p1,p2,goldset,S006_NCT07654647,I6,등록 후 확인,모름,등록 후 확인,고쳐짐
+p1,p2,goldset,S006_NCT07654647,E6,등록 후 확인,모름,등록 후 확인,고쳐짐
+p1,p2,goldset,S007_NCT05561907,I1,모름,탈락,모름,고쳐짐
+p1,p2,goldset,S007_NCT05561907,I5,등록 후 확인,모름,등록 후 확인,고쳐짐
+p1,p2,goldset,S007_NCT05561907,I6,등록 후 확인,모름,등록 후 확인,고쳐짐
+p1,p2,goldset,S007_NCT05561907,I7,모름,탈락,모름,고쳐짐
+p1,p2,goldset,S007_NCT05561907,E6,모름,탈락,모름,고쳐짐
+p1,p2,goldset,S008_NCT07299695,I4,등록 후 확인,모름,등록 후 확인,고쳐짐
+p1,p2,goldset,S010_NCT03714503,I1,등록 후 확인,모름,등록 후 확인,고쳐짐
+p1,p2,detailed,S004_NCT04369560,I2,등록 후 확인,모름,등록 후 확인,고쳐짐
+p1,p2,detailed,S008_NCT07299695,I4,등록 후 확인,모름,등록 후 확인,고쳐짐
+p1,p2,detailed,S008_NCT07299695,E4,모름,통과,모름,고쳐짐
+p1,p2,detailed,S008_NCT07299695,E11,등록 후 확인,모름,등록 후 확인,고쳐짐
+p1,p2,detailed,N001_NCT07082114,I2,통과,통과,모름,망가짐
+p1,p2,detailed,N001_NCT07082114,I4,등록 후 확인,통과,모름,바뀜(둘 다 틀림)
+p1,p2,detailed,N001_NCT07082114,I8,등록 후 확인,모름,등록 후 확인,고쳐짐
+p1,p2,detailed,N001_NCT07082114,E1,통과,통과,모름,망가짐
+p1,p2,detailed,N001_NCT07082114,E15,모름,통과,모름,고쳐짐
+p1,p2,detailed,N001_NCT07082114,E16,모름,통과,모름,고쳐짐
+p1,p2,detailed,N001_NCT06863532,I1,등록 후 확인,모름,등록 후 확인,고쳐짐
+p1,p2,detailed,N001_NCT06863532,E1,통과,통과,모름,망가짐
+p1,p2,detailed,N001_NCT06863532,E7,모름,통과,모름,고쳐짐
+p1,p2,detailed,N001_NCT06863532,E18,모름,통과,모름,고쳐짐
+p1,p2,detailed,N001_NCT06863532,E22,통과,모름,등록 후 확인,바뀜(둘 다 틀림)
+p1,p2,detailed,N002_NCT07786870,I2,모름,모름,통과,망가짐
+p1,p2,detailed,N002_NCT07786870,E6,모름,통과,모름,고쳐짐
+p1,p2,detailed,S002_NCT06068179,E11,등록 후 확인,모름,등록 후 확인,고쳐짐
+p1,p2,detailed,S002_NCT07018323,I1,등록 후 확인,모름,등록 후 확인,고쳐짐
+p1,p2,detailed,S010_NCT03714503,I1,등록 후 확인,모름,등록 후 확인,고쳐짐
+p1,p2,detailed,S010_NCT03714503,E7,등록 후 확인,모름,등록 후 확인,고쳐짐
+p2,v3,goldset,S002_NCT07018323,E2,등록 후 확인,등록 후 확인,모름,망가짐
+p2,v3,goldset,S003_NCT07499700,I1,모름,모름,탈락,망가짐
+p2,v3,goldset,S003_NCT07499700,I2,모름,모름,탈락,망가짐
+p2,v3,goldset,S007_NCT05561907,I2,모름,통과,모름,고쳐짐
+p2,v3,goldset,S010_NCT03714503,E6,모름,통과,모름,고쳐짐
+p2,v3,detailed,S008_NCT07652658,E1,모름,통과,모름,고쳐짐
+p2,v3,detailed,S008_NCT07299695,E4,모름,모름,통과,망가짐
+p2,v3,detailed,N001_NCT07082114,I7,통과,통과,등록 후 확인,망가짐
+p2,v3,detailed,N001_NCT06863532,E21,통과,통과,모름,망가짐
+p2,v3,detailed,N002_NCT07786870,I2,모름,통과,모름,고쳐짐
+p2,v3,detailed,S002_NCT06068179,E2,통과,통과,모름,망가짐
+p2,v3,detailed,S002_NCT06068179,E5,통과,통과,모름,망가짐
+v3,v3_r1112,goldset,S002_NCT07018323,E2,등록 후 확인,모름,등록 후 확인,고쳐짐
+v3,v3_r1112,goldset,S003_NCT07499700,I1,모름,탈락,모름,고쳐짐
+v3,v3_r1112,goldset,S003_NCT07499700,I2,모름,탈락,모름,고쳐짐
+v3,v3_r1112,goldset,S007_NCT05561907,E2,통과,통과,모름,망가짐
+v3,v3_r1112,detailed,S008_NCT07299695,I2,모름,통과,모름,고쳐짐
+v3,v3_r1112,detailed,S008_NCT07299695,E1,통과,통과,모름,망가짐
+v3,v3_r1112,detailed,S008_NCT07299695,E4,모름,통과,모름,고쳐짐
+v3,v3_r1112,detailed,N001_NCT07082114,I3,통과,통과,모름,망가짐
+v3,v3_r1112,detailed,N001_NCT07082114,I7,통과,등록 후 확인,모름,바뀜(둘 다 틀림)
+v3,v3_r1112,detailed,N001_NCT07082114,E22,통과,통과,모름,망가짐
+v3,v3_r1112,detailed,N001_NCT06863532,I3,통과,통과,모름,망가짐
+v3,v3_r1112,detailed,S002_NCT06068179,E4,모름,통과,모름,고쳐짐
+v3,v3_r1112,detailed,S002_NCT06068179,E5,통과,모름,통과,고쳐짐
+v3,v3_r1112,detailed,S002_NCT06068179,E9,모름,통과,모름,고쳐짐
+v3,v3_r1112,detailed,S010_NCT07081945,E1,통과,통과,모름,망가짐
+v3_r1112,control,goldset,S001_NCT04647097,I5,등록 후 확인,등록 후 확인,모름,망가짐
+v3_r1112,control,goldset,S001_NCT04647097,E7,등록 후 확인,등록 후 확인,모름,망가짐
+v3_r1112,control,goldset,S001_NCT07024199,E11,등록 후 확인,등록 후 확인,통과,망가짐
+v3_r1112,control,goldset,S002_NCT06068179,E11,등록 후 확인,등록 후 확인,모름,망가짐
+v3_r1112,control,goldset,S002_NCT07018323,I1,등록 후 확인,등록 후 확인,모름,망가짐
+v3_r1112,control,goldset,S002_NCT07018323,E2,등록 후 확인,등록 후 확인,모름,망가짐
+v3_r1112,control,goldset,S003_NCT07206537,I2,모름,모름,탈락,망가짐
+v3_r1112,control,goldset,S003_NCT07206537,E2,등록 후 확인,등록 후 확인,모름,망가짐
+v3_r1112,control,goldset,S003_NCT07499700,I1,모름,모름,탈락,망가짐
+v3_r1112,control,goldset,S003_NCT07499700,I2,모름,모름,탈락,망가짐
+v3_r1112,control,goldset,S004_NCT04369560,I2,등록 후 확인,등록 후 확인,모름,망가짐
+v3_r1112,control,goldset,S004_NCT05646485,E3,등록 후 확인,등록 후 확인,모름,망가짐
+v3_r1112,control,goldset,S006_NCT07654647,I6,등록 후 확인,등록 후 확인,모름,망가짐
+v3_r1112,control,goldset,S006_NCT07654647,E6,등록 후 확인,등록 후 확인,모름,망가짐
+v3_r1112,control,goldset,S007_NCT05561907,I1,모름,모름,탈락,망가짐
+v3_r1112,control,goldset,S007_NCT05561907,I5,등록 후 확인,등록 후 확인,모름,망가짐
+v3_r1112,control,goldset,S007_NCT05561907,I7,모름,모름,탈락,망가짐
+v3_r1112,control,goldset,S007_NCT05561907,E2,통과,모름,통과,고쳐짐
+v3_r1112,control,goldset,S007_NCT05561907,E6,모름,모름,탈락,망가짐
+v3_r1112,control,goldset,S008_NCT07299695,I4,등록 후 확인,등록 후 확인,모름,망가짐
+v3_r1112,control,goldset,S008_NCT07299695,E11,등록 후 확인,등록 후 확인,모름,망가짐
+v3_r1112,control,goldset,S010_NCT03714503,I1,등록 후 확인,등록 후 확인,모름,망가짐
+v3_r1112,control,goldset,S010_NCT03714503,E6,모름,모름,통과,망가짐
+v3_r1112,control,detailed,S004_NCT04369560,I2,등록 후 확인,등록 후 확인,모름,망가짐
+v3_r1112,control,detailed,S004_NCT05646485,E3,등록 후 확인,등록 후 확인,모름,망가짐
+v3_r1112,control,detailed,S008_NCT07652658,E1,모름,모름,통과,망가짐
+v3_r1112,control,detailed,S008_NCT07652658,E6,모름,모름,통과,망가짐
+v3_r1112,control,detailed,S008_NCT07299695,I2,모름,모름,통과,망가짐
+v3_r1112,control,detailed,S008_NCT07299695,I4,등록 후 확인,등록 후 확인,모름,망가짐
+v3_r1112,control,detailed,S008_NCT07299695,E1,통과,모름,통과,고쳐짐
+v3_r1112,control,detailed,S008_NCT07299695,E4,모름,모름,통과,망가짐
+v3_r1112,control,detailed,S008_NCT07299695,E11,등록 후 확인,등록 후 확인,모름,망가짐
+v3_r1112,control,detailed,N001_NCT07082114,I2,통과,모름,통과,고쳐짐
+v3_r1112,control,detailed,N001_NCT07082114,I3,통과,모름,통과,고쳐짐
+v3_r1112,control,detailed,N001_NCT07082114,I4,등록 후 확인,모름,통과,바뀜(둘 다 틀림)
+v3_r1112,control,detailed,N001_NCT07082114,I7,통과,모름,통과,고쳐짐
+v3_r1112,control,detailed,N001_NCT07082114,E1,통과,모름,통과,고쳐짐
+v3_r1112,control,detailed,N001_NCT07082114,E15,모름,모름,통과,망가짐
+v3_r1112,control,detailed,N001_NCT07082114,E16,모름,모름,통과,망가짐
+v3_r1112,control,detailed,N001_NCT07082114,E18,등록 후 확인,모름,통과,바뀜(둘 다 틀림)
+v3_r1112,control,detailed,N001_NCT07082114,E22,통과,모름,통과,고쳐짐
+v3_r1112,control,detailed,N001_NCT06863532,I1,등록 후 확인,등록 후 확인,모름,망가짐
+v3_r1112,control,detailed,N001_NCT06863532,I3,통과,모름,통과,고쳐짐
+v3_r1112,control,detailed,N001_NCT06863532,E1,통과,모름,통과,고쳐짐
+v3_r1112,control,detailed,N001_NCT06863532,E7,모름,모름,통과,망가짐
+v3_r1112,control,detailed,N001_NCT06863532,E21,통과,모름,통과,고쳐짐
+v3_r1112,control,detailed,N001_NCT06863532,E22,통과,등록 후 확인,모름,바뀜(둘 다 틀림)
+v3_r1112,control,detailed,N002_NCT07786870,E4,통과,모름,통과,고쳐짐
+v3_r1112,control,detailed,N002_NCT07786870,E6,모름,모름,통과,망가짐
+v3_r1112,control,detailed,S002_NCT06068179,E2,통과,모름,통과,고쳐짐
+v3_r1112,control,detailed,S002_NCT06068179,E4,모름,모름,통과,망가짐
+v3_r1112,control,detailed,S002_NCT06068179,E11,등록 후 확인,등록 후 확인,모름,망가짐
+v3_r1112,control,detailed,S002_NCT07018323,I1,등록 후 확인,등록 후 확인,모름,망가짐
+v3_r1112,control,detailed,S010_NCT03714503,I1,등록 후 확인,등록 후 확인,모름,망가짐
+v3_r1112,control,detailed,S010_NCT03714503,E7,등록 후 확인,등록 후 확인,모름,망가짐
+v3_r1112,control,detailed,S010_NCT07081945,E1,통과,모름,통과,고쳐짐

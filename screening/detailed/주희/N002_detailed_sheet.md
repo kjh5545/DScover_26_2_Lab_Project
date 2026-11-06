@@ -32,12 +32,12 @@
 | E4 | 제외 | active pulmonary tuberculosis or active respiratory tract infection | 활동성 폐결핵 또는 활동성 호흡기 감염 | 통과 | "he has no other lung disease" -> 천식 외 다른 폐질환은 없다고 언급됨. "Ten days ago he visited the emergency department for an asthma attack ...; he had no fever, his chest X-ray was normal, and he was treated with a 5-day course of oral prednisone without antibiotics" -> 열이 없고 흉부 X선이 정상이며 항생제 없이 치료받아 감염 소견이 없음. |  |
 | E5 | 제외 | use of antibiotics within 4 weeks prior to study enrollment | 등록 전 4주 안에 항생제 사용 | 통과 | "he was treated with a 5-day course of oral prednisone without antibiotics" -> 항생제 없이 치료를 받음. |  |
 | E6 | 제외 | current long-term home oxygen therapy (>15 hours per day) | 현재 장기 가정 산소 치료 (하루 15시간 넘게) | 모름 | "97% on room air"는 검사할 때 산소 없이 숨 쉬었다는 뜻일 뿐이고, 집에서 장기 산소 치료를 하는지는 언급이 없음. 약물 치료 내용만으로 산소 치료를 안 한다고 단정할 수 없음 | 현재 집에서 산소 치료(산소 기계나 산소통)를 받고 있나요? |
-| E7 | 제외 | current treatment with monoclonal antibody therapies (e.g., omalizumab, mepolizumab, reslizumab, dupilumab, tezepelumab, or other biologics) | 현재 단클론항체 치료 중 (오말리주맙, 메폴리주맙, 두필루맙, 테제펠루맙 등 생물학적 제제) | 탈락 | "his pulmonologist has scheduled his first dupilumab injection for next week as part of standard care." -> 다음주부터 두필루맙 주사를 맞기로 예정되어 있음. 아직 첫 주사 전이지만, 치료가 필요해서 예약한 것이므로 등록 시점에는 치료 중일 것으로 보고 탈락으로 판정함. |  |
+| E7 | 제외 | current treatment with monoclonal antibody therapies (e.g., omalizumab, mepolizumab, reslizumab, dupilumab, tezepelumab, or other biologics) | 현재 단클론항체 치료 중 (오말리주맙, 메폴리주맙, 두필루맙, 테제펠루맙 등 생물학적 제제) | 통과 | "his pulmonologist has scheduled his first dupilumab injection for next week" -> 첫 주사 전이라 현재는 단클론항체 치료 중이 아님. 'current'를 현재 상태로 판단 (11/06 팀 기준 C, N001 시험 2 I7~I10과 같은 원칙). v1 정답은 탈락(예약된 치료라 등록 시점에는 치료 중일 것으로 봄) |  |
 | E8 | 제외 | pregnancy | 임신 | 통과 | 남성이므로 임신 해당 안됨 |  |
 
-**최종 판단** (적격 / 부적격 / 정보 부족 / 적격 가능(등록 후 확인 필요)): 부적격
+**최종 판단** (적격 / 부적격 / 정보 부족 / 적격 가능(등록 후 확인 필요)): 정보 부족
 
-**최종 판단 이유 (한 줄):** 다음주에 첫 두필루맙 주사를 맞기로 예정되어 있으므로 E7조건에 의해 부적격으로 판정됨.
+**최종 판단 이유 (한 줄):** I2, E3, E6가 모름으로 남아 정보 부족. (v1은 E7 탈락으로 부적격이었으나 11/06 팀 기준 C로 E7을 통과로 변경)
 
 **헷갈렸던 점:**
 - 'GINA 2023'이 2023년에 진단받았어야 한다는 뜻인지 헷갈렸으나, 2023년판 진단 기준을 만족해야 한다는 뜻으로 이해함. 전문의 진단과 현재 치료만으로 기준을 만족한다고 볼지 고민했고, 설명에 기준 충족(가역성 검사 등)이 나오지 않아 모름으로 둠. 기록으로 확인할 수 있는 정보라 등록 후 확인이 아닌 모름으로 판정함.
