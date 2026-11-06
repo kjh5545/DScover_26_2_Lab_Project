@@ -13,6 +13,7 @@
 """
 
 import json
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from src.llm import ask_json
 
@@ -89,27 +90,36 @@ def rank_relevant(profile: dict, candidates: list[dict],
     "무관 제거"에 더해 "유관 순위"까지 얻는다 (실험 3 — 큰 풀에서 상위 N 재현율 올리기).
     같은 병의 시험 수백 건끼리 변별해야 하므로 제목+요약 앞부분으로 병기·아형·치료 단계까지
     보고 채점한다. 같은 점수끼리는 검색 순서(구체적 검색어 먼저)가 유지된다.
-    채점 실패분은 중립 50점. 풀이 크면 chunk_size개씩 나눠 호출한다 (응답 길이 한도 때문).
+    채점 실패분은 중립 50점. 풀이 크면 chunk_size개씩 나눠 **병렬로** 호출한다
+    (순차 호출 시 풀 400건에 ~90초 → 동시 5개로 ~3분의 1. 묶음끼리 독립이라 안전).
     """
     patient = _patient_summary(profile)
-    scores: dict[str, int] = {}
-    for i in range(0, len(candidates), chunk_size):
-        part = candidates[i:i + chunk_size]
+
+    def score_chunk(part: list[dict]) -> dict[str, int]:
         trials = [{"nct_id": t["nct_id"], "title": t.get("title", ""),
                    "conditions": t.get("conditions", []),
                    "summary": (t.get("summary") or "")[:500]} for t in part]
         user = ("PATIENT:\n" + json.dumps(patient, ensure_ascii=False)
                 + "\n\nTRIALS:\n" + json.dumps(trials, ensure_ascii=False, indent=1))
-        try:
-            verdicts = ask_json(RANK_SYSTEM_PROMPT, user, model=FILTER_MODEL)
-            for v in verdicts:
-                if isinstance(v, dict) and v.get("nct_id"):
-                    try:
-                        scores[v["nct_id"]] = max(0, min(100, int(v.get("score", 50))))
-                    except (TypeError, ValueError):
-                        pass
-        except Exception as e:  # 채점 실패 시 해당 묶음은 중립 유지 (떨어뜨리지 않음)
-            print(f"  관련도 채점 실패 → 묶음 {i // chunk_size + 1} 중립(50점) 유지: {e}")
+        out: dict[str, int] = {}
+        verdicts = ask_json(RANK_SYSTEM_PROMPT, user, model=FILTER_MODEL)
+        for v in verdicts:
+            if isinstance(v, dict) and v.get("nct_id"):
+                try:
+                    out[v["nct_id"]] = max(0, min(100, int(v.get("score", 50))))
+                except (TypeError, ValueError):
+                    pass
+        return out
+
+    chunks = [candidates[i:i + chunk_size] for i in range(0, len(candidates), chunk_size)]
+    scores: dict[str, int] = {}
+    with ThreadPoolExecutor(max_workers=5) as pool:
+        futures = {pool.submit(score_chunk, part): n for n, part in enumerate(chunks, 1)}
+        for fut in as_completed(futures):
+            try:
+                scores.update(fut.result())
+            except Exception as e:  # 채점 실패 시 해당 묶음은 중립 유지 (떨어뜨리지 않음)
+                print(f"  관련도 채점 실패 → 묶음 {futures[fut]} 중립(50점) 유지: {e}")
 
     scored = [dict(t, _relevance=scores.get(t["nct_id"], 50)) for t in candidates]
     scored.sort(key=lambda t: -t["_relevance"])  # 안정 정렬 — 동점은 검색 순서 유지
