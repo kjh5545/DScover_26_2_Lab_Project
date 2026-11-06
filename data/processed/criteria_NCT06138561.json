@@ -1,0 +1,132 @@
+[
+  {
+    "id": "I1",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Age ≥65-years-old (study will limit total enrollment of patients between ages 65-70 to 20% of the total study population)",
+    "sub_conditions": [
+      "Age ≥65 years",
+      "Enrollment of patients aged 65-70 capped at 20% of total study population"
+    ],
+    "needed_info": [
+      "age",
+      "current enrollment count by age group"
+    ]
+  },
+  {
+    "id": "I2",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Unresectable or metastatic bladder cancer with histologically proven urothelial carcinoma. Any component of variant histology is allowed",
+    "sub_conditions": [
+      "Unresectable or metastatic bladder cancer",
+      "Histologically proven urothelial carcinoma",
+      "Variant histology components allowed"
+    ],
+    "needed_info": [
+      "diagnosis",
+      "disease stage/resectability",
+      "pathology report/histology"
+    ]
+  },
+  {
+    "id": "I3",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Cisplatin-ineligible as determined by the subject's primary oncologist",
+    "sub_conditions": [
+      "Cisplatin-ineligible",
+      "Determination made by primary oncologist"
+    ],
+    "needed_info": [
+      "cisplatin eligibility assessment by primary oncologist",
+      "renal function",
+      "performance status",
+      "hearing/neuropathy/cardiac status"
+    ]
+  },
+  {
+    "id": "I4",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Receiving treatment with chemotherapy (+/- immunotherapy maintenance), enfortumab vedotin-pembrolizumab combination therapy or immunotherapy alone",
+    "sub_conditions": [
+      "Receiving chemotherapy (with or without immunotherapy maintenance)",
+      "OR receiving enfortumab vedotin-pembrolizumab combination therapy",
+      "OR receiving immunotherapy alone"
+    ],
+    "needed_info": [
+      "current cancer treatment regimen",
+      "medication history"
+    ]
+  },
+  {
+    "id": "I5",
+    "type": "inclusion",
+    "category": "administrative",
+    "text": "Ability to understand and the willingness to sign a written informed consent document and to complete patient reported outcomes that will be in English or Spanish either alone or with assistance of study researcher or family",
+    "sub_conditions": [
+      "Ability to understand written informed consent",
+      "Willingness to sign written informed consent",
+      "Ability to complete patient reported outcomes in English or Spanish (alone or with assistance from study researcher or family)"
+    ],
+    "needed_info": [
+      "language spoken/read (English or Spanish)",
+      "capacity to consent",
+      "willingness to consent",
+      "ability to complete questionnaires"
+    ]
+  },
+  {
+    "id": "E1",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Subjects who elect to not undergo cancer-directed therapy",
+    "sub_conditions": [
+      "Patient elects not to undergo cancer-directed therapy"
+    ],
+    "needed_info": [
+      "patient treatment decision",
+      "treatment plan"
+    ]
+  },
+  {
+    "id": "E2",
+    "type": "exclusion",
+    "category": "administrative",
+    "text": "Subjects obtaining their care outside of DFCI or DFCI affiliate sites",
+    "sub_conditions": [
+      "Receives care at a site that is not DFCI or a DFCI affiliate"
+    ],
+    "needed_info": [
+      "site of care/treating institution"
+    ]
+  },
+  {
+    "id": "E3",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Advanced cognitive impairment or inability to complete surveys",
+    "sub_conditions": [
+      "Advanced cognitive impairment",
+      "Inability to complete surveys"
+    ],
+    "needed_info": [
+      "cognitive status/diagnosis",
+      "ability to complete surveys"
+    ]
+  },
+  {
+    "id": "E4",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Participants who are receiving any other investigational agents for this condition (if appropriate only).",
+    "sub_conditions": [
+      "Currently receiving any other investigational agent for urothelial/bladder cancer (if appropriate)"
+    ],
+    "needed_info": [
+      "current medications",
+      "clinical trial participation"
+    ]
+  }
+]

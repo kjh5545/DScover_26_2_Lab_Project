@@ -1,0 +1,242 @@
+[
+  {
+    "id": "I1",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "aged 18-70 years old",
+    "sub_conditions": [
+      "age ≥18 years",
+      "age ≤70 years"
+    ],
+    "needed_info": [
+      "age"
+    ]
+  },
+  {
+    "id": "I2",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "a score of ≤1 for the Eastern Cooperative Oncology Group (ECOG) Performance Status",
+    "sub_conditions": [
+      "ECOG performance status 0 or 1"
+    ],
+    "needed_info": [
+      "ECOG performance status"
+    ]
+  },
+  {
+    "id": "I3",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "receiving radical cystectomy (with lymph node dissection) or nephroureterectomy",
+    "sub_conditions": [
+      "radical cystectomy with lymph node dissection",
+      "OR nephroureterectomy"
+    ],
+    "needed_info": [
+      "surgical history",
+      "planned surgery"
+    ]
+  },
+  {
+    "id": "I4",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "histologically confirmed (surgical specimen) muscle invasive urothelial carcinoma, and the major histological type should be transitional cell carcinoma",
+    "sub_conditions": [
+      "histologically confirmed muscle invasive urothelial carcinoma on surgical specimen",
+      "major histological type is transitional cell carcinoma"
+    ],
+    "needed_info": [
+      "diagnosis",
+      "pathology report",
+      "histological type"
+    ]
+  },
+  {
+    "id": "I5",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Classification of tumour, node and metastasis (TNM): pT2-4a N0-2M0",
+    "sub_conditions": [
+      "pT2-4a",
+      "N0-2",
+      "M0"
+    ],
+    "needed_info": [
+      "pathological TNM staging"
+    ]
+  },
+  {
+    "id": "I6",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "absence of microscopic (i.e., positive margin) or gross residual of the tumor (R0 resection) and absence of metastasis, confirmed by a negative CT or MRI scan of pelvis, abdomen and chest within 4 weeks prior to enrolment",
+    "sub_conditions": [
+      "R0 resection: no microscopic residual tumor (negative margin)",
+      "no gross residual tumor",
+      "no metastasis confirmed by negative CT or MRI of pelvis, abdomen and chest",
+      "imaging performed within 4 weeks prior to enrolment"
+    ],
+    "needed_info": [
+      "surgical margin status / pathology report",
+      "imaging results (CT/MRI pelvis, abdomen, chest)",
+      "imaging date"
+    ]
+  },
+  {
+    "id": "I7",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "adequate hematologic and end-organ function, defined by laboratory results obtained within 28 days prior to the first study treatment",
+    "sub_conditions": [
+      "labs obtained within 28 days prior to first study treatment",
+      "ANC ≥1500 cells/μL (without G-CSF support within 2 weeks prior to Cycle 1, Day 1)",
+      "WBC count >2500 cells/μL",
+      "Lymphocyte count ≥300 cells/μL",
+      "Platelet count ≥100,000 cells/μL (without transfusion within 2 weeks prior to Cycle 1, Day 1)",
+      "Hemoglobin ≥9.0 g/dL",
+      "AST ≤2.5 × ULN",
+      "ALT ≤2.5 × ULN",
+      "Alkaline phosphatase ≤2.5 × ULN",
+      "PTT ≤1.5 × ULN",
+      "PT ≤1.5 × ULN or INR <1.7",
+      "Calculated creatinine clearance ≥30 mL/min (Cockcroft-Gault)"
+    ],
+    "needed_info": [
+      "lab: ANC",
+      "G-CSF use history",
+      "lab: WBC",
+      "lab: lymphocyte count",
+      "lab: platelet count",
+      "transfusion history",
+      "lab: hemoglobin",
+      "lab: AST",
+      "lab: ALT",
+      "lab: alkaline phosphatase",
+      "lab: PTT",
+      "lab: PT/INR",
+      "lab: creatinine clearance (age, weight, sex, serum creatinine)",
+      "lab dates"
+    ]
+  },
+  {
+    "id": "I8",
+    "type": "inclusion",
+    "category": "administrative",
+    "text": "able to understand and provide written informed consent, and agree to receive the treatment arrangement and study procedures stated in the informed consent",
+    "sub_conditions": [
+      "able to understand and provide written informed consent",
+      "agrees to the treatment arrangement and study procedures in the informed consent"
+    ],
+    "needed_info": [
+      "capacity to consent",
+      "willingness to comply with study procedures"
+    ]
+  },
+  {
+    "id": "E1",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "receiving any approved anti-cancer treatment within 3 weeks prior to study enrolment",
+    "sub_conditions": [
+      "any approved anti-cancer treatment within 3 weeks before enrolment"
+    ],
+    "needed_info": [
+      "anti-cancer treatment history and dates"
+    ]
+  },
+  {
+    "id": "E2",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "participation in another clinical trial with therapeutic intent within 28 days prior to enrolment",
+    "sub_conditions": [
+      "participation in another therapeutic clinical trial within 28 days before enrolment"
+    ],
+    "needed_info": [
+      "clinical trial participation history and dates"
+    ]
+  },
+  {
+    "id": "E3",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "suffering from malignancies other than urothelial carcinoma within 5 years prior to study enrolment",
+    "sub_conditions": [
+      "other non-urothelial malignancy within 5 years before enrolment"
+    ],
+    "needed_info": [
+      "cancer history",
+      "dates of diagnosis"
+    ]
+  },
+  {
+    "id": "E4",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "conditions that contraindicate chemotherapy, such as renal impairment with creatinine clearance rate (CCr) <50 mL/min, hearing impairment, and inadequate marrow function",
+    "sub_conditions": [
+      "renal impairment with CCr <50 mL/min",
+      "hearing impairment",
+      "inadequate marrow function",
+      "other conditions contraindicating chemotherapy"
+    ],
+    "needed_info": [
+      "lab: creatinine clearance",
+      "audiology/hearing history",
+      "bone marrow function / blood counts",
+      "comorbidities"
+    ]
+  },
+  {
+    "id": "E5",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "anaphylactic or hypersensitivity reactions or other contraindication to cisplatin and gemcitabine",
+    "sub_conditions": [
+      "anaphylactic or hypersensitivity reaction to cisplatin",
+      "anaphylactic or hypersensitivity reaction to gemcitabine",
+      "other contraindication to cisplatin",
+      "other contraindication to gemcitabine"
+    ],
+    "needed_info": [
+      "drug allergy history",
+      "contraindications to cisplatin/gemcitabine"
+    ]
+  },
+  {
+    "id": "E6",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "active or uncontrolled infections, including human immunodeficiency virus (HIV), hepatitis B virus (HBV), hepatitis C virus (HCV), or tuberculosis",
+    "sub_conditions": [
+      "active or uncontrolled infection (general)",
+      "HIV",
+      "HBV",
+      "HCV",
+      "tuberculosis"
+    ],
+    "needed_info": [
+      "infection history/current status",
+      "HIV status",
+      "HBV status",
+      "HCV status",
+      "tuberculosis status"
+    ]
+  },
+  {
+    "id": "E7",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "pregnancy or breastfeeding",
+    "sub_conditions": [
+      "pregnancy",
+      "breastfeeding"
+    ],
+    "needed_info": [
+      "pregnancy status",
+      "lactation status"
+    ]
+  }
+]

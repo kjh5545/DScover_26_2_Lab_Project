@@ -1,0 +1,219 @@
+[
+  {
+    "id": "I1",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Aged 18 to 75 years inclusive, with no restriction on gender",
+    "sub_conditions": [
+      "Age between 18 and 75 years inclusive",
+      "Any gender allowed"
+    ],
+    "needed_info": [
+      "age"
+    ]
+  },
+  {
+    "id": "I2",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Meet the diagnostic criteria for acute pancreatitis (AP) specified in the IAP Guidelines for the Management of Acute Pancreatitis (2025 Revision), i.e., satisfying at least two of the following three criteria: Clinical criterion: Acute epigastric abdominal pain; Biochemical criterion: Elevated pancreatic enzymes (serum lipase or amylase level more than 3 times the upper limit of normal (ULN)); Imaging criterion: Abdominal imaging examination (computed tomography (CT) or ultrasound) demonstrating findings consistent with acute pancreatic inflammation, with or without necrosis.",
+    "sub_conditions": [
+      "Satisfies at least two of the three IAP diagnostic criteria for AP",
+      "Clinical criterion: acute epigastric abdominal pain",
+      "Biochemical criterion: serum lipase or amylase more than 3 times ULN",
+      "Imaging criterion: CT or ultrasound findings consistent with acute pancreatic inflammation, with or without necrosis"
+    ],
+    "needed_info": [
+      "diagnosis of acute pancreatitis",
+      "symptoms: acute epigastric abdominal pain",
+      "lab: serum lipase",
+      "lab: serum amylase",
+      "imaging: abdominal CT or ultrasound"
+    ]
+  },
+  {
+    "id": "I3",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Meet the manifestations of predicted severe acute pancreatitis (AP)",
+    "sub_conditions": [
+      "Meets manifestations of predicted severe acute pancreatitis"
+    ],
+    "needed_info": [
+      "severity prediction of acute pancreatitis (e.g., clinical scores, organ failure signs, lab values)"
+    ]
+  },
+  {
+    "id": "E1",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "The exact onset time of abdominal pain cannot be accurately determined.",
+    "sub_conditions": [
+      "Exact onset time of abdominal pain cannot be accurately determined"
+    ],
+    "needed_info": [
+      "onset time of abdominal pain"
+    ]
+  },
+  {
+    "id": "E2",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "History of endoscopic retrograde cholangiopancreatography (ERCP) performed within 7 days prior to screening;",
+    "sub_conditions": [
+      "ERCP performed within 7 days prior to screening"
+    ],
+    "needed_info": [
+      "procedure history: ERCP and date"
+    ]
+  },
+  {
+    "id": "E3",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Received extracorporeal membrane oxygenation (ECMO) or renal replacement therapy prior to admission;",
+    "sub_conditions": [
+      "Received ECMO prior to admission",
+      "Received renal replacement therapy prior to admission"
+    ],
+    "needed_info": [
+      "procedure history: ECMO",
+      "procedure history: renal replacement therapy"
+    ]
+  },
+  {
+    "id": "E4",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "Requirement for emergency surgery, ERCP, ECMO, renal replacement therapy or plasma exchange immediately upon admission;",
+    "sub_conditions": [
+      "Requires emergency surgery immediately upon admission",
+      "Requires ERCP immediately upon admission",
+      "Requires ECMO immediately upon admission",
+      "Requires renal replacement therapy immediately upon admission",
+      "Requires plasma exchange immediately upon admission"
+    ],
+    "needed_info": [
+      "clinical status at admission",
+      "investigator assessment of need for emergency intervention"
+    ]
+  },
+  {
+    "id": "E5",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Having a known medical history of severe cardiovascular, respiratory, renal, hepatic, hematological or immune diseases;",
+    "sub_conditions": [
+      "Known history of severe cardiovascular disease",
+      "Known history of severe respiratory disease",
+      "Known history of severe renal disease",
+      "Known history of severe hepatic disease",
+      "Known history of severe hematological disease",
+      "Known history of severe immune disease"
+    ],
+    "needed_info": [
+      "medical history: cardiovascular, respiratory, renal, hepatic, hematological, immune diseases and severity"
+    ]
+  },
+  {
+    "id": "E6",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Subjects with current malignancy or a prior history of malignant tumors, except for basal cell carcinoma, squamous cell carcinoma of the skin, superficial bladder tumors or carcinoma in situ of the cervix that have been cured for at least 5 years.",
+    "sub_conditions": [
+      "Current malignancy",
+      "Prior history of malignant tumors",
+      "Exception: basal cell carcinoma, cutaneous squamous cell carcinoma, superficial bladder tumor, or cervical carcinoma in situ cured for at least 5 years"
+    ],
+    "needed_info": [
+      "medical history: malignancy type",
+      "time since cure of malignancy"
+    ]
+  },
+  {
+    "id": "E7",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "Subjects suffering from severe psychiatric disorders, cognitive impairment caused by severe social environmental factors, or any other conditions that the investigator judges may lead to poor protocol compliance or expose the subject to additional safety risks during the trial.",
+    "sub_conditions": [
+      "Severe psychiatric disorders",
+      "Cognitive impairment caused by severe social environmental factors",
+      "Any other condition judged by the investigator to lead to poor protocol compliance",
+      "Any other condition judged by the investigator to expose the subject to additional safety risks"
+    ],
+    "needed_info": [
+      "psychiatric history",
+      "cognitive status",
+      "investigator judgment"
+    ]
+  },
+  {
+    "id": "E8",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Administration of live vaccines within 1 month prior to screening;",
+    "sub_conditions": [
+      "Received live vaccine within 1 month prior to screening"
+    ],
+    "needed_info": [
+      "vaccination history and dates"
+    ]
+  },
+  {
+    "id": "E9",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Female subjects who are pregnant or breastfeeding;",
+    "sub_conditions": [
+      "Female subject who is pregnant",
+      "Female subject who is breastfeeding"
+    ],
+    "needed_info": [
+      "sex",
+      "pregnancy status",
+      "breastfeeding status"
+    ]
+  },
+  {
+    "id": "E10",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Female subjects of childbearing potential who have had unprotected sexual intercourse within 1 month prior to screening, or with a positive pregnancy test at screening;",
+    "sub_conditions": [
+      "Female of childbearing potential with unprotected sexual intercourse within 1 month prior to screening",
+      "Positive pregnancy test at screening"
+    ],
+    "needed_info": [
+      "sex",
+      "childbearing potential",
+      "sexual history/contraception use",
+      "pregnancy test result"
+    ]
+  },
+  {
+    "id": "E11",
+    "type": "exclusion",
+    "category": "administrative",
+    "text": "Subjects (or their partners) who plan to conceive, donate sperm or oocytes throughout the study period and within 6 months after study completion;",
+    "sub_conditions": [
+      "Subject or partner plans to conceive during the study and within 6 months after completion",
+      "Subject or partner plans to donate sperm or oocytes during the study and within 6 months after completion"
+    ],
+    "needed_info": [
+      "reproductive plans",
+      "plans for sperm/oocyte donation"
+    ]
+  },
+  {
+    "id": "E12",
+    "type": "exclusion",
+    "category": "administrative",
+    "text": "Subjects who refuse to use one or more effective contraceptive methods during the study and for 6 months following the end of the study.",
+    "sub_conditions": [
+      "Refuses to use one or more effective contraceptive methods during the study and for 6 months after the end of the study"
+    ],
+    "needed_info": [
+      "willingness to use contraception"
+    ]
+  }
+]

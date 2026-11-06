@@ -1,0 +1,110 @@
+[
+  {
+    "id": "I1",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "All patients undergoing pancreatic resection for malignant and benign disease with or without pancreatic anastomosis",
+    "sub_conditions": [
+      "Undergoing pancreatic resection",
+      "Indication is malignant or benign pancreatic disease",
+      "With or without pancreatic anastomosis"
+    ],
+    "needed_info": [
+      "planned or performed procedure",
+      "diagnosis (malignant or benign)",
+      "surgical details (anastomosis)"
+    ]
+  },
+  {
+    "id": "I2",
+    "type": "inclusion",
+    "category": "temporal_numeric",
+    "text": "Patients aged 18-85 years",
+    "sub_conditions": [
+      "Age at least 18 years",
+      "Age at most 85 years"
+    ],
+    "needed_info": [
+      "age"
+    ]
+  },
+  {
+    "id": "I3",
+    "type": "inclusion",
+    "category": "administrative",
+    "text": "Willingness to participate as demonstrated by giving a written informed consent.",
+    "sub_conditions": [
+      "Willing to participate",
+      "Provides written informed consent"
+    ],
+    "needed_info": [
+      "informed consent status"
+    ]
+  },
+  {
+    "id": "E1",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Necrosectomy (endoscopic or open) for primary acute pancreatitis or within laparotomy",
+    "sub_conditions": [
+      "Endoscopic necrosectomy for primary acute pancreatitis",
+      "Open necrosectomy for primary acute pancreatitis",
+      "Necrosectomy performed within a laparotomy"
+    ],
+    "needed_info": [
+      "planned or performed procedure",
+      "diagnosis (acute pancreatitis)",
+      "surgical history"
+    ]
+  },
+  {
+    "id": "E2",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Age less than 18 years",
+    "sub_conditions": [
+      "Age under 18 years"
+    ],
+    "needed_info": [
+      "age"
+    ]
+  },
+  {
+    "id": "E3",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Surgical drainage procedures without pancreatic resection (cystojejunostomy for pancreatic pseudocysts)",
+    "sub_conditions": [
+      "Surgical drainage procedure performed without pancreatic resection",
+      "Example: cystojejunostomy for pancreatic pseudocysts"
+    ],
+    "needed_info": [
+      "planned or performed procedure",
+      "diagnosis (pancreatic pseudocyst)"
+    ]
+  },
+  {
+    "id": "E4",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "One-stage total pancreatectomy",
+    "sub_conditions": [
+      "Undergoing one-stage total pancreatectomy"
+    ],
+    "needed_info": [
+      "planned or performed procedure"
+    ]
+  },
+  {
+    "id": "E5",
+    "type": "exclusion",
+    "category": "administrative",
+    "text": "Missing written consent",
+    "sub_conditions": [
+      "No written informed consent given"
+    ],
+    "needed_info": [
+      "informed consent status"
+    ]
+  }
+]

@@ -1,0 +1,170 @@
+[
+  {
+    "id": "I1",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "≥ 18 years of age",
+    "sub_conditions": [
+      "Age ≥ 18 years"
+    ],
+    "needed_info": [
+      "age"
+    ]
+  },
+  {
+    "id": "I2",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "RAP (≥ 2 documented lifetime attacks with ≥ 2 of 3 acute pancreatitis criteria) OR Chronic pancreatitis (Cambridge I or II with documented history of AP OR Cambridge III or IV criteria)",
+    "sub_conditions": [
+      "Recurrent acute pancreatitis (RAP): ≥ 2 documented lifetime attacks of acute pancreatitis, each meeting ≥ 2 of 3 acute pancreatitis criteria",
+      "OR chronic pancreatitis with Cambridge grade I or II AND documented history of acute pancreatitis",
+      "OR chronic pancreatitis with Cambridge grade III or IV criteria"
+    ],
+    "needed_info": [
+      "diagnosis",
+      "history of acute pancreatitis attacks (number, documentation)",
+      "acute pancreatitis criteria met per attack (pain, lipase/amylase ≥3x ULN, imaging)",
+      "imaging/Cambridge classification"
+    ]
+  },
+  {
+    "id": "I3",
+    "type": "inclusion",
+    "category": "temporal_numeric",
+    "text": "Fecal elastase ≥ 50 within the preceding 12 months",
+    "sub_conditions": [
+      "Fecal elastase value ≥ 50",
+      "Test performed within the preceding 12 months"
+    ],
+    "needed_info": [
+      "lab: fecal elastase",
+      "date of fecal elastase test"
+    ]
+  },
+  {
+    "id": "E1",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Allergy/Intolerance to PERT/MBT",
+    "sub_conditions": [
+      "Allergy or intolerance to pancreatic enzyme replacement therapy (PERT)",
+      "Allergy or intolerance to MBT"
+    ],
+    "needed_info": [
+      "allergy history",
+      "medication intolerance history"
+    ]
+  },
+  {
+    "id": "E2",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Taking medications that alter fat absorption or that supplement the fatty acids being studied (e.g. orlistat, ursodeoxycholic acid, Fatty-15 fatty acid supplement etc.)",
+    "sub_conditions": [
+      "Taking medications that alter fat absorption (e.g. orlistat, ursodeoxycholic acid)",
+      "Taking medications/supplements that supplement the fatty acids being studied (e.g. Fatty-15)"
+    ],
+    "needed_info": [
+      "current medication list",
+      "supplement use"
+    ]
+  },
+  {
+    "id": "E3",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Taking GLP-1 Receptor Agonist therapy",
+    "sub_conditions": [
+      "Currently taking GLP-1 receptor agonist therapy"
+    ],
+    "needed_info": [
+      "current medication list"
+    ]
+  },
+  {
+    "id": "E4",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Fecal elastase <50 within preceding 12 months OR pre-existing diagnosis of severe Exocrine Pancreatic Insufficiency, or ongoing steatorrhea",
+    "sub_conditions": [
+      "Fecal elastase <50 within the preceding 12 months",
+      "OR pre-existing diagnosis of severe exocrine pancreatic insufficiency",
+      "OR ongoing steatorrhea"
+    ],
+    "needed_info": [
+      "lab: fecal elastase",
+      "date of fecal elastase test",
+      "diagnosis of exocrine pancreatic insufficiency",
+      "symptoms: steatorrhea"
+    ]
+  },
+  {
+    "id": "E5",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Receiving Pancreatic Enzyme Replacement Therapy for > 5 days within the preceding 30 days",
+    "sub_conditions": [
+      "PERT use for more than 5 days",
+      "Within the preceding 30 days"
+    ],
+    "needed_info": [
+      "medication history: PERT (days of use, dates)"
+    ]
+  },
+  {
+    "id": "E6",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Acute Pancreatitis attack (documented and meeting at least 2 of 3 criteria) within the preceding 90 days",
+    "sub_conditions": [
+      "Documented acute pancreatitis attack meeting at least 2 of 3 criteria",
+      "Occurred within the preceding 90 days"
+    ],
+    "needed_info": [
+      "history of acute pancreatitis attacks with dates",
+      "acute pancreatitis criteria met (pain, lipase/amylase, imaging)"
+    ]
+  },
+  {
+    "id": "E7",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "History of pancreatic resection or underlying malabsorptive disease",
+    "sub_conditions": [
+      "History of pancreatic resection",
+      "OR underlying malabsorptive disease"
+    ],
+    "needed_info": [
+      "surgical history",
+      "diagnosis: malabsorptive disease"
+    ]
+  },
+  {
+    "id": "E8",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Pregnant or Breast Feeding",
+    "sub_conditions": [
+      "Pregnant",
+      "OR breast feeding"
+    ],
+    "needed_info": [
+      "pregnancy status",
+      "lactation status"
+    ]
+  },
+  {
+    "id": "E9",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "Other significant medical condition as judged by Principal Investigator",
+    "sub_conditions": [
+      "Other significant medical condition per Principal Investigator judgment"
+    ],
+    "needed_info": [
+      "investigator's clinical judgment",
+      "medical history"
+    ]
+  }
+]

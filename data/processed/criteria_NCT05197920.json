@@ -1,0 +1,215 @@
+[
+  {
+    "id": "I1",
+    "type": "inclusion",
+    "category": "medical",
+    "text": "Diagnosis of acute pancreatitis (AP) 0-90 days prior to enrollment date",
+    "sub_conditions": [
+      "Diagnosis of acute pancreatitis",
+      "Diagnosis made 0-90 days prior to enrollment date"
+    ],
+    "needed_info": [
+      "diagnosis: acute pancreatitis",
+      "date of AP diagnosis",
+      "enrollment date"
+    ]
+  },
+  {
+    "id": "I2",
+    "type": "inclusion",
+    "category": "post_enrollment",
+    "text": "Participant fully understands and is able to participate in all aspects of the study, including providing informed consent, completion of case report forms (CRFs), telephone interviews, metabolic testing, and planned longitudinal follow-ups",
+    "sub_conditions": [
+      "Fully understands the study",
+      "Able to provide informed consent",
+      "Able to complete case report forms (CRFs)",
+      "Able to participate in telephone interviews",
+      "Able to undergo metabolic testing",
+      "Able to participate in planned longitudinal follow-ups"
+    ],
+    "needed_info": [
+      "capacity to consent",
+      "ability to comply with study procedures",
+      "investigator assessment of understanding"
+    ]
+  },
+  {
+    "id": "E1",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Diagnosis of definite chronic pancreatitis (CP) at enrollment based on either of the following criteria met by CT scan (including non-contrast enhanced) or MRI or MRCP: (a) Parenchymal or ductal calcifications on CT scan (after excluding the possibility that calcifications are vascular); (b) Intraductal filling defects suggestive of calcifications on MRI and/or MRCP",
+    "sub_conditions": [
+      "Definite chronic pancreatitis at enrollment",
+      "Parenchymal or ductal calcifications on CT scan (excluding vascular calcifications)",
+      "Intraductal filling defects suggestive of calcifications on MRI and/or MRCP"
+    ],
+    "needed_info": [
+      "diagnosis: chronic pancreatitis",
+      "imaging: CT",
+      "imaging: MRI/MRCP"
+    ]
+  },
+  {
+    "id": "E2",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Potential participants with post-endoscopic retrograde cholangiopancreatography (post-ERCP) AP who are hospitalized for <48 hours.",
+    "sub_conditions": [
+      "Post-ERCP acute pancreatitis",
+      "Hospitalized for less than 48 hours"
+    ],
+    "needed_info": [
+      "AP etiology: post-ERCP",
+      "hospitalization duration"
+    ]
+  },
+  {
+    "id": "E3",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Prior (i.e., before enrollment) direct endoscopic necrosectomy of the pancreas or percutaneous necrosectomy or drainage of necrotic collection(s). Participants who require this during follow-up will remain in the study",
+    "sub_conditions": [
+      "Prior direct endoscopic necrosectomy of the pancreas",
+      "Prior percutaneous necrosectomy",
+      "Prior drainage of necrotic collection(s)"
+    ],
+    "needed_info": [
+      "procedure history: necrosectomy",
+      "procedure history: drainage of necrotic collections"
+    ]
+  },
+  {
+    "id": "E4",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Pancreatic tumors, including ductal adenocarcinoma, neuroendocrine tumors, and metastasis",
+    "sub_conditions": [
+      "Pancreatic ductal adenocarcinoma",
+      "Pancreatic neuroendocrine tumor",
+      "Pancreatic metastasis",
+      "Other pancreatic tumors"
+    ],
+    "needed_info": [
+      "diagnosis: pancreatic tumor",
+      "imaging/pathology"
+    ]
+  },
+  {
+    "id": "E5",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "Confirmed or suspected cystic tumor associated with main pancreatic duct dilation, or believed to be the cause of AP (in the site-PI's judgement)",
+    "sub_conditions": [
+      "Confirmed or suspected cystic tumor associated with main pancreatic duct dilation",
+      "Cystic tumor believed to be the cause of AP in site-PI's judgement"
+    ],
+    "needed_info": [
+      "imaging: pancreatic cystic lesion",
+      "main pancreatic duct dilation",
+      "investigator judgment of AP cause"
+    ]
+  },
+  {
+    "id": "E6",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Prior pancreatic surgery, including, but not limited to: distal pancreatectomy, pancreaticoduodenectomy, pancreatic necrosectomy, Frey procedure",
+    "sub_conditions": [
+      "Prior distal pancreatectomy",
+      "Prior pancreaticoduodenectomy",
+      "Prior pancreatic necrosectomy",
+      "Prior Frey procedure",
+      "Any other prior pancreatic surgery"
+    ],
+    "needed_info": [
+      "surgical history: pancreas"
+    ]
+  },
+  {
+    "id": "E7",
+    "type": "exclusion",
+    "category": "temporal_numeric",
+    "text": "Use of disallowed concomitant medications within 30 days prior to enrollment. A comprehensive list of disallowed medications will be included and routinely updated in the study's Manual of Procedures",
+    "sub_conditions": [
+      "Use of disallowed concomitant medications (per Manual of Procedures)",
+      "Use within 30 days prior to enrollment"
+    ],
+    "needed_info": [
+      "medication history (last 30 days)",
+      "study list of disallowed medications"
+    ]
+  },
+  {
+    "id": "E8",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Severe systemic illness that in the judgement of the investigative team will confound outcome assessments of DM and immunological outcomes or pose additional risk for harms, including: history of solid organ transplant, AIDS, active treatment for cancer (except non-melanoma skin cancer) within 12 months prior to enrollment, chronic kidney disease with eGFR <30 or on dialysis prior to AP, and cirrhosis (based on imaging or biopsy)",
+    "sub_conditions": [
+      "History of solid organ transplant",
+      "Acquired immunodeficiency syndrome (AIDS)",
+      "Active treatment for cancer (except non-melanoma skin cancer) within 12 months prior to enrollment",
+      "Chronic kidney disease with eGFR <30 or on dialysis prior to AP",
+      "Cirrhosis based on imaging or biopsy"
+    ],
+    "needed_info": [
+      "transplant history",
+      "diagnosis: AIDS",
+      "cancer treatment history",
+      "lab: eGFR",
+      "dialysis status",
+      "diagnosis: cirrhosis",
+      "investigator judgment"
+    ]
+  },
+  {
+    "id": "E9",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "Any other medical condition that in the opinion of the site-PI carries a life expectancy of <12 months.",
+    "sub_conditions": [
+      "Other medical condition with life expectancy <12 months in site-PI's opinion"
+    ],
+    "needed_info": [
+      "investigator judgment of life expectancy",
+      "medical history"
+    ]
+  },
+  {
+    "id": "E10",
+    "type": "exclusion",
+    "category": "medical",
+    "text": "Known pregnancy at the time of enrollment. Participants who become pregnant during follow-up will remain in the study, but may have modified study assessments for safety",
+    "sub_conditions": [
+      "Known pregnancy at the time of enrollment"
+    ],
+    "needed_info": [
+      "pregnancy status"
+    ]
+  },
+  {
+    "id": "E11",
+    "type": "exclusion",
+    "category": "administrative",
+    "text": "Incarceration",
+    "sub_conditions": [
+      "Currently incarcerated"
+    ],
+    "needed_info": [
+      "incarceration status"
+    ]
+  },
+  {
+    "id": "E12",
+    "type": "exclusion",
+    "category": "post_enrollment",
+    "text": "Any other condition or factor that would compromise the participant's safety or the scientific integrity of the study",
+    "sub_conditions": [
+      "Any other condition or factor compromising participant safety",
+      "Any other condition or factor compromising scientific integrity of the study"
+    ],
+    "needed_info": [
+      "investigator judgment",
+      "medical history"
+    ]
+  }
+]
