@@ -74,6 +74,20 @@ Judgment rules (follow strictly):
    scores) that are not given are "unknown" — a prior result may exist in the
    patient's records. Use "post_enrollment" only when the criterion itself
    requires a measurement at screening or on the study day.
+11. When a criterion requires a diagnosis made by a specific standard or
+   process (e.g. "fulfils ATS/ERS criteria", "confirmed by multidisciplinary
+   discussion", "histologically proven", "as defined by ... criteria"), a
+   stated diagnosis alone is not enough. Judge that part "pass"/"fail" only if
+   the description states the standard or process was met; do not rebuild it
+   from individual findings. Whether the standard or process was met is a
+   fact on record, so the verdict is "unknown", not "post_enrollment".
+   If another explicitly stated fact already decides
+   the criterion (e.g. "not hospitalized" for a criterion requiring
+   hospitalization), judge from that fact.
+12. Having diagnosis X does not rule out a different coexisting condition. An
+   exclusion such as "ILD other than IPF" or "other cause of ..." stays
+   "unknown" unless the description states it is absent (rule 4 still applies
+   first).
 
 Respond with ONLY a JSON array, one entry per criterion, no other text:
 [
