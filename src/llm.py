@@ -83,7 +83,15 @@ def parse_json(text: str):
     match = re.search(r"```(?:json)?\s*(.*?)```", text, re.DOTALL)
     if match:
         text = match.group(1)
-    return json.loads(text)
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        # JSON 앞뒤에 설명 문장을 붙이는 경우 대비: 첫 { 또는 [ 부터 첫 완결 값만 읽는다
+        start = min((i for i in (text.find("{"), text.find("[")) if i != -1), default=-1)
+        if start == -1:
+            raise
+        value, _end = json.JSONDecoder().raw_decode(text[start:])
+        return value
 
 
 def ask_json(system: str, user: str, max_tokens: int = 16000, model: str | None = None):
